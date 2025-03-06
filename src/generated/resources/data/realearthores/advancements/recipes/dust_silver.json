@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_gravel_ore_silver": {
+    "has_nether_silver": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:gravel_ore_silver"
+              "realearthores:nether_silver"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_gravel_ore_silver",
+      "has_nether_silver",
       "has_the_recipe"
     ]
   ],

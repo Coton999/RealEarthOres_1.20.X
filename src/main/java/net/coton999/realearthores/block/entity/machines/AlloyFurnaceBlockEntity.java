@@ -157,7 +157,7 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements MenuProvider
     }
 
     private void craftItem() {
-        this.itemHandler.extractItem(FUEL_SLOT, 1, false);
+        this.itemHandler.extractItem(INPUT_SLOT_1, 1, false);
 
         this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(Items.COAL,
                 this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + 1));

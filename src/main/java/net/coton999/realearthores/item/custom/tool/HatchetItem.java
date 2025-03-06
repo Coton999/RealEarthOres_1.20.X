@@ -1,8 +1,8 @@
 package net.coton999.realearthores.item.custom.tool;
 
-import com.google.common.collect.ImmutableMap;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -15,14 +15,10 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
 
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
 public class HatchetItem extends DiggerItem {
 
@@ -32,48 +28,31 @@ public class HatchetItem extends DiggerItem {
         super(pAttackDamageModifier, pAttackSpeedModifier, pTier, BlockTags.MINEABLE_WITH_AXE, pProperties);
     }
 
+    private boolean breakAllConnectedLogs(Level world, BlockPos pos) {
+        Set<BlockPos> visited = new HashSet<>();
+        Stack<BlockPos> stack = new Stack<>();
+        stack.push(pos);
+
+        while (!stack.isEmpty()) {
+            BlockPos currentPos = stack.pop();
+            visited.add(currentPos);
+
+            for (Direction direction : Direction.values()) {
+                BlockPos neighborPos = currentPos.relative(direction);
+
+                if (!visited.contains(neighborPos) && world.getBlockState(neighborPos).is(BlockTags.LOGS)) {
+                    world.destroyBlock(neighborPos, true);
+                    stack.push(neighborPos);
+                }
+            }
+        }
+        return false;
+    }
+
     @Override
     public boolean mineBlock(ItemStack pStack, Level pLevel, BlockState pState, BlockPos pPos, LivingEntity pEntityLiving) {
 
-        BlockPos above = pPos.above();
-        BlockPos above1 = pPos.above(1);
-        BlockPos above2 = pPos.above(2);
-        BlockPos above3 = pPos.above(3);
-        BlockPos above4 = pPos.above(4);
-        BlockPos above5 = pPos.above(5);
-        BlockPos above6 = pPos.above(6);
-        BlockPos above7 = pPos.above(7);
-        BlockPos above8 = pPos.above(8);
-        BlockPos above9 = pPos.above(9);
-        BlockPos above10 = pPos.above(10);
-
-        if (pStack.is(this)) {
-            if (pLevel.getBlockState(above).is(BlockTags.LOGS)){
-                pLevel.destroyBlock(above, true);
-            } if (pLevel.getBlockState(above1).is(BlockTags.LOGS)){
-                pLevel.destroyBlock(above1, true);
-            } if (pLevel.getBlockState(above2).is(BlockTags.LOGS)){
-                pLevel.destroyBlock(above2, true);
-            } if (pLevel.getBlockState(above3).is(BlockTags.LOGS)){
-                pLevel.destroyBlock(above3, true);
-            } if (pLevel.getBlockState(above4).is(BlockTags.LOGS)) {
-                pLevel.destroyBlock(above4, true);
-            } if (pLevel.getBlockState(above5).is(BlockTags.LOGS)) {
-                pLevel.destroyBlock(above5, true);
-            } if (pLevel.getBlockState(above6).is(BlockTags.LOGS)) {
-                pLevel.destroyBlock(above6, true);
-            } if (pLevel.getBlockState(above7).is(BlockTags.LOGS)) {
-                pLevel.destroyBlock(above7, true);
-            } if (pLevel.getBlockState(above8).is(BlockTags.LOGS)) {
-                pLevel.destroyBlock(above8, true);
-            } if (pLevel.getBlockState(above9).is(BlockTags.LOGS)) {
-                pLevel.destroyBlock(above9, true);
-            } if (pLevel.getBlockState(above10).is(BlockTags.LOGS)) {
-                pLevel.destroyBlock(above10, true);
-            }
-        }
-
-        return super.mineBlock(pStack, pLevel, pState, pPos, pEntityLiving);
+        return breakAllConnectedLogs(pLevel, pPos);
     }
 
     public InteractionResult useOn(UseOnContext pContext) {
