@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "ingot_platinum",
+  "ingredient": {
+    "item": "realearthores:gravel_ore_platinum"
+  },
+  "result": "realearthores:ingot_platinum"
+}

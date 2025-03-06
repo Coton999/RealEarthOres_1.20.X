@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realearthores:block/slab_spruce_resistant"
+    },
+    "type=double": {
+      "model": "minecraft:block/spruce_planks"
+    },
+    "type=top": {
+      "model": "realearthores:block/slab_spruce_resistant_top"
+    }
+  }
+}

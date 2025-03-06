@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:crushing",
+  "ingredients": [
+    {
+      "item": "realearthores:ingot_zinc"
+    }
+  ],
+  "result": {
+    "item": "realearthores:dust_zinc"
+  }
+}

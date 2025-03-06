@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_flour_wheat": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "realearthores:flour_wheat"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:bread_from_smoking_flour_wheat"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_flour_wheat",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "realearthores:bread_from_smoking_flour_wheat"
+    ]
+  },
+  "sends_telemetry_event": false
+}

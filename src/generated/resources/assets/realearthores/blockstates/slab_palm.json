@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realearthores:block/slab_palm"
+    },
+    "type=double": {
+      "model": "realearthores:block/planks_palm"
+    },
+    "type=top": {
+      "model": "realearthores:block/slab_palm_top"
+    }
+  }
+}

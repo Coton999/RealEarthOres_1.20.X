@@ -1,0 +1,6 @@
+{
+    "parent": "realearthores:item/bronze_bow",
+    "textures": {
+        "layer0": "realearthores:item/tool/bronze/bronze_bow_pulling_2"
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "realearthores:ingot_platinum"
+    },
+    "G": {
+      "tag": "realearthores:gem_gear_tier"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#G#",
+    " # "
+  ],
+  "result": {
+    "item": "realearthores:gear_platinum"
+  },
+  "show_notification": true
+}

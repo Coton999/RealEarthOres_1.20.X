@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "realearthores:block/tree/stripped/citrus",
+    "end": "realearthores:block/tree/stripped/citrus",
+    "side": "realearthores:block/tree/stripped/citrus"
+  }
+}

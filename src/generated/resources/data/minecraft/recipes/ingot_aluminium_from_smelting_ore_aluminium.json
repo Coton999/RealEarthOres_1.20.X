@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "ingot_aluminium",
+  "ingredient": {
+    "item": "realearthores:ore_aluminium"
+  },
+  "result": "realearthores:ingot_aluminium"
+}

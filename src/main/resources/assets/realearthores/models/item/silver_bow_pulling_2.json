@@ -1,0 +1,6 @@
+{
+    "parent": "realearthores:item/silver_bow",
+    "textures": {
+        "layer0": "realearthores:item/tool/silver/silver_bow_pulling_2"
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "ingot_aluminium",
+  "ingredient": {
+    "item": "realearthores:dust_aluminium"
+  },
+  "result": "realearthores:ingot_aluminium"
+}

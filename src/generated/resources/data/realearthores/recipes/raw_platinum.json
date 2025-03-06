@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "realearthores:block_raw_platinum"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "realearthores:raw_platinum"
+  }
+}

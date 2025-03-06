@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_jungle",
+  "features": "realearthores:wild_tomato_placed",
+  "step": "vegetal_decoration"
+}

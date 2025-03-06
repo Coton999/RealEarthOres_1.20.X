@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:crushing",
+  "ingredients": [
+    {
+      "item": "realearthores:deepslate_uranium"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:dust_uranium"
+  }
+}

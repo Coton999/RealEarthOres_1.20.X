@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "end": "realearthores:block/tree/stripped/balsa_top",
+    "front": "realearthores:block/tree/stripped/balsa",
+    "side": "realearthores:block/tree/stripped/balsa",
+    "top": "realearthores:block/tree/stripped/balsa_top"
+  }
+}

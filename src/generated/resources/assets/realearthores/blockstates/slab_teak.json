@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realearthores:block/slab_teak"
+    },
+    "type=double": {
+      "model": "realearthores:block/planks_teak"
+    },
+    "type=top": {
+      "model": "realearthores:block/slab_teak_top"
+    }
+  }
+}

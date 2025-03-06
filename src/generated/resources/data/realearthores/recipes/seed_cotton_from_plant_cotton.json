@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "seeds",
+  "ingredients": [
+    {
+      "item": "realearthores:plant_cotton"
+    }
+  ],
+  "result": {
+    "item": "realearthores:seed_cotton"
+  }
+}

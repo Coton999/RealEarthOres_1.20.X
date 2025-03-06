@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realearthores:block/limestone_cobble_slab"
+    },
+    "type=double": {
+      "model": "realearthores:block/limestone_cobble"
+    },
+    "type=top": {
+      "model": "realearthores:block/limestone_cobble_slab_top"
+    }
+  }
+}

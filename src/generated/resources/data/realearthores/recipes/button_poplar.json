@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "realearthores:planks_poplar"
+    }
+  ],
+  "result": {
+    "item": "realearthores:button_poplar"
+  }
+}

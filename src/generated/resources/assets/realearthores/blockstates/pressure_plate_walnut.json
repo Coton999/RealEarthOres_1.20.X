@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "realearthores:block/pressure_plate_walnut"
+    },
+    "powered=true": {
+      "model": "realearthores:block/pressure_plate_walnut_down"
+    }
+  }
+}

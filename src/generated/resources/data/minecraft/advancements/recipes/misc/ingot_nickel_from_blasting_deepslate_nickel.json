@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_deepslate_nickel": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "realearthores:deepslate_nickel"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:ingot_nickel_from_blasting_deepslate_nickel"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_deepslate_nickel",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:ingot_nickel_from_blasting_deepslate_nickel"
+    ]
+  },
+  "sends_telemetry_event": false
+}

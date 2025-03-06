@@ -1,0 +1,6 @@
+{
+    "parent": "realearthores:item/amethyst_bow",
+    "textures": {
+        "layer0": "realearthores:item/tool/amethyst/amethyst_bow_pulling_2"
+    }
+}

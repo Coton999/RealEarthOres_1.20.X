@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "boats",
+  "ingredients": [
+    {
+      "item": "realearthores:boat_palm"
+    },
+    {
+      "item": "minecraft:chest"
+    }
+  ],
+  "result": {
+    "item": "realearthores:boat_palm_chest"
+  }
+}

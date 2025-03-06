@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realearthores:block/slab_oak_resistant"
+    },
+    "type=double": {
+      "model": "minecraft:block/oak_planks"
+    },
+    "type=top": {
+      "model": "realearthores:block/slab_oak_resistant_top"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "realearthores:item/peridot_bow",
+    "textures": {
+        "layer0": "realearthores:item/tool/peridot/peridot_bow_pulling_1"
+    }
+}

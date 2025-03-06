@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "realearthores:block/tree/planks/citrus",
+    "side": "realearthores:block/tree/planks/citrus",
+    "top": "realearthores:block/tree/planks/citrus"
+  }
+}

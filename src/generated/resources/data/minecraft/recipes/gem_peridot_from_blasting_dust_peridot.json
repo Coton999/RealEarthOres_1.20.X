@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "gem_peridot",
+  "ingredient": {
+    "item": "realearthores:dust_peridot"
+  },
+  "result": "realearthores:gem_peridot"
+}

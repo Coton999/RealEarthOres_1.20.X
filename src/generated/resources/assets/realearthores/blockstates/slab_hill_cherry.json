@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realearthores:block/slab_hill_cherry"
+    },
+    "type=double": {
+      "model": "realearthores:block/planks_hill_cherry"
+    },
+    "type=top": {
+      "model": "realearthores:block/slab_hill_cherry_top"
+    }
+  }
+}

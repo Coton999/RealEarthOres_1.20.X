@@ -1,0 +1,12 @@
+{
+  "values": [
+    "realearthores:marble_wall",
+    "realearthores:marble_cobble_wall",
+    "realearthores:marble_cobble_mossy_wall",
+    "realearthores:limestone_wall",
+    "realearthores:limestone_cobble_wall",
+    "realearthores:limestone_cobble_mossy_wall",
+    "realearthores:calcite_wall",
+    "realearthores:netherrack_wall"
+  ]
+}

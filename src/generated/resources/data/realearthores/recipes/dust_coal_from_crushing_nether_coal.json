@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:crushing",
+  "ingredients": [
+    {
+      "item": "realearthores:nether_coal"
+    }
+  ],
+  "result": {
+    "item": "realearthores:dust_coal"
+  }
+}

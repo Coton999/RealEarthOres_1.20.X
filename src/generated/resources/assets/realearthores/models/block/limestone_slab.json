@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "realearthores:block/building_blocks/limestone/limestone",
+    "side": "realearthores:block/building_blocks/limestone/limestone",
+    "top": "realearthores:block/building_blocks/limestone/limestone"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "realearthores:dust_gold"
+    },
+    {
+      "item": "realearthores:dust_gold"
+    },
+    {
+      "item": "realearthores:dust_silver"
+    },
+    {
+      "item": "realearthores:dust_silver"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:dust_electrum"
+  }
+}

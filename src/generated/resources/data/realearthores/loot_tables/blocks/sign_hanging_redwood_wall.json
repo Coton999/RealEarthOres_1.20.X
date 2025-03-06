@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "realearthores:sign_hanging_redwood"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "realearthores:blocks/sign_hanging_redwood_wall"
+}

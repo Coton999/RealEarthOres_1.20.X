@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_post",
+  "textures": {
+    "wall": "realearthores:block/building_blocks/limestone/limestone"
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "realearthores:item/sapphire_bow",
+    "textures": {
+        "layer0": "realearthores:item/tool/sapphire/sapphire_bow_pulling_0"
+    }
+}

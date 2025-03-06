@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "seeds",
+  "ingredients": [
+    {
+      "item": "realearthores:food_cauliflower"
+    }
+  ],
+  "result": {
+    "item": "realearthores:seed_cauliflower"
+  }
+}

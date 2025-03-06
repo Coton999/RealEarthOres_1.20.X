@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "realearthores:planks_baobab"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "realearthores:pressure_plate_baobab"
+  },
+  "show_notification": true
+}

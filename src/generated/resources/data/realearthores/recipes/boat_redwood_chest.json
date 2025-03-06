@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "boats",
+  "ingredients": [
+    {
+      "item": "realearthores:boat_redwood"
+    },
+    {
+      "item": "minecraft:chest"
+    }
+  ],
+  "result": {
+    "item": "realearthores:boat_redwood_chest"
+  }
+}

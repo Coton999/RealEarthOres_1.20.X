@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "realearthores:block/log_mahogany_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "realearthores:block/log_mahogany"
+    },
+    "axis=z": {
+      "model": "realearthores:block/log_mahogany_horizontal",
+      "x": 90
+    }
+  }
+}

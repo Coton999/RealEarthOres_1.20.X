@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "realearthores:block/tree/planks/poplar",
+    "side": "realearthores:block/tree/planks/poplar",
+    "top": "realearthores:block/tree/planks/poplar"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "realearthores:block/machines/coal/crusher_front",
+    "side": "realearthores:block/machines/coal/crusher_side",
+    "top": "realearthores:block/machines/coal/machine_top"
+  }
+}

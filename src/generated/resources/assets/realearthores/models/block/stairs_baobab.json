@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "realearthores:block/tree/planks/baobab",
+    "side": "realearthores:block/tree/planks/baobab",
+    "top": "realearthores:block/tree/planks/baobab"
+  }
+}

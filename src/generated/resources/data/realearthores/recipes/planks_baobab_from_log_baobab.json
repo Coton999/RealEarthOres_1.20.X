@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "realearthores:log_baobab"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "realearthores:planks_baobab"
+  }
+}

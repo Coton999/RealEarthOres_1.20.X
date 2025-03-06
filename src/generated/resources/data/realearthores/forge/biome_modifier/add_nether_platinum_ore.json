@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_nether",
+  "features": "realearthores:nether_platinum_placed",
+  "step": "underground_ores"
+}

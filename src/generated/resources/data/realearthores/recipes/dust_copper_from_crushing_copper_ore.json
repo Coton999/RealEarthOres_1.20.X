@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:copper_ore"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:dust_copper"
+  }
+}

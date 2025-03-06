@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realearthores:block/slab_willow"
+    },
+    "type=double": {
+      "model": "realearthores:block/planks_willow"
+    },
+    "type=top": {
+      "model": "realearthores:block/slab_willow_top"
+    }
+  }
+}

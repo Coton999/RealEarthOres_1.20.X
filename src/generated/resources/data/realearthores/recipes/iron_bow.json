@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "@": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    " #@",
+    "# @",
+    " #@"
+  ],
+  "result": {
+    "item": "realearthores:iron_bow"
+  },
+  "show_notification": true
+}

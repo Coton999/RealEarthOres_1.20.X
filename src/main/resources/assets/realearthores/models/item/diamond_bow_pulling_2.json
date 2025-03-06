@@ -1,0 +1,6 @@
+{
+    "parent": "realearthores:item/diamond_bow",
+    "textures": {
+        "layer0": "realearthores:item/tool/diamond/diamond_bow_pulling_2"
+    }
+}

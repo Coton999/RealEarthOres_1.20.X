@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "realearthores:gem_peridot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "#",
+    "S",
+    "S"
+  ],
+  "result": {
+    "item": "realearthores:peridot_shovel"
+  },
+  "show_notification": true
+}

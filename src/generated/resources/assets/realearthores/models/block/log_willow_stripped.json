@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "end": "realearthores:block/tree/stripped/willow_top",
+    "front": "realearthores:block/tree/stripped/willow",
+    "side": "realearthores:block/tree/stripped/willow",
+    "top": "realearthores:block/tree/stripped/willow_top"
+  }
+}

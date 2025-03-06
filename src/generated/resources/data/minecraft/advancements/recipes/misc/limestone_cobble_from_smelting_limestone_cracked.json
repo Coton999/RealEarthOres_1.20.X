@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_limestone_cracked": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "realearthores:limestone_cracked"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:limestone_cobble_from_smelting_limestone_cracked"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_limestone_cracked",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:limestone_cobble_from_smelting_limestone_cracked"
+    ]
+  },
+  "sends_telemetry_event": false
+}

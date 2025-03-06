@@ -1,0 +1,6 @@
+{
+    "parent": "realearthores:item/stone_bow",
+    "textures": {
+        "layer0": "realearthores:item/tool/stone/stone_bow_pulling_2"
+    }
+}

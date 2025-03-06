@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_savanna",
+  "features": "realearthores:wild_barley_placed",
+  "step": "vegetal_decoration"
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "group": "flour_barley",
+  "ingredient": {
+    "item": "realearthores:flour_barley"
+  },
+  "result": "minecraft:bread"
+}

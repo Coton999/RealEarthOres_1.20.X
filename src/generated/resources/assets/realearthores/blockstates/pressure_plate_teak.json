@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "realearthores:block/pressure_plate_teak"
+    },
+    "powered=true": {
+      "model": "realearthores:block/pressure_plate_teak_down"
+    }
+  }
+}

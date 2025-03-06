@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "realearthores:limestone_cobble_wall"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "realearthores:blocks/limestone_cobble_wall"
+}

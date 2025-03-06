@@ -1,0 +1,11 @@
+{
+  "values": [
+    "#minecraft:mineable/hoe",
+    "#minecraft:crops",
+    "#minecraft:saplings",
+    "#minecraft:corals",
+    "#minecraft:flowers",
+    "#minecraft:sword_efficient",
+    "#minecraft:leaves"
+  ]
+}

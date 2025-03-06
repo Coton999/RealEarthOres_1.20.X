@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "realearthores:item/tool/stone/stone_shears"
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "realearthores:item/platinum_bow",
+    "textures": {
+        "layer0": "realearthores:item/tool/platinum/platinum_bow_pulling_2"
+    }
+}

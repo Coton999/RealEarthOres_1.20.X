@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:crushing",
+  "ingredients": [
+    {
+      "item": "realearthores:ingot_brass"
+    }
+  ],
+  "result": {
+    "item": "realearthores:dust_brass"
+  }
+}

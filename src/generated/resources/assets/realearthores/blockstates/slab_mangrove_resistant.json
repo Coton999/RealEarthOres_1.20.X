@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realearthores:block/slab_mangrove_resistant"
+    },
+    "type=double": {
+      "model": "minecraft:block/mangrove_planks"
+    },
+    "type=top": {
+      "model": "realearthores:block/slab_mangrove_resistant_top"
+    }
+  }
+}

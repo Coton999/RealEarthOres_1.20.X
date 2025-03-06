@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "realearthores:block/lamp_white_on"
+    },
+    "clicked=true": {
+      "model": "realearthores:block/lamp_white"
+    }
+  }
+}

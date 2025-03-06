@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_forest",
+  "features": "realearthores:hill_cherry_placed",
+  "step": "vegetal_decoration"
+}

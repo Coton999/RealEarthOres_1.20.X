@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_luminous_lightblue": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "realearthores:luminous_lightblue"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:lamp_lightblue_from_redstone_torch"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_luminous_lightblue",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "realearthores:lamp_lightblue_from_redstone_torch"
+    ]
+  },
+  "sends_telemetry_event": false
+}

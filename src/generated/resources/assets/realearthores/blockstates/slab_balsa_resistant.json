@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realearthores:block/slab_balsa_resistant"
+    },
+    "type=double": {
+      "model": "realearthores:block/planks_balsa"
+    },
+    "type=top": {
+      "model": "realearthores:block/slab_balsa_resistant_top"
+    }
+  }
+}

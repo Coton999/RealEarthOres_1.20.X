@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "realearthores:gem_amethyst"
+    },
+    "@": {
+      "item": "minecraft:leather_horse_armor"
+    }
+  },
+  "pattern": [
+    "###",
+    "#@#",
+    "###"
+  ],
+  "result": {
+    "item": "realearthores:horse_armor_amethyst"
+  },
+  "show_notification": true
+}

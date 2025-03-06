@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realearthores:block/slab_rubber"
+    },
+    "type=double": {
+      "model": "realearthores:block/planks_rubber"
+    },
+    "type=top": {
+      "model": "realearthores:block/slab_rubber_top"
+    }
+  }
+}

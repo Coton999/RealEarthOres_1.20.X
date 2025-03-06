@@ -1,0 +1,22 @@
+{
+  "values": [
+    "realearthores:ore_aluminium",
+    "realearthores:ore_silver",
+    "realearthores:gravel_ore_aluminium",
+    "realearthores:gravel_ore_diamond",
+    "realearthores:gravel_ore_emerald",
+    "realearthores:gravel_ore_redstone",
+    "realearthores:gravel_ore_silver",
+    "realearthores:deepslate_silver",
+    "realearthores:nether_aluminium",
+    "realearthores:nether_diamond",
+    "realearthores:nether_emerald",
+    "realearthores:nether_redstone",
+    "realearthores:nether_silver",
+    "realearthores:block_aluminium",
+    "realearthores:block_peridot",
+    "realearthores:block_ruby",
+    "realearthores:block_sapphire",
+    "realearthores:block_silver"
+  ]
+}

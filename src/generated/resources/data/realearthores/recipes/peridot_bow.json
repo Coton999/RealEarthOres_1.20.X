@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "realearthores:gem_peridot"
+    },
+    "@": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    " #@",
+    "# @",
+    " #@"
+  ],
+  "result": {
+    "item": "realearthores:peridot_bow"
+  },
+  "show_notification": true
+}

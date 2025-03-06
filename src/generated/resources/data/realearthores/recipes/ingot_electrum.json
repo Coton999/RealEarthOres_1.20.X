@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "item": "realearthores:ingot_silver"
+    },
+    {
+      "item": "realearthores:ingot_silver"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:ingot_electrum"
+  }
+}

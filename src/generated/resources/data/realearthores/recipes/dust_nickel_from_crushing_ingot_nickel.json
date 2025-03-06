@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:crushing",
+  "ingredients": [
+    {
+      "item": "realearthores:ingot_nickel"
+    }
+  ],
+  "result": {
+    "item": "realearthores:dust_nickel"
+  }
+}

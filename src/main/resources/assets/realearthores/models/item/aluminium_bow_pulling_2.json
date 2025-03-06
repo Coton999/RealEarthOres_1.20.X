@@ -1,0 +1,6 @@
+{
+    "parent": "realearthores:item/aluminium_bow",
+    "textures": {
+        "layer0": "realearthores:item/tool/aluminium/aluminium_bow_pulling_2"
+    }
+}

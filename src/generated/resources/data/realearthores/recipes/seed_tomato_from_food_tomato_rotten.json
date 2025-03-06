@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "seeds",
+  "ingredients": [
+    {
+      "item": "realearthores:food_tomato_rotten"
+    }
+  ],
+  "result": {
+    "item": "realearthores:seed_tomato"
+  }
+}

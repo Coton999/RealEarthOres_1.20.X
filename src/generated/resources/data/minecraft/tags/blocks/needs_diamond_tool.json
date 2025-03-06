@@ -1,0 +1,16 @@
+{
+  "values": [
+    "realearthores:ore_platinum",
+    "realearthores:ore_uranium",
+    "realearthores:gravel_ore_platinum",
+    "realearthores:gravel_ore_uranium",
+    "realearthores:deepslate_platinum",
+    "realearthores:deepslate_uranium",
+    "realearthores:nether_platinum",
+    "realearthores:nether_uranium",
+    "realearthores:ore_enderite",
+    "realearthores:block_enderite",
+    "realearthores:block_platinum",
+    "realearthores:block_uranium"
+  ]
+}

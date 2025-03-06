@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "realearthores:block/tree/stripped/rubber",
+    "side": "realearthores:block/tree/stripped/rubber"
+  }
+}

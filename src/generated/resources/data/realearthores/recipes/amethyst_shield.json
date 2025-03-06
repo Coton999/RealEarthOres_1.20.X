@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "realearthores:gem_amethyst"
+    },
+    "@": {
+      "item": "minecraft:shield"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#@#",
+    " # "
+  ],
+  "result": {
+    "item": "realearthores:amethyst_shield"
+  },
+  "show_notification": true
+}

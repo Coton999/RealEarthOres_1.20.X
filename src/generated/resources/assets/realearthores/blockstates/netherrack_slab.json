@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realearthores:block/netherrack_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/netherrack"
+    },
+    "type=top": {
+      "model": "realearthores:block/netherrack_slab_top"
+    }
+  }
+}

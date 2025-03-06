@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realearthores:block/slab_papaya_resistant"
+    },
+    "type=double": {
+      "model": "realearthores:block/planks_papaya"
+    },
+    "type=top": {
+      "model": "realearthores:block/slab_papaya_resistant_top"
+    }
+  }
+}

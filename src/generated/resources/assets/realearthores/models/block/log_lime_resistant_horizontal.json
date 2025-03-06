@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "realearthores:block/tree/log/lime_top",
+    "side": "realearthores:block/tree/log/lime"
+  }
+}

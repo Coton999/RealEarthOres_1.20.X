@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "ingot_uranium",
+  "ingredient": {
+    "item": "realearthores:dust_dirty_uranium"
+  },
+  "result": "realearthores:ingot_uranium"
+}

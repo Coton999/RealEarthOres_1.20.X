@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "realearthores:block/pressure_plate_papaya"
+    },
+    "powered=true": {
+      "model": "realearthores:block/pressure_plate_papaya_down"
+    }
+  }
+}

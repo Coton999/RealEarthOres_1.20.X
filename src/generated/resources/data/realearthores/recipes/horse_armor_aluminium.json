@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "realearthores:ingot_aluminium"
+    },
+    "@": {
+      "item": "minecraft:leather_horse_armor"
+    }
+  },
+  "pattern": [
+    "###",
+    "#@#",
+    "###"
+  ],
+  "result": {
+    "item": "realearthores:horse_armor_aluminium"
+  },
+  "show_notification": true
+}

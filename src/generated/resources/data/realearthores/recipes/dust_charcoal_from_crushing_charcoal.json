@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:charcoal"
+    }
+  ],
+  "result": {
+    "item": "realearthores:dust_charcoal"
+  }
+}

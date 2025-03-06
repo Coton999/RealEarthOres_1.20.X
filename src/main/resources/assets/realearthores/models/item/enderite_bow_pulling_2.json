@@ -1,0 +1,6 @@
+{
+    "parent": "realearthores:item/enderite_bow",
+    "textures": {
+        "layer0": "realearthores:item/tool/enderite/enderite_bow_pulling_2"
+    }
+}

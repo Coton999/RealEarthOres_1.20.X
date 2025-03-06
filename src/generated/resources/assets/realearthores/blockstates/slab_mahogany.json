@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realearthores:block/slab_mahogany"
+    },
+    "type=double": {
+      "model": "realearthores:block/planks_mahogany"
+    },
+    "type=top": {
+      "model": "realearthores:block/slab_mahogany_top"
+    }
+  }
+}

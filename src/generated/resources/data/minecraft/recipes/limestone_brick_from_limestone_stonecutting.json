@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "realearthores:limestone"
+  },
+  "result": "realearthores:limestone_brick"
+}

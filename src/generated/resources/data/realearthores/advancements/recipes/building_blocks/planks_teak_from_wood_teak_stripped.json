@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:planks_teak_from_wood_teak_stripped"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wood_teak_stripped": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "realearthores:wood_teak_stripped"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_wood_teak_stripped",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "realearthores:planks_teak_from_wood_teak_stripped"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_river",
+  "features": "realearthores:wild_rice_placed",
+  "step": "vegetal_decoration"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "realearthores:luminous_orange"
+    },
+    "G": {
+      "item": "minecraft:redstone_torch"
+    }
+  },
+  "pattern": [
+    "###",
+    "#G#",
+    "###"
+  ],
+  "result": {
+    "item": "realearthores:lamp_orange"
+  },
+  "show_notification": true
+}

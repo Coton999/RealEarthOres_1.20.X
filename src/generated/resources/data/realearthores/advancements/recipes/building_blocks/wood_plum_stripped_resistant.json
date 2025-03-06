@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:wood_plum_stripped_resistant"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wood_plum_stripped": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "realearthores:wood_plum_stripped"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_wood_plum_stripped",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "realearthores:wood_plum_stripped_resistant"
+    ]
+  },
+  "sends_telemetry_event": false
+}

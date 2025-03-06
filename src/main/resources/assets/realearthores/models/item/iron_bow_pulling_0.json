@@ -1,0 +1,6 @@
+{
+    "parent": "realearthores:item/iron_bow",
+    "textures": {
+        "layer0": "realearthores:item/tool/iron/iron_bow_pulling_0"
+    }
+}

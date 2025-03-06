@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "realearthores:block/pressure_plate_maple"
+    },
+    "powered=true": {
+      "model": "realearthores:block/pressure_plate_maple_down"
+    }
+  }
+}

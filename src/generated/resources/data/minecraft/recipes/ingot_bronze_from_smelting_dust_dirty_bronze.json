@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "ingot_bronze",
+  "ingredient": {
+    "item": "realearthores:dust_dirty_bronze"
+  },
+  "result": "realearthores:ingot_bronze"
+}

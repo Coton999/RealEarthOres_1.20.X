@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "realearthores:plant_cotton"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "item": "minecraft:string"
+  },
+  "show_notification": true
+}

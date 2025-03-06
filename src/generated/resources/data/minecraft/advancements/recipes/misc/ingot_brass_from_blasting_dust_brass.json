@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dust_brass": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "realearthores:dust_brass"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:ingot_brass_from_blasting_dust_brass"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_dust_brass",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:ingot_brass_from_blasting_dust_brass"
+    ]
+  },
+  "sends_telemetry_event": false
+}

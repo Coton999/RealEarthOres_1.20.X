@@ -1,0 +1,6 @@
+{
+    "parent": "realearthores:item/ruby_bow",
+    "textures": {
+        "layer0": "realearthores:item/tool/ruby/ruby_bow_pulling_2"
+    }
+}

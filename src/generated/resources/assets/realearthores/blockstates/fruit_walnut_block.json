@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "realearthores:block/walnut_stage_0"
+    },
+    "age=1": {
+      "model": "realearthores:block/walnut_stage_1"
+    },
+    "age=2": {
+      "model": "realearthores:block/walnut_stage_2"
+    }
+  }
+}

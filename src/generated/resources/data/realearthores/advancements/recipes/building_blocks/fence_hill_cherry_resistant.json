@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_fence_hill_cherry": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "realearthores:fence_hill_cherry"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:fence_hill_cherry_resistant"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_fence_hill_cherry",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "realearthores:fence_hill_cherry_resistant"
+    ]
+  },
+  "sends_telemetry_event": false
+}

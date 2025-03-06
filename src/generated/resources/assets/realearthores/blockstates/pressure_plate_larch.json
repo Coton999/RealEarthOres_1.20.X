@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "realearthores:block/pressure_plate_larch"
+    },
+    "powered=true": {
+      "model": "realearthores:block/pressure_plate_larch_down"
+    }
+  }
+}

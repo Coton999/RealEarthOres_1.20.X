@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "ingot_electrum",
+  "ingredient": {
+    "item": "realearthores:dust_dirty_electrum"
+  },
+  "result": "realearthores:ingot_electrum"
+}

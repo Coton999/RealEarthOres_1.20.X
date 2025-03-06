@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "realearthores:planks_palm"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "realearthores:pressure_plate_palm"
+  },
+  "show_notification": true
+}

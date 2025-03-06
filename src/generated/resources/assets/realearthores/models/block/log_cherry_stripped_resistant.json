@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "end": "minecraft:block/stripped_cherry_log_top",
+    "front": "minecraft:block/cherry_log",
+    "side": "minecraft:block/cherry_log",
+    "top": "minecraft:block/stripped_cherry_log_top"
+  }
+}

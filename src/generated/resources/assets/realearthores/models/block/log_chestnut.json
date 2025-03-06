@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "end": "realearthores:block/tree/log/chestnut_top",
+    "front": "realearthores:block/tree/log/chestnut",
+    "side": "realearthores:block/tree/log/chestnut",
+    "top": "realearthores:block/tree/log/chestnut_top"
+  }
+}

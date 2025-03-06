@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "realearthores:log_mahogany"
+    },
+    {
+      "item": "realearthores:log_mahogany"
+    },
+    {
+      "item": "realearthores:log_mahogany"
+    },
+    {
+      "item": "realearthores:log_mahogany"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "realearthores:wood_mahogany"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "end": "realearthores:block/tree/log/baobab_top",
+    "front": "realearthores:block/tree/log/baobab",
+    "side": "realearthores:block/tree/log/baobab",
+    "top": "realearthores:block/tree/log/baobab_top"
+  }
+}

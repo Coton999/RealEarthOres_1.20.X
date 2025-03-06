@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "end": "realearthores:block/tree/stripped/plum_top",
+    "front": "realearthores:block/tree/stripped/plum",
+    "side": "realearthores:block/tree/stripped/plum",
+    "top": "realearthores:block/tree/stripped/plum_top"
+  }
+}
