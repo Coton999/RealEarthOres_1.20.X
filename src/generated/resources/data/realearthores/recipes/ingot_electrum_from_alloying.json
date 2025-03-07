@@ -1,0 +1,7 @@
+{
+  "type": "realearthores:alloy_smelting",
+  "ingredients": [],
+  "output": {
+    "item": "realearthores:ingot_electrum"
+  }
+}

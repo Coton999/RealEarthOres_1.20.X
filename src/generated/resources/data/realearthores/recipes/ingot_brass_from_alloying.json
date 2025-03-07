@@ -1,0 +1,8 @@
+{
+  "type": "realearthores:alloy_smelting",
+  "ingredients": [],
+  "output": {
+    "count": 2,
+    "item": "realearthores:ingot_brass"
+  }
+}
