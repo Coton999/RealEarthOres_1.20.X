@@ -2,6 +2,7 @@ package net.coton999.realearthores.block.entity.machines;
 
 import net.coton999.realearthores.block.entity.REOBlockEntities;
 import net.coton999.realearthores.item.REOItems;
+import net.coton999.realearthores.recipe.AlloyFurnaceRecipe;
 import net.coton999.realearthores.screen.machines.AlloyFurnaceMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -28,6 +29,8 @@ import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Optional;
+
 public class AlloyFurnaceBlockEntity extends BlockEntity implements MenuProvider {
     private final ItemStackHandler itemHandler = new ItemStackHandler(4) {
         @Override
@@ -39,8 +42,7 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements MenuProvider
         public boolean isItemValid(int slot, @NotNull ItemStack stack) {
             return switch (slot) {
                 case 0 -> stack.getItem() == Items.COAL;
-                case 1 -> true;
-                case 2 -> true;
+                case 1, 2 -> true;
                 case 3 -> false;
                 default -> super.isItemValid(slot, stack);
             };
@@ -157,10 +159,14 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements MenuProvider
     }
 
     private void craftItem() {
-        this.itemHandler.extractItem(INPUT_SLOT_1, 1, false);
+        Optional<AlloyFurnaceRecipe> recipe = getCurrentRecipe();
+        ItemStack resultItem = recipe.get().getResultItem(getLevel().registryAccess());
 
-        this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(Items.COAL,
-                this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + 1));
+        this.itemHandler.extractItem(INPUT_SLOT_1, 1, false);
+        this.itemHandler.extractItem(INPUT_SLOT_2, 1, false);
+
+        this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(resultItem.getItem(),
+                this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + resultItem.getCount()));
     }
 
     private void resetProgress() {
@@ -176,12 +182,24 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements MenuProvider
     }
 
     private boolean hasRecipe() {
-        return canInsertAmountIntoOutputSlot(1) && canInsertItemIntoOutputSlot(REOItems.INGOT_ALUMINIUM.get())
-                && hasRecipeItemInInputSlot();
+        Optional<AlloyFurnaceRecipe> recipe = getCurrentRecipe();
+
+        if (recipe.isEmpty()) {
+            return false;
+        }
+        ItemStack resultItem = recipe.get().getResultItem(getLevel().registryAccess());
+
+        return canInsertAmountIntoOutputSlot(resultItem.getCount())
+                && canInsertItemIntoOutputSlot(resultItem.getItem());
     }
 
-    private boolean hasRecipeItemInInputSlot() {
-        return this.itemHandler.getStackInSlot(FUEL_SLOT).getItem() == REOItems.RAW_ALUMINIUM.get();
+    private Optional<AlloyFurnaceRecipe> getCurrentRecipe() {
+        SimpleContainer inventory = new SimpleContainer(this.itemHandler.getSlots());
+        for(int i = 0; i < this.itemHandler.getSlots(); i++) {
+            inventory.setItem(i, this.itemHandler.getStackInSlot(i));
+        }
+
+        return this.level.getRecipeManager().getRecipeFor(AlloyFurnaceRecipe.Type.INSTANCE, inventory, level);
     }
 
     private boolean canInsertItemIntoOutputSlot(Item item) {

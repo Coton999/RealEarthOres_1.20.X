@@ -22,15 +22,17 @@ import javax.annotation.Nullable;
 import java.util.function.Consumer;
 
 public class AlloyFurnaceRecipeBuilder implements RecipeBuilder {
-    private final Item input;
+    private final Item input1;
+    private final Item input2;
     private final Item result;
     private final Ingredient ingredient;
     private final int count;
     private final Advancement.Builder advancement = Advancement.Builder.advancement();
 
-    public AlloyFurnaceRecipeBuilder(ItemLike ingredient, ItemLike input, ItemLike result, int count) {
+    public AlloyFurnaceRecipeBuilder(ItemLike ingredient, ItemLike input1, ItemLike input2, ItemLike result, int count) {
         this.ingredient = Ingredient.of(ingredient);
-        this.input = input.asItem();
+        this.input1 = input1.asItem();
+        this.input2 = input2.asItem();
         this.result = result.asItem();
         this.count = count;
     }
@@ -57,7 +59,7 @@ public class AlloyFurnaceRecipeBuilder implements RecipeBuilder {
                 .addCriterion("has_the_recipe", RecipeUnlockedTrigger.unlocked(pRecipeId))
                 .rewards(AdvancementRewards.Builder.recipe(pRecipeId)).requirements(RequirementsStrategy.OR);
 
-        pFinishedRecipeConsumer.accept(new Result(pRecipeId, this.input, this.result, this.count, this.ingredient,
+        pFinishedRecipeConsumer.accept(new Result(pRecipeId, this.input1, this.input2, this.result, this.count, this.ingredient,
                 this.advancement, new ResourceLocation(pRecipeId.getNamespace(), "recipes/"
                 + pRecipeId.getPath())));
 
@@ -65,17 +67,19 @@ public class AlloyFurnaceRecipeBuilder implements RecipeBuilder {
 
     public static class Result implements FinishedRecipe {
         private final ResourceLocation id;
-        private final Item input;
+        private final Item input_1;
+        private final Item input_2;
         private final Item result;
         private final Ingredient ingredient;
         private final int count;
         private final Advancement.Builder advancement;
         private final ResourceLocation advancementId;
 
-        public Result(ResourceLocation pId,Item pInput, Item pResult, int pCount, Ingredient ingredient, Advancement.Builder pAdvancement,
+        public Result(ResourceLocation pId, Item pInput1, Item pInput2, Item pResult, int pCount, Ingredient ingredient, Advancement.Builder pAdvancement,
                       ResourceLocation pAdvancementId) {
             this.id = pId;
-            this.input = pInput;
+            this.input_1 = pInput1;
+            this.input_2 = pInput2;
             this.result = pResult;
             this.count = pCount;
             this.ingredient = ingredient;
@@ -101,21 +105,24 @@ public class AlloyFurnaceRecipeBuilder implements RecipeBuilder {
         @Override
         public ResourceLocation getId() {
             return new ResourceLocation(RealEarthOres.MOD_ID,
-                    ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_crushing_" + this.input);
+                    ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_alloying_" + this.input_1 + "_and_" + this.input_2);
         }
 
         @Override
         public RecipeSerializer<?> getType() {
+
             return CrusherRecipe.Serializer.INSTANCE;
         }
 
         @Nullable
         public JsonObject serializeAdvancement() {
+
             return this.advancement.serializeToJson();
         }
 
         @Nullable
         public ResourceLocation getAdvancementId() {
+
             return this.advancementId;
         }
     }

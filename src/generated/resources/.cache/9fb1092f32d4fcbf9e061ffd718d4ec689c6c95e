@@ -1,4 +1,4 @@
-// 1.20.1	2025-03-06T20:42:38.1692906	Recipes
+// 1.20.1	2025-03-07T09:29:47.2457738	Recipes
 386987e5e519e986977337fab476910f3876940d data/minecraft/advancements/recipes/combat/chainmail_boots.json
 0ce431ee0d4fcfb234c2d7880b38abf6d2a4d873 data/minecraft/advancements/recipes/combat/chainmail_chestplate.json
 f336766f867ca0c90864e91b92b729e61dd728e9 data/minecraft/advancements/recipes/combat/chainmail_helmet.json
@@ -1108,6 +1108,7 @@ f14ebc789dfecd5806b1ebae5b90a748b81c6fd5 data/realearthores/advancements/recipes
 1940f561a17a8227bd3c1f175c77254ea87263a4 data/realearthores/advancements/recipes/food/flour_barley_from_plant_barley.json
 1dd1c0625bd66f819194c426a6fe64a76f6ac67f data/realearthores/advancements/recipes/food/flour_wheat_from_wheat.json
 f41c5c722484ff2d9f54cb8ca3fac92891aa5487 data/realearthores/advancements/recipes/food/food_rice_from_plant_rice.json
+fe25f373d67ad83f77c6727b462f82a3f9dd7889 data/realearthores/advancements/recipes/ingot_bronze.json
 18e9aa1a2bdf0985bde1c142a3e0809782503ff1 data/realearthores/advancements/recipes/misc/block_aluminium.json
 797af33cce851f3e4c6f0ca61e585bd7389f67e0 data/realearthores/advancements/recipes/misc/block_enderite.json
 329a51a211e625398c7d7538f59ee4d321a1cdab data/realearthores/advancements/recipes/misc/block_lead.json
@@ -1895,6 +1896,7 @@ b31dcada9914b6dbd3fbfacfc88007ee119b5257 data/realearthores/recipes/ingot_alumin
 d93e2684f0f933b92a373efdbca2db5bd95633ea data/realearthores/recipes/ingot_brass.json
 24a0fb69418cfda29c4626760b9798d604fdee45 data/realearthores/recipes/ingot_brass_from_nugget.json
 035afb27a10b5cdffb509eec26033acd7317470e data/realearthores/recipes/ingot_bronze.json
+bc7d8732c16ab7542b0c1efed924d80247e24f8b data/realearthores/recipes/ingot_bronze_from_alloying_dust_copper_and_dust_tin.json
 eb30be265f1261f7cca1f2b913144a282f45a21c data/realearthores/recipes/ingot_bronze_from_nugget.json
 899844872f7f9a2f1e52af2f4817fc5449ff315b data/realearthores/recipes/ingot_electrum.json
 7422e926a6100ba53e9ba8ae2e4b9f8ca341d07e data/realearthores/recipes/ingot_electrum_from_nugget.json

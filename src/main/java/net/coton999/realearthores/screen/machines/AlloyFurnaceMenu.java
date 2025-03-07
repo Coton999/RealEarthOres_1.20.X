@@ -33,10 +33,10 @@ public class AlloyFurnaceMenu extends AbstractContainerMenu {
         addPlayerHotbar(inv);
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
-            this.addSlot(new SlotItemHandler(iItemHandler, 0, 80, 11));
-            this.addSlot(new SlotItemHandler(iItemHandler, 1, 26, 59));
-            this.addSlot(new SlotItemHandler(iItemHandler, 2, 80, 59));
-            this.addSlot(new SlotItemHandler(iItemHandler, 3, 134, 59));
+            this.addSlot(new SlotItemHandler(iItemHandler, 0, 43, 53));
+            this.addSlot(new SlotItemHandler(iItemHandler, 1, 26, 17));
+            this.addSlot(new SlotItemHandler(iItemHandler, 2, 60, 17));
+            this.addSlot(new SlotItemHandler(iItemHandler, 3, 116, 35));
         });
 
         addDataSlots(data);
@@ -49,7 +49,7 @@ public class AlloyFurnaceMenu extends AbstractContainerMenu {
     public int getScaledProgress() {
         int progress = this.data.get(0);
         int maxProgress = this.data.get(1);  // Max Progress
-        int progressArrowSize = 26; // This is the height in pixels of your arrow
+        int progressArrowSize = 17; // This is the height in pixels of your arrow
 
         return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
     }

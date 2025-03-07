@@ -31,41 +31,48 @@ public class AlloyFurnaceRecipe implements Recipe<SimpleContainer> {
             return false;
         }
 
-        return inputItems.get(0).test(pContainer.getItem(1));
+        return inputItems.get(0).test(pContainer.getItem(1)) || inputItems.get(1).test(pContainer.getItem(2));
     }
 
     @Override
     public ItemStack assemble(SimpleContainer pContainer, RegistryAccess pRegistryAccess) {
+
         return output.copy();
     }
 
     @Override
     public boolean canCraftInDimensions(int pWidth, int pHeight) {
+
         return true;
     }
 
     @Override
     public ItemStack getResultItem(RegistryAccess pRegistryAccess) {
+
         return output.copy();
     }
 
     @Override
     public NonNullList<Ingredient> getIngredients() {
+
         return this.inputItems;
     }
 
     @Override
     public ResourceLocation getId() {
+
         return id;
     }
 
     @Override
     public RecipeSerializer<?> getSerializer() {
+
         return Serializer.INSTANCE;
     }
 
     @Override
     public RecipeType<?> getType() {
+
         return Type.INSTANCE;
     }
 
@@ -85,7 +92,7 @@ public class AlloyFurnaceRecipe implements Recipe<SimpleContainer> {
             ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(json, "result"));
 
             JsonArray ingredients = GsonHelper.getAsJsonArray(json, "ingredients");
-            NonNullList<Ingredient> inputs = NonNullList.withSize(1, Ingredient.EMPTY);
+            NonNullList<Ingredient> inputs = NonNullList.withSize(2, Ingredient.EMPTY);
 
             for (int i = 0; i < inputs.size(); i++) {
                 inputs.set(i, Ingredient.fromJson(ingredients.get(i)));

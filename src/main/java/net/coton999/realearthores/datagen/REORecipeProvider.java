@@ -2,6 +2,7 @@ package net.coton999.realearthores.datagen;
 
 import net.coton999.realearthores.RealEarthOres;
 import net.coton999.realearthores.block.REOBlocks;
+import net.coton999.realearthores.datagen.custom.AlloyFurnaceRecipeBuilder;
 import net.coton999.realearthores.datagen.custom.CrusherRecipeBuilder;
 import net.coton999.realearthores.item.REOItems;
 import net.coton999.realearthores.util.REOTags;
@@ -453,6 +454,11 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_ingot_uranium", has(REOItems.INGOT_URANIUM.get())).save(pWriter);
         new CrusherRecipeBuilder(REOItems.INGOT_ZINC.get(), REOItems.INGOT_ZINC.get(), REOItems.DUST_ZINC.get(), 1)
                 .unlockedBy("has_ingot_zinc", has(REOItems.INGOT_ZINC.get())).save(pWriter);
+
+        // Alloy Furnace
+        //new AlloyFurnaceRecipeBuilder(REOItems.DUST_COPPER.get(), REOItems.DUST_COPPER.get(),
+        //        REOItems.DUST_TIN.get(), REOItems.INGOT_BRONZE.get(), 2)
+        //        .unlockedBy("has_dust_copper", has(REOItems.DUST_COPPER.get())).save(pWriter);
 
         // Blocks //
         // Storage
