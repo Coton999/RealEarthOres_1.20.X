@@ -6,6 +6,7 @@ import net.coton999.realearthores.datagen.custom.AlloyFurnaceRecipeBuilder;
 import net.coton999.realearthores.datagen.custom.CrusherRecipeBuilder;
 import net.coton999.realearthores.item.REOItems;
 import net.coton999.realearthores.util.REOTags;
+import net.minecraft.core.NonNullList;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
@@ -455,10 +456,14 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
         new CrusherRecipeBuilder(REOItems.INGOT_ZINC.get(), REOItems.INGOT_ZINC.get(), REOItems.DUST_ZINC.get(), 1)
                 .unlockedBy("has_ingot_zinc", has(REOItems.INGOT_ZINC.get())).save(pWriter);
 
-        // Alloy Furnace
-        //new AlloyFurnaceRecipeBuilder(REOItems.DUST_COPPER.get(), REOItems.DUST_COPPER.get(),
-        //        REOItems.DUST_TIN.get(), REOItems.INGOT_BRONZE.get(), 2)
-        //        .unlockedBy("has_dust_copper", has(REOItems.DUST_COPPER.get())).save(pWriter);
+        // Alloy Furnace //
+        // Ingots
+        new AlloyFurnaceRecipeBuilder(NonNullList.of(Ingredient.of(REOItems.DUST_COPPER.get(), REOItems.DUST_TIN.get())), REOItems.INGOT_BRONZE.get(), 2)
+                .unlockedBy("has_dust_tin", has(REOItems.DUST_TIN.get())).save(pWriter);
+        new AlloyFurnaceRecipeBuilder(NonNullList.of(Ingredient.of(REOItems.DUST_COPPER.get(), REOItems.DUST_ZINC.get())), REOItems.INGOT_BRASS.get(), 2)
+                .unlockedBy("has_dust_zinc", has(REOItems.DUST_ZINC.get())).save(pWriter);
+        new AlloyFurnaceRecipeBuilder(NonNullList.of(Ingredient.of(REOItems.DUST_GOLD.get(), REOItems.DUST_SILVER.get())), REOItems.INGOT_ELECTRUM.get(), 1)
+                .unlockedBy("has_dust_silver", has(REOItems.DUST_SILVER.get())).save(pWriter);
 
         // Blocks //
         // Storage

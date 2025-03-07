@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_NETHER_coal": {
+    "has_coal": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:nether_coal"
+              "minecraft:coal"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_NETHER_coal",
+      "has_coal",
       "has_the_recipe"
     ]
   ],

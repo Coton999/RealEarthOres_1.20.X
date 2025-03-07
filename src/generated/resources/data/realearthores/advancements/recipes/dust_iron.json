@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_nether_iron": {
+    "has_ingot_aluminium": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:nether_iron"
+              "minecraft:iron_ingot"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_nether_iron",
+      "has_ingot_aluminium",
       "has_the_recipe"
     ]
   ],
