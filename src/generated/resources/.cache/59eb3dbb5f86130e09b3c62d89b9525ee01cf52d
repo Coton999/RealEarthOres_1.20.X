@@ -1,4 +1,4 @@
-// 1.20.1	2025-03-06T13:55:18.6319818	Loot Tables
+// 1.20.1	2025-03-08T07:59:50.8358358	Loot Tables
 1fb9b9993e1b9dfc1266a36fce30a0c11db82dec data/realearthores/loot_tables/blocks/alloy_furnace.json
 d9f9d58442c54e893a93a7b144ae4f73993ae74a data/realearthores/loot_tables/blocks/berry_blackberry_block.json
 6c85cb763630014fad8f3694f089e171ffc3dba1 data/realearthores/loot_tables/blocks/berry_blueberry_block.json
@@ -522,6 +522,7 @@ b3c0c6db66690be759d39dd1ef9bb2a52fc68bbc data/realearthores/loot_tables/blocks/s
 29aba14860741875b0aa16bad768ae8974b67b8d data/realearthores/loot_tables/blocks/sapling_teak.json
 559947df0d7afe60ec162c319ec5882a86589aba data/realearthores/loot_tables/blocks/sapling_walnut.json
 1f09b6ba44e778cac9ba42fc274fe76f4b7675a3 data/realearthores/loot_tables/blocks/sapling_willow.json
+06821b6918febe247571161c7408df235df9b4e1 data/realearthores/loot_tables/blocks/sawmill.json
 fb0e5ba3be0ee3f39421a9db61b7dd3a2999e2de data/realearthores/loot_tables/blocks/sign_balsa.json
 b350b3fbc4971251333ce0a101e9ae473e86698b data/realearthores/loot_tables/blocks/sign_balsa_wall.json
 f835b38e16eb0397b9e24ebf2018b4c560234e40 data/realearthores/loot_tables/blocks/sign_baobab.json

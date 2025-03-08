@@ -1,6 +1,7 @@
 package net.coton999.realearthores.block;
 
 import net.coton999.realearthores.RealEarthOres;
+import net.coton999.realearthores.block.custom.machines.SawmillBlock;
 import net.coton999.realearthores.block.custom.misc.GravelOreBlock;
 import net.coton999.realearthores.block.custom.misc.LampBlock;
 import net.coton999.realearthores.block.custom.wood.REOSaplingBlock;
@@ -2250,6 +2251,9 @@ public class REOBlocks {
     // Machines
     public static final RegistryObject<Block> CRUSHER = registerBlock("crusher",
             () -> new CrusherBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()));
+
+    public static final RegistryObject<Block> SAWMILL = registerBlock("sawmill",
+            () -> new SawmillBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()));
 
     public static final RegistryObject<Block> ALLOY_FURNACE = registerBlock("alloy_furnace",
             () -> new AlloyFurnaceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()));

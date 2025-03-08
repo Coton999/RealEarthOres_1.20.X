@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/orientable",
   "textures": {
-    "front": "realearthores:block/machines/coal/crusher_front",
+    "front": "realearthores:block/machines/coal/sawmill_front",
     "side": "minecraft:block/furnace_side",
     "top": "minecraft:block/furnace_top"
   }

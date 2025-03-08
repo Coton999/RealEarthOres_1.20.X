@@ -3,6 +3,7 @@ package net.coton999.realearthores.screen;
 import net.coton999.realearthores.RealEarthOres;
 import net.coton999.realearthores.screen.machines.AlloyFurnaceMenu;
 import net.coton999.realearthores.screen.machines.CrusherMenu;
+import net.coton999.realearthores.screen.machines.SawmillMenu;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraftforge.common.extensions.IForgeMenuType;
@@ -18,6 +19,9 @@ public class REOMenuTypes {
 
     public static final RegistryObject<MenuType<CrusherMenu>> CRUSHER_MENU =
             registerMenuType(CrusherMenu::new, "crusher_menu");
+
+    public static final RegistryObject<MenuType<SawmillMenu>> SAWMILL_MENU =
+            registerMenuType(SawmillMenu::new, "sawmill_menu");
 
     public static final RegistryObject<MenuType<AlloyFurnaceMenu>> ALLOY_FURNACE_MENU =
             registerMenuType(AlloyFurnaceMenu::new, "alloy_furnace_menu");

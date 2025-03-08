@@ -1568,6 +1568,7 @@ public class REOCreativeModeTabs {
                         // Tech //
                         // Machines
                         pOutput.accept(REOBlocks.CRUSHER.get());
+                        pOutput.accept(REOBlocks.SAWMILL.get());
                         pOutput.accept(REOBlocks.ALLOY_FURNACE.get());
 
 

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_nether_silver": {
+    "has_ingot_silver": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:nether_silver"
+              "realearthores:ingot_silver"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_nether_silver",
+      "has_ingot_silver",
       "has_the_recipe"
     ]
   ],

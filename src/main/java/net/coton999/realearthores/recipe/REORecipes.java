@@ -13,6 +13,8 @@ public class REORecipes {
 
     public static final RegistryObject<RecipeSerializer<CrusherRecipe>> CRUSHER_SERIALIZER =
             SERIALIZERS.register("crushing", () -> CrusherRecipe.Serializer.INSTANCE);
+    public static final RegistryObject<RecipeSerializer<SawmillRecipe>> SAWMILL_SERIALIZER =
+            SERIALIZERS.register("milling", () -> SawmillRecipe.Serializer.INSTANCE);
     public static final RegistryObject<RecipeSerializer<AlloyFurnaceRecipe>> ALLOY_FURANCE_SERIALIZER =
             SERIALIZERS.register("alloy_smelting", () -> AlloyFurnaceRecipe.Serializer.INSTANCE);
 

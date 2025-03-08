@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_nether_uranium": {
+    "has_ingot_uranium": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:nether_uranium"
+              "realearthores:ingot_uranium"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_nether_uranium",
+      "has_ingot_uranium",
       "has_the_recipe"
     ]
   ],

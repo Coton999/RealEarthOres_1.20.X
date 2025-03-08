@@ -4,6 +4,7 @@ import net.coton999.realearthores.RealEarthOres;
 import net.coton999.realearthores.block.REOBlocks;
 import net.coton999.realearthores.datagen.custom.AlloyFurnaceRecipeBuilder;
 import net.coton999.realearthores.datagen.custom.CrusherRecipeBuilder;
+import net.coton999.realearthores.datagen.custom.SawmillRecipeBuilder;
 import net.coton999.realearthores.item.REOItems;
 import net.coton999.realearthores.util.REOTags;
 import net.minecraft.core.NonNullList;
@@ -458,12 +459,106 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
 
         // Alloy Furnace //
         // Ingots
-        new AlloyFurnaceRecipeBuilder(NonNullList.of(Ingredient.of(REOItems.DUST_COPPER.get(), REOItems.DUST_TIN.get())), REOItems.INGOT_BRONZE.get(), 2)
+        new AlloyFurnaceRecipeBuilder(NonNullList.of(Ingredient.of(REOItems.DUST_COPPER.get(), REOItems.DUST_TIN.get())), REOItems.INGOT_BRONZE.get(), 2, "_dust")
                 .unlockedBy("has_dust_tin", has(REOItems.DUST_TIN.get())).save(pWriter);
-        new AlloyFurnaceRecipeBuilder(NonNullList.of(Ingredient.of(REOItems.DUST_COPPER.get(), REOItems.DUST_ZINC.get())), REOItems.INGOT_BRASS.get(), 2)
+        new AlloyFurnaceRecipeBuilder(NonNullList.of(Ingredient.of(REOItems.DUST_COPPER.get(), REOItems.DUST_ZINC.get())), REOItems.INGOT_BRASS.get(), 2, "_dust")
                 .unlockedBy("has_dust_zinc", has(REOItems.DUST_ZINC.get())).save(pWriter);
-        new AlloyFurnaceRecipeBuilder(NonNullList.of(Ingredient.of(REOItems.DUST_GOLD.get(), REOItems.DUST_SILVER.get())), REOItems.INGOT_ELECTRUM.get(), 1)
+        new AlloyFurnaceRecipeBuilder(NonNullList.of(Ingredient.of(REOItems.DUST_GOLD.get(), REOItems.DUST_SILVER.get())), REOItems.INGOT_ELECTRUM.get(), 1, "_dust")
                 .unlockedBy("has_dust_silver", has(REOItems.DUST_SILVER.get())).save(pWriter);
+
+        new AlloyFurnaceRecipeBuilder(NonNullList.of(Ingredient.of(Items.COPPER_INGOT, REOItems.INGOT_TIN.get())), REOItems.INGOT_BRONZE.get(), 2, "_ingot")
+                .unlockedBy("has_ingot_tin", has(REOItems.INGOT_TIN.get())).save(pWriter);
+        new AlloyFurnaceRecipeBuilder(NonNullList.of(Ingredient.of(Items.COPPER_INGOT, REOItems.INGOT_ZINC.get())), REOItems.INGOT_BRASS.get(), 2, "_ingot")
+                .unlockedBy("has_ingot_zinc", has(REOItems.INGOT_ZINC.get())).save(pWriter);
+        new AlloyFurnaceRecipeBuilder(NonNullList.of(Ingredient.of(Items.GOLD_INGOT, REOItems.INGOT_SILVER.get())), REOItems.INGOT_ELECTRUM.get(), 1, "_ingot")
+                .unlockedBy("has_ingot_silver", has(REOItems.INGOT_SILVER.get())).save(pWriter);
+
+        // Sawmill //
+        // Vanilla Wood
+        new SawmillRecipeBuilder(Blocks.OAK_LOG, Blocks.OAK_LOG, Blocks.OAK_PLANKS, 6).unlockedBy("has_log_oak", has(Blocks.OAK_LOG)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.STRIPPED_OAK_LOG, Blocks.STRIPPED_OAK_LOG, Blocks.OAK_PLANKS, 6)
+                .unlockedBy("has_stripped_log_oak", has(Blocks.STRIPPED_OAK_LOG)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.OAK_WOOD, Blocks.OAK_WOOD, Blocks.OAK_PLANKS, 6).unlockedBy("has_wood_oak", has(Blocks.OAK_WOOD)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.STRIPPED_OAK_WOOD, Blocks.STRIPPED_OAK_WOOD, Blocks.OAK_PLANKS, 6)
+                .unlockedBy("has_stripped_wood_oak", has(Blocks.STRIPPED_OAK_WOOD)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.OAK_PLANKS, Blocks.OAK_PLANKS, Blocks.OAK_SLAB, 4).unlockedBy("has_planks_oak", has(Blocks.OAK_PLANKS)).save(pWriter);
+
+        new SawmillRecipeBuilder(Blocks.SPRUCE_LOG, Blocks.SPRUCE_LOG, Blocks.SPRUCE_PLANKS, 6).unlockedBy("has_log_spruce", has(Blocks.SPRUCE_LOG)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.STRIPPED_SPRUCE_LOG, Blocks.STRIPPED_SPRUCE_LOG, Blocks.SPRUCE_PLANKS, 6)
+                .unlockedBy("has_stripped_log_spruce", has(Blocks.STRIPPED_SPRUCE_LOG)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.SPRUCE_WOOD, Blocks.SPRUCE_WOOD, Blocks.SPRUCE_PLANKS, 6).unlockedBy("has_wood_spruce", has(Blocks.SPRUCE_WOOD)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.STRIPPED_SPRUCE_WOOD, Blocks.STRIPPED_SPRUCE_WOOD, Blocks.SPRUCE_PLANKS, 6)
+                .unlockedBy("has_stripped_wood_spruce", has(Blocks.STRIPPED_SPRUCE_WOOD)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.SPRUCE_PLANKS, Blocks.SPRUCE_PLANKS, Blocks.SPRUCE_SLAB, 4).unlockedBy("has_planks_spruce", has(Blocks.SPRUCE_PLANKS)).save(pWriter);
+
+        new SawmillRecipeBuilder(Blocks.BIRCH_LOG, Blocks.BIRCH_LOG, Blocks.BIRCH_PLANKS, 6).unlockedBy("has_log_birch", has(Blocks.BIRCH_LOG)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.STRIPPED_BIRCH_LOG, Blocks.STRIPPED_BIRCH_LOG, Blocks.BIRCH_PLANKS, 6)
+                .unlockedBy("has_stripped_log_birch", has(Blocks.STRIPPED_BIRCH_LOG)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.BIRCH_WOOD, Blocks.BIRCH_WOOD, Blocks.BIRCH_PLANKS, 6).unlockedBy("has_wood_birch", has(Blocks.BIRCH_WOOD)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.STRIPPED_BIRCH_WOOD, Blocks.STRIPPED_BIRCH_WOOD, Blocks.BIRCH_PLANKS, 6)
+                .unlockedBy("has_stripped_wood_birch", has(Blocks.STRIPPED_BIRCH_WOOD)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.BIRCH_PLANKS, Blocks.BIRCH_PLANKS, Blocks.BIRCH_SLAB, 4).unlockedBy("has_planks_birch", has(Blocks.BIRCH_PLANKS)).save(pWriter);
+
+        new SawmillRecipeBuilder(Blocks.JUNGLE_LOG, Blocks.JUNGLE_LOG, Blocks.JUNGLE_PLANKS, 6).unlockedBy("has_log_jungle", has(Blocks.JUNGLE_LOG)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.STRIPPED_JUNGLE_LOG, Blocks.STRIPPED_JUNGLE_LOG, Blocks.JUNGLE_PLANKS, 6)
+                .unlockedBy("has_stripped_log_jungle", has(Blocks.STRIPPED_JUNGLE_LOG)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.JUNGLE_WOOD, Blocks.JUNGLE_WOOD, Blocks.JUNGLE_PLANKS, 6).unlockedBy("has_wood_jungle", has(Blocks.JUNGLE_WOOD)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.STRIPPED_JUNGLE_WOOD, Blocks.STRIPPED_JUNGLE_WOOD, Blocks.JUNGLE_PLANKS, 6)
+                .unlockedBy("has_stripped_wood_jungle", has(Blocks.STRIPPED_JUNGLE_WOOD)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.JUNGLE_PLANKS, Blocks.JUNGLE_PLANKS, Blocks.JUNGLE_SLAB, 4).unlockedBy("has_planks_jungle", has(Blocks.JUNGLE_PLANKS)).save(pWriter);
+
+        new SawmillRecipeBuilder(Blocks.ACACIA_LOG, Blocks.ACACIA_LOG, Blocks.ACACIA_PLANKS, 6).unlockedBy("has_log_acacia", has(Blocks.ACACIA_LOG)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.STRIPPED_ACACIA_LOG, Blocks.STRIPPED_ACACIA_LOG, Blocks.ACACIA_PLANKS, 6)
+                .unlockedBy("has_stripped_log_acacia", has(Blocks.STRIPPED_ACACIA_LOG)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.ACACIA_WOOD, Blocks.ACACIA_WOOD, Blocks.ACACIA_PLANKS, 6).unlockedBy("has_wood_acacia", has(Blocks.ACACIA_WOOD)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.STRIPPED_ACACIA_WOOD, Blocks.STRIPPED_ACACIA_WOOD, Blocks.ACACIA_PLANKS, 6)
+                .unlockedBy("has_stripped_wood_acacia", has(Blocks.STRIPPED_ACACIA_WOOD)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.ACACIA_PLANKS, Blocks.ACACIA_PLANKS, Blocks.ACACIA_SLAB, 4).unlockedBy("has_planks_acacia", has(Blocks.ACACIA_PLANKS)).save(pWriter);
+
+        new SawmillRecipeBuilder(Blocks.DARK_OAK_LOG, Blocks.DARK_OAK_LOG, Blocks.DARK_OAK_PLANKS, 6).unlockedBy("has_log_dark_oak", has(Blocks.DARK_OAK_LOG)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.STRIPPED_DARK_OAK_LOG, Blocks.STRIPPED_DARK_OAK_LOG, Blocks.DARK_OAK_PLANKS, 6)
+                .unlockedBy("has_stripped_log_dark_oak", has(Blocks.STRIPPED_DARK_OAK_LOG)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.DARK_OAK_WOOD, Blocks.DARK_OAK_WOOD, Blocks.DARK_OAK_PLANKS, 6).unlockedBy("has_wood_dark_oak", has(Blocks.DARK_OAK_WOOD)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.STRIPPED_DARK_OAK_WOOD, Blocks.STRIPPED_DARK_OAK_WOOD, Blocks.DARK_OAK_PLANKS, 6)
+                .unlockedBy("has_stripped_wood_dark_oak", has(Blocks.STRIPPED_DARK_OAK_WOOD)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.DARK_OAK_PLANKS, Blocks.DARK_OAK_PLANKS, Blocks.DARK_OAK_SLAB, 4).unlockedBy("has_planks_dark_oak", has(Blocks.DARK_OAK_PLANKS)).save(pWriter);
+
+        new SawmillRecipeBuilder(Blocks.MANGROVE_LOG, Blocks.MANGROVE_LOG, Blocks.MANGROVE_PLANKS, 6).unlockedBy("has_log_mangrove", has(Blocks.MANGROVE_LOG)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.STRIPPED_MANGROVE_LOG, Blocks.STRIPPED_MANGROVE_LOG, Blocks.MANGROVE_PLANKS, 6)
+                .unlockedBy("has_stripped_log_mangrove", has(Blocks.STRIPPED_MANGROVE_LOG)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.MANGROVE_WOOD, Blocks.MANGROVE_WOOD, Blocks.MANGROVE_PLANKS, 6).unlockedBy("has_wood_mangrove", has(Blocks.MANGROVE_WOOD)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.STRIPPED_MANGROVE_WOOD, Blocks.STRIPPED_MANGROVE_WOOD, Blocks.MANGROVE_PLANKS, 6)
+                .unlockedBy("has_stripped_wood_mangrove", has(Blocks.STRIPPED_MANGROVE_WOOD)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.MANGROVE_PLANKS, Blocks.MANGROVE_PLANKS, Blocks.MANGROVE_SLAB, 4).unlockedBy("has_planks_mangrove", has(Blocks.MANGROVE_PLANKS)).save(pWriter);
+
+        new SawmillRecipeBuilder(Blocks.CHERRY_LOG, Blocks.CHERRY_LOG, Blocks.CHERRY_PLANKS, 6).unlockedBy("has_log_cherry", has(Blocks.CHERRY_LOG)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.STRIPPED_CHERRY_LOG, Blocks.STRIPPED_CHERRY_LOG, Blocks.CHERRY_PLANKS, 6)
+                .unlockedBy("has_stripped_log_cherry", has(Blocks.STRIPPED_CHERRY_LOG)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.CHERRY_WOOD, Blocks.CHERRY_WOOD, Blocks.CHERRY_PLANKS, 6).unlockedBy("has_wood_cherry", has(Blocks.CHERRY_WOOD)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.STRIPPED_CHERRY_WOOD, Blocks.STRIPPED_CHERRY_WOOD, Blocks.CHERRY_PLANKS, 6)
+                .unlockedBy("has_stripped_wood_cherry", has(Blocks.STRIPPED_CHERRY_WOOD)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.CHERRY_PLANKS, Blocks.CHERRY_PLANKS, Blocks.CHERRY_SLAB, 4).unlockedBy("has_planks_cherry", has(Blocks.CHERRY_PLANKS)).save(pWriter);
+
+        new SawmillRecipeBuilder(Blocks.BAMBOO_BLOCK, Blocks.BAMBOO_BLOCK, Blocks.BAMBOO_PLANKS, 6).unlockedBy("has_log_bamboo", has(Blocks.BAMBOO_BLOCK)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.STRIPPED_BAMBOO_BLOCK, Blocks.STRIPPED_BAMBOO_BLOCK, Blocks.BAMBOO_PLANKS, 6)
+                .unlockedBy("has_stripped_log_bamboo", has(Blocks.STRIPPED_BAMBOO_BLOCK)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.BAMBOO_PLANKS, Blocks.BAMBOO_PLANKS, Blocks.BAMBOO_SLAB, 4).unlockedBy("has_planks_bamboo", has(Blocks.BAMBOO_PLANKS)).save(pWriter);
+
+        new SawmillRecipeBuilder(Blocks.CRIMSON_STEM, Blocks.CRIMSON_STEM, Blocks.CRIMSON_PLANKS, 6).unlockedBy("has_stem_crimson", has(Blocks.CRIMSON_STEM)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.STRIPPED_CRIMSON_STEM, Blocks.STRIPPED_CRIMSON_STEM, Blocks.CRIMSON_PLANKS, 6)
+                .unlockedBy("has_stripped_stem_crimson", has(Blocks.STRIPPED_CRIMSON_STEM)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.CRIMSON_HYPHAE, Blocks.CRIMSON_HYPHAE, Blocks.CRIMSON_PLANKS, 6).unlockedBy("has_hyphae_crimson", has(Blocks.CRIMSON_HYPHAE)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.STRIPPED_CRIMSON_HYPHAE, Blocks.STRIPPED_CRIMSON_HYPHAE, Blocks.CRIMSON_PLANKS, 6)
+                .unlockedBy("has_stripped_hyphae_crimson", has(Blocks.STRIPPED_CRIMSON_HYPHAE)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.CRIMSON_PLANKS, Blocks.CRIMSON_PLANKS, Blocks.CRIMSON_SLAB, 4).unlockedBy("has_planks_crimson", has(Blocks.CRIMSON_PLANKS)).save(pWriter);
+
+        new SawmillRecipeBuilder(Blocks.WARPED_STEM, Blocks.WARPED_STEM, Blocks.WARPED_PLANKS, 6).unlockedBy("has_stem_warped", has(Blocks.WARPED_STEM)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.STRIPPED_WARPED_STEM, Blocks.STRIPPED_WARPED_STEM, Blocks.WARPED_PLANKS, 6)
+                .unlockedBy("has_stripped_stem_warped", has(Blocks.STRIPPED_WARPED_STEM)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.WARPED_HYPHAE, Blocks.WARPED_HYPHAE, Blocks.WARPED_PLANKS, 6).unlockedBy("has_hyphae_warped", has(Blocks.WARPED_HYPHAE)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.STRIPPED_WARPED_HYPHAE, Blocks.STRIPPED_WARPED_HYPHAE, Blocks.WARPED_PLANKS, 6)
+                .unlockedBy("has_stripped_hyphae_warped", has(Blocks.STRIPPED_WARPED_HYPHAE)).save(pWriter);
+        new SawmillRecipeBuilder(Blocks.WARPED_PLANKS, Blocks.WARPED_PLANKS, Blocks.WARPED_SLAB, 4).unlockedBy("has_planks_warped", has(Blocks.WARPED_PLANKS)).save(pWriter);
 
         // Blocks //
         // Storage

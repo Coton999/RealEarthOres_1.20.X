@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_nether_zinc": {
+    "has_ingot_zinc": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:nether_zinc"
+              "realearthores:ingot_zinc"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_nether_zinc",
+      "has_ingot_zinc",
       "has_the_recipe"
     ]
   ],

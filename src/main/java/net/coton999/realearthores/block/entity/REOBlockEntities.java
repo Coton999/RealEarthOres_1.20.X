@@ -4,6 +4,7 @@ import net.coton999.realearthores.RealEarthOres;
 import net.coton999.realearthores.block.REOBlocks;
 import net.coton999.realearthores.block.entity.machines.AlloyFurnaceBlockEntity;
 import net.coton999.realearthores.block.entity.machines.CrusherBlockEntity;
+import net.coton999.realearthores.block.entity.machines.SawmillBlockEntity;
 import net.coton999.realearthores.block.entity.signs.REOHangingSignBlockEntity;
 import net.coton999.realearthores.block.entity.signs.REOSignBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -22,6 +23,11 @@ public class REOBlockEntities {
             BLOCK_ENTITIES.register("crusher_block_entity", () ->
                     BlockEntityType.Builder.of(CrusherBlockEntity::new,
                             REOBlocks.CRUSHER.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<SawmillBlockEntity>> SAWMILL_BE =
+            BLOCK_ENTITIES.register("sawmill_block_entity", () ->
+                    BlockEntityType.Builder.of(SawmillBlockEntity::new,
+                            REOBlocks.SAWMILL.get()).build(null));
 
     public static final RegistryObject<BlockEntityType<AlloyFurnaceBlockEntity>> ALLOY_FURNACE_BE =
             BLOCK_ENTITIES.register("alloy_furance_block_entity", () ->

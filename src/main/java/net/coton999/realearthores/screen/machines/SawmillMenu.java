@@ -1,7 +1,7 @@
 package net.coton999.realearthores.screen.machines;
 
 import net.coton999.realearthores.block.REOBlocks;
-import net.coton999.realearthores.block.entity.machines.AlloyFurnaceBlockEntity;
+import net.coton999.realearthores.block.entity.machines.SawmillBlockEntity;
 import net.coton999.realearthores.screen.REOMenuTypes;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
@@ -13,19 +13,19 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.items.SlotItemHandler;
 
-public class AlloyFurnaceMenu extends AbstractContainerMenu {
-    public final AlloyFurnaceBlockEntity blockEntity;
+public class SawmillMenu extends AbstractContainerMenu {
+    public final SawmillBlockEntity blockEntity;
     private final Level level;
     private final ContainerData data;
 
-    public AlloyFurnaceMenu(int pContainerId, Inventory inv, FriendlyByteBuf extraData) {
+    public SawmillMenu(int pContainerId, Inventory inv, FriendlyByteBuf extraData) {
         this(pContainerId, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(2));
     }
 
-    public AlloyFurnaceMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data) {
-        super(REOMenuTypes.ALLOY_FURNACE_MENU.get(), pContainerId);
-        checkContainerSize(inv, 4);
-        blockEntity = ((AlloyFurnaceBlockEntity) entity);
+    public SawmillMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data) {
+        super(REOMenuTypes.SAWMILL_MENU.get(), pContainerId);
+        checkContainerSize(inv, 3);
+        blockEntity = ((SawmillBlockEntity) entity);
         this.level = inv.player.level();
         this.data = data;
 
@@ -33,10 +33,9 @@ public class AlloyFurnaceMenu extends AbstractContainerMenu {
         addPlayerHotbar(inv);
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
-            this.addSlot(new SlotItemHandler(iItemHandler, 0, 43, 53));
-            this.addSlot(new SlotItemHandler(iItemHandler, 1, 30, 17));
-            this.addSlot(new SlotItemHandler(iItemHandler, 2, 56, 17));
-            this.addSlot(new SlotItemHandler(iItemHandler, 3, 116, 35));
+            this.addSlot(new SlotItemHandler(iItemHandler, 0, 56, 53));
+            this.addSlot(new SlotItemHandler(iItemHandler, 1, 56, 17));
+            this.addSlot(new SlotItemHandler(iItemHandler, 2, 116, 35));
         });
 
         addDataSlots(data);
@@ -70,7 +69,7 @@ public class AlloyFurnaceMenu extends AbstractContainerMenu {
     private static final int TE_INVENTORY_FIRST_SLOT_INDEX = VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT;
 
     // THIS YOU HAVE TO DEFINE!
-    private static final int TE_INVENTORY_SLOT_COUNT = 4;  // must be the number of slots you have!
+    private static final int TE_INVENTORY_SLOT_COUNT = 3;  // Must be the number of slots you have!
     @Override
     public ItemStack quickMoveStack(Player playerIn, int pIndex) {
         Slot sourceSlot = slots.get(pIndex);
@@ -107,7 +106,7 @@ public class AlloyFurnaceMenu extends AbstractContainerMenu {
     @Override
     public boolean stillValid(Player pPlayer) {
         return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
-                pPlayer, REOBlocks.ALLOY_FURNACE.get());
+                pPlayer, REOBlocks.SAWMILL.get());
     }
 
     private void addPlayerInventory(Inventory playerInventory) {
