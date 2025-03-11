@@ -1,17 +1,17 @@
-// 1.20.1	2025-02-26T11:37:11.7925021	Tags for minecraft:block mod id realearthores
+// 1.20.1	2025-03-08T09:11:38.5839912	Tags for minecraft:block mod id realearthores
 f9f636a48e4edbac85ba2f83067d77844720d026 data/minecraft/tags/blocks/all_hanging_signs.json
 06e3aaf1abe7639e714f2f5f7491920f54b24635 data/minecraft/tags/blocks/all_signs.json
 d1a169c3f25dd5f3671cfe1796bb5b2cbfd0a457 data/minecraft/tags/blocks/crops.json
 66ea0f8941dcc7f5336455b1de7b166dd39eab74 data/minecraft/tags/blocks/fence_gates.json
 f936c5bd4031c32aa955ed776cd7610149b72cfe data/minecraft/tags/blocks/leaves.json
-3872cf18a0d974cb10d1b763526e3511d74d6069 data/minecraft/tags/blocks/logs.json
+0fe3190f4bd93357773fa0a06947459add643697 data/minecraft/tags/blocks/logs.json
 eb8ee750931fa1de70d07b9e65b3f659c701ca93 data/minecraft/tags/blocks/logs_that_burn.json
 69b31fa227c93f039008c718b855cf1e9d6f0a72 data/minecraft/tags/blocks/mineable/pickaxe.json
 4d6004d516ce558c39e5a4f6c2fb22a0f4fad06d data/minecraft/tags/blocks/mineable/shovel.json
 400813903029d8108a03c093efb09a1e83fb63b0 data/minecraft/tags/blocks/needs_diamond_tool.json
 b24600d582e819f20c8218a968a3e5e4766e51e6 data/minecraft/tags/blocks/needs_iron_tool.json
 759184b60e8e92a45c9b749c2521d50869c41ed0 data/minecraft/tags/blocks/needs_stone_tool.json
-3872cf18a0d974cb10d1b763526e3511d74d6069 data/minecraft/tags/blocks/overworld_natural_logs.json
+0fe3190f4bd93357773fa0a06947459add643697 data/minecraft/tags/blocks/overworld_natural_logs.json
 7c32c57592f3a80affcfe18d807b766f6557d9df data/minecraft/tags/blocks/planks.json
 754695df62b94a3f932a80b0e2fcc1753f29e3bf data/minecraft/tags/blocks/saplings.json
 9441bbff66930c09a2cd63405627c8d0f4be1374 data/minecraft/tags/blocks/walls.json
@@ -42,6 +42,6 @@ bde03a3ff352f0ad677c5b2902cde7492c227662 data/realearthores/tags/blocks/pine_log
 601451fc359ffa681722d220427fcb7dde356b95 data/realearthores/tags/blocks/redwood_logs.json
 e131aa73bbaa3a80dbe2bc7a30ecc34871daa3fa data/realearthores/tags/blocks/rubber_logs.json
 4070f3bbadc32e75cdfe87790db2f5358c90d8d9 data/realearthores/tags/blocks/teak_logs.json
-9aa185b0a47d87cd7609cabe7c3dac33c2062b1c data/realearthores/tags/blocks/vanilla_restistant_logs.json
+9aa185b0a47d87cd7609cabe7c3dac33c2062b1c data/realearthores/tags/blocks/vanilla_resistant_logs.json
 59022d7fc1192554940bac2be6024745c1b8beca data/realearthores/tags/blocks/walnut_logs.json
 5ad08c73480b1ffe5bc180f86ecff4fdfc33a87d data/realearthores/tags/blocks/willow_logs.json

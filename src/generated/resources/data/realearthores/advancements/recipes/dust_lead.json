@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ingot_lead": {
+    "has_nether_lead": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:ingot_lead"
+              "realearthores:nether_lead"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_ingot_lead",
+      "has_nether_lead",
       "has_the_recipe"
     ]
   ],

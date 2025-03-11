@@ -1,9 +1,13 @@
 package net.coton999.realearthores.block.entity.machines;
 
+import net.coton999.realearthores.block.custom.machines.AlloyFurnaceBlock;
+import net.coton999.realearthores.block.custom.machines.CrusherBlock;
 import net.coton999.realearthores.block.entity.REOBlockEntities;
 import net.coton999.realearthores.item.REOItems;
-import net.coton999.realearthores.recipe.AlloyFurnaceRecipe;
 import net.coton999.realearthores.screen.machines.AlloyFurnaceMenu;
+import net.coton999.realearthores.util.InventoryDirectionEntry;
+import net.coton999.realearthores.util.InventoryDirectionWrapper;
+import net.coton999.realearthores.util.WrappedHandler;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -29,7 +33,7 @@ import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.Optional;
+import java.util.Map;
 
 public class AlloyFurnaceBlockEntity extends BlockEntity implements MenuProvider {
     private final ItemStackHandler itemHandler = new ItemStackHandler(4) {
@@ -55,6 +59,15 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements MenuProvider
     private static final int OUTPUT_SLOT = 3;
 
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
+    private final Map<Direction, LazyOptional<WrappedHandler>> directionWrappedHandlerMap =
+            new InventoryDirectionWrapper(itemHandler,
+                    new InventoryDirectionEntry(Direction.DOWN, OUTPUT_SLOT, false),
+                    new InventoryDirectionEntry(Direction.NORTH, INPUT_SLOT_1, true),
+                    new InventoryDirectionEntry(Direction.SOUTH, OUTPUT_SLOT, false),
+                    new InventoryDirectionEntry(Direction.EAST, OUTPUT_SLOT, false),
+                    new InventoryDirectionEntry(Direction.WEST, INPUT_SLOT_1, true),
+                    new InventoryDirectionEntry(Direction.UP, INPUT_SLOT_1, true)).directionsMap;
+
 
     protected final ContainerData data;
     private int progress = 0;
@@ -110,7 +123,24 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements MenuProvider
     @Override
     public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @Nullable Direction side) {
         if(cap == ForgeCapabilities.ITEM_HANDLER) {
-            return lazyItemHandler.cast();
+            if(side == null) {
+                return lazyItemHandler.cast();
+            }
+
+            if(directionWrappedHandlerMap.containsKey(side)) {
+                Direction localDir = this.getBlockState().getValue(CrusherBlock.FACING);
+
+                if(side == Direction.DOWN ||side == Direction.UP) {
+                    return directionWrappedHandlerMap.get(side).cast();
+                }
+
+                return switch (localDir) {
+                    default -> directionWrappedHandlerMap.get(side.getOpposite()).cast();
+                    case EAST -> directionWrappedHandlerMap.get(side.getClockWise()).cast();
+                    case SOUTH -> directionWrappedHandlerMap.get(side).cast();
+                    case WEST -> directionWrappedHandlerMap.get(side.getCounterClockWise()).cast();
+                };
+            }
         }
 
         return super.getCapability(cap, side);
@@ -145,28 +175,29 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements MenuProvider
     }
 
     public void tick(Level level, BlockPos pPos, BlockState pState) {
+
         if (isOutputSlotEmptyOrReceivable() && hasRecipe()) {
+            level.setBlock(pPos, pState.setValue(AlloyFurnaceBlock.LIT, Boolean.TRUE), 3);
             increaseCraftingProcess();
             setChanged(level, pPos, pState);
 
             if (hasProgressFinished()) {
+                level.setBlock(pPos, pState.setValue(AlloyFurnaceBlock.LIT, Boolean.FALSE), 3);
                 craftItem();
                 resetProgress();
             }
         } else {
+            level.setBlock(pPos, pState.setValue(AlloyFurnaceBlock.LIT, Boolean.FALSE), 3);
             resetProgress();
         }
     }
 
     private void craftItem() {
-        Optional<AlloyFurnaceRecipe> recipe = getCurrentRecipe();
-        ItemStack resultItem = recipe.get().getResultItem(getLevel().registryAccess());
-
         this.itemHandler.extractItem(INPUT_SLOT_1, 1, false);
         this.itemHandler.extractItem(INPUT_SLOT_2, 1, false);
 
-        this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(resultItem.getItem(),
-                this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + resultItem.getCount()));
+        this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(REOItems.INGOT_BRONZE.get(),
+                this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + 1));
     }
 
     private void resetProgress() {
@@ -182,24 +213,11 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements MenuProvider
     }
 
     private boolean hasRecipe() {
-        Optional<AlloyFurnaceRecipe> recipe = getCurrentRecipe();
-
-        if (recipe.isEmpty()) {
-            return false;
-        }
-        ItemStack resultItem = recipe.get().getResultItem(getLevel().registryAccess());
-
-        return canInsertAmountIntoOutputSlot(resultItem.getCount())
-                && canInsertItemIntoOutputSlot(resultItem.getItem());
+        return canInsertAmountIntoOutputSlot(1) && hasRecipeItemInInputSlot();
     }
 
-    private Optional<AlloyFurnaceRecipe> getCurrentRecipe() {
-        SimpleContainer inventory = new SimpleContainer(this.itemHandler.getSlots());
-        for(int i = 0; i < this.itemHandler.getSlots(); i++) {
-            inventory.setItem(i, this.itemHandler.getStackInSlot(i));
-        }
-
-        return this.level.getRecipeManager().getRecipeFor(AlloyFurnaceRecipe.Type.INSTANCE, inventory, level);
+    private boolean hasRecipeItemInInputSlot() {
+        return this.itemHandler.getStackInSlot(INPUT_SLOT_1).getItem() == REOItems.DUST_COPPER.get() && this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.DUST_TIN.get();
     }
 
     private boolean canInsertItemIntoOutputSlot(Item item) {

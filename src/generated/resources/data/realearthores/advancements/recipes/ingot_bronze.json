@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dust_tin": {
+    "has_ingot_tin": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:dust_tin"
+              "realearthores:ingot_tin"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_dust_tin",
+      "has_ingot_tin",
       "has_the_recipe"
     ]
   ],

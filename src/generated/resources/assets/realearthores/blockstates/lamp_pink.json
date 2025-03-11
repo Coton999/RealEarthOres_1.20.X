@@ -1,10 +1,10 @@
 {
   "variants": {
     "clicked=false": {
-      "model": "realearthores:block/lamp_pink_on"
+      "model": "realearthores:block/lamp_pink"
     },
     "clicked=true": {
-      "model": "realearthores:block/lamp_pink"
+      "model": "realearthores:block/lamp_pink_on"
     }
   }
 }

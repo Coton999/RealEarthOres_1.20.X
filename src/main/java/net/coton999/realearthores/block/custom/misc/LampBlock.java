@@ -16,6 +16,7 @@ public class LampBlock extends Block {
 
     public LampBlock(Properties properties) {
         super(properties);
+        this.registerDefaultState(this.stateDefinition.any().setValue(CLICKED, Boolean.FALSE));
     }
 
     @Override

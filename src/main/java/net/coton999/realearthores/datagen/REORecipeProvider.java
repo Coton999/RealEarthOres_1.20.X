@@ -560,6 +560,179 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_stripped_hyphae_warped", has(Blocks.STRIPPED_WARPED_HYPHAE)).save(pWriter);
         new SawmillRecipeBuilder(Blocks.WARPED_PLANKS, Blocks.WARPED_PLANKS, Blocks.WARPED_SLAB, 4).unlockedBy("has_planks_warped", has(Blocks.WARPED_PLANKS)).save(pWriter);
 
+        // Modded Wood
+        // Balsa
+        new SawmillRecipeBuilder(REOBlocks.LOG_BALSA.get(), REOBlocks.LOG_BALSA.get(), REOBlocks.PLANKS_BALSA.get(), 6).unlockedBy("has_log_balsa", has(REOBlocks.LOG_BALSA.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.LOG_BALSA_STRIPPED.get(), REOBlocks.LOG_BALSA_STRIPPED.get(), REOBlocks.PLANKS_BALSA.get(), 6)
+                .unlockedBy("has_stripped_log_balsa", has(REOBlocks.LOG_BALSA_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_BALSA.get(), REOBlocks.WOOD_BALSA.get(), REOBlocks.PLANKS_BALSA.get(), 6).unlockedBy("has_wood_balsa", has(REOBlocks.WOOD_BALSA.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_BALSA_STRIPPED.get(), REOBlocks.WOOD_BALSA_STRIPPED.get(), REOBlocks.PLANKS_BALSA.get(), 6)
+                .unlockedBy("has_stripped_wood_balsa", has(REOBlocks.WOOD_BALSA_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.PLANKS_BALSA.get(), REOBlocks.PLANKS_BALSA.get(), REOBlocks.SLAB_BALSA.get(), 4).unlockedBy("has_planks_balsa", has(REOBlocks.PLANKS_BALSA.get())).save(pWriter);
+
+        // Baobab
+        new SawmillRecipeBuilder(REOBlocks.LOG_BAOBAB.get(), REOBlocks.LOG_BAOBAB.get(), REOBlocks.PLANKS_BAOBAB.get(), 6).unlockedBy("has_log_baobab", has(REOBlocks.LOG_BAOBAB.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.LOG_BAOBAB_STRIPPED.get(), REOBlocks.LOG_BAOBAB_STRIPPED.get(), REOBlocks.PLANKS_BAOBAB.get(), 6)
+                .unlockedBy("has_stripped_log_baobab", has(REOBlocks.LOG_BAOBAB_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_BAOBAB.get(), REOBlocks.WOOD_BAOBAB.get(), REOBlocks.PLANKS_BAOBAB.get(), 6).unlockedBy("has_wood_baobab", has(REOBlocks.WOOD_BAOBAB.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_BAOBAB_STRIPPED.get(), REOBlocks.WOOD_BAOBAB_STRIPPED.get(), REOBlocks.PLANKS_BAOBAB.get(), 6)
+                .unlockedBy("has_stripped_wood_baobab", has(REOBlocks.WOOD_BAOBAB_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.PLANKS_BAOBAB.get(), REOBlocks.PLANKS_BAOBAB.get(), REOBlocks.SLAB_BAOBAB.get(), 4).unlockedBy("has_planks_baobab", has(REOBlocks.PLANKS_BAOBAB.get())).save(pWriter);
+
+        // Hill Cherry
+        new SawmillRecipeBuilder(REOBlocks.LOG_HILL_CHERRY.get(), REOBlocks.LOG_HILL_CHERRY.get(), REOBlocks.PLANKS_HILL_CHERRY.get(), 6).unlockedBy("has_log_hill_cherry", has(REOBlocks.LOG_HILL_CHERRY.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.LOG_HILL_CHERRY_STRIPPED.get(), REOBlocks.LOG_HILL_CHERRY_STRIPPED.get(), REOBlocks.PLANKS_HILL_CHERRY.get(), 6)
+                .unlockedBy("has_stripped_log_hill_cherry", has(REOBlocks.LOG_HILL_CHERRY_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_HILL_CHERRY.get(), REOBlocks.WOOD_HILL_CHERRY.get(), REOBlocks.PLANKS_HILL_CHERRY.get(), 6).unlockedBy("has_wood_hill_cherry", has(REOBlocks.WOOD_HILL_CHERRY.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_HILL_CHERRY_STRIPPED.get(), REOBlocks.WOOD_HILL_CHERRY_STRIPPED.get(), REOBlocks.PLANKS_HILL_CHERRY.get(), 6)
+                .unlockedBy("has_stripped_wood_hill_cherry", has(REOBlocks.WOOD_HILL_CHERRY_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.PLANKS_HILL_CHERRY.get(), REOBlocks.PLANKS_HILL_CHERRY.get(), REOBlocks.SLAB_HILL_CHERRY.get(), 4).unlockedBy("has_planks_hill_cherry", has(REOBlocks.PLANKS_HILL_CHERRY.get())).save(pWriter);
+
+        // Chestnut
+        new SawmillRecipeBuilder(REOBlocks.LOG_CHESTNUT.get(), REOBlocks.LOG_CHESTNUT.get(), REOBlocks.PLANKS_CHESTNUT.get(), 6).unlockedBy("has_log_chestnut", has(REOBlocks.LOG_CHESTNUT.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.LOG_CHESTNUT_STRIPPED.get(), REOBlocks.LOG_CHESTNUT_STRIPPED.get(), REOBlocks.PLANKS_CHESTNUT.get(), 6)
+                .unlockedBy("has_stripped_log_chestnut", has(REOBlocks.LOG_CHESTNUT_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_CHESTNUT.get(), REOBlocks.WOOD_CHESTNUT.get(), REOBlocks.PLANKS_CHESTNUT.get(), 6).unlockedBy("has_wood_chestnut", has(REOBlocks.WOOD_CHESTNUT.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_CHESTNUT_STRIPPED.get(), REOBlocks.WOOD_CHESTNUT_STRIPPED.get(), REOBlocks.PLANKS_CHESTNUT.get(), 6)
+                .unlockedBy("has_stripped_wood_chestnut", has(REOBlocks.WOOD_CHESTNUT_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.PLANKS_CHESTNUT.get(), REOBlocks.PLANKS_CHESTNUT.get(), REOBlocks.SLAB_CHESTNUT.get(), 4).unlockedBy("has_planks_chestnut", has(REOBlocks.PLANKS_CHESTNUT.get())).save(pWriter);
+
+        // Citrus
+        new SawmillRecipeBuilder(REOBlocks.LOG_CITRUS.get(), REOBlocks.LOG_CITRUS.get(), REOBlocks.PLANKS_CITRUS.get(), 6).unlockedBy("has_log_citrus", has(REOBlocks.LOG_CITRUS.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.LOG_CITRUS_STRIPPED.get(), REOBlocks.LOG_CITRUS_STRIPPED.get(), REOBlocks.PLANKS_CITRUS.get(), 6)
+                .unlockedBy("has_stripped_log_citrus", has(REOBlocks.LOG_CITRUS_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_CITRUS.get(), REOBlocks.WOOD_CITRUS.get(), REOBlocks.PLANKS_CITRUS.get(), 6).unlockedBy("has_wood_citrus", has(REOBlocks.WOOD_CITRUS.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_CITRUS_STRIPPED.get(), REOBlocks.WOOD_CITRUS_STRIPPED.get(), REOBlocks.PLANKS_CITRUS.get(), 6)
+                .unlockedBy("has_stripped_wood_citrus", has(REOBlocks.WOOD_CITRUS_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.PLANKS_CITRUS.get(), REOBlocks.PLANKS_CITRUS.get(), REOBlocks.SLAB_CITRUS.get(), 4).unlockedBy("has_planks_citrus", has(REOBlocks.PLANKS_CITRUS.get())).save(pWriter);
+
+        // Ebony
+        new SawmillRecipeBuilder(REOBlocks.LOG_EBONY.get(), REOBlocks.LOG_EBONY.get(), REOBlocks.PLANKS_EBONY.get(), 6).unlockedBy("has_log_ebony", has(REOBlocks.LOG_EBONY.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.LOG_EBONY_STRIPPED.get(), REOBlocks.LOG_EBONY_STRIPPED.get(), REOBlocks.PLANKS_EBONY.get(), 6)
+                .unlockedBy("has_stripped_log_ebony", has(REOBlocks.LOG_EBONY_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_EBONY.get(), REOBlocks.WOOD_EBONY.get(), REOBlocks.PLANKS_EBONY.get(), 6).unlockedBy("has_wood_ebony", has(REOBlocks.WOOD_EBONY.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_EBONY_STRIPPED.get(), REOBlocks.WOOD_EBONY_STRIPPED.get(), REOBlocks.PLANKS_EBONY.get(), 6)
+                .unlockedBy("has_stripped_wood_ebony", has(REOBlocks.WOOD_EBONY_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.PLANKS_EBONY.get(), REOBlocks.PLANKS_EBONY.get(), REOBlocks.SLAB_EBONY.get(), 4).unlockedBy("has_planks_ebony", has(REOBlocks.PLANKS_EBONY.get())).save(pWriter);
+
+        // Larch
+        new SawmillRecipeBuilder(REOBlocks.LOG_LARCH.get(), REOBlocks.LOG_LARCH.get(), REOBlocks.PLANKS_LARCH.get(), 6).unlockedBy("has_log_larch", has(REOBlocks.LOG_LARCH.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.LOG_LARCH_STRIPPED.get(), REOBlocks.LOG_LARCH_STRIPPED.get(), REOBlocks.PLANKS_LARCH.get(), 6)
+                .unlockedBy("has_stripped_log_larch", has(REOBlocks.LOG_LARCH_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_LARCH.get(), REOBlocks.WOOD_LARCH.get(), REOBlocks.PLANKS_LARCH.get(), 6).unlockedBy("has_wood_larch", has(REOBlocks.WOOD_LARCH.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_LARCH_STRIPPED.get(), REOBlocks.WOOD_LARCH_STRIPPED.get(), REOBlocks.PLANKS_LARCH.get(), 6)
+                .unlockedBy("has_stripped_wood_larch", has(REOBlocks.WOOD_LARCH_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.PLANKS_LARCH.get(), REOBlocks.PLANKS_LARCH.get(), REOBlocks.SLAB_LARCH.get(), 4).unlockedBy("has_planks_larch", has(REOBlocks.PLANKS_LARCH.get())).save(pWriter);
+
+        // Mahogany
+        new SawmillRecipeBuilder(REOBlocks.LOG_MAHOGANY.get(), REOBlocks.LOG_MAHOGANY.get(), REOBlocks.PLANKS_MAHOGANY.get(), 6).unlockedBy("has_log_mahogany", has(REOBlocks.LOG_MAHOGANY.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.LOG_MAHOGANY_STRIPPED.get(), REOBlocks.LOG_MAHOGANY_STRIPPED.get(), REOBlocks.PLANKS_MAHOGANY.get(), 6)
+                .unlockedBy("has_stripped_log_mahogany", has(REOBlocks.LOG_MAHOGANY_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_MAHOGANY.get(), REOBlocks.WOOD_MAHOGANY.get(), REOBlocks.PLANKS_MAHOGANY.get(), 6).unlockedBy("has_wood_mahogany", has(REOBlocks.WOOD_MAHOGANY.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_MAHOGANY_STRIPPED.get(), REOBlocks.WOOD_MAHOGANY_STRIPPED.get(), REOBlocks.PLANKS_MAHOGANY.get(), 6)
+                .unlockedBy("has_stripped_wood_mahogany", has(REOBlocks.WOOD_MAHOGANY_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.PLANKS_MAHOGANY.get(), REOBlocks.PLANKS_MAHOGANY.get(), REOBlocks.SLAB_MAHOGANY.get(), 4).unlockedBy("has_planks_mahogany", has(REOBlocks.PLANKS_MAHOGANY.get())).save(pWriter);
+
+        // Maple
+        new SawmillRecipeBuilder(REOBlocks.LOG_MAPLE.get(), REOBlocks.LOG_MAPLE.get(), REOBlocks.PLANKS_MAPLE.get(), 6).unlockedBy("has_log_maple", has(REOBlocks.LOG_MAPLE.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.LOG_MAPLE_STRIPPED.get(), REOBlocks.LOG_MAPLE_STRIPPED.get(), REOBlocks.PLANKS_MAPLE.get(), 6)
+                .unlockedBy("has_stripped_log_maple", has(REOBlocks.LOG_MAPLE_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_MAPLE.get(), REOBlocks.WOOD_MAPLE.get(), REOBlocks.PLANKS_MAPLE.get(), 6).unlockedBy("has_wood_maple", has(REOBlocks.WOOD_MAPLE.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_MAPLE_STRIPPED.get(), REOBlocks.WOOD_MAPLE_STRIPPED.get(), REOBlocks.PLANKS_MAPLE.get(), 6)
+                .unlockedBy("has_stripped_wood_maple", has(REOBlocks.WOOD_MAPLE_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.PLANKS_MAPLE.get(), REOBlocks.PLANKS_MAPLE.get(), REOBlocks.SLAB_MAPLE.get(), 4).unlockedBy("has_planks_maple", has(REOBlocks.PLANKS_MAPLE.get())).save(pWriter);
+
+        // Palm
+        new SawmillRecipeBuilder(REOBlocks.LOG_PALM.get(), REOBlocks.LOG_PALM.get(), REOBlocks.PLANKS_PALM.get(), 6).unlockedBy("has_log_palm", has(REOBlocks.LOG_PALM.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.LOG_PALM_STRIPPED.get(), REOBlocks.LOG_PALM_STRIPPED.get(), REOBlocks.PLANKS_PALM.get(), 6)
+                .unlockedBy("has_stripped_log_palm", has(REOBlocks.LOG_PALM_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_PALM.get(), REOBlocks.WOOD_PALM.get(), REOBlocks.PLANKS_PALM.get(), 6).unlockedBy("has_wood_palm", has(REOBlocks.WOOD_PALM.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_PALM_STRIPPED.get(), REOBlocks.WOOD_PALM_STRIPPED.get(), REOBlocks.PLANKS_PALM.get(), 6)
+                .unlockedBy("has_stripped_wood_palm", has(REOBlocks.WOOD_PALM_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.PLANKS_PALM.get(), REOBlocks.PLANKS_PALM.get(), REOBlocks.SLAB_PALM.get(), 4).unlockedBy("has_planks_palm", has(REOBlocks.PLANKS_PALM.get())).save(pWriter);
+
+        // Papaya
+        new SawmillRecipeBuilder(REOBlocks.LOG_PAPAYA.get(), REOBlocks.LOG_PAPAYA.get(), REOBlocks.PLANKS_PAPAYA.get(), 6).unlockedBy("has_log_papaya", has(REOBlocks.LOG_PAPAYA.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.LOG_PAPAYA_STRIPPED.get(), REOBlocks.LOG_PAPAYA_STRIPPED.get(), REOBlocks.PLANKS_PAPAYA.get(), 6)
+                .unlockedBy("has_stripped_log_papaya", has(REOBlocks.LOG_PAPAYA_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_PAPAYA.get(), REOBlocks.WOOD_PAPAYA.get(), REOBlocks.PLANKS_PAPAYA.get(), 6).unlockedBy("has_wood_papaya", has(REOBlocks.WOOD_PAPAYA.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_PAPAYA_STRIPPED.get(), REOBlocks.WOOD_PAPAYA_STRIPPED.get(), REOBlocks.PLANKS_PAPAYA.get(), 6)
+                .unlockedBy("has_stripped_wood_papaya", has(REOBlocks.WOOD_PAPAYA_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.PLANKS_PAPAYA.get(), REOBlocks.PLANKS_PAPAYA.get(), REOBlocks.SLAB_PAPAYA.get(), 4).unlockedBy("has_planks_papaya", has(REOBlocks.PLANKS_PAPAYA.get())).save(pWriter);
+
+        // Pine
+        new SawmillRecipeBuilder(REOBlocks.LOG_PINE.get(), REOBlocks.LOG_PINE.get(), REOBlocks.PLANKS_PINE.get(), 6).unlockedBy("has_log_pine", has(REOBlocks.LOG_PINE.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.LOG_PINE_STRIPPED.get(), REOBlocks.LOG_PINE_STRIPPED.get(), REOBlocks.PLANKS_PINE.get(), 6)
+                .unlockedBy("has_stripped_log_pine", has(REOBlocks.LOG_PINE_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_PINE.get(), REOBlocks.WOOD_PINE.get(), REOBlocks.PLANKS_PINE.get(), 6).unlockedBy("has_wood_pine", has(REOBlocks.WOOD_PINE.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_PINE_STRIPPED.get(), REOBlocks.WOOD_PINE_STRIPPED.get(), REOBlocks.PLANKS_PINE.get(), 6)
+                .unlockedBy("has_stripped_wood_pine", has(REOBlocks.WOOD_PINE_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.PLANKS_PINE.get(), REOBlocks.PLANKS_PINE.get(), REOBlocks.SLAB_PINE.get(), 4).unlockedBy("has_planks_pine", has(REOBlocks.PLANKS_PINE.get())).save(pWriter);
+
+        // Plum
+        new SawmillRecipeBuilder(REOBlocks.LOG_PLUM.get(), REOBlocks.LOG_PLUM.get(), REOBlocks.PLANKS_PLUM.get(), 6).unlockedBy("has_log_plum", has(REOBlocks.LOG_PLUM.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.LOG_PLUM_STRIPPED.get(), REOBlocks.LOG_PLUM_STRIPPED.get(), REOBlocks.PLANKS_PLUM.get(), 6)
+                .unlockedBy("has_stripped_log_plum", has(REOBlocks.LOG_PLUM_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_PLUM.get(), REOBlocks.WOOD_PLUM.get(), REOBlocks.PLANKS_PLUM.get(), 6).unlockedBy("has_wood_plum", has(REOBlocks.WOOD_PLUM.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_PLUM_STRIPPED.get(), REOBlocks.WOOD_PLUM_STRIPPED.get(), REOBlocks.PLANKS_PLUM.get(), 6)
+                .unlockedBy("has_stripped_wood_plum", has(REOBlocks.WOOD_PLUM_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.PLANKS_PLUM.get(), REOBlocks.PLANKS_PLUM.get(), REOBlocks.SLAB_PLUM.get(), 4).unlockedBy("has_planks_plum", has(REOBlocks.PLANKS_PLUM.get())).save(pWriter);
+
+        // Poplar
+        new SawmillRecipeBuilder(REOBlocks.LOG_POPLAR.get(), REOBlocks.LOG_POPLAR.get(), REOBlocks.PLANKS_POPLAR.get(), 6).unlockedBy("has_log_poplar", has(REOBlocks.LOG_POPLAR.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.LOG_POPLAR_STRIPPED.get(), REOBlocks.LOG_POPLAR_STRIPPED.get(), REOBlocks.PLANKS_POPLAR.get(), 6)
+                .unlockedBy("has_stripped_log_poplar", has(REOBlocks.LOG_POPLAR_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_POPLAR.get(), REOBlocks.WOOD_POPLAR.get(), REOBlocks.PLANKS_POPLAR.get(), 6).unlockedBy("has_wood_poplar", has(REOBlocks.WOOD_POPLAR.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_POPLAR_STRIPPED.get(), REOBlocks.WOOD_POPLAR_STRIPPED.get(), REOBlocks.PLANKS_POPLAR.get(), 6)
+                .unlockedBy("has_stripped_wood_poplar", has(REOBlocks.WOOD_POPLAR_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.PLANKS_POPLAR.get(), REOBlocks.PLANKS_POPLAR.get(), REOBlocks.SLAB_POPLAR.get(), 4).unlockedBy("has_planks_poplar", has(REOBlocks.PLANKS_POPLAR.get())).save(pWriter);
+
+        // Redwood
+        new SawmillRecipeBuilder(REOBlocks.LOG_REDWOOD.get(), REOBlocks.LOG_REDWOOD.get(), REOBlocks.PLANKS_REDWOOD.get(), 6).unlockedBy("has_log_redwood", has(REOBlocks.LOG_REDWOOD.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.LOG_REDWOOD_STRIPPED.get(), REOBlocks.LOG_REDWOOD_STRIPPED.get(), REOBlocks.PLANKS_REDWOOD.get(), 6)
+                .unlockedBy("has_stripped_log_redwood", has(REOBlocks.LOG_REDWOOD_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_REDWOOD.get(), REOBlocks.WOOD_REDWOOD.get(), REOBlocks.PLANKS_REDWOOD.get(), 6).unlockedBy("has_wood_redwood", has(REOBlocks.WOOD_REDWOOD.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_REDWOOD_STRIPPED.get(), REOBlocks.WOOD_REDWOOD_STRIPPED.get(), REOBlocks.PLANKS_REDWOOD.get(), 6)
+                .unlockedBy("has_stripped_wood_redwood", has(REOBlocks.WOOD_REDWOOD_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.PLANKS_REDWOOD.get(), REOBlocks.PLANKS_REDWOOD.get(), REOBlocks.SLAB_REDWOOD.get(), 4).unlockedBy("has_planks_redwood", has(REOBlocks.PLANKS_REDWOOD.get())).save(pWriter);
+
+        // Rubber
+        new SawmillRecipeBuilder(REOBlocks.LOG_RUBBER.get(), REOBlocks.LOG_RUBBER.get(), REOBlocks.PLANKS_RUBBER.get(), 6).unlockedBy("has_log_rubber", has(REOBlocks.LOG_RUBBER.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.LOG_RUBBER_STRIPPED.get(), REOBlocks.LOG_RUBBER_STRIPPED.get(), REOBlocks.PLANKS_RUBBER.get(), 6)
+                .unlockedBy("has_stripped_log_rubber", has(REOBlocks.LOG_RUBBER_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_RUBBER.get(), REOBlocks.WOOD_RUBBER.get(), REOBlocks.PLANKS_RUBBER.get(), 6).unlockedBy("has_wood_rubber", has(REOBlocks.WOOD_RUBBER.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_RUBBER_STRIPPED.get(), REOBlocks.WOOD_RUBBER_STRIPPED.get(), REOBlocks.PLANKS_RUBBER.get(), 6)
+                .unlockedBy("has_stripped_wood_rubber", has(REOBlocks.WOOD_RUBBER_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.PLANKS_RUBBER.get(), REOBlocks.PLANKS_RUBBER.get(), REOBlocks.SLAB_RUBBER.get(), 4).unlockedBy("has_planks_rubber", has(REOBlocks.PLANKS_RUBBER.get())).save(pWriter);
+
+        // Teak
+        new SawmillRecipeBuilder(REOBlocks.LOG_TEAK.get(), REOBlocks.LOG_TEAK.get(), REOBlocks.PLANKS_TEAK.get(), 6).unlockedBy("has_log_teak", has(REOBlocks.LOG_TEAK.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.LOG_TEAK_STRIPPED.get(), REOBlocks.LOG_TEAK_STRIPPED.get(), REOBlocks.PLANKS_TEAK.get(), 6)
+                .unlockedBy("has_stripped_log_teak", has(REOBlocks.LOG_TEAK_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_TEAK.get(), REOBlocks.WOOD_TEAK.get(), REOBlocks.PLANKS_TEAK.get(), 6).unlockedBy("has_wood_teak", has(REOBlocks.WOOD_TEAK.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_TEAK_STRIPPED.get(), REOBlocks.WOOD_TEAK_STRIPPED.get(), REOBlocks.PLANKS_TEAK.get(), 6)
+                .unlockedBy("has_stripped_wood_teak", has(REOBlocks.WOOD_TEAK_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.PLANKS_TEAK.get(), REOBlocks.PLANKS_TEAK.get(), REOBlocks.SLAB_TEAK.get(), 4).unlockedBy("has_planks_teak", has(REOBlocks.PLANKS_TEAK.get())).save(pWriter);
+
+        // Walnut
+        new SawmillRecipeBuilder(REOBlocks.LOG_WALNUT.get(), REOBlocks.LOG_WALNUT.get(), REOBlocks.PLANKS_WALNUT.get(), 6).unlockedBy("has_log_walnut", has(REOBlocks.LOG_WALNUT.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.LOG_WALNUT_STRIPPED.get(), REOBlocks.LOG_WALNUT_STRIPPED.get(), REOBlocks.PLANKS_WALNUT.get(), 6)
+                .unlockedBy("has_stripped_log_walnut", has(REOBlocks.LOG_WALNUT_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_WALNUT.get(), REOBlocks.WOOD_WALNUT.get(), REOBlocks.PLANKS_WALNUT.get(), 6).unlockedBy("has_wood_walnut", has(REOBlocks.WOOD_WALNUT.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_WALNUT_STRIPPED.get(), REOBlocks.WOOD_WALNUT_STRIPPED.get(), REOBlocks.PLANKS_WALNUT.get(), 6)
+                .unlockedBy("has_stripped_wood_walnut", has(REOBlocks.WOOD_WALNUT_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.PLANKS_WALNUT.get(), REOBlocks.PLANKS_WALNUT.get(), REOBlocks.SLAB_WALNUT.get(), 4).unlockedBy("has_planks_walnut", has(REOBlocks.PLANKS_WALNUT.get())).save(pWriter);
+
+        // Willow
+        new SawmillRecipeBuilder(REOBlocks.LOG_WILLOW.get(), REOBlocks.LOG_WILLOW.get(), REOBlocks.PLANKS_WILLOW.get(), 6).unlockedBy("has_log_willow", has(REOBlocks.LOG_WILLOW.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.LOG_WILLOW_STRIPPED.get(), REOBlocks.LOG_WILLOW_STRIPPED.get(), REOBlocks.PLANKS_WILLOW.get(), 6)
+                .unlockedBy("has_stripped_log_willow", has(REOBlocks.LOG_WILLOW_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_WILLOW.get(), REOBlocks.WOOD_WILLOW.get(), REOBlocks.PLANKS_WILLOW.get(), 6).unlockedBy("has_wood_willow", has(REOBlocks.WOOD_WILLOW.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.WOOD_WILLOW_STRIPPED.get(), REOBlocks.WOOD_WILLOW_STRIPPED.get(), REOBlocks.PLANKS_WILLOW.get(), 6)
+                .unlockedBy("has_stripped_wood_willow", has(REOBlocks.WOOD_WILLOW_STRIPPED.get())).save(pWriter);
+        new SawmillRecipeBuilder(REOBlocks.PLANKS_WILLOW.get(), REOBlocks.PLANKS_WILLOW.get(), REOBlocks.SLAB_WILLOW.get(), 4).unlockedBy("has_planks_willow", has(REOBlocks.PLANKS_WILLOW.get())).save(pWriter);
+
+
         // Blocks //
         // Storage
         nineBlockStorageRecipes(pWriter, RecipeCategory.BUILDING_BLOCKS, REOItems.INGOT_ALUMINIUM.get(), RecipeCategory.MISC,

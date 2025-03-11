@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dust_silver": {
+    "has_ingot_silver": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:dust_silver"
+              "realearthores:ingot_silver"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_dust_silver",
+      "has_ingot_silver",
       "has_the_recipe"
     ]
   ],

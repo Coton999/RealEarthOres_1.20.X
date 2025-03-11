@@ -1,10 +1,6 @@
 package net.coton999.realearthores.block;
 
 import net.coton999.realearthores.RealEarthOres;
-import net.coton999.realearthores.block.custom.machines.SawmillBlock;
-import net.coton999.realearthores.block.custom.misc.GravelOreBlock;
-import net.coton999.realearthores.block.custom.misc.LampBlock;
-import net.coton999.realearthores.block.custom.wood.REOSaplingBlock;
 import net.coton999.realearthores.block.custom.bush.BlackberryBlock;
 import net.coton999.realearthores.block.custom.bush.BlueberryBlock;
 import net.coton999.realearthores.block.custom.bush.RaspberryBlock;
@@ -13,14 +9,17 @@ import net.coton999.realearthores.block.custom.cluster.BuddingRubyBlock;
 import net.coton999.realearthores.block.custom.cluster.BuddingSapphireBlock;
 import net.coton999.realearthores.block.custom.cluster.ClusterBlock;
 import net.coton999.realearthores.block.custom.crop.food.*;
-import net.coton999.realearthores.block.custom.wood.*;
 import net.coton999.realearthores.block.custom.fruit.*;
 import net.coton999.realearthores.block.custom.machines.AlloyFurnaceBlock;
 import net.coton999.realearthores.block.custom.machines.CrusherBlock;
+import net.coton999.realearthores.block.custom.machines.SawmillBlock;
+import net.coton999.realearthores.block.custom.misc.GravelOreBlock;
+import net.coton999.realearthores.block.custom.misc.LampBlock;
 import net.coton999.realearthores.block.custom.sign.REOHangingSignBlock;
 import net.coton999.realearthores.block.custom.sign.REOStandingSignBlock;
 import net.coton999.realearthores.block.custom.sign.REOWallHangingSignBlock;
 import net.coton999.realearthores.block.custom.sign.REOWallSignBlock;
+import net.coton999.realearthores.block.custom.wood.*;
 import net.coton999.realearthores.fluid.REOFluids;
 import net.coton999.realearthores.item.REOItems;
 import net.coton999.realearthores.util.REOWoodTypes;
@@ -481,67 +480,67 @@ public class REOBlocks {
     // Lamp
     public static final RegistryObject<Block> LAMP_BLACK = registerBlock("lamp_black",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
-                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 0 : 15)
+                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
     public static final RegistryObject<Block> LAMP_RED = registerBlock("lamp_red",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
-                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 0 : 15)
+                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
     public static final RegistryObject<Block> LAMP_GREEN = registerBlock("lamp_green",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
-                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 0 : 15)
+                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
     public static final RegistryObject<Block> LAMP_BROWN = registerBlock("lamp_brown",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
-                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 0 : 15)
+                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
     public static final RegistryObject<Block> LAMP_PURPLE = registerBlock("lamp_purple",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
-                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 0 : 15)
+                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
     public static final RegistryObject<Block> LAMP_CYAN = registerBlock("lamp_cyan",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
-                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 0 : 15)
+                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
     public static final RegistryObject<Block> LAMP_LIGHTGRAY = registerBlock("lamp_lightgray",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
-                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 0 : 15)
+                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
     public static final RegistryObject<Block> LAMP_GRAY = registerBlock("lamp_gray",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
-                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 0 : 15)
+                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
     public static final RegistryObject<Block> LAMP_PINK = registerBlock("lamp_pink",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
-                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 0 : 15)
+                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
     public static final RegistryObject<Block> LAMP_LIME = registerBlock("lamp_lime",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
-                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 0 : 15)
+                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
     public static final RegistryObject<Block> LAMP_YELLOW = registerBlock("lamp_yellow",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
-                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 0 : 15)
+                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
     public static final RegistryObject<Block> LAMP_BLUE = registerBlock("lamp_blue",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
-                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 0 : 15)
+                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
     public static final RegistryObject<Block> LAMP_LIGHTBLUE = registerBlock("lamp_lightblue",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
-                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 0 : 15)
+                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
     public static final RegistryObject<Block> LAMP_MAGENTA = registerBlock("lamp_magenta",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
-                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 0 : 15)
+                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
     public static final RegistryObject<Block> LAMP_ORANGE = registerBlock("lamp_orange",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
-                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 0 : 15)
+                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
     public static final RegistryObject<Block> LAMP_WHITE = registerBlock("lamp_white",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
-                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 0 : 15)
+                    .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
 
     // Crops //
@@ -2250,13 +2249,16 @@ public class REOBlocks {
     // Tech//
     // Machines
     public static final RegistryObject<Block> CRUSHER = registerBlock("crusher",
-            () -> new CrusherBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()));
+            () -> new CrusherBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .lightLevel((state) -> state.getValue(CrusherBlock.LIT) ? 13 : 0).noOcclusion()));
 
     public static final RegistryObject<Block> SAWMILL = registerBlock("sawmill",
-            () -> new SawmillBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()));
+            () -> new SawmillBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .lightLevel((state) -> state.getValue(SawmillBlock.LIT) ? 13 : 0).noOcclusion()));
 
     public static final RegistryObject<Block> ALLOY_FURNACE = registerBlock("alloy_furnace",
-            () -> new AlloyFurnaceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()));
+            () -> new AlloyFurnaceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .lightLevel((state) -> state.getValue(AlloyFurnaceBlock.LIT) ? 13 : 0).noOcclusion()));
 
 
 

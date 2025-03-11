@@ -34,7 +34,7 @@ public class REOTags {
             public static final TagKey<Block> TEAK_LOGS = tag("teak_logs");
             public static final TagKey<Block> WALNUT_LOGS = tag("walnut_logs");
             public static final TagKey<Block> WILLOW_LOGS = tag("willow_logs");
-            public static final TagKey<Block> VANILLA_RESISTANT_LOGS = tag("vanilla_restistant_logs");
+            public static final TagKey<Block> VANILLA_RESISTANT_LOGS = tag("vanilla_resistant_logs");
 
 
         private static TagKey<Block> tag(String name) {
@@ -65,7 +65,7 @@ public class REOTags {
         public static final TagKey<Item> TEAK_LOGS = tag("teak_logs");
         public static final TagKey<Item> WALNUT_LOGS = tag("walnut_logs");
         public static final TagKey<Item> WILLOW_LOGS = tag("willow_logs");
-        public static final TagKey<Item> VANILLA_RESISTANT_LOGS = tag("vanilla_restistant_logs");
+        public static final TagKey<Item> VANILLA_RESISTANT_LOGS = tag("vanilla_resistant_logs");
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(RealEarthOres.MOD_ID, name));

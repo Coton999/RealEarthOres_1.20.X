@@ -1,8 +1,12 @@
 package net.coton999.realearthores.block.entity.machines;
 
+import net.coton999.realearthores.block.custom.machines.CrusherBlock;
 import net.coton999.realearthores.block.entity.REOBlockEntities;
 import net.coton999.realearthores.recipe.CrusherRecipe;
 import net.coton999.realearthores.screen.machines.CrusherMenu;
+import net.coton999.realearthores.util.InventoryDirectionEntry;
+import net.coton999.realearthores.util.InventoryDirectionWrapper;
+import net.coton999.realearthores.util.WrappedHandler;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -28,6 +32,7 @@ import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Map;
 import java.util.Optional;
 
 public class CrusherBlockEntity extends BlockEntity implements MenuProvider {
@@ -49,11 +54,19 @@ public class CrusherBlockEntity extends BlockEntity implements MenuProvider {
         }
     };
 
-    private static final int FUEL_INPUT_SLOT = 0;
+    private static final int FUEL_SLOT = 0;
     private static final int INPUT_SLOT = 1;
     private static final int OUTPUT_SLOT = 2;
 
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
+    private final Map<Direction, LazyOptional<WrappedHandler>> directionWrappedHandlerMap =
+            new InventoryDirectionWrapper(itemHandler,
+                    new InventoryDirectionEntry(Direction.DOWN, OUTPUT_SLOT, false),
+                    new InventoryDirectionEntry(Direction.NORTH, INPUT_SLOT, true),
+                    new InventoryDirectionEntry(Direction.SOUTH, OUTPUT_SLOT, false),
+                    new InventoryDirectionEntry(Direction.EAST, OUTPUT_SLOT, false),
+                    new InventoryDirectionEntry(Direction.WEST, INPUT_SLOT, true),
+                    new InventoryDirectionEntry(Direction.UP, INPUT_SLOT, true)).directionsMap;
 
     protected final ContainerData data;
     private int progress = 0;
@@ -85,7 +98,6 @@ public class CrusherBlockEntity extends BlockEntity implements MenuProvider {
             }
         };
     }
-
     public void drops() {
         SimpleContainer inventory = new SimpleContainer(itemHandler.getSlots());
         for (int i = 0; i < itemHandler.getSlots(); i++) {
@@ -108,7 +120,24 @@ public class CrusherBlockEntity extends BlockEntity implements MenuProvider {
     @Override
     public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @Nullable Direction side) {
         if(cap == ForgeCapabilities.ITEM_HANDLER) {
-            return lazyItemHandler.cast();
+            if(side == null) {
+                return lazyItemHandler.cast();
+            }
+
+            if(directionWrappedHandlerMap.containsKey(side)) {
+                Direction localDir = this.getBlockState().getValue(CrusherBlock.FACING);
+
+                if(side == Direction.DOWN ||side == Direction.UP) {
+                    return directionWrappedHandlerMap.get(side).cast();
+                }
+
+                return switch (localDir) {
+                    default -> directionWrappedHandlerMap.get(side.getOpposite()).cast();
+                    case EAST -> directionWrappedHandlerMap.get(side.getClockWise()).cast();
+                    case SOUTH -> directionWrappedHandlerMap.get(side).cast();
+                    case WEST -> directionWrappedHandlerMap.get(side.getCounterClockWise()).cast();
+                };
+            }
         }
 
         return super.getCapability(cap, side);
@@ -143,15 +172,19 @@ public class CrusherBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     public void tick(Level level, BlockPos pPos, BlockState pState) {
+
         if (isOutputSlotEmptyOrReceivable() && hasRecipe()) {
+            level.setBlock(pPos, pState.setValue(CrusherBlock.LIT, Boolean.TRUE), 3);
             increaseCraftingProcess();
             setChanged(level, pPos, pState);
 
             if (hasProgressFinished()) {
+                level.setBlock(pPos, pState.setValue(CrusherBlock.LIT, Boolean.FALSE), 3);
                 craftItem();
                 resetProgress();
             }
         } else {
+            level.setBlock(pPos, pState.setValue(CrusherBlock.LIT, Boolean.FALSE), 3);
             resetProgress();
         }
     }

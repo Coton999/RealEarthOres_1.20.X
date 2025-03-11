@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ingot_aluminium": {
+    "has_nether_diamond": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:diamond"
+              "realearthores:nether_diamond"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_ingot_aluminium",
+      "has_nether_diamond",
       "has_the_recipe"
     ]
   ],

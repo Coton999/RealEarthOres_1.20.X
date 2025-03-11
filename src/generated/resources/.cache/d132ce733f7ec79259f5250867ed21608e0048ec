@@ -1,8 +1,8 @@
-// 1.20.1	2025-02-13T13:41:56.1572546	Tags for minecraft:item mod id realearthores
+// 1.20.1	2025-03-08T09:11:38.5729845	Tags for minecraft:item mod id realearthores
 950a425555d7f5dff49e3eccf41d48fc359a0cf5 data/minecraft/tags/items/fences.json
 e8cd55e080f134d085f347a92d0347e01f016deb data/minecraft/tags/items/fence_gates.json
 5fc6e5b27cafb9447a9a71577036969f0aaf4e78 data/minecraft/tags/items/leaves.json
-3872cf18a0d974cb10d1b763526e3511d74d6069 data/minecraft/tags/items/logs.json
+0fe3190f4bd93357773fa0a06947459add643697 data/minecraft/tags/items/logs.json
 b0a972327121e705395495535011660f18f2a3ef data/minecraft/tags/items/logs_that_burn.json
 2567da2f0ca7f09d4ced0565155462fb06f0279f data/minecraft/tags/items/planks.json
 754695df62b94a3f932a80b0e2fcc1753f29e3bf data/minecraft/tags/items/saplings.json
@@ -31,6 +31,6 @@ bde03a3ff352f0ad677c5b2902cde7492c227662 data/realearthores/tags/items/pine_logs
 601451fc359ffa681722d220427fcb7dde356b95 data/realearthores/tags/items/redwood_logs.json
 e131aa73bbaa3a80dbe2bc7a30ecc34871daa3fa data/realearthores/tags/items/rubber_logs.json
 4070f3bbadc32e75cdfe87790db2f5358c90d8d9 data/realearthores/tags/items/teak_logs.json
-9aa185b0a47d87cd7609cabe7c3dac33c2062b1c data/realearthores/tags/items/vanilla_restistant_logs.json
+9aa185b0a47d87cd7609cabe7c3dac33c2062b1c data/realearthores/tags/items/vanilla_resistant_logs.json
 59022d7fc1192554940bac2be6024745c1b8beca data/realearthores/tags/items/walnut_logs.json
 5ad08c73480b1ffe5bc180f86ecff4fdfc33a87d data/realearthores/tags/items/willow_logs.json

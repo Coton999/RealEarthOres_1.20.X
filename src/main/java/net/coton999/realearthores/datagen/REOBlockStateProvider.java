@@ -1957,7 +1957,7 @@ public class REOBlockStateProvider extends BlockStateProvider {
 
     private BlockModelBuilder lampBlock (Block block, boolean clicked) {
         String texture = ForgeRegistries.BLOCKS.getKey(block).getPath();
-        String litKey = clicked ? "" : "_on";
+        String litKey = clicked ? "_on" : "";
         String modelName = texture + litKey;
         return models().cubeAll(modelName, modLoc("block/lamp/" + texture + litKey));
     }
