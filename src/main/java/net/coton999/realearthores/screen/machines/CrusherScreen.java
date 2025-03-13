@@ -2,6 +2,7 @@ package net.coton999.realearthores.screen.machines;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.coton999.realearthores.RealEarthOres;
+import net.coton999.realearthores.menu.machines.CrusherMenu;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.renderer.GameRenderer;
@@ -11,7 +12,7 @@ import net.minecraft.world.entity.player.Inventory;
 
 public class CrusherScreen extends AbstractContainerScreen<CrusherMenu> {
     private static final ResourceLocation TEXTURE =
-            new ResourceLocation(RealEarthOres.MOD_ID,"textures/gui/container/machine/coal/crusher.png");
+            new ResourceLocation(RealEarthOres.MOD_ID,"textures/gui/container/machine/coal/machine.png");
 
     public CrusherScreen(CrusherMenu pMenu, Inventory pPlayerInventory, Component pTitle) {
         super(pMenu, pPlayerInventory, pTitle);

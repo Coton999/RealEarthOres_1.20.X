@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ingot_zinc": {
+    "has_dust_zinc": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:ingot_zinc"
+              "realearthores:dust_zinc"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_ingot_zinc",
+      "has_dust_zinc",
       "has_the_recipe"
     ]
   ],

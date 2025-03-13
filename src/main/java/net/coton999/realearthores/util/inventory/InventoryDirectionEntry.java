@@ -1,4 +1,4 @@
-package net.coton999.realearthores.util;
+package net.coton999.realearthores.util.inventory;
 
 import net.minecraft.core.Direction;
 

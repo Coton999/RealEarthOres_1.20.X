@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_gravel_ore_coal": {
+    "has_coal": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:gravel_ore_coal"
+              "minecraft:coal"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_gravel_ore_coal",
+      "has_coal",
       "has_the_recipe"
     ]
   ],

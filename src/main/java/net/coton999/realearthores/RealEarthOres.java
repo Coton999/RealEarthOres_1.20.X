@@ -12,10 +12,8 @@ import net.coton999.realearthores.item.REOCreativeModeTabs;
 import net.coton999.realearthores.item.REOItemProperties;
 import net.coton999.realearthores.item.REOItems;
 import net.coton999.realearthores.recipe.REORecipes;
-import net.coton999.realearthores.screen.REOMenuTypes;
-import net.coton999.realearthores.screen.machines.AlloyFurnaceScreen;
-import net.coton999.realearthores.screen.machines.CrusherScreen;
-import net.coton999.realearthores.screen.machines.SawmillScreen;
+import net.coton999.realearthores.menu.REOMenuTypes;
+import net.coton999.realearthores.screen.machines.*;
 import net.coton999.realearthores.util.REOWoodTypes;
 import net.coton999.realearthores.worldgen.tree.REOFoliagePlacers;
 import net.coton999.realearthores.worldgen.tree.REOTrunkPlacers;
@@ -143,6 +141,8 @@ public class RealEarthOres {
             ComposterBlock.COMPOSTABLES.put(REOItems.SEED_BARLEY.get(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(REOItems.SEED_CAULIFLOWER.get(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(REOItems.SEED_COTTON.get(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.SEED_RICE.get(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.SEED_STRAWBERRY.get(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(REOItems.SEED_TOMATO.get(), 0.3F);
 
             // Crops
@@ -150,21 +150,31 @@ public class RealEarthOres {
             ComposterBlock.COMPOSTABLES.put(REOItems.PLANT_RICE.get(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(REOItems.PLANT_COTTON.get(), 0.65F);
 
-            // Food
-            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_BLACKBERRY.get(), 0.65F);
-            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_BLUEBERRY.get(), 0.65F);
-            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_CAULIFLOWER.get(), 0.65F);
+            // Food //
+            // Fruit
+            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_CHERRY.get(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_CHESTNUT.get(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_DATES.get(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_LEMON.get(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_LIME.get(), 0.65F);
-            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_ONION.get(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_PAPAYA.get(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_PEACH.get(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_PEAR.get(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_PLUM.get(), 0.65F);
-            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_RASPBERRY.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_WALNUT.get(), 0.65F);
+
+            // Veg
+            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_CAULIFLOWER.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_ONION.get(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_RICE.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_TOMATO.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_TOMATO_ROTTEN.get(), 0.65F);
+
+            // Berries
+            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_BLACKBERRY.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_BLUEBERRY.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_RASPBERRY.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_STRAWBERRY.get(), 0.65F);
 
         });
 
@@ -206,9 +216,16 @@ public class RealEarthOres {
             EntityRenderers.register(REOEntities.MOD_BOAT.get(), pContext -> new REOBoatRenderer(pContext, false));
             EntityRenderers.register(REOEntities.MOD_CHEST_BOAT.get(), pContext -> new REOBoatRenderer(pContext, true));
 
+            MenuScreens.register(REOMenuTypes.KILN_MENU.get(), KilnScreen::new);
             MenuScreens.register(REOMenuTypes.CRUSHER_MENU.get(), CrusherScreen::new);
-            MenuScreens.register(REOMenuTypes.SAWMILL_MENU.get(), SawmillScreen::new);
+            MenuScreens.register(REOMenuTypes.PURIFIER_MENU.get(), PurifierScreen::new);
             MenuScreens.register(REOMenuTypes.ALLOY_FURNACE_MENU.get(), AlloyFurnaceScreen::new);
+            MenuScreens.register(REOMenuTypes.SAWMILL_MENU.get(), SawmillScreen::new);
+            MenuScreens.register(REOMenuTypes.EXTRACTOR_MENU.get(), ExtractorScreen::new);
+            MenuScreens.register(REOMenuTypes.COMPRESSOR_MENU.get(), CompressorScreen::new);
+            MenuScreens.register(REOMenuTypes.CENTRIFUGE_MENU.get(), CentrifugeScreen::new);
+            MenuScreens.register(REOMenuTypes.INDUCTION_FURNACE_MENU.get(), InductionFurnaceScreen::new);
+            MenuScreens.register(REOMenuTypes.TRANSFUSER_MENU.get(), TransfuserScreen::new);
 
         }
     }

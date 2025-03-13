@@ -1416,9 +1416,16 @@ public class REOBlockLootTables extends BlockLootSubProvider {
 
         // Tech //
         // Machines
+        this.dropSelf(REOBlocks.KILN.get());
         this.dropSelf(REOBlocks.CRUSHER.get());
-        this.dropSelf(REOBlocks.SAWMILL.get());
+        this.dropSelf(REOBlocks.PURIFIER.get());
         this.dropSelf(REOBlocks.ALLOY_FURNACE.get());
+        this.dropSelf(REOBlocks.SAWMILL.get());
+        this.dropSelf(REOBlocks.EXTRACTOR.get());
+        this.dropSelf(REOBlocks.COMPRESSOR.get());
+        this.dropSelf(REOBlocks.CENTRIFUGE.get());
+        this.dropSelf(REOBlocks.INDUCTION_FURNACE.get());
+        this.dropSelf(REOBlocks.TRANSFUSER.get());
 
 
     }

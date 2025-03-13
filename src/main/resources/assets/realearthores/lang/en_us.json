@@ -1,5 +1,10 @@
 {
-  "creativemodetab.realearthores_tab": "Real Earth Ores",
+  "tabs.realearthores_items": "Real Earth Ores Items",
+  "tabs.realearthores_blocks": "Real Earth Ores Blocks",
+  "tabs.realearthores_tools": "Real Earth Ores Tools & Armor",
+  "tabs.realearthores_food": "Real Earth Ores Food & Drinks",
+  "tabs.realearthores_machines": "Real Earth Ores Machines",
+  "tabs.realearthores_transportation": "Real Earth Ores Transportation",
 
   "item.realearthores.raw_aluminium": "Raw Alumina",
   "item.realearthores.raw_enderite": "Raw Enderite",
@@ -1330,9 +1335,15 @@
   "block.realearthores.wild_rice": "Wild Rice",
   "block.realearthores.wild_tomato": "Wild Tomatoes",
 
+  "block.realearthores.kiln": "Kiln",
   "block.realearthores.crusher": "Crusher",
-  "block.realearthores.sawmill": "Sawmill",
   "block.realearthores.alloy_furnace": "Alloy Furnace",
+  "block.realearthores.sawmill": "Sawmill",
+  "block.realearthores.extractor": "Extractor",
+  "block.realearthores.compressor": "Compressor",
+  "block.realearthores.centrifuge": "Centrifuge",
+  "block.realearthores.induction_furnace": "Induction Furnace",
+  "block.realearthores.transfuser": "Transfuser",
 
   "fluid_type.realearthores.molten_aluminium_fluid": "Molten Aluminium",
   "fluid_type.realearthores.molten_amethyst_fluid": "Molten Amethyst",

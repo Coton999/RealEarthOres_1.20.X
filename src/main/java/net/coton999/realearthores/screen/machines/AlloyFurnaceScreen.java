@@ -2,6 +2,7 @@ package net.coton999.realearthores.screen.machines;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.coton999.realearthores.RealEarthOres;
+import net.coton999.realearthores.menu.machines.AlloyFurnaceMenu;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.renderer.GameRenderer;
@@ -21,6 +22,8 @@ public class AlloyFurnaceScreen extends AbstractContainerScreen<AlloyFurnaceMenu
     protected void init() {
         super.init();
         this.inventoryLabelY = 72;
+        this.titleLabelX = 52;
+        this.titleLabelY = 5;
     }
 
     @Override

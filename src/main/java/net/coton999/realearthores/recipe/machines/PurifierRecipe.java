@@ -1,4 +1,4 @@
-package net.coton999.realearthores.recipe;
+package net.coton999.realearthores.recipe.machines;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
@@ -13,13 +13,13 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
 
-public class SawmillRecipe implements Recipe<SimpleContainer> {
+public class PurifierRecipe implements Recipe<SimpleContainer> {
 
     private final NonNullList<Ingredient> inputItems;
     private final ItemStack output;
     private final ResourceLocation id;
 
-    public SawmillRecipe(ResourceLocation id, ItemStack output, NonNullList<Ingredient> inputItems) {
+    public PurifierRecipe(ResourceLocation id, ItemStack output, NonNullList<Ingredient> inputItems) {
         this.inputItems = inputItems;
         this.output = output;
         this.id = id;
@@ -69,19 +69,19 @@ public class SawmillRecipe implements Recipe<SimpleContainer> {
         return Type.INSTANCE;
     }
 
-    public static class Type implements RecipeType<SawmillRecipe> {
+    public static class Type implements RecipeType<PurifierRecipe> {
         private Type() { }
         public static final Type INSTANCE = new Type();
-        public static final String ID = "milling";
+        public static final String ID = "purifying";
     }
 
-    public static class Serializer implements RecipeSerializer<SawmillRecipe> {
+    public static class Serializer implements RecipeSerializer<PurifierRecipe> {
         public static final Serializer INSTANCE = new Serializer();
         public static final ResourceLocation ID =
-                new ResourceLocation(RealEarthOres.MOD_ID,"milling");
+                new ResourceLocation(RealEarthOres.MOD_ID,"purifying");
 
         @Override
-        public SawmillRecipe fromJson(ResourceLocation id, JsonObject json) {
+        public PurifierRecipe fromJson(ResourceLocation id, JsonObject json) {
             ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(json, "result"));
 
             JsonArray ingredients = GsonHelper.getAsJsonArray(json, "ingredients");
@@ -91,11 +91,11 @@ public class SawmillRecipe implements Recipe<SimpleContainer> {
                 inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
             }
 
-            return new SawmillRecipe(id, output, inputs);
+            return new PurifierRecipe(id, output, inputs);
         }
 
         @Override
-        public SawmillRecipe fromNetwork(ResourceLocation id, FriendlyByteBuf buf) {
+        public PurifierRecipe fromNetwork(ResourceLocation id, FriendlyByteBuf buf) {
             NonNullList<Ingredient> inputs = NonNullList.withSize(buf.readInt(), Ingredient.EMPTY);
 
             for (int i = 0; i < inputs.size(); i++) {
@@ -103,11 +103,11 @@ public class SawmillRecipe implements Recipe<SimpleContainer> {
             }
 
             ItemStack output = buf.readItem();
-            return new SawmillRecipe(id, output, inputs);
+            return new PurifierRecipe(id, output, inputs);
         }
 
         @Override
-        public void toNetwork(FriendlyByteBuf buf, SawmillRecipe recipe) {
+        public void toNetwork(FriendlyByteBuf buf, PurifierRecipe recipe) {
             buf.writeInt(recipe.getIngredients().size());
 
             for (Ingredient ing : recipe.getIngredients()) {

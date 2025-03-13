@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_nether_emerald": {
+    "has_ingot_aluminium": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:nether_emerald"
+              "minecraft:emerald"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_nether_emerald",
+      "has_ingot_aluminium",
       "has_the_recipe"
     ]
   ],

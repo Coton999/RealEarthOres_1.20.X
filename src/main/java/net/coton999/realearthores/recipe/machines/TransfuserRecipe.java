@@ -1,4 +1,4 @@
-package net.coton999.realearthores.recipe;
+package net.coton999.realearthores.recipe.machines;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
@@ -13,13 +13,13 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
 
-public class CrusherRecipe implements Recipe<SimpleContainer> {
+public class TransfuserRecipe implements Recipe<SimpleContainer> {
 
     private final NonNullList<Ingredient> inputItems;
     private final ItemStack output;
     private final ResourceLocation id;
 
-    public CrusherRecipe(ResourceLocation id, ItemStack output, NonNullList<Ingredient> inputItems) {
+    public TransfuserRecipe(ResourceLocation id, ItemStack output, NonNullList<Ingredient> inputItems) {
         this.inputItems = inputItems;
         this.output = output;
         this.id = id;
@@ -69,19 +69,19 @@ public class CrusherRecipe implements Recipe<SimpleContainer> {
         return Type.INSTANCE;
     }
 
-    public static class Type implements RecipeType<CrusherRecipe> {
+    public static class Type implements RecipeType<TransfuserRecipe> {
         private Type() { }
         public static final Type INSTANCE = new Type();
-        public static final String ID = "crushing";
+        public static final String ID = "transfusing";
     }
 
-    public static class Serializer implements RecipeSerializer<CrusherRecipe> {
+    public static class Serializer implements RecipeSerializer<TransfuserRecipe> {
         public static final Serializer INSTANCE = new Serializer();
         public static final ResourceLocation ID =
-                new ResourceLocation(RealEarthOres.MOD_ID,"crushing");
+                new ResourceLocation(RealEarthOres.MOD_ID,"transfusing");
 
         @Override
-        public CrusherRecipe fromJson(ResourceLocation id, JsonObject json) {
+        public TransfuserRecipe fromJson(ResourceLocation id, JsonObject json) {
             ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(json, "result"));
 
             JsonArray ingredients = GsonHelper.getAsJsonArray(json, "ingredients");
@@ -91,11 +91,11 @@ public class CrusherRecipe implements Recipe<SimpleContainer> {
                 inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
             }
 
-            return new CrusherRecipe(id, output, inputs);
+            return new TransfuserRecipe(id, output, inputs);
         }
 
         @Override
-        public CrusherRecipe fromNetwork(ResourceLocation id, FriendlyByteBuf buf) {
+        public TransfuserRecipe fromNetwork(ResourceLocation id, FriendlyByteBuf buf) {
             NonNullList<Ingredient> inputs = NonNullList.withSize(buf.readInt(), Ingredient.EMPTY);
 
             for (int i = 0; i < inputs.size(); i++) {
@@ -103,11 +103,11 @@ public class CrusherRecipe implements Recipe<SimpleContainer> {
             }
 
             ItemStack output = buf.readItem();
-            return new CrusherRecipe(id, output, inputs);
+            return new TransfuserRecipe(id, output, inputs);
         }
 
         @Override
-        public void toNetwork(FriendlyByteBuf buf, CrusherRecipe recipe) {
+        public void toNetwork(FriendlyByteBuf buf, TransfuserRecipe recipe) {
             buf.writeInt(recipe.getIngredients().size());
 
             for (Ingredient ing : recipe.getIngredients()) {

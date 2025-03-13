@@ -1,8 +1,8 @@
-package net.coton999.realearthores.screen.machines;
+package net.coton999.realearthores.menu.machines;
 
 import net.coton999.realearthores.block.REOBlocks;
 import net.coton999.realearthores.block.entity.machines.CrusherBlockEntity;
-import net.coton999.realearthores.screen.REOMenuTypes;
+import net.coton999.realearthores.menu.REOMenuTypes;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -55,7 +55,7 @@ public class CrusherMenu extends AbstractContainerMenu {
 
     // CREDIT GOES TO: diesieben07 | https://github.com/diesieben07/SevenCommons
     // must assign a slot number to each of the slots used by the GUI.
-    // For this container, we can see both the tile inventory's slots as well as the player inventory slots and the hotbar.
+    // For this container, we can see both the tile inventory's slots, the player inventory slots and the hotbar.
     // Each time we add a Slot to the container, it automatically increases the slotIndex, which means
     //  0 - 8 = hotbar slots (which will map to the InventoryPlayer slot numbers 0 - 8)
     //  9 - 35 = player inventory slots (which map to the InventoryPlayer slot numbers 9 - 35)

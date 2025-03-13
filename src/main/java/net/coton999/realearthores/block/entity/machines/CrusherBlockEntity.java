@@ -2,11 +2,11 @@ package net.coton999.realearthores.block.entity.machines;
 
 import net.coton999.realearthores.block.custom.machines.CrusherBlock;
 import net.coton999.realearthores.block.entity.REOBlockEntities;
-import net.coton999.realearthores.recipe.CrusherRecipe;
-import net.coton999.realearthores.screen.machines.CrusherMenu;
-import net.coton999.realearthores.util.InventoryDirectionEntry;
-import net.coton999.realearthores.util.InventoryDirectionWrapper;
-import net.coton999.realearthores.util.WrappedHandler;
+import net.coton999.realearthores.recipe.machines.CrusherRecipe;
+import net.coton999.realearthores.menu.machines.CrusherMenu;
+import net.coton999.realearthores.util.inventory.InventoryDirectionEntry;
+import net.coton999.realearthores.util.inventory.InventoryDirectionWrapper;
+import net.coton999.realearthores.util.inventory.WrappedHandler;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
