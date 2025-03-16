@@ -1428,6 +1428,19 @@ public class REOBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(REOBlocks.TRANSFUSER.get());
 
 
+        // Electric
+        this.dropSelf(REOBlocks.ELECTRIC_FURNACE.get());
+        this.dropSelf(REOBlocks.ELECTRIC_CRUSHER.get());
+        this.dropSelf(REOBlocks.ELECTRIC_PURIFIER.get());
+        this.dropSelf(REOBlocks.ELECTRIC_ALLOY_FURNACE.get());
+        this.dropSelf(REOBlocks.ELECTRIC_SAWMILL.get());
+        this.dropSelf(REOBlocks.ELECTRIC_EXTRACTOR.get());
+        this.dropSelf(REOBlocks.ELECTRIC_COMPRESSOR.get());
+        this.dropSelf(REOBlocks.ELECTRIC_CENTRIFUGE.get());
+        this.dropSelf(REOBlocks.ELECTRIC_INDUCTION_FURNACE.get());
+        this.dropSelf(REOBlocks.ELECTRIC_TRANSFUSER.get());
+
+
     }
     private void cropLootTable(Block pCrop, Item pSeeds, Item pResult, IntegerProperty pInteger, int maxAge) {
         LootItemCondition.Builder lootitemcondition$builder = LootItemBlockStatePropertyCondition

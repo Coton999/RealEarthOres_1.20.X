@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "realearthores:block/machines/electric_furnace_front_on",
+    "side": "realearthores:block/machines/machine_side",
+    "top": "realearthores:block/machines/machine_top"
+  }
+}

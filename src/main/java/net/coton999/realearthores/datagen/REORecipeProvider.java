@@ -4,8 +4,10 @@ import net.coton999.realearthores.RealEarthOres;
 import net.coton999.realearthores.block.REOBlocks;
 import net.coton999.realearthores.datagen.custom.AlloyFurnaceRecipeBuilder;
 import net.coton999.realearthores.datagen.custom.CrusherRecipeBuilder;
+import net.coton999.realearthores.datagen.custom.KilnRecipeBuilder;
 import net.coton999.realearthores.datagen.custom.SawmillRecipeBuilder;
 import net.coton999.realearthores.item.REOItems;
+import net.coton999.realearthores.recipe.machines.coal.KilnRecipe;
 import net.coton999.realearthores.util.REOTags;
 import net.minecraft.core.NonNullList;
 import net.minecraft.data.PackOutput;
@@ -287,6 +289,10 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
         foodCooking(pWriter, RecipeSerializer.CAMPFIRE_COOKING_RECIPE,
                 RUBBER_SMELTABLES, RecipeCategory.MISC, REOItems.RUBBER.get(),
                 0.5f, 100, "rubber", "_from_campfire_");
+
+        // Kiln
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.STONE, Blocks.COBBLESTONE, 0.3f, 100)
+                .unlockedBy("has_cobblestone", has(Blocks.COBBLESTONE)).save(pWriter);
 
         // Crusher //
         // Overworld Ores

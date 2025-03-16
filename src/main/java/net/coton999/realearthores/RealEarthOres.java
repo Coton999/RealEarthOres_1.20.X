@@ -13,7 +13,8 @@ import net.coton999.realearthores.item.REOItemProperties;
 import net.coton999.realearthores.item.REOItems;
 import net.coton999.realearthores.recipe.REORecipes;
 import net.coton999.realearthores.menu.REOMenuTypes;
-import net.coton999.realearthores.screen.machines.*;
+import net.coton999.realearthores.screen.machines.coal.KilnScreen;
+import net.coton999.realearthores.screen.machines.electric.*;
 import net.coton999.realearthores.util.REOWoodTypes;
 import net.coton999.realearthores.worldgen.tree.REOFoliagePlacers;
 import net.coton999.realearthores.worldgen.tree.REOTrunkPlacers;
@@ -217,6 +218,8 @@ public class RealEarthOres {
             EntityRenderers.register(REOEntities.MOD_CHEST_BOAT.get(), pContext -> new REOBoatRenderer(pContext, true));
 
             MenuScreens.register(REOMenuTypes.KILN_MENU.get(), KilnScreen::new);
+
+            MenuScreens.register(REOMenuTypes.ELECTRIC_FURNACE_MENU.get(), ElectricFurnaceScreen::new);
             MenuScreens.register(REOMenuTypes.CRUSHER_MENU.get(), CrusherScreen::new);
             MenuScreens.register(REOMenuTypes.PURIFIER_MENU.get(), PurifierScreen::new);
             MenuScreens.register(REOMenuTypes.ALLOY_FURNACE_MENU.get(), AlloyFurnaceScreen::new);

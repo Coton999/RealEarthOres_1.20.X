@@ -3,7 +3,7 @@ package net.coton999.realearthores.datagen.custom;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import net.coton999.realearthores.RealEarthOres;
-import net.coton999.realearthores.recipe.machines.AlloyFurnaceRecipe;
+import net.coton999.realearthores.recipe.machines.electric.AlloyFurnaceRecipe;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementRewards;
 import net.minecraft.advancements.CriterionTriggerInstance;

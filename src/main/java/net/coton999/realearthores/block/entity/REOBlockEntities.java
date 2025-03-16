@@ -2,7 +2,8 @@ package net.coton999.realearthores.block.entity;
 
 import net.coton999.realearthores.RealEarthOres;
 import net.coton999.realearthores.block.REOBlocks;
-import net.coton999.realearthores.block.entity.machines.*;
+import net.coton999.realearthores.block.entity.machines.coal.KilnBlockEntity;
+import net.coton999.realearthores.block.entity.machines.electric.*;
 import net.coton999.realearthores.block.entity.signs.REOHangingSignBlockEntity;
 import net.coton999.realearthores.block.entity.signs.REOSignBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -17,6 +18,7 @@ public class REOBlockEntities {
 
     // Tech //
     // Machines
+    // Coal
     public static final RegistryObject<BlockEntityType<KilnBlockEntity>> KILN_BE =
             BLOCK_ENTITIES.register("kiln_block_entity", () ->
                     BlockEntityType.Builder.of(KilnBlockEntity::new,
@@ -66,6 +68,57 @@ public class REOBlockEntities {
             BLOCK_ENTITIES.register("transfuser_block_entity", () ->
                     BlockEntityType.Builder.of(TransfuserBlockEntity::new,
                             REOBlocks.TRANSFUSER.get()).build(null));
+
+    // Electric
+    public static final RegistryObject<BlockEntityType<ElectricFurnaceBlockEntity>> ELECTRIC_FURNACE_BE =
+            BLOCK_ENTITIES.register("electric_furnace_block_entity", () ->
+                    BlockEntityType.Builder.of(ElectricFurnaceBlockEntity::new,
+                            REOBlocks.ELECTRIC_FURNACE.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<CrusherBlockEntity>> ELECTRIC_CRUSHER_BE =
+            BLOCK_ENTITIES.register("electric_crusher_block_entity", () ->
+                    BlockEntityType.Builder.of(CrusherBlockEntity::new,
+                            REOBlocks.ELECTRIC_CRUSHER.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<PurifierBlockEntity>> ELECTRIC_PURIFIER_BE =
+            BLOCK_ENTITIES.register("electric_purifier_block_entity", () ->
+                    BlockEntityType.Builder.of(PurifierBlockEntity::new,
+                            REOBlocks.ELECTRIC_PURIFIER.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<AlloyFurnaceBlockEntity>> ELECTRIC_ALLOY_FURNACE_BE =
+            BLOCK_ENTITIES.register("electric_alloy_furance_block_entity", () ->
+                    BlockEntityType.Builder.of(AlloyFurnaceBlockEntity::new,
+                            REOBlocks.ELECTRIC_ALLOY_FURNACE.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<SawmillBlockEntity>> ELECTRIC_SAWMILL_BE =
+            BLOCK_ENTITIES.register("electric_sawmill_block_entity", () ->
+                    BlockEntityType.Builder.of(SawmillBlockEntity::new,
+                            REOBlocks.ELECTRIC_SAWMILL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<ExtractorBlockEntity>> ELECTRIC_EXTRACTOR_BE =
+            BLOCK_ENTITIES.register("electric_extractor_block_entity", () ->
+                    BlockEntityType.Builder.of(ExtractorBlockEntity::new,
+                            REOBlocks.ELECTRIC_EXTRACTOR.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<CompressorBlockEntity>> ELECTRIC_COMPRESSOR_BE =
+            BLOCK_ENTITIES.register("electric_compressor_block_entity", () ->
+                    BlockEntityType.Builder.of(CompressorBlockEntity::new,
+                            REOBlocks.ELECTRIC_COMPRESSOR.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<CentrifugeBlockEntity>> ELECTRIC_CENTRIFUGE_BE =
+            BLOCK_ENTITIES.register("electric_centrifuge_block_entity", () ->
+                    BlockEntityType.Builder.of(CentrifugeBlockEntity::new,
+                            REOBlocks.ELECTRIC_CENTRIFUGE.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<InductionFurnaceBlockEntity>> ELECTRIC_INDUCTION_FURNACE_BE =
+            BLOCK_ENTITIES.register("electric_induction_furnace_block_entity", () ->
+                    BlockEntityType.Builder.of(InductionFurnaceBlockEntity::new,
+                            REOBlocks.ELECTRIC_INDUCTION_FURNACE.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<TransfuserBlockEntity>> ELECTRIC_TRANSFUSER_BE =
+            BLOCK_ENTITIES.register("electric_transfuser_block_entity", () ->
+                    BlockEntityType.Builder.of(TransfuserBlockEntity::new,
+                            REOBlocks.ELECTRIC_TRANSFUSER.get()).build(null));
 
 
     // Signs

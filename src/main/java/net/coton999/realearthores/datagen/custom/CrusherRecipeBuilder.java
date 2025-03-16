@@ -3,7 +3,7 @@ package net.coton999.realearthores.datagen.custom;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import net.coton999.realearthores.RealEarthOres;
-import net.coton999.realearthores.recipe.machines.CrusherRecipe;
+import net.coton999.realearthores.recipe.machines.electric.CrusherRecipe;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementRewards;
 import net.minecraft.advancements.CriterionTriggerInstance;
@@ -72,8 +72,8 @@ public class CrusherRecipeBuilder implements RecipeBuilder {
         private final Advancement.Builder advancement;
         private final ResourceLocation advancementId;
 
-        public Result(ResourceLocation pId,Item pInput, Item pResult, int pCount, Ingredient ingredient, Advancement.Builder pAdvancement,
-                      ResourceLocation pAdvancementId) {
+        public Result(ResourceLocation pId,Item pInput, Item pResult, int pCount, Ingredient ingredient,
+                      Advancement.Builder pAdvancement, ResourceLocation pAdvancementId) {
             this.id = pId;
             this.input = pInput;
             this.result = pResult;

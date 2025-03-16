@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "realearthores:block/machines/kiln_front_on",
+    "side": "realearthores:block/machines/kiln_side",
+    "top": "realearthores:block/machines/kiln_top"
+  }
+}

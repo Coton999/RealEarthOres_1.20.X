@@ -1605,6 +1605,7 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         // Machines
                         pOutput.accept(REOBlocks.KILN.get());
                         pOutput.accept(REOBlocks.CRUSHER.get());
+                        pOutput.accept(REOBlocks.PURIFIER.get());
                         pOutput.accept(REOBlocks.ALLOY_FURNACE.get());
                         pOutput.accept(REOBlocks.SAWMILL.get());
                         pOutput.accept(REOBlocks.EXTRACTOR.get());
