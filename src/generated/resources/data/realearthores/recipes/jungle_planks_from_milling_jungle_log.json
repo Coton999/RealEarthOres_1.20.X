@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:milling",
+  "ingredients": [
+    {
+      "item": "minecraft:jungle_log"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "item": "minecraft:jungle_planks"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:milling",
+  "ingredients": [
+    {
+      "item": "realearthores:log_ebony"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "item": "realearthores:planks_ebony"
+  }
+}

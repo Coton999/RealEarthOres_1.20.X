@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:milling",
+  "ingredients": [
+    {
+      "item": "minecraft:oak_log"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "item": "minecraft:oak_planks"
+  }
+}

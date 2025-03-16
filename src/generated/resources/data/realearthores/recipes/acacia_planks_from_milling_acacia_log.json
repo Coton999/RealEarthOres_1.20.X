@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:milling",
+  "ingredients": [
+    {
+      "item": "minecraft:acacia_log"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "item": "minecraft:acacia_planks"
+  }
+}

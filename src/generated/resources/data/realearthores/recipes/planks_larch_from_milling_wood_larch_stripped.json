@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:milling",
+  "ingredients": [
+    {
+      "item": "realearthores:wood_larch_stripped"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "item": "realearthores:planks_larch"
+  }
+}

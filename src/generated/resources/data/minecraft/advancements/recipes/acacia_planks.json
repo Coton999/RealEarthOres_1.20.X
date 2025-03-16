@@ -1,0 +1,36 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:acacia_planks"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wood_acacia": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:acacia_wood"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_wood_acacia",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:acacia_planks"
+    ]
+  },
+  "sends_telemetry_event": true
+}ds_telemetry_event": true
+}

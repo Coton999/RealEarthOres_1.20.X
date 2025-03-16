@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:milling",
+  "ingredients": [
+    {
+      "item": "minecraft:stripped_birch_wood"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "item": "minecraft:birch_planks"
+  }
+}
