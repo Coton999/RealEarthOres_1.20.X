@@ -73,7 +73,7 @@ public class InductionFurnaceBlockEntity extends BlockEntity implements MenuProv
     private int maxProgress = 200;
 
     public InductionFurnaceBlockEntity(BlockPos pPos, BlockState pBlockState) {
-        super(REOBlockEntities.INDUCTION_FURNACE_BE.get(), pPos, pBlockState);
+        super(REOBlockEntities.ELECTRIC_INDUCTION_FURNACE_BE.get(), pPos, pBlockState);
         this.data = new ContainerData() {
             @Override
             public int get(int pIndex) {

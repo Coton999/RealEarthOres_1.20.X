@@ -1603,16 +1603,25 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
 
                         // Tech //
                         // Machines
+                        // Coal
                         pOutput.accept(REOBlocks.KILN.get());
                         pOutput.accept(REOBlocks.CRUSHER.get());
-                        pOutput.accept(REOBlocks.PURIFIER.get());
-                        pOutput.accept(REOBlocks.ALLOY_FURNACE.get());
                         pOutput.accept(REOBlocks.SAWMILL.get());
                         pOutput.accept(REOBlocks.EXTRACTOR.get());
                         pOutput.accept(REOBlocks.COMPRESSOR.get());
-                        pOutput.accept(REOBlocks.CENTRIFUGE.get());
-                        pOutput.accept(REOBlocks.INDUCTION_FURNACE.get());
-                        pOutput.accept(REOBlocks.TRANSFUSER.get());
+
+                        // Electric
+                        pOutput.accept(REOBlocks.ELECTRIC_FURNACE.get());
+                        pOutput.accept(REOBlocks.ELECTRIC_CRUSHER.get());
+                        pOutput.accept(REOBlocks.ELECTRIC_PURIFIER.get());
+                        pOutput.accept(REOBlocks.ELECTRIC_ALLOY_FURNACE.get());
+                        pOutput.accept(REOBlocks.ELECTRIC_SAWMILL.get());
+                        pOutput.accept(REOBlocks.ELECTRIC_EXTRACTOR.get());
+                        pOutput.accept(REOBlocks.ELECTRIC_COMPRESSOR.get());
+                        pOutput.accept(REOBlocks.ELECTRIC_CENTRIFUGE.get());
+                        pOutput.accept(REOBlocks.ELECTRIC_INDUCTION_FURNACE.get());
+                        pOutput.accept(REOBlocks.ELECTRIC_TRANSFUSER.get());
+
 
                     })
                     .build());

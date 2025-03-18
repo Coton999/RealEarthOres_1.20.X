@@ -73,7 +73,7 @@ public class PurifierBlockEntity extends BlockEntity implements MenuProvider {
     private int maxProgress = 200;
 
     public PurifierBlockEntity(BlockPos pPos, BlockState pBlockState) {
-        super(REOBlockEntities.PURIFIER_BE.get(), pPos, pBlockState);
+        super(REOBlockEntities.ELECTRIC_PURIFIER_BE.get(), pPos, pBlockState);
         this.data = new ContainerData() {
             @Override
             public int get(int pIndex) {

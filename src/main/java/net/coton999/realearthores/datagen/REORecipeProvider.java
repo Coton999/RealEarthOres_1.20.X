@@ -192,10 +192,6 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
         oreSmelting(pWriter, RUBBER_SMELTABLES, RecipeCategory.MISC, REOItems.RUBBER.get(),
                 0.5f, 200, "rubber");
 
-
-        //dustSmelting(pWriter, List.of(ModItems.DUST_OBSIDIAN.get()), RecipeCategory.MISC,
-        //        ModItems.INGOT_OBSIDIAN.get(), 0.7f, 200, "dust_obsidian");
-
         // Food
         oreSmelting(pWriter, List.of(REOItems.FLOUR_BARLEY.get()), RecipeCategory.MISC,
                 Items.BREAD, 0.35f, 200, "flour_barley");
@@ -258,9 +254,6 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
         oreBlasting(pWriter, ZINC_SMELTABLES, RecipeCategory.MISC, REOItems.INGOT_ZINC.get(),
                 0.7f, 200, "ingot_zinc");
 
-        //dustBlasting(pWriter, List.of(ModItems.DUST_OBSIDIAN.get()), RecipeCategory.MISC,
-        //        ModItems.INGOT_OBSIDIAN.get(), 0.7f, 100, "dust_obsidian");
-
 
         // SMOKER //
         // Food
@@ -290,124 +283,265 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 RUBBER_SMELTABLES, RecipeCategory.MISC, REOItems.RUBBER.get(),
                 0.5f, 100, "rubber", "_from_campfire_");
 
-        // Kiln
-        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.STONE, Blocks.COBBLESTONE, 0.3f, 100)
+        // Kiln //
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.STONE, Blocks.COBBLESTONE, Blocks.COBBLESTONE, 0.1f, 100)
                 .unlockedBy("has_cobblestone", has(Blocks.COBBLESTONE)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.SMOOTH_STONE, Blocks.STONE, Blocks.STONE, 0.1f, 100)
+                .unlockedBy("has_stone", has(Blocks.STONE)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.CRACKED_STONE_BRICKS, Blocks.STONE_BRICKS, Blocks.STONE_BRICKS, 0.1f, 100)
+                .unlockedBy("has_cracked_stone_brickse", has(Blocks.STONE_BRICKS)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.DEEPSLATE, Blocks.COBBLED_DEEPSLATE, Blocks.COBBLED_DEEPSLATE, 0.1f, 100)
+                .unlockedBy("has_deepslatee", has(Blocks.COBBLED_DEEPSLATE)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.CRACKED_DEEPSLATE_BRICKS, Blocks.DEEPSLATE_BRICKS, Blocks.DEEPSLATE_BRICKS, 0.1f, 100)
+                .unlockedBy("has_deepslate_brickse", has(Blocks.DEEPSLATE_BRICKS)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.CRACKED_DEEPSLATE_TILES, Blocks.DEEPSLATE_TILES, Blocks.DEEPSLATE_TILES, 0.1f, 100)
+                .unlockedBy("has_deepslate_tilese", has(Blocks.DEEPSLATE_TILES)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.SMOOTH_SANDSTONE, Blocks.SANDSTONE, Blocks.SANDSTONE, 0.1f, 100)
+                .unlockedBy("has_sandstonee", has(Blocks.SANDSTONE)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.SMOOTH_RED_SANDSTONE, Blocks.RED_SANDSTONE, Blocks.RED_SANDSTONE, 0.1f, 100)
+                .unlockedBy("has_red_sandstonee", has(Blocks.RED_SANDSTONE)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.CRACKED_NETHER_BRICKS, Blocks.NETHER_BRICKS, Blocks.NETHER_BRICKS, 0.1f, 100)
+                .unlockedBy("has_nether_brickse", has(Blocks.NETHER_BRICKS)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.SMOOTH_BASALT, Blocks.BASALT, Blocks.BASALT, 0.1f, 100)
+                .unlockedBy("has_smooth_basalte", has(Blocks.BASALT)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS, Blocks.POLISHED_BLACKSTONE_BRICKS, Blocks.POLISHED_BLACKSTONE_BRICKS, 0.1f, 100)
+                .unlockedBy("has_polished_blackstone_brickse", has(Blocks.POLISHED_BLACKSTONE_BRICKS)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.SMOOTH_QUARTZ, Blocks.QUARTZ_BLOCK, Blocks.QUARTZ_BLOCK, 0.1f, 100)
+                .unlockedBy("has_quartz_blocke", has(Blocks.QUARTZ_BLOCK)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.TERRACOTTA, Blocks.CLAY, Blocks.CLAY, 0.35f, 100)
+                .unlockedBy("has_clay", has(Blocks.CLAY)).save(pWriter);
+
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.WHITE_GLAZED_TERRACOTTA, Blocks.WHITE_TERRACOTTA, Blocks.WHITE_TERRACOTTA, 0.1f, 100)
+                .unlockedBy("has_white_terracotta", has(Blocks.WHITE_TERRACOTTA)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.ORANGE_GLAZED_TERRACOTTA, Blocks.ORANGE_TERRACOTTA, Blocks.ORANGE_TERRACOTTA, 0.1f, 100)
+                .unlockedBy("has_orange_terracotta", has(Blocks.ORANGE_TERRACOTTA)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.MAGENTA_GLAZED_TERRACOTTA, Blocks.MAGENTA_TERRACOTTA, Blocks.MAGENTA_TERRACOTTA, 0.1f, 100)
+                .unlockedBy("has_magenta_terracotta", has(Blocks.MAGENTA_TERRACOTTA)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.LIGHT_BLUE_GLAZED_TERRACOTTA, Blocks.LIGHT_BLUE_TERRACOTTA, Blocks.LIGHT_BLUE_TERRACOTTA, 0.1f, 100)
+                .unlockedBy("has_light_blue_terracotta", has(Blocks.LIGHT_BLUE_TERRACOTTA)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.YELLOW_GLAZED_TERRACOTTA, Blocks.YELLOW_TERRACOTTA, Blocks.YELLOW_TERRACOTTA, 0.1f, 100)
+                .unlockedBy("has_yellow_terracotta", has(Blocks.YELLOW_TERRACOTTA)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.LIME_GLAZED_TERRACOTTA, Blocks.LIME_TERRACOTTA, Blocks.LIME_TERRACOTTA, 0.1f, 100)
+                .unlockedBy("has_lime_terracotta", has(Blocks.LIME_TERRACOTTA)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.PINK_GLAZED_TERRACOTTA, Blocks.PINK_TERRACOTTA, Blocks.PINK_TERRACOTTA, 0.1f, 100)
+                .unlockedBy("has_pink_terracotta", has(Blocks.PINK_TERRACOTTA)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.GRAY_GLAZED_TERRACOTTA, Blocks.GRAY_TERRACOTTA, Blocks.GRAY_TERRACOTTA, 0.1f, 100)
+                .unlockedBy("has_gray_terracotta", has(Blocks.GRAY_TERRACOTTA)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.LIGHT_GRAY_GLAZED_TERRACOTTA, Blocks.LIGHT_GRAY_TERRACOTTA, Blocks.LIGHT_GRAY_TERRACOTTA, 0.1f, 100)
+                .unlockedBy("has_light_gray_terracotta", has(Blocks.LIGHT_GRAY_TERRACOTTA)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.CYAN_GLAZED_TERRACOTTA, Blocks.CYAN_TERRACOTTA, Blocks.CYAN_TERRACOTTA, 0.1f, 100)
+                .unlockedBy("has_cyan_terracotta", has(Blocks.CYAN_TERRACOTTA)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.PURPLE_GLAZED_TERRACOTTA, Blocks.PURPLE_TERRACOTTA, Blocks.PURPLE_TERRACOTTA, 0.1f, 100)
+                .unlockedBy("has_purple_terracotta", has(Blocks.PURPLE_TERRACOTTA)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.BLUE_GLAZED_TERRACOTTA, Blocks.BLUE_TERRACOTTA, Blocks.BLUE_TERRACOTTA, 0.1f, 100)
+                .unlockedBy("has_blue_terracotta", has(Blocks.BLUE_TERRACOTTA)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.BROWN_GLAZED_TERRACOTTA, Blocks.BROWN_TERRACOTTA, Blocks.BROWN_TERRACOTTA, 0.1f, 100)
+                .unlockedBy("has_brown_terracotta", has(Blocks.BROWN_TERRACOTTA)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.GREEN_GLAZED_TERRACOTTA, Blocks.GREEN_TERRACOTTA, Blocks.GREEN_TERRACOTTA, 0.1f, 100)
+                .unlockedBy("has_green_terracotta", has(Blocks.GREEN_TERRACOTTA)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.RED_GLAZED_TERRACOTTA, Blocks.RED_TERRACOTTA, Blocks.RED_TERRACOTTA, 0.1f, 100)
+                .unlockedBy("has_red_terracotta", has(Blocks.RED_TERRACOTTA)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.BLACK_GLAZED_TERRACOTTA, Blocks.BLACK_TERRACOTTA, Blocks.BLACK_TERRACOTTA, 0.1f, 100)
+                .unlockedBy("has_black_terracotta", has(Blocks.BLACK_TERRACOTTA)).save(pWriter);
+
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.GLASS, Blocks.SAND, Blocks.SAND, 0.1f, 100)
+                .unlockedBy("has_sande", has(Blocks.SAND)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Blocks.SPONGE, Blocks.WET_SPONGE, Blocks.WET_SPONGE, 0.15f, 100)
+                .unlockedBy("has_wet_sponge", has(Blocks.WET_SPONGE)).save(pWriter);
+
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.OAK_LOG, Blocks.OAK_LOG, 0.15f, 100)
+                .unlockedBy("has_oak_log", has(Blocks.OAK_LOG)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.SPRUCE_LOG, Blocks.SPRUCE_LOG, 0.15f, 100)
+                .unlockedBy("has_spruce_log", has(Blocks.SPRUCE_LOG)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.BIRCH_LOG, Blocks.BIRCH_LOG, 0.15f, 100)
+                .unlockedBy("has_birch_log", has(Blocks.BIRCH_LOG)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.JUNGLE_LOG, Blocks.JUNGLE_LOG, 0.15f, 100)
+                .unlockedBy("has_jungle_log", has(Blocks.JUNGLE_LOG)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.ACACIA_LOG, Blocks.ACACIA_LOG, 0.15f, 100)
+                .unlockedBy("has_acacia_log", has(Blocks.ACACIA_LOG)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.DARK_OAK_LOG, Blocks.DARK_OAK_LOG, 0.15f, 100)
+                .unlockedBy("has_dark_oak_log", has(Blocks.DARK_OAK_LOG)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.MANGROVE_LOG, Blocks.MANGROVE_LOG, 0.15f, 100)
+                .unlockedBy("has_mangrove_log", has(Blocks.MANGROVE_LOG)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.CHERRY_LOG, Blocks.CHERRY_LOG, 0.15f, 100)
+                .unlockedBy("has_cherry_log", has(Blocks.CHERRY_LOG)).save(pWriter);
+
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.STRIPPED_OAK_LOG, Blocks.STRIPPED_OAK_LOG, 0.15f, 100)
+                .unlockedBy("has_stripped_oak_log", has(Blocks.STRIPPED_OAK_LOG)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.STRIPPED_SPRUCE_LOG, Blocks.STRIPPED_SPRUCE_LOG, 0.15f, 100)
+                .unlockedBy("has_stripped_spruce_log", has(Blocks.STRIPPED_SPRUCE_LOG)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.STRIPPED_BIRCH_LOG, Blocks.STRIPPED_BIRCH_LOG, 0.15f, 100)
+                .unlockedBy("has_stripped_birch_log", has(Blocks.STRIPPED_BIRCH_LOG)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.STRIPPED_JUNGLE_LOG, Blocks.STRIPPED_JUNGLE_LOG, 0.15f, 100)
+                .unlockedBy("has_stripped_jungle_log", has(Blocks.STRIPPED_JUNGLE_LOG)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.STRIPPED_ACACIA_LOG, Blocks.STRIPPED_ACACIA_LOG, 0.15f, 100)
+                .unlockedBy("has_stripped_acacia_log", has(Blocks.STRIPPED_ACACIA_LOG)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.STRIPPED_DARK_OAK_LOG, Blocks.STRIPPED_DARK_OAK_LOG, 0.15f, 100)
+                .unlockedBy("has_stripped_dark_oak_log", has(Blocks.STRIPPED_DARK_OAK_LOG)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.STRIPPED_MANGROVE_LOG, Blocks.STRIPPED_MANGROVE_LOG, 0.15f, 100)
+                .unlockedBy("has_stripped_mangrove_log", has(Blocks.STRIPPED_MANGROVE_LOG)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.STRIPPED_CHERRY_LOG, Blocks.STRIPPED_CHERRY_LOG, 0.15f, 100)
+                .unlockedBy("has_stripped_cherry_log", has(Blocks.STRIPPED_CHERRY_LOG)).save(pWriter);
+
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.OAK_WOOD, Blocks.OAK_WOOD, 0.15f, 100)
+                .unlockedBy("has_oak_wood", has(Blocks.OAK_WOOD)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.SPRUCE_WOOD, Blocks.SPRUCE_WOOD, 0.15f, 100)
+                .unlockedBy("has_spruce_wood", has(Blocks.SPRUCE_WOOD)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.BIRCH_WOOD, Blocks.BIRCH_WOOD, 0.15f, 100)
+                .unlockedBy("has_birch_wood", has(Blocks.BIRCH_WOOD)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.JUNGLE_WOOD, Blocks.JUNGLE_WOOD, 0.15f, 100)
+                .unlockedBy("has_jungle_wood", has(Blocks.JUNGLE_WOOD)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.ACACIA_WOOD, Blocks.ACACIA_WOOD, 0.15f, 100)
+                .unlockedBy("has_acacia_wood", has(Blocks.ACACIA_WOOD)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.DARK_OAK_WOOD, Blocks.DARK_OAK_WOOD, 0.15f, 100)
+                .unlockedBy("has_dark_oak_wood", has(Blocks.DARK_OAK_WOOD)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.MANGROVE_WOOD, Blocks.MANGROVE_WOOD, 0.15f, 100)
+                .unlockedBy("has_mangrove_wood", has(Blocks.MANGROVE_WOOD)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.CHERRY_WOOD, Blocks.CHERRY_WOOD, 0.15f, 100)
+                .unlockedBy("has_cherry_wood", has(Blocks.CHERRY_WOOD)).save(pWriter);
+
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.STRIPPED_OAK_WOOD, Blocks.STRIPPED_OAK_WOOD, 0.15f, 100)
+                .unlockedBy("has_stripped_oak_wood", has(Blocks.STRIPPED_OAK_WOOD)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.STRIPPED_SPRUCE_WOOD, Blocks.STRIPPED_SPRUCE_WOOD, 0.15f, 100)
+                .unlockedBy("has_stripped_spruce_wood", has(Blocks.STRIPPED_SPRUCE_WOOD)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.STRIPPED_BIRCH_WOOD, Blocks.STRIPPED_BIRCH_WOOD, 0.15f, 100)
+                .unlockedBy("has_stripped_birch_wood", has(Blocks.STRIPPED_BIRCH_WOOD)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.STRIPPED_JUNGLE_WOOD, Blocks.STRIPPED_JUNGLE_WOOD, 0.15f, 100)
+                .unlockedBy("has_stripped_jungle_wood", has(Blocks.STRIPPED_JUNGLE_WOOD)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.STRIPPED_ACACIA_WOOD, Blocks.STRIPPED_ACACIA_WOOD, 0.15f, 100)
+                .unlockedBy("has_stripped_acacia_wood", has(Blocks.STRIPPED_ACACIA_WOOD)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.STRIPPED_DARK_OAK_WOOD, Blocks.STRIPPED_DARK_OAK_WOOD, 0.15f, 100)
+                .unlockedBy("has_stripped_dark_oak_wood", has(Blocks.STRIPPED_DARK_OAK_WOOD)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.STRIPPED_MANGROVE_WOOD, Blocks.STRIPPED_MANGROVE_WOOD, 0.15f, 100)
+                .unlockedBy("has_stripped_mangrove_wood", has(Blocks.STRIPPED_MANGROVE_WOOD)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.CHARCOAL, Blocks.STRIPPED_CHERRY_WOOD, Blocks.STRIPPED_CHERRY_WOOD, 0.15f, 100)
+                .unlockedBy("has_stripped_cherry_wood", has(Blocks.STRIPPED_CHERRY_WOOD)).save(pWriter);
+
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.POPPED_CHORUS_FRUIT, Items.CHORUS_FRUIT, Items.CHORUS_FRUIT, 0.1f, 100)
+                .unlockedBy("has_chorus_fruite", has(Items.CHORUS_FRUIT)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.LIME_DYE, Blocks.SEA_PICKLE, Blocks.SEA_PICKLE, 0.1f, 100)
+                .unlockedBy("has_sea_picklee", has(Blocks.SEA_PICKLE)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.GREEN_DYE, Blocks.CACTUS, Blocks.CACTUS, 0.1f, 100)
+                .unlockedBy("has_cactuse", has(Blocks.CACTUS)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.BRICK, Items.CLAY_BALL, Items.CLAY_BALL, 0.3f, 100)
+                .unlockedBy("has_clay_balle", has(Items.CLAY_BALL)).save(pWriter);
+        new KilnRecipeBuilder(RecipeCategory.BUILDING_BLOCKS, Items.NETHER_BRICK, Blocks.NETHERRACK, Blocks.NETHERRACK, 0.1f, 100)
+                .unlockedBy("has_netherracke", has(Blocks.NETHERRACK)).save(pWriter);
 
         // Crusher //
         // Overworld Ores
-        new CrusherRecipeBuilder(REOBlocks.ORE_ALUMINIUM.get(), REOBlocks.ORE_ALUMINIUM.get(), REOItems.DUST_ALUMINIUM.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.ORE_ALUMINIUM.get(), REOBlocks.ORE_ALUMINIUM.get(), REOItems.DUST_DIRTY_ALUMINIUM.get(), 2)
                 .unlockedBy("has_ore_aluminium", has(REOBlocks.ORE_ALUMINIUM.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.DEEPSLATE_ALUMINIUM.get(), REOBlocks.DEEPSLATE_ALUMINIUM.get(), REOItems.DUST_ALUMINIUM.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.DEEPSLATE_ALUMINIUM.get(), REOBlocks.DEEPSLATE_ALUMINIUM.get(), REOItems.DUST_DIRTY_ALUMINIUM.get(), 2)
                 .unlockedBy("has_ore_aluminium", has(REOBlocks.DEEPSLATE_ALUMINIUM.get())).save(pWriter);
-        new CrusherRecipeBuilder(Blocks.AMETHYST_CLUSTER, Blocks.AMETHYST_CLUSTER, REOItems.DUST_AMETHYST.get(), 2)
+        new CrusherRecipeBuilder(Blocks.AMETHYST_CLUSTER, Blocks.AMETHYST_CLUSTER, REOItems.DUST_DIRTY_AMETHYST.get(), 2)
                 .unlockedBy("has_cluster_amethyst", has(Blocks.AMETHYST_CLUSTER)).save(pWriter);
         new CrusherRecipeBuilder(Blocks.COAL_ORE, Blocks.COAL_ORE, REOItems.DUST_COAL.get(), 2)
                 .unlockedBy("has_ore_coal", has(Blocks.COAL_ORE)).save(pWriter);
-        new CrusherRecipeBuilder(Blocks.COPPER_ORE, Blocks.COPPER_ORE, REOItems.DUST_COPPER.get(), 2)
+        new CrusherRecipeBuilder(Blocks.COPPER_ORE, Blocks.COPPER_ORE, REOItems.DUST_DIRTY_COPPER.get(), 2)
                 .unlockedBy("has_ore_copper", has(Blocks.COPPER_ORE)).save(pWriter);
-        new CrusherRecipeBuilder(Blocks.DIAMOND_ORE, Blocks.DIAMOND_ORE, REOItems.DUST_DIAMOND.get(), 2)
+        new CrusherRecipeBuilder(Blocks.DIAMOND_ORE, Blocks.DIAMOND_ORE, REOItems.DUST_DIRTY_DIAMOND.get(), 2)
                 .unlockedBy("has_ore_diamond", has(Blocks.DIAMOND_ORE)).save(pWriter);
-        new CrusherRecipeBuilder(Blocks.EMERALD_ORE, Blocks.EMERALD_ORE, REOItems.DUST_EMERALD.get(), 2)
+        new CrusherRecipeBuilder(Blocks.EMERALD_ORE, Blocks.EMERALD_ORE, REOItems.DUST_DIRTY_EMERALD.get(), 2)
                 .unlockedBy("has_ore_emerald", has(Blocks.EMERALD_ORE)).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.ORE_ENDERITE.get(), REOBlocks.ORE_ENDERITE.get(), REOItems.DUST_ENDERITE.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.ORE_ENDERITE.get(), REOBlocks.ORE_ENDERITE.get(), REOItems.DUST_DIRTY_ENDERITE.get(), 2)
                 .unlockedBy("has_ore_enderite", has(REOBlocks.ORE_ENDERITE.get())).save(pWriter);
-        new CrusherRecipeBuilder(Blocks.GOLD_ORE, Blocks.GOLD_ORE, REOItems.DUST_GOLD.get(), 2)
+        new CrusherRecipeBuilder(Blocks.GOLD_ORE, Blocks.GOLD_ORE, REOItems.DUST_DIRTY_GOLD.get(), 2)
                 .unlockedBy("has_ore_gold", has(Blocks.GOLD_ORE)).save(pWriter);
-        new CrusherRecipeBuilder(Blocks.IRON_ORE, Blocks.IRON_ORE, REOItems.DUST_IRON.get(), 2)
+        new CrusherRecipeBuilder(Blocks.IRON_ORE, Blocks.IRON_ORE, REOItems.DUST_DIRTY_IRON.get(), 2)
                 .unlockedBy("has_ore_iron", has(Blocks.IRON_ORE)).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.ORE_LEAD.get(), REOBlocks.ORE_LEAD.get(), REOItems.DUST_LEAD.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.ORE_LEAD.get(), REOBlocks.ORE_LEAD.get(), REOItems.DUST_DIRTY_LEAD.get(), 2)
                 .unlockedBy("has_ore_lead", has(REOBlocks.ORE_LEAD.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.DEEPSLATE_LEAD.get(), REOBlocks.DEEPSLATE_LEAD.get(), REOItems.DUST_LEAD.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.DEEPSLATE_LEAD.get(), REOBlocks.DEEPSLATE_LEAD.get(), REOItems.DUST_DIRTY_LEAD.get(), 2)
                 .unlockedBy("has_ore_lead", has(REOBlocks.DEEPSLATE_LEAD.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.ORE_NICKEL.get(), REOBlocks.ORE_NICKEL.get(), REOItems.DUST_NICKEL.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.ORE_NICKEL.get(), REOBlocks.ORE_NICKEL.get(), REOItems.DUST_DIRTY_NICKEL.get(), 2)
                 .unlockedBy("has_ore_nickel", has(REOBlocks.ORE_NICKEL.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.DEEPSLATE_NICKEL.get(), REOBlocks.DEEPSLATE_NICKEL.get(), REOItems.DUST_NICKEL.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.DEEPSLATE_NICKEL.get(), REOBlocks.DEEPSLATE_NICKEL.get(), REOItems.DUST_DIRTY_NICKEL.get(), 2)
                 .unlockedBy("has_ore_nickel", has(REOBlocks.DEEPSLATE_NICKEL.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.CLUSTER_PERIDOT.get(), REOBlocks.CLUSTER_PERIDOT.get(), REOItems.DUST_PERIDOT.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.CLUSTER_PERIDOT.get(), REOBlocks.CLUSTER_PERIDOT.get(), REOItems.DUST_DIRTY_PERIDOT.get(), 2)
                 .unlockedBy("has_cluster_peridot", has(REOBlocks.CLUSTER_PERIDOT.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.ORE_PLATINUM.get(), REOBlocks.ORE_PLATINUM.get(), REOItems.DUST_PLATINUM.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.ORE_PLATINUM.get(), REOBlocks.ORE_PLATINUM.get(), REOItems.DUST_DIRTY_PLATINUM.get(), 2)
                 .unlockedBy("has_ore_platinum", has(REOBlocks.ORE_PLATINUM.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.DEEPSLATE_PLATINUM.get(), REOBlocks.DEEPSLATE_PLATINUM.get(), REOItems.DUST_PLATINUM.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.DEEPSLATE_PLATINUM.get(), REOBlocks.DEEPSLATE_PLATINUM.get(), REOItems.DUST_DIRTY_PLATINUM.get(), 2)
                 .unlockedBy("has_ore_platinum", has(REOBlocks.DEEPSLATE_PLATINUM.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.CLUSTER_RUBY.get(), REOBlocks.CLUSTER_RUBY.get(), REOItems.DUST_RUBY.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.CLUSTER_RUBY.get(), REOBlocks.CLUSTER_RUBY.get(), REOItems.DUST_DIRTY_RUBY.get(), 2)
                 .unlockedBy("has_cluster_ruby", has(REOBlocks.CLUSTER_RUBY.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.CLUSTER_SAPPHIRE.get(), REOBlocks.CLUSTER_SAPPHIRE.get(), REOItems.DUST_SAPPHIRE.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.CLUSTER_SAPPHIRE.get(), REOBlocks.CLUSTER_SAPPHIRE.get(), REOItems.DUST_DIRTY_SAPPHIRE.get(), 2)
                 .unlockedBy("has_cluster_sapphire", has(REOBlocks.CLUSTER_SAPPHIRE.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.ORE_SILVER.get(), REOBlocks.ORE_SILVER.get(), REOItems.DUST_SILVER.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.ORE_SILVER.get(), REOBlocks.ORE_SILVER.get(), REOItems.DUST_DIRTY_SILVER.get(), 2)
                 .unlockedBy("has_ore_silver", has(REOBlocks.ORE_SILVER.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.DEEPSLATE_SILVER.get(), REOBlocks.DEEPSLATE_SILVER.get(), REOItems.DUST_SILVER.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.DEEPSLATE_SILVER.get(), REOBlocks.DEEPSLATE_SILVER.get(), REOItems.DUST_DIRTY_SILVER.get(), 2)
                 .unlockedBy("has_ore_silver", has(REOBlocks.DEEPSLATE_SILVER.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.ORE_TIN.get(), REOBlocks.ORE_TIN.get(), REOItems.DUST_TIN.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.ORE_TIN.get(), REOBlocks.ORE_TIN.get(), REOItems.DUST_DIRTY_TIN.get(), 2)
                 .unlockedBy("has_ore_tin", has(REOBlocks.ORE_TIN.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.ORE_URANIUM.get(), REOBlocks.ORE_URANIUM.get(), REOItems.DUST_URANIUM.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.ORE_URANIUM.get(), REOBlocks.ORE_URANIUM.get(), REOItems.DUST_DIRTY_URANIUM.get(), 2)
                 .unlockedBy("has_ore_uranium", has(REOBlocks.ORE_URANIUM.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.DEEPSLATE_URANIUM.get(), REOBlocks.DEEPSLATE_URANIUM.get(), REOItems.DUST_URANIUM.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.DEEPSLATE_URANIUM.get(), REOBlocks.DEEPSLATE_URANIUM.get(), REOItems.DUST_DIRTY_URANIUM.get(), 2)
                 .unlockedBy("has_ore_uranium", has(REOBlocks.DEEPSLATE_URANIUM.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.ORE_ZINC.get(), REOBlocks.ORE_ZINC.get(), REOItems.DUST_ZINC.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.ORE_ZINC.get(), REOBlocks.ORE_ZINC.get(), REOItems.DUST_DIRTY_ZINC.get(), 2)
                 .unlockedBy("has_ore_zinc", has(REOBlocks.ORE_ZINC.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.DEEPSLATE_ZINC.get(), REOBlocks.DEEPSLATE_ZINC.get(), REOItems.DUST_ZINC.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.DEEPSLATE_ZINC.get(), REOBlocks.DEEPSLATE_ZINC.get(), REOItems.DUST_DIRTY_ZINC.get(), 2)
                 .unlockedBy("has_ore_zinc", has(REOBlocks.DEEPSLATE_ZINC.get())).save(pWriter);
 
 
         // Gravel
-        new CrusherRecipeBuilder(REOBlocks.GRAVEL_ORE_ALUMINIUM.get(), REOBlocks.GRAVEL_ORE_ALUMINIUM.get(), REOItems.DUST_ALUMINIUM.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.GRAVEL_ORE_ALUMINIUM.get(), REOBlocks.GRAVEL_ORE_ALUMINIUM.get(), REOItems.DUST_DIRTY_ALUMINIUM.get(), 2)
                 .unlockedBy("has_gravel_ore_aluminium", has(REOBlocks.GRAVEL_ORE_ALUMINIUM.get())).save(pWriter);
         new CrusherRecipeBuilder(REOBlocks.GRAVEL_ORE_COAL.get(), REOBlocks.GRAVEL_ORE_COAL.get(), REOItems.DUST_COAL.get(), 2)
                 .unlockedBy("has_gravel_ore_coal", has(REOBlocks.GRAVEL_ORE_COAL.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.GRAVEL_ORE_COPPER.get(), REOBlocks.GRAVEL_ORE_COPPER.get(), REOItems.DUST_COPPER.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.GRAVEL_ORE_COPPER.get(), REOBlocks.GRAVEL_ORE_COPPER.get(), REOItems.DUST_DIRTY_COPPER.get(), 2)
                 .unlockedBy("has_gravel_ore_copper", has(REOBlocks.GRAVEL_ORE_COPPER.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.GRAVEL_ORE_DIAMOND.get(), REOBlocks.GRAVEL_ORE_DIAMOND.get(), REOItems.DUST_DIAMOND.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.GRAVEL_ORE_DIAMOND.get(), REOBlocks.GRAVEL_ORE_DIAMOND.get(), REOItems.DUST_DIRTY_DIAMOND.get(), 2)
                 .unlockedBy("has_gravel_ore_diamond", has(REOBlocks.GRAVEL_ORE_DIAMOND.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.GRAVEL_ORE_EMERALD.get(), REOBlocks.GRAVEL_ORE_EMERALD.get(), REOItems.DUST_EMERALD.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.GRAVEL_ORE_EMERALD.get(), REOBlocks.GRAVEL_ORE_EMERALD.get(), REOItems.DUST_DIRTY_EMERALD.get(), 2)
                 .unlockedBy("has_gravel_ore_emerald", has(REOBlocks.GRAVEL_ORE_EMERALD.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.GRAVEL_ORE_GOLD.get(), REOBlocks.GRAVEL_ORE_GOLD.get(), REOItems.DUST_GOLD.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.GRAVEL_ORE_GOLD.get(), REOBlocks.GRAVEL_ORE_GOLD.get(), REOItems.DUST_DIRTY_GOLD.get(), 2)
                 .unlockedBy("has_gravel_ore_gold", has(REOBlocks.GRAVEL_ORE_GOLD.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.GRAVEL_ORE_IRON.get(), REOBlocks.GRAVEL_ORE_IRON.get(), REOItems.DUST_IRON.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.GRAVEL_ORE_IRON.get(), REOBlocks.GRAVEL_ORE_IRON.get(), REOItems.DUST_DIRTY_IRON.get(), 2)
                 .unlockedBy("has_gravel_ore_iron", has(REOBlocks.GRAVEL_ORE_IRON.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.GRAVEL_ORE_LEAD.get(), REOBlocks.GRAVEL_ORE_LEAD.get(), REOItems.DUST_LEAD.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.GRAVEL_ORE_LEAD.get(), REOBlocks.GRAVEL_ORE_LEAD.get(), REOItems.DUST_DIRTY_LEAD.get(), 2)
                 .unlockedBy("has_gravel_ore_lead", has(REOBlocks.GRAVEL_ORE_LEAD.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.GRAVEL_ORE_NICKEL.get(), REOBlocks.GRAVEL_ORE_NICKEL.get(), REOItems.DUST_NICKEL.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.GRAVEL_ORE_NICKEL.get(), REOBlocks.GRAVEL_ORE_NICKEL.get(), REOItems.DUST_DIRTY_NICKEL.get(), 2)
                 .unlockedBy("has_gravel_ore_nickel", has(REOBlocks.GRAVEL_ORE_NICKEL.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.GRAVEL_ORE_PLATINUM.get(), REOBlocks.GRAVEL_ORE_PLATINUM.get(), REOItems.DUST_PLATINUM.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.GRAVEL_ORE_PLATINUM.get(), REOBlocks.GRAVEL_ORE_PLATINUM.get(), REOItems.DUST_DIRTY_PLATINUM.get(), 2)
                 .unlockedBy("has_gravel_ore_platinum", has(REOBlocks.GRAVEL_ORE_PLATINUM.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.GRAVEL_ORE_SILVER.get(), REOBlocks.GRAVEL_ORE_SILVER.get(), REOItems.DUST_SILVER.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.GRAVEL_ORE_SILVER.get(), REOBlocks.GRAVEL_ORE_SILVER.get(), REOItems.DUST_DIRTY_SILVER.get(), 2)
                 .unlockedBy("has_gravel_ore_silver", has(REOBlocks.GRAVEL_ORE_SILVER.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.GRAVEL_ORE_TIN.get(), REOBlocks.GRAVEL_ORE_TIN.get(), REOItems.DUST_TIN.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.GRAVEL_ORE_TIN.get(), REOBlocks.GRAVEL_ORE_TIN.get(), REOItems.DUST_DIRTY_TIN.get(), 2)
                 .unlockedBy("has_gravel_ore_tin", has(REOBlocks.GRAVEL_ORE_TIN.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.GRAVEL_ORE_URANIUM.get(), REOBlocks.GRAVEL_ORE_URANIUM.get(), REOItems.DUST_URANIUM.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.GRAVEL_ORE_URANIUM.get(), REOBlocks.GRAVEL_ORE_URANIUM.get(), REOItems.DUST_DIRTY_URANIUM.get(), 2)
                 .unlockedBy("has_gravel_ore_uranium", has(REOBlocks.GRAVEL_ORE_URANIUM.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.GRAVEL_ORE_ZINC.get(), REOBlocks.GRAVEL_ORE_ZINC.get(), REOItems.DUST_ZINC.get(), 2)
+        new CrusherRecipeBuilder(REOBlocks.GRAVEL_ORE_ZINC.get(), REOBlocks.GRAVEL_ORE_ZINC.get(), REOItems.DUST_DIRTY_ZINC.get(), 2)
                 .unlockedBy("has_gravel_ore_zinc", has(REOBlocks.GRAVEL_ORE_ZINC.get())).save(pWriter);
 
         // Nether
-        new CrusherRecipeBuilder(REOBlocks.NETHER_ALUMINIUM.get(), REOBlocks.NETHER_ALUMINIUM.get(), REOItems.DUST_ALUMINIUM.get(), 1)
+        new CrusherRecipeBuilder(REOBlocks.NETHER_ALUMINIUM.get(), REOBlocks.NETHER_ALUMINIUM.get(), REOItems.DUST_DIRTY_ALUMINIUM.get(), 1)
                 .unlockedBy("has_nether_aluminium", has(REOBlocks.NETHER_ALUMINIUM.get())).save(pWriter);
         new CrusherRecipeBuilder(REOBlocks.NETHER_COAL.get(), REOBlocks.NETHER_COAL.get(), REOItems.DUST_COAL.get(), 1)
                 .unlockedBy("has_NETHER_coal", has(REOBlocks.NETHER_COAL.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.NETHER_COPPER.get(), REOBlocks.NETHER_COPPER.get(), REOItems.DUST_COPPER.get(), 1)
+        new CrusherRecipeBuilder(REOBlocks.NETHER_COPPER.get(), REOBlocks.NETHER_COPPER.get(), REOItems.DUST_DIRTY_COPPER.get(), 1)
                 .unlockedBy("has_nether_copper", has(REOBlocks.NETHER_COPPER.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.NETHER_DIAMOND.get(), REOBlocks.NETHER_DIAMOND.get(), REOItems.DUST_DIAMOND.get(), 1)
+        new CrusherRecipeBuilder(REOBlocks.NETHER_DIAMOND.get(), REOBlocks.NETHER_DIAMOND.get(), REOItems.DUST_DIRTY_DIAMOND.get(), 1)
                 .unlockedBy("has_nether_diamond", has(REOBlocks.NETHER_DIAMOND.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.NETHER_EMERALD.get(), REOBlocks.NETHER_EMERALD.get(), REOItems.DUST_EMERALD.get(), 1)
+        new CrusherRecipeBuilder(REOBlocks.NETHER_EMERALD.get(), REOBlocks.NETHER_EMERALD.get(), REOItems.DUST_DIRTY_EMERALD.get(), 1)
                 .unlockedBy("has_nether_emerald", has(REOBlocks.NETHER_EMERALD.get())).save(pWriter);
-        new CrusherRecipeBuilder(Blocks.NETHER_GOLD_ORE, Blocks.NETHER_GOLD_ORE, REOItems.DUST_GOLD.get(), 1)
+        new CrusherRecipeBuilder(Blocks.NETHER_GOLD_ORE, Blocks.NETHER_GOLD_ORE, REOItems.DUST_DIRTY_GOLD.get(), 1)
                 .unlockedBy("has_nether_gold", has(Blocks.NETHER_GOLD_ORE)).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.NETHER_IRON.get(), REOBlocks.NETHER_IRON.get(), REOItems.DUST_IRON.get(), 1)
+        new CrusherRecipeBuilder(REOBlocks.NETHER_IRON.get(), REOBlocks.NETHER_IRON.get(), REOItems.DUST_DIRTY_IRON.get(), 1)
                 .unlockedBy("has_nether_iron", has(REOBlocks.NETHER_IRON.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.NETHER_LEAD.get(), REOBlocks.NETHER_LEAD.get(), REOItems.DUST_LEAD.get(), 1)
+        new CrusherRecipeBuilder(REOBlocks.NETHER_LEAD.get(), REOBlocks.NETHER_LEAD.get(), REOItems.DUST_DIRTY_LEAD.get(), 1)
                 .unlockedBy("has_nether_lead", has(REOBlocks.NETHER_LEAD.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.NETHER_NICKEL.get(), REOBlocks.NETHER_NICKEL.get(), REOItems.DUST_NICKEL.get(), 1)
+        new CrusherRecipeBuilder(REOBlocks.NETHER_NICKEL.get(), REOBlocks.NETHER_NICKEL.get(), REOItems.DUST_DIRTY_NICKEL.get(), 1)
                 .unlockedBy("has_nether_nickel", has(REOBlocks.NETHER_NICKEL.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.NETHER_PLATINUM.get(), REOBlocks.NETHER_PLATINUM.get(), REOItems.DUST_PLATINUM.get(), 1)
+        new CrusherRecipeBuilder(REOBlocks.NETHER_PLATINUM.get(), REOBlocks.NETHER_PLATINUM.get(), REOItems.DUST_DIRTY_PLATINUM.get(), 1)
                 .unlockedBy("has_nether_platinum", has(REOBlocks.NETHER_PLATINUM.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.NETHER_SILVER.get(), REOBlocks.NETHER_SILVER.get(), REOItems.DUST_SILVER.get(), 1)
+        new CrusherRecipeBuilder(REOBlocks.NETHER_SILVER.get(), REOBlocks.NETHER_SILVER.get(), REOItems.DUST_DIRTY_SILVER.get(), 1)
                 .unlockedBy("has_nether_silver", has(REOBlocks.NETHER_SILVER.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.NETHER_TIN.get(), REOBlocks.NETHER_TIN.get(), REOItems.DUST_TIN.get(), 1)
+        new CrusherRecipeBuilder(REOBlocks.NETHER_TIN.get(), REOBlocks.NETHER_TIN.get(), REOItems.DUST_DIRTY_TIN.get(), 1)
                 .unlockedBy("has_nether_tin", has(REOBlocks.NETHER_TIN.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.NETHER_URANIUM.get(), REOBlocks.NETHER_URANIUM.get(), REOItems.DUST_URANIUM.get(), 1)
+        new CrusherRecipeBuilder(REOBlocks.NETHER_URANIUM.get(), REOBlocks.NETHER_URANIUM.get(), REOItems.DUST_DIRTY_URANIUM.get(), 1)
                 .unlockedBy("has_nether_uranium", has(REOBlocks.NETHER_URANIUM.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOBlocks.NETHER_ZINC.get(), REOBlocks.NETHER_ZINC.get(), REOItems.DUST_ZINC.get(), 1)
+        new CrusherRecipeBuilder(REOBlocks.NETHER_ZINC.get(), REOBlocks.NETHER_ZINC.get(), REOItems.DUST_DIRTY_ZINC.get(), 1)
                 .unlockedBy("has_nether_zinc", has(REOBlocks.NETHER_ZINC.get())).save(pWriter);
 
 
@@ -416,51 +550,51 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_charcoal", has(Items.CHARCOAL)).save(pWriter);
         new CrusherRecipeBuilder(Items.COAL, Items.COAL, REOItems.DUST_COAL.get(), 1)
                 .unlockedBy("has_coal", has(Items.COAL)).save(pWriter);
-        new CrusherRecipeBuilder(Blocks.OBSIDIAN, Blocks.OBSIDIAN, REOItems.DUST_OBSIDIAN.get(), 2)
+        new CrusherRecipeBuilder(Blocks.OBSIDIAN, Blocks.OBSIDIAN, REOItems.DUST_DIRTY_OBSIDIAN.get(), 2)
                 .unlockedBy("has_obsidian", has(Blocks.OBSIDIAN)).save(pWriter);
 
         // Ingots
-        new CrusherRecipeBuilder(REOItems.INGOT_ALUMINIUM.get(), REOItems.INGOT_ALUMINIUM.get(), REOItems.DUST_ALUMINIUM.get(), 1)
+        new CrusherRecipeBuilder(REOItems.INGOT_ALUMINIUM.get(), REOItems.INGOT_ALUMINIUM.get(), REOItems.DUST_DIRTY_ALUMINIUM.get(), 1)
                 .unlockedBy("has_ingot_aluminium", has(REOItems.INGOT_ALUMINIUM.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOItems.GEM_AMETHYST.get(), REOItems.GEM_AMETHYST.get(), REOItems.DUST_AMETHYST.get(), 1)
+        new CrusherRecipeBuilder(REOItems.GEM_AMETHYST.get(), REOItems.GEM_AMETHYST.get(), REOItems.DUST_DIRTY_AMETHYST.get(), 1)
                 .unlockedBy("has_ingot_aluminium", has(REOItems.GEM_AMETHYST.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOItems.INGOT_BRASS.get(), REOItems.INGOT_BRASS.get(), REOItems.DUST_BRASS.get(), 1)
+        new CrusherRecipeBuilder(REOItems.INGOT_BRASS.get(), REOItems.INGOT_BRASS.get(), REOItems.DUST_DIRTY_BRASS.get(), 1)
                 .unlockedBy("has_ingot_brass", has(REOItems.INGOT_BRASS.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOItems.INGOT_BRONZE.get(), REOItems.INGOT_BRONZE.get(), REOItems.DUST_BRONZE.get(), 1)
+        new CrusherRecipeBuilder(REOItems.INGOT_BRONZE.get(), REOItems.INGOT_BRONZE.get(), REOItems.DUST_DIRTY_BRONZE.get(), 1)
                 .unlockedBy("has_ingot_bronze", has(REOItems.INGOT_BRONZE.get())).save(pWriter);
-        new CrusherRecipeBuilder(Items.DIAMOND, Items.DIAMOND, REOItems.DUST_DIAMOND.get(), 1)
+        new CrusherRecipeBuilder(Items.DIAMOND, Items.DIAMOND, REOItems.DUST_DIRTY_DIAMOND.get(), 1)
                 .unlockedBy("has_ingot_aluminium", has(Items.DIAMOND)).save(pWriter);
-        new CrusherRecipeBuilder(REOItems.INGOT_ELECTRUM.get(), REOItems.INGOT_ELECTRUM.get(), REOItems.DUST_ELECTRUM.get(), 1)
+        new CrusherRecipeBuilder(REOItems.INGOT_ELECTRUM.get(), REOItems.INGOT_ELECTRUM.get(), REOItems.DUST_DIRTY_ELECTRUM.get(), 1)
                 .unlockedBy("has_ingot_electrum", has(REOItems.INGOT_ELECTRUM.get())).save(pWriter);
-        new CrusherRecipeBuilder(Items.EMERALD, Items.EMERALD, REOItems.DUST_EMERALD.get(), 1)
+        new CrusherRecipeBuilder(Items.EMERALD, Items.EMERALD, REOItems.DUST_DIRTY_EMERALD.get(), 1)
                 .unlockedBy("has_ingot_aluminium", has(Items.EMERALD)).save(pWriter);
-        new CrusherRecipeBuilder(REOItems.INGOT_ENDERITE.get(), REOItems.INGOT_ENDERITE.get(), REOItems.DUST_ENDERITE.get(), 1)
+        new CrusherRecipeBuilder(REOItems.INGOT_ENDERITE.get(), REOItems.INGOT_ENDERITE.get(), REOItems.DUST_DIRTY_ENDERITE.get(), 1)
                 .unlockedBy("has_ingot_enderite", has(REOItems.INGOT_ENDERITE.get())).save(pWriter);
-        new CrusherRecipeBuilder(Items.GOLD_INGOT, Items.GOLD_INGOT, REOItems.DUST_GOLD.get(), 1)
+        new CrusherRecipeBuilder(Items.GOLD_INGOT, Items.GOLD_INGOT, REOItems.DUST_DIRTY_GOLD.get(), 1)
                 .unlockedBy("has_ingot_aluminium", has(Items.GOLD_INGOT)).save(pWriter);
-        new CrusherRecipeBuilder(Items.IRON_INGOT, Items.IRON_INGOT, REOItems.DUST_IRON.get(), 1)
+        new CrusherRecipeBuilder(Items.IRON_INGOT, Items.IRON_INGOT, REOItems.DUST_DIRTY_IRON.get(), 1)
                 .unlockedBy("has_ingot_aluminium", has(Items.IRON_INGOT)).save(pWriter);
-        new CrusherRecipeBuilder(REOItems.INGOT_LEAD.get(), REOItems.INGOT_LEAD.get(), REOItems.DUST_LEAD.get(), 1)
+        new CrusherRecipeBuilder(REOItems.INGOT_LEAD.get(), REOItems.INGOT_LEAD.get(), REOItems.DUST_DIRTY_LEAD.get(), 1)
                 .unlockedBy("has_ingot_lead", has(REOItems.INGOT_LEAD.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOItems.INGOT_NICKEL.get(), REOItems.INGOT_NICKEL.get(), REOItems.DUST_NICKEL.get(), 1)
+        new CrusherRecipeBuilder(REOItems.INGOT_NICKEL.get(), REOItems.INGOT_NICKEL.get(), REOItems.DUST_DIRTY_NICKEL.get(), 1)
                 .unlockedBy("has_ingot_nickel", has(REOItems.INGOT_NICKEL.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOItems.GEM_PERIDOT.get(), REOItems.GEM_PERIDOT.get(), REOItems.DUST_PERIDOT.get(), 1)
+        new CrusherRecipeBuilder(REOItems.GEM_PERIDOT.get(), REOItems.GEM_PERIDOT.get(), REOItems.DUST_DIRTY_PERIDOT.get(), 1)
                 .unlockedBy("has_ingot_aluminium", has(REOItems.GEM_PERIDOT.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOItems.INGOT_PLATINUM.get(), REOItems.INGOT_PLATINUM.get(), REOItems.DUST_PLATINUM.get(), 1)
+        new CrusherRecipeBuilder(REOItems.INGOT_PLATINUM.get(), REOItems.INGOT_PLATINUM.get(), REOItems.DUST_DIRTY_PLATINUM.get(), 1)
                 .unlockedBy("has_ingot_platinum", has(REOItems.INGOT_PLATINUM.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOItems.GEM_RUBY.get(), REOItems.GEM_RUBY.get(), REOItems.DUST_RUBY.get(), 1)
+        new CrusherRecipeBuilder(REOItems.GEM_RUBY.get(), REOItems.GEM_RUBY.get(), REOItems.DUST_DIRTY_RUBY.get(), 1)
                 .unlockedBy("has_ingot_aluminium", has(REOItems.GEM_RUBY.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOItems.GEM_SAPPHIRE.get(), REOItems.GEM_SAPPHIRE.get(), REOItems.DUST_SAPPHIRE.get(), 1)
+        new CrusherRecipeBuilder(REOItems.GEM_SAPPHIRE.get(), REOItems.GEM_SAPPHIRE.get(), REOItems.DUST_DIRTY_SAPPHIRE.get(), 1)
                 .unlockedBy("has_ingot_aluminium", has(REOItems.GEM_SAPPHIRE.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOItems.INGOT_SILVER.get(), REOItems.INGOT_SILVER.get(), REOItems.DUST_SILVER.get(), 1)
+        new CrusherRecipeBuilder(REOItems.INGOT_SILVER.get(), REOItems.INGOT_SILVER.get(), REOItems.DUST_DIRTY_SILVER.get(), 1)
                 .unlockedBy("has_ingot_silver", has(REOItems.INGOT_SILVER.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOItems.INGOT_STEEL.get(), REOItems.INGOT_STEEL.get(), REOItems.DUST_STEEL.get(), 1)
+        new CrusherRecipeBuilder(REOItems.INGOT_STEEL.get(), REOItems.INGOT_STEEL.get(), REOItems.DUST_DIRTY_STEEL.get(), 1)
                 .unlockedBy("has_ingot_steel", has(REOItems.INGOT_STEEL.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOItems.INGOT_TIN.get(), REOItems.INGOT_TIN.get(), REOItems.DUST_TIN.get(), 1)
+        new CrusherRecipeBuilder(REOItems.INGOT_TIN.get(), REOItems.INGOT_TIN.get(), REOItems.DUST_DIRTY_TIN.get(), 1)
                 .unlockedBy("has_ingot_tin", has(REOItems.INGOT_TIN.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOItems.INGOT_URANIUM.get(), REOItems.INGOT_URANIUM.get(), REOItems.DUST_URANIUM.get(), 1)
+        new CrusherRecipeBuilder(REOItems.INGOT_URANIUM.get(), REOItems.INGOT_URANIUM.get(), REOItems.DUST_DIRTY_URANIUM.get(), 1)
                 .unlockedBy("has_ingot_uranium", has(REOItems.INGOT_URANIUM.get())).save(pWriter);
-        new CrusherRecipeBuilder(REOItems.INGOT_ZINC.get(), REOItems.INGOT_ZINC.get(), REOItems.DUST_ZINC.get(), 1)
+        new CrusherRecipeBuilder(REOItems.INGOT_ZINC.get(), REOItems.INGOT_ZINC.get(), REOItems.DUST_DIRTY_ZINC.get(), 1)
                 .unlockedBy("has_ingot_zinc", has(REOItems.INGOT_ZINC.get())).save(pWriter);
 
         // Alloy Furnace //

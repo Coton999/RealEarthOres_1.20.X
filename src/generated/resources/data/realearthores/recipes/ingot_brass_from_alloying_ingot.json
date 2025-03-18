@@ -1,6 +1,13 @@
 {
   "type": "realearthores:alloying",
-  "ingredients": [],
+  "ingredients": [
+    {
+      "item": "realearthores:dust_copper"
+    },
+    {
+      "item": "realearthores:dust_zinc"
+    }
+  ],
   "output": {
     "count": 2,
     "item": "realearthores:ingot_brass"

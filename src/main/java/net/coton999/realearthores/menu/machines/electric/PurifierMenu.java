@@ -106,7 +106,7 @@ public class PurifierMenu extends AbstractContainerMenu {
     @Override
     public boolean stillValid(Player pPlayer) {
         return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
-                pPlayer, REOBlocks.PURIFIER.get());
+                pPlayer, REOBlocks.ELECTRIC_PURIFIER.get());
     }
 
     private void addPlayerInventory(Inventory playerInventory) {

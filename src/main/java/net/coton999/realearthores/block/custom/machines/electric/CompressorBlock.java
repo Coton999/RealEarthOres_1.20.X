@@ -125,7 +125,7 @@ public class CompressorBlock extends BaseEntityBlock {
             return null;
         }
 
-        return createTickerHelper(pBlockEntityType, REOBlockEntities.COMPRESSOR_BE.get(),
+        return createTickerHelper(pBlockEntityType, REOBlockEntities.ELECTRIC_COMPRESSOR_BE.get(),
                 (pLevel1, pPos, pState1, pBlockEntity) -> pBlockEntity.tick(pLevel1, pPos, pState1));
     }
 }

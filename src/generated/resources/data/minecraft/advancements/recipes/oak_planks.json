@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_wood_oak": {
+    "has_stripped_log_oak": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:stripped_oak_wood"
+              "minecraft:stripped_oak_log"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_stripped_wood_oak",
+      "has_stripped_log_oak",
       "has_the_recipe"
     ]
   ],

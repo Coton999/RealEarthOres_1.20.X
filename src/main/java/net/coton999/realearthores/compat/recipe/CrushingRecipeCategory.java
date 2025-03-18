@@ -18,7 +18,7 @@ import net.minecraft.world.item.ItemStack;
 public class CrushingRecipeCategory implements IRecipeCategory<CrusherRecipe> {
     public static final ResourceLocation UID = new ResourceLocation(RealEarthOres.MOD_ID, "crusher");
     public static final ResourceLocation TEXTURE = new ResourceLocation(RealEarthOres.MOD_ID,
-            "textures/gui/container/machine/coal/crusher.png");
+            "textures/gui/container/machine/electric/machine.png");
 
     public static final RecipeType<CrusherRecipe> CRUSHER_TYPE =
             new RecipeType<>(UID, CrusherRecipe.class);
@@ -29,7 +29,7 @@ public class CrushingRecipeCategory implements IRecipeCategory<CrusherRecipe> {
     public CrushingRecipeCategory(IGuiHelper helper) {
         this.background = helper.createDrawable(TEXTURE, 53, 14, 86, 58);
         this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(REOBlocks.CRUSHER.get()));
-    }
+       }
 
 
     @Override
@@ -39,7 +39,7 @@ public class CrushingRecipeCategory implements IRecipeCategory<CrusherRecipe> {
 
     @Override
     public Component getTitle() {
-        return Component.literal("Crusher");
+        return Component.literal("Crushing");
     }
 
     @Override

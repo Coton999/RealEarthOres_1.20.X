@@ -73,7 +73,7 @@ public class TransfuserBlockEntity extends BlockEntity implements MenuProvider {
     private int maxProgress = 200;
 
     public TransfuserBlockEntity(BlockPos pPos, BlockState pBlockState) {
-        super(REOBlockEntities.TRANSFUSER_BE.get(), pPos, pBlockState);
+        super(REOBlockEntities.ELECTRIC_TRANSFUSER_BE.get(), pPos, pBlockState);
         this.data = new ContainerData() {
             @Override
             public int get(int pIndex) {

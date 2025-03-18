@@ -28,11 +28,11 @@ public class CrusherRecipeBuilder implements RecipeBuilder {
     private final int count;
     private final Advancement.Builder advancement = Advancement.Builder.advancement();
 
-    public CrusherRecipeBuilder(ItemLike ingredient, ItemLike input, ItemLike result, int count) {
-        this.ingredient = Ingredient.of(ingredient);
-        this.input = input.asItem();
-        this.result = result.asItem();
-        this.count = count;
+    public CrusherRecipeBuilder(ItemLike pIngredient, ItemLike pInput, ItemLike pResult, int pCount) {
+        this.ingredient = Ingredient.of(pIngredient);
+        this.input = pInput.asItem();
+        this.result = pResult.asItem();
+        this.count = pCount;
     }
 
     @Override

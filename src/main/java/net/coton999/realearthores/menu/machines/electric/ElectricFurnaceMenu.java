@@ -106,7 +106,7 @@ public class ElectricFurnaceMenu extends AbstractContainerMenu {
     @Override
     public boolean stillValid(Player pPlayer) {
         return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
-                pPlayer, REOBlocks.KILN.get());
+                pPlayer, REOBlocks.ELECTRIC_FURNACE.get());
     }
 
     private void addPlayerInventory(Inventory playerInventory) {

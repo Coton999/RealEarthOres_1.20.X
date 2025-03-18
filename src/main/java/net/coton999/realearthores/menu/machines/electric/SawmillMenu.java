@@ -106,7 +106,7 @@ public class SawmillMenu extends AbstractContainerMenu {
     @Override
     public boolean stillValid(Player pPlayer) {
         return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
-                pPlayer, REOBlocks.SAWMILL.get());
+                pPlayer, REOBlocks.ELECTRIC_SAWMILL.get());
     }
 
     private void addPlayerInventory(Inventory playerInventory) {

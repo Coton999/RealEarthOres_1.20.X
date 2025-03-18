@@ -12,7 +12,7 @@ import net.minecraft.world.entity.player.Inventory;
 
 public class AlloyFurnaceScreen extends AbstractContainerScreen<AlloyFurnaceMenu> {
     private static final ResourceLocation TEXTURE =
-            new ResourceLocation(RealEarthOres.MOD_ID,"textures/gui/container/machine/coal/alloy_furnace.png");
+            new ResourceLocation(RealEarthOres.MOD_ID,"textures/gui/container/machine/electric/electric_alloy_furnace.png");
 
     public AlloyFurnaceScreen(AlloyFurnaceMenu pMenu, Inventory pPlayerInventory, Component pTitle) {
         super(pMenu, pPlayerInventory, pTitle);

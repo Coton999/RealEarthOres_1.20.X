@@ -124,7 +124,7 @@ public class AlloyFurnaceBlock extends BaseEntityBlock {
             return null;
         }
 
-        return createTickerHelper(pBlockEntityType, REOBlockEntities.ALLOY_FURNACE_BE.get(),
+        return createTickerHelper(pBlockEntityType, REOBlockEntities.ELECTRIC_ALLOY_FURNACE_BE.get(),
                 (pLevel1, pPos, pState1, pBlockEntity) -> pBlockEntity.tick(pLevel1, pPos, pState1));
     }
 }

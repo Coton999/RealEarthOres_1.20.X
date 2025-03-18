@@ -12,7 +12,7 @@ import net.minecraft.world.entity.player.Inventory;
 
 public class ElectricFurnaceScreen extends AbstractContainerScreen<ElectricFurnaceMenu> {
     private static final ResourceLocation TEXTURE =
-            new ResourceLocation(RealEarthOres.MOD_ID,"textures/gui/container/machine/coal/machine.png");
+            new ResourceLocation(RealEarthOres.MOD_ID,"textures/gui/container/machine/electric/machine.png");
 
     public ElectricFurnaceScreen(ElectricFurnaceMenu pMenu, Inventory pPlayerInventory, Component pTitle) {
         super(pMenu, pPlayerInventory, pTitle);
@@ -22,7 +22,7 @@ public class ElectricFurnaceScreen extends AbstractContainerScreen<ElectricFurna
     protected void init() {
         super.init();
         this.inventoryLabelY = 72;
-        this.titleLabelX = 68;
+        this.titleLabelX = 56;
         this.titleLabelY = 5;
     }
 

@@ -125,7 +125,7 @@ public class TransfuserBlock extends BaseEntityBlock {
             return null;
         }
 
-        return createTickerHelper(pBlockEntityType, REOBlockEntities.TRANSFUSER_BE.get(),
+        return createTickerHelper(pBlockEntityType, REOBlockEntities.ELECTRIC_TRANSFUSER_BE.get(),
                 (pLevel1, pPos, pState1, pBlockEntity) -> pBlockEntity.tick(pLevel1, pPos, pState1));
     }
 }

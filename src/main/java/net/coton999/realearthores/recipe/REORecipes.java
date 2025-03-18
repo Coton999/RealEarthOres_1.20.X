@@ -1,7 +1,7 @@
 package net.coton999.realearthores.recipe;
 
 import net.coton999.realearthores.RealEarthOres;
-import net.coton999.realearthores.recipe.machines.coal.KilnRecipe;
+import net.coton999.realearthores.recipe.machines.coal.*;
 import net.coton999.realearthores.recipe.machines.electric.*;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -16,6 +16,14 @@ public class REORecipes {
     // Coal
     public static final RegistryObject<RecipeSerializer<KilnRecipe>> KILN_SERIALIZER =
             SERIALIZERS.register("firing", () -> KilnRecipe.Serializer.INSTANCE);
+    public static final RegistryObject<RecipeSerializer<BasicCrusherRecipe>> BASIC_CRUSHER_SERIALIZER =
+            SERIALIZERS.register("basic_crushing", () -> BasicCrusherRecipe.Serializer.INSTANCE);
+    public static final RegistryObject<RecipeSerializer<BasicSawmillRecipe>> BASIC_SAWMILL_SERIALIZER =
+            SERIALIZERS.register("basic_milling", () -> BasicSawmillRecipe.Serializer.INSTANCE);
+    public static final RegistryObject<RecipeSerializer<BasicExtractorRecipe>> BASIC_EXTRACTOR_SERIALIZER =
+            SERIALIZERS.register("basic_extracting", () -> BasicExtractorRecipe.Serializer.INSTANCE);
+    public static final RegistryObject<RecipeSerializer<BasicCompressorRecipe>> BASIC_COMPRESSOR_SERIALIZER =
+            SERIALIZERS.register("basic_compressing", () -> BasicCompressorRecipe.Serializer.INSTANCE);
 
     // Electric
     public static final RegistryObject<RecipeSerializer<ElectricFurnaceRecipe>> ELECTRIC_FURNACE_SERIALIZER =

@@ -106,7 +106,7 @@ public class CompressorMenu extends AbstractContainerMenu {
     @Override
     public boolean stillValid(Player pPlayer) {
         return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
-                pPlayer, REOBlocks.COMPRESSOR.get());
+                pPlayer, REOBlocks.ELECTRIC_COMPRESSOR.get());
     }
 
     private void addPlayerInventory(Inventory playerInventory) {

@@ -12,7 +12,7 @@ import net.minecraft.world.entity.player.Inventory;
 
 public class CompressorScreen extends AbstractContainerScreen<CompressorMenu> {
     private static final ResourceLocation TEXTURE =
-            new ResourceLocation(RealEarthOres.MOD_ID,"textures/gui/container/machine/coal/machine.png");
+            new ResourceLocation(RealEarthOres.MOD_ID,"textures/gui/container/machine/electric/machine.png");
 
     public CompressorScreen(CompressorMenu pMenu, Inventory pPlayerInventory, Component pTitle) {
         super(pMenu, pPlayerInventory, pTitle);

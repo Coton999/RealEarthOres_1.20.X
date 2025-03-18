@@ -125,7 +125,7 @@ public class PurifierBlock extends BaseEntityBlock {
             return null;
         }
 
-        return createTickerHelper(pBlockEntityType, REOBlockEntities.PURIFIER_BE.get(),
+        return createTickerHelper(pBlockEntityType, REOBlockEntities.ELECTRIC_PURIFIER_BE.get(),
                 (pLevel1, pPos, pState1, pBlockEntity) -> pBlockEntity.tick(pLevel1, pPos, pState1));
     }
 }

@@ -73,7 +73,7 @@ public class CentrifugeBlockEntity extends BlockEntity implements MenuProvider {
     private int maxProgress = 200;
 
     public CentrifugeBlockEntity(BlockPos pPos, BlockState pBlockState) {
-        super(REOBlockEntities.CENTRIFUGE_BE.get(), pPos, pBlockState);
+        super(REOBlockEntities.ELECTRIC_CENTRIFUGE_BE.get(), pPos, pBlockState);
         this.data = new ContainerData() {
             @Override
             public int get(int pIndex) {

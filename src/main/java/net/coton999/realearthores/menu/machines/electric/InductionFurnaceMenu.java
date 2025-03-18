@@ -106,7 +106,7 @@ public class InductionFurnaceMenu extends AbstractContainerMenu {
     @Override
     public boolean stillValid(Player pPlayer) {
         return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
-                pPlayer, REOBlocks.INDUCTION_FURNACE.get());
+                pPlayer, REOBlocks.ELECTRIC_INDUCTION_FURNACE.get());
     }
 
     private void addPlayerInventory(Inventory playerInventory) {

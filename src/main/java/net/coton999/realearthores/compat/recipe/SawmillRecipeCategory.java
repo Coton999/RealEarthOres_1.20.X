@@ -18,7 +18,7 @@ import net.minecraft.world.item.ItemStack;
 public class SawmillRecipeCategory implements IRecipeCategory<SawmillRecipe> {
     public static final ResourceLocation UID = new ResourceLocation(RealEarthOres.MOD_ID, "sawmill");
     public static final ResourceLocation TEXTURE = new ResourceLocation(RealEarthOres.MOD_ID,
-            "textures/gui/container/machine/coal/sawmill.png");
+            "textures/gui/container/machine/electric/machine.png");
 
     public static final RecipeType<SawmillRecipe> SAWMILL_TYPE =
             new RecipeType<>(UID, SawmillRecipe.class);
@@ -39,7 +39,7 @@ public class SawmillRecipeCategory implements IRecipeCategory<SawmillRecipe> {
 
     @Override
     public Component getTitle() {
-        return Component.literal("Sawmill");
+        return Component.literal("Milling");
     }
 
     @Override

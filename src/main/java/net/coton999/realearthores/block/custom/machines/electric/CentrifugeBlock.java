@@ -125,7 +125,7 @@ public class CentrifugeBlock extends BaseEntityBlock {
             return null;
         }
 
-        return createTickerHelper(pBlockEntityType, REOBlockEntities.CENTRIFUGE_BE.get(),
+        return createTickerHelper(pBlockEntityType, REOBlockEntities.ELECTRIC_CENTRIFUGE_BE.get(),
                 (pLevel1, pPos, pState1, pBlockEntity) -> pBlockEntity.tick(pLevel1, pPos, pState1));
     }
 }

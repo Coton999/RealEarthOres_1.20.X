@@ -10,7 +10,7 @@ import net.coton999.realearthores.block.custom.cluster.BuddingSapphireBlock;
 import net.coton999.realearthores.block.custom.cluster.ClusterBlock;
 import net.coton999.realearthores.block.custom.crop.food.*;
 import net.coton999.realearthores.block.custom.fruit.*;
-import net.coton999.realearthores.block.custom.machines.coal.KilnBlock;
+import net.coton999.realearthores.block.custom.machines.coal.*;
 import net.coton999.realearthores.block.custom.machines.electric.*;
 import net.coton999.realearthores.block.custom.misc.GravelOreBlock;
 import net.coton999.realearthores.block.custom.misc.LampBlock;
@@ -2252,32 +2252,17 @@ public class REOBlocks {
             () -> new KilnBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .lightLevel((state) -> state.getValue(CrusherBlock.LIT) ? 13 : 0).noOcclusion()));
     public static final RegistryObject<Block> CRUSHER = registerBlock("crusher",
-            () -> new CrusherBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+            () -> new BasicCrusherBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .lightLevel((state) -> state.getValue(CrusherBlock.LIT) ? 13 : 0).noOcclusion()));
-    public static final RegistryObject<Block> PURIFIER = registerBlock("purifier",
-            () -> new PurifierBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
-                    .lightLevel((state) -> state.getValue(SawmillBlock.LIT) ? 13 : 0).noOcclusion()));
-    public static final RegistryObject<Block> ALLOY_FURNACE = registerBlock("alloy_furnace",
-            () -> new AlloyFurnaceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
-                    .lightLevel((state) -> state.getValue(AlloyFurnaceBlock.LIT) ? 13 : 0).noOcclusion()));
     public static final RegistryObject<Block> SAWMILL = registerBlock("sawmill",
-            () -> new SawmillBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+            () -> new BasicCrusherBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .lightLevel((state) -> state.getValue(SawmillBlock.LIT) ? 13 : 0).noOcclusion()));
     public static final RegistryObject<Block> EXTRACTOR = registerBlock("extractor",
-            () -> new ExtractorBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+            () -> new BasicExtractorBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .lightLevel((state) -> state.getValue(SawmillBlock.LIT) ? 13 : 0).noOcclusion()));
     public static final RegistryObject<Block> COMPRESSOR = registerBlock("compressor",
-            () -> new CompressorBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+            () -> new BasicCompressorBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .lightLevel((state) -> state.getValue(SawmillBlock.LIT) ? 13 : 0).noOcclusion()));
-    public static final RegistryObject<Block> CENTRIFUGE = registerBlock("centrifuge",
-            () -> new CentrifugeBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
-                    .lightLevel((state) -> state.getValue(SawmillBlock.LIT) ? 13 : 0).noOcclusion()));
-    public static final RegistryObject<Block> INDUCTION_FURNACE = registerBlock("induction_furnace",
-            () -> new InductionFurnaceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
-                    .lightLevel((state) -> state.getValue(AlloyFurnaceBlock.LIT) ? 13 : 0).noOcclusion()));
-    public static final RegistryObject<Block> TRANSFUSER = registerBlock("transfuser",
-            () -> new TransfuserBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
-                    .lightLevel((state) -> state.getValue(AlloyFurnaceBlock.LIT) ? 13 : 0).noOcclusion()));
 
     // Electric
     public static final RegistryObject<Block> ELECTRIC_FURNACE = registerBlock("electric_furnace",

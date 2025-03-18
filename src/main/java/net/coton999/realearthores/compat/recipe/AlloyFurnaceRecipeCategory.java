@@ -18,7 +18,7 @@ import net.minecraft.world.item.ItemStack;
 public class AlloyFurnaceRecipeCategory implements IRecipeCategory<AlloyFurnaceRecipe> {
     public static final ResourceLocation UID = new ResourceLocation(RealEarthOres.MOD_ID, "alloy_furnace");
     public static final ResourceLocation TEXTURE = new ResourceLocation(RealEarthOres.MOD_ID,
-            "textures/gui/container/machine/coal/alloy_furnace.png");
+            "textures/gui/container/machine/electric/electric_alloy_furnace.png");
 
     public static final RecipeType<AlloyFurnaceRecipe> ALLOY_FURNACE_TYPE =
             new RecipeType<>(UID, AlloyFurnaceRecipe.class);
@@ -28,7 +28,7 @@ public class AlloyFurnaceRecipeCategory implements IRecipeCategory<AlloyFurnaceR
 
     public AlloyFurnaceRecipeCategory(IGuiHelper helper) {
         this.background = helper.createDrawable(TEXTURE, 23, 14, 116, 58);
-        this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(REOBlocks.ALLOY_FURNACE.get()));
+        this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(REOBlocks.ELECTRIC_ALLOY_FURNACE.get()));
     }
 
 
@@ -39,7 +39,7 @@ public class AlloyFurnaceRecipeCategory implements IRecipeCategory<AlloyFurnaceR
 
     @Override
     public Component getTitle() {
-        return Component.literal("Alloy Furnace");
+        return Component.literal("Alloying");
     }
 
     @Override

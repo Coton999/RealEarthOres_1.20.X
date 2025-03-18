@@ -12,7 +12,7 @@ import net.minecraft.world.entity.player.Inventory;
 
 public class InductionFurnaceScreen extends AbstractContainerScreen<InductionFurnaceMenu> {
     private static final ResourceLocation TEXTURE =
-            new ResourceLocation(RealEarthOres.MOD_ID,"textures/gui/container/machine/coal/induction_furnace.png");
+            new ResourceLocation(RealEarthOres.MOD_ID,"textures/gui/container/machine/electric/electric_induction_furnace.png");
 
     public InductionFurnaceScreen(InductionFurnaceMenu pMenu, Inventory pPlayerInventory, Component pTitle) {
         super(pMenu, pPlayerInventory, pTitle);

@@ -74,7 +74,7 @@ public class SawmillBlockEntity extends BlockEntity implements MenuProvider {
     private int maxProgress = 200;
 
     public SawmillBlockEntity(BlockPos pPos, BlockState pBlockState) {
-        super(REOBlockEntities.SAWMILL_BE.get(), pPos, pBlockState);
+        super(REOBlockEntities.ELECTRIC_SAWMILL_BE.get(), pPos, pBlockState);
         this.data = new ContainerData() {
             @Override
             public int get(int pIndex) {

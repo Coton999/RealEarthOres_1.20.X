@@ -73,7 +73,7 @@ public class CompressorBlockEntity extends BlockEntity implements MenuProvider {
     private int maxProgress = 200;
 
     public CompressorBlockEntity(BlockPos pPos, BlockState pBlockState) {
-        super(REOBlockEntities.COMPRESSOR_BE.get(), pPos, pBlockState);
+        super(REOBlockEntities.ELECTRIC_COMPRESSOR_BE.get(), pPos, pBlockState);
         this.data = new ContainerData() {
             @Override
             public int get(int pIndex) {

@@ -73,7 +73,7 @@ public class ExtractorBlockEntity extends BlockEntity implements MenuProvider {
     private int maxProgress = 200;
 
     public ExtractorBlockEntity(BlockPos pPos, BlockState pBlockState) {
-        super(REOBlockEntities.EXTRACTOR_BE.get(), pPos, pBlockState);
+        super(REOBlockEntities.ELECTRIC_EXTRACTOR_BE.get(), pPos, pBlockState);
         this.data = new ContainerData() {
             @Override
             public int get(int pIndex) {

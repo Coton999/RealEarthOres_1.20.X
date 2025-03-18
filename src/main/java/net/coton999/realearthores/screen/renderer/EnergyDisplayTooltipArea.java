@@ -23,7 +23,7 @@ public class EnergyDisplayTooltipArea {
     private final IEnergyStorage energy;
 
     public EnergyDisplayTooltipArea(int xMin, int yMin, IEnergyStorage energy)  {
-        this(xMin, yMin, energy,8,64);
+        this(xMin, yMin, energy,6,69);
     }
 
     public EnergyDisplayTooltipArea(int xMin, int yMin, IEnergyStorage energy, int width, int height)  {

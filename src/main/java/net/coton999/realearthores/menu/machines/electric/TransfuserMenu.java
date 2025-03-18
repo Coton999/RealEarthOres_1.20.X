@@ -33,9 +33,9 @@ public class TransfuserMenu extends AbstractContainerMenu {
         addPlayerHotbar(inv);
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
-            this.addSlot(new SlotItemHandler(iItemHandler, 0, 56, 53));
-            this.addSlot(new SlotItemHandler(iItemHandler, 1, 56, 17));
-            this.addSlot(new SlotItemHandler(iItemHandler, 2, 116, 35));
+            this.addSlot(new SlotItemHandler(iItemHandler, 0, 110, 53));
+            this.addSlot(new SlotItemHandler(iItemHandler, 1, 110, 17));
+            this.addSlot(new SlotItemHandler(iItemHandler, 2, 36, 51));
         });
 
         addDataSlots(data);
@@ -106,7 +106,7 @@ public class TransfuserMenu extends AbstractContainerMenu {
     @Override
     public boolean stillValid(Player pPlayer) {
         return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
-                pPlayer, REOBlocks.TRANSFUSER.get());
+                pPlayer, REOBlocks.ELECTRIC_TRANSFUSER.get());
     }
 
     private void addPlayerInventory(Inventory playerInventory) {

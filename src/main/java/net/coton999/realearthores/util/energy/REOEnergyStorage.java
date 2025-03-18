@@ -18,6 +18,11 @@ public abstract class REOEnergyStorage extends EnergyStorage {
     }
 
     @Override
+    public int getMaxEnergyStored() {
+        return this.capacity;
+    }
+
+    @Override
     public int receiveEnergy(int maxReceive, boolean simulate) {
         int receiveEnergy = super.receiveEnergy(maxReceive, simulate);
         if(receiveEnergy != 0) {

@@ -27,7 +27,7 @@ public class KilnRecipeCategory implements IRecipeCategory<KilnRecipe> {
     private final IDrawable icon;
 
     public KilnRecipeCategory(IGuiHelper helper) {
-        this.background = helper.createDrawable(TEXTURE, 0, 0, 176, 85);
+        this.background = helper.createDrawable(TEXTURE, 53, 14, 86, 58);
         this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(REOBlocks.KILN.get()));
     }
 
@@ -38,7 +38,7 @@ public class KilnRecipeCategory implements IRecipeCategory<KilnRecipe> {
 
     @Override
     public Component getTitle() {
-        return Component.translatable("block.realearthores.kiln");
+        return Component.literal("Firing");
     }
 
     @Override
@@ -53,8 +53,8 @@ public class KilnRecipeCategory implements IRecipeCategory<KilnRecipe> {
 
     @Override
     public void setRecipe(IRecipeLayoutBuilder builder, KilnRecipe recipe, IFocusGroup focuses) {
-        builder.addSlot(RecipeIngredientRole.INPUT, 56, 17).addIngredients(recipe.getIngredients().get(0));
+        builder.addSlot(RecipeIngredientRole.INPUT, 3, 3).addIngredients(recipe.getIngredients().get(0));
 
-        builder.addSlot(RecipeIngredientRole.OUTPUT, 116, 35).addItemStack(recipe.getResultItem(null));
+        builder.addSlot(RecipeIngredientRole.OUTPUT, 63, 21).addItemStack(recipe.getResultItem(null));
     }
 }

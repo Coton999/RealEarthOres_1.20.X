@@ -2,7 +2,7 @@ package net.coton999.realearthores.block.entity;
 
 import net.coton999.realearthores.RealEarthOres;
 import net.coton999.realearthores.block.REOBlocks;
-import net.coton999.realearthores.block.entity.machines.coal.KilnBlockEntity;
+import net.coton999.realearthores.block.entity.machines.coal.*;
 import net.coton999.realearthores.block.entity.machines.electric.*;
 import net.coton999.realearthores.block.entity.signs.REOHangingSignBlockEntity;
 import net.coton999.realearthores.block.entity.signs.REOSignBlockEntity;
@@ -24,50 +24,25 @@ public class REOBlockEntities {
                     BlockEntityType.Builder.of(KilnBlockEntity::new,
                             REOBlocks.KILN.get()).build(null));
 
-    public static final RegistryObject<BlockEntityType<CrusherBlockEntity>> CRUSHER_BE =
-            BLOCK_ENTITIES.register("crusher_block_entity", () ->
-                    BlockEntityType.Builder.of(CrusherBlockEntity::new,
+    public static final RegistryObject<BlockEntityType<BasicCrusherBlockEntity>> BASIC_CRUSHER_BE =
+            BLOCK_ENTITIES.register("basic_crusher_block_entity", () ->
+                    BlockEntityType.Builder.of(BasicCrusherBlockEntity::new,
                             REOBlocks.CRUSHER.get()).build(null));
 
-    public static final RegistryObject<BlockEntityType<PurifierBlockEntity>> PURIFIER_BE =
-            BLOCK_ENTITIES.register("purifier_block_entity", () ->
-                    BlockEntityType.Builder.of(PurifierBlockEntity::new,
-                            REOBlocks.PURIFIER.get()).build(null));
-
-    public static final RegistryObject<BlockEntityType<AlloyFurnaceBlockEntity>> ALLOY_FURNACE_BE =
-            BLOCK_ENTITIES.register("alloy_furance_block_entity", () ->
-                    BlockEntityType.Builder.of(AlloyFurnaceBlockEntity::new,
-                            REOBlocks.ALLOY_FURNACE.get()).build(null));
-
-    public static final RegistryObject<BlockEntityType<SawmillBlockEntity>> SAWMILL_BE =
-            BLOCK_ENTITIES.register("sawmill_block_entity", () ->
-                    BlockEntityType.Builder.of(SawmillBlockEntity::new,
+    public static final RegistryObject<BlockEntityType<BasicSawmillBlockEntity>> BASIC_SAWMILL_BE =
+            BLOCK_ENTITIES.register("basic_sawmill_block_entity", () ->
+                    BlockEntityType.Builder.of(BasicSawmillBlockEntity::new,
                             REOBlocks.SAWMILL.get()).build(null));
 
-    public static final RegistryObject<BlockEntityType<ExtractorBlockEntity>> EXTRACTOR_BE =
-            BLOCK_ENTITIES.register("extractor_block_entity", () ->
-                    BlockEntityType.Builder.of(ExtractorBlockEntity::new,
+    public static final RegistryObject<BlockEntityType<BasicExtractorBlockEntity>> BASIC_EXTRACTOR_BE =
+            BLOCK_ENTITIES.register("basic_extractor_block_entity", () ->
+                    BlockEntityType.Builder.of(BasicExtractorBlockEntity::new,
                             REOBlocks.EXTRACTOR.get()).build(null));
 
-    public static final RegistryObject<BlockEntityType<CompressorBlockEntity>> COMPRESSOR_BE =
-            BLOCK_ENTITIES.register("compressor_block_entity", () ->
-                    BlockEntityType.Builder.of(CompressorBlockEntity::new,
+    public static final RegistryObject<BlockEntityType<BasicCompressorBlockEntity>> BASIC_COMPRESSOR_BE =
+            BLOCK_ENTITIES.register("basic_compressor_block_entity", () ->
+                    BlockEntityType.Builder.of(BasicCompressorBlockEntity::new,
                             REOBlocks.COMPRESSOR.get()).build(null));
-
-    public static final RegistryObject<BlockEntityType<CentrifugeBlockEntity>> CENTRIFUGE_BE =
-            BLOCK_ENTITIES.register("centrifuge_block_entity", () ->
-                    BlockEntityType.Builder.of(CentrifugeBlockEntity::new,
-                            REOBlocks.CENTRIFUGE.get()).build(null));
-
-    public static final RegistryObject<BlockEntityType<InductionFurnaceBlockEntity>> INDUCTION_FURNACE_BE =
-            BLOCK_ENTITIES.register("induction_furnace_block_entity", () ->
-                    BlockEntityType.Builder.of(InductionFurnaceBlockEntity::new,
-                            REOBlocks.INDUCTION_FURNACE.get()).build(null));
-
-    public static final RegistryObject<BlockEntityType<TransfuserBlockEntity>> TRANSFUSER_BE =
-            BLOCK_ENTITIES.register("transfuser_block_entity", () ->
-                    BlockEntityType.Builder.of(TransfuserBlockEntity::new,
-                            REOBlocks.TRANSFUSER.get()).build(null));
 
     // Electric
     public static final RegistryObject<BlockEntityType<ElectricFurnaceBlockEntity>> ELECTRIC_FURNACE_BE =

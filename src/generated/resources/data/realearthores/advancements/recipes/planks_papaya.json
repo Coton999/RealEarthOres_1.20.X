@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_log_papaya": {
+    "has_stripped_wood_papaya": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:log_papaya"
+              "realearthores:wood_papaya_stripped"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_log_papaya",
+      "has_stripped_wood_papaya",
       "has_the_recipe"
     ]
   ],
@@ -32,6 +32,4 @@
     ]
   },
   "sends_telemetry_event": true
-}e
-}ds_telemetry_event": true
 }
