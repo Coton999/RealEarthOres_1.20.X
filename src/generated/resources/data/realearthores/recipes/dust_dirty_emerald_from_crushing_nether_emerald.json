@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:crushing",
+  "ingredients": [
+    {
+      "item": "realearthores:nether_emerald"
+    }
+  ],
+  "result": {
+    "item": "realearthores:dust_dirty_emerald"
+  }
+}
