@@ -15,14 +15,24 @@ import net.minecraft.world.level.Level;
 
 public class AlloyFurnaceRecipe implements Recipe<SimpleContainer> {
 
-    private final NonNullList<Ingredient> inputItems;
-    private final ItemStack output;
+    private final NonNullList<Ingredient> input;
+    private final ItemStack result;
     private final ResourceLocation id;
+    protected final float experience;
 
-    public AlloyFurnaceRecipe(ResourceLocation id, ItemStack output, NonNullList<Ingredient> inputItems) {
-        this.inputItems = inputItems;
-        this.output = output;
-        this.id = id;
+    public AlloyFurnaceRecipe(ResourceLocation pID, ItemStack pResult, NonNullList<Ingredient> pInput, float pExperience) {
+        this.id = pID;
+        this.result = pResult;
+        this.input = pInput;
+        this.experience = pExperience;
+    }
+    public int getCookingTime() {
+        int cookingTime = 200;
+        return cookingTime;
+    }
+
+    public float getExperience() {
+        return this.experience;
     }
 
     @Override
@@ -31,13 +41,13 @@ public class AlloyFurnaceRecipe implements Recipe<SimpleContainer> {
             return false;
         }
 
-        return inputItems.get(0).test(pContainer.getItem(1)) || inputItems.get(1).test(pContainer.getItem(2));
+        return input.get(0).test(pContainer.getItem(1)) || input.get(1).test(pContainer.getItem(2));
     }
 
     @Override
     public ItemStack assemble(SimpleContainer pContainer, RegistryAccess pRegistryAccess) {
 
-        return output.copy();
+        return result.copy();
     }
 
     @Override
@@ -49,13 +59,13 @@ public class AlloyFurnaceRecipe implements Recipe<SimpleContainer> {
     @Override
     public ItemStack getResultItem(RegistryAccess pRegistryAccess) {
 
-        return output.copy();
+        return result.copy();
     }
 
     @Override
     public NonNullList<Ingredient> getIngredients() {
 
-        return this.inputItems;
+        return this.input;
     }
 
     @Override
@@ -88,39 +98,43 @@ public class AlloyFurnaceRecipe implements Recipe<SimpleContainer> {
                 new ResourceLocation(RealEarthOres.MOD_ID,"alloying");
 
         @Override
-        public AlloyFurnaceRecipe fromJson(ResourceLocation id, JsonObject json) {
-            ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(json, "result"));
+        public AlloyFurnaceRecipe fromJson(ResourceLocation pRecipeId, JsonObject pJson) {
+            ItemStack pResult = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(pJson, "result"));
 
-            JsonArray ingredients = GsonHelper.getAsJsonArray(json, "ingredients");
-            NonNullList<Ingredient> inputs = NonNullList.withSize(2, Ingredient.EMPTY);
+            JsonArray pIngredient = GsonHelper.getAsJsonArray(pJson, "ingredients");
+            NonNullList<Ingredient> pInput = NonNullList.withSize(2, Ingredient.EMPTY);
 
-            for (int i = 0; i < inputs.size(); i++) {
-                inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
+            for (int i = 0; i < pInput.size(); i++) {
+                pInput.set(i, Ingredient.fromJson(pIngredient.get(i)));
             }
 
-            return new AlloyFurnaceRecipe(id, output, inputs);
+            float pExperience = GsonHelper.getAsFloat(pJson, "experience", 0.0F);
+
+            return new AlloyFurnaceRecipe(pRecipeId, pResult, pInput, pExperience);
         }
 
         @Override
-        public AlloyFurnaceRecipe fromNetwork(ResourceLocation id, FriendlyByteBuf buf) {
-            NonNullList<Ingredient> inputs = NonNullList.withSize(buf.readInt(), Ingredient.EMPTY);
+        public AlloyFurnaceRecipe fromNetwork(ResourceLocation pRecipeId, FriendlyByteBuf pBuffer) {
+            NonNullList<Ingredient> pInput = NonNullList.withSize(pBuffer.readInt(), Ingredient.EMPTY);
 
-            for (int i = 0; i < inputs.size(); i++) {
-                inputs.set(i, Ingredient.fromNetwork(buf));
+            for (int i = 0; i < pInput.size(); i++) {
+                pInput.set(i, Ingredient.fromNetwork(pBuffer));
             }
 
-            ItemStack output = buf.readItem();
-            return new AlloyFurnaceRecipe(id, output, inputs);
+            ItemStack pResult = pBuffer.readItem();
+            float pExperience = pBuffer.readFloat();
+            return new AlloyFurnaceRecipe(pRecipeId, pResult, pInput, pExperience);
         }
 
         @Override
-        public void toNetwork(FriendlyByteBuf buf, AlloyFurnaceRecipe recipe) {
-            buf.writeInt(recipe.getIngredients().size());
+        public void toNetwork(FriendlyByteBuf pBuffer, AlloyFurnaceRecipe pRecipe) {
+            pBuffer.writeInt(pRecipe.getIngredients().size());
 
-            for (Ingredient ing : recipe.getIngredients()) {
-                ing.toNetwork(buf);
+            for (Ingredient ing : pRecipe.getIngredients()) {
+                ing.toNetwork(pBuffer);
             }
-            buf.writeItemStack(recipe.getResultItem(null), false);
+            pBuffer.writeItemStack(pRecipe.getResultItem(null), false);
+            pBuffer.writeFloat(pRecipe.experience);
         }
     }
 }

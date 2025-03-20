@@ -175,29 +175,29 @@ public class REOItemModelProvider extends ItemModelProvider {
         dustItem(REOItems.DUST_ZINC);
 
         // Dust
-        dirtyDustItem(REOItems.DUST_DIRTY_ALUMINIUM);
-        dirtyDustItem(REOItems.DUST_DIRTY_AMETHYST);
-        dirtyDustItem(REOItems.DUST_DIRTY_BRASS);
-        dirtyDustItem(REOItems.DUST_DIRTY_BRONZE);
-        dirtyDustItem(REOItems.DUST_DIRTY_COPPER);
-        dirtyDustItem(REOItems.DUST_DIRTY_DIAMOND);
-        dirtyDustItem(REOItems.DUST_DIRTY_ELECTRUM);
-        dirtyDustItem(REOItems.DUST_DIRTY_EMERALD);
-        dirtyDustItem(REOItems.DUST_DIRTY_ENDERITE);
-        dirtyDustItem(REOItems.DUST_DIRTY_GOLD);
-        dirtyDustItem(REOItems.DUST_DIRTY_IRON);
-        dirtyDustItem(REOItems.DUST_DIRTY_LEAD);
-        dirtyDustItem(REOItems.DUST_DIRTY_NICKEL);
-        dirtyDustItem(REOItems.DUST_DIRTY_OBSIDIAN);
-        dirtyDustItem(REOItems.DUST_DIRTY_PERIDOT);
-        dirtyDustItem(REOItems.DUST_DIRTY_PLATINUM);
-        dirtyDustItem(REOItems.DUST_DIRTY_RUBY);
-        dirtyDustItem(REOItems.DUST_DIRTY_SAPPHIRE);
-        dirtyDustItem(REOItems.DUST_DIRTY_SILVER);
-        dirtyDustItem(REOItems.DUST_DIRTY_STEEL);
-        dirtyDustItem(REOItems.DUST_DIRTY_TIN);
-        dirtyDustItem(REOItems.DUST_DIRTY_URANIUM);
-        dirtyDustItem(REOItems.DUST_DIRTY_ZINC);
+        dirtyDustItem(REOItems.DIRTY_ALUMINIUM);
+        dirtyDustItem(REOItems.DIRTY_AMETHYST);
+        dirtyDustItem(REOItems.DIRTY_BRASS);
+        dirtyDustItem(REOItems.DIRTY_BRONZE);
+        dirtyDustItem(REOItems.DIRTY_COPPER);
+        dirtyDustItem(REOItems.DIRTY_DIAMOND);
+        dirtyDustItem(REOItems.DIRTY_ELECTRUM);
+        dirtyDustItem(REOItems.DIRTY_EMERALD);
+        dirtyDustItem(REOItems.DIRTY_ENDERITE);
+        dirtyDustItem(REOItems.DIRTY_GOLD);
+        dirtyDustItem(REOItems.DIRTY_IRON);
+        dirtyDustItem(REOItems.DIRTY_LEAD);
+        dirtyDustItem(REOItems.DIRTY_NICKEL);
+        dirtyDustItem(REOItems.DIRTY_OBSIDIAN);
+        dirtyDustItem(REOItems.DIRTY_PERIDOT);
+        dirtyDustItem(REOItems.DIRTY_PLATINUM);
+        dirtyDustItem(REOItems.DIRTY_RUBY);
+        dirtyDustItem(REOItems.DIRTY_SAPPHIRE);
+        dirtyDustItem(REOItems.DIRTY_SILVER);
+        dirtyDustItem(REOItems.DIRTY_STEEL);
+        dirtyDustItem(REOItems.DIRTY_TIN);
+        dirtyDustItem(REOItems.DIRTY_URANIUM);
+        dirtyDustItem(REOItems.DIRTY_ZINC);
 
         // Tech //
         // Misc

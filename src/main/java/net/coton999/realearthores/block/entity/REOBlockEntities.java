@@ -29,11 +29,6 @@ public class REOBlockEntities {
                     BlockEntityType.Builder.of(BasicCrusherBlockEntity::new,
                             REOBlocks.CRUSHER.get()).build(null));
 
-    public static final RegistryObject<BlockEntityType<BasicSawmillBlockEntity>> BASIC_SAWMILL_BE =
-            BLOCK_ENTITIES.register("basic_sawmill_block_entity", () ->
-                    BlockEntityType.Builder.of(BasicSawmillBlockEntity::new,
-                            REOBlocks.SAWMILL.get()).build(null));
-
     public static final RegistryObject<BlockEntityType<BasicExtractorBlockEntity>> BASIC_EXTRACTOR_BE =
             BLOCK_ENTITIES.register("basic_extractor_block_entity", () ->
                     BlockEntityType.Builder.of(BasicExtractorBlockEntity::new,

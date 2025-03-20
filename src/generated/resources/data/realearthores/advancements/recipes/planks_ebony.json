@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_log_ebony": {
+    "has_log_ebony": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:log_ebony_stripped"
+              "realearthores:log_ebony"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_stripped_log_ebony",
+      "has_log_ebony",
       "has_the_recipe"
     ]
   ],

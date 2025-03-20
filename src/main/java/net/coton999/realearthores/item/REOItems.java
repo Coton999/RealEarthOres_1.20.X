@@ -181,51 +181,51 @@ public class REOItems {
             () -> new Item(new Item.Properties()));
 
     // Dirty Dust
-    public static final RegistryObject<Item> DUST_DIRTY_AMETHYST = ITEMS.register("dust_dirty_amethyst",
+    public static final RegistryObject<Item> DIRTY_AMETHYST = ITEMS.register("dirty_amethyst",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_DIRTY_ALUMINIUM = ITEMS.register("dust_dirty_aluminium",
+    public static final RegistryObject<Item> DIRTY_ALUMINIUM = ITEMS.register("dirty_aluminium",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_DIRTY_BRASS = ITEMS.register("dust_dirty_brass",
+    public static final RegistryObject<Item> DIRTY_BRASS = ITEMS.register("dirty_brass",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_DIRTY_BRONZE = ITEMS.register("dust_dirty_bronze",
+    public static final RegistryObject<Item> DIRTY_BRONZE = ITEMS.register("dirty_bronze",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_DIRTY_COPPER = ITEMS.register("dust_dirty_copper",
+    public static final RegistryObject<Item> DIRTY_COPPER = ITEMS.register("dirty_copper",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_DIRTY_DIAMOND = ITEMS.register("dust_dirty_diamond",
+    public static final RegistryObject<Item> DIRTY_DIAMOND = ITEMS.register("dirty_diamond",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_DIRTY_ELECTRUM = ITEMS.register("dust_dirty_electrum",
+    public static final RegistryObject<Item> DIRTY_ELECTRUM = ITEMS.register("dirty_electrum",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_DIRTY_EMERALD = ITEMS.register("dust_dirty_emerald",
+    public static final RegistryObject<Item> DIRTY_EMERALD = ITEMS.register("dirty_emerald",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_DIRTY_ENDERITE = ITEMS.register("dust_dirty_enderite",
+    public static final RegistryObject<Item> DIRTY_ENDERITE = ITEMS.register("dirty_enderite",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_DIRTY_GOLD = ITEMS.register("dust_dirty_gold",
+    public static final RegistryObject<Item> DIRTY_GOLD = ITEMS.register("dirty_gold",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_DIRTY_IRON = ITEMS.register("dust_dirty_iron",
+    public static final RegistryObject<Item> DIRTY_IRON = ITEMS.register("dirty_iron",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_DIRTY_LEAD = ITEMS.register("dust_dirty_lead",
+    public static final RegistryObject<Item> DIRTY_LEAD = ITEMS.register("dirty_lead",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_DIRTY_NICKEL = ITEMS.register("dust_dirty_nickel",
+    public static final RegistryObject<Item> DIRTY_NICKEL = ITEMS.register("dirty_nickel",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_DIRTY_OBSIDIAN = ITEMS.register("dust_dirty_obsidian",
+    public static final RegistryObject<Item> DIRTY_OBSIDIAN = ITEMS.register("dirty_obsidian",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_DIRTY_PERIDOT = ITEMS.register("dust_dirty_peridot",
+    public static final RegistryObject<Item> DIRTY_PERIDOT = ITEMS.register("dirty_peridot",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_DIRTY_PLATINUM = ITEMS.register("dust_dirty_platinum",
+    public static final RegistryObject<Item> DIRTY_PLATINUM = ITEMS.register("dirty_platinum",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_DIRTY_RUBY = ITEMS.register("dust_dirty_ruby",
+    public static final RegistryObject<Item> DIRTY_RUBY = ITEMS.register("dirty_ruby",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_DIRTY_SAPPHIRE = ITEMS.register("dust_dirty_sapphire",
+    public static final RegistryObject<Item> DIRTY_SAPPHIRE = ITEMS.register("dirty_sapphire",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_DIRTY_SILVER = ITEMS.register("dust_dirty_silver",
+    public static final RegistryObject<Item> DIRTY_SILVER = ITEMS.register("dirty_silver",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_DIRTY_STEEL = ITEMS.register("dust_dirty_steel",
+    public static final RegistryObject<Item> DIRTY_STEEL = ITEMS.register("dirty_steel",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_DIRTY_TIN = ITEMS.register("dust_dirty_tin",
+    public static final RegistryObject<Item> DIRTY_TIN = ITEMS.register("dirty_tin",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_DIRTY_URANIUM = ITEMS.register("dust_dirty_uranium",
+    public static final RegistryObject<Item> DIRTY_URANIUM = ITEMS.register("dirty_uranium",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_DIRTY_ZINC = ITEMS.register("dust_dirty_zinc",
+    public static final RegistryObject<Item> DIRTY_ZINC = ITEMS.register("dirty_zinc",
             () -> new Item(new Item.Properties()));
 
     // Buckets

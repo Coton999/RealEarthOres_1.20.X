@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_log_cherry": {
+    "has_stripped_wood_cherry": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:cherry_log"
+              "minecraft:stripped_cherry_wood"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_log_cherry",
+      "has_stripped_wood_cherry",
       "has_the_recipe"
     ]
   ],
@@ -32,5 +32,4 @@
     ]
   },
   "sends_telemetry_event": true
-}sends_telemetry_event": true
 }

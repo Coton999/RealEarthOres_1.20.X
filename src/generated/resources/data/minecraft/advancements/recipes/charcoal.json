@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_cherry_wood": {
+    "has_stripped_dark_oak_wood": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:stripped_cherry_wood"
+              "minecraft:stripped_dark_oak_wood"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_stripped_cherry_wood",
+      "has_stripped_dark_oak_wood",
       "has_the_recipe"
     ]
   ],
@@ -32,5 +32,4 @@
     ]
   },
   "sends_telemetry_event": false
-}alse
 }

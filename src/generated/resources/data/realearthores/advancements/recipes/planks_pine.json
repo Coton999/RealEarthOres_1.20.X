@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_log_pine": {
+    "has_stripped_wood_pine": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:log_pine"
+              "realearthores:wood_pine_stripped"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_log_pine",
+      "has_stripped_wood_pine",
       "has_the_recipe"
     ]
   ],

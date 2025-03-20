@@ -82,7 +82,16 @@ public class REOBlockTagGenerator extends BlockTagsProvider {
 
                         REOBlocks.BLOCK_RAW_ALUMINIUM.get(), REOBlocks.BLOCK_RAW_ENDERITE.get(), REOBlocks.BLOCK_RAW_LEAD.get(),
                         REOBlocks.BLOCK_RAW_NICKEL.get(), REOBlocks.BLOCK_RAW_PLATINUM.get(), REOBlocks.BLOCK_RAW_SILVER.get(),
-                        REOBlocks.BLOCK_RAW_TIN.get(), REOBlocks.BLOCK_RAW_URANIUM.get(), REOBlocks.BLOCK_RAW_ZINC.get());
+                        REOBlocks.BLOCK_RAW_TIN.get(), REOBlocks.BLOCK_RAW_URANIUM.get(), REOBlocks.BLOCK_RAW_ZINC.get(),
+
+                        REOBlocks.KILN.get(), REOBlocks.CRUSHER.get(), REOBlocks.EXTRACTOR.get(), REOBlocks.COMPRESSOR.get(),
+
+                        REOBlocks.ELECTRIC_FURNACE.get(), REOBlocks.ELECTRIC_CRUSHER.get(), REOBlocks.ELECTRIC_PURIFIER.get(),
+                        REOBlocks.ELECTRIC_ALLOY_FURNACE.get(), REOBlocks.ELECTRIC_SAWMILL.get(), REOBlocks.ELECTRIC_EXTRACTOR.get(),
+                        REOBlocks.ELECTRIC_COMPRESSOR.get(), REOBlocks.ELECTRIC_CENTRIFUGE.get(), REOBlocks.ELECTRIC_INDUCTION_FURNACE.get(),
+                        REOBlocks.ELECTRIC_TRANSFUSER.get()
+
+                );
 
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)

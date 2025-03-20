@@ -192,7 +192,7 @@ public class CrusherBlockEntity extends BlockEntity implements MenuProvider {
     @Override
     protected void saveAdditional(CompoundTag pTag) {
         pTag.put("inventory", itemHandler.serializeNBT());
-        pTag.putInt("crusher.progress", progress);
+        pTag.putInt("electric_crusher.progress", progress);
         pTag.putInt("energy", ENERGY_STORAGE.getEnergyStored());
 
         super.saveAdditional(pTag);
@@ -202,15 +202,13 @@ public class CrusherBlockEntity extends BlockEntity implements MenuProvider {
     public void load(CompoundTag pTag) {
         super.load(pTag);
         itemHandler.deserializeNBT(pTag.getCompound("inventory"));
-        progress = pTag.getInt("crusher.progress");
+        progress = pTag.getInt("electric_crusher.progress");
         ENERGY_STORAGE.setEnergy(pTag.getInt("energy"));
 
     }
 
     public void tick(Level level, BlockPos pPos, BlockState pState) {
         generateEnergy(); // This is a "placeholder" for getting energy through wires or similar
-
-
 
         if (isOutputSlotEmptyOrReceivable() && hasRecipe()) {
             level.setBlock(pPos, pState.setValue(CrusherBlock.LIT, Boolean.TRUE), 3);
@@ -230,7 +228,7 @@ public class CrusherBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     private void extractEnergy() {
-        this.ENERGY_STORAGE.extractEnergy(10, false);
+        this.ENERGY_STORAGE.extractEnergy(1, false);
     }
 
     private int burnTime;
@@ -304,7 +302,7 @@ public class CrusherBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     private boolean hasEnoughEnergyToCraft() {
-        return this.ENERGY_STORAGE.getEnergyStored() >= 2 * maxProgress;
+        return this.ENERGY_STORAGE.getEnergyStored() >= maxProgress;
     }
 
     private Optional<CrusherRecipe> getCurrentRecipe() {
@@ -329,6 +327,7 @@ public class CrusherBlockEntity extends BlockEntity implements MenuProvider {
         return this.itemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty() ||
                 this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() < this.itemHandler.getStackInSlot(OUTPUT_SLOT).getMaxStackSize();
     }
+
     @Nullable
     @Override
     public Packet<ClientGamePacketListener> getUpdatePacket() {

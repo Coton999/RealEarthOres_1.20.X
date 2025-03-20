@@ -25,6 +25,11 @@ public class CrusherRecipe implements Recipe<SimpleContainer> {
         this.id = id;
     }
 
+    public int getCookingTime() {
+        int cookingTime = 200;
+        return cookingTime;
+    }
+
     @Override
     public boolean matches(SimpleContainer pContainer, Level pLevel) {
         if(pLevel.isClientSide()) {
@@ -81,39 +86,39 @@ public class CrusherRecipe implements Recipe<SimpleContainer> {
                 new ResourceLocation(RealEarthOres.MOD_ID,"crushing");
 
         @Override
-        public CrusherRecipe fromJson(ResourceLocation id, JsonObject json) {
-            ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(json, "result"));
+        public CrusherRecipe fromJson(ResourceLocation pRecipeId, JsonObject pJson) {
+            ItemStack pResult = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(pJson, "result"));
 
-            JsonArray ingredients = GsonHelper.getAsJsonArray(json, "ingredients");
-            NonNullList<Ingredient> inputs = NonNullList.withSize(1, Ingredient.EMPTY);
+            JsonArray ingredients = GsonHelper.getAsJsonArray(pJson, "ingredients");
+            NonNullList<Ingredient> pInput = NonNullList.withSize(1, Ingredient.EMPTY);
 
-            for (int i = 0; i < inputs.size(); i++) {
-                inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
+            for (int i = 0; i < pInput.size(); i++) {
+                pInput.set(i, Ingredient.fromJson(ingredients.get(i)));
             }
 
-            return new CrusherRecipe(id, output, inputs);
+            return new CrusherRecipe(pRecipeId, pResult, pInput);
         }
 
         @Override
-        public CrusherRecipe fromNetwork(ResourceLocation id, FriendlyByteBuf buf) {
-            NonNullList<Ingredient> inputs = NonNullList.withSize(buf.readInt(), Ingredient.EMPTY);
+        public CrusherRecipe fromNetwork(ResourceLocation pRecipeId, FriendlyByteBuf pBuffer) {
+            NonNullList<Ingredient> inputs = NonNullList.withSize(pBuffer.readInt(), Ingredient.EMPTY);
 
             for (int i = 0; i < inputs.size(); i++) {
-                inputs.set(i, Ingredient.fromNetwork(buf));
+                inputs.set(i, Ingredient.fromNetwork(pBuffer));
             }
 
-            ItemStack output = buf.readItem();
-            return new CrusherRecipe(id, output, inputs);
+            ItemStack output = pBuffer.readItem();
+            return new CrusherRecipe(pRecipeId, output, inputs);
         }
 
         @Override
-        public void toNetwork(FriendlyByteBuf buf, CrusherRecipe recipe) {
-            buf.writeInt(recipe.getIngredients().size());
+        public void toNetwork(FriendlyByteBuf pBuffer, CrusherRecipe pRecipe) {
+            pBuffer.writeInt(pRecipe.getIngredients().size());
 
-            for (Ingredient ing : recipe.getIngredients()) {
-                ing.toNetwork(buf);
+            for (Ingredient ing : pRecipe.getIngredients()) {
+                ing.toNetwork(pBuffer);
             }
-            buf.writeItemStack(recipe.getResultItem(null), false);
+            pBuffer.writeItemStack(pRecipe.getResultItem(null), false);
         }
     }
 }

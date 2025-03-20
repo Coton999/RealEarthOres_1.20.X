@@ -23,9 +23,6 @@ public class REOMenuTypes {
     public static final RegistryObject<MenuType<BasicCrusherMenu>> BASIC_CRUSHER_MENU =
             registerMenuType(BasicCrusherMenu::new, "basic_crusher_menu");
 
-    public static final RegistryObject<MenuType<BasicSawmillMenu>> BASIC_SAWMILL_MENU =
-            registerMenuType(BasicSawmillMenu::new, "basic_sawmill_menu");
-
     public static final RegistryObject<MenuType<BasicExtractorMenu>> BASIC_EXTRACTOR_MENU =
             registerMenuType(BasicExtractorMenu::new, "basic_extractor_menu");
 

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_log_spruce": {
+    "has_log_spruce": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:stripped_spruce_log"
+              "minecraft:spruce_log"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_stripped_log_spruce",
+      "has_log_spruce",
       "has_the_recipe"
     ]
   ],
@@ -32,5 +32,4 @@
     ]
   },
   "sends_telemetry_event": true
-}e
 }

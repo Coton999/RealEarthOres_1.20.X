@@ -1,28 +1,28 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_the_recipe": {
-      "conditions": {
-        "recipe": "realearthores:planks_chestnut"
-      },
-      "trigger": "minecraft:recipe_unlocked"
-    },
-    "has_wood_chestnut": {
+    "has_stripped_wood_chestnut": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:wood_chestnut"
+              "realearthores:wood_chestnut_stripped"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:planks_chestnut"
+      },
+      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_wood_chestnut",
+      "has_stripped_wood_chestnut",
       "has_the_recipe"
     ]
   ],
@@ -32,5 +32,4 @@
     ]
   },
   "sends_telemetry_event": true
-}ds_telemetry_event": true
 }

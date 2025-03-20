@@ -25,6 +25,11 @@ public class SawmillRecipe implements Recipe<SimpleContainer> {
         this.id = id;
     }
 
+    public int getCookingTime() {
+        int cookingTime = 200;
+        return cookingTime;
+    }
+
     @Override
     public boolean matches(SimpleContainer pContainer, Level pLevel) {
         if(pLevel.isClientSide()) {

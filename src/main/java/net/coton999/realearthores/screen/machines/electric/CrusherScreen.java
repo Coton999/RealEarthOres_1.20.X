@@ -2,8 +2,6 @@ package net.coton999.realearthores.screen.machines.electric;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.coton999.realearthores.RealEarthOres;
-import net.coton999.realearthores.block.custom.machines.electric.CrusherBlock;
-import net.coton999.realearthores.block.entity.machines.electric.CrusherBlockEntity;
 import net.coton999.realearthores.menu.machines.electric.CrusherMenu;
 import net.coton999.realearthores.screen.renderer.EnergyDisplayTooltipArea;
 import net.coton999.realearthores.util.energy.MouseUtil;

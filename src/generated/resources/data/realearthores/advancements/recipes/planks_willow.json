@@ -1,28 +1,28 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_the_recipe": {
-      "conditions": {
-        "recipe": "realearthores:planks_willow"
-      },
-      "trigger": "minecraft:recipe_unlocked"
-    },
-    "has_wood_willow": {
+    "has_log_willow": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:wood_willow"
+              "realearthores:log_willow"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:planks_willow"
+      },
+      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_wood_willow",
+      "has_log_willow",
       "has_the_recipe"
     ]
   ],
@@ -32,5 +32,5 @@
     ]
   },
   "sends_telemetry_event": true
-}telemetry_event": true
+}sends_telemetry_event": true
 }

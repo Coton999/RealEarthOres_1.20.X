@@ -2,15 +2,20 @@ package net.coton999.realearthores.block.entity.machines.electric;
 
 import net.coton999.realearthores.block.custom.machines.electric.CentrifugeBlock;
 import net.coton999.realearthores.block.entity.REOBlockEntities;
-import net.coton999.realearthores.recipe.machines.electric.CentrifugeRecipe;
 import net.coton999.realearthores.menu.machines.electric.CentrifugeMenu;
+import net.coton999.realearthores.recipe.machines.electric.CentrifugeRecipe;
+import net.coton999.realearthores.util.energy.REOEnergyStorage;
 import net.coton999.realearthores.util.inventory.InventoryDirectionEntry;
 import net.coton999.realearthores.util.inventory.InventoryDirectionWrapper;
 import net.coton999.realearthores.util.inventory.WrappedHandler;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.Connection;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.protocol.Packet;
+import net.minecraft.network.protocol.game.ClientGamePacketListener;
+import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.world.Containers;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.SimpleContainer;
@@ -21,12 +26,16 @@ import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraftforge.common.ForgeHooks;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
+import net.minecraftforge.energy.IEnergyStorage;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
@@ -45,9 +54,9 @@ public class CentrifugeBlockEntity extends BlockEntity implements MenuProvider {
 
         @Override
         public boolean isItemValid(int slot, @NotNull ItemStack stack) {
+            ItemStack fuel = itemHandler.getStackInSlot(FUEL_SLOT);
             return switch (slot) {
-                case 0 -> stack.getItem() == Items.COAL;
-                case 1 -> true;
+                case 0, 1 -> true;
                 case 2 -> false;
                 default -> super.isItemValid(slot, stack);
             };
@@ -68,9 +77,23 @@ public class CentrifugeBlockEntity extends BlockEntity implements MenuProvider {
                     new InventoryDirectionEntry(Direction.WEST, INPUT_SLOT, true),
                     new InventoryDirectionEntry(Direction.UP, INPUT_SLOT, true)).directionsMap;
 
+    private LazyOptional<IEnergyStorage> lazyEnergyHandler = LazyOptional.empty();
+
     protected final ContainerData data;
     private int progress = 0;
     private int maxProgress = 200;
+
+    public final REOEnergyStorage ENERGY_STORAGE = createEnergyStorage();
+
+    private REOEnergyStorage createEnergyStorage() {
+        return new REOEnergyStorage(64000, 200) {
+            @Override
+            public void onEnergyChanged() {
+                setChanged();
+                getLevel().sendBlockUpdated(getBlockPos(), getBlockState(), getBlockState(), 3);
+            }
+        };
+    }
 
     public CentrifugeBlockEntity(BlockPos pPos, BlockState pBlockState) {
         super(REOBlockEntities.ELECTRIC_CENTRIFUGE_BE.get(), pPos, pBlockState);
@@ -98,6 +121,11 @@ public class CentrifugeBlockEntity extends BlockEntity implements MenuProvider {
             }
         };
     }
+
+    public IEnergyStorage getEnergyStorage() {
+        return this.ENERGY_STORAGE;
+    }
+
     public void drops() {
         SimpleContainer inventory = new SimpleContainer(itemHandler.getSlots());
         for (int i = 0; i < itemHandler.getSlots(); i++) {
@@ -109,7 +137,7 @@ public class CentrifugeBlockEntity extends BlockEntity implements MenuProvider {
 
     @Override
     public Component getDisplayName() {
-        return Component.literal("Centrifuge");
+        return Component.translatable("block.realearthores.electric_centrifuge");
     }
 
     @Override
@@ -119,6 +147,10 @@ public class CentrifugeBlockEntity extends BlockEntity implements MenuProvider {
 
     @Override
     public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @Nullable Direction side) {
+        if(cap == ForgeCapabilities.ENERGY) {
+            return lazyEnergyHandler.cast();
+        }
+
         if(cap == ForgeCapabilities.ITEM_HANDLER) {
             if(side == null) {
                 return lazyItemHandler.cast();
@@ -147,18 +179,21 @@ public class CentrifugeBlockEntity extends BlockEntity implements MenuProvider {
     public void onLoad() {
         super.onLoad();
         lazyItemHandler = LazyOptional.of(() -> itemHandler);
+        lazyEnergyHandler = LazyOptional.of(() -> ENERGY_STORAGE);
     }
 
     @Override
     public void invalidateCaps() {
         super.invalidateCaps();
         lazyItemHandler.invalidate();
+        lazyEnergyHandler.invalidate();
     }
 
     @Override
     protected void saveAdditional(CompoundTag pTag) {
         pTag.put("inventory", itemHandler.serializeNBT());
-        pTag.putInt("centrifuge.progress", progress);
+        pTag.putInt("electric_centrifuge.progress", progress);
+        pTag.putInt("energy", ENERGY_STORAGE.getEnergyStored());
 
         super.saveAdditional(pTag);
     }
@@ -167,15 +202,18 @@ public class CentrifugeBlockEntity extends BlockEntity implements MenuProvider {
     public void load(CompoundTag pTag) {
         super.load(pTag);
         itemHandler.deserializeNBT(pTag.getCompound("inventory"));
-        progress = pTag.getInt("centrifuge.progress");
+        progress = pTag.getInt("electric_centrifuge.progress");
+        ENERGY_STORAGE.setEnergy(pTag.getInt("energy"));
 
     }
 
     public void tick(Level level, BlockPos pPos, BlockState pState) {
+        generateEnergy(); // This is a "placeholder" for getting energy through wires or similar
 
         if (isOutputSlotEmptyOrReceivable() && hasRecipe()) {
             level.setBlock(pPos, pState.setValue(CentrifugeBlock.LIT, Boolean.TRUE), 3);
             increaseCraftingProcess();
+            extractEnergy();
             setChanged(level, pPos, pState);
 
             if (hasProgressFinished()) {
@@ -187,6 +225,46 @@ public class CentrifugeBlockEntity extends BlockEntity implements MenuProvider {
             level.setBlock(pPos, pState.setValue(CentrifugeBlock.LIT, Boolean.FALSE), 3);
             resetProgress();
         }
+    }
+
+    private void extractEnergy() {
+        this.ENERGY_STORAGE.extractEnergy(1, false);
+    }
+
+    private int burnTime;
+
+    // Check if we have a burnable item in the inventory and if so generate energy
+    private void generateEnergy() {
+        if (ENERGY_STORAGE.getEnergyStored() < ENERGY_STORAGE.getMaxEnergyStored()) {
+            if (burnTime <= 0) {
+                ItemStack fuel = itemHandler.getStackInSlot(FUEL_SLOT);
+                if (fuel.isEmpty()) {
+                    // No fuel
+                    return;
+                }
+                setBurnTime(ForgeHooks.getBurnTime(fuel, RecipeType.SMELTING));
+                if (burnTime <= 0) {
+                    // Not a fuel
+                    return;
+                }
+                itemHandler.extractItem(FUEL_SLOT, 1, false);
+            } else {
+                setBurnTime(burnTime-1);
+                ENERGY_STORAGE.receiveEnergy(5, false);
+            }
+            setChanged();
+        }
+    }
+
+    private void setBurnTime(int pBurnTime) {
+        if (pBurnTime == burnTime) {
+            return;
+        }
+        burnTime = pBurnTime;
+        if (getBlockState().getValue(CentrifugeBlock.LIT) != burnTime > 0) {
+            level.setBlockAndUpdate(getBlockPos(), getBlockState().setValue(CentrifugeBlock.LIT, burnTime > 0));
+        }
+        setChanged();
     }
 
     private void craftItem() {
@@ -220,7 +298,11 @@ public class CentrifugeBlockEntity extends BlockEntity implements MenuProvider {
         ItemStack resultItem = recipe.get().getResultItem(getLevel().registryAccess());
 
         return canInsertAmountIntoOutputSlot(resultItem.getCount())
-                && canInsertItemIntoOutputSlot(resultItem.getItem());
+                && canInsertItemIntoOutputSlot(resultItem.getItem()) && hasEnoughEnergyToCraft();
+    }
+
+    private boolean hasEnoughEnergyToCraft() {
+        return this.ENERGY_STORAGE.getEnergyStored() >= maxProgress;
     }
 
     private Optional<CentrifugeRecipe> getCurrentRecipe() {
@@ -244,5 +326,20 @@ public class CentrifugeBlockEntity extends BlockEntity implements MenuProvider {
     private boolean isOutputSlotEmptyOrReceivable() {
         return this.itemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty() ||
                 this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() < this.itemHandler.getStackInSlot(OUTPUT_SLOT).getMaxStackSize();
+    }
+    @Nullable
+    @Override
+    public Packet<ClientGamePacketListener> getUpdatePacket() {
+        return ClientboundBlockEntityDataPacket.create(this);
+    }
+
+    @Override
+    public CompoundTag getUpdateTag() {
+        return saveWithoutMetadata();
+    }
+
+    @Override
+    public void onDataPacket(Connection net, ClientboundBlockEntityDataPacket pkt) {
+        super.onDataPacket(net, pkt);
     }
 }

@@ -1419,7 +1419,6 @@ public class REOBlockLootTables extends BlockLootSubProvider {
         // Coal
         this.dropSelf(REOBlocks.KILN.get());
         this.dropSelf(REOBlocks.CRUSHER.get());
-        this.dropSelf(REOBlocks.SAWMILL.get());
         this.dropSelf(REOBlocks.EXTRACTOR.get());
         this.dropSelf(REOBlocks.COMPRESSOR.get());
 

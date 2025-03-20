@@ -17,6 +17,16 @@ public class KilnRecipe extends AbstractCookingRecipe {
     }
 
     @Override
+    public float getExperience() {
+        return this.experience;
+    }
+
+    @Override
+    public int getCookingTime() {
+        return this.cookingTime;
+    }
+
+    @Override
     public ItemStack getToastSymbol() {
         return new ItemStack(REOBlocks.KILN.get());
     }
@@ -44,34 +54,34 @@ public class KilnRecipe extends AbstractCookingRecipe {
         }
 
         public KilnRecipe fromJson(ResourceLocation pRecipeId, JsonObject pJson) {
-            String s = GsonHelper.getAsString(pJson, "group", "");
-            CookingBookCategory cookingbookcategory = CookingBookCategory.CODEC.byName(GsonHelper.getAsString(pJson, "category", (String)null), CookingBookCategory.MISC);
+            String pString = GsonHelper.getAsString(pJson, "group", "");
+            CookingBookCategory pCookingBookCategory = CookingBookCategory.CODEC.byName(GsonHelper.getAsString(pJson, "category", (String)null), CookingBookCategory.MISC);
             JsonElement jsonelement = (JsonElement)(GsonHelper.isArrayNode(pJson, "ingredient") ? GsonHelper.getAsJsonArray(pJson, "ingredient") : GsonHelper.getAsJsonObject(pJson, "ingredient"));
-            Ingredient ingredient = Ingredient.fromJson(jsonelement, false);
+            Ingredient pIngredient = Ingredient.fromJson(jsonelement, false);
             //Forge: Check if primitive string to keep vanilla or a object which can contain a count field.
             if (!pJson.has("result")) throw new com.google.gson.JsonSyntaxException("Missing result, expected to find a string or object");
-            ItemStack itemstack;
-            if (pJson.get("result").isJsonObject()) itemstack = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(pJson, "result"));
+            ItemStack pItemStack;
+            if (pJson.get("result").isJsonObject()) pItemStack = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(pJson, "result"));
             else {
                 String s1 = GsonHelper.getAsString(pJson, "result");
                 ResourceLocation resourcelocation = new ResourceLocation(s1);
-                itemstack = new ItemStack(BuiltInRegistries.ITEM.getOptional(resourcelocation).orElseThrow(() -> {
+                pItemStack = new ItemStack(BuiltInRegistries.ITEM.getOptional(resourcelocation).orElseThrow(() -> {
                     return new IllegalStateException("Item: " + s1 + " does not exist");
                 }));
             }
-            float f = GsonHelper.getAsFloat(pJson, "experience", 0.0F);
-            int i = GsonHelper.getAsInt(pJson, "cookingtime", this.defaultCookingTime);
-            return new KilnRecipe(pRecipeId, s, cookingbookcategory, ingredient, itemstack, f, i);
+            float pExperience = GsonHelper.getAsFloat(pJson, "experience", 0.0F);
+            int pCookingTime = GsonHelper.getAsInt(pJson, "cookingtime", this.defaultCookingTime);
+            return new KilnRecipe(pRecipeId, pString, pCookingBookCategory, pIngredient, pItemStack, pExperience, pCookingTime);
         }
 
         public KilnRecipe fromNetwork(ResourceLocation pRecipeId, FriendlyByteBuf pBuffer) {
-            String s = pBuffer.readUtf();
-            CookingBookCategory cookingbookcategory = pBuffer.readEnum(CookingBookCategory.class);
-            Ingredient ingredient = Ingredient.fromNetwork(pBuffer);
-            ItemStack itemstack = pBuffer.readItem();
-            float f = pBuffer.readFloat();
-            int i = pBuffer.readVarInt();
-            return new KilnRecipe(pRecipeId, s, cookingbookcategory, ingredient, itemstack, f, i);
+            String pString = pBuffer.readUtf();
+            CookingBookCategory pCookingBookCategory = pBuffer.readEnum(CookingBookCategory.class);
+            Ingredient pIngredient = Ingredient.fromNetwork(pBuffer);
+            ItemStack pResult = pBuffer.readItem();
+            float pExperience = pBuffer.readFloat();
+            int pCookingTime = pBuffer.readVarInt();
+            return new KilnRecipe(pRecipeId, pString, pCookingBookCategory, pIngredient, pResult, pExperience, pCookingTime);
         }
 
         public void toNetwork(FriendlyByteBuf pBuffer, KilnRecipe pRecipe) {

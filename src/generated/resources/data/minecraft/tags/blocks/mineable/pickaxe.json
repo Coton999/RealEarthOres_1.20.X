@@ -94,6 +94,20 @@
     "realearthores:block_raw_silver",
     "realearthores:block_raw_tin",
     "realearthores:block_raw_uranium",
-    "realearthores:block_raw_zinc"
+    "realearthores:block_raw_zinc",
+    "realearthores:kiln",
+    "realearthores:crusher",
+    "realearthores:extractor",
+    "realearthores:compressor",
+    "realearthores:electric_furnace",
+    "realearthores:electric_crusher",
+    "realearthores:electric_purifier",
+    "realearthores:electric_alloy_furnace",
+    "realearthores:electric_sawmill",
+    "realearthores:electric_extractor",
+    "realearthores:electric_compressor",
+    "realearthores:electric_centrifuge",
+    "realearthores:electric_induction_furnace",
+    "realearthores:electric_transfuser"
   ]
 }

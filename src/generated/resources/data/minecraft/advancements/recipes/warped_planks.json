@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_hyphae_warped": {
+    "has_stem_warped": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:warped_hyphae"
+              "minecraft:warped_stem"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_hyphae_warped",
+      "has_stem_warped",
       "has_the_recipe"
     ]
   ],
@@ -32,5 +32,5 @@
     ]
   },
   "sends_telemetry_event": true
-}emetry_event": true
+}ds_telemetry_event": true
 }

@@ -108,29 +108,29 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                     pOutput.accept(REOItems.DUST_ZINC.get());
 
                     // Dirty Dust
-                    pOutput.accept(REOItems.DUST_DIRTY_ALUMINIUM.get());
-                    pOutput.accept(REOItems.DUST_DIRTY_AMETHYST.get());
-                    pOutput.accept(REOItems.DUST_DIRTY_BRASS.get());
-                    pOutput.accept(REOItems.DUST_DIRTY_BRONZE.get());
-                    pOutput.accept(REOItems.DUST_DIRTY_COPPER.get());
-                    pOutput.accept(REOItems.DUST_DIRTY_DIAMOND.get());
-                    pOutput.accept(REOItems.DUST_DIRTY_ELECTRUM.get());
-                    pOutput.accept(REOItems.DUST_DIRTY_EMERALD.get());
-                    pOutput.accept(REOItems.DUST_DIRTY_ENDERITE.get());
-                    pOutput.accept(REOItems.DUST_DIRTY_GOLD.get());
-                    pOutput.accept(REOItems.DUST_DIRTY_IRON.get());
-                    pOutput.accept(REOItems.DUST_DIRTY_LEAD.get());
-                    pOutput.accept(REOItems.DUST_DIRTY_NICKEL.get());
-                    pOutput.accept(REOItems.DUST_DIRTY_OBSIDIAN.get());
-                    pOutput.accept(REOItems.DUST_DIRTY_PERIDOT.get());
-                    pOutput.accept(REOItems.DUST_DIRTY_PLATINUM.get());
-                    pOutput.accept(REOItems.DUST_DIRTY_RUBY.get());
-                    pOutput.accept(REOItems.DUST_DIRTY_SAPPHIRE.get());
-                    pOutput.accept(REOItems.DUST_DIRTY_SILVER.get());
-                    pOutput.accept(REOItems.DUST_DIRTY_STEEL.get());
-                    pOutput.accept(REOItems.DUST_DIRTY_TIN.get());
-                    pOutput.accept(REOItems.DUST_DIRTY_URANIUM.get());
-                    pOutput.accept(REOItems.DUST_DIRTY_ZINC.get());
+                    pOutput.accept(REOItems.DIRTY_ALUMINIUM.get());
+                    pOutput.accept(REOItems.DIRTY_AMETHYST.get());
+                    pOutput.accept(REOItems.DIRTY_BRASS.get());
+                    pOutput.accept(REOItems.DIRTY_BRONZE.get());
+                    pOutput.accept(REOItems.DIRTY_COPPER.get());
+                    pOutput.accept(REOItems.DIRTY_DIAMOND.get());
+                    pOutput.accept(REOItems.DIRTY_ELECTRUM.get());
+                    pOutput.accept(REOItems.DIRTY_EMERALD.get());
+                    pOutput.accept(REOItems.DIRTY_ENDERITE.get());
+                    pOutput.accept(REOItems.DIRTY_GOLD.get());
+                    pOutput.accept(REOItems.DIRTY_IRON.get());
+                    pOutput.accept(REOItems.DIRTY_LEAD.get());
+                    pOutput.accept(REOItems.DIRTY_NICKEL.get());
+                    pOutput.accept(REOItems.DIRTY_OBSIDIAN.get());
+                    pOutput.accept(REOItems.DIRTY_PERIDOT.get());
+                    pOutput.accept(REOItems.DIRTY_PLATINUM.get());
+                    pOutput.accept(REOItems.DIRTY_RUBY.get());
+                    pOutput.accept(REOItems.DIRTY_SAPPHIRE.get());
+                    pOutput.accept(REOItems.DIRTY_SILVER.get());
+                    pOutput.accept(REOItems.DIRTY_STEEL.get());
+                    pOutput.accept(REOItems.DIRTY_TIN.get());
+                    pOutput.accept(REOItems.DIRTY_URANIUM.get());
+                    pOutput.accept(REOItems.DIRTY_ZINC.get());
 
                     // Bucket
                     pOutput.accept(REOItems.BUCKET_MOLTEN_ALUMINIUM.get());
@@ -1606,7 +1606,6 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         // Coal
                         pOutput.accept(REOBlocks.KILN.get());
                         pOutput.accept(REOBlocks.CRUSHER.get());
-                        pOutput.accept(REOBlocks.SAWMILL.get());
                         pOutput.accept(REOBlocks.EXTRACTOR.get());
                         pOutput.accept(REOBlocks.COMPRESSOR.get());
 

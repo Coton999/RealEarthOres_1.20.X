@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_log_larch": {
+    "has_stripped_wood_larch": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:log_larch_stripped"
+              "realearthores:wood_larch_stripped"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_stripped_log_larch",
+      "has_stripped_wood_larch",
       "has_the_recipe"
     ]
   ],

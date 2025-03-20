@@ -18,8 +18,6 @@ public class REORecipes {
             SERIALIZERS.register("firing", () -> KilnRecipe.Serializer.INSTANCE);
     public static final RegistryObject<RecipeSerializer<BasicCrusherRecipe>> BASIC_CRUSHER_SERIALIZER =
             SERIALIZERS.register("basic_crushing", () -> BasicCrusherRecipe.Serializer.INSTANCE);
-    public static final RegistryObject<RecipeSerializer<BasicSawmillRecipe>> BASIC_SAWMILL_SERIALIZER =
-            SERIALIZERS.register("basic_milling", () -> BasicSawmillRecipe.Serializer.INSTANCE);
     public static final RegistryObject<RecipeSerializer<BasicExtractorRecipe>> BASIC_EXTRACTOR_SERIALIZER =
             SERIALIZERS.register("basic_extracting", () -> BasicExtractorRecipe.Serializer.INSTANCE);
     public static final RegistryObject<RecipeSerializer<BasicCompressorRecipe>> BASIC_COMPRESSOR_SERIALIZER =

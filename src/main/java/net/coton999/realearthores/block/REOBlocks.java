@@ -2254,9 +2254,6 @@ public class REOBlocks {
     public static final RegistryObject<Block> CRUSHER = registerBlock("crusher",
             () -> new BasicCrusherBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .lightLevel((state) -> state.getValue(CrusherBlock.LIT) ? 13 : 0).noOcclusion()));
-    public static final RegistryObject<Block> SAWMILL = registerBlock("sawmill",
-            () -> new BasicCrusherBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
-                    .lightLevel((state) -> state.getValue(SawmillBlock.LIT) ? 13 : 0).noOcclusion()));
     public static final RegistryObject<Block> EXTRACTOR = registerBlock("extractor",
             () -> new BasicExtractorBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .lightLevel((state) -> state.getValue(SawmillBlock.LIT) ? 13 : 0).noOcclusion()));

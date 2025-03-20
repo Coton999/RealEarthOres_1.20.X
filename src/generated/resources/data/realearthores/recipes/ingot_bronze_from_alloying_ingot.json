@@ -1,8 +1,0 @@
-{
-  "type": "realearthores:alloying",
-  "ingredients": [],
-  "output": {
-    "count": 2,
-    "item": "realearthores:ingot_bronze"
-  }
-}

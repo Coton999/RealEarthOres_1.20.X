@@ -3,6 +3,8 @@ package net.coton999.realearthores.screen.machines.electric;
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.coton999.realearthores.RealEarthOres;
 import net.coton999.realearthores.menu.machines.electric.ElectricFurnaceMenu;
+import net.coton999.realearthores.screen.renderer.EnergyDisplayTooltipArea;
+import net.coton999.realearthores.util.energy.MouseUtil;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.renderer.GameRenderer;
@@ -10,9 +12,12 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 
+import java.util.Optional;
+
 public class ElectricFurnaceScreen extends AbstractContainerScreen<ElectricFurnaceMenu> {
     private static final ResourceLocation TEXTURE =
             new ResourceLocation(RealEarthOres.MOD_ID,"textures/gui/container/machine/electric/machine.png");
+    private EnergyDisplayTooltipArea energyInfoArea;
 
     public ElectricFurnaceScreen(ElectricFurnaceMenu pMenu, Inventory pPlayerInventory, Component pTitle) {
         super(pMenu, pPlayerInventory, pTitle);
@@ -22,8 +27,31 @@ public class ElectricFurnaceScreen extends AbstractContainerScreen<ElectricFurna
     protected void init() {
         super.init();
         this.inventoryLabelY = 72;
-        this.titleLabelX = 56;
+        this.titleLabelX = 52;
         this.titleLabelY = 5;
+
+        assignEnergyInfoArea();
+    }
+
+    @Override
+    protected void renderLabels(GuiGraphics guiGraphics, int pMouseX, int pMouseY) {
+        int x = (width - imageWidth) / 2;
+        int y = (height - imageHeight) / 2;
+
+        renderEnergyAreaTooltip(guiGraphics, pMouseX, pMouseY, x, y);
+        super.renderLabels(guiGraphics, pMouseX, pMouseY);
+    }
+
+    private void renderEnergyAreaTooltip(GuiGraphics guiGraphics, int pMouseX, int pMouseY, int x, int y) {
+        if(isMouseAboveArea(pMouseX, pMouseY, x, y, 162, 7, 6, 69)) {
+            guiGraphics.renderTooltip(this.font, energyInfoArea.getTooltips(),
+                    Optional.empty(), pMouseX - x, pMouseY - y);
+        }
+    }
+
+    private void assignEnergyInfoArea() {
+        energyInfoArea = new EnergyDisplayTooltipArea(((width - imageWidth) / 2) + 162,
+                ((height - imageHeight) / 2) + 7, menu.blockEntity.getEnergyStorage());
     }
 
     @Override
@@ -37,6 +65,8 @@ public class ElectricFurnaceScreen extends AbstractContainerScreen<ElectricFurna
         guiGraphics.blit(TEXTURE, x, y, 0, 0, imageWidth, imageHeight);
 
         renderProgressArrow(guiGraphics, x, y);
+
+        energyInfoArea.render(guiGraphics);
     }
 
     private void renderProgressArrow(GuiGraphics guiGraphics, int x, int y) {
@@ -50,5 +80,9 @@ public class ElectricFurnaceScreen extends AbstractContainerScreen<ElectricFurna
         renderBackground(guiGraphics);
         super.render(guiGraphics, mouseX, mouseY, delta);
         renderTooltip(guiGraphics, mouseX, mouseY);
+    }
+
+    private boolean isMouseAboveArea(int pMouseX, int pMouseY, int x, int y, int offsetX, int offsetY, int width, int height) {
+        return MouseUtil.isMouseOver(pMouseX, pMouseY, x + offsetX, y + offsetY, width, height);
     }
 }
