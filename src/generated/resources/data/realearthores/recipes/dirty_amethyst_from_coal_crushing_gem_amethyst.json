@@ -1,0 +1,9 @@
+{
+  "type": "realearthores:basic_crushing",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "realearthores:gem_amethyst"
+  },
+  "result": "realearthores:dirty_amethyst"
+}

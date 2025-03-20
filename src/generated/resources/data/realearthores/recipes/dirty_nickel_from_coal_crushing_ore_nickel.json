@@ -1,0 +1,9 @@
+{
+  "type": "realearthores:basic_crushing",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "realearthores:ore_nickel"
+  },
+  "result": "realearthores:dirty_nickel"
+}

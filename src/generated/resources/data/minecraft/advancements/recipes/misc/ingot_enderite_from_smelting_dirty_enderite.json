@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dirty_enderite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "realearthores:dirty_enderite"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:ingot_enderite_from_smelting_dirty_enderite"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_dirty_enderite",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:ingot_enderite_from_smelting_dirty_enderite"
+    ]
+  },
+  "sends_telemetry_event": false
+}

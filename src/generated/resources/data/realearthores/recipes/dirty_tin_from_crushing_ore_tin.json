@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:crushing",
+  "ingredients": [
+    {
+      "item": "realearthores:ore_tin"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:dirty_tin"
+  }
+}

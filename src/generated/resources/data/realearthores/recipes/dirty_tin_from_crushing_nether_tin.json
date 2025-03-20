@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:crushing",
+  "ingredients": [
+    {
+      "item": "realearthores:nether_tin"
+    }
+  ],
+  "result": {
+    "item": "realearthores:dirty_tin"
+  }
+}
