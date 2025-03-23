@@ -108,7 +108,7 @@ public class AlloyFurnaceRecipeBuilder implements RecipeBuilder {
         @Override
         public ResourceLocation getId() {
             return new ResourceLocation(RealEarthOres.MOD_ID,
-                    ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_alloying_" + name);
+                    ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_alloying" + name);
         }
 
         @Override

@@ -31,5 +31,5 @@
       "minecraft:cyan_glazed_terracotta"
     ]
   },
-  "sends_telemetry_event": false
+  "sends_telemetry_event": true
 }

@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "realearthores:ore_aluminium"
+              "realearthores:ingot_aluminium"
             ]
           }
         ]
@@ -31,5 +31,5 @@
       "realearthores:dirty_aluminium"
     ]
   },
-  "sends_telemetry_event": false
+  "sends_telemetry_event": true
 }

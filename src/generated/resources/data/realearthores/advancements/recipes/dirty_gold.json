@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "tag": "minecraft:gold_ores"
+            "items": [
+              "minecraft:gold_ingot"
+            ]
           }
         ]
       },
@@ -29,5 +31,5 @@
       "realearthores:dirty_gold"
     ]
   },
-  "sends_telemetry_event": false
+  "sends_telemetry_event": true
 }

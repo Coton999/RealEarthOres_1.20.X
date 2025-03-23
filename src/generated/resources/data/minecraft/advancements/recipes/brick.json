@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_clay_ball": {
+    "has_clay_balle": {
       "conditions": {
         "items": [
           {
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_clay_ball",
+      "has_clay_balle",
       "has_the_recipe"
     ]
   ],
@@ -31,5 +31,5 @@
       "minecraft:brick"
     ]
   },
-  "sends_telemetry_event": true
+  "sends_telemetry_event": false
 }

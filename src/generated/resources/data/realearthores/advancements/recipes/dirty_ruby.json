@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "realearthores:cluster_ruby"
+              "realearthores:gem_ruby"
             ]
           }
         ]
@@ -31,5 +31,5 @@
       "realearthores:dirty_ruby"
     ]
   },
-  "sends_telemetry_event": false
+  "sends_telemetry_event": true
 }

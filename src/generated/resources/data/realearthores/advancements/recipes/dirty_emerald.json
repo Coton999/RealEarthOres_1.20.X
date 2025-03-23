@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "tag": "minecraft:emerald_ores"
+            "items": [
+              "minecraft:emerald"
+            ]
           }
         ]
       },
@@ -29,5 +31,5 @@
       "realearthores:dirty_emerald"
     ]
   },
-  "sends_telemetry_event": false
+  "sends_telemetry_event": true
 }

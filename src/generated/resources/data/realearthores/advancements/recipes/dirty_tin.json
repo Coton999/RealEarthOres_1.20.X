@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "tag": "realearthores:tin_ores"
+            "items": [
+              "realearthores:ingot_tin"
+            ]
           }
         ]
       },
@@ -29,5 +31,5 @@
       "realearthores:dirty_tin"
     ]
   },
-  "sends_telemetry_event": false
+  "sends_telemetry_event": true
 }

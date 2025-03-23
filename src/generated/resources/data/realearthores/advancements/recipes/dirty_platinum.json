@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "tag": "realearthores:platinum_ores"
+            "items": [
+              "realearthores:ingot_platinum"
+            ]
           }
         ]
       },
@@ -29,5 +31,5 @@
       "realearthores:dirty_platinum"
     ]
   },
-  "sends_telemetry_event": false
+  "sends_telemetry_event": true
 }

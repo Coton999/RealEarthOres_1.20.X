@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "tag": "realearthores:lead_ores"
+            "items": [
+              "realearthores:ingot_lead"
+            ]
           }
         ]
       },
@@ -29,5 +31,5 @@
       "realearthores:dirty_lead"
     ]
   },
-  "sends_telemetry_event": false
+  "sends_telemetry_event": true
 }

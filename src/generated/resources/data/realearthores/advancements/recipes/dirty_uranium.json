@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "tag": "realearthores:uranium_ores"
+            "items": [
+              "realearthores:ingot_uranium"
+            ]
           }
         ]
       },
@@ -29,5 +31,5 @@
       "realearthores:dirty_uranium"
     ]
   },
-  "sends_telemetry_event": false
+  "sends_telemetry_event": true
 }

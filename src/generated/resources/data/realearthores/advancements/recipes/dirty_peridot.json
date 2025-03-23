@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "realearthores:cluster_peridot"
+              "realearthores:gem_peridot"
             ]
           }
         ]
@@ -31,5 +31,5 @@
       "realearthores:dirty_peridot"
     ]
   },
-  "sends_telemetry_event": false
+  "sends_telemetry_event": true
 }

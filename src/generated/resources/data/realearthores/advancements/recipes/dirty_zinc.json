@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "tag": "realearthores:zinc_ores"
+            "items": [
+              "realearthores:ingot_zinc"
+            ]
           }
         ]
       },
@@ -29,5 +31,5 @@
       "realearthores:dirty_zinc"
     ]
   },
-  "sends_telemetry_event": false
+  "sends_telemetry_event": true
 }

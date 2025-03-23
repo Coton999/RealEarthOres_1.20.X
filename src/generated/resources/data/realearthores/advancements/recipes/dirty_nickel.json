@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "tag": "realearthores:nickel_ores"
+            "items": [
+              "realearthores:ingot_nickel"
+            ]
           }
         ]
       },
@@ -29,5 +31,5 @@
       "realearthores:dirty_nickel"
     ]
   },
-  "sends_telemetry_event": false
+  "sends_telemetry_event": true
 }

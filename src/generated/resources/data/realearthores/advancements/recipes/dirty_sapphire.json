@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "realearthores:cluster_sapphire"
+              "realearthores:gem_sapphire"
             ]
           }
         ]
@@ -31,5 +31,5 @@
       "realearthores:dirty_sapphire"
     ]
   },
-  "sends_telemetry_event": false
+  "sends_telemetry_event": true
 }
