@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_nether_platinum": {
+    "has_ore_platinum": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:nether_platinum"
-            ]
+            "tag": "realearthores:platinum_ores"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_nether_platinum",
+      "has_ore_platinum",
       "has_the_recipe"
     ]
   ],
@@ -31,5 +29,5 @@
       "realearthores:dirty_platinum"
     ]
   },
-  "sends_telemetry_event": true
+  "sends_telemetry_event": false
 }

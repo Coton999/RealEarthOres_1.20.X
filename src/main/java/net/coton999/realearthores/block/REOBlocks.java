@@ -62,19 +62,28 @@ public class REOBlocks {
     public static final RegistryObject<Block> MARBLE_STAIRS = registerBlock("marble_stairs",
             () -> new StairBlock(() -> REOBlocks.MARBLE.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.STONE_STAIRS).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> MARBLE_BRICK_STAIRS = registerBlock("marble_brick_stairs",
+            () -> new StairBlock(() -> REOBlocks.MARBLE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_STAIRS).sound(SoundType.STONE)));
     public static final RegistryObject<Block> MARBLE_COBBLE_STAIRS = registerBlock("marble_cobble_stairs",
             () -> new StairBlock(() -> REOBlocks.MARBLE_COBBLE.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_STAIRS).sound(SoundType.STONE)));
     public static final RegistryObject<Block> MARBLE_COBBLE_MOSSY_STAIRS = registerBlock("marble_cobble_mossy_stairs",
             () -> new StairBlock(() -> REOBlocks.MARBLE_COBBLE.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.MOSSY_COBBLESTONE_STAIRS).sound(SoundType.STONE)));
+
     public static final RegistryObject<Block> MARBLE_SLAB = registerBlock("marble_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_SLAB).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> MARBLE_BRICK_SLAB = registerBlock("lmarble_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).sound(SoundType.STONE)));
     public static final RegistryObject<Block> MARBLE_COBBLE_SLAB = registerBlock("marble_cobble_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_SLAB).sound(SoundType.STONE)));
     public static final RegistryObject<Block> MARBLE_COBBLE_MOSSY_SLAB = registerBlock("marble_cobble_mossy_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.MOSSY_COBBLESTONE_SLAB).sound(SoundType.STONE)));
+
     public static final RegistryObject<Block> MARBLE_WALL = registerBlock("marble_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_WALL).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> MARBLE_BRICK_WALL = registerBlock("marble_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_WALL).sound(SoundType.STONE)));
     public static final RegistryObject<Block> MARBLE_COBBLE_WALL = registerBlock("marble_cobble_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_WALL).sound(SoundType.STONE)));
@@ -101,19 +110,28 @@ public class REOBlocks {
     public static final RegistryObject<Block> LIMESTONE_STAIRS = registerBlock("limestone_stairs",
             () -> new StairBlock(() -> REOBlocks.LIMESTONE.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.STONE_STAIRS).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> LIMESTONE_BRICK_STAIRS = registerBlock("limestone_brick_stairs",
+            () -> new StairBlock(() -> REOBlocks.LIMESTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_STAIRS).sound(SoundType.STONE)));
     public static final RegistryObject<Block> LIMESTONE_COBBLE_STAIRS = registerBlock("limestone_cobble_stairs",
             () -> new StairBlock(() -> REOBlocks.LIMESTONE_COBBLE.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_STAIRS).sound(SoundType.STONE)));
     public static final RegistryObject<Block> LIMESTONE_COBBLE_MOSSY_STAIRS = registerBlock("limestone_cobble_mossy_stairs",
             () -> new StairBlock(() -> REOBlocks.LIMESTONE_COBBLE.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.MOSSY_COBBLESTONE_STAIRS).sound(SoundType.STONE)));
+
     public static final RegistryObject<Block> LIMESTONE_SLAB = registerBlock("limestone_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_SLAB).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> LIMESTONE_BRICK_SLAB = registerBlock("limestone_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).sound(SoundType.STONE)));
     public static final RegistryObject<Block> LIMESTONE_COBBLE_SLAB = registerBlock("limestone_cobble_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_SLAB).sound(SoundType.STONE)));
     public static final RegistryObject<Block> LIMESTONE_COBBLE_MOSSY_SLAB = registerBlock("limestone_cobble_mossy_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.MOSSY_COBBLESTONE_SLAB).sound(SoundType.STONE)));
+
     public static final RegistryObject<Block> LIMESTONE_WALL = registerBlock("limestone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_WALL).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> LIMESTONE_BRICK_WALL = registerBlock("limestone_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_WALL).sound(SoundType.STONE)));
     public static final RegistryObject<Block> LIMESTONE_COBBLE_WALL = registerBlock("limestone_cobble_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_WALL).sound(SoundType.STONE)));

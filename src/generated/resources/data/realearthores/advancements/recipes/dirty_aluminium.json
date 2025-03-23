@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_nether_aluminium": {
+    "has_ore_aluminium": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:nether_aluminium"
+              "realearthores:ore_aluminium"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_nether_aluminium",
+      "has_ore_aluminium",
       "has_the_recipe"
     ]
   ],
@@ -31,5 +31,5 @@
       "realearthores:dirty_aluminium"
     ]
   },
-  "sends_telemetry_event": true
+  "sends_telemetry_event": false
 }

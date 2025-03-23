@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_log_mahogany": {
+    "has_mahogany_logs": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:log_mahogany_stripped"
-            ]
+            "tag": "realearthores:mahogany_logs"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_stripped_log_mahogany",
+      "has_mahogany_logs",
       "has_the_recipe"
     ]
   ],

@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_nether_zinc": {
+    "has_ore_zinc": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:nether_zinc"
-            ]
+            "tag": "realearthores:zinc_ores"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_nether_zinc",
+      "has_ore_zinc",
       "has_the_recipe"
     ]
   ],
@@ -31,5 +29,5 @@
       "realearthores:dirty_zinc"
     ]
   },
-  "sends_telemetry_event": true
+  "sends_telemetry_event": false
 }

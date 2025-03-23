@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_log_redwood": {
+    "has_redwood_logs": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:log_redwood"
-            ]
+            "tag": "realearthores:redwood_logs"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_log_redwood",
+      "has_redwood_logs",
       "has_the_recipe"
     ]
   ],

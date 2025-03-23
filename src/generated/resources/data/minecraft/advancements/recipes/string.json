@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_green_wool": {
+    "has__wool": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:green_wool"
-            ]
+            "tag": "minecraft:wool"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_green_wool",
+      "has__wool",
       "has_the_recipe"
     ]
   ],
@@ -31,5 +29,5 @@
       "minecraft:string"
     ]
   },
-  "sends_telemetry_event": true
+  "sends_telemetry_event": false
 }

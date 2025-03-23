@@ -92,6 +92,7 @@ public class REOItemModelProvider extends ItemModelProvider {
         nuggetItem(REOItems.NUGGET_EMERALD);
         nuggetItem(REOItems.NUGGET_ENDERITE);
         nuggetItem(REOItems.NUGGET_LEAD);
+        nuggetItem(REOItems.NUGGET_NETHERITE);
         nuggetItem(REOItems.NUGGET_NICKEL);
         nuggetItem(REOItems.NUGGET_PERIDOT);
         nuggetItem(REOItems.NUGGET_PLATINUM);
@@ -572,23 +573,29 @@ public class REOItemModelProvider extends ItemModelProvider {
 
         // Marble
         simpleBlockItem(REOBlocks.MARBLE_STAIRS);
+        simpleBlockItem(REOBlocks.MARBLE_BRICK_STAIRS);
         simpleBlockItem(REOBlocks.MARBLE_COBBLE_STAIRS);
         simpleBlockItem(REOBlocks.MARBLE_COBBLE_MOSSY_STAIRS);
         simpleBlockItem(REOBlocks.MARBLE_SLAB);
+        simpleBlockItem(REOBlocks.MARBLE_BRICK);
         simpleBlockItem(REOBlocks.MARBLE_COBBLE_SLAB);
         simpleBlockItem(REOBlocks.MARBLE_COBBLE_MOSSY_SLAB);
         wallItem(REOBlocks.MARBLE_WALL, "marble/marble");
+        wallItem(REOBlocks.MARBLE_BRICK_WALL, "marble/marble_brick");
         wallItem(REOBlocks.MARBLE_COBBLE_WALL, "marble/marble_cobble");
         wallItem(REOBlocks.MARBLE_COBBLE_MOSSY_WALL, "marble/marble_cobble_mossy");
 
         // Limestone
         simpleBlockItem(REOBlocks.LIMESTONE_STAIRS);
+        simpleBlockItem(REOBlocks.LIMESTONE_BRICK_STAIRS);
         simpleBlockItem(REOBlocks.LIMESTONE_COBBLE_STAIRS);
         simpleBlockItem(REOBlocks.LIMESTONE_COBBLE_MOSSY_STAIRS);
         simpleBlockItem(REOBlocks.LIMESTONE_SLAB);
+        simpleBlockItem(REOBlocks.LIMESTONE_BRICK_SLAB);
         simpleBlockItem(REOBlocks.LIMESTONE_COBBLE_SLAB);
         simpleBlockItem(REOBlocks.LIMESTONE_COBBLE_MOSSY_SLAB);
         wallItem(REOBlocks.LIMESTONE_WALL, "limestone/limestone");
+        wallItem(REOBlocks.LIMESTONE_BRICK_WALL, "limestone/limestone_brick");
         wallItem(REOBlocks.LIMESTONE_COBBLE_WALL, "limestone/limestone_cobble");
         wallItem(REOBlocks.LIMESTONE_COBBLE_MOSSY_WALL, "limestone/limestone_cobble_mossy");
 

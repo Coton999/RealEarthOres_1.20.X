@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_dark_oak_wood": {
+    "has_oak_log": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:stripped_dark_oak_wood"
-            ]
+            "tag": "minecraft:logs_that_burn"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_stripped_dark_oak_wood",
+      "has_oak_log",
       "has_the_recipe"
     ]
   ],
@@ -31,5 +29,5 @@
       "minecraft:charcoal"
     ]
   },
-  "sends_telemetry_event": false
+  "sends_telemetry_event": true
 }

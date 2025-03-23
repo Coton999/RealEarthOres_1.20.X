@@ -31,5 +31,5 @@
       "realearthores:dirty_enderite"
     ]
   },
-  "sends_telemetry_event": true
+  "sends_telemetry_event": false
 }

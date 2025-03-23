@@ -1,4 +1,4 @@
-// 1.20.1	2025-03-19T16:13:46.7414999	Item Models: realearthores
+// 1.20.1	2025-03-23T16:06:17.3113603	Item Models: realearthores
 8a12a4df5de32d2c3d1a3fb869fba17d0a0dd6d4 assets/realearthores/models/item/aluminium_axe.json
 d2718c330ab58e38517168b9246986572ac5816f assets/realearthores/models/item/aluminium_boots.json
 0425bc54cf771c8a19b4ca13054da496e19bdafe assets/realearthores/models/item/aluminium_chestplate.json
@@ -821,6 +821,9 @@ d52d412f1a476833d51c29e08f1b4cdf1919d0e2 assets/realearthores/models/item/lamp_y
 7a858fa2872167afc225bc13f72b4f359f678153 assets/realearthores/models/item/large_peridot_bud.json
 ca8416fa08a33690c9dec2826d8a9fbc8cada285 assets/realearthores/models/item/large_ruby_bud.json
 344267f401b123f6bd29e292372874c591b808e6 assets/realearthores/models/item/large_sapphire_bud.json
+1d3b6af3eac3b06f75c376d52c304b87be78597b assets/realearthores/models/item/limestone_brick_slab.json
+3b5f92d5355ce8ad747bb59731ad3d240f1b6177 assets/realearthores/models/item/limestone_brick_stairs.json
+09f21c3352e591a3d0dd08ce7f02eae58de395f0 assets/realearthores/models/item/limestone_brick_wall.json
 167cb38037d45620d442455d15ffb1468c345501 assets/realearthores/models/item/limestone_cobble_mossy_slab.json
 506d5ce3186fd43b474435e1758f73e82ffca6f4 assets/realearthores/models/item/limestone_cobble_mossy_stairs.json
 3a4cc6a0fc0ec2883a7c7c9571bc320a150bd8f1 assets/realearthores/models/item/limestone_cobble_mossy_wall.json
@@ -846,6 +849,9 @@ b7042abfd8753248c1dbf17ff6a99ed0356dd0eb assets/realearthores/models/item/lumino
 70ebaececc40326a76a30a298415fd2683fbb5a2 assets/realearthores/models/item/luminous_red.json
 a800ebbbaec52da407c34c4c7821796571d88646 assets/realearthores/models/item/luminous_white.json
 d499a92148cc2e0bac2ffaea480525362ae1d18a assets/realearthores/models/item/luminous_yellow.json
+091e99f2c3f5f208e4ad2cd9d90b806b86fb5303 assets/realearthores/models/item/marble_brick.json
+167fc4af20e5a95a98c206d64c9e9ad624eaf273 assets/realearthores/models/item/marble_brick_stairs.json
+928fa2578a5e03667e68beef516c1784da875e93 assets/realearthores/models/item/marble_brick_wall.json
 98539940f6ac663d3bc369561b145b6e4801fc9c assets/realearthores/models/item/marble_cobble_mossy_slab.json
 21ef262265c28f4f2b99099bc5084c8a9db26de8 assets/realearthores/models/item/marble_cobble_mossy_stairs.json
 b8dcf4888d2a3a80c0b4b8dd32beb8834c306e81 assets/realearthores/models/item/marble_cobble_mossy_wall.json
@@ -877,6 +883,7 @@ b751379fe8376ce228ccb179d0b6315bd5049e2e assets/realearthores/models/item/nugget
 dbb4603bffaf4f108c7a307ab7d0e98399f941bf assets/realearthores/models/item/nugget_emerald.json
 990709798526e29e5594d9b24c223495a4a33b94 assets/realearthores/models/item/nugget_enderite.json
 df9c38c8fda9994f140d55d0bc3176c55e26d9d4 assets/realearthores/models/item/nugget_lead.json
+bcb98ccea289cd70b5abbf038657bb146faf857c assets/realearthores/models/item/nugget_netherite.json
 0c611af466063281bd53d7475d174336f072b0e9 assets/realearthores/models/item/nugget_nickel.json
 4d979cbaa39b264e5611e3cb300b17fbe637d9ad assets/realearthores/models/item/nugget_peridot.json
 8b7d354dff629e0e57ed9b2b9acb93438ddbc8c5 assets/realearthores/models/item/nugget_platinum.json

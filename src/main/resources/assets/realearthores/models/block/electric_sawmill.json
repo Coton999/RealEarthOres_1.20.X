@@ -3,6 +3,6 @@
   "textures": {
     "front": "realearthores:block/machines/electric/tier_1/sawmill_front",
     "side": "realearthores:block/machines/electric/tier_1/machine_side",
-    "top": "minecraft:block/iron_block"
+    "top": "realearthores:block/storage/brass"
   }
 }

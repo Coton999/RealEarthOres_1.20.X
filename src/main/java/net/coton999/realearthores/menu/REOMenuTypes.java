@@ -2,7 +2,7 @@ package net.coton999.realearthores.menu;
 
 import net.coton999.realearthores.RealEarthOres;
 import net.coton999.realearthores.menu.machines.coal.*;
-import net.coton999.realearthores.menu.machines.electric.*;
+import net.coton999.realearthores.menu.machines.electric.basic.*;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraftforge.common.extensions.IForgeMenuType;

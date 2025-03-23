@@ -1,7 +1,7 @@
 package net.coton999.realearthores.block.custom.machines.electric;
 
 import net.coton999.realearthores.block.entity.REOBlockEntities;
-import net.coton999.realearthores.block.entity.machines.electric.AlloyFurnaceBlockEntity;
+import net.coton999.realearthores.block.entity.machines.electric.basic.AlloyFurnaceBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;

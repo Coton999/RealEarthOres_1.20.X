@@ -1,9 +1,0 @@
-{
-  "type": "realearthores:firing",
-  "cookingtime": 100,
-  "experience": 0.15,
-  "ingredient": {
-    "item": "minecraft:stripped_cherry_wood"
-  },
-  "result": "minecraft:charcoal"
-}

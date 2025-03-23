@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_gravel_ore_copper": {
+    "has_ore_copper": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:gravel_ore_copper"
-            ]
+            "tag": "minecraft:copper_ores"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_gravel_ore_copper",
+      "has_ore_copper",
       "has_the_recipe"
     ]
   ],
@@ -31,5 +29,5 @@
       "realearthores:dirty_copper"
     ]
   },
-  "sends_telemetry_event": true
+  "sends_telemetry_event": false
 }

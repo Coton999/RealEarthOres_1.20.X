@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_wood_poplar": {
+    "has_poplar_logs": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:wood_poplar_stripped"
-            ]
+            "tag": "realearthores:poplar_logs"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_stripped_wood_poplar",
+      "has_poplar_logs",
       "has_the_recipe"
     ]
   ],

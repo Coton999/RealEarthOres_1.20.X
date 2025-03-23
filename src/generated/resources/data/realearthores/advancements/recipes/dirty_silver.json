@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_nether_silver": {
+    "has_ore_silver": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:nether_silver"
-            ]
+            "tag": "realearthores:silver_ores"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_nether_silver",
+      "has_ore_silver",
       "has_the_recipe"
     ]
   ],
@@ -31,5 +29,5 @@
       "realearthores:dirty_silver"
     ]
   },
-  "sends_telemetry_event": true
+  "sends_telemetry_event": false
 }

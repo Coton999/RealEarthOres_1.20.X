@@ -49,6 +49,7 @@
   "item.realearthores.nugget_emerald": "Emerald Nugget",
   "item.realearthores.nugget_enderite": "Enderite Nugget",
   "item.realearthores.nugget_lead": "Lead Nugget",
+  "item.realearthores.nugget_netherite": "Netherite Nugget",
   "item.realearthores.nugget_nickel": "Nickel Nugget",
   "item.realearthores.nugget_peridot": "Peridot Nugget",
   "item.realearthores.nugget_platinum": "Platinum Nugget",
@@ -497,12 +498,17 @@
   "block.realearthores.marble_cracked": "Cracked Marble Bricks",
 
   "block.realearthores.marble_stairs": "Marble Stairs",
+  "block.realearthores.marble_brick_stairs": "Marble Brick Stairs",
   "block.realearthores.marble_cobble_stairs": "Marble Coblestone Stairs",
   "block.realearthores.marble_cobble_mossy_stairs": "Mossy Marble Coblestone Stairs",
+
   "block.realearthores.marble_slab": "Marble Slab",
+  "block.realearthores.marble_brick_slab": "Marble Brick Slab",
   "block.realearthores.marble_cobble_slab": "Marble Cobblestone Slab",
   "block.realearthores.marble_cobble_mossy_slab": "Mossy Marble Cobblestone Slab",
+
   "block.realearthores.marble_wall": "Marble Wall",
+  "block.realearthores.marble_brick_wall": "Marble Brick Wall",
   "block.realearthores.marble_cobble_wall": "Marble Cobblestone Wall",
   "block.realearthores.marble_cobble_mossy_wall": "Mossy Marble Cobblestone Wall",
 
@@ -515,12 +521,17 @@
   "block.realearthores.limestone_cracked": "Cracked Limestone Bricks",
 
   "block.realearthores.limestone_stairs": "Limestone Stairs",
+  "block.realearthores.limestone_brick_stairs": "Limestone Stairs",
   "block.realearthores.limestone_cobble_stairs": "Limestone Coblestone Stairs",
   "block.realearthores.limestone_cobble_mossy_stairs": "Mossy Limestone Coblestone Stairs",
+
   "block.realearthores.limestone_slab": "Limestone Slab",
+  "block.realearthores.limestone_brick_slab": "Limestone Brick Slab",
   "block.realearthores.limestone_cobble_slab": "Limestone Cobblestone Slab",
   "block.realearthores.limestone_cobble_mossy_slab": "Mossy Limestone Cobblestone Slab",
+
   "block.realearthores.limestone_wall": "Limestone Wall",
+  "block.realearthores.limestone_brick_wall": "Limestone Brick Wall",
   "block.realearthores.limestone_cobble_wall": "Limestone Cobblestone Wall",
   "block.realearthores.limestone_cobble_mossy_wall": "Mossy Limestone Cobblestone Wall",
 

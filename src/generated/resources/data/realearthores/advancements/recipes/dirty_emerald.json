@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_nether_emerald": {
+    "has_ore_emerald": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:nether_emerald"
-            ]
+            "tag": "minecraft:emerald_ores"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_nether_emerald",
+      "has_ore_emerald",
       "has_the_recipe"
     ]
   ],
@@ -31,5 +29,5 @@
       "realearthores:dirty_emerald"
     ]
   },
-  "sends_telemetry_event": true
+  "sends_telemetry_event": false
 }

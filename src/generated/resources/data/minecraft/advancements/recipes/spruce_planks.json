@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_log_spruce": {
+    "has_spruce_logs": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:spruce_log"
-            ]
+            "tag": "minecraft:spruce_logs"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_log_spruce",
+      "has_spruce_logs",
       "has_the_recipe"
     ]
   ],

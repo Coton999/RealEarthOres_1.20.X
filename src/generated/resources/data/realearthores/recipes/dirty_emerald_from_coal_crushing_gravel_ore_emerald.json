@@ -1,9 +1,0 @@
-{
-  "type": "realearthores:basic_crushing",
-  "cookingtime": 200,
-  "experience": 0.7,
-  "ingredient": {
-    "item": "realearthores:gravel_ore_emerald"
-  },
-  "result": "realearthores:dirty_emerald"
-}

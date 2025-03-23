@@ -46,15 +46,21 @@ public class REOBlockStateProvider extends BlockStateProvider {
                 models().cubeAll("marble_cracked", new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/marble/marble_cracked")));
 
         stairsBlock(((StairBlock) REOBlocks.MARBLE_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/marble/marble"));
+        stairsBlock(((StairBlock) REOBlocks.MARBLE_BRICK_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/marble/marble_brick"));
         stairsBlock(((StairBlock) REOBlocks.MARBLE_COBBLE_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/marble/marble_cobble"));
         stairsBlock(((StairBlock) REOBlocks.MARBLE_COBBLE_MOSSY_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/marble/marble_cobble_mossy"));
+
         slabBlock(((SlabBlock) REOBlocks.MARBLE_SLAB.get()),
                 blockTexture(REOBlocks.MARBLE.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/marble/marble"));
+        slabBlock(((SlabBlock) REOBlocks.MARBLE_BRICK_SLAB.get()),
+                blockTexture(REOBlocks.MARBLE_BRICK.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/marble/marble_brick"));
         slabBlock(((SlabBlock) REOBlocks.MARBLE_COBBLE_SLAB.get()),
                 blockTexture(REOBlocks.MARBLE_COBBLE.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/marble/marble_cobble"));
         slabBlock(((SlabBlock) REOBlocks.MARBLE_COBBLE_MOSSY_SLAB.get()),
                 blockTexture(REOBlocks.MARBLE_COBBLE_MOSSY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/marble/marble_cobble_mossy"));
+
         wallBlock(((WallBlock) REOBlocks.MARBLE_WALL.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/marble/marble"));
+       wallBlock(((WallBlock) REOBlocks.MARBLE_BRICK_WALL.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/marble/marble_brick"));
         wallBlock(((WallBlock) REOBlocks.MARBLE_COBBLE_WALL.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/marble/marble_cobble"));
         wallBlock(((WallBlock) REOBlocks.MARBLE_COBBLE_MOSSY_WALL.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/marble/marble_cobble_mossy"));
 
@@ -75,15 +81,21 @@ public class REOBlockStateProvider extends BlockStateProvider {
                 models().cubeAll("limestone_cracked", new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/limestone/limestone_cracked")));
 
         stairsBlock(((StairBlock) REOBlocks.LIMESTONE_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/limestone/limestone"));
+        stairsBlock(((StairBlock) REOBlocks.LIMESTONE_BRICK_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/limestone/limestone_brick"));
         stairsBlock(((StairBlock) REOBlocks.LIMESTONE_COBBLE_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/limestone/limestone_cobble"));
         stairsBlock(((StairBlock) REOBlocks.LIMESTONE_COBBLE_MOSSY_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/limestone/limestone_cobble_mossy"));
+
         slabBlock(((SlabBlock) REOBlocks.LIMESTONE_SLAB.get()),
                 blockTexture(REOBlocks.LIMESTONE.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/limestone/limestone"));
+        slabBlock(((SlabBlock) REOBlocks.LIMESTONE_BRICK_SLAB.get()),
+                blockTexture(REOBlocks.LIMESTONE_BRICK.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/limestone/limestone_brick"));
         slabBlock(((SlabBlock) REOBlocks.LIMESTONE_COBBLE_SLAB.get()),
                 blockTexture(REOBlocks.LIMESTONE_COBBLE.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/limestone/limestone_cobble"));
         slabBlock(((SlabBlock) REOBlocks.LIMESTONE_COBBLE_MOSSY_SLAB.get()),
                 blockTexture(REOBlocks.LIMESTONE_COBBLE_MOSSY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/limestone/limestone_cobble_mossy"));
+
         wallBlock(((WallBlock) REOBlocks.LIMESTONE_WALL.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/limestone/limestone"));
+        wallBlock(((WallBlock) REOBlocks.LIMESTONE_BRICK_WALL.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/limestone/limestone_brick"));
         wallBlock(((WallBlock) REOBlocks.LIMESTONE_COBBLE_WALL.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/limestone/limestone_cobble"));
         wallBlock(((WallBlock) REOBlocks.LIMESTONE_COBBLE_MOSSY_WALL.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/limestone/limestone_cobble_mossy"));
 

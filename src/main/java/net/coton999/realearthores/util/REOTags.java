@@ -14,7 +14,7 @@ public class REOTags {
             public static final TagKey<Block> MINEABLE_WITH_SICKLE = tag("mineable_with_sickle");
             public static final TagKey<Block> MINEABLE_WITH_PAXEL = tag("mineable_with_paxel");
 
-
+            // Wood
             public static final TagKey<Block> BALSA_LOGS = tag("balsa_logs");
             public static final TagKey<Block> BAOBAB_LOGS = tag("baobab_logs");
             public static final TagKey<Block> HILL_CHERRY_LOGS = tag("hill_cherry_logs");
@@ -46,6 +46,7 @@ public class REOTags {
     public static class Items {
         public static final TagKey<Item> GEM_GEAR_TIER = tag("gem_gear_tier");
 
+        // Wood
         public static final TagKey<Item> BALSA_LOGS = tag("balsa_logs");
         public static final TagKey<Item> BAOBAB_LOGS = tag("baobab_logs");
         public static final TagKey<Item> HILL_CHERRY_LOGS = tag("hill_cherry_logs");
@@ -53,6 +54,7 @@ public class REOTags {
         public static final TagKey<Item> CITRUS_LOGS = tag("citrus_logs");
         public static final TagKey<Item> EBONY_LOGS = tag("ebony_logs");
         public static final TagKey<Item> LARCH_LOGS = tag("larch_logs");
+        public static final TagKey<Item> LIME_LOGS = tag("lime_logs");
         public static final TagKey<Item> MAHOGANY_LOGS = tag("mahogany_logs");
         public static final TagKey<Item> MAPLE_LOGS = tag("maple_logs");
         public static final TagKey<Item> PALM_LOGS = tag("palm_logs");
@@ -66,6 +68,16 @@ public class REOTags {
         public static final TagKey<Item> WALNUT_LOGS = tag("walnut_logs");
         public static final TagKey<Item> WILLOW_LOGS = tag("willow_logs");
         public static final TagKey<Item> VANILLA_RESISTANT_LOGS = tag("vanilla_resistant_logs");
+
+        // Ores
+        public static final TagKey<Item> ALUMINIUM_ORES = tag("aluminium_ores");
+        public static final TagKey<Item> LEAD_ORES = tag("lead_ores");
+        public static final TagKey<Item> NICKEL_ORES = tag("nickel_ores");
+        public static final TagKey<Item> PLATINUM_ORES = tag("platinum_ores");
+        public static final TagKey<Item> SILVER_ORES = tag("silver_ores");
+        public static final TagKey<Item> TIN_ORES = tag("tin_ores");
+        public static final TagKey<Item> URANIUM_ORES = tag("uranium_ores");
+        public static final TagKey<Item> ZINC_ORES = tag("zinc_ores");
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(RealEarthOres.MOD_ID, name));

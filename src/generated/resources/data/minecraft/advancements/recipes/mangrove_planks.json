@@ -1,28 +1,26 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
+    "has_mangrove_logs": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:mangrove_logs"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "minecraft:mangrove_planks"
       },
       "trigger": "minecraft:recipe_unlocked"
-    },
-    "has_wood_mangrove": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:mangrove_wood"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
-      "has_wood_mangrove",
+      "has_mangrove_logs",
       "has_the_recipe"
     ]
   ],
@@ -32,5 +30,4 @@
     ]
   },
   "sends_telemetry_event": true
-}telemetry_event": true
 }

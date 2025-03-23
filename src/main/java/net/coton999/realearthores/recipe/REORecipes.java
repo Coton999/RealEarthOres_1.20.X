@@ -2,7 +2,7 @@ package net.coton999.realearthores.recipe;
 
 import net.coton999.realearthores.RealEarthOres;
 import net.coton999.realearthores.recipe.machines.coal.*;
-import net.coton999.realearthores.recipe.machines.electric.*;
+import net.coton999.realearthores.recipe.machines.electric.basic.*;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -25,7 +25,7 @@ public class REORecipes {
 
     // Electric
     public static final RegistryObject<RecipeSerializer<ElectricFurnaceRecipe>> ELECTRIC_FURNACE_SERIALIZER =
-            SERIALIZERS.register("smelting", () -> ElectricFurnaceRecipe.Serializer.INSTANCE);
+            SERIALIZERS.register("electric_smelting", () -> ElectricFurnaceRecipe.Serializer.INSTANCE);
     public static final RegistryObject<RecipeSerializer<CrusherRecipe>> CRUSHER_SERIALIZER =
             SERIALIZERS.register("crushing", () -> CrusherRecipe.Serializer.INSTANCE);
     public static final RegistryObject<RecipeSerializer<PurifierRecipe>> PURIFIER_SERIALIZER =

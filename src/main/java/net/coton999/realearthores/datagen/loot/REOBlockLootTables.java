@@ -67,15 +67,19 @@ public class REOBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(REOBlocks.MARBLE_CRACKED.get());
 
         this.dropSelf(REOBlocks.MARBLE_STAIRS.get());
+        this.dropSelf(REOBlocks.MARBLE_BRICK_STAIRS.get());
         this.dropSelf(REOBlocks.MARBLE_COBBLE_STAIRS.get());
         this.dropSelf(REOBlocks.MARBLE_COBBLE_MOSSY_STAIRS.get());
         this.add(REOBlocks.MARBLE_SLAB.get(),
                 block -> createSlabItemTable(REOBlocks.MARBLE_SLAB.get()));
+        this.add(REOBlocks.MARBLE_BRICK_SLAB.get(),
+                block -> createSlabItemTable(REOBlocks.MARBLE_BRICK_SLAB.get()));
         this.add(REOBlocks.MARBLE_COBBLE_SLAB.get(),
                 block -> createSlabItemTable(REOBlocks.MARBLE_COBBLE_SLAB.get()));
         this.add(REOBlocks.MARBLE_COBBLE_MOSSY_SLAB.get(),
                 block -> createSlabItemTable(REOBlocks.MARBLE_COBBLE_MOSSY_SLAB.get()));
         this.dropSelf(REOBlocks.MARBLE_WALL.get());
+        this.dropSelf(REOBlocks.MARBLE_BRICK_WALL.get());
         this.dropSelf(REOBlocks.MARBLE_COBBLE_WALL.get());
         this.dropSelf(REOBlocks.MARBLE_COBBLE_MOSSY_WALL.get());
 
@@ -90,15 +94,19 @@ public class REOBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(REOBlocks.LIMESTONE_CRACKED.get());
 
         this.dropSelf(REOBlocks.LIMESTONE_STAIRS.get());
+        this.dropSelf(REOBlocks.LIMESTONE_BRICK_STAIRS.get());
         this.dropSelf(REOBlocks.LIMESTONE_COBBLE_STAIRS.get());
         this.dropSelf(REOBlocks.LIMESTONE_COBBLE_MOSSY_STAIRS.get());
         this.add(REOBlocks.LIMESTONE_SLAB.get(),
                 block -> createSlabItemTable(REOBlocks.LIMESTONE_SLAB.get()));
+        this.add(REOBlocks.LIMESTONE_BRICK_SLAB.get(),
+                block -> createSlabItemTable(REOBlocks.LIMESTONE_BRICK_SLAB.get()));
         this.add(REOBlocks.LIMESTONE_COBBLE_SLAB.get(),
                 block -> createSlabItemTable(REOBlocks.LIMESTONE_COBBLE_SLAB.get()));
         this.add(REOBlocks.LIMESTONE_COBBLE_MOSSY_SLAB.get(),
                 block -> createSlabItemTable(REOBlocks.LIMESTONE_COBBLE_MOSSY_SLAB.get()));
         this.dropSelf(REOBlocks.LIMESTONE_WALL.get());
+        this.dropSelf(REOBlocks.LIMESTONE_BRICK_WALL.get());
         this.dropSelf(REOBlocks.LIMESTONE_COBBLE_WALL.get());
         this.dropSelf(REOBlocks.LIMESTONE_COBBLE_MOSSY_WALL.get());
 

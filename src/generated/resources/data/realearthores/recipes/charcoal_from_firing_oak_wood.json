@@ -1,9 +1,0 @@
-{
-  "type": "realearthores:firing",
-  "cookingtime": 100,
-  "experience": 0.15,
-  "ingredient": {
-    "item": "minecraft:oak_wood"
-  },
-  "result": "minecraft:charcoal"
-}

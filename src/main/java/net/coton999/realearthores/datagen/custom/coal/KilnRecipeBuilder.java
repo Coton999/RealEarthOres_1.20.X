@@ -27,16 +27,14 @@ public class KilnRecipeBuilder implements RecipeBuilder {
     private final RecipeCategory category;
     private final Item result;
     private final Ingredient ingredient;
-    private final Item input;
     private final float experience;
     private final int cookingTime;
     private final Advancement.Builder advancement = Advancement.Builder.recipeAdvancement();
 
-    public KilnRecipeBuilder(RecipeCategory pCategory, ItemLike pResult, ItemLike pIngredient, ItemLike pInput, float pExperience, int pCookingTime) {
+    public KilnRecipeBuilder(RecipeCategory pCategory, ItemLike pResult, Ingredient pIngredient, float pExperience, int pCookingTime) {
         this.category = pCategory;
         this.result = pResult.asItem();
-        this.ingredient = Ingredient.of(pIngredient);
-        this.input = pInput.asItem();
+        this.ingredient = pIngredient;
         this.experience = pExperience;
         this.cookingTime = pCookingTime;
     }
@@ -63,24 +61,23 @@ public class KilnRecipeBuilder implements RecipeBuilder {
                 .addCriterion("has_the_recipe", RecipeUnlockedTrigger.unlocked(pRecipeId))
                 .rewards(AdvancementRewards.Builder.recipe(pRecipeId)).requirements(RequirementsStrategy.OR);
 
-        pFinishedRecipeConsumer.accept(new KilnRecipeBuilder.Result(pRecipeId, this.input, this.ingredient, this.result, this.experience, this.cookingTime, this.advancement,
+        pFinishedRecipeConsumer.accept(new KilnRecipeBuilder.Result(pRecipeId, this.ingredient, this.result,
+                this.experience, this.cookingTime, this.advancement,
                 new ResourceLocation(pRecipeId.getNamespace(), "recipes/" + pRecipeId.getPath())));
     }
 
     public static class Result implements FinishedRecipe {
         private final ResourceLocation id;
         private final Ingredient ingredient;
-        private final Item input;
         private final Item result;
         private final float experience;
         private final int cookingTime;
         private final Advancement.Builder advancement;
         private final ResourceLocation advancementId;
 
-        public Result(ResourceLocation pId, Item pInput, Ingredient pIngredient, Item pResult, float pExperience, int pCookingTime,
+        public Result(ResourceLocation pId, Ingredient pIngredient, Item pResult, float pExperience, int pCookingTime,
                       Advancement.Builder pAdvancement, ResourceLocation pAdvancementId) {
             this.id = pId;
-            this.input = pInput;
             this.ingredient = pIngredient;
             this.result = pResult;
             this.experience = pExperience;
@@ -103,7 +100,7 @@ public class KilnRecipeBuilder implements RecipeBuilder {
         @Override
         public ResourceLocation getId() {
             return new ResourceLocation(RealEarthOres.MOD_ID,
-                    ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_firing_" + this.input);
+                    ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_firing");
         }
 
         @Override

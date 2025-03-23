@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_log_rubber": {
+    "has_rubber_logs": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:log_rubber"
-            ]
+            "tag": "realearthores:rubber_logs"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_log_rubber",
+      "has_rubber_logs",
       "has_the_recipe"
     ]
   ],

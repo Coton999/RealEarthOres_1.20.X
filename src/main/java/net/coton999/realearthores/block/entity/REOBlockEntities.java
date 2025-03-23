@@ -3,7 +3,7 @@ package net.coton999.realearthores.block.entity;
 import net.coton999.realearthores.RealEarthOres;
 import net.coton999.realearthores.block.REOBlocks;
 import net.coton999.realearthores.block.entity.machines.coal.*;
-import net.coton999.realearthores.block.entity.machines.electric.*;
+import net.coton999.realearthores.block.entity.machines.electric.basic.*;
 import net.coton999.realearthores.block.entity.signs.REOHangingSignBlockEntity;
 import net.coton999.realearthores.block.entity.signs.REOSignBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;

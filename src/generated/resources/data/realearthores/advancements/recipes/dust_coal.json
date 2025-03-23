@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_NETHER_coal": {
+    "has_ore_coal": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:nether_coal"
-            ]
+            "tag": "minecraft:coal_ores"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_NETHER_coal",
+      "has_ore_coal",
       "has_the_recipe"
     ]
   ],
@@ -31,5 +29,5 @@
       "realearthores:dust_coal"
     ]
   },
-  "sends_telemetry_event": true
+  "sends_telemetry_event": false
 }

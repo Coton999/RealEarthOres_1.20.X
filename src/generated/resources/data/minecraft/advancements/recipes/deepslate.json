@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_deepslatee": {
+    "has_cobbled_deepslate": {
       "conditions": {
         "items": [
           {
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_deepslatee",
+      "has_cobbled_deepslate",
       "has_the_recipe"
     ]
   ],
@@ -31,5 +31,5 @@
       "minecraft:deepslate"
     ]
   },
-  "sends_telemetry_event": false
+  "sends_telemetry_event": true
 }

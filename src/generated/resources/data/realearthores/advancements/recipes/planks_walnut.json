@@ -7,13 +7,11 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_wood_walnut": {
+    "has_walnut_logs": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:wood_walnut"
-            ]
+            "tag": "realearthores:walnut_logs"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_wood_walnut",
+      "has_walnut_logs",
       "has_the_recipe"
     ]
   ],
@@ -32,5 +30,4 @@
     ]
   },
   "sends_telemetry_event": true
-}ds_telemetry_event": true
 }

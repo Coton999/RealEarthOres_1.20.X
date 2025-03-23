@@ -109,6 +109,8 @@ public class REOItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> NUGGET_LEAD = ITEMS.register("nugget_lead",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> NUGGET_NETHERITE = ITEMS.register("nugget_netherite",
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> NUGGET_NICKEL = ITEMS.register("nugget_nickel",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> NUGGET_PERIDOT = ITEMS.register("nugget_peridot",

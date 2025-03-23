@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_log_citrus": {
+    "has_citrus_logs": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:log_citrus_stripped"
-            ]
+            "tag": "realearthores:citrus_logs"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_stripped_log_citrus",
+      "has_citrus_logs",
       "has_the_recipe"
     ]
   ],

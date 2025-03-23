@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_nether_tin": {
+    "has_ore_tin": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:nether_tin"
-            ]
+            "tag": "realearthores:tin_ores"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_nether_tin",
+      "has_ore_tin",
       "has_the_recipe"
     ]
   ],
@@ -31,5 +29,5 @@
       "realearthores:dirty_tin"
     ]
   },
-  "sends_telemetry_event": true
+  "sends_telemetry_event": false
 }

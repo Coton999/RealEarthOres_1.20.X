@@ -70,6 +70,7 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                     pOutput.accept(REOItems.NUGGET_EMERALD.get());
                     pOutput.accept(REOItems.NUGGET_ENDERITE.get());
                     pOutput.accept(REOItems.NUGGET_LEAD.get());
+                    pOutput.accept(REOItems.NUGGET_NETHERITE.get());
                     pOutput.accept(REOItems.NUGGET_NICKEL.get());
                     pOutput.accept(REOItems.NUGGET_PERIDOT.get());
                     pOutput.accept(REOItems.NUGGET_PLATINUM.get());
@@ -253,12 +254,17 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.MARBLE_CRACKED.get());
 
                         pOutput.accept(REOBlocks.MARBLE_STAIRS.get());
+                        pOutput.accept(REOBlocks.MARBLE_BRICK_STAIRS.get());
                         pOutput.accept(REOBlocks.MARBLE_COBBLE_STAIRS.get());
                         pOutput.accept(REOBlocks.MARBLE_COBBLE_MOSSY_STAIRS.get());
+
                         pOutput.accept(REOBlocks.MARBLE_SLAB.get());
+                        pOutput.accept(REOBlocks.MARBLE_BRICK_SLAB.get());
                         pOutput.accept(REOBlocks.MARBLE_COBBLE_SLAB.get());
                         pOutput.accept(REOBlocks.MARBLE_COBBLE_MOSSY_SLAB.get());
+
                         pOutput.accept(REOBlocks.MARBLE_WALL.get());
+                        pOutput.accept(REOBlocks.MARBLE_BRICK_WALL.get());
                         pOutput.accept(REOBlocks.MARBLE_COBBLE_WALL.get());
                         pOutput.accept(REOBlocks.MARBLE_COBBLE_MOSSY_WALL.get());
 
@@ -272,12 +278,17 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.LIMESTONE_CRACKED.get());
 
                         pOutput.accept(REOBlocks.LIMESTONE_STAIRS.get());
+                        pOutput.accept(REOBlocks.LIMESTONE_BRICK_STAIRS.get());
                         pOutput.accept(REOBlocks.LIMESTONE_COBBLE_STAIRS.get());
                         pOutput.accept(REOBlocks.LIMESTONE_COBBLE_MOSSY_STAIRS.get());
+
                         pOutput.accept(REOBlocks.LIMESTONE_SLAB.get());
+                        pOutput.accept(REOBlocks.LIMESTONE_BRICK_SLAB.get());
                         pOutput.accept(REOBlocks.LIMESTONE_COBBLE_SLAB.get());
                         pOutput.accept(REOBlocks.LIMESTONE_COBBLE_MOSSY_SLAB.get());
+
                         pOutput.accept(REOBlocks.LIMESTONE_WALL.get());
+                        pOutput.accept(REOBlocks.LIMESTONE_BRICK_WALL.get());
                         pOutput.accept(REOBlocks.LIMESTONE_COBBLE_WALL.get());
                         pOutput.accept(REOBlocks.LIMESTONE_COBBLE_MOSSY_WALL.get());
 

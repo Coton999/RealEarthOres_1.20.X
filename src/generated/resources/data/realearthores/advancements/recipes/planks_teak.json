@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_wood_teak": {
+    "has_teak_logs": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:wood_teak_stripped"
-            ]
+            "tag": "realearthores:teak_logs"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_stripped_wood_teak",
+      "has_teak_logs",
       "has_the_recipe"
     ]
   ],

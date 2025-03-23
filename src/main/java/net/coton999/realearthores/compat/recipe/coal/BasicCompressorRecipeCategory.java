@@ -82,16 +82,16 @@ public class BasicCompressorRecipeCategory implements IRecipeCategory<BasicCompr
     }
 
     @Override
-    public void draw(BasicCompressorRecipe recipe, IRecipeSlotsView recipeSlotsView, GuiGraphics guiGraphics, double mouseX, double mouseY) {
+    public void draw(BasicCompressorRecipe pRecipe, IRecipeSlotsView pREcipeSlotsView, GuiGraphics guiGraphics, double mouseX, double mouseY) {
         this.animatedFlame.draw(guiGraphics, 1, 20);
-        IDrawableAnimated arrow = this.getArrow(recipe);
+        IDrawableAnimated arrow = this.getArrow(pRecipe);
         arrow.draw(guiGraphics, 24, 18);
-        this.drawExperience(recipe, guiGraphics, 0);
-        this.drawCookTime(recipe, guiGraphics, 45);
+        this.drawExperience(pRecipe, guiGraphics, 0);
+        this.drawCookTime(pRecipe, guiGraphics, 45);
     }
 
-    protected void drawExperience(BasicCompressorRecipe recipe, GuiGraphics guiGraphics, int y) {
-        float experience = recipe.getExperience();
+    protected void drawExperience(BasicCompressorRecipe pRecipe, GuiGraphics guiGraphics, int y) {
+        float experience = pRecipe.getExperience();
         if (experience > 0.0F) {
             Component experienceString = Component.translatable("gui.jei.category.smelting.experience", new Object[]{experience});
             Minecraft minecraft = Minecraft.getInstance();
@@ -102,8 +102,8 @@ public class BasicCompressorRecipeCategory implements IRecipeCategory<BasicCompr
 
     }
 
-    protected void drawCookTime(BasicCompressorRecipe recipe, GuiGraphics guiGraphics, int y) {
-        int cookTime = recipe.getCookingTime();
+    protected void drawCookTime(BasicCompressorRecipe pRecipe, GuiGraphics guiGraphics, int y) {
+        int cookTime = pRecipe.getCookingTime();
         if (cookTime > 0) {
             int cookTimeSeconds = cookTime / 20;
             Component timeString = Component.translatable("gui.jei.category.smelting.time.seconds", new Object[]{cookTimeSeconds});
