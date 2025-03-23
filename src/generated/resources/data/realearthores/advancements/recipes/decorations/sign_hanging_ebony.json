@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_log_ebony_stripped": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "realearthores:log_ebony_stripped"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:sign_hanging_ebony"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_log_ebony_stripped",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "realearthores:sign_hanging_ebony"
+    ]
+  },
+  "sends_telemetry_event": false
+}

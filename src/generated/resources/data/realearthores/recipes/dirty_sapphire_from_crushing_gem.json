@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:crushing",
+  "ingredients": [
+    {
+      "item": "realearthores:gem_sapphire"
+    }
+  ],
+  "result": {
+    "item": "realearthores:dirty_sapphire"
+  }
+}
