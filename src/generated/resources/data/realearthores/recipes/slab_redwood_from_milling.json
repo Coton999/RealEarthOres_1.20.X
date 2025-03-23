@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:milling",
+  "ingredients": [
+    {
+      "item": "realearthores:planks_redwood"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "realearthores:slab_redwood"
+  }
+}

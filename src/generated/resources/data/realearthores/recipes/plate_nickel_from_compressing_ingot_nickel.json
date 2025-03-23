@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:compressing",
+  "ingredients": [
+    {
+      "item": "realearthores:ingot_nickel"
+    }
+  ],
+  "result": {
+    "item": "realearthores:plate_nickel"
+  }
+}

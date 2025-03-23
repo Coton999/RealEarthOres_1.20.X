@@ -1,0 +1,22 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    [
+      {
+        "item": "realearthores:ore_uranium"
+      },
+      {
+        "item": "realearthores:deepslate_uranium"
+      },
+      {
+        "item": "realearthores:gravel_ore_uranium"
+      },
+      {
+        "item": "realearthores:nether_uranium"
+      }
+    ]
+  ],
+  "result": {
+    "item": "realearthores:ingot_uranium"
+  }
+}

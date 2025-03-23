@@ -1,0 +1,9 @@
+{
+  "type": "realearthores:basic_crushing",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "minecraft:snow_block"
+  },
+  "result": "minecraft:snowball"
+}

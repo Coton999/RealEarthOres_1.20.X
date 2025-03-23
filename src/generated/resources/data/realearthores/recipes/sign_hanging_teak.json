@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "realearthores:log_teak_stripped"
+    },
+    "S": {
+      "item": "minecraft:chain"
+    }
+  },
+  "pattern": [
+    "S S",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "realearthores:sign_hanging_teak"
+  },
+  "show_notification": true
+}

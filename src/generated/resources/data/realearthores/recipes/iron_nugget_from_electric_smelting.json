@@ -1,0 +1,70 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    [
+      {
+        "item": "minecraft:iron_shovel"
+      },
+      {
+        "item": "minecraft:iron_pickaxe"
+      },
+      {
+        "item": "minecraft:iron_axe"
+      },
+      {
+        "item": "minecraft:iron_hoe"
+      },
+      {
+        "item": "minecraft:iron_sword"
+      },
+      {
+        "item": "realearthores:iron_bow"
+      },
+      {
+        "item": "realearthores:iron_excavator"
+      },
+      {
+        "item": "realearthores:iron_hammer"
+      },
+      {
+        "item": "realearthores:iron_hatchet"
+      },
+      {
+        "item": "realearthores:iron_paxel"
+      },
+      {
+        "item": "realearthores:iron_sickle"
+      },
+      {
+        "item": "minecraft:iron_helmet"
+      },
+      {
+        "item": "minecraft:iron_chestplate"
+      },
+      {
+        "item": "minecraft:iron_leggings"
+      },
+      {
+        "item": "minecraft:iron_boots"
+      },
+      {
+        "item": "minecraft:chainmail_helmet"
+      },
+      {
+        "item": "minecraft:chainmail_chestplate"
+      },
+      {
+        "item": "minecraft:chainmail_leggings"
+      },
+      {
+        "item": "minecraft:chainmail_boots"
+      },
+      {
+        "item": "minecraft:iron_horse_armor"
+      }
+    ]
+  ],
+  "result": {
+    "item": "minecraft:iron_nugget"
+  }
+}

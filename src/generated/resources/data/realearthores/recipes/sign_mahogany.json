@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "realearthores:planks_mahogany"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    " S "
+  ],
+  "result": {
+    "count": 3,
+    "item": "realearthores:sign_mahogany"
+  },
+  "show_notification": true
+}

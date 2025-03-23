@@ -1,0 +1,9 @@
+{
+  "type": "realearthores:basic_crushing",
+  "cookingtime": 200,
+  "experience": 0.5,
+  "ingredient": {
+    "tag": "realearthores:zinc_ores"
+  },
+  "result": "realearthores:dirty_zinc"
+}

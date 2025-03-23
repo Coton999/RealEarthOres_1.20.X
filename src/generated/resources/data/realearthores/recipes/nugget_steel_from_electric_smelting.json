@@ -1,0 +1,55 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    [
+      {
+        "item": "realearthores:steel_shovel"
+      },
+      {
+        "item": "realearthores:steel_pickaxe"
+      },
+      {
+        "item": "realearthores:steel_axe"
+      },
+      {
+        "item": "realearthores:steel_hoe"
+      },
+      {
+        "item": "realearthores:steel_sword"
+      },
+      {
+        "item": "realearthores:steel_bow"
+      },
+      {
+        "item": "realearthores:steel_excavator"
+      },
+      {
+        "item": "realearthores:steel_hammer"
+      },
+      {
+        "item": "realearthores:steel_hatchet"
+      },
+      {
+        "item": "realearthores:steel_paxel"
+      },
+      {
+        "item": "realearthores:steel_sickle"
+      },
+      {
+        "item": "realearthores:steel_helmet"
+      },
+      {
+        "item": "realearthores:steel_chestplate"
+      },
+      {
+        "item": "realearthores:steel_leggings"
+      },
+      {
+        "item": "realearthores:steel_boots"
+      }
+    ]
+  ],
+  "result": {
+    "item": "realearthores:nugget_steel"
+  }
+}

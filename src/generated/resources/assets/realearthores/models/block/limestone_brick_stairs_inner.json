@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "realearthores:block/building_blocks/limestone/limestone_brick",
+    "side": "realearthores:block/building_blocks/limestone/limestone_brick",
+    "top": "realearthores:block/building_blocks/limestone/limestone_brick"
+  }
+}

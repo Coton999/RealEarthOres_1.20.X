@@ -1,0 +1,14 @@
+{
+  "type": "realearthores:alloying",
+  "ingredients": [
+    {
+      "item": "realearthores:dust_iron"
+    },
+    {
+      "item": "realearthores:dust_coal"
+    }
+  ],
+  "result": {
+    "item": "realearthores:dust_steel"
+  }
+}

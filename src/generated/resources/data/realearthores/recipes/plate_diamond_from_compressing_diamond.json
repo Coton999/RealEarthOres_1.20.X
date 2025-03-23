@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:compressing",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "result": {
+    "item": "realearthores:plate_diamond"
+  }
+}

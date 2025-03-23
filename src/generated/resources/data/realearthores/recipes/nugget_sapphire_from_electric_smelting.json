@@ -1,0 +1,55 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    [
+      {
+        "item": "realearthores:sapphire_shovel"
+      },
+      {
+        "item": "realearthores:sapphire_pickaxe"
+      },
+      {
+        "item": "realearthores:sapphire_axe"
+      },
+      {
+        "item": "realearthores:sapphire_hoe"
+      },
+      {
+        "item": "realearthores:sapphire_sword"
+      },
+      {
+        "item": "realearthores:sapphire_bow"
+      },
+      {
+        "item": "realearthores:sapphire_excavator"
+      },
+      {
+        "item": "realearthores:sapphire_hammer"
+      },
+      {
+        "item": "realearthores:sapphire_hatchet"
+      },
+      {
+        "item": "realearthores:sapphire_paxel"
+      },
+      {
+        "item": "realearthores:sapphire_sickle"
+      },
+      {
+        "item": "realearthores:sapphire_helmet"
+      },
+      {
+        "item": "realearthores:sapphire_chestplate"
+      },
+      {
+        "item": "realearthores:sapphire_leggings"
+      },
+      {
+        "item": "realearthores:sapphire_boots"
+      }
+    ]
+  ],
+  "result": {
+    "item": "realearthores:nugget_sapphire"
+  }
+}

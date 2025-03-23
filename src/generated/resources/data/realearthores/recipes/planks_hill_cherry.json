@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "realearthores:hill_cherry_logs"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "realearthores:planks_hill_cherry"
+  }
+}

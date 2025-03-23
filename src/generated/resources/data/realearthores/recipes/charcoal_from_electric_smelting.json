@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    {
+      "tag": "minecraft:logs_that_burn"
+    }
+  ],
+  "result": {
+    "item": "minecraft:charcoal"
+  }
+}

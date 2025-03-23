@@ -1,0 +1,22 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    [
+      {
+        "item": "realearthores:ore_nickel"
+      },
+      {
+        "item": "realearthores:deepslate_nickel"
+      },
+      {
+        "item": "realearthores:gravel_ore_nickel"
+      },
+      {
+        "item": "realearthores:nether_nickel"
+      }
+    ]
+  ],
+  "result": {
+    "item": "realearthores:ingot_nickel"
+  }
+}

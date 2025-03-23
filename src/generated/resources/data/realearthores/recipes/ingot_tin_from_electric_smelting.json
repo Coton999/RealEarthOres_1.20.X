@@ -1,0 +1,19 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    [
+      {
+        "item": "realearthores:ore_tin"
+      },
+      {
+        "item": "realearthores:gravel_ore_tin"
+      },
+      {
+        "item": "realearthores:nether_tin"
+      }
+    ]
+  ],
+  "result": {
+    "item": "realearthores:ingot_tin"
+  }
+}

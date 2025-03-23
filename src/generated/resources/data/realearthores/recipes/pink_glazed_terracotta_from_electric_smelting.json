@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    {
+      "item": "minecraft:pink_terracotta"
+    }
+  ],
+  "result": {
+    "item": "minecraft:pink_glazed_terracotta"
+  }
+}

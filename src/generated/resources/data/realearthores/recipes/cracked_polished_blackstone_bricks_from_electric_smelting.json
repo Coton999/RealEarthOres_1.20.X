@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    {
+      "item": "minecraft:polished_blackstone_bricks"
+    }
+  ],
+  "result": {
+    "item": "minecraft:cracked_polished_blackstone_bricks"
+  }
+}

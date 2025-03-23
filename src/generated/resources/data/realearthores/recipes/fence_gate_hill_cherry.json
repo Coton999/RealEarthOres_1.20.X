@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "realearthores:planks_hill_cherry"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "S#S",
+    "S#S"
+  ],
+  "result": {
+    "count": 3,
+    "item": "realearthores:fence_gate_hill_cherry"
+  },
+  "show_notification": true
+}

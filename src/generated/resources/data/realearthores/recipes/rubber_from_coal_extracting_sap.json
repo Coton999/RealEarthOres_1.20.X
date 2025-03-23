@@ -1,0 +1,9 @@
+{
+  "type": "realearthores:basic_extracting",
+  "cookingtime": 400,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "realearthores:sap"
+  },
+  "result": "realearthores:rubber"
+}

@@ -1,0 +1,25 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    [
+      {
+        "item": "minecraft:raw_gold"
+      },
+      {
+        "item": "minecraft:gold_ore"
+      },
+      {
+        "item": "minecraft:deepslate_gold_ore"
+      },
+      {
+        "item": "minecraft:nether_gold_ore"
+      },
+      {
+        "item": "realearthores:gravel_ore_gold"
+      }
+    ]
+  ],
+  "result": {
+    "item": "minecraft:gold_ingot"
+  }
+}

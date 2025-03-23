@@ -1,0 +1,55 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    [
+      {
+        "item": "realearthores:enderite_shovel"
+      },
+      {
+        "item": "realearthores:enderite_pickaxe"
+      },
+      {
+        "item": "realearthores:enderite_axe"
+      },
+      {
+        "item": "realearthores:enderite_hoe"
+      },
+      {
+        "item": "realearthores:enderite_sword"
+      },
+      {
+        "item": "realearthores:enderite_bow"
+      },
+      {
+        "item": "realearthores:enderite_excavator"
+      },
+      {
+        "item": "realearthores:enderite_hammer"
+      },
+      {
+        "item": "realearthores:enderite_hatchet"
+      },
+      {
+        "item": "realearthores:enderite_paxel"
+      },
+      {
+        "item": "realearthores:enderite_sickle"
+      },
+      {
+        "item": "realearthores:enderite_helmet"
+      },
+      {
+        "item": "realearthores:enderite_chestplate"
+      },
+      {
+        "item": "realearthores:enderite_leggings"
+      },
+      {
+        "item": "realearthores:enderite_boots"
+      }
+    ]
+  ],
+  "result": {
+    "item": "realearthores:nugget_enderite"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "realearthores:basic_crushing",
+  "cookingtime": 200,
+  "experience": 0.5,
+  "ingredient": {
+    "item": "minecraft:blaze_rod"
+  },
+  "result": "minecraft:blaze_powder"
+}

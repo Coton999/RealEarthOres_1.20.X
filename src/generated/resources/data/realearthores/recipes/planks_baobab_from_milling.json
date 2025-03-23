@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:milling",
+  "ingredients": [
+    {
+      "tag": "realearthores:baobab_logs"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "item": "realearthores:planks_baobab"
+  }
+}

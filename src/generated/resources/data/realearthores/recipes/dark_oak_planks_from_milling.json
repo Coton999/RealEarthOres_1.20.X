@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:milling",
+  "ingredients": [
+    {
+      "tag": "minecraft:dark_oak_logs"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "item": "minecraft:dark_oak_planks"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:compressing",
+  "ingredients": [
+    {
+      "item": "realearthores:ingot_brass"
+    }
+  ],
+  "result": {
+    "item": "realearthores:plate_brass"
+  }
+}

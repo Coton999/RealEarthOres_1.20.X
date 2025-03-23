@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:milling",
+  "ingredients": [
+    {
+      "tag": "minecraft:spruce_logs"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "item": "minecraft:spruce_planks"
+  }
+}

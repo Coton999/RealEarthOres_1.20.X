@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:milling",
+  "ingredients": [
+    {
+      "item": "realearthores:planks_papaya"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "realearthores:slab_papaya"
+  }
+}

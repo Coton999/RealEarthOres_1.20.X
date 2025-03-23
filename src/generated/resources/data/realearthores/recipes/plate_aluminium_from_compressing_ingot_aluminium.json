@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:compressing",
+  "ingredients": [
+    {
+      "item": "realearthores:ingot_aluminium"
+    }
+  ],
+  "result": {
+    "item": "realearthores:plate_aluminium"
+  }
+}

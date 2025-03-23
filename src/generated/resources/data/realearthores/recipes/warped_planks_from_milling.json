@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:milling",
+  "ingredients": [
+    {
+      "tag": "minecraft:warped_stems"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "item": "minecraft:warped_planks"
+  }
+}

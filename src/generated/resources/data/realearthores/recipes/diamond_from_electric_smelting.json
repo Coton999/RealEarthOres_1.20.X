@@ -1,0 +1,22 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    [
+      {
+        "item": "minecraft:diamond_ore"
+      },
+      {
+        "item": "minecraft:deepslate_diamond_ore"
+      },
+      {
+        "item": "realearthores:gravel_ore_diamond"
+      },
+      {
+        "item": "realearthores:nether_diamond"
+      }
+    ]
+  ],
+  "result": {
+    "item": "minecraft:diamond"
+  }
+}

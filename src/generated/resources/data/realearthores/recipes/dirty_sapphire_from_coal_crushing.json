@@ -1,0 +1,9 @@
+{
+  "type": "realearthores:basic_crushing",
+  "cookingtime": 200,
+  "experience": 0.5,
+  "ingredient": {
+    "item": "realearthores:cluster_sapphire"
+  },
+  "result": "realearthores:dirty_sapphire"
+}

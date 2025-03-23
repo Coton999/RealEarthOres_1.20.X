@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realearthores:block/lmarble_brick_slab"
+    },
+    "type=double": {
+      "model": "realearthores:block/marble_brick"
+    },
+    "type=top": {
+      "model": "realearthores:block/lmarble_brick_slab_top"
+    }
+  }
+}

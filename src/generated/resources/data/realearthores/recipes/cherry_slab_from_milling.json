@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:milling",
+  "ingredients": [
+    {
+      "item": "minecraft:cherry_planks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "minecraft:cherry_slab"
+  }
+}

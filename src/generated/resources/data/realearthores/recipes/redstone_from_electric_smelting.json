@@ -1,0 +1,22 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    [
+      {
+        "item": "minecraft:redstone_ore"
+      },
+      {
+        "item": "minecraft:deepslate_redstone_ore"
+      },
+      {
+        "item": "realearthores:gravel_ore_redstone"
+      },
+      {
+        "item": "realearthores:nether_redstone"
+      }
+    ]
+  ],
+  "result": {
+    "item": "minecraft:redstone"
+  }
+}

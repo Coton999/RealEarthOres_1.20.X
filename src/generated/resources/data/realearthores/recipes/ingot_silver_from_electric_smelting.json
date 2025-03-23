@@ -1,0 +1,22 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    [
+      {
+        "item": "realearthores:ore_silver"
+      },
+      {
+        "item": "realearthores:deepslate_silver"
+      },
+      {
+        "item": "realearthores:gravel_ore_silver"
+      },
+      {
+        "item": "realearthores:nether_silver"
+      }
+    ]
+  ],
+  "result": {
+    "item": "realearthores:ingot_silver"
+  }
+}

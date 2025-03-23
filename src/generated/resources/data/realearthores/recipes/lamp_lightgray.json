@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "realearthores:luminous_lightgray"
+    },
+    "G": {
+      "item": "minecraft:redstone_torch"
+    }
+  },
+  "pattern": [
+    "###",
+    "#G#",
+    "###"
+  ],
+  "result": {
+    "item": "realearthores:lamp_lightgray"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    {
+      "item": "minecraft:beef"
+    }
+  ],
+  "result": {
+    "item": "minecraft:cooked_beef"
+  }
+}

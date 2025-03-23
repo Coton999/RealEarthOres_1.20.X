@@ -1,0 +1,22 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    [
+      {
+        "item": "minecraft:lapis_ore"
+      },
+      {
+        "item": "minecraft:deepslate_lapis_ore"
+      },
+      {
+        "item": "realearthores:gravel_ore_lapis"
+      },
+      {
+        "item": "realearthores:nether_lapis"
+      }
+    ]
+  ],
+  "result": {
+    "item": "minecraft:lapis_lazuli"
+  }
+}

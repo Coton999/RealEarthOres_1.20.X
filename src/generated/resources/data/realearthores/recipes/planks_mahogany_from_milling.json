@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:milling",
+  "ingredients": [
+    {
+      "tag": "realearthores:mahogany_logs"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "item": "realearthores:planks_mahogany"
+  }
+}

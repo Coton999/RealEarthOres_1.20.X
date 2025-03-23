@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    {
+      "item": "minecraft:cactus"
+    }
+  ],
+  "result": {
+    "item": "minecraft:green_dye"
+  }
+}

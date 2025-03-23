@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:crushing",
+  "ingredients": [
+    {
+      "tag": "minecraft:wool"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "minecraft:string"
+  }
+}

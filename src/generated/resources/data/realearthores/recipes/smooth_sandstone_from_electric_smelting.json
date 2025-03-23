@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    {
+      "item": "minecraft:sandstone"
+    }
+  ],
+  "result": {
+    "item": "minecraft:smooth_sandstone"
+  }
+}

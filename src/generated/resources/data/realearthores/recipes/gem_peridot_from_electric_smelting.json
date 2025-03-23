@@ -1,0 +1,16 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    [
+      {
+        "item": "realearthores:cluster_peridot"
+      },
+      {
+        "item": "realearthores:shard_peridot"
+      }
+    ]
+  ],
+  "result": {
+    "item": "realearthores:gem_peridot"
+  }
+}

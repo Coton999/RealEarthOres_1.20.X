@@ -1,0 +1,55 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    [
+      {
+        "item": "realearthores:bronze_shovel"
+      },
+      {
+        "item": "realearthores:bronze_pickaxe"
+      },
+      {
+        "item": "realearthores:bronze_axe"
+      },
+      {
+        "item": "realearthores:bronze_hoe"
+      },
+      {
+        "item": "realearthores:bronze_sword"
+      },
+      {
+        "item": "realearthores:bronze_bow"
+      },
+      {
+        "item": "realearthores:bronze_excavator"
+      },
+      {
+        "item": "realearthores:bronze_hammer"
+      },
+      {
+        "item": "realearthores:bronze_hatchet"
+      },
+      {
+        "item": "realearthores:bronze_paxel"
+      },
+      {
+        "item": "realearthores:bronze_sickle"
+      },
+      {
+        "item": "realearthores:bronze_helmet"
+      },
+      {
+        "item": "realearthores:bronze_chestplate"
+      },
+      {
+        "item": "realearthores:bronze_leggings"
+      },
+      {
+        "item": "realearthores:bronze_boots"
+      }
+    ]
+  ],
+  "result": {
+    "item": "realearthores:nugget_bronze"
+  }
+}

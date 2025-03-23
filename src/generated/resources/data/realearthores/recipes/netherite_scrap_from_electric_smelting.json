@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    {
+      "item": "minecraft:ancient_debris"
+    }
+  ],
+  "result": {
+    "item": "minecraft:netherite_scrap"
+  }
+}

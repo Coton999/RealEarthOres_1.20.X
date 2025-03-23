@@ -1,0 +1,55 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    [
+      {
+        "item": "realearthores:silver_shovel"
+      },
+      {
+        "item": "realearthores:silver_pickaxe"
+      },
+      {
+        "item": "realearthores:silver_axe"
+      },
+      {
+        "item": "realearthores:silver_hoe"
+      },
+      {
+        "item": "realearthores:silver_sword"
+      },
+      {
+        "item": "realearthores:silver_bow"
+      },
+      {
+        "item": "realearthores:silver_excavator"
+      },
+      {
+        "item": "realearthores:silver_hammer"
+      },
+      {
+        "item": "realearthores:silver_hatchet"
+      },
+      {
+        "item": "realearthores:silver_paxel"
+      },
+      {
+        "item": "realearthores:silver_sickle"
+      },
+      {
+        "item": "realearthores:silver_helmet"
+      },
+      {
+        "item": "realearthores:silver_chestplate"
+      },
+      {
+        "item": "realearthores:silver_leggings"
+      },
+      {
+        "item": "realearthores:silver_boots"
+      }
+    ]
+  ],
+  "result": {
+    "item": "realearthores:nugget_silver"
+  }
+}

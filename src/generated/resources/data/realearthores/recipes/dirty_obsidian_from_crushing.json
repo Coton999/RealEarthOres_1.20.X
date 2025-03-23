@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:obsidian"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:dirty_obsidian"
+  }
+}

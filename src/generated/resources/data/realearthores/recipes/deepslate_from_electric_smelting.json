@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    {
+      "item": "minecraft:cobbled_deepslate"
+    }
+  ],
+  "result": {
+    "item": "minecraft:deepslate"
+  }
+}

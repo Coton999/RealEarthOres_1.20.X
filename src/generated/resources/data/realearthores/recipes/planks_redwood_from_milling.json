@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:milling",
+  "ingredients": [
+    {
+      "tag": "realearthores:redwood_logs"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "item": "realearthores:planks_redwood"
+  }
+}

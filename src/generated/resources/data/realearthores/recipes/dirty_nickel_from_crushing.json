@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:crushing",
+  "ingredients": [
+    {
+      "tag": "realearthores:nickel_ores"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:dirty_nickel"
+  }
+}

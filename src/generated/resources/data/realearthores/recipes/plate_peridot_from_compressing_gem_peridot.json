@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:compressing",
+  "ingredients": [
+    {
+      "item": "realearthores:gem_peridot"
+    }
+  ],
+  "result": {
+    "item": "realearthores:plate_peridot"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    [
+      {
+        "item": "realearthores:ore_zinc"
+      },
+      {
+        "item": "realearthores:deepslate_zinc"
+      },
+      {
+        "item": "realearthores:gravel_ore_zinc"
+      },
+      {
+        "item": "realearthores:nether_zinc"
+      }
+    ]
+  ],
+  "result": {
+    "item": "realearthores:ingot_zinc"
+  }
+}

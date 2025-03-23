@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:pink_dye"
+    },
+    "G": {
+      "item": "minecraft:glowstone_dust"
+    }
+  },
+  "pattern": [
+    "###",
+    "#G#",
+    "###"
+  ],
+  "result": {
+    "count": 9,
+    "item": "realearthores:luminous_pink"
+  },
+  "show_notification": true
+}

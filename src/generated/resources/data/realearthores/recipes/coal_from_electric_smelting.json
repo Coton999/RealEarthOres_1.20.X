@@ -1,0 +1,22 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    [
+      {
+        "item": "minecraft:coal_ore"
+      },
+      {
+        "item": "minecraft:deepslate_coal_ore"
+      },
+      {
+        "item": "realearthores:gravel_ore_coal"
+      },
+      {
+        "item": "realearthores:nether_coal"
+      }
+    ]
+  ],
+  "result": {
+    "item": "minecraft:coal"
+  }
+}

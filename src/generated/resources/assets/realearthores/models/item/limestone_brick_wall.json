@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "realearthores:block/building_blocks/limestone/limestone_brick"
+  }
+}
