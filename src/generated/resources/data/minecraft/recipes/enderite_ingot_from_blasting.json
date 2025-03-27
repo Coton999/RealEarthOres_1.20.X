@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "ingredient": [
+    {
+      "item": "realearthores:ore_enderite"
+    },
+    {
+      "item": "realearthores:raw_enderite"
+    },
+    {
+      "item": "realearthores:dust_enderite"
+    },
+    {
+      "item": "realearthores:dirty_enderite"
+    }
+  ],
+  "result": "realearthores:ingot_enderite"
+}
