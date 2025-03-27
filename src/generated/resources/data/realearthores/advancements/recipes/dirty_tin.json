@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:ingot_tin"
-            ]
+            "tag": "realearthores:tin_ores"
           }
         ]
       },

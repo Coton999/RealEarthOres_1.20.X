@@ -1,12 +1,10 @@
 package net.coton999.realearthores.block.entity.machines.electric.basic;
 
 import net.coton999.realearthores.block.custom.machines.electric.AlloyFurnaceBlock;
-import net.coton999.realearthores.block.custom.machines.electric.AlloyFurnaceBlock;
 import net.coton999.realearthores.block.entity.REOBlockEntities;
-import net.coton999.realearthores.item.REOItems;
 import net.coton999.realearthores.menu.machines.electric.basic.AlloyFurnaceMenu;
 import net.coton999.realearthores.recipe.machines.electric.basic.AlloyFurnaceRecipe;
-import net.coton999.realearthores.recipe.machines.electric.basic.AlloyFurnaceRecipe;
+import net.coton999.realearthores.util.CountedIngredient;
 import net.coton999.realearthores.util.energy.REOEnergyStorage;
 import net.coton999.realearthores.util.inventory.InventoryDirectionEntry;
 import net.coton999.realearthores.util.inventory.InventoryDirectionWrapper;
@@ -19,7 +17,6 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.world.Containers;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.SimpleContainer;
@@ -29,7 +26,6 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -44,6 +40,7 @@ import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
@@ -168,10 +165,10 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements MenuProvider
                 }
 
                 return switch (localDir) {
-                    default -> directionWrappedHandlerMap.get(side.getOpposite()).cast();
                     case EAST -> directionWrappedHandlerMap.get(side.getClockWise()).cast();
                     case SOUTH -> directionWrappedHandlerMap.get(side).cast();
                     case WEST -> directionWrappedHandlerMap.get(side.getCounterClockWise()).cast();
+                    default -> directionWrappedHandlerMap.get(side.getOpposite()).cast();
                 };
             }
         }
@@ -218,7 +215,7 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements MenuProvider
 
         if (isOutputSlotEmptyOrReceivable() && hasRecipe()) {
             level.setBlock(pPos, pState.setValue(AlloyFurnaceBlock.LIT, Boolean.TRUE), 3);
-            increaseCraftingProcess();
+            increaseCraftingProgress();
             extractEnergy();
             setChanged(level, pPos, pState);
 
@@ -292,7 +289,7 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements MenuProvider
         return this.progress >= this.maxProgress;
     }
 
-    private void increaseCraftingProcess() {
+    private void increaseCraftingProgress() {
         this.progress++;
     }
 

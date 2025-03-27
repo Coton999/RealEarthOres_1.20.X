@@ -3,7 +3,7 @@ package net.coton999.realearthores.datagen.custom.electric.basic;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import net.coton999.realearthores.RealEarthOres;
-import net.coton999.realearthores.recipe.machines.electric.basic.AlloyFurnaceRecipe;
+import net.coton999.realearthores.util.CountedIngredient;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementRewards;
 import net.minecraft.advancements.CriterionTriggerInstance;
@@ -19,21 +19,19 @@ import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import javax.annotation.Nullable;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.function.Consumer;
 
 public class AlloyFurnaceRecipeBuilder implements RecipeBuilder {
     private final Item result;
-    private final Ingredient ingredient1;
-    private final Ingredient ingredient2;
+    private final CountedIngredient ingredient1;
+    private final CountedIngredient ingredient2;
     private final int count;
     private final Advancement.Builder advancement = Advancement.Builder.advancement();
     private  final  String name;
 
-    public AlloyFurnaceRecipeBuilder( ItemLike pResult, ItemLike pIngredient1, ItemLike pIngredient2, int pCount, String pName) {
-        this.ingredient1 = Ingredient.of(pIngredient1);
-        this.ingredient2 = Ingredient.of(pIngredient2);
+    public AlloyFurnaceRecipeBuilder(ItemLike pResult, CountedIngredient pIngredient1, CountedIngredient pIngredient2, int pCount, String pName) {
+        this.ingredient1 = pIngredient1;
+        this.ingredient2 = pIngredient2;
         this.result = pResult.asItem();
         this.count = pCount;
         this.name = pName;
@@ -70,14 +68,14 @@ public class AlloyFurnaceRecipeBuilder implements RecipeBuilder {
     public static class Result implements FinishedRecipe {
         private final ResourceLocation id;
         private final Item result;
-        private final Ingredient ingredient1;
-        private final Ingredient ingredient2;
+        private final CountedIngredient ingredient1;
+        private final CountedIngredient ingredient2;
         private final int count;
         private final Advancement.Builder advancement;
         private final ResourceLocation advancementId;
         private  final  String name;
 
-        public Result(ResourceLocation pId, Item pResult, int pCount, Ingredient pIngredient1, Ingredient pIngredient2, Advancement.Builder pAdvancement,
+        public Result(ResourceLocation pId, Item pResult, int pCount, CountedIngredient pIngredient1, CountedIngredient pIngredient2, Advancement.Builder pAdvancement,
                       ResourceLocation pAdvancementId, String pName) {
             this.id = pId;
             this.result = pResult;
@@ -108,12 +106,12 @@ public class AlloyFurnaceRecipeBuilder implements RecipeBuilder {
         @Override
         public ResourceLocation getId() {
             return new ResourceLocation(RealEarthOres.MOD_ID,
-                    ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_alloying" + name);
+                    ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_alloy_smelting" + name);
         }
 
         @Override
         public RecipeSerializer<?> getType() {
-            return AlloyFurnaceRecipe.Serializer.INSTANCE;
+            return net.coton999.realearthores.recipe.machines.electric.basic.AlloyFurnaceRecipe.Serializer.INSTANCE;
         }
 
         @javax.annotation.Nullable

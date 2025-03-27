@@ -48,7 +48,7 @@ public class BasicCrusherRecipe extends AbstractCookingRecipe {
             CookingBookCategory pCookingBookCategory = CookingBookCategory.CODEC.byName(GsonHelper.getAsString(pJson, "category", (String)null), CookingBookCategory.MISC);
             JsonElement jsonelement = (JsonElement)(GsonHelper.isArrayNode(pJson, "ingredient") ? GsonHelper.getAsJsonArray(pJson, "ingredient") : GsonHelper.getAsJsonObject(pJson, "ingredient"));
             Ingredient pIngredient = Ingredient.fromJson(jsonelement, false);
-            //Forge: Check if primitive string to keep vanilla or a object which can contain a count field.
+            //Forge: Check if primitive string to keep vanilla or an object which can contain a count field.
             if (!pJson.has("result")) throw new com.google.gson.JsonSyntaxException("Missing result, expected to find a string or object");
             ItemStack pItemStack;
             if (pJson.get("result").isJsonObject()) pItemStack = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(pJson, "result"));

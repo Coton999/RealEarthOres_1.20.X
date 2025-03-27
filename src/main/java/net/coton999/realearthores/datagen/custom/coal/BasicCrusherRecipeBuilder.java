@@ -3,7 +3,7 @@ package net.coton999.realearthores.datagen.custom.coal;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import net.coton999.realearthores.RealEarthOres;
-import net.coton999.realearthores.recipe.machines.coal.BasicCrusherRecipe;
+import net.coton999.realearthores.datagen.custom.electric.basic.CrusherRecipeBuilder;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementRewards;
 import net.minecraft.advancements.CriterionTriggerInstance;
@@ -29,14 +29,23 @@ public class BasicCrusherRecipeBuilder implements RecipeBuilder {
     private final Ingredient ingredient;
     private final float experience;
     private final int cookingTime;
+    private final String name;
     private final Advancement.Builder advancement = Advancement.Builder.recipeAdvancement();
 
-    public BasicCrusherRecipeBuilder(RecipeCategory pCategory, ItemLike pResult, Ingredient pIngredient, float pExperience, int pCookingTime) {
+    public BasicCrusherRecipeBuilder(RecipeCategory pCategory, ItemLike pResult, Ingredient pIngredient, float pExperience, int pCookingTime, String pName) {
         this.category = pCategory;
         this.result = pResult.asItem();
         this.ingredient = pIngredient;
         this.experience = pExperience;
         this.cookingTime = pCookingTime;
+        this.name = pName;
+    }
+
+    public static BasicCrusherRecipeBuilder generic(RecipeCategory pCategory, ItemLike pResult, Ingredient pIngredient, float pExperience, int pCookingTime) {
+        return new BasicCrusherRecipeBuilder(pCategory, pResult, pIngredient, pExperience, pCookingTime, "");
+    }
+    public static BasicCrusherRecipeBuilder named(RecipeCategory pCategory, ItemLike pResult, Ingredient pIngredient, float pExperience, int pCookingTime, String pName) {
+        return new BasicCrusherRecipeBuilder(pCategory, pResult, pIngredient, pExperience, pCookingTime, pName);
     }
 
     @Override
@@ -61,7 +70,8 @@ public class BasicCrusherRecipeBuilder implements RecipeBuilder {
                 .addCriterion("has_the_recipe", RecipeUnlockedTrigger.unlocked(pRecipeId))
                 .rewards(AdvancementRewards.Builder.recipe(pRecipeId)).requirements(RequirementsStrategy.OR);
 
-        pFinishedRecipeConsumer.accept(new BasicCrusherRecipeBuilder.Result(pRecipeId, this.ingredient, this.result, this.experience, this.cookingTime, this.advancement,
+        pFinishedRecipeConsumer.accept(new BasicCrusherRecipeBuilder.Result(pRecipeId, this.ingredient, this.result,
+                this.experience, this.cookingTime, this.name, this.advancement,
                 new ResourceLocation(pRecipeId.getNamespace(), "recipes/" + pRecipeId.getPath())));
     }
 
@@ -71,16 +81,18 @@ public class BasicCrusherRecipeBuilder implements RecipeBuilder {
         private final Item result;
         private final float experience;
         private final int cookingTime;
+        private final String name;
         private final Advancement.Builder advancement;
         private final ResourceLocation advancementId;
 
-        public Result(ResourceLocation pId, Ingredient pIngredient, Item pResult, float pExperience, int pCookingTime,
+        public Result(ResourceLocation pId, Ingredient pIngredient, Item pResult, float pExperience, int pCookingTime, String pName,
                       Advancement.Builder pAdvancement, ResourceLocation pAdvancementId) {
             this.id = pId;
             this.ingredient = pIngredient;
             this.result = pResult;
             this.experience = pExperience;
             this.cookingTime = pCookingTime;
+            this.name = pName;
             this.advancement = pAdvancement;
             this.advancementId = pAdvancementId;
         }
@@ -99,12 +111,12 @@ public class BasicCrusherRecipeBuilder implements RecipeBuilder {
         @Override
         public ResourceLocation getId() {
             return new ResourceLocation(RealEarthOres.MOD_ID,
-                    ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_coal_crushing");
+                    ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_coal_crushing" + this.name);
         }
 
         @Override
         public RecipeSerializer<?> getType() {
-            return BasicCrusherRecipe.Serializer.INSTANCE;
+            return net.coton999.realearthores.recipe.machines.coal.BasicCrusherRecipe.Serializer.INSTANCE;
         }
 
         @Nullable

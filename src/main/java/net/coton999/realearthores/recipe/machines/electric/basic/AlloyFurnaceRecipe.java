@@ -3,6 +3,7 @@ package net.coton999.realearthores.recipe.machines.electric.basic;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import net.coton999.realearthores.RealEarthOres;
+import net.coton999.realearthores.util.CountedIngredient;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.network.FriendlyByteBuf;
@@ -13,20 +14,23 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class AlloyFurnaceRecipe implements Recipe<SimpleContainer> {
 
-    private final NonNullList<Ingredient> input;
+    private final List<CountedIngredient> input;
     private final ItemStack result;
     private final ResourceLocation id;
 
-    public AlloyFurnaceRecipe(ResourceLocation pID, ItemStack pResult, NonNullList<Ingredient> pInput) {
+    public AlloyFurnaceRecipe(ResourceLocation pID, ItemStack pResult, List<CountedIngredient> pInput) {
         this.id = pID;
         this.result = pResult;
         this.input = pInput;
     }
+
     public int getCookingTime() {
-        int cookingTime = 200;
-        return cookingTime;
+        return 200;
     }
 
     @Override
@@ -59,7 +63,7 @@ public class AlloyFurnaceRecipe implements Recipe<SimpleContainer> {
     @Override
     public NonNullList<Ingredient> getIngredients() {
 
-        return this.input;
+        return NonNullList.of(Ingredient.EMPTY, input.stream().map(CountedIngredient::ingredient).toArray(Ingredient[]::new));
     }
 
     @Override
@@ -93,25 +97,23 @@ public class AlloyFurnaceRecipe implements Recipe<SimpleContainer> {
 
         @Override
         public AlloyFurnaceRecipe fromJson(ResourceLocation pRecipeId, JsonObject pJson) {
-            ItemStack pResult = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(pJson, "result"));
 
             JsonArray pIngredient = GsonHelper.getAsJsonArray(pJson, "ingredients");
-            NonNullList<Ingredient> pInput = NonNullList.withSize(2, Ingredient.EMPTY);
+            List<CountedIngredient> pInput = new ArrayList<>(pIngredient.size());
 
-            for (int i = 0; i < pInput.size(); i++) {
-                pInput.set(i, Ingredient.fromJson(pIngredient.get(i)));
+            for (int i = 0; i < pIngredient.size(); i++) {
+                pInput.add(i, CountedIngredient.fromJson(pIngredient.get(i).getAsJsonObject()));
             }
+
+
+            ItemStack pResult = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(pJson, "result"));
 
             return new AlloyFurnaceRecipe(pRecipeId, pResult, pInput);
         }
 
         @Override
         public AlloyFurnaceRecipe fromNetwork(ResourceLocation pRecipeId, FriendlyByteBuf pBuffer) {
-            NonNullList<Ingredient> pInput = NonNullList.withSize(pBuffer.readInt(), Ingredient.EMPTY);
-
-            for (int i = 0; i < pInput.size(); i++) {
-                pInput.set(i, Ingredient.fromNetwork(pBuffer));
-            }
+            List<CountedIngredient> pInput = pBuffer.readList(CountedIngredient::fromNetwork);
 
             ItemStack pResult = pBuffer.readItem();
             return new AlloyFurnaceRecipe(pRecipeId, pResult, pInput);
@@ -119,11 +121,8 @@ public class AlloyFurnaceRecipe implements Recipe<SimpleContainer> {
 
         @Override
         public void toNetwork(FriendlyByteBuf pBuffer, AlloyFurnaceRecipe pRecipe) {
-            pBuffer.writeInt(pRecipe.getIngredients().size());
+            pBuffer.writeCollection(pRecipe.input, (buf, ing) -> ing.toNetwork(buf));
 
-            for (Ingredient ing : pRecipe.getIngredients()) {
-                ing.toNetwork(pBuffer);
-            }
             pBuffer.writeItemStack(pRecipe.getResultItem(null), false);
         }
     }

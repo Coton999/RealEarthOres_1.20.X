@@ -26,8 +26,7 @@ public class ElectricFurnaceRecipe implements Recipe<SimpleContainer> {
     }
 
     public int getCookingTime() {
-        int cookingTime = 200;
-        return cookingTime;
+        return 200;
     }
 
     @Override

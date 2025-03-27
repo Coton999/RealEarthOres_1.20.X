@@ -26,8 +26,7 @@ public class CompressorRecipe implements Recipe<SimpleContainer> {
     }
 
     public int getCookingTime() {
-        int cookingTime = 400;
-        return cookingTime;
+        return 200;
     }
 
     @Override

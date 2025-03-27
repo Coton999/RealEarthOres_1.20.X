@@ -49,6 +49,8 @@ public class JEIRealEarthOresPlugin implements IModPlugin {
                 registration.getJeiHelpers().getGuiHelper(), 200));
         registration.addRecipeCategories(new SawmillRecipeCategory(
                 registration.getJeiHelpers().getGuiHelper(), 200));
+        registration.addRecipeCategories(new PurifierRecipeCategory(
+                registration.getJeiHelpers().getGuiHelper(), 200));
         registration.addRecipeCategories(new AlloyFurnaceRecipeCategory(
                 registration.getJeiHelpers().getGuiHelper(), 200));
     }
@@ -79,6 +81,8 @@ public class JEIRealEarthOresPlugin implements IModPlugin {
         registration.addRecipes(CompressorRecipeCategory.COMPRESSOR_TYPE, compressorRecipes);
         List<SawmillRecipe> sawmillRecipes = recipeManager.getAllRecipesFor(SawmillRecipe.Type.INSTANCE);
         registration.addRecipes(SawmillRecipeCategory.SAWMILL_TYPE, sawmillRecipes);
+        List<PurifierRecipe> purifierRecipes = recipeManager.getAllRecipesFor(PurifierRecipe.Type.INSTANCE);
+        registration.addRecipes(PurifierRecipeCategory.PURIFIER_TYPE, purifierRecipes);
         List<AlloyFurnaceRecipe> alloyfurnaceRecipes = recipeManager.getAllRecipesFor(AlloyFurnaceRecipe.Type.INSTANCE);
         registration.addRecipes(AlloyFurnaceRecipeCategory.ALLOY_FURNACE_TYPE, alloyfurnaceRecipes);
     }
@@ -107,6 +111,8 @@ public class JEIRealEarthOresPlugin implements IModPlugin {
                 CompressorRecipeCategory.COMPRESSOR_TYPE);
         registration.addRecipeClickArea(SawmillScreen.class, 78, 33, 26, 19,
                 SawmillRecipeCategory.SAWMILL_TYPE);
+        registration.addRecipeClickArea(PurifierScreen.class, 78, 33, 26, 19,
+                PurifierRecipeCategory.PURIFIER_TYPE);
         registration.addRecipeClickArea(AlloyFurnaceScreen.class, 78, 33, 26, 19,
                 AlloyFurnaceRecipeCategory.ALLOY_FURNACE_TYPE);
     }

@@ -1,22 +1,18 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "ingredients": [
-    {
-      "item": "minecraft:copper_ingot"
-    },
-    {
-      "item": "realearthores:ingot_zinc"
-    },
-    {
-      "item": "realearthores:ingot_zinc"
-    },
-    {
-      "item": "realearthores:ingot_zinc"
+  "key": {
+    "#": {
+      "item": "realearthores:nugget_brass"
     }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
   ],
   "result": {
-    "count": 2,
     "item": "realearthores:ingot_brass"
-  }
+  },
+  "show_notification": true
 }

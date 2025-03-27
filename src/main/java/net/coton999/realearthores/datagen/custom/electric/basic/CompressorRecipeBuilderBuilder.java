@@ -3,7 +3,6 @@ package net.coton999.realearthores.datagen.custom.electric.basic;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import net.coton999.realearthores.RealEarthOres;
-import net.coton999.realearthores.recipe.machines.electric.basic.CompressorRecipe;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementRewards;
 import net.minecraft.advancements.CriterionTriggerInstance;
@@ -21,14 +20,14 @@ import net.minecraftforge.registries.ForgeRegistries;
 import javax.annotation.Nullable;
 import java.util.function.Consumer;
 
-public class CompressorRecipeBuilder implements RecipeBuilder {
+public class CompressorRecipeBuilderBuilder implements RecipeBuilder {
     private final Item input;
     private final Item result;
     private final Ingredient ingredient;
     private final int count;
     private final Advancement.Builder advancement = Advancement.Builder.advancement();
 
-    public CompressorRecipeBuilder(ItemLike pResult, ItemLike pIngredient, ItemLike pInput,  int pCount) {
+    public CompressorRecipeBuilderBuilder(ItemLike pResult, ItemLike pIngredient, ItemLike pInput, int pCount) {
         this.ingredient = Ingredient.of(pIngredient);
         this.input = pInput.asItem();
         this.result = pResult.asItem();
@@ -106,7 +105,7 @@ public class CompressorRecipeBuilder implements RecipeBuilder {
 
         @Override
         public RecipeSerializer<?> getType() {
-            return CompressorRecipe.Serializer.INSTANCE;
+            return net.coton999.realearthores.recipe.machines.electric.basic.CompressorRecipe.Serializer.INSTANCE;
         }
 
         @Nullable

@@ -3,7 +3,6 @@ package net.coton999.realearthores.datagen.custom.electric.basic;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import net.coton999.realearthores.RealEarthOres;
-import net.coton999.realearthores.recipe.machines.electric.basic.ExtractorRecipe;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementRewards;
 import net.minecraft.advancements.CriterionTriggerInstance;
@@ -106,7 +105,7 @@ public class ExtractorRecipeBuilder implements RecipeBuilder {
 
         @Override
         public RecipeSerializer<?> getType() {
-            return ExtractorRecipe.Serializer.INSTANCE;
+            return net.coton999.realearthores.recipe.machines.electric.basic.ExtractorRecipe.Serializer.INSTANCE;
         }
 
         @Nullable

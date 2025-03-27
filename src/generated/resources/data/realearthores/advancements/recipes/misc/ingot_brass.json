@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ingot_zinc": {
+    "has_nugget_brass": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:ingot_zinc"
+              "realearthores:nugget_brass"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_ingot_zinc",
+      "has_nugget_brass",
       "has_the_recipe"
     ]
   ],

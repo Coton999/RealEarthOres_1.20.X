@@ -1,4 +1,4 @@
-package net.coton999.realearthores.datagen.custom.coal;
+package net.coton999.realearthores.datagen.custom.electric.basic;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
@@ -8,10 +8,8 @@ import net.minecraft.advancements.AdvancementRewards;
 import net.minecraft.advancements.CriterionTriggerInstance;
 import net.minecraft.advancements.RequirementsStrategy;
 import net.minecraft.advancements.critereon.RecipeUnlockedTrigger;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeBuilder;
-import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -22,20 +20,25 @@ import net.minecraftforge.registries.ForgeRegistries;
 import javax.annotation.Nullable;
 import java.util.function.Consumer;
 
-public class KilnRecipeBuilder implements RecipeBuilder {
-    private final RecipeCategory category;
+public class PurifierRecipeBuilder implements RecipeBuilder {
     private final Item result;
     private final Ingredient ingredient;
-    private final float experience;
-    private final int cookingTime;
-    private final Advancement.Builder advancement = Advancement.Builder.recipeAdvancement();
+    private final int count;
+    private final String name;
+    private final Advancement.Builder advancement = Advancement.Builder.advancement();
 
-    public KilnRecipeBuilder(RecipeCategory pCategory, ItemLike pResult, Ingredient pIngredient, float pExperience, int pCookingTime) {
-        this.category = pCategory;
-        this.result = pResult.asItem();
+    public PurifierRecipeBuilder(ItemLike pResult, Ingredient pIngredient, int pCount, String pName) {
         this.ingredient = pIngredient;
-        this.experience = pExperience;
-        this.cookingTime = pCookingTime;
+        this.result = pResult.asItem();
+        this.count = pCount;
+        this.name = pName;
+    }
+
+    public static PurifierRecipeBuilder generic(ItemLike pResult, Ingredient pIngredient, int pCount) {
+        return new PurifierRecipeBuilder(pResult, pIngredient, pCount, "");
+    }
+    public static PurifierRecipeBuilder named(ItemLike pResult, Ingredient pIngredient, int pCount, String pName) {
+        return new PurifierRecipeBuilder(pResult, pIngredient, pCount, pName);
     }
 
     @Override
@@ -60,27 +63,28 @@ public class KilnRecipeBuilder implements RecipeBuilder {
                 .addCriterion("has_the_recipe", RecipeUnlockedTrigger.unlocked(pRecipeId))
                 .rewards(AdvancementRewards.Builder.recipe(pRecipeId)).requirements(RequirementsStrategy.OR);
 
-        pFinishedRecipeConsumer.accept(new KilnRecipeBuilder.Result(pRecipeId, this.ingredient, this.result,
-                this.experience, this.cookingTime, this.advancement,
-                new ResourceLocation(pRecipeId.getNamespace(), "recipes/" + pRecipeId.getPath())));
+        pFinishedRecipeConsumer.accept(new Result(pRecipeId, this.result, this.count, this.name, this.ingredient,
+                this.advancement, new ResourceLocation(pRecipeId.getNamespace(), "recipes/"
+                + pRecipeId.getPath())));
+
     }
 
     public static class Result implements FinishedRecipe {
         private final ResourceLocation id;
-        private final Ingredient ingredient;
         private final Item result;
-        private final float experience;
-        private final int cookingTime;
+        private final Ingredient ingredient;
+        private final int count;
+        private final String name;
         private final Advancement.Builder advancement;
         private final ResourceLocation advancementId;
 
-        public Result(ResourceLocation pId, Ingredient pIngredient, Item pResult, float pExperience, int pCookingTime,
+        public Result(ResourceLocation pId, Item pResult, int pCount, String pName, Ingredient ingredient,
                       Advancement.Builder pAdvancement, ResourceLocation pAdvancementId) {
             this.id = pId;
-            this.ingredient = pIngredient;
             this.result = pResult;
-            this.experience = pExperience;
-            this.cookingTime = pCookingTime;
+            this.count = pCount;
+            this.name = pName;
+            this.ingredient = ingredient;
             this.advancement = pAdvancement;
             this.advancementId = pAdvancementId;
         }
@@ -90,21 +94,25 @@ public class KilnRecipeBuilder implements RecipeBuilder {
             JsonArray jsonarray = new JsonArray();
             jsonarray.add(ingredient.toJson());
 
-            pJson.add("ingredient", this.ingredient.toJson());
-            pJson.addProperty("result", BuiltInRegistries.ITEM.getKey(this.result).toString());
-            pJson.addProperty("experience", this.experience);
-            pJson.addProperty("cookingtime", this.cookingTime);
+            pJson.add("ingredients", jsonarray);
+            JsonObject jsonobject = new JsonObject();
+            jsonobject.addProperty("item", ForgeRegistries.ITEMS.getKey(this.result).toString());
+            if (this.count > 1) {
+                jsonobject.addProperty("count", this.count);
+            }
+
+            pJson.add("result", jsonobject);
         }
 
         @Override
         public ResourceLocation getId() {
             return new ResourceLocation(RealEarthOres.MOD_ID,
-                    ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_firing");
+                    ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_purifying" + this.name);
         }
 
         @Override
         public RecipeSerializer<?> getType() {
-            return net.coton999.realearthores.recipe.machines.coal.KilnRecipe.Serializer.INSTANCE;
+            return net.coton999.realearthores.recipe.machines.electric.basic.PurifierRecipe.Serializer.INSTANCE;
         }
 
         @Nullable

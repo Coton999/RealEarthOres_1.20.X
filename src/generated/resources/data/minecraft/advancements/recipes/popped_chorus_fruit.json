@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_chorus_fruit": {
+    "has_chorus_fruite": {
       "conditions": {
         "items": [
           {
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_chorus_fruit",
+      "has_chorus_fruite",
       "has_the_recipe"
     ]
   ],
@@ -31,5 +31,5 @@
       "minecraft:popped_chorus_fruit"
     ]
   },
-  "sends_telemetry_event": true
+  "sends_telemetry_event": false
 }

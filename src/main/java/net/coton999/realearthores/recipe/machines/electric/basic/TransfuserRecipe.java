@@ -25,6 +25,10 @@ public class TransfuserRecipe implements Recipe<SimpleContainer> {
         this.id = id;
     }
 
+    public int getCookingTime() {
+        return 200;
+    }
+
     @Override
     public boolean matches(SimpleContainer pContainer, Level pLevel) {
         if(pLevel.isClientSide()) {

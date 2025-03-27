@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:ingot_nickel"
-            ]
+            "tag": "realearthores:nickel_ores"
           }
         ]
       },

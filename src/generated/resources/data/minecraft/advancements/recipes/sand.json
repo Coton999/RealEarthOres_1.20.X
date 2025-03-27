@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_gravel": {
+    "has_sandstone": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:gravel"
+              "minecraft:sandstone"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_gravel",
+      "has_sandstone",
       "has_the_recipe"
     ]
   ],

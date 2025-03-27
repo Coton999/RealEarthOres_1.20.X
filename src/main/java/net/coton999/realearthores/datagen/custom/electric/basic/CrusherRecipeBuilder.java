@@ -3,7 +3,6 @@ package net.coton999.realearthores.datagen.custom.electric.basic;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import net.coton999.realearthores.RealEarthOres;
-import net.coton999.realearthores.recipe.machines.electric.basic.CrusherRecipe;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementRewards;
 import net.minecraft.advancements.CriterionTriggerInstance;
@@ -11,11 +10,8 @@ import net.minecraft.advancements.RequirementsStrategy;
 import net.minecraft.advancements.critereon.RecipeUnlockedTrigger;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeBuilder;
-import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
@@ -38,7 +34,7 @@ public class CrusherRecipeBuilder implements RecipeBuilder {
         this.name = pName;
     }
 
-    public static CrusherRecipeBuilder generic(ItemLike pResult,Ingredient pIngredient, int pCount) {
+    public static CrusherRecipeBuilder generic(ItemLike pResult, Ingredient pIngredient, int pCount) {
         return new CrusherRecipeBuilder(pResult, pIngredient, pCount, "");
     }
     public static CrusherRecipeBuilder named(ItemLike pResult, Ingredient pIngredient, int pCount, String pName) {
@@ -116,7 +112,7 @@ public class CrusherRecipeBuilder implements RecipeBuilder {
 
         @Override
         public RecipeSerializer<?> getType() {
-            return CrusherRecipe.Serializer.INSTANCE;
+            return net.coton999.realearthores.recipe.machines.electric.basic.CrusherRecipe.Serializer.INSTANCE;
         }
 
         @javax.annotation.Nullable

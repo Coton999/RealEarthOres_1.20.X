@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ingot_silver": {
+    "has_nugget_electrum": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:ingot_silver"
+              "realearthores:nugget_electrum"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_ingot_silver",
+      "has_nugget_electrum",
       "has_the_recipe"
     ]
   ],

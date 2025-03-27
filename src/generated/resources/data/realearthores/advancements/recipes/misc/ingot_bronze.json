@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ingot_nickel": {
+    "has_nugget_bronze": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:ingot_nickel"
+              "realearthores:nugget_bronze"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_ingot_nickel",
+      "has_nugget_bronze",
       "has_the_recipe"
     ]
   ],

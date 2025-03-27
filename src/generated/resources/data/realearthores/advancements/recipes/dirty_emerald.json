@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:emerald"
-            ]
+            "tag": "minecraft:emerald_ores"
           }
         ]
       },
