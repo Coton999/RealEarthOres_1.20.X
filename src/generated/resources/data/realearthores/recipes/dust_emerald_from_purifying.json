@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:purifying",
+  "ingredients": [
+    {
+      "item": "realearthores:dirty_emerald"
+    }
+  ],
+  "result": {
+    "item": "realearthores:dust_emerald"
+  }
+}

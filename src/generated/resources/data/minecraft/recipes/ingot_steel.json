@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "ingot_steel",
+  "ingredients": [
+    {
+      "item": "realearthores:block_steel"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "realearthores:ingot_steel"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:purifying",
+  "ingredients": [
+    {
+      "item": "realearthores:dirty_peridot"
+    }
+  ],
+  "result": {
+    "item": "realearthores:dust_peridot"
+  }
+}

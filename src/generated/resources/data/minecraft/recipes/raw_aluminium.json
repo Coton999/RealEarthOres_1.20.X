@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "raw_aluminium",
+  "ingredients": [
+    {
+      "item": "realearthores:block_raw_aluminium"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "realearthores:raw_aluminium"
+  }
+}

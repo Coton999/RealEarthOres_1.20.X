@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:purifying",
+  "ingredients": [
+    {
+      "item": "realearthores:dirty_gold"
+    }
+  ],
+  "result": {
+    "item": "realearthores:dust_gold"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "ingot_uranium",
+  "ingredients": [
+    {
+      "item": "realearthores:block_uranium"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "realearthores:ingot_uranium"
+  }
+}

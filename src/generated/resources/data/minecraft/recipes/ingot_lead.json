@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "ingot_lead",
+  "ingredients": [
+    {
+      "item": "realearthores:block_lead"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "realearthores:ingot_lead"
+  }
+}

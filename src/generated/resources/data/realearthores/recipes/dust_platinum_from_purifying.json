@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:purifying",
+  "ingredients": [
+    {
+      "item": "realearthores:dirty_platinum"
+    }
+  ],
+  "result": {
+    "item": "realearthores:dust_platinum"
+  }
+}

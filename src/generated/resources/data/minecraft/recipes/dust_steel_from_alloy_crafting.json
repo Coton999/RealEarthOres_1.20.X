@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "realearthores:dust_iron"
+    },
+    {
+      "item": "realearthores:dust_coal"
+    },
+    {
+      "item": "realearthores:dust_coal"
+    },
+    {
+      "item": "realearthores:dust_coal"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:dust_steel"
+  }
+}

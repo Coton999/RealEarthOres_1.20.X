@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:purifying",
+  "ingredients": [
+    {
+      "item": "realearthores:dirty_lead"
+    }
+  ],
+  "result": {
+    "item": "realearthores:dust_lead"
+  }
+}

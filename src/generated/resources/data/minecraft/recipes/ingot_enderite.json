@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "ingot_enderite",
+  "ingredients": [
+    {
+      "item": "realearthores:block_enderite"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "realearthores:ingot_enderite"
+  }
+}
