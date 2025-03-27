@@ -3,7 +3,7 @@
   "category": "food",
   "cookingtime": 600,
   "experience": 0.35,
-  "group": "flour_wheat",
+  "group": "flour",
   "ingredient": {
     "item": "realearthores:flour_wheat"
   },

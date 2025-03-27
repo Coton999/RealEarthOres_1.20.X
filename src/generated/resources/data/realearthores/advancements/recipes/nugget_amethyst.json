@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:amethyst_sword"
-            ]
+            "tag": "realearthores:amethyst_tools_and_armor"
           }
         ]
       },

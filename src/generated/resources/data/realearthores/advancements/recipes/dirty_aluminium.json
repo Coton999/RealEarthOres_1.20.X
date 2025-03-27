@@ -1,11 +1,13 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ore_aluminium": {
+    "has_ingot_aluminium": {
       "conditions": {
         "items": [
           {
-            "tag": "realearthores:aluminium_ores"
+            "items": [
+              "realearthores:ingot_aluminium"
+            ]
           }
         ]
       },
@@ -20,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_ore_aluminium",
+      "has_ingot_aluminium",
       "has_the_recipe"
     ]
   ],

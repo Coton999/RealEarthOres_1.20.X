@@ -10,6 +10,12 @@
       },
       {
         "item": "realearthores:nether_tin"
+      },
+      {
+        "item": "realearthores:dust_tin"
+      },
+      {
+        "item": "realearthores:dirty_tin"
       }
     ]
   ],

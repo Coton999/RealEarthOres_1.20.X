@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:aluminium_sword"
-            ]
+            "tag": "realearthores:aluminium_tools_and_armor"
           }
         ]
       },

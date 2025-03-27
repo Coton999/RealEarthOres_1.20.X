@@ -13,6 +13,12 @@
       },
       {
         "item": "realearthores:nether_platinum"
+      },
+      {
+        "item": "realearthores:dust_platinum"
+      },
+      {
+        "item": "realearthores:dirty_platinum"
       }
     ]
   ],

@@ -13,6 +13,12 @@
       },
       {
         "item": "realearthores:nether_aluminium"
+      },
+      {
+        "item": "realearthores:dust_aluminium"
+      },
+      {
+        "item": "realearthores:dirty_aluminium"
       }
     ]
   ],

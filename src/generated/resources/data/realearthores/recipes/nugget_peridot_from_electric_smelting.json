@@ -1,53 +1,9 @@
 {
   "type": "realearthores:electric_smelting",
   "ingredients": [
-    [
-      {
-        "item": "realearthores:peridot_shovel"
-      },
-      {
-        "item": "realearthores:peridot_pickaxe"
-      },
-      {
-        "item": "realearthores:peridot_axe"
-      },
-      {
-        "item": "realearthores:peridot_hoe"
-      },
-      {
-        "item": "realearthores:peridot_sword"
-      },
-      {
-        "item": "realearthores:peridot_bow"
-      },
-      {
-        "item": "realearthores:peridot_excavator"
-      },
-      {
-        "item": "realearthores:peridot_hammer"
-      },
-      {
-        "item": "realearthores:peridot_hatchet"
-      },
-      {
-        "item": "realearthores:peridot_paxel"
-      },
-      {
-        "item": "realearthores:peridot_sickle"
-      },
-      {
-        "item": "realearthores:peridot_helmet"
-      },
-      {
-        "item": "realearthores:peridot_chestplate"
-      },
-      {
-        "item": "realearthores:peridot_leggings"
-      },
-      {
-        "item": "realearthores:peridot_boots"
-      }
-    ]
+    {
+      "tag": "realearthores:peridot_tools_and_armor"
+    }
   ],
   "result": {
     "item": "realearthores:nugget_peridot"

@@ -11,9 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:ore_uranium"
-            ]
+            "tag": "realearthores:uranium_ores"
           }
         ]
       },

@@ -13,6 +13,12 @@
       },
       {
         "item": "realearthores:nether_diamond"
+      },
+      {
+        "item": "realearthores:dust_diamond"
+      },
+      {
+        "item": "realearthores:dirty_diamond"
       }
     ]
   ],

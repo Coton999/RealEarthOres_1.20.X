@@ -1,4 +1,4 @@
-// 1.20.1	2025-03-23T16:06:17.3113603	Item Models: realearthores
+// 1.20.1	2025-03-27T12:35:56.953185	Item Models: realearthores
 8a12a4df5de32d2c3d1a3fb869fba17d0a0dd6d4 assets/realearthores/models/item/aluminium_axe.json
 d2718c330ab58e38517168b9246986572ac5816f assets/realearthores/models/item/aluminium_boots.json
 0425bc54cf771c8a19b4ca13054da496e19bdafe assets/realearthores/models/item/aluminium_chestplate.json
@@ -553,6 +553,7 @@ fe70f9e3bf7c29c5a281079eac1ad1d4cf6e3d1d assets/realearthores/models/item/dirty_
 2fdcff5a9cf2b73a3c42e6fb8fe09d8a3bab06f3 assets/realearthores/models/item/dirty_gold.json
 49e6baff141402dd23ee23ab078aad2cc5400316 assets/realearthores/models/item/dirty_iron.json
 9aff893a47ef7162bff1c68e2c2a854772d64dcb assets/realearthores/models/item/dirty_lead.json
+6092db4022e6359fbaa011dea7e95a8f77134570 assets/realearthores/models/item/dirty_netherite.json
 5a318ed00184835ee4ad796f245fd49a49014d28 assets/realearthores/models/item/dirty_nickel.json
 3d01b1f8f24bf1d9a1f37f24eb3420a7b95fc69a assets/realearthores/models/item/dirty_obsidian.json
 f7a02646ff0d433083abcee727f41e7d1b82214f assets/realearthores/models/item/dirty_peridot.json
@@ -598,6 +599,7 @@ b31d7706a48327e80c0acdc81575481b63cb7fc4 assets/realearthores/models/item/dust_e
 63556d25afdedf8c3d22987542055d5779af7533 assets/realearthores/models/item/dust_gold.json
 9c1b582eea4bbe6a6d6206884aba0e42ad581385 assets/realearthores/models/item/dust_iron.json
 989b2c20f8e9998ebc4fa177cc26fc48b9af59d3 assets/realearthores/models/item/dust_lead.json
+d9519d994255044ae6006ad5365ae3ca8b1e8094 assets/realearthores/models/item/dust_netherite.json
 89560ce0baaebd21c3e7dfd98cc1cfbdef56f873 assets/realearthores/models/item/dust_nickel.json
 6a2f1666eae0f200fafabf4540e990eacea9f3bb assets/realearthores/models/item/dust_obsidian.json
 d40ccfbaee741932c6a0bbf68e4bdac13a2e7f65 assets/realearthores/models/item/dust_peridot.json
@@ -791,6 +793,7 @@ e4ad0f40eb4e594b85051a54bd3dff40c493f5c4 assets/realearthores/models/item/ingot_
 d1ad6a51b6eebab3c91561788d7b2937f2a3930d assets/realearthores/models/item/ingot_enderite.json
 9a17504639b853f0639adf06dbce1674683377c5 assets/realearthores/models/item/ingot_lead.json
 70ee042e77e5da131e8258fa1482ee27354b6526 assets/realearthores/models/item/ingot_nickel.json
+fe8e33bbd5f1d10435143d8a9401c539da560654 assets/realearthores/models/item/ingot_obsidian.json
 4ff3ab425e5856f06fb45c6b0cd07d35b3fe7b14 assets/realearthores/models/item/ingot_platinum.json
 45afc12b4fc687e1ffbdf76a03f0c19032ca01cb assets/realearthores/models/item/ingot_silver.json
 9c6e9f10271d3841b56b87bf175633065b0e3402 assets/realearthores/models/item/ingot_steel.json

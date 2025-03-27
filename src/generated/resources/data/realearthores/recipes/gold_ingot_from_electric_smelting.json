@@ -16,6 +16,12 @@
       },
       {
         "item": "realearthores:gravel_ore_gold"
+      },
+      {
+        "item": "realearthores:dust_gold"
+      },
+      {
+        "item": "realearthores:dirty_gold"
       }
     ]
   ],

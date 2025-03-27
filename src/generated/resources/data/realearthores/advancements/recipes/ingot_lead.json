@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:ore_lead"
-            ]
+            "tag": "realearthores:lead_ores"
           }
         ]
       },

@@ -16,6 +16,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
+import net.minecraftforge.common.crafting.StrictNBTIngredient;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import javax.annotation.Nullable;
@@ -23,18 +24,16 @@ import java.util.function.Consumer;
 
 public class AlloyFurnaceRecipeBuilder implements RecipeBuilder {
     private final Item result;
-    private final CountedIngredient ingredient1;
-    private final CountedIngredient ingredient2;
+    private final Ingredient ingredient1;
+    private final Ingredient ingredient2;
     private final int count;
     private final Advancement.Builder advancement = Advancement.Builder.advancement();
-    private  final  String name;
 
-    public AlloyFurnaceRecipeBuilder(ItemLike pResult, CountedIngredient pIngredient1, CountedIngredient pIngredient2, int pCount, String pName) {
+    public AlloyFurnaceRecipeBuilder(ItemLike pResult, Ingredient pIngredient1, Ingredient pIngredient2, int pCount) {
         this.ingredient1 = pIngredient1;
         this.ingredient2 = pIngredient2;
         this.result = pResult.asItem();
         this.count = pCount;
-        this.name = pName;
     }
 
     @Override
@@ -61,22 +60,21 @@ public class AlloyFurnaceRecipeBuilder implements RecipeBuilder {
 
         pFinishedRecipeConsumer.accept(new Result(pRecipeId, this.result, this.count, this.ingredient1, this.ingredient2,
                 this.advancement, new ResourceLocation(pRecipeId.getNamespace(), "recipes/"
-                + pRecipeId.getPath()), this.name));
+                + pRecipeId.getPath())));
 
     }
 
     public static class Result implements FinishedRecipe {
         private final ResourceLocation id;
         private final Item result;
-        private final CountedIngredient ingredient1;
-        private final CountedIngredient ingredient2;
+        private final Ingredient ingredient1;
+        private final Ingredient ingredient2;
         private final int count;
         private final Advancement.Builder advancement;
         private final ResourceLocation advancementId;
-        private  final  String name;
 
-        public Result(ResourceLocation pId, Item pResult, int pCount, CountedIngredient pIngredient1, CountedIngredient pIngredient2, Advancement.Builder pAdvancement,
-                      ResourceLocation pAdvancementId, String pName) {
+        public Result(ResourceLocation pId, Item pResult, int pCount, Ingredient pIngredient1, Ingredient pIngredient2, Advancement.Builder pAdvancement,
+                      ResourceLocation pAdvancementId) {
             this.id = pId;
             this.result = pResult;
             this.count = pCount;
@@ -84,7 +82,6 @@ public class AlloyFurnaceRecipeBuilder implements RecipeBuilder {
             this.ingredient2 = pIngredient2;
             this.advancement = pAdvancement;
             this.advancementId = pAdvancementId;
-            this.name = pName;
         }
 
         @Override
@@ -106,7 +103,7 @@ public class AlloyFurnaceRecipeBuilder implements RecipeBuilder {
         @Override
         public ResourceLocation getId() {
             return new ResourceLocation(RealEarthOres.MOD_ID,
-                    ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_alloy_smelting" + name);
+                    ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_alloy_smelting");
         }
 
         @Override

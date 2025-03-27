@@ -19,11 +19,11 @@ import java.util.List;
 
 public class AlloyFurnaceRecipe implements Recipe<SimpleContainer> {
 
-    private final List<CountedIngredient> input;
+    private final NonNullList<Ingredient> input;
     private final ItemStack result;
     private final ResourceLocation id;
 
-    public AlloyFurnaceRecipe(ResourceLocation pID, ItemStack pResult, List<CountedIngredient> pInput) {
+    public AlloyFurnaceRecipe(ResourceLocation pID, ItemStack pResult, NonNullList<Ingredient> pInput) {
         this.id = pID;
         this.result = pResult;
         this.input = pInput;
@@ -62,8 +62,7 @@ public class AlloyFurnaceRecipe implements Recipe<SimpleContainer> {
 
     @Override
     public NonNullList<Ingredient> getIngredients() {
-
-        return NonNullList.of(Ingredient.EMPTY, input.stream().map(CountedIngredient::ingredient).toArray(Ingredient[]::new));
+        return this.input;
     }
 
     @Override
@@ -99,10 +98,10 @@ public class AlloyFurnaceRecipe implements Recipe<SimpleContainer> {
         public AlloyFurnaceRecipe fromJson(ResourceLocation pRecipeId, JsonObject pJson) {
 
             JsonArray pIngredient = GsonHelper.getAsJsonArray(pJson, "ingredients");
-            List<CountedIngredient> pInput = new ArrayList<>(pIngredient.size());
+            NonNullList<Ingredient> pInput = NonNullList.withSize(2, Ingredient.EMPTY);
 
-            for (int i = 0; i < pIngredient.size(); i++) {
-                pInput.add(i, CountedIngredient.fromJson(pIngredient.get(i).getAsJsonObject()));
+            for (int i = 0; i < pInput.size(); i++) {
+                pInput.set(i, Ingredient.fromJson(pIngredient.get(i)));
             }
 
 
@@ -113,7 +112,11 @@ public class AlloyFurnaceRecipe implements Recipe<SimpleContainer> {
 
         @Override
         public AlloyFurnaceRecipe fromNetwork(ResourceLocation pRecipeId, FriendlyByteBuf pBuffer) {
-            List<CountedIngredient> pInput = pBuffer.readList(CountedIngredient::fromNetwork);
+            NonNullList<Ingredient> pInput = NonNullList.withSize(pBuffer.readInt(), Ingredient.EMPTY);
+
+            for (int i = 0; i < pInput.size(); i++) {
+                pInput.set(i, Ingredient.fromNetwork(pBuffer));
+            }
 
             ItemStack pResult = pBuffer.readItem();
             return new AlloyFurnaceRecipe(pRecipeId, pResult, pInput);

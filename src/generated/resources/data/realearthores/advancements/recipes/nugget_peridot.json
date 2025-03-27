@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:peridot_sword"
-            ]
+            "tag": "realearthores:peridot_tools_and_armor"
           }
         ]
       },

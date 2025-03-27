@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:sapphire_sword"
-            ]
+            "tag": "realearthores:sapphire_tools_and_armor"
           }
         ]
       },

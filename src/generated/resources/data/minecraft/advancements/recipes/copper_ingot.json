@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_raw_copper": {
+    "has_copper_ore": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:raw_copper"
-            ]
+            "tag": "minecraft:copper_ores"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_raw_copper",
+      "has_copper_ore",
       "has_the_recipe"
     ]
   ],

@@ -41,6 +41,7 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                     pOutput.accept(REOItems.INGOT_ENDERITE.get());
                     pOutput.accept(REOItems.INGOT_LEAD.get());
                     pOutput.accept(REOItems.INGOT_NICKEL.get());
+                    pOutput.accept(REOItems.INGOT_OBSIDIAN.get());
                     pOutput.accept(REOItems.INGOT_PLATINUM.get());
                     pOutput.accept(REOItems.INGOT_SILVER.get());
                     pOutput.accept(REOItems.INGOT_STEEL.get());
@@ -96,6 +97,7 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                     pOutput.accept(REOItems.DUST_GOLD.get());
                     pOutput.accept(REOItems.DUST_IRON.get());
                     pOutput.accept(REOItems.DUST_LEAD.get());
+                    pOutput.accept(REOItems.DUST_NETHERITE.get());
                     pOutput.accept(REOItems.DUST_NICKEL.get());
                     pOutput.accept(REOItems.DUST_OBSIDIAN.get());
                     pOutput.accept(REOItems.DUST_PERIDOT.get());
@@ -121,6 +123,7 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                     pOutput.accept(REOItems.DIRTY_GOLD.get());
                     pOutput.accept(REOItems.DIRTY_IRON.get());
                     pOutput.accept(REOItems.DIRTY_LEAD.get());
+                    pOutput.accept(REOItems.DIRTY_NETHERITE.get());
                     pOutput.accept(REOItems.DIRTY_NICKEL.get());
                     pOutput.accept(REOItems.DIRTY_OBSIDIAN.get());
                     pOutput.accept(REOItems.DIRTY_PERIDOT.get());

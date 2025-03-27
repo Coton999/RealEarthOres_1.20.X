@@ -1,53 +1,9 @@
 {
   "type": "realearthores:electric_smelting",
   "ingredients": [
-    [
-      {
-        "item": "realearthores:ruby_shovel"
-      },
-      {
-        "item": "realearthores:ruby_pickaxe"
-      },
-      {
-        "item": "realearthores:ruby_axe"
-      },
-      {
-        "item": "realearthores:ruby_hoe"
-      },
-      {
-        "item": "realearthores:ruby_sword"
-      },
-      {
-        "item": "realearthores:ruby_bow"
-      },
-      {
-        "item": "realearthores:ruby_excavator"
-      },
-      {
-        "item": "realearthores:ruby_hammer"
-      },
-      {
-        "item": "realearthores:ruby_hatchet"
-      },
-      {
-        "item": "realearthores:ruby_paxel"
-      },
-      {
-        "item": "realearthores:ruby_sickle"
-      },
-      {
-        "item": "realearthores:ruby_helmet"
-      },
-      {
-        "item": "realearthores:ruby_chestplate"
-      },
-      {
-        "item": "realearthores:ruby_leggings"
-      },
-      {
-        "item": "realearthores:ruby_boots"
-      }
-    ]
+    {
+      "tag": "realearthores:ruby_tools_and_armor"
+    }
   ],
   "result": {
     "item": "realearthores:nugget_ruby"

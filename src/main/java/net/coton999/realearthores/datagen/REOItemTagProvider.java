@@ -9,6 +9,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
@@ -354,5 +355,168 @@ public class REOItemTagProvider extends ItemTagsProvider {
         this.tag(REOTags.Items.GEM_GEAR_TIER)
                 .add(REOItems.GEAR_DIAMOND.get(), REOItems.GEAR_EMERALD.get(), REOItems.GEAR_AMETHYST.get(),
                         REOItems.GEAR_PERIDOT.get(), REOItems.GEAR_RUBY.get(), REOItems.GEAR_SAPPHIRE.get());
+
+        // Dust
+        this.tag(REOTags.Items.ALUMINIUM_DUSTS)
+                .add(REOItems.DUST_ALUMINIUM.get(), REOItems.DIRTY_ALUMINIUM.get());
+        this.tag(REOTags.Items.AMETHYST_DUSTS)
+                .add(REOItems.DUST_AMETHYST.get(), REOItems.DIRTY_AMETHYST.get());
+        this.tag(REOTags.Items.BRASS_DUSTS)
+                .add(REOItems.DUST_BRASS.get(), REOItems.DIRTY_BRASS.get());
+        this.tag(REOTags.Items.BRONZE_DUSTS)
+                .add(REOItems.DUST_BRONZE.get(), REOItems.DIRTY_BRONZE.get());
+        this.tag(REOTags.Items.COPPER_DUSTS)
+                .add(REOItems.DUST_COPPER.get(), REOItems.DIRTY_COPPER.get());
+        this.tag(REOTags.Items.DIAMOND_DUSTS)
+                .add(REOItems.DUST_DIAMOND.get(), REOItems.DIRTY_DIAMOND.get());
+        this.tag(REOTags.Items.ELECTRUM_DUSTS)
+                .add(REOItems.DUST_ELECTRUM.get(), REOItems.DIRTY_ELECTRUM.get());
+        this.tag(REOTags.Items.EMERALD_DUSTS)
+                .add(REOItems.DUST_EMERALD.get(), REOItems.DIRTY_EMERALD.get());
+        this.tag(REOTags.Items.ENDERITE_DUSTS)
+                .add(REOItems.DUST_ENDERITE.get(), REOItems.DIRTY_ENDERITE.get());
+        this.tag(REOTags.Items.GOLD_DUSTS)
+                .add(REOItems.DUST_GOLD.get(), REOItems.DIRTY_GOLD.get());
+        this.tag(REOTags.Items.IRON_DUSTS)
+                .add(REOItems.DUST_IRON.get(), REOItems.DIRTY_IRON.get());
+        this.tag(REOTags.Items.LEAD_DUSTS)
+                .add(REOItems.DUST_LEAD.get(), REOItems.DIRTY_LEAD.get());
+        this.tag(REOTags.Items.NETHERITE_DUSTS)
+                .add(REOItems.DUST_NETHERITE.get(), REOItems.DIRTY_NETHERITE.get());
+        this.tag(REOTags.Items.NICKEL_DUSTS)
+                .add(REOItems.DUST_NICKEL.get(), REOItems.DIRTY_NICKEL.get());
+        this.tag(REOTags.Items.OBSIDIAN_DUSTS)
+                .add(REOItems.DUST_OBSIDIAN.get(), REOItems.DIRTY_OBSIDIAN.get());
+        this.tag(REOTags.Items.PERIDOT_DUSTS)
+                .add(REOItems.DUST_PERIDOT.get(), REOItems.DIRTY_PERIDOT.get());
+        this.tag(REOTags.Items.PLATINUM_DUSTS)
+                .add(REOItems.DUST_PLATINUM.get(), REOItems.DIRTY_PLATINUM.get());
+        this.tag(REOTags.Items.RUBY_DUSTS)
+                .add(REOItems.DUST_RUBY.get(), REOItems.DIRTY_RUBY.get());
+        this.tag(REOTags.Items.SAPPHIRE_DUSTS)
+                .add(REOItems.DUST_SAPPHIRE.get(), REOItems.DIRTY_SAPPHIRE.get());
+        this.tag(REOTags.Items.SILVER_DUSTS)
+                .add(REOItems.DUST_SILVER.get(), REOItems.DIRTY_SILVER.get());
+        this.tag(REOTags.Items.STEEL_DUSTS)
+                .add(REOItems.DUST_STEEL.get(), REOItems.DIRTY_STEEL.get());
+        this.tag(REOTags.Items.TIN_DUSTS)
+                .add(REOItems.DUST_TIN.get(), REOItems.DIRTY_TIN.get());
+        this.tag(REOTags.Items.URANIUM_DUSTS)
+                .add(REOItems.DUST_URANIUM.get(), REOItems.DIRTY_URANIUM.get());
+        this.tag(REOTags.Items.ZINC_DUSTS)
+                .add(REOItems.DUST_ZINC.get(), REOItems.DIRTY_ZINC.get());
+
+        this.tag(REOTags.Items.ALUMINIUM_TOOLS_AND_ARMOR)
+                .add(REOItems.ALUMINIUM_AXE.get(), REOItems.ALUMINIUM_BOW.get(), REOItems.ALUMINIUM_EXCAVATOR.get(),
+                        REOItems.ALUMINIUM_HAMMER.get(), REOItems.ALUMINIUM_HATCHET.get(), REOItems.ALUMINIUM_HOE.get(),
+                        REOItems.ALUMINIUM_PAXEL.get(), REOItems.ALUMINIUM_PICKAXE.get(), REOItems.ALUMINIUM_SHEARS.get(),
+                        REOItems.ALUMINIUM_SHOVEL.get(), REOItems.ALUMINIUM_SICKLE.get(), REOItems.ALUMINIUM_SWORD.get(),
+                        REOItems.ALUMINIUM_HELMET.get(), REOItems.ALUMINIUM_CHESTPLATE.get(), REOItems.ALUMINIUM_LEGGINGS.get(),
+                        REOItems.ALUMINIUM_BOOTS.get());
+
+        this.tag(REOTags.Items.AMETHYST_TOOLS_AND_ARMOR)
+                .add(REOItems.AMETHYST_AXE.get(), REOItems.AMETHYST_BOW.get(), REOItems.AMETHYST_EXCAVATOR.get(),
+                        REOItems.AMETHYST_HAMMER.get(), REOItems.AMETHYST_HATCHET.get(), REOItems.AMETHYST_HOE.get(),
+                        REOItems.AMETHYST_PAXEL.get(), REOItems.AMETHYST_PICKAXE.get(), REOItems.AMETHYST_SHEARS.get(),
+                        REOItems.AMETHYST_SHOVEL.get(), REOItems.AMETHYST_SICKLE.get(), REOItems.AMETHYST_SWORD.get(),
+                        REOItems.AMETHYST_HELMET.get(), REOItems.AMETHYST_CHESTPLATE.get(), REOItems.AMETHYST_LEGGINGS.get(),
+                        REOItems.AMETHYST_BOOTS.get());
+
+        this.tag(REOTags.Items.BRONZE_TOOLS_AND_ARMOR)
+                .add(REOItems.BRONZE_AXE.get(), REOItems.BRONZE_BOW.get(), REOItems.BRONZE_EXCAVATOR.get(),
+                        REOItems.BRONZE_HAMMER.get(), REOItems.BRONZE_HATCHET.get(), REOItems.BRONZE_HOE.get(),
+                        REOItems.BRONZE_PAXEL.get(), REOItems.BRONZE_PICKAXE.get(), REOItems.BRONZE_SHEARS.get(),
+                        REOItems.BRONZE_SHOVEL.get(), REOItems.BRONZE_SICKLE.get(), REOItems.BRONZE_SWORD.get(),
+                        REOItems.BRONZE_HELMET.get(), REOItems.BRONZE_CHESTPLATE.get(), REOItems.BRONZE_LEGGINGS.get(),
+                        REOItems.BRONZE_BOOTS.get());
+
+        this.tag(REOTags.Items.DIAMOND_TOOLS_AND_ARMOR)
+                .add(Items.DIAMOND_AXE, REOItems.DIAMOND_BOW.get(), REOItems.DIAMOND_EXCAVATOR.get(),
+                        REOItems.DIAMOND_HAMMER.get(), REOItems.DIAMOND_HATCHET.get(), Items.DIAMOND_HOE,
+                        REOItems.DIAMOND_PAXEL.get(), Items.DIAMOND_PICKAXE, REOItems.DIAMOND_SHEARS.get(),
+                        Items.DIAMOND_SHOVEL, REOItems.DIAMOND_SICKLE.get(), Items.DIAMOND_SWORD,
+                        Items.DIAMOND_HELMET, Items.DIAMOND_CHESTPLATE, Items.DIAMOND_LEGGINGS,
+                        Items.DIAMOND_BOOTS);
+
+        this.tag(REOTags.Items.ENDERITE_TOOLS_AND_ARMOR)
+                .add(REOItems.ENDERITE_AXE.get(), REOItems.ENDERITE_BOW.get(), REOItems.ENDERITE_EXCAVATOR.get(),
+                        REOItems.ENDERITE_HAMMER.get(), REOItems.ENDERITE_HATCHET.get(), REOItems.ENDERITE_HOE.get(),
+                        REOItems.ENDERITE_PAXEL.get(), REOItems.ENDERITE_PICKAXE.get(), REOItems.ENDERITE_SHEARS.get(),
+                        REOItems.ENDERITE_SHOVEL.get(), REOItems.ENDERITE_SICKLE.get(), REOItems.ENDERITE_SWORD.get(),
+                        REOItems.ENDERITE_HELMET.get(), REOItems.ENDERITE_CHESTPLATE.get(), REOItems.ENDERITE_LEGGINGS.get(),
+                        REOItems.ENDERITE_BOOTS.get());
+
+        this.tag(REOTags.Items.GOLD_TOOLS_AND_ARMOR)
+                .add(Items.GOLDEN_AXE, REOItems.GOLDEN_BOW.get(), REOItems.GOLDEN_EXCAVATOR.get(),
+                        REOItems.GOLDEN_HAMMER.get(), REOItems.GOLDEN_HATCHET.get(), Items.GOLDEN_HOE,
+                        REOItems.GOLDEN_PAXEL.get(), Items.GOLDEN_PICKAXE, REOItems.GOLDEN_SHEARS.get(),
+                        Items.GOLDEN_SHOVEL, REOItems.GOLDEN_SICKLE.get(), Items.GOLDEN_SWORD,
+                        Items.GOLDEN_HELMET, Items.GOLDEN_CHESTPLATE, Items.GOLDEN_LEGGINGS,
+                        Items.GOLDEN_BOOTS);
+
+        this.tag(REOTags.Items.IRON_TOOLS_AND_ARMOR)
+                .add(Items.IRON_AXE, REOItems.IRON_BOW.get(), REOItems.IRON_EXCAVATOR.get(),
+                        REOItems.IRON_HAMMER.get(), REOItems.IRON_HATCHET.get(), Items.IRON_HOE,
+                        REOItems.IRON_PAXEL.get(), Items.IRON_PICKAXE, Items.SHEARS,
+                        Items.IRON_SHOVEL, REOItems.IRON_SICKLE.get(), Items.IRON_SWORD,
+                        Items.IRON_HELMET, Items.IRON_CHESTPLATE, Items.IRON_LEGGINGS, Items.IRON_BOOTS,
+                        Items.CHAINMAIL_HELMET, Items.CHAINMAIL_CHESTPLATE, Items.CHAINMAIL_LEGGINGS, Items.CHAINMAIL_BOOTS);
+
+        this.tag(REOTags.Items.NETHERITE_TOOLS_AND_ARMOR)
+                .add(Items.NETHERITE_AXE, REOItems.NETHERITE_BOW.get(), REOItems.NETHERITE_EXCAVATOR.get(),
+                        REOItems.NETHERITE_HAMMER.get(), REOItems.NETHERITE_HATCHET.get(), Items.NETHERITE_HOE,
+                        REOItems.NETHERITE_PAXEL.get(), Items.NETHERITE_PICKAXE, REOItems.NETHERITE_SHEARS.get(),
+                        Items.NETHERITE_SHOVEL, REOItems.NETHERITE_SICKLE.get(), Items.NETHERITE_SWORD,
+                        Items.NETHERITE_HELMET, Items.NETHERITE_CHESTPLATE, Items.NETHERITE_LEGGINGS,
+                        Items.NETHERITE_BOOTS);
+
+        this.tag(REOTags.Items.PERIDOT_TOOLS_AND_ARMOR)
+                .add(REOItems.PERIDOT_AXE.get(), REOItems.PERIDOT_BOW.get(), REOItems.PERIDOT_EXCAVATOR.get(),
+                        REOItems.PERIDOT_HAMMER.get(), REOItems.PERIDOT_HATCHET.get(), REOItems.PERIDOT_HOE.get(),
+                        REOItems.PERIDOT_PAXEL.get(), REOItems.PERIDOT_PICKAXE.get(), REOItems.PERIDOT_SHEARS.get(),
+                        REOItems.PERIDOT_SHOVEL.get(), REOItems.PERIDOT_SICKLE.get(), REOItems.PERIDOT_SWORD.get(),
+                        REOItems.PERIDOT_HELMET.get(), REOItems.PERIDOT_CHESTPLATE.get(), REOItems.PERIDOT_LEGGINGS.get(),
+                        REOItems.PERIDOT_BOOTS.get());
+
+        this.tag(REOTags.Items.PLATINUM_TOOLS_AND_ARMOR)
+                .add(REOItems.PLATINUM_AXE.get(), REOItems.PLATINUM_BOW.get(), REOItems.PLATINUM_EXCAVATOR.get(),
+                        REOItems.PLATINUM_HAMMER.get(), REOItems.PLATINUM_HATCHET.get(), REOItems.PLATINUM_HOE.get(),
+                        REOItems.PLATINUM_PAXEL.get(), REOItems.PLATINUM_PICKAXE.get(), REOItems.PLATINUM_SHEARS.get(),
+                        REOItems.PLATINUM_SHOVEL.get(), REOItems.PLATINUM_SICKLE.get(), REOItems.PLATINUM_SWORD.get(),
+                        REOItems.PLATINUM_HELMET.get(), REOItems.PLATINUM_CHESTPLATE.get(), REOItems.PLATINUM_LEGGINGS.get(),
+                        REOItems.PLATINUM_BOOTS.get());
+
+        this.tag(REOTags.Items.RUBY_TOOLS_AND_ARMOR)
+                .add(REOItems.RUBY_AXE.get(), REOItems.RUBY_BOW.get(), REOItems.RUBY_EXCAVATOR.get(),
+                        REOItems.RUBY_HAMMER.get(), REOItems.RUBY_HATCHET.get(), REOItems.RUBY_HOE.get(),
+                        REOItems.RUBY_PAXEL.get(), REOItems.RUBY_PICKAXE.get(), REOItems.RUBY_SHEARS.get(),
+                        REOItems.RUBY_SHOVEL.get(), REOItems.RUBY_SICKLE.get(), REOItems.RUBY_SWORD.get(),
+                        REOItems.RUBY_HELMET.get(), REOItems.RUBY_CHESTPLATE.get(), REOItems.RUBY_LEGGINGS.get(),
+                        REOItems.RUBY_BOOTS.get());
+
+        this.tag(REOTags.Items.SAPPHIRE_TOOLS_AND_ARMOR)
+                .add(REOItems.SAPPHIRE_AXE.get(), REOItems.SAPPHIRE_BOW.get(), REOItems.SAPPHIRE_EXCAVATOR.get(),
+                        REOItems.SAPPHIRE_HAMMER.get(), REOItems.SAPPHIRE_HATCHET.get(), REOItems.SAPPHIRE_HOE.get(),
+                        REOItems.SAPPHIRE_PAXEL.get(), REOItems.SAPPHIRE_PICKAXE.get(), REOItems.SAPPHIRE_SHEARS.get(),
+                        REOItems.SAPPHIRE_SHOVEL.get(), REOItems.SAPPHIRE_SICKLE.get(), REOItems.SAPPHIRE_SWORD.get(),
+                        REOItems.SAPPHIRE_HELMET.get(), REOItems.SAPPHIRE_CHESTPLATE.get(), REOItems.SAPPHIRE_LEGGINGS.get(),
+                        REOItems.SAPPHIRE_BOOTS.get());
+
+        this.tag(REOTags.Items.SILVER_TOOLS_AND_ARMOR)
+                .add(REOItems.SILVER_AXE.get(), REOItems.SILVER_BOW.get(), REOItems.SILVER_EXCAVATOR.get(),
+                        REOItems.SILVER_HAMMER.get(), REOItems.SILVER_HATCHET.get(), REOItems.SILVER_HOE.get(),
+                        REOItems.SILVER_PAXEL.get(), REOItems.SILVER_PICKAXE.get(), REOItems.SILVER_SHEARS.get(),
+                        REOItems.SILVER_SHOVEL.get(), REOItems.SILVER_SICKLE.get(), REOItems.SILVER_SWORD.get(),
+                        REOItems.SILVER_HELMET.get(), REOItems.SILVER_CHESTPLATE.get(), REOItems.SILVER_LEGGINGS.get(),
+                        REOItems.SILVER_BOOTS.get());
+
+        this.tag(REOTags.Items.STEEL_TOOLS_AND_ARMOR)
+                .add(REOItems.STEEL_AXE.get(), REOItems.STEEL_BOW.get(), REOItems.STEEL_EXCAVATOR.get(),
+                        REOItems.STEEL_HAMMER.get(), REOItems.STEEL_HATCHET.get(), REOItems.STEEL_HOE.get(),
+                        REOItems.STEEL_PAXEL.get(), REOItems.STEEL_PICKAXE.get(), REOItems.STEEL_SHEARS.get(),
+                        REOItems.STEEL_SHOVEL.get(), REOItems.STEEL_SICKLE.get(), REOItems.STEEL_SWORD.get(),
+                        REOItems.STEEL_HELMET.get(), REOItems.STEEL_CHESTPLATE.get(), REOItems.STEEL_LEGGINGS.get(),
+                        REOItems.STEEL_BOOTS.get());
+
     }
 }

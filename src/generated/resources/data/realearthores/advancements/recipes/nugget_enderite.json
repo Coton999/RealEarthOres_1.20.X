@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:enderite_sword"
-            ]
+            "tag": "realearthores:enderite_tools_and_armor"
           }
         ]
       },

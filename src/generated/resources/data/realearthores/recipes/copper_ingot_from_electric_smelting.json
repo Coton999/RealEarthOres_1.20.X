@@ -16,6 +16,12 @@
       },
       {
         "item": "realearthores:nether_copper"
+      },
+      {
+        "item": "realearthores:dust_copper"
+      },
+      {
+        "item": "realearthores:dirty_copper"
       }
     ]
   ],

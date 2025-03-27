@@ -57,6 +57,8 @@ public class REOItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> INGOT_NICKEL = ITEMS.register("ingot_nickel",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> INGOT_OBSIDIAN = ITEMS.register("ingot_obsidian",
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> INGOT_PLATINUM = ITEMS.register("ingot_platinum",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> INGOT_SILVER = ITEMS.register("ingot_silver",
@@ -159,6 +161,8 @@ public class REOItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> DUST_LEAD = ITEMS.register("dust_lead",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> DUST_NETHERITE = ITEMS.register("dust_netherite",
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> DUST_NICKEL = ITEMS.register("dust_nickel",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> DUST_OBSIDIAN = ITEMS.register("dust_obsidian",
@@ -206,6 +210,8 @@ public class REOItems {
     public static final RegistryObject<Item> DIRTY_IRON = ITEMS.register("dirty_iron",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> DIRTY_LEAD = ITEMS.register("dirty_lead",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> DIRTY_NETHERITE = ITEMS.register("dirty_netherite",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> DIRTY_NICKEL = ITEMS.register("dirty_nickel",
             () -> new Item(new Item.Properties()));

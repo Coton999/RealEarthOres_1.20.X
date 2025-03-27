@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:netherite_sword"
-            ]
+            "tag": "realearthores:netherite_tools_and_armor"
           }
         ]
       },

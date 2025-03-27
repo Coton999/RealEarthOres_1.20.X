@@ -1,53 +1,9 @@
 {
   "type": "realearthores:electric_smelting",
   "ingredients": [
-    [
-      {
-        "item": "minecraft:netherite_shovel"
-      },
-      {
-        "item": "minecraft:netherite_pickaxe"
-      },
-      {
-        "item": "minecraft:netherite_axe"
-      },
-      {
-        "item": "minecraft:netherite_hoe"
-      },
-      {
-        "item": "minecraft:netherite_sword"
-      },
-      {
-        "item": "realearthores:netherite_bow"
-      },
-      {
-        "item": "realearthores:netherite_excavator"
-      },
-      {
-        "item": "realearthores:netherite_hammer"
-      },
-      {
-        "item": "realearthores:netherite_hatchet"
-      },
-      {
-        "item": "realearthores:netherite_paxel"
-      },
-      {
-        "item": "realearthores:netherite_sickle"
-      },
-      {
-        "item": "minecraft:netherite_helmet"
-      },
-      {
-        "item": "minecraft:netherite_chestplate"
-      },
-      {
-        "item": "minecraft:netherite_leggings"
-      },
-      {
-        "item": "minecraft:netherite_boots"
-      }
-    ]
+    {
+      "tag": "realearthores:netherite_tools_and_armor"
+    }
   ],
   "result": {
     "item": "realearthores:nugget_netherite"

@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:ruby_sword"
-            ]
+            "tag": "realearthores:ruby_tools_and_armor"
           }
         ]
       },

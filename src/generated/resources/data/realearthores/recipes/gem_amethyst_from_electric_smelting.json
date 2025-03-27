@@ -7,6 +7,12 @@
       },
       {
         "item": "minecraft:amethyst_shard"
+      },
+      {
+        "item": "realearthores:dust_amethyst"
+      },
+      {
+        "item": "realearthores:dirty_amethyst"
       }
     ]
   ],

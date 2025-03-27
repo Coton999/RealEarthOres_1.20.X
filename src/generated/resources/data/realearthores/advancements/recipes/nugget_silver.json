@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:silver_sword"
-            ]
+            "tag": "realearthores:silver_tools_and_armor"
           }
         ]
       },

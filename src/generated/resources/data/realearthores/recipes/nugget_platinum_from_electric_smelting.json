@@ -1,53 +1,9 @@
 {
   "type": "realearthores:electric_smelting",
   "ingredients": [
-    [
-      {
-        "item": "realearthores:platinum_shovel"
-      },
-      {
-        "item": "realearthores:platinum_pickaxe"
-      },
-      {
-        "item": "realearthores:platinum_axe"
-      },
-      {
-        "item": "realearthores:platinum_hoe"
-      },
-      {
-        "item": "realearthores:platinum_sword"
-      },
-      {
-        "item": "realearthores:platinum_bow"
-      },
-      {
-        "item": "realearthores:platinum_excavator"
-      },
-      {
-        "item": "realearthores:platinum_hammer"
-      },
-      {
-        "item": "realearthores:platinum_hatchet"
-      },
-      {
-        "item": "realearthores:platinum_paxel"
-      },
-      {
-        "item": "realearthores:platinum_sickle"
-      },
-      {
-        "item": "realearthores:platinum_helmet"
-      },
-      {
-        "item": "realearthores:platinum_chestplate"
-      },
-      {
-        "item": "realearthores:platinum_leggings"
-      },
-      {
-        "item": "realearthores:platinum_boots"
-      }
-    ]
+    {
+      "tag": "realearthores:platinum_tools_and_armor"
+    }
   ],
   "result": {
     "item": "realearthores:nugget_platinum"

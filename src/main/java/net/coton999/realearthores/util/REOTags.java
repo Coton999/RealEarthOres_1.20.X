@@ -79,6 +79,48 @@ public class REOTags {
         public static final TagKey<Item> URANIUM_ORES = tag("uranium_ores");
         public static final TagKey<Item> ZINC_ORES = tag("zinc_ores");
 
+        // Dusts
+        public static final TagKey<Item> ALUMINIUM_DUSTS = tag("aluminium_dusts");
+        public static final TagKey<Item> AMETHYST_DUSTS = tag("amethyst_dusts");
+        public static final TagKey<Item> BRASS_DUSTS = tag("brass_dusts");
+        public static final TagKey<Item> BRONZE_DUSTS = tag("bronze_dusts");
+        public static final TagKey<Item> COPPER_DUSTS = tag("copper_dusts");
+        public static final TagKey<Item> DIAMOND_DUSTS = tag("diamond_dusts");
+        public static final TagKey<Item> ELECTRUM_DUSTS = tag("electrum_dusts");
+        public static final TagKey<Item> EMERALD_DUSTS = tag("emerald_dusts");
+        public static final TagKey<Item> ENDERITE_DUSTS = tag("enderite_dusts");
+        public static final TagKey<Item> GOLD_DUSTS = tag("gold_dusts");
+        public static final TagKey<Item> IRON_DUSTS = tag("iron_dusts");
+        public static final TagKey<Item> LEAD_DUSTS = tag("lead_dusts");
+        public static final TagKey<Item> NETHERITE_DUSTS = tag("netherite_dusts");
+        public static final TagKey<Item> NICKEL_DUSTS = tag("nickel_dusts");
+        public static final TagKey<Item> OBSIDIAN_DUSTS = tag("obsidian_dusts");
+        public static final TagKey<Item> PERIDOT_DUSTS = tag("peridot_dusts");
+        public static final TagKey<Item> PLATINUM_DUSTS = tag("platinum_dusts");
+        public static final TagKey<Item> RUBY_DUSTS = tag("ruby_dusts");
+        public static final TagKey<Item> SAPPHIRE_DUSTS = tag("sapphire_dusts");
+        public static final TagKey<Item> SILVER_DUSTS = tag("silver_dusts");
+        public static final TagKey<Item> STEEL_DUSTS = tag("steel_dusts");
+        public static final TagKey<Item> TIN_DUSTS = tag("tin_dusts");
+        public static final TagKey<Item> URANIUM_DUSTS = tag("uranium_dusts");
+        public static final TagKey<Item> ZINC_DUSTS = tag("zinc_dusts");
+
+        // Tools & Armor
+        public static final TagKey<Item> ALUMINIUM_TOOLS_AND_ARMOR = tag("aluminium_tools_and_armor");
+        public static final TagKey<Item> AMETHYST_TOOLS_AND_ARMOR = tag("amethyst_tools_and_armor");
+        public static final TagKey<Item> BRONZE_TOOLS_AND_ARMOR = tag("bronze_tools_and_armor");
+        public static final TagKey<Item> DIAMOND_TOOLS_AND_ARMOR = tag("daimond_tools_and_armor");
+        public static final TagKey<Item> ENDERITE_TOOLS_AND_ARMOR = tag("enderite_tools_and_armor");
+        public static final TagKey<Item> GOLD_TOOLS_AND_ARMOR = tag("gold_tools_and_armor");
+        public static final TagKey<Item> IRON_TOOLS_AND_ARMOR = tag("iron_tools_and_armor");
+        public static final TagKey<Item> NETHERITE_TOOLS_AND_ARMOR = tag("netherite_tools_and_armor");
+        public static final TagKey<Item> PERIDOT_TOOLS_AND_ARMOR = tag("peridot_tools_and_armor");
+        public static final TagKey<Item> PLATINUM_TOOLS_AND_ARMOR = tag("platinum_tools_and_armor");
+        public static final TagKey<Item> RUBY_TOOLS_AND_ARMOR = tag("ruby_tools_and_armor");
+        public static final TagKey<Item> SAPPHIRE_TOOLS_AND_ARMOR = tag("sapphire_tools_and_armor");
+        public static final TagKey<Item> SILVER_TOOLS_AND_ARMOR = tag("silver_tools_and_armor");
+        public static final TagKey<Item> STEEL_TOOLS_AND_ARMOR = tag("steel_tools_and_armor");
+
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(RealEarthOres.MOD_ID, name));
         }

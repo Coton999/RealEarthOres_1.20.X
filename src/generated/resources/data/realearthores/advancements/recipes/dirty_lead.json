@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ore_lead": {
+    "has_ingot_lead": {
       "conditions": {
         "items": [
           {
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_ore_lead",
+      "has_ingot_lead",
       "has_the_recipe"
     ]
   ],

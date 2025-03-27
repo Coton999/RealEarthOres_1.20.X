@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:ore_platinum"
-            ]
+            "tag": "realearthores:platinum_ores"
           }
         ]
       },

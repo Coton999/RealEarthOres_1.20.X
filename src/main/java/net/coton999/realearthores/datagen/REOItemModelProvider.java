@@ -63,6 +63,7 @@ public class REOItemModelProvider extends ItemModelProvider {
         ingotItem(REOItems.INGOT_ENDERITE);
         ingotItem(REOItems.INGOT_LEAD);
         ingotItem(REOItems.INGOT_NICKEL);
+        ingotItem(REOItems.INGOT_OBSIDIAN);
         ingotItem(REOItems.INGOT_PLATINUM);
         ingotItem(REOItems.INGOT_SILVER);
         ingotItem(REOItems.INGOT_STEEL);
@@ -163,6 +164,7 @@ public class REOItemModelProvider extends ItemModelProvider {
         dustItem(REOItems.DUST_GOLD);
         dustItem(REOItems.DUST_IRON);
         dustItem(REOItems.DUST_LEAD);
+        dustItem(REOItems.DUST_NETHERITE);
         dustItem(REOItems.DUST_NICKEL);
         dustItem(REOItems.DUST_OBSIDIAN);
         dustItem(REOItems.DUST_PERIDOT);
@@ -188,6 +190,7 @@ public class REOItemModelProvider extends ItemModelProvider {
         dirtyDustItem(REOItems.DIRTY_GOLD);
         dirtyDustItem(REOItems.DIRTY_IRON);
         dirtyDustItem(REOItems.DIRTY_LEAD);
+        dirtyDustItem(REOItems.DIRTY_NETHERITE);
         dirtyDustItem(REOItems.DIRTY_NICKEL);
         dirtyDustItem(REOItems.DIRTY_OBSIDIAN);
         dirtyDustItem(REOItems.DIRTY_PERIDOT);

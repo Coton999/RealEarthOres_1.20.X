@@ -13,6 +13,12 @@
       },
       {
         "item": "realearthores:nether_emerald"
+      },
+      {
+        "item": "realearthores:dust_emerald"
+      },
+      {
+        "item": "realearthores:dirty_emerald"
       }
     ]
   ],

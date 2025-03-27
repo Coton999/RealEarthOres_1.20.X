@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:golden_sword"
-            ]
+            "tag": "realearthores:gold_tools_and_armor"
           }
         ]
       },

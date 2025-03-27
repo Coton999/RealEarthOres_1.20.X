@@ -16,6 +16,12 @@
       },
       {
         "item": "realearthores:nether_iron"
+      },
+      {
+        "item": "realearthores:dust_iron"
+      },
+      {
+        "item": "realearthores:dirty_iron"
       }
     ]
   ],

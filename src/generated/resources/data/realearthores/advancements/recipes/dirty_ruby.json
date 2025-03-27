@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cluster_ruby": {
+    "has_gem_ruby": {
       "conditions": {
         "items": [
           {
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_cluster_ruby",
+      "has_gem_ruby",
       "has_the_recipe"
     ]
   ],

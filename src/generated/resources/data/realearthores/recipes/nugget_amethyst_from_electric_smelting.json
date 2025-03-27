@@ -1,53 +1,9 @@
 {
   "type": "realearthores:electric_smelting",
   "ingredients": [
-    [
-      {
-        "item": "realearthores:amethyst_shovel"
-      },
-      {
-        "item": "realearthores:amethyst_pickaxe"
-      },
-      {
-        "item": "realearthores:amethyst_axe"
-      },
-      {
-        "item": "realearthores:amethyst_hoe"
-      },
-      {
-        "item": "realearthores:amethyst_sword"
-      },
-      {
-        "item": "realearthores:amethyst_bow"
-      },
-      {
-        "item": "realearthores:amethyst_excavator"
-      },
-      {
-        "item": "realearthores:amethyst_hammer"
-      },
-      {
-        "item": "realearthores:amethyst_hatchet"
-      },
-      {
-        "item": "realearthores:amethyst_paxel"
-      },
-      {
-        "item": "realearthores:amethyst_sickle"
-      },
-      {
-        "item": "realearthores:amethyst_helmet"
-      },
-      {
-        "item": "realearthores:amethyst_chestplate"
-      },
-      {
-        "item": "realearthores:amethyst_leggings"
-      },
-      {
-        "item": "realearthores:amethyst_boots"
-      }
-    ]
+    {
+      "tag": "realearthores:amethyst_tools_and_armor"
+    }
   ],
   "result": {
     "item": "realearthores:nugget_amethyst"

@@ -13,6 +13,12 @@
       },
       {
         "item": "realearthores:nether_zinc"
+      },
+      {
+        "item": "realearthores:dust_zinc"
+      },
+      {
+        "item": "realearthores:dirty_zinc"
       }
     ]
   ],

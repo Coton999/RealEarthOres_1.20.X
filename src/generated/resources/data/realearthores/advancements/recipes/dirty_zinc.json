@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ore_zinc": {
+    "has_ingot_zinc": {
       "conditions": {
         "items": [
           {
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_ore_zinc",
+      "has_ingot_zinc",
       "has_the_recipe"
     ]
   ],
