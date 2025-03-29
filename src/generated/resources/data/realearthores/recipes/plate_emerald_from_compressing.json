@@ -1,0 +1,13 @@
+{
+  "type": "realearthores:compressing",
+  "ingredients": [
+    {
+      "type": "forge:nbt",
+      "count": 3,
+      "item": "minecraft:emerald"
+    }
+  ],
+  "result": {
+    "item": "realearthores:plate_emerald"
+  }
+}

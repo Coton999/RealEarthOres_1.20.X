@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:extracting",
+  "ingredients": [
+    {
+      "tag": "minecraft:logs_that_burn"
+    }
+  ],
+  "result": {
+    "item": "realearthores:sap"
+  }
+}
