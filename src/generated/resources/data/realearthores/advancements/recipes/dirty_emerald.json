@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_emerald": {
+    "has_ore_emerald": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:emerald"
-            ]
+            "tag": "minecraft:emerald_ores"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_emerald",
+      "has_ore_emerald",
       "has_the_recipe"
     ]
   ],

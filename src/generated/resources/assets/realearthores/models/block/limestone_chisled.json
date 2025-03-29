@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "realearthores:block/building_blocks/limestone/limestone_chiseled"
+    "all": "realearthores:block/building_blocks/limestone/limestone_brick_chiseled"
   }
 }

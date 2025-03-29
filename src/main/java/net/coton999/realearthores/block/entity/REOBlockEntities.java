@@ -2,7 +2,10 @@ package net.coton999.realearthores.block.entity;
 
 import net.coton999.realearthores.RealEarthOres;
 import net.coton999.realearthores.block.REOBlocks;
-import net.coton999.realearthores.block.entity.machines.coal.*;
+import net.coton999.realearthores.block.entity.machines.coal.BasicCrusherBlockEntity;
+import net.coton999.realearthores.block.entity.machines.coal.BasicExtractorBlockEntity;
+import net.coton999.realearthores.block.entity.machines.coal.BasicPurifierBlockEntity;
+import net.coton999.realearthores.block.entity.machines.coal.KilnBlockEntity;
 import net.coton999.realearthores.block.entity.machines.electric.basic.*;
 import net.coton999.realearthores.block.entity.signs.REOHangingSignBlockEntity;
 import net.coton999.realearthores.block.entity.signs.REOSignBlockEntity;
@@ -34,10 +37,10 @@ public class REOBlockEntities {
                     BlockEntityType.Builder.of(BasicExtractorBlockEntity::new,
                             REOBlocks.EXTRACTOR.get()).build(null));
 
-    public static final RegistryObject<BlockEntityType<BasicCompressorBlockEntity>> BASIC_COMPRESSOR_BE =
+    public static final RegistryObject<BlockEntityType<BasicPurifierBlockEntity>> BASIC_PURIFIER_BE =
             BLOCK_ENTITIES.register("basic_compressor_block_entity", () ->
-                    BlockEntityType.Builder.of(BasicCompressorBlockEntity::new,
-                            REOBlocks.COMPRESSOR.get()).build(null));
+                    BlockEntityType.Builder.of(BasicPurifierBlockEntity::new,
+                            REOBlocks.PURIFIER.get()).build(null));
 
     // Electric
     public static final RegistryObject<BlockEntityType<ElectricFurnaceBlockEntity>> ELECTRIC_FURNACE_BE =

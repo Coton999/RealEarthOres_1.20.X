@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "realearthores:marble_brick"
-  },
-  "result": "realearthores:lmarble_brick_slab"
-}

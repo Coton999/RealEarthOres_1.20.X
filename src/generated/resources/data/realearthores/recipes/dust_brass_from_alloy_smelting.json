@@ -8,8 +8,8 @@
     },
     {
       "type": "forge:nbt",
-      "count": 3,
-      "item": "realearthores:dust_tin"
+      "count": 2,
+      "item": "realearthores:dust_zinc"
     }
   ],
   "result": {

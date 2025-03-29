@@ -1,24 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dust_copper": {
+    "has_dirty_bronze": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:dust_copper"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_dust_zinc": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "realearthores:dust_zinc"
+              "realearthores:dirty_bronze"
             ]
           }
         ]
@@ -34,8 +22,7 @@
   },
   "requirements": [
     [
-      "has_dust_copper",
-      "has_dust_zinc",
+      "has_dirty_bronze",
       "has_the_recipe"
     ]
   ],
@@ -44,5 +31,5 @@
       "realearthores:dust_bronze"
     ]
   },
-  "sends_telemetry_event": true
+  "sends_telemetry_event": false
 }

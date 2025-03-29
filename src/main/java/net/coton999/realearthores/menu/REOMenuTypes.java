@@ -1,7 +1,10 @@
 package net.coton999.realearthores.menu;
 
 import net.coton999.realearthores.RealEarthOres;
-import net.coton999.realearthores.menu.machines.coal.*;
+import net.coton999.realearthores.menu.machines.coal.BasicCrusherMenu;
+import net.coton999.realearthores.menu.machines.coal.BasicExtractorMenu;
+import net.coton999.realearthores.menu.machines.coal.BasicPurifierMenu;
+import net.coton999.realearthores.menu.machines.coal.KilnMenu;
 import net.coton999.realearthores.menu.machines.electric.basic.*;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
@@ -26,8 +29,8 @@ public class REOMenuTypes {
     public static final RegistryObject<MenuType<BasicExtractorMenu>> BASIC_EXTRACTOR_MENU =
             registerMenuType(BasicExtractorMenu::new, "basic_extractor_menu");
 
-    public static final RegistryObject<MenuType<BasicCompressorMenu>> BASIC_COMPRESSOR_MENU =
-            registerMenuType(BasicCompressorMenu::new, "basic_compressor_menu");
+    public static final RegistryObject<MenuType<BasicPurifierMenu>> BASIC_PURIFIER_MENU =
+            registerMenuType(BasicPurifierMenu::new, "basic_purifier_menu");
 
     // Electric
     public static final RegistryObject<MenuType<ElectricFurnaceMenu>> ELECTRIC_FURNACE_MENU =

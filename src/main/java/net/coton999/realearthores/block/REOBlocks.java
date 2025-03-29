@@ -10,7 +10,10 @@ import net.coton999.realearthores.block.custom.cluster.BuddingSapphireBlock;
 import net.coton999.realearthores.block.custom.cluster.ClusterBlock;
 import net.coton999.realearthores.block.custom.crop.food.*;
 import net.coton999.realearthores.block.custom.fruit.*;
-import net.coton999.realearthores.block.custom.machines.coal.*;
+import net.coton999.realearthores.block.custom.machines.coal.BasicCrusherBlock;
+import net.coton999.realearthores.block.custom.machines.coal.BasicExtractorBlock;
+import net.coton999.realearthores.block.custom.machines.coal.BasicPurifierBlock;
+import net.coton999.realearthores.block.custom.machines.coal.KilnBlock;
 import net.coton999.realearthores.block.custom.machines.electric.*;
 import net.coton999.realearthores.block.custom.misc.GravelOreBlock;
 import net.coton999.realearthores.block.custom.misc.LampBlock;
@@ -54,9 +57,9 @@ public class REOBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS).requiresCorrectToolForDrops().strength(1.5f)));
     public static final RegistryObject<Block> MARBLE_BRICK_MOSSY = registerBlock("marble_brick_mossy",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.MOSSY_STONE_BRICKS).requiresCorrectToolForDrops().strength(1.5f)));
-    public static final RegistryObject<Block> MARBLE_CHISELED = registerBlock("marble_chiseled",
+    public static final RegistryObject<Block> MARBLE_BRICK_CHISELED = registerBlock("marble_brick_chiseled",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.CHISELED_STONE_BRICKS).requiresCorrectToolForDrops().strength(1.5f)));
-    public static final RegistryObject<Block> MARBLE_CRACKED = registerBlock("marble_cracked",
+    public static final RegistryObject<Block> MARBLE_BRICK_CRACKED = registerBlock("marble_brick_cracked",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.CRACKED_STONE_BRICKS).requiresCorrectToolForDrops().strength(1.5f)));
 
     public static final RegistryObject<Block> MARBLE_STAIRS = registerBlock("marble_stairs",
@@ -74,7 +77,7 @@ public class REOBlocks {
 
     public static final RegistryObject<Block> MARBLE_SLAB = registerBlock("marble_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_SLAB).sound(SoundType.STONE)));
-    public static final RegistryObject<Block> MARBLE_BRICK_SLAB = registerBlock("lmarble_brick_slab",
+    public static final RegistryObject<Block> MARBLE_BRICK_SLAB = registerBlock("marble_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).sound(SoundType.STONE)));
     public static final RegistryObject<Block> MARBLE_COBBLE_SLAB = registerBlock("marble_cobble_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_SLAB).sound(SoundType.STONE)));
@@ -102,9 +105,9 @@ public class REOBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS).requiresCorrectToolForDrops().strength(1.5f)));
     public static final RegistryObject<Block> LIMESTONE_BRICK_MOSSY = registerBlock("limestone_brick_mossy",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.MOSSY_STONE_BRICKS).requiresCorrectToolForDrops().strength(1.5f)));
-    public static final RegistryObject<Block> LIMESTONE_CHISELED = registerBlock("limestone_chiseled",
+    public static final RegistryObject<Block> LIMESTONE_BRICK_CHISELED = registerBlock("limestone_brick_chiseled",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.CHISELED_STONE_BRICKS).requiresCorrectToolForDrops().strength(1.5f)));
-    public static final RegistryObject<Block> LIMESTONE_CRACKED = registerBlock("limestone_cracked",
+    public static final RegistryObject<Block> LIMESTONE_BRICK_CRACKED = registerBlock("limestone_brick_cracked",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.CRACKED_STONE_BRICKS).requiresCorrectToolForDrops().strength(1.5f)));
 
     public static final RegistryObject<Block> LIMESTONE_STAIRS = registerBlock("limestone_stairs",
@@ -2268,27 +2271,27 @@ public class REOBlocks {
     // Coal
     public static final RegistryObject<Block> KILN = registerBlock("kiln",
             () -> new KilnBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
-                    .lightLevel((state) -> state.getValue(CrusherBlock.LIT) ? 13 : 0).noOcclusion()));
+                    .lightLevel((state) -> state.getValue(KilnBlock.LIT) ? 13 : 0).noOcclusion()));
     public static final RegistryObject<Block> CRUSHER = registerBlock("crusher",
             () -> new BasicCrusherBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
-                    .lightLevel((state) -> state.getValue(CrusherBlock.LIT) ? 13 : 0).noOcclusion()));
+                    .lightLevel((state) -> state.getValue(BasicCrusherBlock.LIT) ? 13 : 0).noOcclusion()));
     public static final RegistryObject<Block> EXTRACTOR = registerBlock("extractor",
             () -> new BasicExtractorBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
-                    .lightLevel((state) -> state.getValue(SawmillBlock.LIT) ? 13 : 0).noOcclusion()));
-    public static final RegistryObject<Block> COMPRESSOR = registerBlock("compressor",
-            () -> new BasicCompressorBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
-                    .lightLevel((state) -> state.getValue(SawmillBlock.LIT) ? 13 : 0).noOcclusion()));
+                    .lightLevel((state) -> state.getValue(BasicExtractorBlock.LIT) ? 13 : 0).noOcclusion()));
+    public static final RegistryObject<Block> PURIFIER = registerBlock("purifier",
+            () -> new BasicPurifierBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .lightLevel((state) -> state.getValue(BasicPurifierBlock.LIT) ? 13 : 0).noOcclusion()));
 
     // Electric
     public static final RegistryObject<Block> ELECTRIC_FURNACE = registerBlock("electric_furnace",
             () -> new ElectricFurnaceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
-                    .lightLevel((state) -> state.getValue(CrusherBlock.LIT) ? 13 : 0).noOcclusion()));
+                    .lightLevel((state) -> state.getValue(ElectricFurnaceBlock.LIT) ? 13 : 0).noOcclusion()));
     public static final RegistryObject<Block> ELECTRIC_CRUSHER = registerBlock("electric_crusher",
             () -> new CrusherBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
                     .lightLevel((state) -> state.getValue(CrusherBlock.LIT) ? 13 : 0).noOcclusion()));
     public static final RegistryObject<Block> ELECTRIC_PURIFIER = registerBlock("electric_purifier",
             () -> new PurifierBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
-                    .lightLevel((state) -> state.getValue(SawmillBlock.LIT) ? 13 : 0).noOcclusion()));
+                    .lightLevel((state) -> state.getValue(PurifierBlock.LIT) ? 13 : 0).noOcclusion()));
     public static final RegistryObject<Block> ELECTRIC_ALLOY_FURNACE = registerBlock("electric_alloy_furnace",
             () -> new AlloyFurnaceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
                     .lightLevel((state) -> state.getValue(AlloyFurnaceBlock.LIT) ? 13 : 0).noOcclusion()));
@@ -2297,19 +2300,19 @@ public class REOBlocks {
                     .lightLevel((state) -> state.getValue(SawmillBlock.LIT) ? 13 : 0).noOcclusion()));
     public static final RegistryObject<Block> ELECTRIC_EXTRACTOR = registerBlock("electric_extractor",
             () -> new ExtractorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
-                    .lightLevel((state) -> state.getValue(SawmillBlock.LIT) ? 13 : 0).noOcclusion()));
+                    .lightLevel((state) -> state.getValue(ExtractorBlock.LIT) ? 13 : 0).noOcclusion()));
     public static final RegistryObject<Block> ELECTRIC_COMPRESSOR = registerBlock("electric_compressor",
             () -> new CompressorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
-                    .lightLevel((state) -> state.getValue(SawmillBlock.LIT) ? 13 : 0).noOcclusion()));
+                    .lightLevel((state) -> state.getValue(CompressorBlock.LIT) ? 13 : 0).noOcclusion()));
     public static final RegistryObject<Block> ELECTRIC_CENTRIFUGE = registerBlock("electric_centrifuge",
             () -> new CentrifugeBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
-                    .lightLevel((state) -> state.getValue(SawmillBlock.LIT) ? 13 : 0).noOcclusion()));
+                    .lightLevel((state) -> state.getValue(CentrifugeBlock.LIT) ? 13 : 0).noOcclusion()));
     public static final RegistryObject<Block> ELECTRIC_INDUCTION_FURNACE = registerBlock("electric_induction_furnace",
             () -> new InductionFurnaceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
-                    .lightLevel((state) -> state.getValue(AlloyFurnaceBlock.LIT) ? 13 : 0).noOcclusion()));
+                    .lightLevel((state) -> state.getValue(InductionFurnaceBlock.LIT) ? 13 : 0).noOcclusion()));
     public static final RegistryObject<Block> ELECTRIC_TRANSFUSER = registerBlock("electric_transfuser",
             () -> new TransfuserBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
-                    .lightLevel((state) -> state.getValue(AlloyFurnaceBlock.LIT) ? 13 : 0).noOcclusion()));
+                    .lightLevel((state) -> state.getValue(TransfuserBlock.LIT) ? 13 : 0).noOcclusion()));
 
 
 

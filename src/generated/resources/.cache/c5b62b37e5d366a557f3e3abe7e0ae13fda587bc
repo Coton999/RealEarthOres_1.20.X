@@ -1,4 +1,4 @@
-// 1.20.1	2025-03-27T12:35:56.953185	Item Models: realearthores
+// 1.20.1	2025-03-28T10:32:14.8718585	Item Models: realearthores
 8a12a4df5de32d2c3d1a3fb869fba17d0a0dd6d4 assets/realearthores/models/item/aluminium_axe.json
 d2718c330ab58e38517168b9246986572ac5816f assets/realearthores/models/item/aluminium_boots.json
 0425bc54cf771c8a19b4ca13054da496e19bdafe assets/realearthores/models/item/aluminium_chestplate.json
@@ -852,7 +852,7 @@ b7042abfd8753248c1dbf17ff6a99ed0356dd0eb assets/realearthores/models/item/lumino
 70ebaececc40326a76a30a298415fd2683fbb5a2 assets/realearthores/models/item/luminous_red.json
 a800ebbbaec52da407c34c4c7821796571d88646 assets/realearthores/models/item/luminous_white.json
 d499a92148cc2e0bac2ffaea480525362ae1d18a assets/realearthores/models/item/luminous_yellow.json
-091e99f2c3f5f208e4ad2cd9d90b806b86fb5303 assets/realearthores/models/item/marble_brick.json
+7bbad4f1ba26c51a183b90656c4a14f76e253c12 assets/realearthores/models/item/marble_brick_slab.json
 167fc4af20e5a95a98c206d64c9e9ad624eaf273 assets/realearthores/models/item/marble_brick_stairs.json
 928fa2578a5e03667e68beef516c1784da875e93 assets/realearthores/models/item/marble_brick_wall.json
 98539940f6ac663d3bc369561b145b6e4801fc9c assets/realearthores/models/item/marble_cobble_mossy_slab.json

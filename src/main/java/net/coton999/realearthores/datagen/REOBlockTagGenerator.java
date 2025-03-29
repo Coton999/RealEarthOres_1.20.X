@@ -62,7 +62,7 @@ public class REOBlockTagGenerator extends BlockTagsProvider {
 
                         REOBlocks.MARBLE.get(),
                         REOBlocks.MARBLE_COBBLE.get(), REOBlocks.MARBLE_COBBLE_MOSSY.get(), REOBlocks.MARBLE_BRICK.get(),
-                        REOBlocks.MARBLE_BRICK_MOSSY.get(), REOBlocks.MARBLE_CHISELED.get(), REOBlocks.MARBLE_CRACKED.get(),
+                        REOBlocks.MARBLE_BRICK_MOSSY.get(), REOBlocks.MARBLE_BRICK_CHISELED.get(), REOBlocks.MARBLE_BRICK_CRACKED.get(),
 
                         REOBlocks.MARBLE_STAIRS.get(), REOBlocks.MARBLE_COBBLE_STAIRS.get(), REOBlocks.MARBLE_COBBLE_MOSSY_STAIRS.get(),
                         REOBlocks.MARBLE_SLAB.get(), REOBlocks.MARBLE_COBBLE_SLAB.get(), REOBlocks.MARBLE_COBBLE_MOSSY_SLAB.get(),
@@ -70,7 +70,7 @@ public class REOBlockTagGenerator extends BlockTagsProvider {
 
                         REOBlocks.LIMESTONE.get(),
                         REOBlocks.LIMESTONE_COBBLE.get(), REOBlocks.LIMESTONE_COBBLE_MOSSY.get(), REOBlocks.LIMESTONE_BRICK.get(),
-                        REOBlocks.LIMESTONE_BRICK_MOSSY.get(), REOBlocks.LIMESTONE_CHISELED.get(), REOBlocks.LIMESTONE_CRACKED.get(),
+                        REOBlocks.LIMESTONE_BRICK_MOSSY.get(), REOBlocks.LIMESTONE_BRICK_CHISELED.get(), REOBlocks.LIMESTONE_BRICK_CRACKED.get(),
 
                         REOBlocks.LIMESTONE_STAIRS.get(), REOBlocks.LIMESTONE_COBBLE_STAIRS.get(), REOBlocks.LIMESTONE_COBBLE_MOSSY_STAIRS.get(),
                         REOBlocks.LIMESTONE_SLAB.get(), REOBlocks.LIMESTONE_COBBLE_SLAB.get(), REOBlocks.LIMESTONE_COBBLE_MOSSY_SLAB.get(),
@@ -84,7 +84,7 @@ public class REOBlockTagGenerator extends BlockTagsProvider {
                         REOBlocks.BLOCK_RAW_NICKEL.get(), REOBlocks.BLOCK_RAW_PLATINUM.get(), REOBlocks.BLOCK_RAW_SILVER.get(),
                         REOBlocks.BLOCK_RAW_TIN.get(), REOBlocks.BLOCK_RAW_URANIUM.get(), REOBlocks.BLOCK_RAW_ZINC.get(),
 
-                        REOBlocks.KILN.get(), REOBlocks.CRUSHER.get(), REOBlocks.EXTRACTOR.get(), REOBlocks.COMPRESSOR.get(),
+                        REOBlocks.KILN.get(), REOBlocks.CRUSHER.get(), REOBlocks.EXTRACTOR.get(), REOBlocks.PURIFIER.get(),
 
                         REOBlocks.ELECTRIC_FURNACE.get(), REOBlocks.ELECTRIC_CRUSHER.get(), REOBlocks.ELECTRIC_PURIFIER.get(),
                         REOBlocks.ELECTRIC_ALLOY_FURNACE.get(), REOBlocks.ELECTRIC_SAWMILL.get(), REOBlocks.ELECTRIC_EXTRACTOR.get(),

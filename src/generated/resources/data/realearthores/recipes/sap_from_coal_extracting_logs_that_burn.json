@@ -1,9 +1,0 @@
-{
-  "type": "realearthores:basic_extracting",
-  "cookingtime": 400,
-  "experience": 0.3,
-  "ingredient": {
-    "tag": "minecraft:logs_that_burn"
-  },
-  "result": "realearthores:sap"
-}

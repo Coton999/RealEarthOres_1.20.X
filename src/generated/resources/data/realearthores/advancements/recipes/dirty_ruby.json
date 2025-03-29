@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_gem_ruby": {
+    "has_cluster_ruby": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:gem_ruby"
+              "realearthores:cluster_ruby"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_gem_ruby",
+      "has_cluster_ruby",
       "has_the_recipe"
     ]
   ],

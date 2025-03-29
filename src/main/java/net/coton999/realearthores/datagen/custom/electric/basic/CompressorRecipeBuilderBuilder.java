@@ -15,21 +15,20 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
+import net.minecraftforge.common.crafting.StrictNBTIngredient;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import javax.annotation.Nullable;
 import java.util.function.Consumer;
 
 public class CompressorRecipeBuilderBuilder implements RecipeBuilder {
-    private final Item input;
     private final Item result;
-    private final Ingredient ingredient;
+    private final StrictNBTIngredient ingredient;
     private final int count;
     private final Advancement.Builder advancement = Advancement.Builder.advancement();
 
-    public CompressorRecipeBuilderBuilder(ItemLike pResult, ItemLike pIngredient, ItemLike pInput, int pCount) {
-        this.ingredient = Ingredient.of(pIngredient);
-        this.input = pInput.asItem();
+    public CompressorRecipeBuilderBuilder(ItemLike pResult, StrictNBTIngredient pIngredient, int pCount) {
+        this.ingredient = pIngredient;
         this.result = pResult.asItem();
         this.count = pCount;
     }
@@ -56,7 +55,7 @@ public class CompressorRecipeBuilderBuilder implements RecipeBuilder {
                 .addCriterion("has_the_recipe", RecipeUnlockedTrigger.unlocked(pRecipeId))
                 .rewards(AdvancementRewards.Builder.recipe(pRecipeId)).requirements(RequirementsStrategy.OR);
 
-        pFinishedRecipeConsumer.accept(new Result(pRecipeId, this.input, this.result, this.count, this.ingredient,
+        pFinishedRecipeConsumer.accept(new Result(pRecipeId, this.result, this.count, this.ingredient,
                 this.advancement, new ResourceLocation(pRecipeId.getNamespace(), "recipes/"
                 + pRecipeId.getPath())));
 
@@ -64,17 +63,15 @@ public class CompressorRecipeBuilderBuilder implements RecipeBuilder {
 
     public static class Result implements FinishedRecipe {
         private final ResourceLocation id;
-        private final Item input;
         private final Item result;
         private final Ingredient ingredient;
         private final int count;
         private final Advancement.Builder advancement;
         private final ResourceLocation advancementId;
 
-        public Result(ResourceLocation pId,Item pInput, Item pResult, int pCount, Ingredient ingredient,
+        public Result(ResourceLocation pId, Item pResult, int pCount, Ingredient ingredient,
                       Advancement.Builder pAdvancement, ResourceLocation pAdvancementId) {
             this.id = pId;
-            this.input = pInput;
             this.result = pResult;
             this.count = pCount;
             this.ingredient = ingredient;
@@ -100,7 +97,7 @@ public class CompressorRecipeBuilderBuilder implements RecipeBuilder {
         @Override
         public ResourceLocation getId() {
             return new ResourceLocation(RealEarthOres.MOD_ID,
-                    ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_compressing_" + this.input);
+                    ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_compressing");
         }
 
         @Override

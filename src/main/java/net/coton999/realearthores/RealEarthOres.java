@@ -13,9 +13,9 @@ import net.coton999.realearthores.item.REOItemProperties;
 import net.coton999.realearthores.item.REOItems;
 import net.coton999.realearthores.menu.REOMenuTypes;
 import net.coton999.realearthores.recipe.REORecipes;
-import net.coton999.realearthores.screen.machines.coal.BasicCompressorScreen;
 import net.coton999.realearthores.screen.machines.coal.BasicCrusherScreen;
 import net.coton999.realearthores.screen.machines.coal.BasicExtractorScreen;
+import net.coton999.realearthores.screen.machines.coal.BasicPurifierScreen;
 import net.coton999.realearthores.screen.machines.coal.KilnScreen;
 import net.coton999.realearthores.screen.machines.electric.basic.*;
 import net.coton999.realearthores.util.REOWoodTypes;
@@ -222,7 +222,7 @@ public class RealEarthOres {
 
             MenuScreens.register(REOMenuTypes.KILN_MENU.get(), KilnScreen::new);
             MenuScreens.register(REOMenuTypes.BASIC_CRUSHER_MENU.get(), BasicCrusherScreen::new);
-            MenuScreens.register(REOMenuTypes.BASIC_COMPRESSOR_MENU.get(), BasicCompressorScreen::new);
+            MenuScreens.register(REOMenuTypes.BASIC_PURIFIER_MENU.get(), BasicPurifierScreen::new);
             MenuScreens.register(REOMenuTypes.BASIC_EXTRACTOR_MENU.get(), BasicExtractorScreen::new);
 
             MenuScreens.register(REOMenuTypes.ELECTRIC_FURNACE_MENU.get(), ElectricFurnaceScreen::new);

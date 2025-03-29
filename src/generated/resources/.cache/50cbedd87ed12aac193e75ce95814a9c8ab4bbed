@@ -1,4 +1,4 @@
-// 1.20.1	2025-03-20T11:51:21.436266	Tags for minecraft:block mod id realearthores
+// 1.20.1	2025-03-28T10:28:14.5452547	Tags for minecraft:block mod id realearthores
 f9f636a48e4edbac85ba2f83067d77844720d026 data/minecraft/tags/blocks/all_hanging_signs.json
 06e3aaf1abe7639e714f2f5f7491920f54b24635 data/minecraft/tags/blocks/all_signs.json
 d1a169c3f25dd5f3671cfe1796bb5b2cbfd0a457 data/minecraft/tags/blocks/crops.json
@@ -6,7 +6,7 @@ d1a169c3f25dd5f3671cfe1796bb5b2cbfd0a457 data/minecraft/tags/blocks/crops.json
 f936c5bd4031c32aa955ed776cd7610149b72cfe data/minecraft/tags/blocks/leaves.json
 0fe3190f4bd93357773fa0a06947459add643697 data/minecraft/tags/blocks/logs.json
 eb8ee750931fa1de70d07b9e65b3f659c701ca93 data/minecraft/tags/blocks/logs_that_burn.json
-c0060c9e91c39311b679ac7fdf7aa2dd406f1ead data/minecraft/tags/blocks/mineable/pickaxe.json
+2d97cde663a3c36e28caa6db623c2ea3b6585997 data/minecraft/tags/blocks/mineable/pickaxe.json
 4d6004d516ce558c39e5a4f6c2fb22a0f4fad06d data/minecraft/tags/blocks/mineable/shovel.json
 400813903029d8108a03c093efb09a1e83fb63b0 data/minecraft/tags/blocks/needs_diamond_tool.json
 b24600d582e819f20c8218a968a3e5e4766e51e6 data/minecraft/tags/blocks/needs_iron_tool.json

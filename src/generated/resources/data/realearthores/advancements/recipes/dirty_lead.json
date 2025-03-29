@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ingot_lead": {
+    "has_ore_lead": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:ingot_lead"
-            ]
+            "tag": "realearthores:lead_ores"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_ingot_lead",
+      "has_ore_lead",
       "has_the_recipe"
     ]
   ],

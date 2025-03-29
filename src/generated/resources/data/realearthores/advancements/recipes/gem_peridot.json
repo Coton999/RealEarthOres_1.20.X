@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_amethyst_cluster": {
+    "has_cluster_peridot": {
       "conditions": {
         "items": [
           {
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_amethyst_cluster",
+      "has_cluster_peridot",
       "has_the_recipe"
     ]
   ],

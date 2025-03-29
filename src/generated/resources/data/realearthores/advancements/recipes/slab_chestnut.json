@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_balsa_planks": {
+    "has_planks_chestnut": {
       "conditions": {
         "items": [
           {
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_balsa_planks",
+      "has_planks_chestnut",
       "has_the_recipe"
     ]
   ],

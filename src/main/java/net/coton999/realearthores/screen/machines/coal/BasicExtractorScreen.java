@@ -2,7 +2,6 @@ package net.coton999.realearthores.screen.machines.coal;
 
 import net.coton999.realearthores.RealEarthOres;
 import net.coton999.realearthores.menu.machines.coal.BasicExtractorMenu;
-import net.coton999.realearthores.menu.machines.coal.KilnMenu;
 import net.coton999.realearthores.recipe.machines.coal.KilnRecipeBookComponent;
 import net.minecraft.client.gui.screens.inventory.AbstractFurnaceScreen;
 import net.minecraft.network.chat.Component;

@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ingot_nickel": {
+    "has_ore_nickel": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:ingot_nickel"
-            ]
+            "tag": "realearthores:nickel_ores"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_ingot_nickel",
+      "has_ore_nickel",
       "has_the_recipe"
     ]
   ],

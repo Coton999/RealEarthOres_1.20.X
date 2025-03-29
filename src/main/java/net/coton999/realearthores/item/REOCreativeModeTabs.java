@@ -253,8 +253,8 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.MARBLE_COBBLE_MOSSY.get());
                         pOutput.accept(REOBlocks.MARBLE_BRICK.get());
                         pOutput.accept(REOBlocks.MARBLE_BRICK_MOSSY.get());
-                        pOutput.accept(REOBlocks.MARBLE_CHISELED.get());
-                        pOutput.accept(REOBlocks.MARBLE_CRACKED.get());
+                        pOutput.accept(REOBlocks.MARBLE_BRICK_CHISELED.get());
+                        pOutput.accept(REOBlocks.MARBLE_BRICK_CRACKED.get());
 
                         pOutput.accept(REOBlocks.MARBLE_STAIRS.get());
                         pOutput.accept(REOBlocks.MARBLE_BRICK_STAIRS.get());
@@ -277,8 +277,8 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.LIMESTONE_COBBLE_MOSSY.get());
                         pOutput.accept(REOBlocks.LIMESTONE_BRICK.get());
                         pOutput.accept(REOBlocks.LIMESTONE_BRICK_MOSSY.get());
-                        pOutput.accept(REOBlocks.LIMESTONE_CHISELED.get());
-                        pOutput.accept(REOBlocks.LIMESTONE_CRACKED.get());
+                        pOutput.accept(REOBlocks.LIMESTONE_BRICK_CHISELED.get());
+                        pOutput.accept(REOBlocks.LIMESTONE_BRICK_CRACKED.get());
 
                         pOutput.accept(REOBlocks.LIMESTONE_STAIRS.get());
                         pOutput.accept(REOBlocks.LIMESTONE_BRICK_STAIRS.get());
@@ -1621,7 +1621,7 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.KILN.get());
                         pOutput.accept(REOBlocks.CRUSHER.get());
                         pOutput.accept(REOBlocks.EXTRACTOR.get());
-                        pOutput.accept(REOBlocks.COMPRESSOR.get());
+                        pOutput.accept(REOBlocks.PURIFIER.get());
 
                         // Electric
                         pOutput.accept(REOBlocks.ELECTRIC_FURNACE.get());

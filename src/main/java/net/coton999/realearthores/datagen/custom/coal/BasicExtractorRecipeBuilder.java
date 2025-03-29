@@ -26,16 +26,14 @@ public class BasicExtractorRecipeBuilder implements RecipeBuilder {
     private final RecipeCategory category;
     private final Item result;
     private final Ingredient ingredient;
-    private final String name;
     private final float experience;
     private final int cookingTime;
     private final Advancement.Builder advancement = Advancement.Builder.recipeAdvancement();
 
-    public BasicExtractorRecipeBuilder(RecipeCategory pCategory, ItemLike pResult, Ingredient pIngredient, String pName, float pExperience, int pCookingTime) {
+    public BasicExtractorRecipeBuilder(RecipeCategory pCategory, ItemLike pResult, Ingredient pIngredient, float pExperience, int pCookingTime) {
         this.category = pCategory;
         this.result = pResult.asItem();
         this.ingredient = pIngredient;
-        this.name = pName;
         this.experience = pExperience;
         this.cookingTime = pCookingTime;
     }
@@ -62,24 +60,22 @@ public class BasicExtractorRecipeBuilder implements RecipeBuilder {
                 .addCriterion("has_the_recipe", RecipeUnlockedTrigger.unlocked(pRecipeId))
                 .rewards(AdvancementRewards.Builder.recipe(pRecipeId)).requirements(RequirementsStrategy.OR);
 
-        pFinishedRecipeConsumer.accept(new BasicExtractorRecipeBuilder.Result(pRecipeId, this.name, this.ingredient, this.result, this.experience, this.cookingTime, this.advancement,
+        pFinishedRecipeConsumer.accept(new BasicExtractorRecipeBuilder.Result(pRecipeId, this.ingredient, this.result, this.experience, this.cookingTime, this.advancement,
                 new ResourceLocation(pRecipeId.getNamespace(), "recipes/" + pRecipeId.getPath())));
     }
 
     public static class Result implements FinishedRecipe {
         private final ResourceLocation id;
         private final Ingredient ingredient;
-        private final String name;
         private final Item result;
         private final float experience;
         private final int cookingTime;
         private final Advancement.Builder advancement;
         private final ResourceLocation advancementId;
 
-        public Result(ResourceLocation pId,  String pName, Ingredient pIngredient, Item pResult, float pExperience, int pCookingTime,
+        public Result(ResourceLocation pId, Ingredient pIngredient, Item pResult, float pExperience, int pCookingTime,
                       Advancement.Builder pAdvancement, ResourceLocation pAdvancementId) {
             this.id = pId;
-            this.name = pName;
             this.ingredient = pIngredient;
             this.result = pResult;
             this.experience = pExperience;
@@ -102,7 +98,7 @@ public class BasicExtractorRecipeBuilder implements RecipeBuilder {
         @Override
         public ResourceLocation getId() {
             return new ResourceLocation(RealEarthOres.MOD_ID,
-                    ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_coal_extracting_" + this.name);
+                    ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_coal_extracting");
         }
 
         @Override

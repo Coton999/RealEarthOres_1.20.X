@@ -1,24 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dust_coal": {
+    "has_dirty_steel": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:dust_coal"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_dust_iron": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "realearthores:dust_iron"
+              "realearthores:dirty_steel"
             ]
           }
         ]
@@ -34,8 +22,7 @@
   },
   "requirements": [
     [
-      "has_dust_iron",
-      "has_dust_coal",
+      "has_dirty_steel",
       "has_the_recipe"
     ]
   ],
@@ -44,5 +31,5 @@
       "realearthores:dust_steel"
     ]
   },
-  "sends_telemetry_event": true
+  "sends_telemetry_event": false
 }

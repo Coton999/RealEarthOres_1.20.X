@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "realearthores:block/building_blocks/marble/marble_brick",
-    "side": "realearthores:block/building_blocks/marble/marble_brick",
-    "top": "realearthores:block/building_blocks/marble/marble_brick"
-  }
-}

@@ -580,7 +580,7 @@ public class REOItemModelProvider extends ItemModelProvider {
         simpleBlockItem(REOBlocks.MARBLE_COBBLE_STAIRS);
         simpleBlockItem(REOBlocks.MARBLE_COBBLE_MOSSY_STAIRS);
         simpleBlockItem(REOBlocks.MARBLE_SLAB);
-        simpleBlockItem(REOBlocks.MARBLE_BRICK);
+        simpleBlockItem(REOBlocks.MARBLE_BRICK_SLAB);
         simpleBlockItem(REOBlocks.MARBLE_COBBLE_SLAB);
         simpleBlockItem(REOBlocks.MARBLE_COBBLE_MOSSY_SLAB);
         wallItem(REOBlocks.MARBLE_WALL, "marble/marble");

@@ -3,7 +3,6 @@ package net.coton999.realearthores.datagen.custom.electric.basic;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import net.coton999.realearthores.RealEarthOres;
-import net.coton999.realearthores.util.CountedIngredient;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementRewards;
 import net.minecraft.advancements.CriterionTriggerInstance;
@@ -24,12 +23,12 @@ import java.util.function.Consumer;
 
 public class AlloyFurnaceRecipeBuilder implements RecipeBuilder {
     private final Item result;
-    private final Ingredient ingredient1;
-    private final Ingredient ingredient2;
+    private final StrictNBTIngredient ingredient1;
+    private final StrictNBTIngredient ingredient2;
     private final int count;
     private final Advancement.Builder advancement = Advancement.Builder.advancement();
 
-    public AlloyFurnaceRecipeBuilder(ItemLike pResult, Ingredient pIngredient1, Ingredient pIngredient2, int pCount) {
+    public AlloyFurnaceRecipeBuilder(ItemLike pResult, StrictNBTIngredient pIngredient1, StrictNBTIngredient pIngredient2, int pCount) {
         this.ingredient1 = pIngredient1;
         this.ingredient2 = pIngredient2;
         this.result = pResult.asItem();

@@ -2,9 +2,7 @@ package net.coton999.realearthores.block.entity.machines.coal;
 
 import net.coton999.realearthores.block.entity.REOBlockEntities;
 import net.coton999.realearthores.menu.machines.coal.BasicExtractorMenu;
-import net.coton999.realearthores.menu.machines.coal.KilnMenu;
 import net.coton999.realearthores.recipe.machines.coal.BasicExtractorRecipe;
-import net.coton999.realearthores.recipe.machines.coal.KilnRecipe;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Inventory;

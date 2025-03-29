@@ -3,17 +3,20 @@ package net.coton999.realearthores.datagen;
 
 import net.coton999.realearthores.RealEarthOres;
 import net.coton999.realearthores.block.REOBlocks;
-import net.coton999.realearthores.block.custom.misc.LampBlock;
 import net.coton999.realearthores.block.custom.bush.BlackberryBlock;
 import net.coton999.realearthores.block.custom.bush.BlueberryBlock;
 import net.coton999.realearthores.block.custom.bush.RaspberryBlock;
 import net.coton999.realearthores.block.custom.crop.food.*;
 import net.coton999.realearthores.block.custom.fruit.*;
+import net.coton999.realearthores.block.custom.misc.LampBlock;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraftforge.client.model.generators.*;
+import net.minecraftforge.client.model.generators.BlockModelBuilder;
+import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -40,10 +43,10 @@ public class REOBlockStateProvider extends BlockStateProvider {
                 models().cubeAll("marble_brick", new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/marble/marble_brick")));
         simpleBlockWithItem(REOBlocks.MARBLE_BRICK_MOSSY.get(),
                 models().cubeAll("marble_brick_mossy", new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/marble/marble_brick_mossy")));
-        simpleBlockWithItem(REOBlocks.MARBLE_CHISELED.get(),
-                models().cubeAll("marble_chisled", new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/marble/marble_chiseled")));
-        simpleBlockWithItem(REOBlocks.MARBLE_CRACKED.get(),
-                models().cubeAll("marble_cracked", new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/marble/marble_cracked")));
+        simpleBlockWithItem(REOBlocks.MARBLE_BRICK_CHISELED.get(),
+                models().cubeAll("marble_chisled", new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/marble/marble_brick_chiseled")));
+        simpleBlockWithItem(REOBlocks.MARBLE_BRICK_CRACKED.get(),
+                models().cubeAll("marble_cracked", new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/marble/marble_brick_cracked")));
 
         stairsBlock(((StairBlock) REOBlocks.MARBLE_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/marble/marble"));
         stairsBlock(((StairBlock) REOBlocks.MARBLE_BRICK_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/marble/marble_brick"));
@@ -75,10 +78,10 @@ public class REOBlockStateProvider extends BlockStateProvider {
                 models().cubeAll("limestone_brick", new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/limestone/limestone_brick")));
         simpleBlockWithItem(REOBlocks.LIMESTONE_BRICK_MOSSY.get(),
                 models().cubeAll("limestone_brick_mossy", new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/limestone/limestone_brick_mossy")));
-        simpleBlockWithItem(REOBlocks.LIMESTONE_CHISELED.get(),
-                models().cubeAll("limestone_chisled", new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/limestone/limestone_chiseled")));
-        simpleBlockWithItem(REOBlocks.LIMESTONE_CRACKED.get(),
-                models().cubeAll("limestone_cracked", new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/limestone/limestone_cracked")));
+        simpleBlockWithItem(REOBlocks.LIMESTONE_BRICK_CHISELED.get(),
+                models().cubeAll("limestone_chisled", new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/limestone/limestone_brick_chiseled")));
+        simpleBlockWithItem(REOBlocks.LIMESTONE_BRICK_CRACKED.get(),
+                models().cubeAll("limestone_cracked", new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/limestone/limestone_brick_cracked")));
 
         stairsBlock(((StairBlock) REOBlocks.LIMESTONE_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/limestone/limestone"));
         stairsBlock(((StairBlock) REOBlocks.LIMESTONE_BRICK_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/limestone/limestone_brick"));

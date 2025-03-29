@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ingot_aluminium": {
+    "has_emerald": {
       "conditions": {
         "items": [
           {
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_ingot_aluminium",
+      "has_emerald",
       "has_the_recipe"
     ]
   ],
@@ -31,5 +31,5 @@
       "realearthores:plate_emerald"
     ]
   },
-  "sends_telemetry_event": false
+  "sends_telemetry_event": true
 }

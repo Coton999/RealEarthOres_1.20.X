@@ -135,7 +135,7 @@ public class CompressorBlockEntity extends BlockEntity implements MenuProvider {
 
     @Override
     public Component getDisplayName() {
-        return Component.translatable("block.realearthores.compressor");
+        return Component.translatable("block.realearthores.electric_compressor");
     }
 
     @Override
@@ -271,12 +271,11 @@ public class CompressorBlockEntity extends BlockEntity implements MenuProvider {
         Optional<CompressorRecipe> recipe = getCurrentRecipe();
         ItemStack resultItem = recipe.get().getResultItem(getLevel().registryAccess());
 
-        this.itemHandler.extractItem(INPUT_SLOT, 1, false);
+        this.itemHandler.extractItem(INPUT_SLOT, 3, false);
 
         this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(resultItem.getItem(),
                 this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + resultItem.getCount()));
     }
-
     private void resetProgress() {
         this.progress = 0;
     }
@@ -298,8 +297,13 @@ public class CompressorBlockEntity extends BlockEntity implements MenuProvider {
         ItemStack resultItem = recipe.get().getResultItem(getLevel().registryAccess());
 
         return canInsertAmountIntoOutputSlot(resultItem.getCount())
-                && canInsertItemIntoOutputSlot(resultItem.getItem()) && hasEnoughEnergyToCraft();
+                && canInsertItemIntoOutputSlot(resultItem.getItem()) && hasEnoughEnergyToCraft() && hasInputsToCraft();
     }
+
+    private boolean hasInputsToCraft() {
+        return this.itemHandler.getStackInSlot(INPUT_SLOT).getCount() >= 3;
+    }
+
 
     private boolean hasEnoughEnergyToCraft() {
         return this.ENERGY_STORAGE.getEnergyStored() >= maxProgress;

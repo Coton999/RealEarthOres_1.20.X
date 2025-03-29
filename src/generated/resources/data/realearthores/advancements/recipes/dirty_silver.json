@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ingot_silver": {
+    "has_ore_silver": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:ingot_silver"
-            ]
+            "tag": "realearthores:silver_ores"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_ingot_silver",
+      "has_ore_silver",
       "has_the_recipe"
     ]
   ],

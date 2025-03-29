@@ -24,14 +24,12 @@ public class ExtractorRecipeBuilder implements RecipeBuilder {
     private final Item result;
     private final Ingredient ingredient;
     private final int count;
-    private final String name;
     private final Advancement.Builder advancement = Advancement.Builder.advancement();
 
-    public ExtractorRecipeBuilder(ItemLike pResult, Ingredient pIngredient, String pName, int pCount) {
+    public ExtractorRecipeBuilder(ItemLike pResult, Ingredient pIngredient, int pCount) {
         this.ingredient = pIngredient;
         this.result = pResult.asItem();
         this.count = pCount;
-        this.name = pName;
     }
 
     @Override
@@ -56,7 +54,7 @@ public class ExtractorRecipeBuilder implements RecipeBuilder {
                 .addCriterion("has_the_recipe", RecipeUnlockedTrigger.unlocked(pRecipeId))
                 .rewards(AdvancementRewards.Builder.recipe(pRecipeId)).requirements(RequirementsStrategy.OR);
 
-        pFinishedRecipeConsumer.accept(new Result(pRecipeId, this.result, this.count, this.name, this.ingredient,
+        pFinishedRecipeConsumer.accept(new Result(pRecipeId, this.result, this.count, this.ingredient,
                 this.advancement, new ResourceLocation(pRecipeId.getNamespace(), "recipes/"
                 + pRecipeId.getPath())));
 
@@ -67,16 +65,14 @@ public class ExtractorRecipeBuilder implements RecipeBuilder {
         private final Item result;
         private final Ingredient ingredient;
         private final int count;
-        private final String name;
         private final Advancement.Builder advancement;
         private final ResourceLocation advancementId;
 
-        public Result(ResourceLocation pId, Item pResult, int pCount, String pName, Ingredient ingredient,
+        public Result(ResourceLocation pId, Item pResult, int pCount, Ingredient ingredient,
                       Advancement.Builder pAdvancement, ResourceLocation pAdvancementId) {
             this.id = pId;
             this.result = pResult;
             this.count = pCount;
-            this.name = pName;
             this.ingredient = ingredient;
             this.advancement = pAdvancement;
             this.advancementId = pAdvancementId;
@@ -100,7 +96,7 @@ public class ExtractorRecipeBuilder implements RecipeBuilder {
         @Override
         public ResourceLocation getId() {
             return new ResourceLocation(RealEarthOres.MOD_ID,
-                    ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_extracting_" + this.name);
+                    ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_extracting");
         }
 
         @Override

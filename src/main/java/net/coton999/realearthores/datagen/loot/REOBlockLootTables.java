@@ -1,7 +1,9 @@
 package net.coton999.realearthores.datagen.loot;
 
 import net.coton999.realearthores.block.REOBlocks;
-import net.coton999.realearthores.block.custom.crop.food.*;
+import net.coton999.realearthores.block.custom.crop.food.BarleyBlock;
+import net.coton999.realearthores.block.custom.crop.food.CauliflowerBlock;
+import net.coton999.realearthores.block.custom.crop.food.CottonBlock;
 import net.coton999.realearthores.block.custom.fruit.*;
 import net.coton999.realearthores.item.REOItems;
 import net.minecraft.advancements.critereon.EnchantmentPredicate;
@@ -63,8 +65,8 @@ public class REOBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(REOBlocks.MARBLE_COBBLE_MOSSY.get());
         this.dropSelf(REOBlocks.MARBLE_BRICK.get());
         this.dropSelf(REOBlocks.MARBLE_BRICK_MOSSY.get());
-        this.dropSelf(REOBlocks.MARBLE_CHISELED.get());
-        this.dropSelf(REOBlocks.MARBLE_CRACKED.get());
+        this.dropSelf(REOBlocks.MARBLE_BRICK_CHISELED.get());
+        this.dropSelf(REOBlocks.MARBLE_BRICK_CRACKED.get());
 
         this.dropSelf(REOBlocks.MARBLE_STAIRS.get());
         this.dropSelf(REOBlocks.MARBLE_BRICK_STAIRS.get());
@@ -90,8 +92,8 @@ public class REOBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(REOBlocks.LIMESTONE_COBBLE_MOSSY.get());
         this.dropSelf(REOBlocks.LIMESTONE_BRICK.get());
         this.dropSelf(REOBlocks.LIMESTONE_BRICK_MOSSY.get());
-        this.dropSelf(REOBlocks.LIMESTONE_CHISELED.get());
-        this.dropSelf(REOBlocks.LIMESTONE_CRACKED.get());
+        this.dropSelf(REOBlocks.LIMESTONE_BRICK_CHISELED.get());
+        this.dropSelf(REOBlocks.LIMESTONE_BRICK_CRACKED.get());
 
         this.dropSelf(REOBlocks.LIMESTONE_STAIRS.get());
         this.dropSelf(REOBlocks.LIMESTONE_BRICK_STAIRS.get());
@@ -1428,7 +1430,7 @@ public class REOBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(REOBlocks.KILN.get());
         this.dropSelf(REOBlocks.CRUSHER.get());
         this.dropSelf(REOBlocks.EXTRACTOR.get());
-        this.dropSelf(REOBlocks.COMPRESSOR.get());
+        this.dropSelf(REOBlocks.PURIFIER.get());
 
 
         // Electric

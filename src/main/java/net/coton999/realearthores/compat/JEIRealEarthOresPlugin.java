@@ -6,11 +6,20 @@ import mezz.jei.api.registration.IGuiHandlerRegistration;
 import mezz.jei.api.registration.IRecipeCategoryRegistration;
 import mezz.jei.api.registration.IRecipeRegistration;
 import net.coton999.realearthores.RealEarthOres;
-import net.coton999.realearthores.compat.recipe.coal.*;
+import net.coton999.realearthores.compat.recipe.coal.BasicCrusherRecipeCategory;
+import net.coton999.realearthores.compat.recipe.coal.BasicExtractorRecipeCategory;
+import net.coton999.realearthores.compat.recipe.coal.BasicPurifierRecipeCategory;
+import net.coton999.realearthores.compat.recipe.coal.KilnRecipeCategory;
 import net.coton999.realearthores.compat.recipe.electric.basic.*;
-import net.coton999.realearthores.recipe.machines.coal.*;
+import net.coton999.realearthores.recipe.machines.coal.BasicCrusherRecipe;
+import net.coton999.realearthores.recipe.machines.coal.BasicExtractorRecipe;
+import net.coton999.realearthores.recipe.machines.coal.BasicPurifierRecipe;
+import net.coton999.realearthores.recipe.machines.coal.KilnRecipe;
 import net.coton999.realearthores.recipe.machines.electric.basic.*;
-import net.coton999.realearthores.screen.machines.coal.*;
+import net.coton999.realearthores.screen.machines.coal.BasicCrusherScreen;
+import net.coton999.realearthores.screen.machines.coal.BasicExtractorScreen;
+import net.coton999.realearthores.screen.machines.coal.BasicPurifierScreen;
+import net.coton999.realearthores.screen.machines.coal.KilnScreen;
 import net.coton999.realearthores.screen.machines.electric.basic.*;
 import net.minecraft.client.Minecraft;
 import net.minecraft.resources.ResourceLocation;
@@ -32,7 +41,7 @@ public class JEIRealEarthOresPlugin implements IModPlugin {
                 registration.getJeiHelpers().getGuiHelper(), 100));
         registration.addRecipeCategories(new BasicCrusherRecipeCategory(
                 registration.getJeiHelpers().getGuiHelper(), 200));
-        registration.addRecipeCategories(new BasicCompressorRecipeCategory(
+        registration.addRecipeCategories(new BasicPurifierRecipeCategory(
                 registration.getJeiHelpers().getGuiHelper(), 400));
         registration.addRecipeCategories(new BasicExtractorRecipeCategory(
                 registration.getJeiHelpers().getGuiHelper(), 400));
@@ -64,8 +73,8 @@ public class JEIRealEarthOresPlugin implements IModPlugin {
         registration.addRecipes(KilnRecipeCategory.KILN_TYPE, kilnRecipes);
         List<BasicCrusherRecipe> basicCrusherRecipes = recipeManager.getAllRecipesFor(BasicCrusherRecipe.Type.INSTANCE);
         registration.addRecipes(BasicCrusherRecipeCategory.BASIC_CRUSHER_TYPE, basicCrusherRecipes);
-        List<BasicCompressorRecipe> basicCompressorRecipes = recipeManager.getAllRecipesFor(BasicCompressorRecipe.Type.INSTANCE);
-        registration.addRecipes(BasicCompressorRecipeCategory.BASIC_COMPRESSOR_TYPE, basicCompressorRecipes);
+        List<BasicPurifierRecipe> basicPurifierRecipes = recipeManager.getAllRecipesFor(BasicPurifierRecipe.Type.INSTANCE);
+        registration.addRecipes(BasicPurifierRecipeCategory.BASIC_PURIFIER_TYPE, basicPurifierRecipes);
         List<BasicExtractorRecipe> basicExtractorRecipes = recipeManager.getAllRecipesFor(BasicExtractorRecipe.Type.INSTANCE);
         registration.addRecipes(BasicExtractorRecipeCategory.BASIC_EXTRACTOR_TYPE, basicExtractorRecipes);
 
@@ -94,8 +103,8 @@ public class JEIRealEarthOresPlugin implements IModPlugin {
                 KilnRecipeCategory.KILN_TYPE);
         registration.addRecipeClickArea(BasicCrusherScreen.class, 78, 33, 26, 19,
                 BasicCrusherRecipeCategory.BASIC_CRUSHER_TYPE);
-        registration.addRecipeClickArea(BasicCompressorScreen.class, 78, 33, 26, 19,
-                BasicCompressorRecipeCategory.BASIC_COMPRESSOR_TYPE);
+        registration.addRecipeClickArea(BasicPurifierScreen.class, 78, 33, 26, 19,
+                BasicPurifierRecipeCategory.BASIC_PURIFIER_TYPE);
         registration.addRecipeClickArea(BasicExtractorScreen.class, 78, 33, 26, 19,
                 BasicExtractorRecipeCategory.BASIC_EXTRACTOR_TYPE);
 
