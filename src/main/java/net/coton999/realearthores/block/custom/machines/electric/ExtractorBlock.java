@@ -1,7 +1,7 @@
 package net.coton999.realearthores.block.custom.machines.electric;
 
 import net.coton999.realearthores.block.entity.REOBlockEntities;
-import net.coton999.realearthores.block.entity.machines.electric.basic.ExtractorBlockEntity;
+import net.coton999.realearthores.block.entity.machines.electric.ExtractorBE;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
@@ -90,8 +90,8 @@ public class ExtractorBlock extends BaseEntityBlock {
     public void onRemove(BlockState pState, Level pLevel, BlockPos pPos, BlockState pNewState, boolean pIsMoving) {
         if (pState.getBlock() != pNewState.getBlock()) {
             BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
-            if (blockEntity instanceof ExtractorBlockEntity) {
-                ((ExtractorBlockEntity) blockEntity).drops();
+            if (blockEntity instanceof ExtractorBE) {
+                ((ExtractorBE) blockEntity).drops();
             }
         }
 
@@ -102,8 +102,8 @@ public class ExtractorBlock extends BaseEntityBlock {
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
         if (!pLevel.isClientSide()) {
             BlockEntity entity = pLevel.getBlockEntity(pPos);
-            if(entity instanceof ExtractorBlockEntity) {
-                NetworkHooks.openScreen(((ServerPlayer)pPlayer), (ExtractorBlockEntity)entity, pPos);
+            if(entity instanceof ExtractorBE) {
+                NetworkHooks.openScreen(((ServerPlayer)pPlayer), (ExtractorBE)entity, pPos);
             } else {
                 throw new IllegalStateException("Our Container provider is missing!");
             }
@@ -115,7 +115,7 @@ public class ExtractorBlock extends BaseEntityBlock {
     @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
-        return new ExtractorBlockEntity(pPos, pState);
+        return new ExtractorBE(pPos, pState);
     }
 
     @Nullable

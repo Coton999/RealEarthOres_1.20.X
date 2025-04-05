@@ -1,7 +1,7 @@
 package net.coton999.realearthores.block.custom.machines.electric;
 
 import net.coton999.realearthores.block.entity.REOBlockEntities;
-import net.coton999.realearthores.block.entity.machines.electric.basic.AlloyFurnaceBlockEntity;
+import net.coton999.realearthores.block.entity.machines.electric.AlloyFurnaceBE;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
@@ -89,8 +89,8 @@ public class AlloyFurnaceBlock extends BaseEntityBlock {
     public void onRemove(BlockState pState, Level pLevel, BlockPos pPos, BlockState pNewState, boolean pIsMoving) {
         if (pState.getBlock() != pNewState.getBlock()) {
             BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
-            if (blockEntity instanceof AlloyFurnaceBlockEntity) {
-                ((AlloyFurnaceBlockEntity) blockEntity).drops();
+            if (blockEntity instanceof AlloyFurnaceBE) {
+                ((AlloyFurnaceBE) blockEntity).drops();
             }
         }
 
@@ -101,8 +101,8 @@ public class AlloyFurnaceBlock extends BaseEntityBlock {
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
         if (!pLevel.isClientSide()) {
             BlockEntity entity = pLevel.getBlockEntity(pPos);
-            if(entity instanceof AlloyFurnaceBlockEntity) {
-                NetworkHooks.openScreen(((ServerPlayer)pPlayer), (AlloyFurnaceBlockEntity)entity, pPos);
+            if(entity instanceof AlloyFurnaceBE) {
+                NetworkHooks.openScreen(((ServerPlayer)pPlayer), (AlloyFurnaceBE)entity, pPos);
             } else {
                 throw new IllegalStateException("Our Container provider is missing!");
             }
@@ -114,7 +114,7 @@ public class AlloyFurnaceBlock extends BaseEntityBlock {
     @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
-        return new AlloyFurnaceBlockEntity(pPos, pState);
+        return new AlloyFurnaceBE(pPos, pState);
     }
 
     @Nullable

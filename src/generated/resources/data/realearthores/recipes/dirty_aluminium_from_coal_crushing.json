@@ -3,7 +3,7 @@
   "cookingtime": 200,
   "experience": 0.5,
   "ingredient": {
-    "tag": "realearthores:aluminium_ores"
+    "tag": "forge:ores/aluminum"
   },
   "result": "realearthores:dirty_aluminium"
 }

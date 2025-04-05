@@ -3,7 +3,7 @@
   "cookingtime": 200,
   "experience": 0.5,
   "ingredient": {
-    "tag": "realearthores:uranium_ores"
+    "tag": "forge:ores/uranium"
   },
   "result": "realearthores:dirty_uranium"
 }

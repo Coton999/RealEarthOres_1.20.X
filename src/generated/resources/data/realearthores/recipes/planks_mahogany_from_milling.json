@@ -2,7 +2,7 @@
   "type": "realearthores:milling",
   "ingredients": [
     {
-      "tag": "realearthores:mahogany_logs"
+      "tag": "realearthores:wood/logs/mahogany"
     }
   ],
   "result": {

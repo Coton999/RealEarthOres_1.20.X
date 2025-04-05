@@ -3,6 +3,7 @@ package net.coton999.realearthores.datagen.custom.electric.basic;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import net.coton999.realearthores.RealEarthOres;
+import net.coton999.realearthores.recipe.machines.electric.SawmillRecipe;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementRewards;
 import net.minecraft.advancements.CriterionTriggerInstance;
@@ -101,7 +102,7 @@ public class SawmillRecipeBuilder implements RecipeBuilder {
 
         @Override
         public RecipeSerializer<?> getType() {
-            return net.coton999.realearthores.recipe.machines.electric.basic.SawmillRecipe.Serializer.INSTANCE;
+            return SawmillRecipe.Serializer.INSTANCE;
         }
 
         @Nullable

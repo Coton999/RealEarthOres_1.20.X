@@ -4,7 +4,7 @@
   "group": "planks",
   "ingredients": [
     {
-      "tag": "realearthores:balsa_logs"
+      "tag": "realearthores:wood/logs/balsa"
     }
   ],
   "result": {

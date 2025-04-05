@@ -3,7 +3,7 @@
   "cookingtime": 200,
   "experience": 0.5,
   "ingredient": {
-    "tag": "realearthores:nickel_ores"
+    "tag": "forge:ores/nickel"
   },
   "result": "realearthores:dirty_nickel"
 }

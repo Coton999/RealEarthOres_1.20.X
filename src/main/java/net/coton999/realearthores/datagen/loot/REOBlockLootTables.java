@@ -989,7 +989,7 @@ public class REOBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(REOBlocks.TRAPDOOR_WILLOW.get());
 
 
-        // Wood - Fire Resistant
+        // Wood - Fire-Resistant
         this.dropSelf(REOBlocks.LOG_BALSA_RESISTANT.get());
         this.dropSelf(REOBlocks.WOOD_BALSA_RESISTANT.get());
         this.dropSelf(REOBlocks.LOG_BALSA_STRIPPED_RESISTANT.get());
@@ -1432,8 +1432,8 @@ public class REOBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(REOBlocks.EXTRACTOR.get());
         this.dropSelf(REOBlocks.PURIFIER.get());
 
-
         // Electric
+        // Basic
         this.dropSelf(REOBlocks.ELECTRIC_FURNACE.get());
         this.dropSelf(REOBlocks.ELECTRIC_CRUSHER.get());
         this.dropSelf(REOBlocks.ELECTRIC_PURIFIER.get());
@@ -1457,14 +1457,6 @@ public class REOBlockLootTables extends BlockLootSubProvider {
     }
 
     protected LootTable.Builder createNetherOreDrops(Block pOre, Item pItem, float pMin, float pMax) {
-        return createSilkTouchDispatchTable(pOre,
-                this.applyExplosionDecay(pOre,
-                        LootItem.lootTableItem(pItem)
-                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(pMin, pMax)))
-                                .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
-    }
-
-    protected LootTable.Builder createBerryBushDrops(Block pOre, Item pItem, float pMin, float pMax) {
         return createSilkTouchDispatchTable(pOre,
                 this.applyExplosionDecay(pOre,
                         LootItem.lootTableItem(pItem)

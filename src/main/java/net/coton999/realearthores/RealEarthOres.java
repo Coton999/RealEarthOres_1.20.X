@@ -17,7 +17,7 @@ import net.coton999.realearthores.screen.machines.coal.BasicCrusherScreen;
 import net.coton999.realearthores.screen.machines.coal.BasicExtractorScreen;
 import net.coton999.realearthores.screen.machines.coal.BasicPurifierScreen;
 import net.coton999.realearthores.screen.machines.coal.KilnScreen;
-import net.coton999.realearthores.screen.machines.electric.basic.*;
+import net.coton999.realearthores.screen.machines.electric.*;
 import net.coton999.realearthores.util.REOWoodTypes;
 import net.coton999.realearthores.worldgen.tree.REOFoliagePlacers;
 import net.coton999.realearthores.worldgen.tree.REOTrunkPlacers;

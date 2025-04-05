@@ -1,7 +1,7 @@
 package net.coton999.realearthores.block.custom.machines.electric;
 
 import net.coton999.realearthores.block.entity.REOBlockEntities;
-import net.coton999.realearthores.block.entity.machines.electric.basic.CrusherBlockEntity;
+import net.coton999.realearthores.block.entity.machines.electric.CrusherBE;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
@@ -92,8 +92,8 @@ public class CrusherBlock extends BaseEntityBlock {
     public void onRemove(BlockState pState, Level pLevel, BlockPos pPos, BlockState pNewState, boolean pIsMoving) {
         if (pState.getBlock() != pNewState.getBlock()) {
             BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
-            if (blockEntity instanceof CrusherBlockEntity) {
-                ((CrusherBlockEntity) blockEntity).drops();
+            if (blockEntity instanceof CrusherBE) {
+                ((CrusherBE) blockEntity).drops();
             }
         }
 
@@ -104,8 +104,8 @@ public class CrusherBlock extends BaseEntityBlock {
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
         if (!pLevel.isClientSide()) {
             BlockEntity entity = pLevel.getBlockEntity(pPos);
-            if(entity instanceof CrusherBlockEntity) {
-                NetworkHooks.openScreen(((ServerPlayer)pPlayer), (CrusherBlockEntity)entity, pPos);
+            if(entity instanceof CrusherBE) {
+                NetworkHooks.openScreen(((ServerPlayer)pPlayer), (CrusherBE)entity, pPos);
             } else {
                 throw new IllegalStateException("Our Container provider is missing!");
             }
@@ -117,7 +117,7 @@ public class CrusherBlock extends BaseEntityBlock {
     @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
-        return new CrusherBlockEntity(pPos, pState);
+        return new CrusherBE(pPos, pState);
     }
 
     @Nullable

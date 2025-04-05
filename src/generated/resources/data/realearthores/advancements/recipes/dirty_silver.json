@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "realearthores:silver_ores"
+            "tag": "forge:ores/silver"
           }
         ]
       },

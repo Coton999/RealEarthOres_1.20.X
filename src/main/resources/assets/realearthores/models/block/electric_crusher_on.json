@@ -3,6 +3,6 @@
   "textures": {
     "front": "realearthores:block/machines/electric/tier_1/crusher_front_on",
     "side": "realearthores:block/machines/electric/tier_1/machine_side",
-    "top": "realearthores:block/storage/brass"
+    "top": "minecraft:block/iron_block"
   }
 }

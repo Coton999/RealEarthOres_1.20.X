@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "realearthores:obsidian_dusts"
+            "tag": "forge:dusts/obsidian"
           }
         ]
       },

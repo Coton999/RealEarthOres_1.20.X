@@ -2,7 +2,7 @@
   "type": "realearthores:milling",
   "ingredients": [
     {
-      "tag": "realearthores:larch_logs"
+      "tag": "realearthores:wood/logs/larch"
     }
   ],
   "result": {

@@ -2,7 +2,7 @@
   "type": "realearthores:crushing",
   "ingredients": [
     {
-      "tag": "realearthores:platinum_ores"
+      "tag": "forge:ores/platinum"
     }
   ],
   "result": {

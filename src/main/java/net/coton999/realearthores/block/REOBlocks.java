@@ -2283,6 +2283,7 @@ public class REOBlocks {
                     .lightLevel((state) -> state.getValue(BasicPurifierBlock.LIT) ? 13 : 0).noOcclusion()));
 
     // Electric
+    // Basic
     public static final RegistryObject<Block> ELECTRIC_FURNACE = registerBlock("electric_furnace",
             () -> new ElectricFurnaceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
                     .lightLevel((state) -> state.getValue(ElectricFurnaceBlock.LIT) ? 13 : 0).noOcclusion()));

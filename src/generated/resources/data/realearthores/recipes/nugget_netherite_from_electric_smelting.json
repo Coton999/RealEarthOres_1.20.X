@@ -2,7 +2,7 @@
   "type": "realearthores:electric_smelting",
   "ingredients": [
     {
-      "tag": "realearthores:netherite_tools_and_armor"
+      "tag": "realearthores:tools_and_armor/netherite"
     }
   ],
   "result": {

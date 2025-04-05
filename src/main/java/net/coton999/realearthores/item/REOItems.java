@@ -10,6 +10,8 @@ import net.coton999.realearthores.item.custom.ModBoatItem;
 import net.coton999.realearthores.item.custom.ModShearsItem;
 import net.coton999.realearthores.item.custom.tool.*;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -1373,6 +1375,14 @@ public class REOItems {
     public static final RegistryObject<Item> PLATE_TIN = ITEMS.register("plate_tin",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PLATE_ZINC = ITEMS.register("plate_zinc",
+            () -> new Item(new Item.Properties()));
+
+    // Capacitor
+    public static final RegistryObject<Item> CAPACITOR_BASIC = ITEMS.register("capacitor_basic",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CAPACITOR_ADVANCED = ITEMS.register("capacitor_advanced",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CAPACITOR_ULTIMATE = ITEMS.register("capacitor_ultimate",
             () -> new Item(new Item.Properties()));
 
 }

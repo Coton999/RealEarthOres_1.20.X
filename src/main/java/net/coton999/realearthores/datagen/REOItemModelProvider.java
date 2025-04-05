@@ -257,6 +257,11 @@ public class REOItemModelProvider extends ItemModelProvider {
         plateItem(REOItems.PLATE_TIN);
         plateItem(REOItems.PLATE_ZINC);
 
+        // Capacitor
+        capacitorItem(REOItems.CAPACITOR_BASIC);
+        capacitorItem(REOItems.CAPACITOR_ADVANCED);
+        capacitorItem(REOItems.CAPACITOR_ULTIMATE);
+
         // Foods //
         // Seeds
         seedItem(REOItems.SEED_BARLEY);
@@ -1159,6 +1164,26 @@ public class REOItemModelProvider extends ItemModelProvider {
         wildBlockItem(REOBlocks.WILD_RICE, "wild_rice");
         wildBlockItem(REOBlocks.WILD_TOMATO, "wild_tomato");
 
+        // Tech //
+        // Machines
+        // Coal
+        simpleBlockItem(REOBlocks.KILN);
+        simpleBlockItem(REOBlocks.CRUSHER);
+        simpleBlockItem(REOBlocks.EXTRACTOR);
+        simpleBlockItem(REOBlocks.PURIFIER);
+
+        // Basic
+        simpleBlockItem(REOBlocks.ELECTRIC_ALLOY_FURNACE);
+        simpleBlockItem(REOBlocks.ELECTRIC_COMPRESSOR);
+        simpleBlockItem(REOBlocks.ELECTRIC_CENTRIFUGE);
+        simpleBlockItem(REOBlocks.ELECTRIC_CRUSHER);
+        simpleBlockItem(REOBlocks.ELECTRIC_FURNACE);
+        simpleBlockItem(REOBlocks.ELECTRIC_EXTRACTOR);
+        simpleBlockItem(REOBlocks.ELECTRIC_INDUCTION_FURNACE);
+        simpleBlockItem(REOBlocks.ELECTRIC_PURIFIER);
+        simpleBlockItem(REOBlocks.ELECTRIC_SAWMILL);
+        simpleBlockItem(REOBlocks.ELECTRIC_TRANSFUSER);
+
     }
 
     private ItemModelBuilder horseArmorItem(RegistryObject<Item> item) {
@@ -1231,6 +1256,12 @@ public class REOItemModelProvider extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(RealEarthOres.MOD_ID, "item/plate/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder capacitorItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(RealEarthOres.MOD_ID, "item/capacitor/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder luminousDustItem(RegistryObject<Item> item) {

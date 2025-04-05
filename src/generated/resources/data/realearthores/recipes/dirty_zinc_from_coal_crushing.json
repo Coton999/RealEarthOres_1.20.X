@@ -3,7 +3,7 @@
   "cookingtime": 200,
   "experience": 0.5,
   "ingredient": {
-    "tag": "realearthores:zinc_ores"
+    "tag": "forge:ores/zinc"
   },
   "result": "realearthores:dirty_zinc"
 }

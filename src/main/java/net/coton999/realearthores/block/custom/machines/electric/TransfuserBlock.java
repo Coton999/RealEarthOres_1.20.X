@@ -1,7 +1,7 @@
 package net.coton999.realearthores.block.custom.machines.electric;
 
 import net.coton999.realearthores.block.entity.REOBlockEntities;
-import net.coton999.realearthores.block.entity.machines.electric.basic.TransfuserBlockEntity;
+import net.coton999.realearthores.block.entity.machines.electric.TransfuserBE;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
@@ -90,8 +90,8 @@ public class TransfuserBlock extends BaseEntityBlock {
     public void onRemove(BlockState pState, Level pLevel, BlockPos pPos, BlockState pNewState, boolean pIsMoving) {
         if (pState.getBlock() != pNewState.getBlock()) {
             BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
-            if (blockEntity instanceof TransfuserBlockEntity) {
-                ((TransfuserBlockEntity) blockEntity).drops();
+            if (blockEntity instanceof TransfuserBE) {
+                ((TransfuserBE) blockEntity).drops();
             }
         }
 
@@ -102,8 +102,8 @@ public class TransfuserBlock extends BaseEntityBlock {
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
         if (!pLevel.isClientSide()) {
             BlockEntity entity = pLevel.getBlockEntity(pPos);
-            if(entity instanceof TransfuserBlockEntity) {
-                NetworkHooks.openScreen(((ServerPlayer)pPlayer), (TransfuserBlockEntity)entity, pPos);
+            if(entity instanceof TransfuserBE) {
+                NetworkHooks.openScreen(((ServerPlayer)pPlayer), (TransfuserBE)entity, pPos);
             } else {
                 throw new IllegalStateException("Our Container provider is missing!");
             }
@@ -115,7 +115,7 @@ public class TransfuserBlock extends BaseEntityBlock {
     @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
-        return new TransfuserBlockEntity(pPos, pState);
+        return new TransfuserBE(pPos, pState);
     }
 
     @Nullable

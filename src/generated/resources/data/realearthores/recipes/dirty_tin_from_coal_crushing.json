@@ -3,7 +3,7 @@
   "cookingtime": 200,
   "experience": 0.5,
   "ingredient": {
-    "tag": "realearthores:tin_ores"
+    "tag": "forge:ores/tin"
   },
   "result": "realearthores:dirty_tin"
 }

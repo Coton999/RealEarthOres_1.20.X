@@ -3,7 +3,7 @@
   "cookingtime": 200,
   "experience": 0.5,
   "ingredient": {
-    "tag": "realearthores:silver_ores"
+    "tag": "forge:ores/silver"
   },
   "result": "realearthores:dirty_silver"
 }

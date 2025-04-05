@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "realearthores:netherite_dusts"
+            "tag": "forge:dusts/netherite"
           }
         ]
       },

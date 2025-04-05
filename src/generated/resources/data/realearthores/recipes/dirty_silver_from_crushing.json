@@ -2,7 +2,7 @@
   "type": "realearthores:crushing",
   "ingredients": [
     {
-      "tag": "realearthores:silver_ores"
+      "tag": "forge:ores/silver"
     }
   ],
   "result": {

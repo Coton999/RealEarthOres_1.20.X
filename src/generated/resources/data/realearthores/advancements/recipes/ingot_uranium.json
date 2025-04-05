@@ -11,7 +11,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "realearthores:uranium_ores"
+            "tag": "forge:ores/uranium"
           }
         ]
       },

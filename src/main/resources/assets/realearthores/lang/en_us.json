@@ -202,6 +202,10 @@
   "item.realearthores.plate_tin": "Tin Plate",
   "item.realearthores.plate_zinc": "Zinc Plate",
 
+  "item.realearthores.capacitor_basic": "Basic Capacitor",
+  "item.realearthores.capacitor_advanced": "Advanced Capacitor",
+  "item.realearthores.capacitor_ultimate": "Ultimate Capacitor",
+
   "item.realearthores.aluminium_shovel": "Aluminium Shovel",
   "item.realearthores.aluminium_pickaxe": "Aluminium Pickaxe",
   "item.realearthores.aluminium_axe": "Aluminium Axe",
@@ -1350,16 +1354,16 @@
   "block.realearthores.wild_tomato": "Wild Tomatoes",
 
   "block.realearthores.kiln": "Kiln",
-  "block.realearthores.crusher": "Crusher",
-  "block.realearthores.extractor": "Extractor",
-  "block.realearthores.purifier": "Purifier",
+  "block.realearthores.crusher": "Thermal Crusher",
+  "block.realearthores.extractor": "Thermal Extractor",
+  "block.realearthores.purifier": "Thermal Purifier",
 
   "block.realearthores.electric_furnace": "Electric Furnace",
-  "block.realearthores.electric_crusher": "Electric Crusher",
-  "block.realearthores.electric_purifier": "Electric Purifier",
+  "block.realearthores.electric_crusher": "Crusher",
+  "block.realearthores.electric_purifier": "Purifier",
   "block.realearthores.electric_alloy_furnace": "Alloy Furnace",
   "block.realearthores.electric_sawmill": "Sawmill",
-  "block.realearthores.electric_extractor": "Electric Extractor",
+  "block.realearthores.electric_extractor": "Extractor",
   "block.realearthores.electric_compressor": "Compressor",
   "block.realearthores.electric_centrifuge": "Centrifuge",
   "block.realearthores.electric_induction_furnace": "Induction Furnace",

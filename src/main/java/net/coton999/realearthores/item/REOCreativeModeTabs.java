@@ -235,6 +235,11 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                     pOutput.accept(REOItems.PLATE_TIN.get());
                     pOutput.accept(REOItems.PLATE_ZINC.get());
 
+                    // Capcitor
+                    pOutput.accept(REOItems.CAPACITOR_BASIC.get());
+                    pOutput.accept(REOItems.CAPACITOR_ADVANCED.get());
+                    pOutput.accept(REOItems.CAPACITOR_ULTIMATE.get());
+
 
                 })
                 .build());
@@ -1624,6 +1629,7 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.PURIFIER.get());
 
                         // Electric
+                        // Basic
                         pOutput.accept(REOBlocks.ELECTRIC_FURNACE.get());
                         pOutput.accept(REOBlocks.ELECTRIC_CRUSHER.get());
                         pOutput.accept(REOBlocks.ELECTRIC_PURIFIER.get());

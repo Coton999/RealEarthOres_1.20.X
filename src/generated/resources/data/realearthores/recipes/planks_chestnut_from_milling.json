@@ -2,7 +2,7 @@
   "type": "realearthores:milling",
   "ingredients": [
     {
-      "tag": "realearthores:chestnut_logs"
+      "tag": "realearthores:wood/logs/chestnut"
     }
   ],
   "result": {

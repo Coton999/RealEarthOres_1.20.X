@@ -2,7 +2,7 @@
   "type": "realearthores:milling",
   "ingredients": [
     {
-      "tag": "realearthores:maple_logs"
+      "tag": "realearthores:wood/logs/maple"
     }
   ],
   "result": {

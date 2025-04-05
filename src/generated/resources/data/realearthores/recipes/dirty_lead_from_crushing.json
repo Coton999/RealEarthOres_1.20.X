@@ -2,7 +2,7 @@
   "type": "realearthores:crushing",
   "ingredients": [
     {
-      "tag": "realearthores:lead_ores"
+      "tag": "forge:ores/lead"
     }
   ],
   "result": {

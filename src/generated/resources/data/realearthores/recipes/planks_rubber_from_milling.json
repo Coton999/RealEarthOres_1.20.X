@@ -2,7 +2,7 @@
   "type": "realearthores:milling",
   "ingredients": [
     {
-      "tag": "realearthores:rubber_logs"
+      "tag": "realearthores:wood/logs/rubber"
     }
   ],
   "result": {

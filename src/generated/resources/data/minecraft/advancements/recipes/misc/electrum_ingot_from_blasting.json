@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "realearthores:electrum_dusts"
+            "tag": "forge:dusts/electrum"
           }
         ]
       },

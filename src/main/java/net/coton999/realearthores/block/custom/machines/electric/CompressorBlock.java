@@ -1,7 +1,7 @@
 package net.coton999.realearthores.block.custom.machines.electric;
 
 import net.coton999.realearthores.block.entity.REOBlockEntities;
-import net.coton999.realearthores.block.entity.machines.electric.basic.CompressorBlockEntity;
+import net.coton999.realearthores.block.entity.machines.electric.CompressorBE;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
@@ -90,8 +90,8 @@ public class CompressorBlock extends BaseEntityBlock {
     public void onRemove(BlockState pState, Level pLevel, BlockPos pPos, BlockState pNewState, boolean pIsMoving) {
         if (pState.getBlock() != pNewState.getBlock()) {
             BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
-            if (blockEntity instanceof CompressorBlockEntity) {
-                ((CompressorBlockEntity) blockEntity).drops();
+            if (blockEntity instanceof CompressorBE) {
+                ((CompressorBE) blockEntity).drops();
             }
         }
 
@@ -102,8 +102,8 @@ public class CompressorBlock extends BaseEntityBlock {
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
         if (!pLevel.isClientSide()) {
             BlockEntity entity = pLevel.getBlockEntity(pPos);
-            if(entity instanceof CompressorBlockEntity) {
-                NetworkHooks.openScreen(((ServerPlayer)pPlayer), (CompressorBlockEntity)entity, pPos);
+            if(entity instanceof CompressorBE) {
+                NetworkHooks.openScreen(((ServerPlayer)pPlayer), (CompressorBE)entity, pPos);
             } else {
                 throw new IllegalStateException("Our Container provider is missing!");
             }
@@ -115,7 +115,7 @@ public class CompressorBlock extends BaseEntityBlock {
     @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
-        return new CompressorBlockEntity(pPos, pState);
+        return new CompressorBE(pPos, pState);
     }
 
     @Nullable

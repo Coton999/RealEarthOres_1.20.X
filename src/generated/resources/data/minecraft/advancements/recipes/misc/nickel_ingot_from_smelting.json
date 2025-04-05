@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "realearthores:nickel_ores"
+            "tag": "forge:ores/nickel"
           }
         ]
       },

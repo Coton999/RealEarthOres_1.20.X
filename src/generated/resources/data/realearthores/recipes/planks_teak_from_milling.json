@@ -2,7 +2,7 @@
   "type": "realearthores:milling",
   "ingredients": [
     {
-      "tag": "realearthores:teak_logs"
+      "tag": "realearthores:wood/logs/teak"
     }
   ],
   "result": {

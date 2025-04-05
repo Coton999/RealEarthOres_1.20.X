@@ -3,7 +3,7 @@
   "cookingtime": 200,
   "experience": 0.5,
   "ingredient": {
-    "tag": "realearthores:lead_ores"
+    "tag": "forge:ores/lead"
   },
   "result": "realearthores:dirty_lead"
 }

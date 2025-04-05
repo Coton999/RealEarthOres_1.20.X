@@ -2,7 +2,7 @@
   "type": "realearthores:crushing",
   "ingredients": [
     {
-      "tag": "realearthores:aluminium_ores"
+      "tag": "forge:ores/aluminum"
     }
   ],
   "result": {

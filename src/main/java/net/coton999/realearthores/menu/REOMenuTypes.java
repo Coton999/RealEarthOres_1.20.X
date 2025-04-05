@@ -5,7 +5,7 @@ import net.coton999.realearthores.menu.machines.coal.BasicCrusherMenu;
 import net.coton999.realearthores.menu.machines.coal.BasicExtractorMenu;
 import net.coton999.realearthores.menu.machines.coal.BasicPurifierMenu;
 import net.coton999.realearthores.menu.machines.coal.KilnMenu;
-import net.coton999.realearthores.menu.machines.electric.basic.*;
+import net.coton999.realearthores.menu.machines.electric.*;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraftforge.common.extensions.IForgeMenuType;
@@ -33,6 +33,7 @@ public class REOMenuTypes {
             registerMenuType(BasicPurifierMenu::new, "basic_purifier_menu");
 
     // Electric
+    // Basic
     public static final RegistryObject<MenuType<ElectricFurnaceMenu>> ELECTRIC_FURNACE_MENU =
             registerMenuType(ElectricFurnaceMenu::new, "electric_furnace_menu");
 

@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "realearthores:poplar_logs"
+            "tag": "realearthores:wood/logs/poplar"
           }
         ]
       },

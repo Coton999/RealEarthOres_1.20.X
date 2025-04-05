@@ -2,7 +2,7 @@
   "type": "realearthores:milling",
   "ingredients": [
     {
-      "tag": "realearthores:walnut_logs"
+      "tag": "realearthores:wood/logs/walnut"
     }
   ],
   "result": {

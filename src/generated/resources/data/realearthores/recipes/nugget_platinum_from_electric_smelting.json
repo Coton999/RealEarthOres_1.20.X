@@ -2,7 +2,7 @@
   "type": "realearthores:electric_smelting",
   "ingredients": [
     {
-      "tag": "realearthores:platinum_tools_and_armor"
+      "tag": "realearthores:tools_and_armor/platinum"
     }
   ],
   "result": {

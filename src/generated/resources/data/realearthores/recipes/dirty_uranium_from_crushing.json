@@ -2,7 +2,7 @@
   "type": "realearthores:crushing",
   "ingredients": [
     {
-      "tag": "realearthores:uranium_ores"
+      "tag": "forge:ores/uranium"
     }
   ],
   "result": {
