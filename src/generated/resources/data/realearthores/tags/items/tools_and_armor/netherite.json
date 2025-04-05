@@ -1,0 +1,20 @@
+{
+  "values": [
+    "minecraft:netherite_axe",
+    "realearthores:netherite_bow",
+    "realearthores:netherite_excavator",
+    "realearthores:netherite_hammer",
+    "realearthores:netherite_hatchet",
+    "minecraft:netherite_hoe",
+    "realearthores:netherite_paxel",
+    "minecraft:netherite_pickaxe",
+    "realearthores:netherite_shears",
+    "minecraft:netherite_shovel",
+    "realearthores:netherite_sickle",
+    "minecraft:netherite_sword",
+    "minecraft:netherite_helmet",
+    "minecraft:netherite_chestplate",
+    "minecraft:netherite_leggings",
+    "minecraft:netherite_boots"
+  ]
+}
