@@ -1,4 +1,4 @@
-// 1.20.1	2025-04-03T11:07:08.4046737	Item Models: realearthores
+// 1.20.1	2025-04-06T11:31:36.1325563	Item Models: realearthores
 8a12a4df5de32d2c3d1a3fb869fba17d0a0dd6d4 assets/realearthores/models/item/aluminium_axe.json
 d2718c330ab58e38517168b9246986572ac5816f assets/realearthores/models/item/aluminium_boots.json
 0425bc54cf771c8a19b4ca13054da496e19bdafe assets/realearthores/models/item/aluminium_chestplate.json
@@ -538,6 +538,7 @@ b17caedbc0aa54bde89ce831c9b69250b0d729cf assets/realearthores/models/item/capaci
 08bfba78034e0215e779d2b4903a832ea421141f assets/realearthores/models/item/cluster_peridot.json
 b4b1f07663be79ac172d98a98db547f7df50c3a9 assets/realearthores/models/item/cluster_ruby.json
 a7c25d6cd002f29e02107dff2812a7aa85de16da assets/realearthores/models/item/cluster_sapphire.json
+62dffc4eb40bfcbf1ec1c87d3344c5e6dd771e97 assets/realearthores/models/item/coal_generator.json
 23ad1ec0e28e9cf2ea29f250c1cac259efce4264 assets/realearthores/models/item/crusher.json
 505e61131321829db21d52e26a562ff678bf168c assets/realearthores/models/item/diamond_excavator.json
 06358f50a0e52fd4d8e97937b41f54ff8eb05d73 assets/realearthores/models/item/diamond_hammer.json

@@ -3,7 +3,7 @@
   "cookingtime": 400,
   "experience": 0.7,
   "ingredient": {
-    "item": "realearthores:dirty_aluminium"
+    "tag": "realearthores:dirty_dusts/aluminum"
   },
   "result": "realearthores:dust_aluminium"
 }

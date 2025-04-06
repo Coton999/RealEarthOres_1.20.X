@@ -7,6 +7,7 @@ import net.coton999.realearthores.block.entity.machines.coal.BasicExtractorBlock
 import net.coton999.realearthores.block.entity.machines.coal.BasicPurifierBlockEntity;
 import net.coton999.realearthores.block.entity.machines.coal.KilnBlockEntity;
 import net.coton999.realearthores.block.entity.machines.electric.*;
+import net.coton999.realearthores.block.entity.machines.generator.CoalGenBE;
 import net.coton999.realearthores.block.entity.signs.REOHangingSignBlockEntity;
 import net.coton999.realearthores.block.entity.signs.REOSignBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -93,6 +94,13 @@ public class REOBlockEntities {
             BLOCK_ENTITIES.register("electric_transfuser_block_entity", () ->
                     BlockEntityType.Builder.of(TransfuserBE::new,
                             REOBlocks.ELECTRIC_TRANSFUSER.get()).build(null));
+
+    // Generators
+
+    public static final RegistryObject<BlockEntityType<CoalGenBE>> COAL_GENERATOR_BE =
+            BLOCK_ENTITIES.register("coal_generator", () ->
+                    BlockEntityType.Builder.of(CoalGenBE::new,
+                            REOBlocks.COAL_GENERATOR.get()).build(null));
 
 
     // Signs

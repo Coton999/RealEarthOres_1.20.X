@@ -18,6 +18,7 @@ import net.coton999.realearthores.screen.machines.coal.BasicExtractorScreen;
 import net.coton999.realearthores.screen.machines.coal.BasicPurifierScreen;
 import net.coton999.realearthores.screen.machines.coal.KilnScreen;
 import net.coton999.realearthores.screen.machines.electric.*;
+import net.coton999.realearthores.screen.machines.generator.CoalGenScreen;
 import net.coton999.realearthores.util.REOWoodTypes;
 import net.coton999.realearthores.worldgen.tree.REOFoliagePlacers;
 import net.coton999.realearthores.worldgen.tree.REOTrunkPlacers;
@@ -220,11 +221,14 @@ public class RealEarthOres {
             EntityRenderers.register(REOEntities.MOD_BOAT.get(), pContext -> new REOBoatRenderer(pContext, false));
             EntityRenderers.register(REOEntities.MOD_CHEST_BOAT.get(), pContext -> new REOBoatRenderer(pContext, true));
 
+            // Machines //
+            // Coal
             MenuScreens.register(REOMenuTypes.KILN_MENU.get(), KilnScreen::new);
             MenuScreens.register(REOMenuTypes.BASIC_CRUSHER_MENU.get(), BasicCrusherScreen::new);
             MenuScreens.register(REOMenuTypes.BASIC_PURIFIER_MENU.get(), BasicPurifierScreen::new);
             MenuScreens.register(REOMenuTypes.BASIC_EXTRACTOR_MENU.get(), BasicExtractorScreen::new);
 
+            // Electric
             MenuScreens.register(REOMenuTypes.ELECTRIC_FURNACE_MENU.get(), ElectricFurnaceScreen::new);
             MenuScreens.register(REOMenuTypes.CRUSHER_MENU.get(), CrusherScreen::new);
             MenuScreens.register(REOMenuTypes.PURIFIER_MENU.get(), PurifierScreen::new);
@@ -235,6 +239,9 @@ public class RealEarthOres {
             MenuScreens.register(REOMenuTypes.CENTRIFUGE_MENU.get(), CentrifugeScreen::new);
             MenuScreens.register(REOMenuTypes.INDUCTION_FURNACE_MENU.get(), InductionFurnaceScreen::new);
             MenuScreens.register(REOMenuTypes.TRANSFUSER_MENU.get(), TransfuserScreen::new);
+
+            // Generators //
+            MenuScreens.register(REOMenuTypes.COAL_GENERATOR_MENU.get(), CoalGenScreen::new);
 
         }
     }

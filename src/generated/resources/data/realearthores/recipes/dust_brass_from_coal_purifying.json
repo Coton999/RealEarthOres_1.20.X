@@ -3,7 +3,7 @@
   "cookingtime": 400,
   "experience": 0.7,
   "ingredient": {
-    "item": "realearthores:dirty_brass"
+    "tag": "realearthores:dirty_dusts/brass"
   },
   "result": "realearthores:dust_brass"
 }

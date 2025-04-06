@@ -2,7 +2,7 @@
   "type": "realearthores:purifying",
   "ingredients": [
     {
-      "item": "realearthores:dirty_silver"
+      "tag": "realearthores:dirty_dusts/silver"
     }
   ],
   "result": {

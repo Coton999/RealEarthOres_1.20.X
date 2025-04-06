@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:dirty_electrum"
-            ]
+            "tag": "realearthores:dirty_dusts/electrum"
           }
         ]
       },
@@ -31,5 +29,5 @@
       "realearthores:dust_electrum"
     ]
   },
-  "sends_telemetry_event": true
+  "sends_telemetry_event": false
 }

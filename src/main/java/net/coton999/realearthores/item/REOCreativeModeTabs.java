@@ -1629,7 +1629,6 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.PURIFIER.get());
 
                         // Electric
-                        // Basic
                         pOutput.accept(REOBlocks.ELECTRIC_FURNACE.get());
                         pOutput.accept(REOBlocks.ELECTRIC_CRUSHER.get());
                         pOutput.accept(REOBlocks.ELECTRIC_PURIFIER.get());
@@ -1640,6 +1639,10 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.ELECTRIC_CENTRIFUGE.get());
                         pOutput.accept(REOBlocks.ELECTRIC_INDUCTION_FURNACE.get());
                         pOutput.accept(REOBlocks.ELECTRIC_TRANSFUSER.get());
+
+                        // Generator
+
+                        pOutput.accept(REOBlocks.COAL_GENERATOR.get());
 
 
                     })

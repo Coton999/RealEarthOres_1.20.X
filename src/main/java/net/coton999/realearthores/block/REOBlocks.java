@@ -15,6 +15,7 @@ import net.coton999.realearthores.block.custom.machines.coal.BasicExtractorBlock
 import net.coton999.realearthores.block.custom.machines.coal.BasicPurifierBlock;
 import net.coton999.realearthores.block.custom.machines.coal.KilnBlock;
 import net.coton999.realearthores.block.custom.machines.electric.*;
+import net.coton999.realearthores.block.custom.machines.generator.CoalGenBlock;
 import net.coton999.realearthores.block.custom.misc.GravelOreBlock;
 import net.coton999.realearthores.block.custom.misc.LampBlock;
 import net.coton999.realearthores.block.custom.sign.REOHangingSignBlock;
@@ -2283,7 +2284,6 @@ public class REOBlocks {
                     .lightLevel((state) -> state.getValue(BasicPurifierBlock.LIT) ? 13 : 0).noOcclusion()));
 
     // Electric
-    // Basic
     public static final RegistryObject<Block> ELECTRIC_FURNACE = registerBlock("electric_furnace",
             () -> new ElectricFurnaceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
                     .lightLevel((state) -> state.getValue(ElectricFurnaceBlock.LIT) ? 13 : 0).noOcclusion()));
@@ -2314,6 +2314,11 @@ public class REOBlocks {
     public static final RegistryObject<Block> ELECTRIC_TRANSFUSER = registerBlock("electric_transfuser",
             () -> new TransfuserBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
                     .lightLevel((state) -> state.getValue(TransfuserBlock.LIT) ? 13 : 0).noOcclusion()));
+
+    // Generator
+    public static final RegistryObject<Block> COAL_GENERATOR = registerBlock("coal_generator",
+            () -> new CoalGenBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)
+                    .lightLevel((state) -> state.getValue(CoalGenBlock.LIT) ? 13 : 0).noOcclusion()));
 
 
 

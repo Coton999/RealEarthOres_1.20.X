@@ -3,7 +3,7 @@
   "cookingtime": 400,
   "experience": 0.7,
   "ingredient": {
-    "item": "realearthores:dirty_zinc"
+    "tag": "realearthores:dirty_dusts/zinc"
   },
   "result": "realearthores:dust_zinc"
 }

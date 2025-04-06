@@ -2,7 +2,7 @@
   "type": "realearthores:purifying",
   "ingredients": [
     {
-      "item": "realearthores:dirty_zinc"
+      "tag": "realearthores:dirty_dusts/zinc"
     }
   ],
   "result": {

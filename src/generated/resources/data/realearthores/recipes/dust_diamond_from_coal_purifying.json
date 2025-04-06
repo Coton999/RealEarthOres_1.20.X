@@ -3,7 +3,7 @@
   "cookingtime": 400,
   "experience": 0.7,
   "ingredient": {
-    "item": "realearthores:dirty_diamond"
+    "tag": "realearthores:dirty_dusts/diamond"
   },
   "result": "realearthores:dust_diamond"
 }

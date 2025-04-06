@@ -2,7 +2,7 @@
   "type": "realearthores:purifying",
   "ingredients": [
     {
-      "item": "realearthores:dirty_emerald"
+      "tag": "realearthores:dirty_dusts/emerald"
     }
   ],
   "result": {

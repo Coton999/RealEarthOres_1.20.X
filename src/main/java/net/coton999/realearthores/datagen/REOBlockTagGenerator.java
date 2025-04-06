@@ -20,7 +20,6 @@ public class REOBlockTagGenerator extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
         //this.tag(BlockTags.MINEABLE_WITH_HOE)
-        //        .add(ModBlocks..get());
 
         //this.tag(BlockTags.MINEABLE_WITH_AXE);
 
@@ -34,64 +33,10 @@ public class REOBlockTagGenerator extends BlockTagsProvider {
                         REOBlocks.GRAVEL_ORE_TIN.get(), REOBlocks.GRAVEL_ORE_URANIUM.get(), REOBlocks.GRAVEL_ORE_ZINC.get());
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(REOBlocks.ORE_ALUMINIUM.get(), REOBlocks.ORE_LEAD.get(),
-                        REOBlocks.ORE_NICKEL.get(), REOBlocks.ORE_PLATINUM.get(), REOBlocks.ORE_SILVER.get(),
-                        REOBlocks.ORE_TIN.get(), REOBlocks.ORE_URANIUM.get(), REOBlocks.ORE_ZINC.get(),
-
-                        REOBlocks.CLUSTER_PERIDOT.get(),
-
-                        REOBlocks.BUDDING_PERIDOT.get(), REOBlocks.BUDDING_RUBY.get(), REOBlocks.BUDDING_SAPPHIRE.get(),
-
-                        REOBlocks.ORE_ENDERITE.get(),
-
-                        REOBlocks.DEEPSLATE_ALUMINIUM.get(),
-                        REOBlocks.DEEPSLATE_LEAD.get(), REOBlocks.DEEPSLATE_NICKEL.get(), REOBlocks.DEEPSLATE_PLATINUM.get(),
-                        REOBlocks.DEEPSLATE_SILVER.get(), REOBlocks.DEEPSLATE_URANIUM.get(), REOBlocks.DEEPSLATE_ZINC.get(),
-
-                        REOBlocks.NETHER_ALUMINIUM.get(), REOBlocks.NETHER_COAL.get(), REOBlocks.NETHER_COPPER.get(),
-                        REOBlocks.NETHER_DIAMOND.get(), REOBlocks.NETHER_EMERALD.get(), REOBlocks.NETHER_IRON.get(),
-                        REOBlocks.NETHER_LAPIS.get(), REOBlocks.NETHER_LAPIS.get(), REOBlocks.NETHER_NICKEL.get(),
-                        REOBlocks.NETHER_PLATINUM.get(), REOBlocks.NETHER_REDSTONE.get(), REOBlocks.NETHER_SILVER.get(),
-                        REOBlocks.NETHER_TIN.get(), REOBlocks.NETHER_URANIUM.get(), REOBlocks.NETHER_ZINC.get(),
-
-                        REOBlocks.BLOCK_ALUMINIUM.get(),
-                        REOBlocks.BLOCK_ENDERITE.get(), REOBlocks.BLOCK_LEAD.get(), REOBlocks.BLOCK_NICKEL.get(),
-                        REOBlocks.BLOCK_PERIDOT.get(), REOBlocks.BLOCK_PLATINUM.get(), REOBlocks.BLOCK_RUBY.get(),
-                        REOBlocks.BLOCK_SAPPHIRE.get(), REOBlocks.BLOCK_SILVER.get(), REOBlocks.BLOCK_STEEL.get(),
-                        REOBlocks.BLOCK_TIN.get(), REOBlocks.BLOCK_URANIUM.get(), REOBlocks.BLOCK_ZINC.get(),
-
-                        REOBlocks.MARBLE.get(),
-                        REOBlocks.MARBLE_COBBLE.get(), REOBlocks.MARBLE_COBBLE_MOSSY.get(), REOBlocks.MARBLE_BRICK.get(),
-                        REOBlocks.MARBLE_BRICK_MOSSY.get(), REOBlocks.MARBLE_BRICK_CHISELED.get(), REOBlocks.MARBLE_BRICK_CRACKED.get(),
-
-                        REOBlocks.MARBLE_STAIRS.get(), REOBlocks.MARBLE_COBBLE_STAIRS.get(), REOBlocks.MARBLE_COBBLE_MOSSY_STAIRS.get(),
-                        REOBlocks.MARBLE_SLAB.get(), REOBlocks.MARBLE_COBBLE_SLAB.get(), REOBlocks.MARBLE_COBBLE_MOSSY_SLAB.get(),
-                        REOBlocks.MARBLE_WALL.get(), REOBlocks.MARBLE_COBBLE_WALL.get(), REOBlocks.MARBLE_COBBLE_MOSSY_WALL.get(),
-
-                        REOBlocks.LIMESTONE.get(),
-                        REOBlocks.LIMESTONE_COBBLE.get(), REOBlocks.LIMESTONE_COBBLE_MOSSY.get(), REOBlocks.LIMESTONE_BRICK.get(),
-                        REOBlocks.LIMESTONE_BRICK_MOSSY.get(), REOBlocks.LIMESTONE_BRICK_CHISELED.get(), REOBlocks.LIMESTONE_BRICK_CRACKED.get(),
-
-                        REOBlocks.LIMESTONE_STAIRS.get(), REOBlocks.LIMESTONE_COBBLE_STAIRS.get(), REOBlocks.LIMESTONE_COBBLE_MOSSY_STAIRS.get(),
-                        REOBlocks.LIMESTONE_SLAB.get(), REOBlocks.LIMESTONE_COBBLE_SLAB.get(), REOBlocks.LIMESTONE_COBBLE_MOSSY_SLAB.get(),
-                        REOBlocks.LIMESTONE_WALL.get(), REOBlocks.LIMESTONE_COBBLE_WALL.get(), REOBlocks.LIMESTONE_COBBLE_MOSSY_WALL.get(),
-
-                        REOBlocks.CALCITE_STAIRS.get(), REOBlocks.CALCITE_SLAB.get(), REOBlocks.CALCITE_WALL.get(),
-
-                        REOBlocks.NETHERRACK_STAIRS.get(), REOBlocks.NETHERRACK_SLAB.get(), REOBlocks.NETHERRACK_WALL.get(),
-
-                        REOBlocks.BLOCK_RAW_ALUMINIUM.get(), REOBlocks.BLOCK_RAW_ENDERITE.get(), REOBlocks.BLOCK_RAW_LEAD.get(),
-                        REOBlocks.BLOCK_RAW_NICKEL.get(), REOBlocks.BLOCK_RAW_PLATINUM.get(), REOBlocks.BLOCK_RAW_SILVER.get(),
-                        REOBlocks.BLOCK_RAW_TIN.get(), REOBlocks.BLOCK_RAW_URANIUM.get(), REOBlocks.BLOCK_RAW_ZINC.get(),
-
-                        REOBlocks.KILN.get(), REOBlocks.CRUSHER.get(), REOBlocks.EXTRACTOR.get(), REOBlocks.PURIFIER.get(),
-
-                        REOBlocks.ELECTRIC_FURNACE.get(), REOBlocks.ELECTRIC_CRUSHER.get(), REOBlocks.ELECTRIC_PURIFIER.get(),
-                        REOBlocks.ELECTRIC_ALLOY_FURNACE.get(), REOBlocks.ELECTRIC_SAWMILL.get(), REOBlocks.ELECTRIC_EXTRACTOR.get(),
-                        REOBlocks.ELECTRIC_COMPRESSOR.get(), REOBlocks.ELECTRIC_CENTRIFUGE.get(), REOBlocks.ELECTRIC_INDUCTION_FURNACE.get(),
-                        REOBlocks.ELECTRIC_TRANSFUSER.get()
-
-                );
+                .addTag(REOTags.Blocks.REO_ORES) .addTag(REOTags.Blocks.REO_DEEPSLATE_ORES) .addTag(REOTags.Blocks.REO_NETHER_ORES)
+                .addTag(REOTags.Blocks.REO_END_ORES) .addTag(REOTags.Blocks.STORAGE_BLOCKS) .addTag(REOTags.Blocks.RAW_STORAGE_BLOCKS)
+                .addTag(REOTags.Blocks.MARBLE_BLOCKS) .addTag(REOTags.Blocks.LIMESTONE_BLOCKS) .addTag(REOTags.Blocks.CALCITE_BLOCKS)
+                .addTag(REOTags.Blocks.NETHERRACK_BLOCKS) .addTag(REOTags.Blocks.COAL_MACHINES) .addTag(REOTags.Blocks.ELECTRIC_MACHINES);
 
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
@@ -145,21 +90,22 @@ public class REOBlockTagGenerator extends BlockTagsProvider {
         //        .add(ModBlocks..get());
 
         this.tag(REOTags.Blocks.MINEABLE_WITH_SICKLE)
-                .addTag(BlockTags.MINEABLE_WITH_HOE)
-                .addTag(BlockTags.CROPS)
-                .addTag(BlockTags.SAPLINGS)
-                .addTag(BlockTags.CORALS)
-                .addTag(BlockTags.FLOWERS)
-                .addTag(BlockTags.SWORD_EFFICIENT)
+                .addTag(BlockTags.MINEABLE_WITH_HOE).addTag(BlockTags.CROPS).addTag(BlockTags.SAPLINGS)
+                .addTag(BlockTags.CORALS).addTag(BlockTags.FLOWERS).addTag(BlockTags.SWORD_EFFICIENT)
                 .addTag(BlockTags.LEAVES);
 
         this.tag(REOTags.Blocks.MINEABLE_WITH_REO_SHEARS)
                 .addTag(BlockTags.LEAVES);
 
         this.tag(REOTags.Blocks.MINEABLE_WITH_PAXEL)
-                .addTag(BlockTags.MINEABLE_WITH_SHOVEL)
-                .addTag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .addTag(BlockTags.MINEABLE_WITH_AXE);
+                .addTag(BlockTags.MINEABLE_WITH_SHOVEL).addTag(BlockTags.MINEABLE_WITH_PICKAXE).addTag(BlockTags.MINEABLE_WITH_AXE);
+
+        this.tag(REOTags.Blocks.COAL_MACHINES).add(REOBlocks.KILN.get(), REOBlocks.CRUSHER.get(), REOBlocks.EXTRACTOR.get(), REOBlocks.PURIFIER.get());
+
+        this.tag(REOTags.Blocks.ELECTRIC_MACHINES).add(REOBlocks.ELECTRIC_FURNACE.get(), REOBlocks.ELECTRIC_CRUSHER.get(), REOBlocks.ELECTRIC_PURIFIER.get(),
+                REOBlocks.ELECTRIC_ALLOY_FURNACE.get(), REOBlocks.ELECTRIC_SAWMILL.get(), REOBlocks.ELECTRIC_EXTRACTOR.get(),
+                REOBlocks.ELECTRIC_COMPRESSOR.get(), REOBlocks.ELECTRIC_CENTRIFUGE.get(), REOBlocks.ELECTRIC_INDUCTION_FURNACE.get(),
+                REOBlocks.ELECTRIC_TRANSFUSER.get());
 
         this.tag(BlockTags.CROPS)
                 .add(REOBlocks.CROP_BARLEY.get(), REOBlocks.CROP_CAULIFLOWER.get(),
@@ -548,23 +494,35 @@ public class REOBlockTagGenerator extends BlockTagsProvider {
                 .addTag(REOTags.Blocks.LOGS_WILLOW).addTag(REOTags.Blocks.LOGS_VANILLA_RESISTANT);
 
         // Ores
+        this.tag(REOTags.Blocks.REO_ORES).add(REOBlocks.ORE_ALUMINIUM.get(), REOBlocks.ORE_LEAD.get(),
+                REOBlocks.ORE_NICKEL.get(), REOBlocks.ORE_PLATINUM.get(), REOBlocks.ORE_SILVER.get(),
+                REOBlocks.ORE_TIN.get(), REOBlocks.ORE_URANIUM.get(), REOBlocks.ORE_ZINC.get());
+
+        this.tag(REOTags.Blocks.REO_DEEPSLATE_ORES).add(REOBlocks.DEEPSLATE_ALUMINIUM.get(), REOBlocks.DEEPSLATE_LEAD.get(),
+                REOBlocks.DEEPSLATE_NICKEL.get(), REOBlocks.DEEPSLATE_PLATINUM.get(),
+                REOBlocks.DEEPSLATE_SILVER.get(), REOBlocks.DEEPSLATE_URANIUM.get(), REOBlocks.DEEPSLATE_ZINC.get());
+
+        this.tag(REOTags.Blocks.REO_GRAVEL_ORES).add(REOBlocks.GRAVEL_ORE_ALUMINIUM.get(), REOBlocks.GRAVEL_ORE_LEAD.get(),
+                REOBlocks.GRAVEL_ORE_NICKEL.get(), REOBlocks.GRAVEL_ORE_PLATINUM.get(),
+                REOBlocks.GRAVEL_ORE_SILVER.get(), REOBlocks.GRAVEL_ORE_TIN.get(),
+                REOBlocks.GRAVEL_ORE_URANIUM.get(), REOBlocks.GRAVEL_ORE_ZINC.get());
+
+        this.tag(REOTags.Blocks.REO_NETHER_ORES).add(REOBlocks.NETHER_ALUMINIUM.get(), REOBlocks.NETHER_LEAD.get(),
+                REOBlocks.NETHER_NICKEL.get(), REOBlocks.NETHER_PLATINUM.get(),
+                REOBlocks.NETHER_SILVER.get(), REOBlocks.NETHER_TIN.get(),
+                REOBlocks.NETHER_URANIUM.get(), REOBlocks.NETHER_ZINC.get());
+
+        this.tag(REOTags.Blocks.REO_END_ORES).add(REOBlocks.ORE_ENDERITE.get());
+
         // Vanilla
-        this.tag(BlockTags.GOLD_ORES)
-                .add(REOBlocks.GRAVEL_ORE_GOLD.get());
-        this.tag(BlockTags.IRON_ORES)
-                .add(REOBlocks.GRAVEL_ORE_IRON.get()).add(REOBlocks.NETHER_IRON.get());
-        this.tag(BlockTags.DIAMOND_ORES)
-                .add(REOBlocks.GRAVEL_ORE_DIAMOND.get()).add(REOBlocks.NETHER_DIAMOND.get());
-        this.tag(BlockTags.REDSTONE_ORES)
-                .add(REOBlocks.GRAVEL_ORE_REDSTONE.get()).add(REOBlocks.NETHER_REDSTONE.get());
-        this.tag(BlockTags.LAPIS_ORES)
-                .add(REOBlocks.GRAVEL_ORE_LAPIS.get()).add(REOBlocks.NETHER_LAPIS.get());
-        this.tag(BlockTags.COAL_ORES)
-                .add(REOBlocks.GRAVEL_ORE_COAL.get()).add(REOBlocks.NETHER_COAL.get());
-        this.tag(BlockTags.EMERALD_ORES)
-                .add(REOBlocks.GRAVEL_ORE_EMERALD.get()).add(REOBlocks.NETHER_EMERALD.get());
-        this.tag(BlockTags.COPPER_ORES)
-                .add(REOBlocks.GRAVEL_ORE_COPPER.get()).add(REOBlocks.NETHER_COPPER.get());
+        this.tag(BlockTags.GOLD_ORES).add(REOBlocks.GRAVEL_ORE_GOLD.get());
+        this.tag(BlockTags.IRON_ORES).add(REOBlocks.GRAVEL_ORE_IRON.get()).add(REOBlocks.NETHER_IRON.get());
+        this.tag(BlockTags.DIAMOND_ORES).add(REOBlocks.GRAVEL_ORE_DIAMOND.get()).add(REOBlocks.NETHER_DIAMOND.get());
+        this.tag(BlockTags.REDSTONE_ORES).add(REOBlocks.GRAVEL_ORE_REDSTONE.get()).add(REOBlocks.NETHER_REDSTONE.get());
+        this.tag(BlockTags.LAPIS_ORES).add(REOBlocks.GRAVEL_ORE_LAPIS.get()).add(REOBlocks.NETHER_LAPIS.get());
+        this.tag(BlockTags.COAL_ORES).add(REOBlocks.GRAVEL_ORE_COAL.get()).add(REOBlocks.NETHER_COAL.get());
+        this.tag(BlockTags.EMERALD_ORES).add(REOBlocks.GRAVEL_ORE_EMERALD.get()).add(REOBlocks.NETHER_EMERALD.get());
+        this.tag(BlockTags.COPPER_ORES).add(REOBlocks.GRAVEL_ORE_COPPER.get()).add(REOBlocks.NETHER_COPPER.get());
 
         // Modded
         this.tag(REOTags.Blocks.ORES_ALUMINUM)
@@ -591,6 +549,68 @@ public class REOBlockTagGenerator extends BlockTagsProvider {
         this.tag(REOTags.Blocks.ORES_ZINC)
                 .add(REOBlocks.ORE_ZINC.get()).add(REOBlocks.DEEPSLATE_ZINC.get())
                 .add(REOBlocks.GRAVEL_ORE_ZINC.get()).add(REOBlocks.NETHER_ZINC.get());
+
+        // Storage Blocks //
+        // Block
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS).add(REOBlocks.BLOCK_ALUMINIUM.get(), REOBlocks.BLOCK_BRASS.get(),
+                REOBlocks.BLOCK_BRONZE.get(), REOBlocks.BLOCK_ELECTRUM.get(), REOBlocks.BLOCK_ENDERITE.get(),
+                REOBlocks.BLOCK_LEAD.get(), REOBlocks.BLOCK_NICKEL.get(), REOBlocks.BLOCK_PERIDOT.get(),
+                REOBlocks.BLOCK_PLATINUM.get(), REOBlocks.BLOCK_RUBY.get(), REOBlocks.BLOCK_SAPPHIRE.get(),
+                REOBlocks.BLOCK_SILVER.get(), REOBlocks.BLOCK_STEEL.get(), REOBlocks.BLOCK_TIN.get(),
+                REOBlocks.BLOCK_URANIUM.get(), REOBlocks.BLOCK_ZINC.get());
+
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_ALUMINUM).add(REOBlocks.BLOCK_ALUMINIUM.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_BRASS).add(REOBlocks.BLOCK_BRASS.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_BRONZE).add(REOBlocks.BLOCK_BRONZE.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_ELECTRUM).add(REOBlocks.BLOCK_ELECTRUM.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_ENDERITE).add(REOBlocks.BLOCK_ENDERITE.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_LEAD).add(REOBlocks.BLOCK_LEAD.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_NICKEL).add(REOBlocks.BLOCK_NICKEL.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_PERIDOT).add(REOBlocks.BLOCK_PERIDOT.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_PLATINUM).add(REOBlocks.BLOCK_PLATINUM.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_RUBY).add(REOBlocks.BLOCK_RUBY.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_SAPPHIRE).add(REOBlocks.BLOCK_SAPPHIRE.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_SILVER).add(REOBlocks.BLOCK_SILVER.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_STEEL).add(REOBlocks.BLOCK_STEEL.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_TIN).add(REOBlocks.BLOCK_TIN.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_URANIUM).add(REOBlocks.BLOCK_URANIUM.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_ZINC).add(REOBlocks.BLOCK_ZINC.get());
+
+        // Raw
+        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS).add(REOBlocks.BLOCK_RAW_ALUMINIUM.get(), REOBlocks.BLOCK_RAW_ENDERITE.get(),
+                REOBlocks.BLOCK_RAW_LEAD.get(), REOBlocks.BLOCK_RAW_NICKEL.get(), REOBlocks.BLOCK_RAW_PLATINUM.get(),
+                REOBlocks.BLOCK_RAW_SILVER.get(), REOBlocks.BLOCK_RAW_TIN.get(), REOBlocks.BLOCK_RAW_URANIUM.get(),
+                REOBlocks.BLOCK_RAW_ZINC.get());
+
+        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS_ALUMINUM).add(REOBlocks.BLOCK_RAW_ALUMINIUM.get());
+        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS_ENDERITE).add(REOBlocks.BLOCK_RAW_ENDERITE.get());
+        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS_LEAD).add(REOBlocks.BLOCK_RAW_LEAD.get());
+        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS_NICKEL).add(REOBlocks.BLOCK_RAW_NICKEL.get());
+        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS_PLATINUM).add(REOBlocks.BLOCK_RAW_PLATINUM.get());
+        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS_SILVER).add(REOBlocks.BLOCK_RAW_SILVER.get());
+        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS_TIN).add(REOBlocks.BLOCK_RAW_TIN.get());
+        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS_URANIUM).add(REOBlocks.BLOCK_RAW_URANIUM.get());
+        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS_ZINC).add(REOBlocks.BLOCK_RAW_ZINC.get());
+
+        this.tag(REOTags.Blocks.MARBLE_BLOCKS).add(REOBlocks.MARBLE.get(), REOBlocks.MARBLE_COBBLE.get(),
+                REOBlocks.MARBLE_COBBLE_MOSSY.get(), REOBlocks.MARBLE_BRICK.get(), REOBlocks.MARBLE_BRICK_MOSSY.get(),
+                REOBlocks.MARBLE_BRICK_CHISELED.get(), REOBlocks.MARBLE_BRICK_CRACKED.get(),
+
+                REOBlocks.MARBLE_STAIRS.get(), REOBlocks.MARBLE_COBBLE_STAIRS.get(), REOBlocks.MARBLE_COBBLE_MOSSY_STAIRS.get(),
+                REOBlocks.MARBLE_SLAB.get(), REOBlocks.MARBLE_COBBLE_SLAB.get(), REOBlocks.MARBLE_COBBLE_MOSSY_SLAB.get(),
+                REOBlocks.MARBLE_WALL.get(), REOBlocks.MARBLE_COBBLE_WALL.get(), REOBlocks.MARBLE_COBBLE_MOSSY_WALL.get());
+
+        this.tag(REOTags.Blocks.LIMESTONE_BLOCKS).add(REOBlocks.LIMESTONE.get(), REOBlocks.LIMESTONE_COBBLE.get(),
+                REOBlocks.LIMESTONE_COBBLE_MOSSY.get(), REOBlocks.LIMESTONE_BRICK.get(), REOBlocks.LIMESTONE_BRICK_MOSSY.get(),
+                REOBlocks.LIMESTONE_BRICK_CHISELED.get(), REOBlocks.LIMESTONE_BRICK_CRACKED.get(),
+
+                REOBlocks.LIMESTONE_STAIRS.get(), REOBlocks.LIMESTONE_COBBLE_STAIRS.get(), REOBlocks.LIMESTONE_COBBLE_MOSSY_STAIRS.get(),
+                REOBlocks.LIMESTONE_SLAB.get(), REOBlocks.LIMESTONE_COBBLE_SLAB.get(), REOBlocks.LIMESTONE_COBBLE_MOSSY_SLAB.get(),
+                REOBlocks.LIMESTONE_WALL.get(), REOBlocks.LIMESTONE_COBBLE_WALL.get(), REOBlocks.LIMESTONE_COBBLE_MOSSY_WALL.get());
+
+        this.tag(REOTags.Blocks.CALCITE_BLOCKS).add(REOBlocks.CALCITE_STAIRS.get(), REOBlocks.CALCITE_SLAB.get(), REOBlocks.CALCITE_WALL.get());
+
+        this.tag(REOTags.Blocks.NETHERRACK_BLOCKS).add(REOBlocks.NETHERRACK_STAIRS.get(), REOBlocks.NETHERRACK_SLAB.get(), REOBlocks.NETHERRACK_WALL.get());
 
     }
 }

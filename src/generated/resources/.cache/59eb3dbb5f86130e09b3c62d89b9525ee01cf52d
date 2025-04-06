@@ -1,4 +1,4 @@
-// 1.20.1	2025-04-03T09:54:26.8694972	Loot Tables
+// 1.20.1	2025-04-06T11:31:36.1407245	Loot Tables
 d9f9d58442c54e893a93a7b144ae4f73993ae74a data/realearthores/loot_tables/blocks/berry_blackberry_block.json
 6c85cb763630014fad8f3694f089e171ffc3dba1 data/realearthores/loot_tables/blocks/berry_blueberry_block.json
 c9add983d1dc3d32262289fd50d25418441557a1 data/realearthores/loot_tables/blocks/berry_raspberry_block.json
@@ -56,6 +56,7 @@ ec2ee59a9a0faed7db59cefadc620b3efde6ce36 data/realearthores/loot_tables/blocks/b
 9a144f8e7a804bf747f1b76d57dcd049ca15cfa5 data/realearthores/loot_tables/blocks/cluster_peridot.json
 7c951c7f66bf9653a5ef4c39bbd3389b75456de3 data/realearthores/loot_tables/blocks/cluster_ruby.json
 a263da1ae53f5cf613d4047588ec65fdad8972cc data/realearthores/loot_tables/blocks/cluster_sapphire.json
+ab39a678bde843833ac1ad7cf83b68b2f7c08de3 data/realearthores/loot_tables/blocks/coal_generator.json
 e1c0d44f21ae38d8413d9e29f1d4447bc4115e37 data/realearthores/loot_tables/blocks/crop_barley.json
 7b2de371038a923f44d3252bce12098c9a2d67ed data/realearthores/loot_tables/blocks/crop_cauliflower.json
 f6ba9ca20855470ec98c6e893617400aa6ceec62 data/realearthores/loot_tables/blocks/crop_cotton.json

@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:dirty_amethyst"
-            ]
+            "tag": "realearthores:dirty_dusts/amethyst"
           }
         ]
       },
@@ -31,5 +29,5 @@
       "realearthores:dust_amethyst"
     ]
   },
-  "sends_telemetry_event": false
+  "sends_telemetry_event": true
 }

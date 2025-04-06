@@ -3,7 +3,7 @@
   "cookingtime": 400,
   "experience": 0.7,
   "ingredient": {
-    "item": "realearthores:dirty_silver"
+    "tag": "realearthores:dirty_dusts/silver"
   },
   "result": "realearthores:dust_silver"
 }

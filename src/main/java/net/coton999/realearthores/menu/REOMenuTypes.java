@@ -6,6 +6,7 @@ import net.coton999.realearthores.menu.machines.coal.BasicExtractorMenu;
 import net.coton999.realearthores.menu.machines.coal.BasicPurifierMenu;
 import net.coton999.realearthores.menu.machines.coal.KilnMenu;
 import net.coton999.realearthores.menu.machines.electric.*;
+import net.coton999.realearthores.menu.machines.generator.CoalGenMenu;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraftforge.common.extensions.IForgeMenuType;
@@ -63,6 +64,10 @@ public class REOMenuTypes {
 
     public static final RegistryObject<MenuType<TransfuserMenu>> TRANSFUSER_MENU =
             registerMenuType(TransfuserMenu::new, "transfuser_menu");
+
+    // Generator
+    public static final RegistryObject<MenuType<CoalGenMenu>> COAL_GENERATOR_MENU =
+            registerMenuType(CoalGenMenu::new, "coal_generator_menu");
 
 
     private static <T extends AbstractContainerMenu> RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory, String name) {

@@ -3,7 +3,7 @@
   "cookingtime": 400,
   "experience": 0.7,
   "ingredient": {
-    "item": "realearthores:dirty_amethyst"
+    "tag": "realearthores:dirty_dusts/amethyst"
   },
   "result": "realearthores:dust_amethyst"
 }

@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:dirty_enderite"
-            ]
+            "tag": "realearthores:dirty_dusts/enderite"
           }
         ]
       },

@@ -2,7 +2,7 @@
   "type": "realearthores:purifying",
   "ingredients": [
     {
-      "item": "realearthores:dirty_bronze"
+      "tag": "realearthores:dirty_dusts/bronze"
     }
   ],
   "result": {

@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:dirty_peridot"
-            ]
+            "tag": "realearthores:dirty_dusts/peridot"
           }
         ]
       },

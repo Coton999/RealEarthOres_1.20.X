@@ -1184,6 +1184,9 @@ public class REOItemModelProvider extends ItemModelProvider {
         simpleBlockItem(REOBlocks.ELECTRIC_SAWMILL);
         simpleBlockItem(REOBlocks.ELECTRIC_TRANSFUSER);
 
+        // Generator
+        simpleBlockItem(REOBlocks.COAL_GENERATOR);
+
     }
 
     private ItemModelBuilder horseArmorItem(RegistryObject<Item> item) {

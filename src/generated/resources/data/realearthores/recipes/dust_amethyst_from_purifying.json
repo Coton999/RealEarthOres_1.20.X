@@ -2,7 +2,7 @@
   "type": "realearthores:purifying",
   "ingredients": [
     {
-      "item": "realearthores:dirty_amethyst"
+      "tag": "realearthores:dirty_dusts/amethyst"
     }
   ],
   "result": {

@@ -1369,6 +1369,8 @@
   "block.realearthores.electric_induction_furnace": "Induction Furnace",
   "block.realearthores.electric_transfuser": "Fluid Transfuser",
 
+  "block.realearthores.coal_generator": "Coal Generator",
+
   "fluid_type.realearthores.molten_aluminium_fluid": "Molten Aluminium",
   "fluid_type.realearthores.molten_amethyst_fluid": "Molten Amethyst",
   "fluid_type.realearthores.molten_brass_fluid": "Molten Brass",

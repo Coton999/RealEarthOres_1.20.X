@@ -1445,6 +1445,9 @@ public class REOBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(REOBlocks.ELECTRIC_INDUCTION_FURNACE.get());
         this.dropSelf(REOBlocks.ELECTRIC_TRANSFUSER.get());
 
+        // Generator
+        this.dropSelf(REOBlocks.COAL_GENERATOR.get());
+
 
     }
     private void cropLootTable(Block pCrop, Item pSeeds, Item pResult, IntegerProperty pInteger, int maxAge) {

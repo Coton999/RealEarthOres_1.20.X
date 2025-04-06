@@ -3,7 +3,7 @@
   "cookingtime": 400,
   "experience": 0.7,
   "ingredient": {
-    "item": "realearthores:dirty_obsidian"
+    "tag": "realearthores:dirty_dusts/obsidian"
   },
   "result": "realearthores:dust_obsidian"
 }

@@ -304,6 +304,27 @@ public class REOItemTagProvider extends ItemTagsProvider {
                 .addTag(REOTags.Items.WALNUT_LOGS).addTag(REOTags.Items.WILLOW_LOGS)
                 .addTag(REOTags.Items.VANILLA_RESISTANT_LOGS);
 
+        // Ores
+        this.tag(REOTags.Items.REO_ORES).add(REOBlocks.ORE_ALUMINIUM.get().asItem(), REOBlocks.ORE_LEAD.get().asItem(),
+                REOBlocks.ORE_NICKEL.get().asItem(), REOBlocks.ORE_PLATINUM.get().asItem(), REOBlocks.ORE_SILVER.get().asItem(),
+                REOBlocks.ORE_TIN.get().asItem(), REOBlocks.ORE_URANIUM.get().asItem(), REOBlocks.ORE_ZINC.get().asItem());
+
+        this.tag(REOTags.Items.REO_DEEPSLATE_ORES).add(REOBlocks.DEEPSLATE_ALUMINIUM.get().asItem(), REOBlocks.DEEPSLATE_LEAD.get().asItem(),
+                REOBlocks.DEEPSLATE_NICKEL.get().asItem(), REOBlocks.DEEPSLATE_PLATINUM.get().asItem(),
+                REOBlocks.DEEPSLATE_SILVER.get().asItem(), REOBlocks.DEEPSLATE_URANIUM.get().asItem(), REOBlocks.DEEPSLATE_ZINC.get().asItem());
+
+        this.tag(REOTags.Items.REO_GRAVEL_ORES).add(REOBlocks.GRAVEL_ORE_ALUMINIUM.get().asItem(), REOBlocks.GRAVEL_ORE_LEAD.get().asItem(),
+                REOBlocks.GRAVEL_ORE_NICKEL.get().asItem(), REOBlocks.GRAVEL_ORE_PLATINUM.get().asItem(),
+                REOBlocks.GRAVEL_ORE_SILVER.get().asItem(), REOBlocks.GRAVEL_ORE_TIN.get().asItem(),
+                REOBlocks.GRAVEL_ORE_URANIUM.get().asItem(), REOBlocks.GRAVEL_ORE_ZINC.get().asItem());
+
+        this.tag(REOTags.Items.REO_NETHER_ORES).add(REOBlocks.NETHER_ALUMINIUM.get().asItem(), REOBlocks.NETHER_LEAD.get().asItem(),
+                REOBlocks.NETHER_NICKEL.get().asItem(), REOBlocks.NETHER_PLATINUM.get().asItem(),
+                REOBlocks.NETHER_SILVER.get().asItem(), REOBlocks.NETHER_TIN.get().asItem(),
+                REOBlocks.NETHER_URANIUM.get().asItem(), REOBlocks.NETHER_ZINC.get().asItem());
+
+        this.tag(REOTags.Items.REO_END_ORES).add(REOBlocks.ORE_ENDERITE.get().asItem());
+
         // Vanilla
         this.tag(ItemTags.GOLD_ORES)
                 .add(REOBlocks.GRAVEL_ORE_GOLD.get().asItem());
@@ -373,178 +394,444 @@ public class REOItemTagProvider extends ItemTagsProvider {
                 .add(REOItems.GEAR_DIAMOND.get(), REOItems.GEAR_EMERALD.get(), REOItems.GEAR_AMETHYST.get(),
                         REOItems.GEAR_PERIDOT.get(), REOItems.GEAR_RUBY.get(), REOItems.GEAR_SAPPHIRE.get());
 
-        this.tag(REOTags.Items.GEARS_ALUMINUM)
-                .add(REOItems.GEAR_ALUMINIUM.get());
-        this.tag(REOTags.Items.GEARS_AMETHYST)
-                .add(REOItems.GEAR_AMETHYST.get());
-        this.tag(REOTags.Items.GEARS_BRASS)
-                .add(REOItems.GEAR_BRASS.get());
-        this.tag(REOTags.Items.GEARS_BRONZE)
-                .add(REOItems.GEAR_BRONZE.get());
-        this.tag(REOTags.Items.GEARS_COPPER)
-                .add(REOItems.GEAR_COPPER.get());
-        this.tag(REOTags.Items.GEARS_DIAMOND)
-                .add(REOItems.GEAR_DIAMOND.get());
-        this.tag(REOTags.Items.GEARS_ELECTRTUM)
-                .add(REOItems.GEAR_ELECTRUM.get());
-        this.tag(REOTags.Items.GEARS_EMERALD)
-                .add(REOItems.GEAR_EMERALD.get());
-        this.tag(REOTags.Items.GEARS_ENDERITE)
-                .add(REOItems.GEAR_ENDERITE.get());
-        this.tag(REOTags.Items.GEARS_GOLD)
-                .add(REOItems.GEAR_GOLDEN.get());
-        this.tag(REOTags.Items.GEARS_IRON)
-                .add(REOItems.GEAR_IRON.get());
-        this.tag(REOTags.Items.GEARS_LEAD)
-                .add(REOItems.GEAR_LEAD.get());
-        this.tag(REOTags.Items.GEARS_NICKEL)
-                .add(REOItems.GEAR_NICKEL.get());
-        this.tag(REOTags.Items.GEARS_PERIDOT)
-                .add(REOItems.GEAR_PERIDOT.get());
-        this.tag(REOTags.Items.GEARS_PLATINUM)
-                .add(REOItems.GEAR_PLATINUM.get());
-        this.tag(REOTags.Items.GEARS_RUBY)
-                .add(REOItems.GEAR_RUBY.get());
-        this.tag(REOTags.Items.GEARS_SAPPHIRE)
-                .add(REOItems.GEAR_SAPPHIRE.get());
-        this.tag(REOTags.Items.GEARS_SILVER)
-                .add(REOItems.GEAR_SILVER.get());
-        this.tag(REOTags.Items.GEARS_STEEL)
-                .add(REOItems.GEAR_STEEL.get());
-        this.tag(REOTags.Items.GEARS_TIN)
-                .add(REOItems.GEAR_TIN.get());
-        this.tag(REOTags.Items.GEARS_ZINC)
-                .add(REOItems.GEAR_ZINC.get());
+        this.tag(REOTags.Items.GEARS_ALUMINUM).add(REOItems.GEAR_ALUMINIUM.get());
+        this.tag(REOTags.Items.GEARS_AMETHYST).add(REOItems.GEAR_AMETHYST.get());
+        this.tag(REOTags.Items.GEARS_BRASS).add(REOItems.GEAR_BRASS.get());
+        this.tag(REOTags.Items.GEARS_BRONZE).add(REOItems.GEAR_BRONZE.get());
+        this.tag(REOTags.Items.GEARS_COPPER).add(REOItems.GEAR_COPPER.get());
+        this.tag(REOTags.Items.GEARS_DIAMOND).add(REOItems.GEAR_DIAMOND.get());
+        this.tag(REOTags.Items.GEARS_ELECTRTUM).add(REOItems.GEAR_ELECTRUM.get());
+        this.tag(REOTags.Items.GEARS_EMERALD).add(REOItems.GEAR_EMERALD.get());
+        this.tag(REOTags.Items.GEARS_ENDERITE).add(REOItems.GEAR_ENDERITE.get());
+        this.tag(REOTags.Items.GEARS_GOLD).add(REOItems.GEAR_GOLDEN.get());
+        this.tag(REOTags.Items.GEARS_IRON).add(REOItems.GEAR_IRON.get());
+        this.tag(REOTags.Items.GEARS_LEAD).add(REOItems.GEAR_LEAD.get());
+        this.tag(REOTags.Items.GEARS_NICKEL).add(REOItems.GEAR_NICKEL.get());
+        this.tag(REOTags.Items.GEARS_PERIDOT).add(REOItems.GEAR_PERIDOT.get());
+        this.tag(REOTags.Items.GEARS_PLATINUM).add(REOItems.GEAR_PLATINUM.get());
+        this.tag(REOTags.Items.GEARS_RUBY).add(REOItems.GEAR_RUBY.get());
+        this.tag(REOTags.Items.GEARS_SAPPHIRE).add(REOItems.GEAR_SAPPHIRE.get());
+        this.tag(REOTags.Items.GEARS_SILVER).add(REOItems.GEAR_SILVER.get());
+        this.tag(REOTags.Items.GEARS_STEEL).add(REOItems.GEAR_STEEL.get());
+        this.tag(REOTags.Items.GEARS_TIN).add(REOItems.GEAR_TIN.get());
+        this.tag(REOTags.Items.GEARS_ZINC).add(REOItems.GEAR_ZINC.get());
+
+        // Tools
+        this.tag(ItemTags.AXES).add(REOItems.ALUMINIUM_AXE.get(), REOItems.AMETHYST_AXE.get(),
+                REOItems.BRONZE_AXE.get(), REOItems.ENDERITE_AXE.get(),REOItems.PERIDOT_AXE.get(),
+                REOItems.PLATINUM_AXE.get(),REOItems.RUBY_AXE.get(),REOItems.SAPPHIRE_AXE.get(),
+                REOItems.SILVER_AXE.get(),REOItems.STEEL_AXE.get());
+
+        this.tag(REOTags.Items.AXES_ALUMINUM).add(REOItems.ALUMINIUM_AXE.get());
+        this.tag(REOTags.Items.AXES_AMETHYST).add(REOItems.AMETHYST_AXE.get());
+        this.tag(REOTags.Items.AXES_BRONZE).add(REOItems.BRONZE_AXE.get());
+        this.tag(REOTags.Items.AXES_ENDERITE).add(REOItems.ENDERITE_AXE.get());
+        this.tag(REOTags.Items.AXES_PERIDOT).add(REOItems.PERIDOT_AXE.get());
+        this.tag(REOTags.Items.AXES_PLATINUM).add(REOItems.PLATINUM_AXE.get());
+        this.tag(REOTags.Items.AXES_RUBY).add(REOItems.RUBY_AXE.get());
+        this.tag(REOTags.Items.AXES_SAPPHIRE).add(REOItems.SAPPHIRE_AXE.get());
+        this.tag(REOTags.Items.AXES_SILVER).add(REOItems.SILVER_AXE.get());
+        this.tag(REOTags.Items.AXES_STEEL).add(REOItems.STEEL_AXE.get());
+
+        this.tag(REOTags.Items.BOWS).add(REOItems.STONE_BOW.get(), REOItems.GOLDEN_BOW.get(), REOItems.IRON_BOW.get(),
+                REOItems.DIAMOND_BOW.get(), REOItems.NETHERITE_BOW.get(), REOItems.ALUMINIUM_BOW.get(),
+                REOItems.AMETHYST_BOW.get(), REOItems.BRONZE_BOW.get(), REOItems.ENDERITE_BOW.get(),
+                REOItems.PERIDOT_BOW.get(), REOItems.PLATINUM_BOW.get(), REOItems.RUBY_BOW.get(),
+                REOItems.SAPPHIRE_BOW.get(), REOItems.SILVER_BOW.get(), REOItems.STEEL_BOW.get());
+
+        this.tag(REOTags.Items.BOWS_STONE).add(REOItems.STONE_BOW.get());
+        this.tag(REOTags.Items.BOWS_GOLD).add(REOItems.GOLDEN_BOW.get());
+        this.tag(REOTags.Items.BOWS_IRON).add(REOItems.IRON_BOW.get());
+        this.tag(REOTags.Items.BOWS_DIAMOND).add(REOItems.DIAMOND_BOW.get());
+        this.tag(REOTags.Items.BOWS_NETHERITE).add(REOItems.NETHERITE_BOW.get());
+
+        this.tag(REOTags.Items.BOWS_ALUMINUM).add(REOItems.ALUMINIUM_BOW.get());
+        this.tag(REOTags.Items.BOWS_AMETHYST).add(REOItems.AMETHYST_BOW.get());
+        this.tag(REOTags.Items.BOWS_BRONZE).add(REOItems.BRONZE_BOW.get());
+        this.tag(REOTags.Items.BOWS_ENDERITE).add(REOItems.ENDERITE_BOW.get());
+        this.tag(REOTags.Items.BOWS_PERIDOT).add(REOItems.PERIDOT_BOW.get());
+        this.tag(REOTags.Items.BOWS_PLATINUM).add(REOItems.PLATINUM_BOW.get());
+        this.tag(REOTags.Items.BOWS_RUBY).add(REOItems.RUBY_BOW.get());
+        this.tag(REOTags.Items.BOWS_SAPPHIRE).add(REOItems.SAPPHIRE_BOW.get());
+        this.tag(REOTags.Items.BOWS_SILVER).add(REOItems.SILVER_BOW.get());
+        this.tag(REOTags.Items.BOWS_STEEL).add(REOItems.STEEL_BOW.get());
+
+        this.tag(REOTags.Items.EXCAVATORS).add(REOItems.WOODEN_EXCAVATOR.get(), REOItems.STONE_EXCAVATOR.get(), REOItems.GOLDEN_EXCAVATOR.get(),
+                REOItems.IRON_EXCAVATOR.get(), REOItems.DIAMOND_EXCAVATOR.get(), REOItems.NETHERITE_EXCAVATOR.get(),
+                REOItems.ALUMINIUM_EXCAVATOR.get(), REOItems.AMETHYST_EXCAVATOR.get(), REOItems.BRONZE_EXCAVATOR.get(),
+                REOItems.ENDERITE_EXCAVATOR.get(), REOItems.PERIDOT_EXCAVATOR.get(), REOItems.PLATINUM_EXCAVATOR.get(),
+                REOItems.RUBY_EXCAVATOR.get(), REOItems.SAPPHIRE_EXCAVATOR.get(), REOItems.SILVER_EXCAVATOR.get(),
+                REOItems.STEEL_EXCAVATOR.get());
+
+        this.tag(REOTags.Items.EXCAVATORS_WOOD).add(REOItems.WOODEN_EXCAVATOR.get());
+        this.tag(REOTags.Items.EXCAVATORS_STONE).add(REOItems.STONE_EXCAVATOR.get());
+        this.tag(REOTags.Items.EXCAVATORS_GOLD).add(REOItems.GOLDEN_EXCAVATOR.get());
+        this.tag(REOTags.Items.EXCAVATORS_IRON).add(REOItems.IRON_EXCAVATOR.get());
+        this.tag(REOTags.Items.EXCAVATORS_DIAMOND).add(REOItems.DIAMOND_EXCAVATOR.get());
+        this.tag(REOTags.Items.EXCAVATORS_NETHERITE).add(REOItems.NETHERITE_EXCAVATOR.get());
+
+        this.tag(REOTags.Items.EXCAVATORS_ALUMINUM).add(REOItems.ALUMINIUM_EXCAVATOR.get());
+        this.tag(REOTags.Items.EXCAVATORS_AMETHYST).add(REOItems.AMETHYST_EXCAVATOR.get());
+        this.tag(REOTags.Items.EXCAVATORS_BRONZE).add(REOItems.BRONZE_EXCAVATOR.get());
+        this.tag(REOTags.Items.EXCAVATORS_ENDERITE).add(REOItems.ENDERITE_EXCAVATOR.get());
+        this.tag(REOTags.Items.EXCAVATORS_PERIDOT).add(REOItems.PERIDOT_EXCAVATOR.get());
+        this.tag(REOTags.Items.EXCAVATORS_PLATINUM).add(REOItems.PLATINUM_EXCAVATOR.get());
+        this.tag(REOTags.Items.EXCAVATORS_RUBY).add(REOItems.RUBY_EXCAVATOR.get());
+        this.tag(REOTags.Items.EXCAVATORS_SAPPHIRE).add(REOItems.SAPPHIRE_EXCAVATOR.get());
+        this.tag(REOTags.Items.EXCAVATORS_SILVER).add(REOItems.SILVER_EXCAVATOR.get());
+        this.tag(REOTags.Items.EXCAVATORS_STEEL).add(REOItems.STEEL_EXCAVATOR.get());
+
+        this.tag(REOTags.Items.HAMMERS).add(REOItems.WOODEN_HAMMER.get(), REOItems.STONE_HAMMER.get(), REOItems.GOLDEN_HAMMER.get(),
+                REOItems.IRON_HAMMER.get(), REOItems.DIAMOND_HAMMER.get(), REOItems.NETHERITE_HAMMER.get(),
+                REOItems.ALUMINIUM_HAMMER.get(), REOItems.AMETHYST_HAMMER.get(), REOItems.BRONZE_HAMMER.get(),
+                REOItems.ENDERITE_HAMMER.get(), REOItems.PERIDOT_HAMMER.get(), REOItems.PLATINUM_HAMMER.get(),
+                REOItems.RUBY_HAMMER.get(), REOItems.SAPPHIRE_HAMMER.get(), REOItems.SILVER_HAMMER.get(),
+                REOItems.STEEL_HAMMER.get());
+
+        this.tag(REOTags.Items.HAMMERS_WOOD).add(REOItems.WOODEN_HAMMER.get());
+        this.tag(REOTags.Items.HAMMERS_STONE).add(REOItems.STONE_HAMMER.get());
+        this.tag(REOTags.Items.HAMMERS_GOLD).add(REOItems.GOLDEN_HAMMER.get());
+        this.tag(REOTags.Items.HAMMERS_IRON).add(REOItems.IRON_HAMMER.get());
+        this.tag(REOTags.Items.HAMMERS_DIAMOND).add(REOItems.DIAMOND_HAMMER.get());
+        this.tag(REOTags.Items.HAMMERS_NETHERITE).add(REOItems.NETHERITE_HAMMER.get());
+
+        this.tag(REOTags.Items.HAMMERS_ALUMINUM).add(REOItems.ALUMINIUM_HAMMER.get());
+        this.tag(REOTags.Items.HAMMERS_AMETHYST).add(REOItems.AMETHYST_HAMMER.get());
+        this.tag(REOTags.Items.HAMMERS_BRONZE).add(REOItems.BRONZE_HAMMER.get());
+        this.tag(REOTags.Items.HAMMERS_ENDERITE).add(REOItems.ENDERITE_HAMMER.get());
+        this.tag(REOTags.Items.HAMMERS_PERIDOT).add(REOItems.PERIDOT_HAMMER.get());
+        this.tag(REOTags.Items.HAMMERS_PLATINUM).add(REOItems.PLATINUM_HAMMER.get());
+        this.tag(REOTags.Items.HAMMERS_RUBY).add(REOItems.RUBY_HAMMER.get());
+        this.tag(REOTags.Items.HAMMERS_SAPPHIRE).add(REOItems.SAPPHIRE_HAMMER.get());
+        this.tag(REOTags.Items.HAMMERS_SILVER).add(REOItems.SILVER_HAMMER.get());
+        this.tag(REOTags.Items.HAMMERS_STEEL).add(REOItems.STEEL_HAMMER.get());
+
+        this.tag(REOTags.Items.HATCHETS).add(REOItems.WOODEN_HATCHET.get(), REOItems.STONE_HATCHET.get(), REOItems.GOLDEN_HATCHET.get(),
+                REOItems.IRON_HATCHET.get(), REOItems.DIAMOND_HATCHET.get(), REOItems.NETHERITE_HATCHET.get(),
+                REOItems.ALUMINIUM_HATCHET.get(), REOItems.AMETHYST_HATCHET.get(), REOItems.BRONZE_HATCHET.get(),
+                REOItems.ENDERITE_HATCHET.get(), REOItems.PERIDOT_HATCHET.get(), REOItems.PLATINUM_HATCHET.get(),
+                REOItems.RUBY_HATCHET.get(), REOItems.SAPPHIRE_HATCHET.get(), REOItems.SILVER_HATCHET.get(),
+                REOItems.STEEL_HATCHET.get());
+
+        this.tag(REOTags.Items.HATCHETS_WOOD).add(REOItems.WOODEN_HATCHET.get());
+        this.tag(REOTags.Items.HATCHETS_STONE).add(REOItems.STONE_HATCHET.get());
+        this.tag(REOTags.Items.HATCHETS_GOLD).add(REOItems.GOLDEN_HATCHET.get());
+        this.tag(REOTags.Items.HATCHETS_IRON).add(REOItems.IRON_HATCHET.get());
+        this.tag(REOTags.Items.HATCHETS_DIAMOND).add(REOItems.DIAMOND_HATCHET.get());
+        this.tag(REOTags.Items.HATCHETS_NETHERITE).add(REOItems.NETHERITE_HATCHET.get());
+
+        this.tag(REOTags.Items.HATCHETS_ALUMINUM).add(REOItems.ALUMINIUM_HATCHET.get());
+        this.tag(REOTags.Items.HATCHETS_AMETHYST).add(REOItems.AMETHYST_HATCHET.get());
+        this.tag(REOTags.Items.HATCHETS_BRONZE).add(REOItems.BRONZE_HATCHET.get());
+        this.tag(REOTags.Items.HATCHETS_ENDERITE).add(REOItems.ENDERITE_HATCHET.get());
+        this.tag(REOTags.Items.HATCHETS_PERIDOT).add(REOItems.PERIDOT_HATCHET.get());
+        this.tag(REOTags.Items.HATCHETS_PLATINUM).add(REOItems.PLATINUM_HATCHET.get());
+        this.tag(REOTags.Items.HATCHETS_RUBY).add(REOItems.RUBY_HATCHET.get());
+        this.tag(REOTags.Items.HATCHETS_SAPPHIRE).add(REOItems.SAPPHIRE_HATCHET.get());
+        this.tag(REOTags.Items.HATCHETS_SILVER).add(REOItems.SILVER_HATCHET.get());
+        this.tag(REOTags.Items.HATCHETS_STEEL).add(REOItems.STEEL_HATCHET.get());
+
+        this.tag(ItemTags.HOES).add(REOItems.ALUMINIUM_HOE.get(), REOItems.AMETHYST_HOE.get(),
+                REOItems.BRONZE_HOE.get(), REOItems.ENDERITE_HOE.get(),REOItems.PERIDOT_HOE.get(),
+                REOItems.PLATINUM_HOE.get(),REOItems.RUBY_HOE.get(),REOItems.SAPPHIRE_HOE.get(),
+                REOItems.SILVER_HOE.get(),REOItems.STEEL_HOE.get());
+
+        this.tag(REOTags.Items.HOES_ALUMINUM).add(REOItems.ALUMINIUM_HOE.get());
+        this.tag(REOTags.Items.HOES_AMETHYST).add(REOItems.AMETHYST_HOE.get());
+        this.tag(REOTags.Items.HOES_BRONZE).add(REOItems.BRONZE_HOE.get());
+        this.tag(REOTags.Items.HOES_ENDERITE).add(REOItems.ENDERITE_HOE.get());
+        this.tag(REOTags.Items.HOES_PERIDOT).add(REOItems.PERIDOT_HOE.get());
+        this.tag(REOTags.Items.HOES_PLATINUM).add(REOItems.PLATINUM_HOE.get());
+        this.tag(REOTags.Items.HOES_RUBY).add(REOItems.RUBY_HOE.get());
+        this.tag(REOTags.Items.HOES_SAPPHIRE).add(REOItems.SAPPHIRE_HOE.get());
+        this.tag(REOTags.Items.HOES_SILVER).add(REOItems.SILVER_HOE.get());
+        this.tag(REOTags.Items.HOES_STEEL).add(REOItems.STEEL_HOE.get());
+
+        this.tag(REOTags.Items.PAXELS).add(REOItems.WOODEN_PAXEL.get(), REOItems.STONE_PAXEL.get(),
+                REOItems.GOLDEN_PAXEL.get(), REOItems.IRON_PAXEL.get(), REOItems.DIAMOND_PAXEL.get(),
+                REOItems.NETHERITE_PAXEL.get(), REOItems.ALUMINIUM_PAXEL.get(), REOItems.AMETHYST_PAXEL.get(),
+                REOItems.BRONZE_PAXEL.get(), REOItems.ENDERITE_PAXEL.get(), REOItems.PERIDOT_PAXEL.get(),
+                REOItems.PLATINUM_PAXEL.get(), REOItems.RUBY_PAXEL.get(), REOItems.SAPPHIRE_PAXEL.get(),
+                REOItems.SILVER_PAXEL.get(), REOItems.STEEL_PAXEL.get());
+
+        this.tag(REOTags.Items.PAXELS_WOOD).add(REOItems.WOODEN_PAXEL.get());
+        this.tag(REOTags.Items.PAXELS_STONE).add(REOItems.STONE_PAXEL.get());
+        this.tag(REOTags.Items.PAXELS_GOLD).add(REOItems.GOLDEN_PAXEL.get());
+        this.tag(REOTags.Items.PAXELS_IRON).add(REOItems.IRON_PAXEL.get());
+        this.tag(REOTags.Items.PAXELS_DIAMOND).add(REOItems.DIAMOND_PAXEL.get());
+        this.tag(REOTags.Items.PAXELS_NETHERITE).add(REOItems.NETHERITE_PAXEL.get());
+
+        this.tag(REOTags.Items.PAXELS_ALUMINUM).add(REOItems.ALUMINIUM_PAXEL.get());
+        this.tag(REOTags.Items.PAXELS_AMETHYST).add(REOItems.AMETHYST_PAXEL.get());
+        this.tag(REOTags.Items.PAXELS_BRONZE).add(REOItems.BRONZE_PAXEL.get());
+        this.tag(REOTags.Items.PAXELS_ENDERITE).add(REOItems.ENDERITE_PAXEL.get());
+        this.tag(REOTags.Items.PAXELS_PERIDOT).add(REOItems.PERIDOT_PAXEL.get());
+        this.tag(REOTags.Items.PAXELS_PLATINUM).add(REOItems.PLATINUM_PAXEL.get());
+        this.tag(REOTags.Items.PAXELS_RUBY).add(REOItems.RUBY_PAXEL.get());
+        this.tag(REOTags.Items.PAXELS_SAPPHIRE).add(REOItems.SAPPHIRE_PAXEL.get());
+        this.tag(REOTags.Items.PAXELS_SILVER).add(REOItems.SILVER_PAXEL.get());
+        this.tag(REOTags.Items.PAXELS_STEEL).add(REOItems.STEEL_PAXEL.get());
+
+        this.tag(ItemTags.PICKAXES).add(REOItems.ALUMINIUM_PICKAXE.get(), REOItems.AMETHYST_PICKAXE.get(),
+                REOItems.BRONZE_PICKAXE.get(), REOItems.ENDERITE_PICKAXE.get(),REOItems.PERIDOT_PICKAXE.get(),
+                REOItems.PLATINUM_PICKAXE.get(),REOItems.RUBY_PICKAXE.get(),REOItems.SAPPHIRE_PICKAXE.get(),
+                REOItems.SILVER_PICKAXE.get(),REOItems.STEEL_PICKAXE.get());
+
+        this.tag(REOTags.Items.PICKAXES_ALUMINUM).add(REOItems.ALUMINIUM_PICKAXE.get());
+        this.tag(REOTags.Items.PICKAXES_AMETHYST).add(REOItems.AMETHYST_PICKAXE.get());
+        this.tag(REOTags.Items.PICKAXES_BRONZE).add(REOItems.BRONZE_PICKAXE.get());
+        this.tag(REOTags.Items.PICKAXES_ENDERITE).add(REOItems.ENDERITE_PICKAXE.get());
+        this.tag(REOTags.Items.PICKAXES_PERIDOT).add(REOItems.PERIDOT_PICKAXE.get());
+        this.tag(REOTags.Items.PICKAXES_PLATINUM).add(REOItems.PLATINUM_PICKAXE.get());
+        this.tag(REOTags.Items.PICKAXES_RUBY).add(REOItems.RUBY_PICKAXE.get());
+        this.tag(REOTags.Items.PICKAXES_SAPPHIRE).add(REOItems.SAPPHIRE_PICKAXE.get());
+        this.tag(REOTags.Items.PICKAXES_SILVER).add(REOItems.SILVER_PICKAXE.get());
+        this.tag(REOTags.Items.PICKAXES_STEEL).add(REOItems.STEEL_PICKAXE.get());
+
+        this.tag(REOTags.Items.SHEARS).add(REOItems.WOODEN_SHEARS.get(), REOItems.STONE_SHEARS.get(), REOItems.GOLDEN_SHEARS.get(),
+                REOItems.DIAMOND_SHEARS.get(), REOItems.NETHERITE_SHEARS.get(), REOItems.ALUMINIUM_SHEARS.get(),
+                REOItems.AMETHYST_SHEARS.get(), REOItems.BRONZE_SHEARS.get(), REOItems.ENDERITE_SHEARS.get(),
+                REOItems.PERIDOT_SHEARS.get(), REOItems.PLATINUM_SHEARS.get(), REOItems.RUBY_SHEARS.get(),
+                REOItems.SAPPHIRE_SHEARS.get(), REOItems.SILVER_SHEARS.get(), REOItems.STEEL_SHEARS.get());
+
+        this.tag(REOTags.Items.SHEARS_WOOD).add(REOItems.WOODEN_SHEARS.get());
+        this.tag(REOTags.Items.SHEARS_STONE).add(REOItems.STONE_SHEARS.get());
+        this.tag(REOTags.Items.SHEARS_GOLD).add(REOItems.GOLDEN_SHEARS.get());
+        this.tag(REOTags.Items.SHEARS_DIAMOND).add(REOItems.DIAMOND_SHEARS.get());
+        this.tag(REOTags.Items.SHEARS_NETHERITE).add(REOItems.NETHERITE_SHEARS.get());
+
+        this.tag(REOTags.Items.SHEARS_ALUMINUM).add(REOItems.ALUMINIUM_SHEARS.get());
+        this.tag(REOTags.Items.SHEARS_AMETHYST).add(REOItems.AMETHYST_SHEARS.get());
+        this.tag(REOTags.Items.SHEARS_BRONZE).add(REOItems.BRONZE_SHEARS.get());
+        this.tag(REOTags.Items.SHEARS_ENDERITE).add(REOItems.ENDERITE_SHEARS.get());
+        this.tag(REOTags.Items.SHEARS_PERIDOT).add(REOItems.PERIDOT_SHEARS.get());
+        this.tag(REOTags.Items.SHEARS_PLATINUM).add(REOItems.PLATINUM_SHEARS.get());
+        this.tag(REOTags.Items.SHEARS_RUBY).add(REOItems.RUBY_SHEARS.get());
+        this.tag(REOTags.Items.SHEARS_SAPPHIRE).add(REOItems.SAPPHIRE_SHEARS.get());
+        this.tag(REOTags.Items.SHEARS_SILVER).add(REOItems.SILVER_SHEARS.get());
+        this.tag(REOTags.Items.SHEARS_STEEL).add(REOItems.STEEL_SHEARS.get());
+
+        this.tag(ItemTags.SHOVELS).add(REOItems.ALUMINIUM_SHOVEL.get(), REOItems.AMETHYST_SHOVEL.get(),
+                REOItems.BRONZE_SHOVEL.get(), REOItems.ENDERITE_SHOVEL.get(),REOItems.PERIDOT_SHOVEL.get(),
+                REOItems.PLATINUM_SHOVEL.get(),REOItems.RUBY_SHOVEL.get(),REOItems.SAPPHIRE_SHOVEL.get(),
+                REOItems.SILVER_SHOVEL.get(),REOItems.STEEL_SHOVEL.get());
+
+        this.tag(REOTags.Items.SHOVELS_ALUMINUM).add(REOItems.ALUMINIUM_SHOVEL.get());
+        this.tag(REOTags.Items.SHOVELS_AMETHYST).add(REOItems.AMETHYST_SHOVEL.get());
+        this.tag(REOTags.Items.SHOVELS_BRONZE).add(REOItems.BRONZE_SHOVEL.get());
+        this.tag(REOTags.Items.SHOVELS_ENDERITE).add(REOItems.ENDERITE_SHOVEL.get());
+        this.tag(REOTags.Items.SHOVELS_PERIDOT).add(REOItems.PERIDOT_SHOVEL.get());
+        this.tag(REOTags.Items.SHOVELS_PLATINUM).add(REOItems.PLATINUM_SHOVEL.get());
+        this.tag(REOTags.Items.SHOVELS_RUBY).add(REOItems.RUBY_SHOVEL.get());
+        this.tag(REOTags.Items.SHOVELS_SAPPHIRE).add(REOItems.SAPPHIRE_SHOVEL.get());
+        this.tag(REOTags.Items.SHOVELS_SILVER).add(REOItems.SILVER_SHOVEL.get());
+        this.tag(REOTags.Items.SHOVELS_STEEL).add(REOItems.STEEL_SHOVEL.get());
+
+        this.tag(REOTags.Items.SICKLES).add(REOItems.WOODEN_SICKLE.get(), REOItems.STONE_SICKLE.get(), REOItems.GOLDEN_SICKLE.get(),
+                REOItems.IRON_SICKLE.get(), REOItems.DIAMOND_SICKLE.get(), REOItems.NETHERITE_SICKLE.get(),
+                REOItems.ALUMINIUM_SICKLE.get(), REOItems.AMETHYST_SICKLE.get(), REOItems.BRONZE_SICKLE.get(),
+                REOItems.ENDERITE_SICKLE.get(), REOItems.PERIDOT_SICKLE.get(), REOItems.PLATINUM_SICKLE.get(),
+                REOItems.RUBY_SICKLE.get(), REOItems.SAPPHIRE_SICKLE.get(), REOItems.SILVER_SICKLE.get(),
+                REOItems.STEEL_SICKLE.get());
+
+        this.tag(REOTags.Items.SICKLES_WOOD).add(REOItems.WOODEN_SICKLE.get());
+        this.tag(REOTags.Items.SICKLES_STONE).add(REOItems.STONE_SICKLE.get());
+        this.tag(REOTags.Items.SICKLES_GOLD).add(REOItems.GOLDEN_SICKLE.get());
+        this.tag(REOTags.Items.SICKLES_IRON).add(REOItems.IRON_SICKLE.get());
+        this.tag(REOTags.Items.SICKLES_DIAMOND).add(REOItems.DIAMOND_SICKLE.get());
+        this.tag(REOTags.Items.SICKLES_NETHERITE).add(REOItems.NETHERITE_SICKLE.get());
+
+        this.tag(REOTags.Items.SICKLES_ALUMINUM).add(REOItems.ALUMINIUM_SICKLE.get());
+        this.tag(REOTags.Items.SICKLES_AMETHYST).add(REOItems.AMETHYST_SICKLE.get());
+        this.tag(REOTags.Items.SICKLES_BRONZE).add(REOItems.BRONZE_SICKLE.get());
+        this.tag(REOTags.Items.SICKLES_ENDERITE).add(REOItems.ENDERITE_SICKLE.get());
+        this.tag(REOTags.Items.SICKLES_PERIDOT).add(REOItems.PERIDOT_SICKLE.get());
+        this.tag(REOTags.Items.SICKLES_PLATINUM).add(REOItems.PLATINUM_SICKLE.get());
+        this.tag(REOTags.Items.SICKLES_RUBY).add(REOItems.RUBY_SICKLE.get());
+        this.tag(REOTags.Items.SICKLES_SAPPHIRE).add(REOItems.SAPPHIRE_SICKLE.get());
+        this.tag(REOTags.Items.SICKLES_SILVER).add(REOItems.SILVER_SICKLE.get());
+        this.tag(REOTags.Items.SICKLES_STEEL).add(REOItems.STEEL_SICKLE.get());
+
+        this.tag(ItemTags.SWORDS).add(REOItems.ALUMINIUM_SWORD.get(), REOItems.AMETHYST_SWORD.get(),
+                REOItems.BRONZE_SWORD.get(), REOItems.ENDERITE_SWORD.get(),REOItems.PERIDOT_SWORD.get(),
+                REOItems.PLATINUM_SWORD.get(),REOItems.RUBY_SWORD.get(),REOItems.SAPPHIRE_SWORD.get(),
+                REOItems.SILVER_SWORD.get(),REOItems.STEEL_SWORD.get());
+
+        this.tag(REOTags.Items.SWORDS_ALUMINUM).add(REOItems.ALUMINIUM_SWORD.get());
+        this.tag(REOTags.Items.SWORDS_AMETHYST).add(REOItems.AMETHYST_SWORD.get());
+        this.tag(REOTags.Items.SWORDS_BRONZE).add(REOItems.BRONZE_SWORD.get());
+        this.tag(REOTags.Items.SWORDS_ENDERITE).add(REOItems.ENDERITE_SWORD.get());
+        this.tag(REOTags.Items.SWORDS_PERIDOT).add(REOItems.PERIDOT_SWORD.get());
+        this.tag(REOTags.Items.SWORDS_PLATINUM).add(REOItems.PLATINUM_SWORD.get());
+        this.tag(REOTags.Items.SWORDS_RUBY).add(REOItems.RUBY_SWORD.get());
+        this.tag(REOTags.Items.SWORDS_SAPPHIRE).add(REOItems.SAPPHIRE_SWORD.get());
+        this.tag(REOTags.Items.SWORDS_SILVER).add(REOItems.SILVER_SWORD.get());
+        this.tag(REOTags.Items.SWORDS_STEEL).add(REOItems.STEEL_SWORD.get());
+
+        // Armor
+        // Helmet
+        this.tag(REOTags.Items.HELMETS).add(REOItems.ALUMINIUM_HELMET.get(), REOItems.AMETHYST_HELMET.get(),
+                REOItems.BRONZE_HELMET.get(), REOItems.ENDERITE_HELMET.get(), REOItems.PERIDOT_HELMET.get(),
+                REOItems.PLATINUM_HELMET.get(), REOItems.RUBY_HELMET.get(), REOItems.SAPPHIRE_HELMET.get(),
+                REOItems.SILVER_HELMET.get(), REOItems.STEEL_HELMET.get());
+
+        this.tag(REOTags.Items.HELMETS_ALUMINUM).add(REOItems.ALUMINIUM_HELMET.get());
+        this.tag(REOTags.Items.HELMETS_AMETHYST).add(REOItems.AMETHYST_HELMET.get());
+        this.tag(REOTags.Items.HELMETS_BRONZE).add(REOItems.BRONZE_HELMET.get());
+        this.tag(REOTags.Items.HELMETS_ENDERITE).add(REOItems.ENDERITE_HELMET.get());
+        this.tag(REOTags.Items.HELMETS_PERIDOT).add(REOItems.PERIDOT_HELMET.get());
+        this.tag(REOTags.Items.HELMETS_PLATINUM).add(REOItems.PLATINUM_HELMET.get());
+        this.tag(REOTags.Items.HELMETS_RUBY).add(REOItems.RUBY_HELMET.get());
+        this.tag(REOTags.Items.HELMETS_SAPPHIRE).add(REOItems.SAPPHIRE_HELMET.get());
+        this.tag(REOTags.Items.HELMETS_SILVER).add(REOItems.SILVER_HELMET.get());
+        this.tag(REOTags.Items.HELMETS_STEEL).add(REOItems.STEEL_HELMET.get());
+
+        // Chestplate
+        this.tag(REOTags.Items.CHESTPLATES).add(REOItems.ALUMINIUM_CHESTPLATE.get(), REOItems.AMETHYST_CHESTPLATE.get(),
+                REOItems.BRONZE_CHESTPLATE.get(), REOItems.ENDERITE_CHESTPLATE.get(), REOItems.PERIDOT_CHESTPLATE.get(),
+                REOItems.PLATINUM_CHESTPLATE.get(), REOItems.RUBY_CHESTPLATE.get(), REOItems.SAPPHIRE_CHESTPLATE.get(),
+                REOItems.SILVER_CHESTPLATE.get(), REOItems.STEEL_CHESTPLATE.get());
+
+        this.tag(REOTags.Items.CHESTPLATES_ALUMINUM).add(REOItems.ALUMINIUM_CHESTPLATE.get());
+        this.tag(REOTags.Items.CHESTPLATES_AMETHYST).add(REOItems.AMETHYST_CHESTPLATE.get());
+        this.tag(REOTags.Items.CHESTPLATES_BRONZE).add(REOItems.BRONZE_CHESTPLATE.get());
+        this.tag(REOTags.Items.CHESTPLATES_ENDERITE).add(REOItems.ENDERITE_CHESTPLATE.get());
+        this.tag(REOTags.Items.CHESTPLATES_PERIDOT).add(REOItems.PERIDOT_CHESTPLATE.get());
+        this.tag(REOTags.Items.CHESTPLATES_PLATINUM).add(REOItems.PLATINUM_CHESTPLATE.get());
+        this.tag(REOTags.Items.CHESTPLATES_RUBY).add(REOItems.RUBY_CHESTPLATE.get());
+        this.tag(REOTags.Items.CHESTPLATES_SAPPHIRE).add(REOItems.SAPPHIRE_CHESTPLATE.get());
+        this.tag(REOTags.Items.CHESTPLATES_SILVER).add(REOItems.SILVER_CHESTPLATE.get());
+        this.tag(REOTags.Items.CHESTPLATES_STEEL).add(REOItems.STEEL_CHESTPLATE.get());
+
+        // Leggings
+        this.tag(REOTags.Items.LEGGINGS).add(REOItems.ALUMINIUM_LEGGINGS.get(), REOItems.AMETHYST_LEGGINGS.get(),
+                REOItems.BRONZE_LEGGINGS.get(), REOItems.ENDERITE_LEGGINGS.get(), REOItems.PERIDOT_LEGGINGS.get(),
+                REOItems.PLATINUM_LEGGINGS.get(), REOItems.RUBY_LEGGINGS.get(), REOItems.SAPPHIRE_LEGGINGS.get(),
+                REOItems.SILVER_LEGGINGS.get(), REOItems.STEEL_LEGGINGS.get());
+
+        this.tag(REOTags.Items.LEGGINGS_ALUMINUM).add(REOItems.ALUMINIUM_LEGGINGS.get());
+        this.tag(REOTags.Items.LEGGINGS_AMETHYST).add(REOItems.AMETHYST_LEGGINGS.get());
+        this.tag(REOTags.Items.LEGGINGS_BRONZE).add(REOItems.BRONZE_LEGGINGS.get());
+        this.tag(REOTags.Items.LEGGINGS_ENDERITE).add(REOItems.ENDERITE_LEGGINGS.get());
+        this.tag(REOTags.Items.LEGGINGS_PERIDOT).add(REOItems.PERIDOT_LEGGINGS.get());
+        this.tag(REOTags.Items.LEGGINGS_PLATINUM).add(REOItems.PLATINUM_LEGGINGS.get());
+        this.tag(REOTags.Items.LEGGINGS_RUBY).add(REOItems.RUBY_LEGGINGS.get());
+        this.tag(REOTags.Items.LEGGINGS_SAPPHIRE).add(REOItems.SAPPHIRE_LEGGINGS.get());
+        this.tag(REOTags.Items.LEGGINGS_SILVER).add(REOItems.SILVER_LEGGINGS.get());
+        this.tag(REOTags.Items.LEGGINGS_STEEL).add(REOItems.STEEL_LEGGINGS.get());
+
+        // Boots
+        this.tag(REOTags.Items.BOOTS).add(REOItems.ALUMINIUM_BOOTS.get(), REOItems.AMETHYST_BOOTS.get(),
+                REOItems.BRONZE_BOOTS.get(), REOItems.ENDERITE_BOOTS.get(), REOItems.PERIDOT_BOOTS.get(),
+                REOItems.PLATINUM_BOOTS.get(), REOItems.RUBY_BOOTS.get(), REOItems.SAPPHIRE_BOOTS.get(),
+                REOItems.SILVER_BOOTS.get(), REOItems.STEEL_BOOTS.get());
+
+        this.tag(REOTags.Items.BOOTS_ALUMINUM).add(REOItems.ALUMINIUM_BOOTS.get());
+        this.tag(REOTags.Items.BOOTS_AMETHYST).add(REOItems.AMETHYST_BOOTS.get());
+        this.tag(REOTags.Items.BOOTS_BRONZE).add(REOItems.BRONZE_BOOTS.get());
+        this.tag(REOTags.Items.BOOTS_ENDERITE).add(REOItems.ENDERITE_BOOTS.get());
+        this.tag(REOTags.Items.BOOTS_PERIDOT).add(REOItems.PERIDOT_BOOTS.get());
+        this.tag(REOTags.Items.BOOTS_PLATINUM).add(REOItems.PLATINUM_BOOTS.get());
+        this.tag(REOTags.Items.BOOTS_RUBY).add(REOItems.RUBY_BOOTS.get());
+        this.tag(REOTags.Items.BOOTS_SAPPHIRE).add(REOItems.SAPPHIRE_BOOTS.get());
+        this.tag(REOTags.Items.BOOTS_SILVER).add(REOItems.SILVER_BOOTS.get());
+        this.tag(REOTags.Items.BOOTS_STEEL).add(REOItems.STEEL_BOOTS.get());
 
         // Ingots
-        this.tag(REOTags.Items.INGOTS_ALUMINUM)
-                .add(REOItems.INGOT_ALUMINIUM.get());
-        this.tag(REOTags.Items.INGOTS_BRASS)
-                .add(REOItems.INGOT_BRASS.get());
-        this.tag(REOTags.Items.INGOTS_BRONZE)
-                .add(REOItems.INGOT_BRONZE.get());
-        this.tag(REOTags.Items.INGOTS_ELECTRUM)
-                .add(REOItems.INGOT_ELECTRUM.get());
-        this.tag(REOTags.Items.INGOTS_ENDERITE)
-                .add(REOItems.INGOT_ENDERITE.get());
-        this.tag(REOTags.Items.INGOTS_LEAD)
-                .add(REOItems.INGOT_LEAD.get());
-        this.tag(REOTags.Items.INGOTS_NICKEL)
-                .add(REOItems.INGOT_NICKEL.get());
-        this.tag(REOTags.Items.INGOTS_OBSIDIAN)
-                .add(REOItems.INGOT_OBSIDIAN.get());
-        this.tag(REOTags.Items.INGOTS_PLATINUM)
-                .add(REOItems.INGOT_PLATINUM.get());
-        this.tag(REOTags.Items.INGOTS_SILVER)
-                .add(REOItems.INGOT_SILVER.get());
-        this.tag(REOTags.Items.INGOTS_STEEL)
-                .add(REOItems.INGOT_STEEL.get());
-        this.tag(REOTags.Items.INGOTS_TIN)
-                .add(REOItems.INGOT_TIN.get());
-        this.tag(REOTags.Items.INGOTS_URANIUM)
-                .add(REOItems.INGOT_URANIUM.get());
-        this.tag(REOTags.Items.INGOTS_ZINC)
-                .add(REOItems.INGOT_ZINC.get());
+        this.tag(REOTags.Items.INGOTS_ALUMINUM).add(REOItems.INGOT_ALUMINIUM.get());
+        this.tag(REOTags.Items.INGOTS_BRASS).add(REOItems.INGOT_BRASS.get());
+        this.tag(REOTags.Items.INGOTS_BRONZE).add(REOItems.INGOT_BRONZE.get());
+        this.tag(REOTags.Items.INGOTS_ELECTRUM).add(REOItems.INGOT_ELECTRUM.get());
+        this.tag(REOTags.Items.INGOTS_ENDERITE).add(REOItems.INGOT_ENDERITE.get());
+        this.tag(REOTags.Items.INGOTS_LEAD).add(REOItems.INGOT_LEAD.get());
+        this.tag(REOTags.Items.INGOTS_NICKEL).add(REOItems.INGOT_NICKEL.get());
+        this.tag(REOTags.Items.INGOTS_OBSIDIAN).add(REOItems.INGOT_OBSIDIAN.get());
+        this.tag(REOTags.Items.INGOTS_PLATINUM).add(REOItems.INGOT_PLATINUM.get());
+        this.tag(REOTags.Items.INGOTS_SILVER).add(REOItems.INGOT_SILVER.get());
+        this.tag(REOTags.Items.INGOTS_STEEL).add(REOItems.INGOT_STEEL.get());
+        this.tag(REOTags.Items.INGOTS_TIN).add(REOItems.INGOT_TIN.get());
+        this.tag(REOTags.Items.INGOTS_URANIUM).add(REOItems.INGOT_URANIUM.get());
+        this.tag(REOTags.Items.INGOTS_ZINC).add(REOItems.INGOT_ZINC.get());
+
+        // Gems
+        this.tag(REOTags.Items.GEMS_AMETHYST).add(REOItems.GEM_AMETHYST.get());
+        this.tag(REOTags.Items.GEMS_PERIDOT).add(REOItems.GEM_PERIDOT.get());
+        this.tag(REOTags.Items.GEMS_RUBY).add(REOItems.GEM_RUBY.get());
+        this.tag(REOTags.Items.GEMS_SAPPHIRE).add(REOItems.GEM_SAPPHIRE.get());
+
+        // Nuggets
+        this.tag(REOTags.Items.NUGGETS_ALUMINUM).add(REOItems.NUGGET_ALUMINIUM.get());
+        this.tag(REOTags.Items.NUGGETS_AMETHYST).add(REOItems.NUGGET_AMETHYST.get());
+        this.tag(REOTags.Items.NUGGETS_BRASS).add(REOItems.NUGGET_BRASS.get());
+        this.tag(REOTags.Items.NUGGETS_BRONZE).add(REOItems.NUGGET_BRONZE.get());
+        this.tag(REOTags.Items.NUGGETS_COPPER).add(REOItems.NUGGET_COPPER.get());
+        this.tag(REOTags.Items.NUGGETS_DIAMOND).add(REOItems.NUGGET_DIAMOND.get());
+        this.tag(REOTags.Items.NUGGETS_ELECTRTUM).add(REOItems.NUGGET_ELECTRUM.get());
+        this.tag(REOTags.Items.NUGGETS_EMERALD).add(REOItems.NUGGET_EMERALD.get());
+        this.tag(REOTags.Items.NUGGETS_ENDERITE).add(REOItems.NUGGET_ENDERITE.get());
+        this.tag(REOTags.Items.NUGGETS_LEAD).add(REOItems.NUGGET_LEAD.get());
+        this.tag(REOTags.Items.NUGGETS_NETHERITE).add(REOItems.NUGGET_NETHERITE.get());
+        this.tag(REOTags.Items.NUGGETS_NICKEL).add(REOItems.NUGGET_NICKEL.get());
+        this.tag(REOTags.Items.NUGGETS_PERIDOT).add(REOItems.NUGGET_PERIDOT.get());
+        this.tag(REOTags.Items.NUGGETS_PLATINUM).add(REOItems.NUGGET_PLATINUM.get());
+        this.tag(REOTags.Items.NUGGETS_RUBY).add(REOItems.NUGGET_RUBY.get());
+        this.tag(REOTags.Items.NUGGETS_SAPPHIRE).add(REOItems.NUGGET_SAPPHIRE.get());
+        this.tag(REOTags.Items.NUGGETS_SILVER).add(REOItems.NUGGET_SILVER.get());
+        this.tag(REOTags.Items.NUGGETS_STEEL).add(REOItems.NUGGET_STEEL.get());
+        this.tag(REOTags.Items.NUGGETS_TIN).add(REOItems.NUGGET_TIN.get());
+        this.tag(REOTags.Items.NUGGETS_ZINC).add(REOItems.NUGGET_ZINC.get());
 
         // Dirty Dusts
-        this.tag(REOTags.Items.DIRTY_ALUMINUM)
-                .add(REOItems.DIRTY_ALUMINIUM.get());
-        this.tag(REOTags.Items.DIRTY_AMETHYST)
-                .add(REOItems.DIRTY_AMETHYST.get());
-        this.tag(REOTags.Items.DIRTY_BRASS)
-                .add(REOItems.DIRTY_BRASS.get());
-        this.tag(REOTags.Items.DIRTY_BRONZE)
-                .add(REOItems.DIRTY_BRONZE.get());
-        this.tag(REOTags.Items.DIRTY_COPPER)
-                .add(REOItems.DIRTY_COPPER.get());
-        this.tag(REOTags.Items.DIRTY_DIAMOND)
-                .add(REOItems.DIRTY_DIAMOND.get());
-        this.tag(REOTags.Items.DIRTY_ELECTRTUM)
-                .add(REOItems.DIRTY_ELECTRUM.get());
-        this.tag(REOTags.Items.DIRTY_EMERALD)
-                .add(REOItems.DIRTY_EMERALD.get());
-        this.tag(REOTags.Items.DIRTY_ENDERITE)
-                .add(REOItems.DIRTY_ENDERITE.get());
-        this.tag(REOTags.Items.DIRTY_GOLD)
-                .add(REOItems.DIRTY_GOLD.get());
-        this.tag(REOTags.Items.DIRTY_IRON)
-                .add(REOItems.DIRTY_IRON.get());
-        this.tag(REOTags.Items.DIRTY_LEAD)
-                .add(REOItems.DIRTY_LEAD.get());
-        this.tag(REOTags.Items.DIRTY_NETHERITE)
-                .add(REOItems.DIRTY_NETHERITE.get());
-        this.tag(REOTags.Items.DIRTY_NICKEL)
-                .add(REOItems.DIRTY_NICKEL.get());
-        this.tag(REOTags.Items.DIRTY_OBSIDIAN)
-                .add(REOItems.DIRTY_OBSIDIAN.get());
-        this.tag(REOTags.Items.DIRTY_PERIDOT)
-                .add(REOItems.DIRTY_PERIDOT.get());
-        this.tag(REOTags.Items.DIRTY_PLATINUM)
-                .add(REOItems.DIRTY_PLATINUM.get());
-        this.tag(REOTags.Items.DIRTY_RUBY)
-                .add(REOItems.DIRTY_RUBY.get());
-        this.tag(REOTags.Items.DIRTY_SAPPHIRE)
-                .add(REOItems.DIRTY_SAPPHIRE.get());
-        this.tag(REOTags.Items.DIRTY_SILVER)
-                .add(REOItems.DIRTY_SILVER.get());
-        this.tag(REOTags.Items.DIRTY_STEEL)
-                .add(REOItems.DIRTY_STEEL.get());
-        this.tag(REOTags.Items.DIRTY_TIN)
-                .add(REOItems.DIRTY_TIN.get());
-        this.tag(REOTags.Items.DIRTY_URANIUM)
-                .add(REOItems.DIRTY_URANIUM.get());
-        this.tag(REOTags.Items.DIRTY_ZINC)
-                .add(REOItems.DIRTY_ZINC.get());
+        this.tag(REOTags.Items.DIRTY_ALUMINUM).add(REOItems.DIRTY_ALUMINIUM.get());
+        this.tag(REOTags.Items.DIRTY_AMETHYST).add(REOItems.DIRTY_AMETHYST.get());
+        this.tag(REOTags.Items.DIRTY_BRASS).add(REOItems.DIRTY_BRASS.get());
+        this.tag(REOTags.Items.DIRTY_BRONZE).add(REOItems.DIRTY_BRONZE.get());
+        this.tag(REOTags.Items.DIRTY_COPPER).add(REOItems.DIRTY_COPPER.get());
+        this.tag(REOTags.Items.DIRTY_DIAMOND).add(REOItems.DIRTY_DIAMOND.get());
+        this.tag(REOTags.Items.DIRTY_ELECTRUM).add(REOItems.DIRTY_ELECTRUM.get());
+        this.tag(REOTags.Items.DIRTY_EMERALD).add(REOItems.DIRTY_EMERALD.get());
+        this.tag(REOTags.Items.DIRTY_ENDERITE).add(REOItems.DIRTY_ENDERITE.get());
+        this.tag(REOTags.Items.DIRTY_GOLD).add(REOItems.DIRTY_GOLD.get());
+        this.tag(REOTags.Items.DIRTY_IRON).add(REOItems.DIRTY_IRON.get());
+        this.tag(REOTags.Items.DIRTY_LEAD).add(REOItems.DIRTY_LEAD.get());
+        this.tag(REOTags.Items.DIRTY_NETHERITE).add(REOItems.DIRTY_NETHERITE.get());
+        this.tag(REOTags.Items.DIRTY_NICKEL).add(REOItems.DIRTY_NICKEL.get());
+        this.tag(REOTags.Items.DIRTY_OBSIDIAN).add(REOItems.DIRTY_OBSIDIAN.get());
+        this.tag(REOTags.Items.DIRTY_PERIDOT).add(REOItems.DIRTY_PERIDOT.get());
+        this.tag(REOTags.Items.DIRTY_PLATINUM).add(REOItems.DIRTY_PLATINUM.get());
+        this.tag(REOTags.Items.DIRTY_RUBY).add(REOItems.DIRTY_RUBY.get());
+        this.tag(REOTags.Items.DIRTY_SAPPHIRE).add(REOItems.DIRTY_SAPPHIRE.get());
+        this.tag(REOTags.Items.DIRTY_SILVER).add(REOItems.DIRTY_SILVER.get());
+        this.tag(REOTags.Items.DIRTY_STEEL).add(REOItems.DIRTY_STEEL.get());
+        this.tag(REOTags.Items.DIRTY_TIN).add(REOItems.DIRTY_TIN.get());
+        this.tag(REOTags.Items.DIRTY_URANIUM).add(REOItems.DIRTY_URANIUM.get());
+        this.tag(REOTags.Items.DIRTY_ZINC).add(REOItems.DIRTY_ZINC.get());
 
         // Dusts
-        this.tag(REOTags.Items.DUSTS_ALUMINUM)
-                .add(REOItems.DUST_ALUMINIUM.get());
-        this.tag(REOTags.Items.DUSTS_AMETHYST)
-                .add(REOItems.DUST_AMETHYST.get());
-        this.tag(REOTags.Items.DUSTS_BRASS)
-                .add(REOItems.DUST_BRASS.get());
-        this.tag(REOTags.Items.DUSTS_BRONZE)
-                .add(REOItems.DUST_BRONZE.get());
-        this.tag(REOTags.Items.DUSTS_COPPER)
-                .add(REOItems.DUST_COPPER.get());
-        this.tag(REOTags.Items.DUSTS_DIAMOND)
-                .add(REOItems.DUST_DIAMOND.get());
-        this.tag(REOTags.Items.DUSTS_ELECTRTUM)
-                .add(REOItems.DUST_ELECTRUM.get());
-        this.tag(REOTags.Items.DUSTS_EMERALD)
-                .add(REOItems.DUST_EMERALD.get());
-        this.tag(REOTags.Items.DUSTS_ENDERITE)
-                .add(REOItems.DUST_ENDERITE.get());
-        this.tag(REOTags.Items.DUSTS_GOLD)
-                .add(REOItems.DUST_GOLD.get());
-        this.tag(REOTags.Items.DUSTS_IRON)
-                .add(REOItems.DUST_IRON.get());
-        this.tag(REOTags.Items.DUSTS_LEAD)
-                .add(REOItems.DUST_LEAD.get());
-        this.tag(REOTags.Items.DUSTS_NETHERITE)
-                .add(REOItems.DUST_NETHERITE.get());
-        this.tag(REOTags.Items.DUSTS_NICKEL)
-                .add(REOItems.DUST_NICKEL.get());
-        this.tag(REOTags.Items.DUSTS_OBSIDIAN)
-                .add(REOItems.DUST_OBSIDIAN.get());
-        this.tag(REOTags.Items.DUSTS_PERIDOT)
-                .add(REOItems.DUST_PERIDOT.get());
-        this.tag(REOTags.Items.DUSTS_PLATINUM)
-                .add(REOItems.DUST_PLATINUM.get());
-        this.tag(REOTags.Items.DUSTS_RUBY)
-                .add(REOItems.DUST_RUBY.get());
-        this.tag(REOTags.Items.DUSTS_SAPPHIRE)
-                .add(REOItems.DUST_SAPPHIRE.get());
-        this.tag(REOTags.Items.DUSTS_SILVER)
-                .add(REOItems.DUST_SILVER.get());
-        this.tag(REOTags.Items.DUSTS_STEEL)
-                .add(REOItems.DUST_STEEL.get());
-        this.tag(REOTags.Items.DUSTS_TIN)
-                .add(REOItems.DUST_TIN.get());
-        this.tag(REOTags.Items.DUSTS_URANIUM)
-                .add(REOItems.DUST_URANIUM.get());
-        this.tag(REOTags.Items.DUSTS_ZINC)
-                .add(REOItems.DUST_ZINC.get());
+        this.tag(REOTags.Items.DUSTS_ALUMINUM).add(REOItems.DUST_ALUMINIUM.get());
+        this.tag(REOTags.Items.DUSTS_AMETHYST).add(REOItems.DUST_AMETHYST.get());
+        this.tag(REOTags.Items.DUSTS_BRASS).add(REOItems.DUST_BRASS.get());
+        this.tag(REOTags.Items.DUSTS_BRONZE).add(REOItems.DUST_BRONZE.get());
+        this.tag(REOTags.Items.DUSTS_COPPER).add(REOItems.DUST_COPPER.get());
+        this.tag(REOTags.Items.DUSTS_DIAMOND).add(REOItems.DUST_DIAMOND.get());
+        this.tag(REOTags.Items.DUSTS_ELECTRTUM).add(REOItems.DUST_ELECTRUM.get());
+        this.tag(REOTags.Items.DUSTS_EMERALD).add(REOItems.DUST_EMERALD.get());
+        this.tag(REOTags.Items.DUSTS_ENDERITE).add(REOItems.DUST_ENDERITE.get());
+        this.tag(REOTags.Items.DUSTS_GOLD).add(REOItems.DUST_GOLD.get());
+        this.tag(REOTags.Items.DUSTS_IRON).add(REOItems.DUST_IRON.get());
+        this.tag(REOTags.Items.DUSTS_LEAD).add(REOItems.DUST_LEAD.get());
+        this.tag(REOTags.Items.DUSTS_NETHERITE).add(REOItems.DUST_NETHERITE.get());
+        this.tag(REOTags.Items.DUSTS_NICKEL).add(REOItems.DUST_NICKEL.get());
+        this.tag(REOTags.Items.DUSTS_OBSIDIAN).add(REOItems.DUST_OBSIDIAN.get());
+        this.tag(REOTags.Items.DUSTS_PERIDOT).add(REOItems.DUST_PERIDOT.get());
+        this.tag(REOTags.Items.DUSTS_PLATINUM).add(REOItems.DUST_PLATINUM.get());
+        this.tag(REOTags.Items.DUSTS_RUBY).add(REOItems.DUST_RUBY.get());
+        this.tag(REOTags.Items.DUSTS_SAPPHIRE).add(REOItems.DUST_SAPPHIRE.get());
+        this.tag(REOTags.Items.DUSTS_SILVER).add(REOItems.DUST_SILVER.get());
+        this.tag(REOTags.Items.DUSTS_STEEL).add(REOItems.DUST_STEEL.get());
+        this.tag(REOTags.Items.DUSTS_TIN).add(REOItems.DUST_TIN.get());
+        this.tag(REOTags.Items.DUSTS_URANIUM).add(REOItems.DUST_URANIUM.get());
+        this.tag(REOTags.Items.DUSTS_ZINC).add(REOItems.DUST_ZINC.get());
 
         this.tag(REOTags.Items.TOOLS_AND_ARMOR_ALUMINUM)
                 .add(REOItems.ALUMINIUM_AXE.get(), REOItems.ALUMINIUM_BOW.get(), REOItems.ALUMINIUM_EXCAVATOR.get(),

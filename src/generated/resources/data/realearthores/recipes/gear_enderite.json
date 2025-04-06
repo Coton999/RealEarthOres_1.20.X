@@ -6,7 +6,7 @@
       "item": "realearthores:ingot_enderite"
     },
     "G": {
-      "tag": "realearthores:gears_tier_gem"
+      "tag": "realearthores:gears/tier_gem"
     }
   },
   "pattern": [

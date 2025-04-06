@@ -2,7 +2,7 @@
   "type": "realearthores:purifying",
   "ingredients": [
     {
-      "item": "realearthores:dirty_electrum"
+      "tag": "realearthores:dirty_dusts/electrum"
     }
   ],
   "result": {

@@ -3,7 +3,7 @@
   "cookingtime": 400,
   "experience": 0.7,
   "ingredient": {
-    "item": "realearthores:dirty_tin"
+    "tag": "realearthores:dirty_dusts/tin"
   },
   "result": "realearthores:dust_tin"
 }

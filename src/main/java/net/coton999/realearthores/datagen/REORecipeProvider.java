@@ -1115,100 +1115,100 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_log_or_wood", has(ItemTags.LOGS_THAT_BURN)).save(pWriter);
 
         // Coal Purifier //
-        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_ALUMINIUM.get(), Ingredient.of(REOItems.DIRTY_ALUMINIUM.get()), 0.7F, 400)
-                .unlockedBy(getHasName(REOItems.DIRTY_ALUMINIUM.get()), has(REOItems.DIRTY_ALUMINIUM.get())).save(pWriter);
-        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_AMETHYST.get(), Ingredient.of(REOItems.DIRTY_AMETHYST.get()), 0.7F, 400)
-                .unlockedBy(getHasName(REOItems.DIRTY_AMETHYST.get()), has(REOItems.DIRTY_AMETHYST.get())).save(pWriter);
-        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_BRASS.get(), Ingredient.of(REOItems.DIRTY_BRASS.get()), 0.7F, 400)
-                .unlockedBy(getHasName(REOItems.DIRTY_BRASS.get()), has(REOItems.DIRTY_BRASS.get())).save(pWriter);
-        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_BRONZE.get(), Ingredient.of(REOItems.DIRTY_BRONZE.get()), 0.7F, 400)
-                .unlockedBy(getHasName(REOItems.DIRTY_BRONZE.get()), has(REOItems.DIRTY_BRONZE.get())).save(pWriter);
-        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_COPPER.get(), Ingredient.of(REOItems.DIRTY_COPPER.get()), 0.7F, 400)
-                .unlockedBy(getHasName(REOItems.DIRTY_COPPER.get()), has(REOItems.DIRTY_COPPER.get())).save(pWriter);
-        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_DIAMOND.get(), Ingredient.of(REOItems.DIRTY_DIAMOND.get()), 0.7F, 400)
-                .unlockedBy(getHasName(REOItems.DIRTY_DIAMOND.get()), has(REOItems.DIRTY_DIAMOND.get())).save(pWriter);
-        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_ELECTRUM.get(), Ingredient.of(REOItems.DIRTY_ELECTRUM.get()), 0.7F, 400)
-                .unlockedBy(getHasName(REOItems.DIRTY_ELECTRUM.get()), has(REOItems.DIRTY_ELECTRUM.get())).save(pWriter);
-        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_EMERALD.get(), Ingredient.of(REOItems.DIRTY_EMERALD.get()), 0.7F, 400)
-                .unlockedBy(getHasName(REOItems.DIRTY_EMERALD.get()), has(REOItems.DIRTY_EMERALD.get())).save(pWriter);
-        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_ENDERITE.get(), Ingredient.of(REOItems.DIRTY_ENDERITE.get()), 0.7F, 400)
-                .unlockedBy(getHasName(REOItems.DIRTY_ENDERITE.get()), has(REOItems.DIRTY_ENDERITE.get())).save(pWriter);
-        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_GOLD.get(), Ingredient.of(REOItems.DIRTY_GOLD.get()), 0.7F, 400)
-                .unlockedBy(getHasName(REOItems.DIRTY_GOLD.get()), has(REOItems.DIRTY_GOLD.get())).save(pWriter);
-        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_IRON.get(), Ingredient.of(REOItems.DIRTY_IRON.get()), 0.7F, 400)
-                .unlockedBy(getHasName(REOItems.DIRTY_IRON.get()), has(REOItems.DIRTY_IRON.get())).save(pWriter);
-        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_LEAD.get(), Ingredient.of(REOItems.DIRTY_LEAD.get()), 0.7F, 400)
-                .unlockedBy(getHasName(REOItems.DIRTY_LEAD.get()), has(REOItems.DIRTY_LEAD.get())).save(pWriter);
-        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_NICKEL.get(), Ingredient.of(REOItems.DIRTY_NICKEL.get()), 0.7F, 400)
-                .unlockedBy(getHasName(REOItems.DIRTY_NICKEL.get()), has(REOItems.DIRTY_NICKEL.get())).save(pWriter);
-        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_OBSIDIAN.get(), Ingredient.of(REOItems.DIRTY_OBSIDIAN.get()), 0.7F, 400)
-                .unlockedBy(getHasName(REOItems.DIRTY_OBSIDIAN.get()), has(REOItems.DIRTY_OBSIDIAN.get())).save(pWriter);
-        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_PERIDOT.get(), Ingredient.of(REOItems.DIRTY_PERIDOT.get()), 0.7F, 400)
-                .unlockedBy(getHasName(REOItems.DIRTY_PERIDOT.get()), has(REOItems.DIRTY_PERIDOT.get())).save(pWriter);
-        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_PLATINUM.get(), Ingredient.of(REOItems.DIRTY_PLATINUM.get()), 0.7F, 400)
-                .unlockedBy(getHasName(REOItems.DIRTY_PLATINUM.get()), has(REOItems.DIRTY_PLATINUM.get())).save(pWriter);
-        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_RUBY.get(), Ingredient.of(REOItems.DIRTY_RUBY.get()), 0.7F, 400)
-                .unlockedBy(getHasName(REOItems.DIRTY_RUBY.get()), has(REOItems.DIRTY_RUBY.get())).save(pWriter);
-        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_SAPPHIRE.get(), Ingredient.of(REOItems.DIRTY_SAPPHIRE.get()), 0.7F, 400)
-                .unlockedBy(getHasName(REOItems.DIRTY_SAPPHIRE.get()), has(REOItems.DIRTY_SAPPHIRE.get())).save(pWriter);
-        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_SILVER.get(), Ingredient.of(REOItems.DIRTY_SILVER.get()), 0.7F, 400)
-                .unlockedBy(getHasName(REOItems.DIRTY_SILVER.get()), has(REOItems.DIRTY_SILVER.get())).save(pWriter);
-        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_STEEL.get(), Ingredient.of(REOItems.DIRTY_STEEL.get()), 0.7F, 400)
-                .unlockedBy(getHasName(REOItems.DIRTY_STEEL.get()), has(REOItems.DIRTY_STEEL.get())).save(pWriter);
-        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_TIN.get(), Ingredient.of(REOItems.DIRTY_TIN.get()), 0.7F, 400)
-                .unlockedBy(getHasName(REOItems.DIRTY_TIN.get()), has(REOItems.DIRTY_TIN.get())).save(pWriter);
-        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_URANIUM.get(), Ingredient.of(REOItems.DIRTY_URANIUM.get()), 0.7F, 400)
-                .unlockedBy(getHasName(REOItems.DIRTY_URANIUM.get()), has(REOItems.DIRTY_URANIUM.get())).save(pWriter);
-        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_ZINC.get(), Ingredient.of(REOItems.DIRTY_ZINC.get()), 0.7F, 400)
-                .unlockedBy(getHasName(REOItems.DIRTY_ZINC.get()), has(REOItems.DIRTY_ZINC.get())).save(pWriter);
+        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_ALUMINIUM.get(), Ingredient.of(REOTags.Items.DIRTY_ALUMINUM), 0.7F, 400)
+                .unlockedBy(getHasName(REOItems.DIRTY_ALUMINIUM.get()), has(REOTags.Items.DIRTY_ALUMINUM)).save(pWriter);
+        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_AMETHYST.get(), Ingredient.of(REOTags.Items.DIRTY_AMETHYST), 0.7F, 400)
+                .unlockedBy(getHasName(REOItems.DIRTY_AMETHYST.get()), has(REOTags.Items.DIRTY_AMETHYST)).save(pWriter);
+        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_BRASS.get(), Ingredient.of(REOTags.Items.DIRTY_BRASS), 0.7F, 400)
+                .unlockedBy(getHasName(REOItems.DIRTY_BRASS.get()), has(REOTags.Items.DIRTY_BRASS)).save(pWriter);
+        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_BRONZE.get(), Ingredient.of(REOTags.Items.DIRTY_BRONZE), 0.7F, 400)
+                .unlockedBy(getHasName(REOItems.DIRTY_BRONZE.get()), has(REOTags.Items.DIRTY_BRONZE)).save(pWriter);
+        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_COPPER.get(), Ingredient.of(REOTags.Items.DIRTY_COPPER), 0.7F, 400)
+                .unlockedBy(getHasName(REOItems.DIRTY_COPPER.get()), has(REOTags.Items.DIRTY_COPPER)).save(pWriter);
+        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_DIAMOND.get(), Ingredient.of(REOTags.Items.DIRTY_DIAMOND), 0.7F, 400)
+                .unlockedBy(getHasName(REOItems.DIRTY_DIAMOND.get()), has(REOTags.Items.DIRTY_DIAMOND)).save(pWriter);
+        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_ELECTRUM.get(), Ingredient.of(REOTags.Items.DIRTY_ELECTRUM), 0.7F, 400)
+                .unlockedBy(getHasName(REOItems.DIRTY_ELECTRUM.get()), has(REOTags.Items.DIRTY_ELECTRUM)).save(pWriter);
+        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_EMERALD.get(), Ingredient.of(REOTags.Items.DIRTY_EMERALD), 0.7F, 400)
+                .unlockedBy(getHasName(REOItems.DIRTY_EMERALD.get()), has(REOTags.Items.DIRTY_EMERALD)).save(pWriter);
+        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_ENDERITE.get(), Ingredient.of(REOTags.Items.DIRTY_ENDERITE), 0.7F, 400)
+                .unlockedBy(getHasName(REOItems.DIRTY_ENDERITE.get()), has(REOTags.Items.DIRTY_ENDERITE)).save(pWriter);
+        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_GOLD.get(), Ingredient.of(REOTags.Items.DIRTY_GOLD), 0.7F, 400)
+                .unlockedBy(getHasName(REOItems.DIRTY_GOLD.get()), has(REOTags.Items.DIRTY_GOLD)).save(pWriter);
+        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_IRON.get(), Ingredient.of(REOTags.Items.DIRTY_IRON), 0.7F, 400)
+                .unlockedBy(getHasName(REOItems.DIRTY_IRON.get()), has(REOTags.Items.DIRTY_IRON)).save(pWriter);
+        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_LEAD.get(), Ingredient.of(REOTags.Items.DIRTY_LEAD), 0.7F, 400)
+                .unlockedBy(getHasName(REOItems.DIRTY_LEAD.get()), has(REOTags.Items.DIRTY_LEAD)).save(pWriter);
+        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_NICKEL.get(), Ingredient.of(REOTags.Items.DIRTY_NICKEL), 0.7F, 400)
+                .unlockedBy(getHasName(REOItems.DIRTY_NICKEL.get()), has(REOTags.Items.DIRTY_NICKEL)).save(pWriter);
+        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_OBSIDIAN.get(), Ingredient.of(REOTags.Items.DIRTY_OBSIDIAN), 0.7F, 400)
+                .unlockedBy(getHasName(REOItems.DIRTY_OBSIDIAN.get()), has(REOTags.Items.DIRTY_OBSIDIAN)).save(pWriter);
+        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_PERIDOT.get(), Ingredient.of(REOTags.Items.DIRTY_PERIDOT), 0.7F, 400)
+                .unlockedBy(getHasName(REOItems.DIRTY_PERIDOT.get()), has(REOTags.Items.DIRTY_PERIDOT)).save(pWriter);
+        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_PLATINUM.get(), Ingredient.of(REOTags.Items.DIRTY_PLATINUM), 0.7F, 400)
+                .unlockedBy(getHasName(REOItems.DIRTY_PLATINUM.get()), has(REOTags.Items.DIRTY_PLATINUM)).save(pWriter);
+        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_RUBY.get(), Ingredient.of(REOTags.Items.DIRTY_RUBY), 0.7F, 400)
+                .unlockedBy(getHasName(REOItems.DIRTY_RUBY.get()), has(REOTags.Items.DIRTY_RUBY)).save(pWriter);
+        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_SAPPHIRE.get(), Ingredient.of(REOTags.Items.DIRTY_SAPPHIRE), 0.7F, 400)
+                .unlockedBy(getHasName(REOItems.DIRTY_SAPPHIRE.get()), has(REOTags.Items.DIRTY_SAPPHIRE)).save(pWriter);
+        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_SILVER.get(), Ingredient.of(REOTags.Items.DIRTY_SILVER), 0.7F, 400)
+                .unlockedBy(getHasName(REOItems.DIRTY_SILVER.get()), has(REOTags.Items.DIRTY_SILVER)).save(pWriter);
+        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_STEEL.get(), Ingredient.of(REOTags.Items.DIRTY_STEEL), 0.7F, 400)
+                .unlockedBy(getHasName(REOItems.DIRTY_STEEL.get()), has(REOTags.Items.DIRTY_STEEL)).save(pWriter);
+        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_TIN.get(), Ingredient.of(REOTags.Items.DIRTY_TIN), 0.7F, 400)
+                .unlockedBy(getHasName(REOItems.DIRTY_TIN.get()), has(REOTags.Items.DIRTY_TIN)).save(pWriter);
+        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_URANIUM.get(), Ingredient.of(REOTags.Items.DIRTY_URANIUM), 0.7F, 400)
+                .unlockedBy(getHasName(REOItems.DIRTY_URANIUM.get()), has(REOTags.Items.DIRTY_URANIUM)).save(pWriter);
+        new BasicPurifierRecipeBuilder(RecipeCategory.MISC, REOItems.DUST_ZINC.get(), Ingredient.of(REOTags.Items.DIRTY_ZINC), 0.7F, 400)
+                .unlockedBy(getHasName(REOItems.DIRTY_ZINC.get()), has(REOTags.Items.DIRTY_ZINC)).save(pWriter);
 
         // Purifier //
-        PurifierRecipeBuilder.generic(REOItems.DUST_ALUMINIUM.get(), Ingredient.of(REOItems.DIRTY_ALUMINIUM.get()), 1)
-                .unlockedBy(getHasName(REOItems.DIRTY_ALUMINIUM.get()), has(REOItems.DIRTY_ALUMINIUM.get())).save(pWriter);
-        PurifierRecipeBuilder.generic(REOItems.DUST_AMETHYST.get(), Ingredient.of(REOItems.DIRTY_AMETHYST.get()), 1)
-                .unlockedBy(getHasName(REOItems.DIRTY_AMETHYST.get()), has(REOItems.DIRTY_AMETHYST.get())).save(pWriter);
-        PurifierRecipeBuilder.generic(REOItems.DUST_BRASS.get(), Ingredient.of(REOItems.DIRTY_BRASS.get()), 1)
-                .unlockedBy(getHasName(REOItems.DIRTY_BRASS.get()), has(REOItems.DIRTY_BRASS.get())).save(pWriter);
-        PurifierRecipeBuilder.generic(REOItems.DUST_BRONZE.get(), Ingredient.of(REOItems.DIRTY_BRONZE.get()), 1)
-                .unlockedBy(getHasName(REOItems.DIRTY_BRONZE.get()), has(REOItems.DIRTY_BRONZE.get())).save(pWriter);
-        PurifierRecipeBuilder.generic(REOItems.DUST_COPPER.get(), Ingredient.of(REOItems.DIRTY_COPPER.get()), 1)
-                .unlockedBy(getHasName(REOItems.DIRTY_COPPER.get()), has(REOItems.DIRTY_COPPER.get())).save(pWriter);
-        PurifierRecipeBuilder.generic(REOItems.DUST_DIAMOND.get(), Ingredient.of(REOItems.DIRTY_DIAMOND.get()), 1)
-                .unlockedBy(getHasName(REOItems.DIRTY_DIAMOND.get()), has(REOItems.DIRTY_DIAMOND.get())).save(pWriter);
-        PurifierRecipeBuilder.generic(REOItems.DUST_ELECTRUM.get(), Ingredient.of(REOItems.DIRTY_ELECTRUM.get()), 1)
-                .unlockedBy(getHasName(REOItems.DIRTY_ELECTRUM.get()), has(REOItems.DIRTY_ELECTRUM.get())).save(pWriter);
-        PurifierRecipeBuilder.generic(REOItems.DUST_EMERALD.get(), Ingredient.of(REOItems.DIRTY_EMERALD.get()), 1)
-                .unlockedBy(getHasName(REOItems.DIRTY_EMERALD.get()), has(REOItems.DIRTY_EMERALD.get())).save(pWriter);
-        PurifierRecipeBuilder.generic(REOItems.DUST_ENDERITE.get(), Ingredient.of(REOItems.DIRTY_ENDERITE.get()), 1)
-                .unlockedBy(getHasName(REOItems.DIRTY_ENDERITE.get()), has(REOItems.DIRTY_ENDERITE.get())).save(pWriter);
-        PurifierRecipeBuilder.generic(REOItems.DUST_GOLD.get(), Ingredient.of(REOItems.DIRTY_GOLD.get()), 1)
-                .unlockedBy(getHasName(REOItems.DIRTY_GOLD.get()), has(REOItems.DIRTY_GOLD.get())).save(pWriter);
-        PurifierRecipeBuilder.generic(REOItems.DUST_IRON.get(), Ingredient.of(REOItems.DIRTY_IRON.get()), 1)
-                .unlockedBy(getHasName(REOItems.DIRTY_IRON.get()), has(REOItems.DIRTY_IRON.get())).save(pWriter);
-        PurifierRecipeBuilder.generic(REOItems.DUST_LEAD.get(), Ingredient.of(REOItems.DIRTY_LEAD.get()), 1)
-                .unlockedBy(getHasName(REOItems.DIRTY_LEAD.get()), has(REOItems.DIRTY_LEAD.get())).save(pWriter);
-        PurifierRecipeBuilder.generic(REOItems.DUST_NICKEL.get(), Ingredient.of(REOItems.DIRTY_NICKEL.get()), 1)
-                .unlockedBy(getHasName(REOItems.DIRTY_NICKEL.get()), has(REOItems.DIRTY_NICKEL.get())).save(pWriter);
-        PurifierRecipeBuilder.generic(REOItems.DUST_OBSIDIAN.get(), Ingredient.of(REOItems.DIRTY_OBSIDIAN.get()), 1)
-                .unlockedBy(getHasName(REOItems.DIRTY_OBSIDIAN.get()), has(REOItems.DIRTY_OBSIDIAN.get())).save(pWriter);
-        PurifierRecipeBuilder.generic(REOItems.DUST_PERIDOT.get(), Ingredient.of(REOItems.DIRTY_PERIDOT.get()), 1)
-                .unlockedBy(getHasName(REOItems.DIRTY_PERIDOT.get()), has(REOItems.DIRTY_PERIDOT.get())).save(pWriter);
-        PurifierRecipeBuilder.generic(REOItems.DUST_PLATINUM.get(), Ingredient.of(REOItems.DIRTY_PLATINUM.get()), 1)
-                .unlockedBy(getHasName(REOItems.DIRTY_PLATINUM.get()), has(REOItems.DIRTY_PLATINUM.get())).save(pWriter);
-        PurifierRecipeBuilder.generic(REOItems.DUST_RUBY.get(), Ingredient.of(REOItems.DIRTY_RUBY.get()), 1)
-                .unlockedBy(getHasName(REOItems.DIRTY_RUBY.get()), has(REOItems.DIRTY_RUBY.get())).save(pWriter);
-        PurifierRecipeBuilder.generic(REOItems.DUST_SAPPHIRE.get(), Ingredient.of(REOItems.DIRTY_SAPPHIRE.get()), 1)
-                .unlockedBy(getHasName(REOItems.DIRTY_SAPPHIRE.get()), has(REOItems.DIRTY_SAPPHIRE.get())).save(pWriter);
-        PurifierRecipeBuilder.generic(REOItems.DUST_SILVER.get(), Ingredient.of(REOItems.DIRTY_SILVER.get()), 1)
-                .unlockedBy(getHasName(REOItems.DIRTY_SILVER.get()), has(REOItems.DIRTY_SILVER.get())).save(pWriter);
-        PurifierRecipeBuilder.generic(REOItems.DUST_STEEL.get(), Ingredient.of(REOItems.DIRTY_STEEL.get()), 1)
-                .unlockedBy(getHasName(REOItems.DIRTY_STEEL.get()), has(REOItems.DIRTY_STEEL.get())).save(pWriter);
-        PurifierRecipeBuilder.generic(REOItems.DUST_TIN.get(), Ingredient.of(REOItems.DIRTY_TIN.get()), 1)
-                .unlockedBy(getHasName(REOItems.DIRTY_TIN.get()), has(REOItems.DIRTY_TIN.get())).save(pWriter);
-        PurifierRecipeBuilder.generic(REOItems.DUST_URANIUM.get(), Ingredient.of(REOItems.DIRTY_URANIUM.get()), 1)
-                .unlockedBy(getHasName(REOItems.DIRTY_URANIUM.get()), has(REOItems.DIRTY_URANIUM.get())).save(pWriter);
-        PurifierRecipeBuilder.generic(REOItems.DUST_ZINC.get(), Ingredient.of(REOItems.DIRTY_ZINC.get()), 1)
-                .unlockedBy(getHasName(REOItems.DIRTY_ZINC.get()), has(REOItems.DIRTY_ZINC.get())).save(pWriter);
+        PurifierRecipeBuilder.generic(REOItems.DUST_ALUMINIUM.get(), Ingredient.of(REOTags.Items.DIRTY_ALUMINUM), 1)
+                .unlockedBy(getHasName(REOItems.DIRTY_ALUMINIUM.get()), has(REOTags.Items.DIRTY_ALUMINUM)).save(pWriter);
+        PurifierRecipeBuilder.generic(REOItems.DUST_AMETHYST.get(), Ingredient.of(REOTags.Items.DIRTY_AMETHYST), 1)
+                .unlockedBy(getHasName(REOItems.DIRTY_AMETHYST.get()), has(REOTags.Items.DIRTY_AMETHYST)).save(pWriter);
+        PurifierRecipeBuilder.generic(REOItems.DUST_BRASS.get(), Ingredient.of(REOTags.Items.DIRTY_BRASS), 1)
+                .unlockedBy(getHasName(REOItems.DIRTY_BRASS.get()), has(REOTags.Items.DIRTY_BRASS)).save(pWriter);
+        PurifierRecipeBuilder.generic(REOItems.DUST_BRONZE.get(), Ingredient.of(REOTags.Items.DIRTY_BRONZE), 1)
+                .unlockedBy(getHasName(REOItems.DIRTY_BRONZE.get()), has(REOTags.Items.DIRTY_BRONZE)).save(pWriter);
+        PurifierRecipeBuilder.generic(REOItems.DUST_COPPER.get(), Ingredient.of(REOTags.Items.DIRTY_COPPER), 1)
+                .unlockedBy(getHasName(REOItems.DIRTY_COPPER.get()), has(REOTags.Items.DIRTY_COPPER)).save(pWriter);
+        PurifierRecipeBuilder.generic(REOItems.DUST_DIAMOND.get(), Ingredient.of(REOTags.Items.DIRTY_DIAMOND), 1)
+                .unlockedBy(getHasName(REOItems.DIRTY_DIAMOND.get()), has(REOTags.Items.DIRTY_DIAMOND)).save(pWriter);
+        PurifierRecipeBuilder.generic(REOItems.DUST_ELECTRUM.get(), Ingredient.of(REOTags.Items.DIRTY_ELECTRUM), 1)
+                .unlockedBy(getHasName(REOItems.DIRTY_ELECTRUM.get()), has(REOTags.Items.DIRTY_ELECTRUM)).save(pWriter);
+        PurifierRecipeBuilder.generic(REOItems.DUST_EMERALD.get(), Ingredient.of(REOTags.Items.DIRTY_EMERALD), 1)
+                .unlockedBy(getHasName(REOItems.DIRTY_EMERALD.get()), has(REOTags.Items.DIRTY_EMERALD)).save(pWriter);
+        PurifierRecipeBuilder.generic(REOItems.DUST_ENDERITE.get(), Ingredient.of(REOTags.Items.DIRTY_ENDERITE), 1)
+                .unlockedBy(getHasName(REOItems.DIRTY_ENDERITE.get()), has(REOTags.Items.DIRTY_ENDERITE)).save(pWriter);
+        PurifierRecipeBuilder.generic(REOItems.DUST_GOLD.get(), Ingredient.of(REOTags.Items.DIRTY_GOLD), 1)
+                .unlockedBy(getHasName(REOItems.DIRTY_GOLD.get()), has(REOTags.Items.DIRTY_GOLD)).save(pWriter);
+        PurifierRecipeBuilder.generic(REOItems.DUST_IRON.get(), Ingredient.of(REOTags.Items.DIRTY_IRON), 1)
+                .unlockedBy(getHasName(REOItems.DIRTY_IRON.get()), has(REOTags.Items.DIRTY_IRON)).save(pWriter);
+        PurifierRecipeBuilder.generic(REOItems.DUST_LEAD.get(), Ingredient.of(REOTags.Items.DIRTY_LEAD), 1)
+                .unlockedBy(getHasName(REOItems.DIRTY_LEAD.get()), has(REOTags.Items.DIRTY_LEAD)).save(pWriter);
+        PurifierRecipeBuilder.generic(REOItems.DUST_NICKEL.get(), Ingredient.of(REOTags.Items.DIRTY_NICKEL), 1)
+                .unlockedBy(getHasName(REOItems.DIRTY_NICKEL.get()), has(REOTags.Items.DIRTY_NICKEL)).save(pWriter);
+        PurifierRecipeBuilder.generic(REOItems.DUST_OBSIDIAN.get(), Ingredient.of(REOTags.Items.DIRTY_OBSIDIAN), 1)
+                .unlockedBy(getHasName(REOItems.DIRTY_OBSIDIAN.get()), has(REOTags.Items.DIRTY_OBSIDIAN)).save(pWriter);
+        PurifierRecipeBuilder.generic(REOItems.DUST_PERIDOT.get(), Ingredient.of(REOTags.Items.DIRTY_PERIDOT), 1)
+                .unlockedBy(getHasName(REOItems.DIRTY_PERIDOT.get()), has(REOTags.Items.DIRTY_PERIDOT)).save(pWriter);
+        PurifierRecipeBuilder.generic(REOItems.DUST_PLATINUM.get(), Ingredient.of(REOTags.Items.DIRTY_PLATINUM), 1)
+                .unlockedBy(getHasName(REOItems.DIRTY_PLATINUM.get()), has(REOTags.Items.DIRTY_PLATINUM)).save(pWriter);
+        PurifierRecipeBuilder.generic(REOItems.DUST_RUBY.get(), Ingredient.of(REOTags.Items.DIRTY_RUBY), 1)
+                .unlockedBy(getHasName(REOItems.DIRTY_RUBY.get()), has(REOTags.Items.DIRTY_RUBY)).save(pWriter);
+        PurifierRecipeBuilder.generic(REOItems.DUST_SAPPHIRE.get(), Ingredient.of(REOTags.Items.DIRTY_SAPPHIRE), 1)
+                .unlockedBy(getHasName(REOItems.DIRTY_SAPPHIRE.get()), has(REOTags.Items.DIRTY_SAPPHIRE)).save(pWriter);
+        PurifierRecipeBuilder.generic(REOItems.DUST_SILVER.get(), Ingredient.of(REOTags.Items.DIRTY_SILVER), 1)
+                .unlockedBy(getHasName(REOItems.DIRTY_SILVER.get()), has(REOTags.Items.DIRTY_SILVER)).save(pWriter);
+        PurifierRecipeBuilder.generic(REOItems.DUST_STEEL.get(), Ingredient.of(REOTags.Items.DIRTY_STEEL), 1)
+                .unlockedBy(getHasName(REOItems.DIRTY_STEEL.get()), has(REOTags.Items.DIRTY_STEEL)).save(pWriter);
+        PurifierRecipeBuilder.generic(REOItems.DUST_TIN.get(), Ingredient.of(REOTags.Items.DIRTY_TIN), 1)
+                .unlockedBy(getHasName(REOItems.DIRTY_TIN.get()), has(REOTags.Items.DIRTY_TIN)).save(pWriter);
+        PurifierRecipeBuilder.generic(REOItems.DUST_URANIUM.get(), Ingredient.of(REOTags.Items.DIRTY_URANIUM), 1)
+                .unlockedBy(getHasName(REOItems.DIRTY_URANIUM.get()), has(REOTags.Items.DIRTY_URANIUM)).save(pWriter);
+        PurifierRecipeBuilder.generic(REOItems.DUST_ZINC.get(), Ingredient.of(REOTags.Items.DIRTY_ZINC), 1)
+                .unlockedBy(getHasName(REOItems.DIRTY_ZINC.get()), has(REOTags.Items.DIRTY_ZINC)).save(pWriter);
 
         // Blocks //
         // Storage

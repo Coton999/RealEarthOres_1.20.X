@@ -3,7 +3,7 @@
   "cookingtime": 400,
   "experience": 0.7,
   "ingredient": {
-    "item": "realearthores:dirty_ruby"
+    "tag": "realearthores:dirty_dusts/ruby"
   },
   "result": "realearthores:dust_ruby"
 }

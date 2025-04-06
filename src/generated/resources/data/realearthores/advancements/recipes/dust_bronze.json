@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:dirty_bronze"
-            ]
+            "tag": "realearthores:dirty_dusts/bronze"
           }
         ]
       },

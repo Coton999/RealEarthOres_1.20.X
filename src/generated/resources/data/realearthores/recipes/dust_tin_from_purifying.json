@@ -2,7 +2,7 @@
   "type": "realearthores:purifying",
   "ingredients": [
     {
-      "item": "realearthores:dirty_tin"
+      "tag": "realearthores:dirty_dusts/tin"
     }
   ],
   "result": {
