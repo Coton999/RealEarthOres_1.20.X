@@ -1,0 +1,14 @@
+{
+  "values": [
+    "realearthores:electric_furnace",
+    "realearthores:electric_crusher",
+    "realearthores:electric_purifier",
+    "realearthores:electric_alloy_furnace",
+    "realearthores:electric_sawmill",
+    "realearthores:electric_extractor",
+    "realearthores:electric_compressor",
+    "realearthores:electric_centrifuge",
+    "realearthores:electric_induction_furnace",
+    "realearthores:electric_transfuser"
+  ]
+}

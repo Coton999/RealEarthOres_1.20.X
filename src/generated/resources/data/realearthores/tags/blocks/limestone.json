@@ -1,0 +1,20 @@
+{
+  "values": [
+    "realearthores:limestone",
+    "realearthores:limestone_cobble",
+    "realearthores:limestone_cobble_mossy",
+    "realearthores:limestone_brick",
+    "realearthores:limestone_brick_mossy",
+    "realearthores:limestone_brick_chiseled",
+    "realearthores:limestone_brick_cracked",
+    "realearthores:limestone_stairs",
+    "realearthores:limestone_cobble_stairs",
+    "realearthores:limestone_cobble_mossy_stairs",
+    "realearthores:limestone_slab",
+    "realearthores:limestone_cobble_slab",
+    "realearthores:limestone_cobble_mossy_slab",
+    "realearthores:limestone_wall",
+    "realearthores:limestone_cobble_wall",
+    "realearthores:limestone_cobble_mossy_wall"
+  ]
+}

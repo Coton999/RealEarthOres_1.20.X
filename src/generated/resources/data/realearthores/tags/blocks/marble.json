@@ -1,0 +1,20 @@
+{
+  "values": [
+    "realearthores:marble",
+    "realearthores:marble_cobble",
+    "realearthores:marble_cobble_mossy",
+    "realearthores:marble_brick",
+    "realearthores:marble_brick_mossy",
+    "realearthores:marble_brick_chiseled",
+    "realearthores:marble_brick_cracked",
+    "realearthores:marble_stairs",
+    "realearthores:marble_cobble_stairs",
+    "realearthores:marble_cobble_mossy_stairs",
+    "realearthores:marble_slab",
+    "realearthores:marble_cobble_slab",
+    "realearthores:marble_cobble_mossy_slab",
+    "realearthores:marble_wall",
+    "realearthores:marble_cobble_wall",
+    "realearthores:marble_cobble_mossy_wall"
+  ]
+}
