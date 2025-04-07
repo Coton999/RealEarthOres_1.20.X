@@ -208,6 +208,7 @@ public class REOItemModelProvider extends ItemModelProvider {
         miscItem(REOItems.SAP);
         miscItem(REOItems.RESIN);
         miscItem(REOItems.RUBBER);
+        miscItem(REOItems.TREE_TAP);
 
         // Gear
         gearItem(REOItems.GEAR_ALUMINIUM);

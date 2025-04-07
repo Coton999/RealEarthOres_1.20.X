@@ -25,18 +25,14 @@ public class REOBlockTagGenerator extends BlockTagsProvider {
 
 
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
-                .add(REOBlocks.GRAVEL_ORE_ALUMINIUM.get(),
-                        REOBlocks.GRAVEL_ORE_COAL.get(), REOBlocks.GRAVEL_ORE_COPPER.get(), REOBlocks.GRAVEL_ORE_DIAMOND.get(),
-                        REOBlocks.GRAVEL_ORE_EMERALD.get(), REOBlocks.GRAVEL_ORE_GOLD.get(), REOBlocks.GRAVEL_ORE_IRON.get(),
-                        REOBlocks.GRAVEL_ORE_LAPIS.get(), REOBlocks.GRAVEL_ORE_LEAD.get(), REOBlocks.GRAVEL_ORE_NICKEL.get(),
-                        REOBlocks.GRAVEL_ORE_PLATINUM.get(), REOBlocks.GRAVEL_ORE_REDSTONE.get(), REOBlocks.GRAVEL_ORE_SILVER.get(),
-                        REOBlocks.GRAVEL_ORE_TIN.get(), REOBlocks.GRAVEL_ORE_URANIUM.get(), REOBlocks.GRAVEL_ORE_ZINC.get());
+                .addTag(REOTags.Blocks.REO_GRAVEL_ORES);
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .addTag(REOTags.Blocks.REO_ORES) .addTag(REOTags.Blocks.REO_DEEPSLATE_ORES) .addTag(REOTags.Blocks.REO_NETHER_ORES)
                 .addTag(REOTags.Blocks.REO_END_ORES) .addTag(REOTags.Blocks.STORAGE_BLOCKS) .addTag(REOTags.Blocks.RAW_STORAGE_BLOCKS)
                 .addTag(REOTags.Blocks.MARBLE_BLOCKS) .addTag(REOTags.Blocks.LIMESTONE_BLOCKS) .addTag(REOTags.Blocks.CALCITE_BLOCKS)
-                .addTag(REOTags.Blocks.NETHERRACK_BLOCKS) .addTag(REOTags.Blocks.COAL_MACHINES) .addTag(REOTags.Blocks.ELECTRIC_MACHINES);
+                .addTag(REOTags.Blocks.NETHERRACK_BLOCKS) .addTag(REOTags.Blocks.COAL_MACHINES) .addTag(REOTags.Blocks.ELECTRIC_MACHINES)
+                .addTag(REOTags.Blocks.GENERATORS);
 
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
@@ -106,6 +102,8 @@ public class REOBlockTagGenerator extends BlockTagsProvider {
                 REOBlocks.ELECTRIC_ALLOY_FURNACE.get(), REOBlocks.ELECTRIC_SAWMILL.get(), REOBlocks.ELECTRIC_EXTRACTOR.get(),
                 REOBlocks.ELECTRIC_COMPRESSOR.get(), REOBlocks.ELECTRIC_CENTRIFUGE.get(), REOBlocks.ELECTRIC_INDUCTION_FURNACE.get(),
                 REOBlocks.ELECTRIC_TRANSFUSER.get());
+
+        this.tag(REOTags.Blocks.GENERATORS).add(REOBlocks.COAL_GENERATOR.get());
 
         this.tag(BlockTags.CROPS)
                 .add(REOBlocks.CROP_BARLEY.get(), REOBlocks.CROP_CAULIFLOWER.get(),

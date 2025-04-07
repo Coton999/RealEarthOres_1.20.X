@@ -451,6 +451,7 @@ public class REOTags {
         public static final TagKey<Item> INGOTS_ALUMINUM = forgeTag("ingots/aluminum");
         public static final TagKey<Item> INGOTS_BRASS = forgeTag("ingots/brass");
         public static final TagKey<Item> INGOTS_BRONZE = forgeTag("ingots/bronze");
+        public static final TagKey<Item> INGOTS_CHAIN = forgeTag("ingots/chain");
         public static final TagKey<Item> INGOTS_ELECTRUM = forgeTag("ingots/electrum");
         public static final TagKey<Item> INGOTS_ENDERITE = forgeTag("ingots/enderite");
         public static final TagKey<Item> INGOTS_LEAD = forgeTag("ingots/lead");
@@ -464,7 +465,7 @@ public class REOTags {
         public static final TagKey<Item> INGOTS_ZINC = forgeTag("ingots/zinc");
 
         // Gems
-        public static final TagKey<Item> GEMS_AMETHYST = forgeTag("gems/amethyst");
+        public static final TagKey<Item> GEMS_AMETHYST = reoTag("gems/amethyst");
         public static final TagKey<Item> GEMS_PERIDOT = forgeTag("gems/peridot");
         public static final TagKey<Item> GEMS_RUBY = forgeTag("gems/ruby");
         public static final TagKey<Item> GEMS_SAPPHIRE = forgeTag("gems/sapphire");

@@ -1,4 +1,4 @@
-// 1.20.1	2025-04-05T18:23:01.7474548	Tags for minecraft:block mod id realearthores
+// 1.20.1	2025-04-07T09:16:50.7781759	Tags for minecraft:block mod id realearthores
 3b3a82a3d90eaa682bbc18ebfadee64e027a290f data/forge/tags/blocks/mineable/paxel.json
 a4e8097fff07f9a74259d6b5dd583f3437ff28a2 data/forge/tags/blocks/mineable/shears.json
 06c3a69c5434fe93f6bdc186b22290b647c6523a data/forge/tags/blocks/mineable/sickle.json
@@ -54,8 +54,8 @@ cc6eb6cc1beb8d8294cec2637a9e1bd1a7ee8134 data/minecraft/tags/blocks/lapis_ores.j
 f936c5bd4031c32aa955ed776cd7610149b72cfe data/minecraft/tags/blocks/leaves.json
 c24b24b4d2c2b9eb8b4b2a764d5e624727fed7e7 data/minecraft/tags/blocks/logs.json
 eb8ee750931fa1de70d07b9e65b3f659c701ca93 data/minecraft/tags/blocks/logs_that_burn.json
-66fc1adea42bef2eb0ec6e18765301169629f2ff data/minecraft/tags/blocks/mineable/pickaxe.json
-4d6004d516ce558c39e5a4f6c2fb22a0f4fad06d data/minecraft/tags/blocks/mineable/shovel.json
+684b8f08cb8635b6694dd9a335ff7102dc654466 data/minecraft/tags/blocks/mineable/pickaxe.json
+ecc91aaff20416c7e953fdd849fd88c77c14f50e data/minecraft/tags/blocks/mineable/shovel.json
 400813903029d8108a03c093efb09a1e83fb63b0 data/minecraft/tags/blocks/needs_diamond_tool.json
 b24600d582e819f20c8218a968a3e5e4766e51e6 data/minecraft/tags/blocks/needs_iron_tool.json
 759184b60e8e92a45c9b749c2521d50869c41ed0 data/minecraft/tags/blocks/needs_stone_tool.json
@@ -75,6 +75,7 @@ f31a43edd07012d44a9642de7d9531790eee184b data/minecraft/tags/blocks/wooden_press
 52075aa5fb6f59c06f6dde51e09e1a1ef7e7196f data/realearthores/tags/blocks/limestone.json
 ae52603504dc2fc409fc7870034a5901ed13cf15 data/realearthores/tags/blocks/machines/coal_machines.json
 ff85b1ae676f1a688a26daac33ed44ab65b800c1 data/realearthores/tags/blocks/machines/electric_machines.json
+5a8e37119c5c057e94c189d04813c7fab102d4d4 data/realearthores/tags/blocks/machines/generators.json
 2938ea5aae6088a179983678a72da87993012b93 data/realearthores/tags/blocks/marble.json
 61866e40a09c00c44982a68adb126cf541f385d5 data/realearthores/tags/blocks/netherrack.json
 cf9472daa93414490273a7f07570c6f0462ba130 data/realearthores/tags/blocks/raw_storage_blocks.json

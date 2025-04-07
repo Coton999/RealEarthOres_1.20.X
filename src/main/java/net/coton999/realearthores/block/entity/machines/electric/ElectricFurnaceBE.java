@@ -53,7 +53,6 @@ public class ElectricFurnaceBE extends BlockEntity implements MenuProvider {
 
         @Override
         public boolean isItemValid(int slot, @NotNull ItemStack stack) {
-            ItemStack fuel = itemHandler.getStackInSlot(FUEL_SLOT);
             return switch (slot) {
                 case 0, 1 -> true;
                 case 2 -> false;
@@ -101,7 +100,7 @@ public class ElectricFurnaceBE extends BlockEntity implements MenuProvider {
     public final REOEnergyStorage ENERGY_STORAGE = createEnergyStorage();
 
     private REOEnergyStorage createEnergyStorage() {
-        return new REOEnergyStorage(32000, 200) {
+        return new REOEnergyStorage(8000, 200) {
             @Override
             public void onEnergyChanged() {
                 setChanged();
@@ -227,7 +226,7 @@ public class ElectricFurnaceBE extends BlockEntity implements MenuProvider {
 
     public void tick(Level level, BlockPos pPos, BlockState pState) {
         generateEnergy(); // This is a "placeholder" for getting energy through wires or similar
-        if (ENERGY_STORAGE.getEnergyStored() == 32000) {
+        if (ENERGY_STORAGE.getEnergyStored() == 8000) {
             distributeEnergy();
         }
 

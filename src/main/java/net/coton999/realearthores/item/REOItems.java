@@ -1284,6 +1284,8 @@ public class REOItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RUBBER = ITEMS.register("rubber",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TREE_TAP = ITEMS.register("tree_tap",
+            () -> new Item(new Item.Properties()));
 
     // Gear
     public static final RegistryObject<Item> GEAR_ALUMINIUM = ITEMS.register("gear_aluminium",

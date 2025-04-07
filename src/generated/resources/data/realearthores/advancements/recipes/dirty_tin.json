@@ -1,11 +1,13 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ore_tin": {
+    "has_ingot_tin": {
       "conditions": {
         "items": [
           {
-            "tag": "forge:ores/tin"
+            "items": [
+              "realearthores:ingot_tin"
+            ]
           }
         ]
       },
@@ -20,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_ore_tin",
+      "has_ingot_tin",
       "has_the_recipe"
     ]
   ],
