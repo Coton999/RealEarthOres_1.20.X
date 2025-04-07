@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "realearthores:ingot_bronze"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "item": "realearthores:plate_bronze"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": [
+    {
+      "item": "realearthores:ore_nickel"
+    },
+    {
+      "item": "realearthores:deepslate_nickel"
+    },
+    {
+      "item": "realearthores:gravel_ore_nickel"
+    },
+    {
+      "item": "realearthores:nether_nickel"
+    },
+    {
+      "item": "realearthores:raw_nickel"
+    },
+    {
+      "item": "realearthores:dust_nickel"
+    },
+    {
+      "item": "realearthores:dirty_nickel"
+    }
+  ],
+  "result": "realearthores:ingot_nickel"
+}

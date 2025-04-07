@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_planks_walnut": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "realearthores:planks_walnut"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:button/button_walnut"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_planks_walnut",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "realearthores:button/button_walnut"
+    ]
+  },
+  "sends_telemetry_event": false
+}

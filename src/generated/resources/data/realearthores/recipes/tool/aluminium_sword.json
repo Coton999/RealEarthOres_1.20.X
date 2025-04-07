@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "tag": "forge:ingots/aluminum"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "#",
+    "#",
+    "S"
+  ],
+  "result": {
+    "item": "realearthores:aluminium_sword"
+  },
+  "show_notification": true
+}

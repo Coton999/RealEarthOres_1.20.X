@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "minecraft:stone_tool_materials"
+    },
+    "G": {
+      "item": "realearthores:gear_wooden"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#G#",
+    " # "
+  ],
+  "result": {
+    "item": "realearthores:gear_stone"
+  },
+  "show_notification": true
+}

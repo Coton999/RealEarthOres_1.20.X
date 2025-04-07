@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "realearthores:ingot_aluminium"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "item": "realearthores:plate_aluminium"
+  },
+  "show_notification": true
+}

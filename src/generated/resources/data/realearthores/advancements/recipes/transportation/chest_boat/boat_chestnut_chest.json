@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_boat_chestnut": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "realearthores:boat_chestnut"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:chest_boat/boat_chestnut_chest"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_boat_chestnut",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "realearthores:chest_boat/boat_chestnut_chest"
+    ]
+  },
+  "sends_telemetry_event": false
+}

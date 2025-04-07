@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "realearthores:sapphire_axe"
+    },
+    "?": {
+      "item": "realearthores:sapphire_pickaxe"
+    },
+    "@": {
+      "item": "realearthores:sapphire_shovel"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "#@?",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "realearthores:sapphire_paxel"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "realearthores:ingot_lead"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "item": "realearthores:plate_lead"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "realearthores:ingot_zinc"
+    },
+    "G": {
+      "item": "realearthores:gear_stone"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#G#",
+    " # "
+  ],
+  "result": {
+    "item": "realearthores:gear_zinc"
+  },
+  "show_notification": true
+}

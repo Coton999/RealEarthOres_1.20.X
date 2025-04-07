@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "wood",
+  "ingredients": [
+    {
+      "item": "minecraft:spruce_log"
+    },
+    {
+      "item": "minecraft:honeycomb"
+    }
+  ],
+  "result": {
+    "item": "realearthores:log_spruce_resistant"
+  }
+}

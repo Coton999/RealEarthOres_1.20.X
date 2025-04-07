@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "wood",
+  "ingredients": [
+    {
+      "item": "realearthores:fence_plum"
+    },
+    {
+      "item": "minecraft:honeycomb"
+    }
+  ],
+  "result": {
+    "item": "realearthores:fence_plum_resistant"
+  }
+}

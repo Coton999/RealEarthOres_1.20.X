@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "realearthores:ingot_nickel"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "item": "realearthores:plate_nickel"
+  },
+  "show_notification": true
+}

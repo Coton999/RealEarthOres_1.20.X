@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "realearthores:planks_balsa"
+    }
+  ],
+  "result": {
+    "item": "realearthores:button_balsa"
+  }
+}

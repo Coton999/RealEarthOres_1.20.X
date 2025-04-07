@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:copper_ingot"
+    },
+    "G": {
+      "item": "realearthores:gear_stone"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#G#",
+    " # "
+  ],
+  "result": {
+    "item": "realearthores:gear_copper"
+  },
+  "show_notification": true
+}

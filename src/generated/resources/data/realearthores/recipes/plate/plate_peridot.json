@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "realearthores:gem_peridot"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "item": "realearthores:plate_peridot"
+  },
+  "show_notification": true
+}

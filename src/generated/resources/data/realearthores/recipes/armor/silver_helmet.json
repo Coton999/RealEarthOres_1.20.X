@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "tag": "forge:ingots/silver"
+    }
+  },
+  "pattern": [
+    "###",
+    "# #"
+  ],
+  "result": {
+    "item": "realearthores:silver_helmet"
+  },
+  "show_notification": true
+}

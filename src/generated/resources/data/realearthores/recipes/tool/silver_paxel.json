@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "realearthores:silver_axe"
+    },
+    "?": {
+      "item": "realearthores:silver_pickaxe"
+    },
+    "@": {
+      "item": "realearthores:silver_shovel"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "#@?",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "realearthores:silver_paxel"
+  },
+  "show_notification": true
+}

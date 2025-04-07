@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "tag": "forge:gems/sapphire"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "##",
+    "#S",
+    " S"
+  ],
+  "result": {
+    "item": "realearthores:sapphire_axe"
+  },
+  "show_notification": true
+}

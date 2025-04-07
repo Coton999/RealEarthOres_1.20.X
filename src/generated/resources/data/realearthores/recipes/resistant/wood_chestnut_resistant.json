@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "wood",
+  "ingredients": [
+    {
+      "item": "realearthores:wood_chestnut"
+    },
+    {
+      "item": "minecraft:honeycomb"
+    }
+  ],
+  "result": {
+    "item": "realearthores:wood_chestnut_resistant"
+  }
+}

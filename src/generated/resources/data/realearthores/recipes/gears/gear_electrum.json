@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "realearthores:ingot_electrum"
+    },
+    "G": {
+      "item": "realearthores:gear_iron"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#G#",
+    " # "
+  ],
+  "result": {
+    "item": "realearthores:gear_electrum"
+  },
+  "show_notification": true
+}

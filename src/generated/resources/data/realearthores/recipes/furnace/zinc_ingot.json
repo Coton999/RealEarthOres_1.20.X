@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": [
+    {
+      "item": "realearthores:ore_zinc"
+    },
+    {
+      "item": "realearthores:deepslate_zinc"
+    },
+    {
+      "item": "realearthores:gravel_ore_zinc"
+    },
+    {
+      "item": "realearthores:nether_zinc"
+    },
+    {
+      "item": "realearthores:raw_zinc"
+    },
+    {
+      "item": "realearthores:dust_zinc"
+    },
+    {
+      "item": "realearthores:dirty_zinc"
+    }
+  ],
+  "result": "realearthores:ingot_zinc"
+}

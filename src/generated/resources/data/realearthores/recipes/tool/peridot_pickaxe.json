@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "tag": "forge:gems/peridot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "###",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "realearthores:peridot_pickaxe"
+  },
+  "show_notification": true
+}

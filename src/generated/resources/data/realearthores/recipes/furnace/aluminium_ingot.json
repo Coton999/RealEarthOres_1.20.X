@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": [
+    {
+      "item": "realearthores:ore_aluminium"
+    },
+    {
+      "item": "realearthores:deepslate_aluminium"
+    },
+    {
+      "item": "realearthores:gravel_ore_aluminium"
+    },
+    {
+      "item": "realearthores:nether_aluminium"
+    },
+    {
+      "item": "realearthores:raw_aluminium"
+    },
+    {
+      "item": "realearthores:dust_aluminium"
+    },
+    {
+      "item": "realearthores:dirty_aluminium"
+    }
+  ],
+  "result": "realearthores:ingot_aluminium"
+}

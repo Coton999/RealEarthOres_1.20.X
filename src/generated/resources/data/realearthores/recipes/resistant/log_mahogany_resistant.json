@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "wood",
+  "ingredients": [
+    {
+      "item": "realearthores:log_mahogany"
+    },
+    {
+      "item": "minecraft:honeycomb"
+    }
+  ],
+  "result": {
+    "item": "realearthores:log_mahogany_resistant"
+  }
+}

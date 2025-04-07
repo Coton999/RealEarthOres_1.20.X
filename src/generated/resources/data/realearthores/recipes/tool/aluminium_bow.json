@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "tag": "forge:ingots/aluminum"
+    },
+    "@": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    " #@",
+    "# @",
+    " #@"
+  ],
+  "result": {
+    "item": "realearthores:aluminium_bow"
+  },
+  "show_notification": true
+}

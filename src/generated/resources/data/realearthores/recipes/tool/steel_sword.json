@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "tag": "forge:ingots/steel"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "#",
+    "#",
+    "S"
+  ],
+  "result": {
+    "item": "realearthores:steel_sword"
+  },
+  "show_notification": true
+}

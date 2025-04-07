@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "wood",
+  "ingredients": [
+    {
+      "item": "realearthores:fence_gate_rubber"
+    },
+    {
+      "item": "minecraft:honeycomb"
+    }
+  ],
+  "result": {
+    "item": "realearthores:fence_gate_rubber_resistant"
+  }
+}

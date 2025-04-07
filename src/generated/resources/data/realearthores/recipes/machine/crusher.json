@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:flint"
+    },
+    "B": {
+      "item": "minecraft:piston"
+    },
+    "C": {
+      "item": "minecraft:furnace"
+    },
+    "D": {
+      "item": "minecraft:cobblestone"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "BCB",
+    "DDD"
+  ],
+  "result": {
+    "item": "realearthores:crusher"
+  },
+  "show_notification": true
+}

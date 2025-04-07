@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stairs_citrus": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "realearthores:stairs_citrus"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:resistant/stairs_citrus_resistant"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_stairs_citrus",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "realearthores:resistant/stairs_citrus_resistant"
+    ]
+  },
+  "sends_telemetry_event": false
+}

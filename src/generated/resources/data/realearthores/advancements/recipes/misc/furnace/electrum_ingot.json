@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_electrum_ores": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:dusts/electrum"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:furnace/electrum_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_electrum_ores",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "realearthores:furnace/electrum_ingot"
+    ]
+  },
+  "sends_telemetry_event": false
+}

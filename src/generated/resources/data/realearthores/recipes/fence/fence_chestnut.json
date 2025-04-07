@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "realearthores:planks_chestnut"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "#S#",
+    "#S#"
+  ],
+  "result": {
+    "count": 3,
+    "item": "realearthores:fence_chestnut"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": [
+    {
+      "item": "realearthores:cluster_sapphire"
+    },
+    {
+      "item": "realearthores:dust_sapphire"
+    },
+    {
+      "item": "realearthores:dirty_sapphire"
+    }
+  ],
+  "result": "realearthores:gem_sapphire"
+}

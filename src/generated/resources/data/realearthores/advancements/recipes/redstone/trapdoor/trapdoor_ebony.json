@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_planks_ebony": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "realearthores:planks_ebony"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:trapdoor/trapdoor_ebony"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_planks_ebony",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "realearthores:trapdoor/trapdoor_ebony"
+    ]
+  },
+  "sends_telemetry_event": false
+}

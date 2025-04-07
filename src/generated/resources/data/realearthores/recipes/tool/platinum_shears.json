@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "tag": "forge:ingots/platinum"
+    }
+  },
+  "pattern": [
+    " #",
+    "# "
+  ],
+  "result": {
+    "item": "realearthores:platinum_shears"
+  },
+  "show_notification": true
+}

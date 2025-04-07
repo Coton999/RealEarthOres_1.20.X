@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "realearthores:planks_papaya"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "realearthores:pressure_plate_papaya"
+  },
+  "show_notification": true
+}

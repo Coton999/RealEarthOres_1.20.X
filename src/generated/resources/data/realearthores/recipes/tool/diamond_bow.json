@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "tag": "forge:gems/diamond"
+    },
+    "@": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    " #@",
+    "# @",
+    " #@"
+  ],
+  "result": {
+    "item": "realearthores:diamond_bow"
+  },
+  "show_notification": true
+}

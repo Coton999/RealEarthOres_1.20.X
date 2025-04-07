@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_nugget_ruby": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "realearthores:nugget_ruby"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:nugget/gem_ruby"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_nugget_ruby",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "realearthores:nugget/gem_ruby"
+    ]
+  },
+  "sends_telemetry_event": false
+}
