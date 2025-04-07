@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "realearthores:dust_copper"
+    },
+    {
+      "item": "realearthores:dust_zinc"
+    },
+    {
+      "item": "realearthores:dust_zinc"
+    },
+    {
+      "item": "realearthores:dust_zinc"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:dust_brass"
+  }
+}

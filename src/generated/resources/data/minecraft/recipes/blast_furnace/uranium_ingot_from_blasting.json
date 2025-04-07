@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "ingredient": [
+    {
+      "item": "realearthores:ore_uranium"
+    },
+    {
+      "item": "realearthores:deepslate_uranium"
+    },
+    {
+      "item": "realearthores:gravel_ore_uranium"
+    },
+    {
+      "item": "realearthores:nether_uranium"
+    },
+    {
+      "item": "realearthores:raw_uranium"
+    },
+    {
+      "item": "realearthores:dust_uranium"
+    },
+    {
+      "item": "realearthores:dirty_uranium"
+    }
+  ],
+  "result": "realearthores:ingot_uranium"
+}

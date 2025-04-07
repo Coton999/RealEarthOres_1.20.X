@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "ingredient": [
+    {
+      "item": "minecraft:amethyst_cluster"
+    },
+    {
+      "item": "realearthores:dust_amethyst"
+    },
+    {
+      "item": "realearthores:dirty_amethyst"
+    }
+  ],
+  "result": "realearthores:gem_amethyst"
+}

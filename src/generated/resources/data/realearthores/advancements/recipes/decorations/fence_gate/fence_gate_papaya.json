@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_planks_papaya": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "realearthores:planks_papaya"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:fence_gate/fence_gate_papaya"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_planks_papaya",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "realearthores:fence_gate/fence_gate_papaya"
+    ]
+  },
+  "sends_telemetry_event": false
+}

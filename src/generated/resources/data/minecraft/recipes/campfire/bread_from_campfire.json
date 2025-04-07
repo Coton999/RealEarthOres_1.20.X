@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 600,
+  "experience": 0.35,
+  "ingredient": [
+    {
+      "item": "realearthores:flour_wheat"
+    },
+    {
+      "item": "realearthores:flour_barley"
+    }
+  ],
+  "result": "minecraft:bread"
+}

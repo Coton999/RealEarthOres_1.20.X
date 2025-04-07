@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "ingredient": [
+    {
+      "item": "realearthores:ore_tin"
+    },
+    {
+      "item": "realearthores:gravel_ore_tin"
+    },
+    {
+      "item": "realearthores:nether_tin"
+    },
+    {
+      "item": "realearthores:raw_tin"
+    },
+    {
+      "item": "realearthores:dust_tin"
+    },
+    {
+      "item": "realearthores:dirty_tin"
+    }
+  ],
+  "result": "realearthores:ingot_tin"
+}
