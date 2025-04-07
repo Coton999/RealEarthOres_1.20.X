@@ -101,7 +101,7 @@ public class TransfuserBE extends BlockEntity implements MenuProvider {
     public final REOEnergyStorage ENERGY_STORAGE = createEnergyStorage();
 
     private REOEnergyStorage createEnergyStorage() {
-        return new REOEnergyStorage(32000, 200) {
+        return new REOEnergyStorage(8000, 200) {
             @Override
             public void onEnergyChanged() {
                 setChanged();
@@ -222,7 +222,7 @@ public class TransfuserBE extends BlockEntity implements MenuProvider {
 
     public void tick(Level level, BlockPos pPos, BlockState pState) {
         generateEnergy(); // This is a "placeholder" for getting energy through wires or similar
-        if (ENERGY_STORAGE.getEnergyStored() == 32000) {
+        if (ENERGY_STORAGE.getEnergyStored() == 8000) {
             distributeEnergy();
         }
 

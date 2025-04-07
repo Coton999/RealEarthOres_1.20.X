@@ -1,4 +1,4 @@
-// 1.20.1	2025-04-06T11:31:36.1325563	Item Models: realearthores
+// 1.20.1	2025-04-07T09:29:35.8297085	Item Models: realearthores
 8a12a4df5de32d2c3d1a3fb869fba17d0a0dd6d4 assets/realearthores/models/item/aluminium_axe.json
 d2718c330ab58e38517168b9246986572ac5816f assets/realearthores/models/item/aluminium_boots.json
 0425bc54cf771c8a19b4ca13054da496e19bdafe assets/realearthores/models/item/aluminium_chestplate.json
@@ -1254,6 +1254,7 @@ cff6807e7548b0d79f18cdebd614e40047e19598 assets/realearthores/models/item/trapdo
 93c90b7e7455a91685fd3b581a2019496e7fe78e assets/realearthores/models/item/trapdoor_teak.json
 1b9471f71836f339edb90707308b6fa7dc60763e assets/realearthores/models/item/trapdoor_walnut.json
 fac27c39e7e1ecc4b06d9c064f804e693b1e8bb2 assets/realearthores/models/item/trapdoor_willow.json
+4144a39d2cf19963067a082cb68e848032394aa1 assets/realearthores/models/item/tree_tap.json
 c199c249bfe578f0b2d9eb6d85c30b7ed9edb193 assets/realearthores/models/item/wild_barley.json
 8e2d000278abc599cd82ee6706224ed186d6f2b6 assets/realearthores/models/item/wild_cotton.json
 96b11bf2d895c29e4f3788c20b740d27c8cad8e2 assets/realearthores/models/item/wild_rice.json

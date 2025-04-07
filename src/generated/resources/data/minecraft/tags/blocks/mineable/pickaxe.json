@@ -11,6 +11,7 @@
     "#realearthores:calcite",
     "#realearthores:netherrack",
     "#realearthores:machines/coal_machines",
-    "#realearthores:machines/electric_machines"
+    "#realearthores:machines/electric_machines",
+    "#realearthores:machines/generators"
   ]
 }

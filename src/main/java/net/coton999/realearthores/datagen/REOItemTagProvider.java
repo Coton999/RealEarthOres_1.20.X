@@ -741,6 +741,7 @@ public class REOItemTagProvider extends ItemTagsProvider {
         this.tag(REOTags.Items.INGOTS_ALUMINUM).add(REOItems.INGOT_ALUMINIUM.get());
         this.tag(REOTags.Items.INGOTS_BRASS).add(REOItems.INGOT_BRASS.get());
         this.tag(REOTags.Items.INGOTS_BRONZE).add(REOItems.INGOT_BRONZE.get());
+        this.tag(REOTags.Items.INGOTS_CHAIN).add(Items.CHAIN);
         this.tag(REOTags.Items.INGOTS_ELECTRUM).add(REOItems.INGOT_ELECTRUM.get());
         this.tag(REOTags.Items.INGOTS_ENDERITE).add(REOItems.INGOT_ENDERITE.get());
         this.tag(REOTags.Items.INGOTS_LEAD).add(REOItems.INGOT_LEAD.get());
