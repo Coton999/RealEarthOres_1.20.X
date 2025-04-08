@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "realearthores:item/food/seeds/ender_lilly_seed"
+  }
+}

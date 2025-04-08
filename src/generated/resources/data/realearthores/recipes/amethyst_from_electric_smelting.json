@@ -1,0 +1,22 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    [
+      {
+        "item": "minecraft:amethyst_cluster"
+      },
+      {
+        "item": "minecraft:amethyst_shard"
+      },
+      {
+        "item": "realearthores:amethyst_dust"
+      },
+      {
+        "item": "realearthores:amethyst_dirty"
+      }
+    ]
+  ],
+  "result": {
+    "item": "realearthores:amethyst"
+  }
+}

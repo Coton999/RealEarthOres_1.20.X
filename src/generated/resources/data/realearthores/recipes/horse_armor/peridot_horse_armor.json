@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "tag": "forge:gems/peridot"
+    },
+    "@": {
+      "item": "minecraft:leather_horse_armor"
+    }
+  },
+  "pattern": [
+    "###",
+    "#@#",
+    "###"
+  ],
+  "result": {
+    "item": "realearthores:peridot_horse_armor"
+  },
+  "show_notification": true
+}

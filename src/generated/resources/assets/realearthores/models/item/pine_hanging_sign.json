@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "realearthores:item/sign/pine_hanging_sign"
+  }
+}

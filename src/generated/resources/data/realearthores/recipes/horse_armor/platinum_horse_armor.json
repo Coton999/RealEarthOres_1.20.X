@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "tag": "forge:ingots/platinum"
+    },
+    "@": {
+      "item": "minecraft:leather_horse_armor"
+    }
+  },
+  "pattern": [
+    "###",
+    "#@#",
+    "###"
+  ],
+  "result": {
+    "item": "realearthores:platinum_horse_armor"
+  },
+  "show_notification": true
+}

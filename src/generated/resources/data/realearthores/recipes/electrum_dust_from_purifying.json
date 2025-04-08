@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:purifying",
+  "ingredients": [
+    {
+      "tag": "realearthores:dirty_dusts/electrum"
+    }
+  ],
+  "result": {
+    "item": "realearthores:electrum_dust"
+  }
+}

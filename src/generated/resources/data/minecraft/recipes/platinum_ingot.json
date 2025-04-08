@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "platinum_ingot",
+  "ingredients": [
+    {
+      "item": "realearthores:block_platinum"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "realearthores:platinum_ingot"
+  }
+}

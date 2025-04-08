@@ -1,0 +1,31 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    [
+      {
+        "item": "realearthores:ore_lead"
+      },
+      {
+        "item": "realearthores:deepslate_lead"
+      },
+      {
+        "item": "realearthores:gravel_ore_lead"
+      },
+      {
+        "item": "realearthores:nether_lead"
+      },
+      {
+        "item": "realearthores:raw_lead"
+      },
+      {
+        "item": "realearthores:lead_dust"
+      },
+      {
+        "item": "realearthores:lead_dirty"
+      }
+    ]
+  ],
+  "result": {
+    "item": "realearthores:lead_ingot"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "realearthores:alloying",
+  "ingredients": [
+    {
+      "type": "forge:nbt",
+      "count": 1,
+      "item": "realearthores:copper_dust"
+    },
+    {
+      "type": "forge:nbt",
+      "count": 2,
+      "item": "realearthores:tin_dust"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:bronze_dust"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "realearthores:platinum_ingot"
+    },
+    "G": {
+      "tag": "realearthores:gears/tier_gem"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#G#",
+    " # "
+  ],
+  "result": {
+    "item": "realearthores:platinum_gear"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:purifying",
+  "ingredients": [
+    {
+      "tag": "realearthores:dirty_dusts/brass"
+    }
+  ],
+  "result": {
+    "item": "realearthores:brass_dust"
+  }
+}

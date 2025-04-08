@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:crushing",
+  "ingredients": [
+    {
+      "tag": "minecraft:diamond_ores"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:diamond_dirty"
+  }
+}

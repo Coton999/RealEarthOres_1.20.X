@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:purifying",
+  "ingredients": [
+    {
+      "tag": "realearthores:dirty_dusts/bronze"
+    }
+  ],
+  "result": {
+    "item": "realearthores:bronze_dust"
+  }
+}

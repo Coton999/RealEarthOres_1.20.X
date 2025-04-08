@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:crushing",
+  "ingredients": [
+    {
+      "tag": "forge:ores/tin"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:tin_dirty"
+  }
+}

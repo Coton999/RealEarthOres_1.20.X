@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    {
+      "tag": "realearthores:tools_and_armor/diamond"
+    }
+  ],
+  "result": {
+    "item": "realearthores:diamond_nugget"
+  }
+}

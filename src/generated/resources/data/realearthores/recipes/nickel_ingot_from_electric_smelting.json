@@ -1,0 +1,31 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    [
+      {
+        "item": "realearthores:ore_nickel"
+      },
+      {
+        "item": "realearthores:deepslate_nickel"
+      },
+      {
+        "item": "realearthores:gravel_ore_nickel"
+      },
+      {
+        "item": "realearthores:nether_nickel"
+      },
+      {
+        "item": "realearthores:raw_nickel"
+      },
+      {
+        "item": "realearthores:nickel_dust"
+      },
+      {
+        "item": "realearthores:nickel_dirty"
+      }
+    ]
+  ],
+  "result": {
+    "item": "realearthores:nickel_ingot"
+  }
+}

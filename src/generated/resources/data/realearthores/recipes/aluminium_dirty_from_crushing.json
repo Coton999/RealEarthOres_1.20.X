@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:crushing",
+  "ingredients": [
+    {
+      "tag": "forge:ores/aluminum"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:aluminium_dirty"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    [
+      {
+        "item": "realearthores:ore_platinum"
+      },
+      {
+        "item": "realearthores:deepslate_platinum"
+      },
+      {
+        "item": "realearthores:gravel_ore_platinum"
+      },
+      {
+        "item": "realearthores:nether_platinum"
+      },
+      {
+        "item": "realearthores:raw_platinum"
+      },
+      {
+        "item": "realearthores:platinum_dust"
+      },
+      {
+        "item": "realearthores:platinum_dirty"
+      }
+    ]
+  ],
+  "result": {
+    "item": "realearthores:platinum_ingot"
+  }
+}

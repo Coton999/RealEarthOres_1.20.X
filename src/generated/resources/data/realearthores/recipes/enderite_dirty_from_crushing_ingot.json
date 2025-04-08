@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:crushing",
+  "ingredients": [
+    {
+      "item": "realearthores:enderite_ingot"
+    }
+  ],
+  "result": {
+    "item": "realearthores:enderite_dirty"
+  }
+}

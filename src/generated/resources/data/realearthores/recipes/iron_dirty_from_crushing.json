@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:crushing",
+  "ingredients": [
+    {
+      "tag": "minecraft:iron_ores"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:iron_dirty"
+  }
+}

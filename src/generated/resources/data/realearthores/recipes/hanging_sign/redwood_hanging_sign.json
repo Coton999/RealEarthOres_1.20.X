@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "realearthores:log_redwood_stripped"
+    },
+    "S": {
+      "item": "minecraft:chain"
+    }
+  },
+  "pattern": [
+    "S S",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "realearthores:redwood_hanging_sign"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "tag": "forge:gems/ruby"
+    },
+    "@": {
+      "item": "minecraft:leather_horse_armor"
+    }
+  },
+  "pattern": [
+    "###",
+    "#@#",
+    "###"
+  ],
+  "result": {
+    "item": "realearthores:ruby_horse_armor"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:purifying",
+  "ingredients": [
+    {
+      "tag": "realearthores:dirty_dusts/obsidian"
+    }
+  ],
+  "result": {
+    "item": "realearthores:obsidian_dust"
+  }
+}

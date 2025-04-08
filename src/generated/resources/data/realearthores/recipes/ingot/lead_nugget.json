@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "ingot",
+  "ingredients": [
+    {
+      "item": "realearthores:lead_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "realearthores:lead_nugget"
+  }
+}

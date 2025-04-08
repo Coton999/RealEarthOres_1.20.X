@@ -1,0 +1,22 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    [
+      {
+        "item": "realearthores:cluster_ruby"
+      },
+      {
+        "item": "realearthores:ruby_shard"
+      },
+      {
+        "item": "realearthores:ruby_dust"
+      },
+      {
+        "item": "realearthores:ruby_dirty"
+      }
+    ]
+  ],
+  "result": {
+    "item": "realearthores:ruby"
+  }
+}

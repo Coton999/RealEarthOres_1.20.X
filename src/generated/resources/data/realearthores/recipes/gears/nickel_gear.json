@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "realearthores:nickel_ingot"
+    },
+    "G": {
+      "item": "realearthores:stone_gear"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#G#",
+    " # "
+  ],
+  "result": {
+    "item": "realearthores:nickel_gear"
+  },
+  "show_notification": true
+}

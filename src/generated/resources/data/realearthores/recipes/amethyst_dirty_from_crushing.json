@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:amethyst_cluster"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:amethyst_dirty"
+  }
+}

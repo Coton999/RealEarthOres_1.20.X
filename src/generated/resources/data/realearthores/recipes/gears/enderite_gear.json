@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "realearthores:enderite_ingot"
+    },
+    "G": {
+      "tag": "realearthores:gears/tier_gem"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#G#",
+    " # "
+  ],
+  "result": {
+    "item": "realearthores:enderite_gear"
+  },
+  "show_notification": true
+}

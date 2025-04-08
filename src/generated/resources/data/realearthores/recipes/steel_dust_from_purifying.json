@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:purifying",
+  "ingredients": [
+    {
+      "tag": "realearthores:dirty_dusts/steel"
+    }
+  ],
+  "result": {
+    "item": "realearthores:steel_dust"
+  }
+}

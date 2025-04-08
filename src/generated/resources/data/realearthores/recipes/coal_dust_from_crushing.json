@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:crushing",
+  "ingredients": [
+    {
+      "tag": "minecraft:coal_ores"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:coal_dust"
+  }
+}

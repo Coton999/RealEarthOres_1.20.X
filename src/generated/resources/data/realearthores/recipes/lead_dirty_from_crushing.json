@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:crushing",
+  "ingredients": [
+    {
+      "tag": "forge:ores/lead"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:lead_dirty"
+  }
+}

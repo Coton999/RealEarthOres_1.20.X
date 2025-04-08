@@ -1,0 +1,31 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    [
+      {
+        "item": "realearthores:ore_aluminium"
+      },
+      {
+        "item": "realearthores:deepslate_aluminium"
+      },
+      {
+        "item": "realearthores:gravel_ore_aluminium"
+      },
+      {
+        "item": "realearthores:nether_aluminium"
+      },
+      {
+        "item": "realearthores:raw_aluminium"
+      },
+      {
+        "item": "realearthores:aluminium_dust"
+      },
+      {
+        "item": "realearthores:aluminium_dirty"
+      }
+    ]
+  ],
+  "result": {
+    "item": "realearthores:aluminium_ingot"
+  }
+}

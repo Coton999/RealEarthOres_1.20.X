@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:crushing",
+  "ingredients": [
+    {
+      "item": "realearthores:lead_ingot"
+    }
+  ],
+  "result": {
+    "item": "realearthores:lead_dirty"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "realearthores:compressing",
+  "ingredients": [
+    {
+      "type": "forge:nbt",
+      "count": 3,
+      "item": "realearthores:aluminium_ingot"
+    }
+  ],
+  "result": {
+    "item": "realearthores:aluminium_plate"
+  }
+}

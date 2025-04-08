@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:crushing",
+  "ingredients": [
+    {
+      "item": "realearthores:uranium_ingot"
+    }
+  ],
+  "result": {
+    "item": "realearthores:uranium_dirty"
+  }
+}

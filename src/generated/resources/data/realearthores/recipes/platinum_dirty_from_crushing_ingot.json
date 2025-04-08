@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:crushing",
+  "ingredients": [
+    {
+      "item": "realearthores:platinum_ingot"
+    }
+  ],
+  "result": {
+    "item": "realearthores:platinum_dirty"
+  }
+}

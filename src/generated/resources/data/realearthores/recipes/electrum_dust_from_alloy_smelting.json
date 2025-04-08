@@ -1,0 +1,19 @@
+{
+  "type": "realearthores:alloying",
+  "ingredients": [
+    {
+      "type": "forge:nbt",
+      "count": 2,
+      "item": "realearthores:gold_dust"
+    },
+    {
+      "type": "forge:nbt",
+      "count": 2,
+      "item": "realearthores:silver_dust"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:electrum_dust"
+  }
+}

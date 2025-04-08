@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:crushing",
+  "ingredients": [
+    {
+      "item": "realearthores:amethyst"
+    }
+  ],
+  "result": {
+    "item": "realearthores:amethyst_dirty"
+  }
+}

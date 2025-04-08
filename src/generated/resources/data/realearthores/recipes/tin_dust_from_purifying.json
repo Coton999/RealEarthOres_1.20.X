@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:purifying",
+  "ingredients": [
+    {
+      "tag": "realearthores:dirty_dusts/tin"
+    }
+  ],
+  "result": {
+    "item": "realearthores:tin_dust"
+  }
+}

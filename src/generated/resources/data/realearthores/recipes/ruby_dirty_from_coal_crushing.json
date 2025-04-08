@@ -1,0 +1,9 @@
+{
+  "type": "realearthores:basic_crushing",
+  "cookingtime": 200,
+  "experience": 0.5,
+  "ingredient": {
+    "item": "realearthores:cluster_ruby"
+  },
+  "result": "realearthores:ruby_dirty"
+}

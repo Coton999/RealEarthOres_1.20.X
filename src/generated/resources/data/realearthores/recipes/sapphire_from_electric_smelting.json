@@ -1,0 +1,22 @@
+{
+  "type": "realearthores:electric_smelting",
+  "ingredients": [
+    [
+      {
+        "item": "realearthores:cluster_sapphire"
+      },
+      {
+        "item": "realearthores:sapphire_shard"
+      },
+      {
+        "item": "realearthores:sapphire_dust"
+      },
+      {
+        "item": "realearthores:sapphire_dirty"
+      }
+    ]
+  ],
+  "result": {
+    "item": "realearthores:sapphire"
+  }
+}
