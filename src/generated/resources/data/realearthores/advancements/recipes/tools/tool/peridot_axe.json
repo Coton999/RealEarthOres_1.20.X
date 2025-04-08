@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_gem_peridot": {
+    "has_peridot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:gem_peridot"
+              "realearthores:peridot"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_gem_peridot",
+      "has_peridot",
       "has_the_recipe"
     ]
   ],

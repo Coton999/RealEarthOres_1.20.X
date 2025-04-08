@@ -39,7 +39,7 @@ public class PlumBlock extends CropBlock {
     @Override
     protected ItemLike getBaseSeedId() {
 
-        return REOItems.FOOD_PLUM.get();
+        return REOItems.PLUM.get();
     }
 
     @Override

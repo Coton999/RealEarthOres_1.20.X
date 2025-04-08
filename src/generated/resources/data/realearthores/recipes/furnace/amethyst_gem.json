@@ -8,11 +8,11 @@
       "item": "minecraft:amethyst_cluster"
     },
     {
-      "item": "realearthores:dust_amethyst"
+      "item": "realearthores:amethyst_dust"
     },
     {
-      "item": "realearthores:dirty_amethyst"
+      "item": "realearthores:amethyst_dirty"
     }
   ],
-  "result": "realearthores:gem_amethyst"
+  "result": "realearthores:amethyst"
 }

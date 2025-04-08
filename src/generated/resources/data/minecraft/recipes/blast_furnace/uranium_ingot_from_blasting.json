@@ -20,11 +20,11 @@
       "item": "realearthores:raw_uranium"
     },
     {
-      "item": "realearthores:dust_uranium"
+      "item": "realearthores:uranium_dust"
     },
     {
-      "item": "realearthores:dirty_uranium"
+      "item": "realearthores:uranium_dirty"
     }
   ],
-  "result": "realearthores:ingot_uranium"
+  "result": "realearthores:uranium_ingot"
 }

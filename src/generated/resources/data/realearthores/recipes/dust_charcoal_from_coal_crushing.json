@@ -1,9 +1,0 @@
-{
-  "type": "realearthores:basic_crushing",
-  "cookingtime": 200,
-  "experience": 0.3,
-  "ingredient": {
-    "item": "minecraft:charcoal"
-  },
-  "result": "realearthores:dust_charcoal"
-}

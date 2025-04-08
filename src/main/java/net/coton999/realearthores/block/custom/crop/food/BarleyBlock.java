@@ -21,7 +21,7 @@ public class BarleyBlock extends CropBlock {
     @Override
     protected ItemLike getBaseSeedId() {
 
-        return REOItems.SEED_BARLEY.get();
+        return REOItems.BARLEY_SEED.get();
     }
 
     @Override

@@ -1,9 +1,0 @@
-{
-  "type": "realearthores:basic_crushing",
-  "cookingtime": 200,
-  "experience": 0.5,
-  "ingredient": {
-    "tag": "forge:ores/platinum"
-  },
-  "result": "realearthores:dirty_platinum"
-}

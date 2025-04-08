@@ -5,10 +5,10 @@
   "experience": 2.0,
   "ingredient": [
     {
-      "item": "realearthores:dust_netherite"
+      "item": "realearthores:netherite_dust"
     },
     {
-      "item": "realearthores:dirty_netherite"
+      "item": "realearthores:netherite_dirty"
     }
   ],
   "result": "minecraft:netherite_scrap"

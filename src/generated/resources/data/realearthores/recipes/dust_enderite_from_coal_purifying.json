@@ -1,9 +1,0 @@
-{
-  "type": "realearthores:basic_compressing",
-  "cookingtime": 400,
-  "experience": 0.7,
-  "ingredient": {
-    "tag": "realearthores:dirty_dusts/enderite"
-  },
-  "result": "realearthores:dust_enderite"
-}

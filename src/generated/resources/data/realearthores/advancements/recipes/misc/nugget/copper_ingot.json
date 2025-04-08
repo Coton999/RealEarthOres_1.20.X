@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_nugget_copper": {
+    "has_copper_nugget": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:nugget_copper"
+              "realearthores:copper_nugget"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_nugget_copper",
+      "has_copper_nugget",
       "has_the_recipe"
     ]
   ],

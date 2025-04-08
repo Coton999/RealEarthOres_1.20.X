@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_nugget_netherite": {
+    "has_netherite_nugget": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:nugget_netherite"
+              "realearthores:netherite_nugget"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_nugget_netherite",
+      "has_netherite_nugget",
       "has_the_recipe"
     ]
   ],

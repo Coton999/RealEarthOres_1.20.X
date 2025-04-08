@@ -20,11 +20,11 @@
       "item": "realearthores:raw_platinum"
     },
     {
-      "item": "realearthores:dust_platinum"
+      "item": "realearthores:platinum_dust"
     },
     {
-      "item": "realearthores:dirty_platinum"
+      "item": "realearthores:platinum_dirty"
     }
   ],
-  "result": "realearthores:ingot_platinum"
+  "result": "realearthores:platinum_ingot"
 }

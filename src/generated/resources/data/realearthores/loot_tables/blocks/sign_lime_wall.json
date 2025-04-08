@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "realearthores:sign_lime"
+          "name": "realearthores:lime_sign"
         }
       ],
       "rolls": 1.0

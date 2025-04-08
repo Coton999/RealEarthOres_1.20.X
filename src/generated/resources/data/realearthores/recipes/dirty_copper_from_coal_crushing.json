@@ -1,9 +1,0 @@
-{
-  "type": "realearthores:basic_crushing",
-  "cookingtime": 200,
-  "experience": 0.5,
-  "ingredient": {
-    "tag": "minecraft:copper_ores"
-  },
-  "result": "realearthores:dirty_copper"
-}

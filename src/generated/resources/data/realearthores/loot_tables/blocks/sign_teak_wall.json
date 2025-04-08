@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "realearthores:sign_teak"
+          "name": "realearthores:teak_sign"
         }
       ],
       "rolls": 1.0

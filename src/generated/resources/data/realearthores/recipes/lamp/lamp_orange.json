@@ -3,7 +3,7 @@
   "category": "redstone",
   "key": {
     "#": {
-      "item": "realearthores:luminous_orange"
+      "item": "realearthores:orange_luminous"
     },
     "G": {
       "item": "minecraft:redstone_torch"

@@ -17,11 +17,11 @@
       "item": "realearthores:raw_tin"
     },
     {
-      "item": "realearthores:dust_tin"
+      "item": "realearthores:tin_dust"
     },
     {
-      "item": "realearthores:dirty_tin"
+      "item": "realearthores:tin_dirty"
     }
   ],
-  "result": "realearthores:ingot_tin"
+  "result": "realearthores:tin_ingot"
 }

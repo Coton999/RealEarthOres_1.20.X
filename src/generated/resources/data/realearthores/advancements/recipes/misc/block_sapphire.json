@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_shard_sapphire": {
+    "has_sapphire_shard": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:shard_sapphire"
+              "realearthores:sapphire_shard"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_shard_sapphire",
+      "has_sapphire_shard",
       "has_the_recipe"
     ]
   ],

@@ -21,7 +21,7 @@ public class CottonBlock extends CropBlock {
     @Override
     protected ItemLike getBaseSeedId() {
 
-        return REOItems.SEED_COTTON.get();
+        return REOItems.COTTON_SEED.get();
     }
 
     @Override

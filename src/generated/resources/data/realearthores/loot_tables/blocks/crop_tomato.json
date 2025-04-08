@@ -23,11 +23,11 @@
                   }
                 }
               ],
-              "name": "realearthores:food_tomato"
+              "name": "realearthores:tomato"
             },
             {
               "type": "minecraft:item",
-              "name": "realearthores:seed_tomato"
+              "name": "realearthores:tomato_seed"
             }
           ]
         }
@@ -59,7 +59,7 @@
               }
             }
           ],
-          "name": "realearthores:seed_tomato"
+          "name": "realearthores:tomato_seed"
         }
       ],
       "rolls": 1.0

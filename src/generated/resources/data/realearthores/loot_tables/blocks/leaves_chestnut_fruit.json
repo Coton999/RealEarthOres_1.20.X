@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "realearthores:food_chestnut"
+          "name": "realearthores:chestnut"
         }
       ],
       "rolls": 1.0

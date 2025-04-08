@@ -23,11 +23,11 @@
                   }
                 }
               ],
-              "name": "realearthores:food_plum"
+              "name": "realearthores:plum"
             },
             {
               "type": "minecraft:item",
-              "name": "realearthores:food_plum"
+              "name": "realearthores:plum"
             }
           ]
         }
@@ -59,7 +59,7 @@
               }
             }
           ],
-          "name": "realearthores:food_plum"
+          "name": "realearthores:plum"
         }
       ],
       "rolls": 1.0

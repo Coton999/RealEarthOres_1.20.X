@@ -23,7 +23,7 @@ public class BlueberryBlock extends SweetBerryBushBlock {
 
     @Override
     public ItemStack getCloneItemStack(BlockGetter pLevel, BlockPos pPos, BlockState pState) {
-        return new ItemStack(REOItems.FOOD_BLUEBERRY.get());
+        return new ItemStack(REOItems.BLUEBERRY.get());
     }
 
     @Override
@@ -34,7 +34,7 @@ public class BlueberryBlock extends SweetBerryBushBlock {
             return InteractionResult.PASS;
         } else if (i > 1) {
             int j = 1 + pLevel.random.nextInt(2);
-            popResource(pLevel, pPos, new ItemStack(REOItems.FOOD_BLUEBERRY.get(), j + (flag ? 1 : 0)));
+            popResource(pLevel, pPos, new ItemStack(REOItems.BLUEBERRY.get(), j + (flag ? 1 : 0)));
             pLevel.playSound((Player)null, pPos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS, 1.0F, 0.8F + pLevel.random.nextFloat() * 0.4F);
             BlockState blockstate = pState.setValue(AGE, Integer.valueOf(1));
             pLevel.setBlock(pPos, blockstate, 2);

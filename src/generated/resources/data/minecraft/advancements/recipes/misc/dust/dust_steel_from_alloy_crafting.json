@@ -1,24 +1,24 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dust_coal": {
+    "has_coal_dust": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:dust_coal"
+              "realearthores:coal_dust"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_dust_iron": {
+    "has_iron_dust": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:dust_iron"
+              "realearthores:iron_dust"
             ]
           }
         ]
@@ -34,8 +34,8 @@
   },
   "requirements": [
     [
-      "has_dust_iron",
-      "has_dust_coal",
+      "has_iron_dust",
+      "has_coal_dust",
       "has_the_recipe"
     ]
   ],

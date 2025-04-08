@@ -21,7 +21,7 @@ public class CauliflowerBlock extends CropBlock {
     @Override
     protected ItemLike getBaseSeedId() {
 
-        return REOItems.SEED_CAULIFLOWER.get();
+        return REOItems.CAULIFLOWER_SEED.get();
     }
 
     @Override

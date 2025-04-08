@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "realearthores:sign_hanging_baobab"
+          "name": "realearthores:baobab_hanging_sign"
         }
       ],
       "rolls": 1.0

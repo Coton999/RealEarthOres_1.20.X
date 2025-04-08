@@ -23,11 +23,11 @@
                   }
                 }
               ],
-              "name": "realearthores:plant_cotton"
+              "name": "realearthores:cotton_plant"
             },
             {
               "type": "minecraft:item",
-              "name": "realearthores:seed_cotton"
+              "name": "realearthores:cotton_seed"
             }
           ]
         }
@@ -59,7 +59,7 @@
               }
             }
           ],
-          "name": "realearthores:seed_cotton"
+          "name": "realearthores:cotton_seed"
         }
       ],
       "rolls": 1.0

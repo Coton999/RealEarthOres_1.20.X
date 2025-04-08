@@ -39,7 +39,7 @@ public class PapayaBlock extends CropBlock {
     @Override
     protected ItemLike getBaseSeedId() {
 
-        return REOItems.FOOD_PAPAYA.get();
+        return REOItems.PAPAYA.get();
     }
 
     @Override

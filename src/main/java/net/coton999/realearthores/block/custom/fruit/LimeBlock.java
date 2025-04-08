@@ -39,7 +39,7 @@ public class LimeBlock extends CropBlock {
     @Override
     protected ItemLike getBaseSeedId() {
 
-        return REOItems.FOOD_LIME.get();
+        return REOItems.LIME.get();
     }
 
     @Override

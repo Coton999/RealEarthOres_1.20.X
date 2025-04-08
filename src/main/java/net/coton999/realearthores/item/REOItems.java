@@ -10,8 +10,6 @@ import net.coton999.realearthores.item.custom.ModBoatItem;
 import net.coton999.realearthores.item.custom.ModShearsItem;
 import net.coton999.realearthores.item.custom.tool.*;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.ItemTags;
-import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -48,308 +46,308 @@ public class REOItems {
 
 
     // Ingot
-    public static final RegistryObject<Item> INGOT_ALUMINIUM = ITEMS.register("ingot_aluminium",
+    public static final RegistryObject<Item> ALUMINUM_INGOT = ITEMS.register("aluminium_ingot",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> INGOT_BRASS = ITEMS.register("ingot_brass",
+    public static final RegistryObject<Item> BRASS_INGOT = ITEMS.register("brass_ingot",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> INGOT_BRONZE = ITEMS.register("ingot_bronze",
+    public static final RegistryObject<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> INGOT_ELECTRUM = ITEMS.register("ingot_electrum",
+    public static final RegistryObject<Item> ELECTRUM_INGOT = ITEMS.register("electrum_ingot",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> INGOT_ENDERITE = ITEMS.register("ingot_enderite",
+    public static final RegistryObject<Item> ENDERITE_INGOT = ITEMS.register("enderite_ingot",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> INGOT_LEAD = ITEMS.register("ingot_lead",
+    public static final RegistryObject<Item> LEAD_INGOT = ITEMS.register("lead_ingot",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> INGOT_NICKEL = ITEMS.register("ingot_nickel",
+    public static final RegistryObject<Item> NICKEL_INGOT = ITEMS.register("nickel_ingot",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> INGOT_OBSIDIAN = ITEMS.register("ingot_obsidian",
+    public static final RegistryObject<Item> OBSIDIAN_INGOT = ITEMS.register("obsidian_ingot",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> INGOT_PLATINUM = ITEMS.register("ingot_platinum",
+    public static final RegistryObject<Item> PLATINUM_INGOT = ITEMS.register("platinum_ingot",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> INGOT_SILVER = ITEMS.register("ingot_silver",
+    public static final RegistryObject<Item> SILVER_INGOT = ITEMS.register("silver_ingot",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> INGOT_STEEL = ITEMS.register("ingot_steel",
+    public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> INGOT_TIN = ITEMS.register("ingot_tin",
+    public static final RegistryObject<Item> TIN_INGOT = ITEMS.register("tin_ingot",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> INGOT_URANIUM = ITEMS.register("ingot_uranium",
+    public static final RegistryObject<Item> URANIUM_INGOT = ITEMS.register("uranium_ingot",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> INGOT_ZINC = ITEMS.register("ingot_zinc",
+    public static final RegistryObject<Item> ZINC_INGOT = ITEMS.register("zinc_ingot",
             () -> new Item(new Item.Properties()));
 
     // Gem
-    public static final RegistryObject<Item> GEM_AMETHYST = ITEMS.register("gem_amethyst",
+    public static final RegistryObject<Item> AMETHYST = ITEMS.register("amethyst",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GEM_PERIDOT = ITEMS.register("gem_peridot",
+    public static final RegistryObject<Item> PERIDOT = ITEMS.register("peridot",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GEM_RUBY = ITEMS.register("gem_ruby",
+    public static final RegistryObject<Item> RUBY = ITEMS.register("ruby",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GEM_SAPPHIRE = ITEMS.register("gem_sapphire",
+    public static final RegistryObject<Item> SAPPHIRE = ITEMS.register("sapphire",
             () -> new Item(new Item.Properties()));
 
     // Gem Shards
-    public static final RegistryObject<Item> SHARD_PERIDOT = ITEMS.register("shard_peridot",
+    public static final RegistryObject<Item> PERIDOT_SHARD = ITEMS.register("peridot_shard",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> SHARD_RUBY = ITEMS.register("shard_ruby",
+    public static final RegistryObject<Item> RUBY_SHARD = ITEMS.register("ruby_shard",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> SHARD_SAPPHIRE = ITEMS.register("shard_sapphire",
+    public static final RegistryObject<Item> SAPPHIRE_SHARD = ITEMS.register("sapphire_shard",
             () -> new Item(new Item.Properties()));
 
     // Nugget
-    public static final RegistryObject<Item> NUGGET_ALUMINIUM = ITEMS.register("nugget_aluminium",
+    public static final RegistryObject<Item> ALUMINUM_NUGGET = ITEMS.register("aluminium_nugget",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> NUGGET_AMETHYST = ITEMS.register("nugget_amethyst",
+    public static final RegistryObject<Item> AMETHYST_NUGGET = ITEMS.register("amethyst_nugget",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> NUGGET_BRASS = ITEMS.register("nugget_brass",
+    public static final RegistryObject<Item> BRASS_NUGGET = ITEMS.register("brass_nugget",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> NUGGET_BRONZE = ITEMS.register("nugget_bronze",
+    public static final RegistryObject<Item> BRONZE_NUGGET = ITEMS.register("bronze_nugget",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> NUGGET_COPPER = ITEMS.register("nugget_copper",
+    public static final RegistryObject<Item> COPPER_NUGGET = ITEMS.register("copper_nugget",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> NUGGET_DIAMOND = ITEMS.register("nugget_diamond",
+    public static final RegistryObject<Item> DIAMOND_NUGGET = ITEMS.register("diamond_nugget",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> NUGGET_ELECTRUM = ITEMS.register("nugget_electrum",
+    public static final RegistryObject<Item> ELECTRUM_NUGGET = ITEMS.register("electrum_nugget",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> NUGGET_EMERALD = ITEMS.register("nugget_emerald",
+    public static final RegistryObject<Item> EMERALD_NUGGET = ITEMS.register("emerald_nugget",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> NUGGET_ENDERITE = ITEMS.register("nugget_enderite",
+    public static final RegistryObject<Item> ENDERITE_NUGGET = ITEMS.register("enderite_nugget",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> NUGGET_LEAD = ITEMS.register("nugget_lead",
+    public static final RegistryObject<Item> LEAD_NUGGET = ITEMS.register("lead_nugget",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> NUGGET_NETHERITE = ITEMS.register("nugget_netherite",
+    public static final RegistryObject<Item> NETHERITE_NUGGET = ITEMS.register("netherite_nugget",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> NUGGET_NICKEL = ITEMS.register("nugget_nickel",
+    public static final RegistryObject<Item> NICKEL_NUGGET = ITEMS.register("nickel_nugget",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> NUGGET_PERIDOT = ITEMS.register("nugget_peridot",
+    public static final RegistryObject<Item> PERIDOT_NUGGET = ITEMS.register("peridot_nugget",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> NUGGET_PLATINUM = ITEMS.register("nugget_platinum",
+    public static final RegistryObject<Item> PLATINUM_NUGGET = ITEMS.register("platinum_nugget",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> NUGGET_RUBY = ITEMS.register("nugget_ruby",
+    public static final RegistryObject<Item> RUBY_NUGGET = ITEMS.register("ruby_nugget",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> NUGGET_SAPPHIRE = ITEMS.register("nugget_sapphire",
+    public static final RegistryObject<Item> SAPPHIRE_NUGGET = ITEMS.register("sapphire_nugget",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> NUGGET_SILVER = ITEMS.register("nugget_silver",
+    public static final RegistryObject<Item> SILVER_NUGGET = ITEMS.register("silver_nugget",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> NUGGET_STEEL = ITEMS.register("nugget_steel",
+    public static final RegistryObject<Item> STEEL_NUGGET = ITEMS.register("steel_nugget",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> NUGGET_TIN = ITEMS.register("nugget_tin",
+    public static final RegistryObject<Item> TIN_NUGGET = ITEMS.register("tin_nugget",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> NUGGET_ZINC = ITEMS.register("nugget_zinc",
+    public static final RegistryObject<Item> ZINC_NUGGET = ITEMS.register("zinc_nugget",
             () -> new Item(new Item.Properties()));
 
     // Dust
-    public static final RegistryObject<Item> DUST_AMETHYST = ITEMS.register("dust_amethyst",
+    public static final RegistryObject<Item> ALUMINUM_DUST = ITEMS.register("aluminium_dust",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_ALUMINIUM = ITEMS.register("dust_aluminium",
+    public static final RegistryObject<Item> AMETHYST_DUST = ITEMS.register("amethyst_dust",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_BRASS = ITEMS.register("dust_brass",
+    public static final RegistryObject<Item> BRASS_DUST = ITEMS.register("brass_dust",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_BRONZE = ITEMS.register("dust_bronze",
+    public static final RegistryObject<Item> BRONZE_DUST = ITEMS.register("bronze_dust",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_CHARCOAL = ITEMS.register("dust_charcoal",
+    public static final RegistryObject<Item> CHARCOAL_DUST = ITEMS.register("charcoal_dust",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_COAL = ITEMS.register("dust_coal",
+    public static final RegistryObject<Item> COAL_DUST = ITEMS.register("coal_dust",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_COPPER = ITEMS.register("dust_copper",
+    public static final RegistryObject<Item> COPPER_DUST = ITEMS.register("copper_dust",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_DIAMOND = ITEMS.register("dust_diamond",
+    public static final RegistryObject<Item> DIAMOND_DUST = ITEMS.register("diamond_dust",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_ELECTRUM = ITEMS.register("dust_electrum",
+    public static final RegistryObject<Item> ELECTRUM_DUST = ITEMS.register("electrum_dust",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_EMERALD = ITEMS.register("dust_emerald",
+    public static final RegistryObject<Item> EMERALD_DUST = ITEMS.register("emerald_dust",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_ENDERITE = ITEMS.register("dust_enderite",
+    public static final RegistryObject<Item> ENDERITE_DUST = ITEMS.register("enderite_dust",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_GOLD = ITEMS.register("dust_gold",
+    public static final RegistryObject<Item> GOLD_DUST = ITEMS.register("gold_dust",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_IRON = ITEMS.register("dust_iron",
+    public static final RegistryObject<Item> IRON_DUST = ITEMS.register("iron_dust",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_LEAD = ITEMS.register("dust_lead",
+    public static final RegistryObject<Item> LEAD_DUST = ITEMS.register("lead_dust",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_NETHERITE = ITEMS.register("dust_netherite",
+    public static final RegistryObject<Item> NETHERITE_DUST = ITEMS.register("netherite_dust",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_NICKEL = ITEMS.register("dust_nickel",
+    public static final RegistryObject<Item> NICKEL_DUST = ITEMS.register("nickel_dust",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_OBSIDIAN = ITEMS.register("dust_obsidian",
+    public static final RegistryObject<Item> OBSIDIAN_DUST = ITEMS.register("obsidian_dust",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_PERIDOT = ITEMS.register("dust_peridot",
+    public static final RegistryObject<Item> PERIDOT_DUST = ITEMS.register("peridot_dust",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_PLATINUM = ITEMS.register("dust_platinum",
+    public static final RegistryObject<Item> PLATINUM_DUST = ITEMS.register("platinum_dust",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_RUBY = ITEMS.register("dust_ruby",
+    public static final RegistryObject<Item> RUBY_DUST = ITEMS.register("ruby_dust",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_SAPPHIRE = ITEMS.register("dust_sapphire",
+    public static final RegistryObject<Item> SAPPHIRE_DUST = ITEMS.register("sapphire_dust",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_SILVER = ITEMS.register("dust_silver",
+    public static final RegistryObject<Item> SILVER_DUST = ITEMS.register("silver_dust",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_STEEL = ITEMS.register("dust_steel",
+    public static final RegistryObject<Item> STEEL_DUST = ITEMS.register("steel_dust",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_TIN = ITEMS.register("dust_tin",
+    public static final RegistryObject<Item> TIN_DUST = ITEMS.register("tin_dust",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_URANIUM = ITEMS.register("dust_uranium",
+    public static final RegistryObject<Item> URANIUM_DUST = ITEMS.register("uranium_dust",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DUST_ZINC = ITEMS.register("dust_zinc",
+    public static final RegistryObject<Item> ZINC_DUST = ITEMS.register("zinc_dust",
             () -> new Item(new Item.Properties()));
 
     // Dirty Dust
-    public static final RegistryObject<Item> DIRTY_AMETHYST = ITEMS.register("dirty_amethyst",
+    public static final RegistryObject<Item> ALUMINUM_DIRTY = ITEMS.register("aluminium_dirty",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DIRTY_ALUMINIUM = ITEMS.register("dirty_aluminium",
+    public static final RegistryObject<Item> AMETHYST_DIRTY = ITEMS.register("amethyst_dirty",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DIRTY_BRASS = ITEMS.register("dirty_brass",
+    public static final RegistryObject<Item> BRASS_DIRTY = ITEMS.register("brass_dirty",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DIRTY_BRONZE = ITEMS.register("dirty_bronze",
+    public static final RegistryObject<Item> BRONZE_DIRTY = ITEMS.register("bronze_dirty",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DIRTY_COPPER = ITEMS.register("dirty_copper",
+    public static final RegistryObject<Item> COPPER_DIRTY = ITEMS.register("copper_dirty",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DIRTY_DIAMOND = ITEMS.register("dirty_diamond",
+    public static final RegistryObject<Item> DIAMOND_DIRTY = ITEMS.register("diamond_dirty",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DIRTY_ELECTRUM = ITEMS.register("dirty_electrum",
+    public static final RegistryObject<Item> ELECTRUM_DIRTY = ITEMS.register("electrum_dirty",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DIRTY_EMERALD = ITEMS.register("dirty_emerald",
+    public static final RegistryObject<Item> EMERALD_DIRTY = ITEMS.register("emerald_dirty",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DIRTY_ENDERITE = ITEMS.register("dirty_enderite",
+    public static final RegistryObject<Item> ENDERITE_DIRTY = ITEMS.register("enderite_dirty",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DIRTY_GOLD = ITEMS.register("dirty_gold",
+    public static final RegistryObject<Item> GOLD_DIRTY = ITEMS.register("gold_dirty",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DIRTY_IRON = ITEMS.register("dirty_iron",
+    public static final RegistryObject<Item> IRON_DIRTY = ITEMS.register("iron_dirty",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DIRTY_LEAD = ITEMS.register("dirty_lead",
+    public static final RegistryObject<Item> LEAD_DIRTY = ITEMS.register("lead_dirty",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DIRTY_NETHERITE = ITEMS.register("dirty_netherite",
+    public static final RegistryObject<Item> NETHERITE_DIRTY = ITEMS.register("netherite_dirty",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DIRTY_NICKEL = ITEMS.register("dirty_nickel",
+    public static final RegistryObject<Item> NICKEL_DIRTY = ITEMS.register("nickel_dirty",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DIRTY_OBSIDIAN = ITEMS.register("dirty_obsidian",
+    public static final RegistryObject<Item> OBSIDIAN_DIRTY = ITEMS.register("obsidian_dirty",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DIRTY_PERIDOT = ITEMS.register("dirty_peridot",
+    public static final RegistryObject<Item> PERIDOT_DIRTY = ITEMS.register("peridot_dirty",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DIRTY_PLATINUM = ITEMS.register("dirty_platinum",
+    public static final RegistryObject<Item> PLATINUM_DIRTY = ITEMS.register("platinum_dirty",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DIRTY_RUBY = ITEMS.register("dirty_ruby",
+    public static final RegistryObject<Item> RUBY_DIRTY = ITEMS.register("ruby_dirty",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DIRTY_SAPPHIRE = ITEMS.register("dirty_sapphire",
+    public static final RegistryObject<Item> SAPPHIRE_DIRTY = ITEMS.register("sapphire_dirty",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DIRTY_SILVER = ITEMS.register("dirty_silver",
+    public static final RegistryObject<Item> SILVER_DIRTY = ITEMS.register("silver_dirty",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DIRTY_STEEL = ITEMS.register("dirty_steel",
+    public static final RegistryObject<Item> STEEL_DIRTY = ITEMS.register("steel_dirty",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DIRTY_TIN = ITEMS.register("dirty_tin",
+    public static final RegistryObject<Item> TIN_DIRTY = ITEMS.register("tin_dirty",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DIRTY_URANIUM = ITEMS.register("dirty_uranium",
+    public static final RegistryObject<Item> URANIUM_DIRTY = ITEMS.register("uranium_dirty",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DIRTY_ZINC = ITEMS.register("dirty_zinc",
+    public static final RegistryObject<Item> ZINC_DIRTY = ITEMS.register("zinc_dirty",
             () -> new Item(new Item.Properties()));
 
     // Buckets
-    public static final RegistryObject<Item> BUCKET_MOLTEN_ALUMINIUM = ITEMS.register("bucket_molten_aluminium",
+    public static final RegistryObject<Item> ALUMINUM_BUCKET = ITEMS.register("aluminium_bucket",
             () -> new BucketItem(REOFluids.MOLTEN_ALUMINIUM_SOURCE,
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final RegistryObject<Item> BUCKET_MOLTEN_AMETHYST = ITEMS.register("bucket_molten_amethyst",
+    public static final RegistryObject<Item> AMETHYST_BUCKET = ITEMS.register("amethyst_bucket",
             () -> new BucketItem(REOFluids.MOLTEN_AMETHYST_SOURCE,
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final RegistryObject<Item> BUCKET_MOLTEN_BRASS = ITEMS.register("bucket_molten_brass",
+    public static final RegistryObject<Item> BRASS_BUCKET = ITEMS.register("brass_bucket",
             () -> new BucketItem(REOFluids.MOLTEN_BRASS_SOURCE,
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final RegistryObject<Item> BUCKET_MOLTEN_BRONZE = ITEMS.register("bucket_molten_bronze",
+    public static final RegistryObject<Item> BRONZE_BUCKET = ITEMS.register("bronze_bucket",
             () -> new BucketItem(REOFluids.MOLTEN_BRONZE_SOURCE,
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final RegistryObject<Item> BUCKET_MOLTEN_COAL = ITEMS.register("bucket_molten_coal",
+    public static final RegistryObject<Item> COAL_BUCKET = ITEMS.register("coal_bucket",
             () -> new BucketItem(REOFluids.MOLTEN_COAL_SOURCE,
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final RegistryObject<Item> BUCKET_MOLTEN_COPPER = ITEMS.register("bucket_molten_copper",
+    public static final RegistryObject<Item> COPPER_BUCKET = ITEMS.register("copper_bucket",
             () -> new BucketItem(REOFluids.MOLTEN_COPPER_SOURCE,
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final RegistryObject<Item> BUCKET_MOLTEN_DIAMOND = ITEMS.register("bucket_molten_diamond",
+    public static final RegistryObject<Item> DIAMOND_BUCKET = ITEMS.register("diamond_bucket",
             () -> new BucketItem(REOFluids.MOLTEN_DIAMOND_SOURCE,
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final RegistryObject<Item> BUCKET_MOLTEN_ELECTRUM = ITEMS.register("bucket_molten_electrum",
+    public static final RegistryObject<Item> ELECTRUM_BUCKET = ITEMS.register("electrum_bucket",
             () -> new BucketItem(REOFluids.MOLTEN_ELECTRUM_SOURCE,
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final RegistryObject<Item> BUCKET_MOLTEN_EMERALD = ITEMS.register("bucket_molten_emerald",
+    public static final RegistryObject<Item> EMERALD_BUCKET = ITEMS.register("emerald_bucket",
             () -> new BucketItem(REOFluids.MOLTEN_EMERALD_SOURCE,
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final RegistryObject<Item> BUCKET_MOLTEN_ENDERITE = ITEMS.register("bucket_molten_enderite",
+    public static final RegistryObject<Item> ENDERITE_BUCKET = ITEMS.register("enderite_bucket",
             () -> new BucketItem(REOFluids.MOLTEN_ENDERITE_SOURCE,
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final RegistryObject<Item> BUCKET_MOLTEN_GOLD = ITEMS.register("bucket_molten_gold",
+    public static final RegistryObject<Item> GOLD_BUCKET = ITEMS.register("gold_bucket",
             () -> new BucketItem(REOFluids.MOLTEN_GOLD_SOURCE,
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final RegistryObject<Item> BUCKET_MOLTEN_IRON = ITEMS.register("bucket_molten_iron",
+    public static final RegistryObject<Item> IRON_BUCKET = ITEMS.register("iron_bucket",
             () -> new BucketItem(REOFluids.MOLTEN_IRON_SOURCE,
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final RegistryObject<Item> BUCKET_MOLTEN_LAPIS = ITEMS.register("bucket_molten_lapis",
+    public static final RegistryObject<Item> LAPIS_BUCKET = ITEMS.register("lapis_bucket",
             () -> new BucketItem(REOFluids.MOLTEN_LAPIS_SOURCE,
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final RegistryObject<Item> BUCKET_MOLTEN_LEAD = ITEMS.register("bucket_molten_lead",
+    public static final RegistryObject<Item> LEAD_BUCKET = ITEMS.register("lead_bucket",
             () -> new BucketItem(REOFluids.MOLTEN_LEAD_SOURCE,
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final RegistryObject<Item> BUCKET_MOLTEN_NICKEL = ITEMS.register("bucket_molten_nickel",
+    public static final RegistryObject<Item> NICKEL_BUCKET = ITEMS.register("nickel_bucket",
             () -> new BucketItem(REOFluids.MOLTEN_NICKEL_SOURCE,
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final RegistryObject<Item> BUCKET_MOLTEN_PERIDOT = ITEMS.register("bucket_molten_peridot",
+    public static final RegistryObject<Item> PERIDOT_BUCKET = ITEMS.register("peridot_bucket",
             () -> new BucketItem(REOFluids.MOLTEN_PERIDOT_SOURCE,
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final RegistryObject<Item> BUCKET_MOLTEN_PLATINUM = ITEMS.register("bucket_molten_platinum",
+    public static final RegistryObject<Item> PLATINUM_BUCKET = ITEMS.register("platinum_bucket",
             () -> new BucketItem(REOFluids.MOLTEN_PLATINUM_SOURCE,
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final RegistryObject<Item> BUCKET_MOLTEN_REDSTONE = ITEMS.register("bucket_molten_redstone",
+    public static final RegistryObject<Item> REDSTONE_BUCKET = ITEMS.register("redstone_bucket",
             () -> new BucketItem(REOFluids.MOLTEN_REDSTONE_SOURCE,
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final RegistryObject<Item> BUCKET_MOLTEN_RUBY = ITEMS.register("bucket_molten_ruby",
+    public static final RegistryObject<Item> RUBY_BUCKET = ITEMS.register("ruby_bucket",
             () -> new BucketItem(REOFluids.MOLTEN_RUBY_SOURCE,
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final RegistryObject<Item> BUCKET_MOLTEN_SAPPHIRE = ITEMS.register("bucket_molten_sapphire",
+    public static final RegistryObject<Item> SAPPHIRE_BUCKET = ITEMS.register("sapphire_bucket",
             () -> new BucketItem(REOFluids.MOLTEN_SAPPHIRE_SOURCE,
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final RegistryObject<Item> BUCKET_MOLTEN_SILVER = ITEMS.register("bucket_molten_silver",
+    public static final RegistryObject<Item> SILVER_BUCKET = ITEMS.register("silver_bucket",
             () -> new BucketItem(REOFluids.MOLTEN_SILVER_SOURCE,
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final RegistryObject<Item> BUCKET_MOLTEN_STEEL = ITEMS.register("bucket_molten_steel",
+    public static final RegistryObject<Item> STEEL_BUCKET = ITEMS.register("steel_bucket",
             () -> new BucketItem(REOFluids.MOLTEN_STEEL_SOURCE,
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final RegistryObject<Item> BUCKET_MOLTEN_TIN = ITEMS.register("bucket_molten_tin",
+    public static final RegistryObject<Item> TIN_BUCKET = ITEMS.register("tin_bucket",
             () -> new BucketItem(REOFluids.MOLTEN_TIN_SOURCE,
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final RegistryObject<Item> BUCKET_MOLTEN_URANIUM = ITEMS.register("bucket_molten_uranium",
+    public static final RegistryObject<Item> URANIUM_BUCKET = ITEMS.register("uranium_bucket",
             () -> new BucketItem(REOFluids.MOLTEN_URANIUM_SOURCE,
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final RegistryObject<Item> BUCKET_MOLTEN_ZINC = ITEMS.register("bucket_molten_zinc",
+    public static final RegistryObject<Item> ZINC_BUCKET = ITEMS.register("zinc_bucket",
             () -> new BucketItem(REOFluids.MOLTEN_ZINC_SOURCE,
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
     // Luminous Powder
-    public static final RegistryObject<Item> LUMINOUS_BLACK = ITEMS.register("luminous_black",
+    public static final RegistryObject<Item> BLACK_LUMINOUS = ITEMS.register("black_luminous",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> LUMINOUS_BLUE = ITEMS.register("luminous_blue",
+    public static final RegistryObject<Item> BLUE_LUMINOUS = ITEMS.register("blue_luminous",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> LUMINOUS_BROWN = ITEMS.register("luminous_brown",
+    public static final RegistryObject<Item> BROWN_LUMINOUS = ITEMS.register("brown_luminous",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> LUMINOUS_CYAN = ITEMS.register("luminous_cyan",
+    public static final RegistryObject<Item> CYAN_LUMINOUS = ITEMS.register("cyan_luminous",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> LUMINOUS_GRAY = ITEMS.register("luminous_gray",
+    public static final RegistryObject<Item> GRAY_LUMINOUS = ITEMS.register("gray_luminous",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> LUMINOUS_GREEN = ITEMS.register("luminous_green",
+    public static final RegistryObject<Item> GREEN_LUMINOUS = ITEMS.register("green_luminous",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> LUMINOUS_LIGHTBLUE = ITEMS.register("luminous_lightblue",
+    public static final RegistryObject<Item> LIGHT_BLUE_LUMINOUS = ITEMS.register("light_blue_luminous",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> LUMINOUS_LIGHTGRAY = ITEMS.register("luminous_lightgray",
+    public static final RegistryObject<Item> LIGHT_GRAY_LUMINOUS = ITEMS.register("light_gray_luminous",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> LUMINOUS_LIME = ITEMS.register("luminous_lime",
+    public static final RegistryObject<Item> LIME_LUMINOUS = ITEMS.register("lime_luminous",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> LUMINOUS_MAGENTA = ITEMS.register("luminous_magenta",
+    public static final RegistryObject<Item> MAGENTA_LUMINOUS = ITEMS.register("magenta_luminous",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> LUMINOUS_ORANGE = ITEMS.register("luminous_orange",
+    public static final RegistryObject<Item> ORANGE_LUMINOUS = ITEMS.register("orange_luminous",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> LUMINOUS_PINK = ITEMS.register("luminous_pink",
+    public static final RegistryObject<Item> PINK_LUMINOUS = ITEMS.register("pink_luminous",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> LUMINOUS_PURPLE = ITEMS.register("luminous_purple",
+    public static final RegistryObject<Item> PURPLE_LUMINOUS = ITEMS.register("purple_luminous",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> LUMINOUS_RED = ITEMS.register("luminous_red",
+    public static final RegistryObject<Item> RED_LUMINOUS = ITEMS.register("red_luminous",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> LUMINOUS_WHITE = ITEMS.register("luminous_white",
+    public static final RegistryObject<Item> WHITE_LUMINOUS = ITEMS.register("white_luminous",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> LUMINOUS_YELLOW = ITEMS.register("luminous_yellow",
+    public static final RegistryObject<Item> YELLOW_LUMINOUS = ITEMS.register("yellow_luminous",
             () -> new Item(new Item.Properties()));
 
 
@@ -845,7 +843,7 @@ public class REOItems {
             () -> new ModShearsItem(new Item.Properties().durability(56)));
 
 
-    // Armour
+    // Armour //
     // Aluminium
     public static final RegistryObject<Item> ALUMINIUM_HELMET = ITEMS.register("aluminium_helmet",
             () -> new ModArmourItem(REOArmourMaterials.ALUMINIUM, ArmorItem.Type.HELMET, new Item.Properties()));
@@ -856,8 +854,8 @@ public class REOItems {
     public static final RegistryObject<Item> ALUMINIUM_BOOTS = ITEMS.register("aluminium_boots",
             () -> new ModArmourItem(REOArmourMaterials.ALUMINIUM, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-    public static final RegistryObject<Item> HORSE_ARMOR_ALUMINIUM = ITEMS.register("horse_armor_aluminium",
-            () -> new HorseArmorItem(9, new ResourceLocation(RealEarthOres.MOD_ID, "textures/entity/horse/armor/horse_armor_aluminium.png"),
+    public static final RegistryObject<Item> ALUMINIUM_HORSE_ARMOR = ITEMS.register("aluminium_horse_armor",
+            () -> new HorseArmorItem(9, new ResourceLocation(RealEarthOres.MOD_ID, "textures/entity/horse/armor/aluminium_horse_armor.png"),
                     new Item.Properties().stacksTo(1)));
 
     // Amethyst
@@ -870,8 +868,8 @@ public class REOItems {
     public static final RegistryObject<Item> AMETHYST_BOOTS = ITEMS.register("amethyst_boots",
             () -> new ModArmourItem(REOArmourMaterials.AMETHYST, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-    public static final RegistryObject<Item> HORSE_ARMOR_AMETHYST = ITEMS.register("horse_armor_amethyst",
-            () -> new HorseArmorItem(9, new ResourceLocation(RealEarthOres.MOD_ID, "textures/entity/horse/armor/horse_armor_amethyst.png"),
+    public static final RegistryObject<Item> AMETHYST_HORSE_ARMOR = ITEMS.register("amethyst_horse_armor",
+            () -> new HorseArmorItem(9, new ResourceLocation(RealEarthOres.MOD_ID, "textures/entity/horse/armor/amethyst_horse_armor.png"),
                     new Item.Properties().stacksTo(1)));
 
     // Bronze
@@ -884,13 +882,13 @@ public class REOItems {
     public static final RegistryObject<Item> BRONZE_BOOTS = ITEMS.register("bronze_boots",
             () -> new ModArmourItem(REOArmourMaterials.BRONZE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-    public static final RegistryObject<Item> HORSE_ARMOR_BRONZE = ITEMS.register("horse_armor_bronze",
-            () -> new HorseArmorItem(5, new ResourceLocation(RealEarthOres.MOD_ID, "textures/entity/horse/armor/horse_armor_bronze.png"),
+    public static final RegistryObject<Item> BRONZE_HORSE_ARMOR = ITEMS.register("bronze_horse_armor",
+            () -> new HorseArmorItem(5, new ResourceLocation(RealEarthOres.MOD_ID, "textures/entity/horse/armor/bronze_horse_armor.png"),
                     new Item.Properties().stacksTo(1)));
 
     // Chain
-    //public static final RegistryObject<Item> HORSE_ARMOR_CHAIN = ITEMS.register("horse_armor_chain",
-    //        () -> new HorseArmorItem(4, new ResourceLocation(RealEarthOres.MOD_ID, "textures/entity/horse/armor/horse_armor_chain.png"),
+    //public static final RegistryObject<Item> CHAIN_HORSE_ARMOR = ITEMS.register("chain_horse_armor",
+    //        () -> new HorseArmorItem(4, new ResourceLocation(RealEarthOres.MOD_ID, "textures/entity/horse/armor/chain_horse_armor.png"),
     //                new Item.Properties().stacksTo(1)));
 
     // Enderite
@@ -903,14 +901,14 @@ public class REOItems {
     public static final RegistryObject<Item> ENDERITE_BOOTS = ITEMS.register("enderite_boots",
             () -> new ModArmourItem(REOArmourMaterials.ENDERITE, ArmorItem.Type.BOOTS, new Item.Properties().rarity(Rarity.EPIC)));
 
-    public static final RegistryObject<Item> HORSE_ARMOR_ENDERITE = ITEMS.register("horse_armor_enderite",
-            () -> new HorseArmorItem(9, new ResourceLocation(RealEarthOres.MOD_ID, "textures/entity/horse/armor/horse_armor_enderite.png"),
+    public static final RegistryObject<Item> ENDERITE_HORSE_ARMOR = ITEMS.register("enderite_horse_armor",
+            () -> new HorseArmorItem(9, new ResourceLocation(RealEarthOres.MOD_ID, "textures/entity/horse/armor/enderite_horse_armor.png"),
                     new Item.Properties().stacksTo(1).rarity(Rarity.EPIC)));
 
 
     // Netherite
-    //public static final RegistryObject<Item> HORSE_ARMOR_NETHERITE = ITEMS.register("horse_armor_netherite",
-    //        () -> new HorseArmorItem(13, new ResourceLocation(RealEarthOres.MOD_ID, "textures/entity/horse/armor/horse_armor_netherite.png"),
+    //public static final RegistryObject<Item> NETHERITE_HORSE_ARMOR = ITEMS.register("netherite_horse_armor",
+    //        () -> new HorseArmorItem(13, new ResourceLocation(RealEarthOres.MOD_ID, "textures/entity/horse/armor/netherite_horse_armor.png"),
     //                new Item.Properties().stacksTo(1)));
 
     // Platinum
@@ -923,8 +921,8 @@ public class REOItems {
     public static final RegistryObject<Item> PLATINUM_BOOTS = ITEMS.register("platinum_boots",
             () -> new ModArmourItem(REOArmourMaterials.PLATINUM, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-    public static final RegistryObject<Item> HORSE_ARMOR_PLATINUM = ITEMS.register("horse_armor_platinum",
-            () -> new HorseArmorItem(11, new ResourceLocation(RealEarthOres.MOD_ID, "textures/entity/horse/armor/horse_armor_platinum.png"),
+    public static final RegistryObject<Item> PLATINUM_HORSE_ARMOR = ITEMS.register("platinum_horse_armor",
+            () -> new HorseArmorItem(11, new ResourceLocation(RealEarthOres.MOD_ID, "textures/entity/horse/armor/platinum_horse_armor.png"),
                     new Item.Properties().stacksTo(1)));
 
     // Peridot
@@ -937,8 +935,8 @@ public class REOItems {
     public static final RegistryObject<Item> PERIDOT_BOOTS = ITEMS.register("peridot_boots",
             () -> new ModArmourItem(REOArmourMaterials.PERIDOT, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-    public static final RegistryObject<Item> HORSE_ARMOR_PERIDOT = ITEMS.register("horse_armor_peridot",
-            () -> new HorseArmorItem(9, new ResourceLocation(RealEarthOres.MOD_ID, "textures/entity/horse/armor/horse_armor_peridot.png"),
+    public static final RegistryObject<Item> PERIDOT_HORSE_ARMOR = ITEMS.register("peridot_horse_armor",
+            () -> new HorseArmorItem(9, new ResourceLocation(RealEarthOres.MOD_ID, "textures/entity/horse/armor/peridot_horse_armor.png"),
                     new Item.Properties().stacksTo(1)));
 
     // Ruby
@@ -951,8 +949,8 @@ public class REOItems {
     public static final RegistryObject<Item> RUBY_BOOTS = ITEMS.register("ruby_boots",
             () -> new ModArmourItem(REOArmourMaterials.RUBY, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-    public static final RegistryObject<Item> HORSE_ARMOR_RUBY = ITEMS.register("horse_armor_ruby",
-            () -> new HorseArmorItem(9, new ResourceLocation(RealEarthOres.MOD_ID, "textures/entity/horse/armor/horse_armor_ruby.png"),
+    public static final RegistryObject<Item> RUBY_HORSE_ARMOR = ITEMS.register("ruby_horse_armor",
+            () -> new HorseArmorItem(9, new ResourceLocation(RealEarthOres.MOD_ID, "textures/entity/horse/armor/ruby_horse_armor.png"),
                     new Item.Properties().stacksTo(1)));
 
     // Sapphire
@@ -965,8 +963,8 @@ public class REOItems {
     public static final RegistryObject<Item> SAPPHIRE_BOOTS = ITEMS.register("sapphire_boots",
             () -> new ModArmourItem(REOArmourMaterials.SAPPHIRE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-    public static final RegistryObject<Item> HORSE_ARMOR_SAPPHIRE = ITEMS.register("horse_armor_sapphire",
-            () -> new HorseArmorItem(9, new ResourceLocation(RealEarthOres.MOD_ID, "textures/entity/horse/armor/horse_armor_sapphire.png"),
+    public static final RegistryObject<Item> SAPPHIRE_HORSE_ARMOR = ITEMS.register("sapphire_horse_armor",
+            () -> new HorseArmorItem(9, new ResourceLocation(RealEarthOres.MOD_ID, "textures/entity/horse/armor/sapphire_horse_armor.png"),
                     new Item.Properties().stacksTo(1)));
 
     // Silver
@@ -979,8 +977,8 @@ public class REOItems {
     public static final RegistryObject<Item> SILVER_BOOTS = ITEMS.register("silver_boots",
             () -> new ModArmourItem(REOArmourMaterials.SILVER, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-    public static final RegistryObject<Item> HORSE_ARMOR_SILVER = ITEMS.register("horse_armor_silver",
-            () -> new HorseArmorItem(7, new ResourceLocation(RealEarthOres.MOD_ID, "textures/entity/horse/armor/horse_armor_silver.png"),
+    public static final RegistryObject<Item> SILVER_HORSE_ARMOR = ITEMS.register("silver_horse_armor",
+            () -> new HorseArmorItem(7, new ResourceLocation(RealEarthOres.MOD_ID, "textures/entity/horse/armor/silver_horse_armor.png"),
                     new Item.Properties().stacksTo(1)));
 
     // Steel
@@ -993,287 +991,311 @@ public class REOItems {
     public static final RegistryObject<Item> STEEL_BOOTS = ITEMS.register("steel_boots",
             () -> new ModArmourItem(REOArmourMaterials.STEEL, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-    public static final RegistryObject<Item> HORSE_ARMOR_STEEL = ITEMS.register("horse_armor_steel",
-            () -> new HorseArmorItem(8, new ResourceLocation(RealEarthOres.MOD_ID, "textures/entity/horse/armor/horse_armor_steel.png"),
+    public static final RegistryObject<Item> STEEL_HORSE_ARMOR = ITEMS.register("steel_horse_armor",
+            () -> new HorseArmorItem(8, new ResourceLocation(RealEarthOres.MOD_ID, "textures/entity/horse/armor/steel_horse_armor.png"),
                     new Item.Properties().stacksTo(1)));
 
 
-    // Signs
-    public static final RegistryObject<Item> SIGN_BALSA = ITEMS.register("sign_balsa",
+    // Wood //
+    // Balsa
+    public static final RegistryObject<Item> BALSA_SIGN = ITEMS.register("balsa_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_BALSA.get(), REOBlocks.SIGN_BALSA_WALL.get()));
-    public static final RegistryObject<Item> SIGN_HANGING_BALSA = ITEMS.register("sign_hanging_balsa",
+    public static final RegistryObject<Item> BALSA_HANGING_SIGN = ITEMS.register("balsa_hanging_sign",
             () -> new HangingSignItem(REOBlocks.SIGN_HANGING_BALSA.get(), REOBlocks.SIGN_HANGING_BALSA_WALL.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> BOAT_BALSA = ITEMS.register("boat_balsa",
+    public static final RegistryObject<Item> BALSA_BOAT = ITEMS.register("balsa_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.BALSA, new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> BOAT_BALSA_CHEST = ITEMS.register("boat_balsa_chest",
+    public static final RegistryObject<Item> BALSA_CHEST_BOAT = ITEMS.register("balsa_chest_boat",
             () -> new ModBoatItem(true, REOBoatEntity.Type.BALSA, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> SIGN_BAOBAB = ITEMS.register("sign_baobab",
+    // Baobab
+    public static final RegistryObject<Item> BAOBAB_SIGN = ITEMS.register("baobab_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_BAOBAB.get(), REOBlocks.SIGN_BAOBAB_WALL.get()));
-    public static final RegistryObject<Item> SIGN_HANGING_BAOBAB = ITEMS.register("sign_hanging_baobab",
+    public static final RegistryObject<Item> BAOBAB_HANGING_SIGN = ITEMS.register("baobab_hanging_sign",
             () -> new HangingSignItem(REOBlocks.SIGN_HANGING_BAOBAB.get(), REOBlocks.SIGN_HANGING_BAOBAB_WALL.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> BOAT_BAOBAB = ITEMS.register("boat_baobab",
+    public static final RegistryObject<Item> BAOBAB_BOAT = ITEMS.register("baobab_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.BAOBAB, new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> BOAT_BAOBAB_CHEST = ITEMS.register("boat_baobab_chest",
+    public static final RegistryObject<Item> BAOBAB_CHEST_BOAT = ITEMS.register("baobab_chest_boat",
             () -> new ModBoatItem(true, REOBoatEntity.Type.BAOBAB, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> SIGN_HILL_CHERRY = ITEMS.register("sign_hill_cherry",
+    // Hill Cherry
+    public static final RegistryObject<Item> HILL_CHERRY_SIGN = ITEMS.register("hill_cherry_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_HILL_CHERRY.get(), REOBlocks.SIGN_HILL_CHERRY_WALL.get()));
-    public static final RegistryObject<Item> SIGN_HANGING_HILL_CHERRY = ITEMS.register("sign_hanging_hill_cherry",
+    public static final RegistryObject<Item> HILL_CHERRY_HANGING_SIGN = ITEMS.register("hill_cherry_hanging_sign",
             () -> new HangingSignItem(REOBlocks.SIGN_HANGING_HILL_CHERRY.get(), REOBlocks.SIGN_HANGING_HILL_CHERRY_WALL.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> BOAT_HILL_CHERRY = ITEMS.register("boat_hill_cherry",
+    public static final RegistryObject<Item> HILL_CHERRY_BOAT = ITEMS.register("hill_cherry_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.HILL_CHERRY, new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> BOAT_HILL_CHERRY_CHEST = ITEMS.register("boat_hill_cherry_chest",
+    public static final RegistryObject<Item> HILL_CHERRY_CHEST_BOAT = ITEMS.register("hill_cherry_chest_boat",
             () -> new ModBoatItem(true, REOBoatEntity.Type.HILL_CHERRY, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> SIGN_CHESTNUT = ITEMS.register("sign_chestnut",
+    // Chestnut
+    public static final RegistryObject<Item> CHESTNUT_SIGN = ITEMS.register("chestnut_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_CHESTNUT.get(), REOBlocks.SIGN_CHESTNUT_WALL.get()));
-    public static final RegistryObject<Item> SIGN_HANGING_CHESTNUT = ITEMS.register("sign_hanging_chestnut",
+    public static final RegistryObject<Item> CHESTNUT_HANGING_SIGN = ITEMS.register("chestnut_hanging_sign",
             () -> new HangingSignItem(REOBlocks.SIGN_HANGING_CHESTNUT.get(), REOBlocks.SIGN_HANGING_CHESTNUT_WALL.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> BOAT_CHESTNUT = ITEMS.register("boat_chestnut",
+    public static final RegistryObject<Item> BOAT_CHESTNUT = ITEMS.register("chestnut_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.CHESTNUT, new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> BOAT_CHESTNUT_CHEST = ITEMS.register("boat_chestnut_chest",
+    public static final RegistryObject<Item> CHESTNUT_CHEST_BOAT = ITEMS.register("chestnut_chest_boat",
             () -> new ModBoatItem(true, REOBoatEntity.Type.CHESTNUT, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> SIGN_CITRUS = ITEMS.register("sign_citrus",
+    // Citrus
+    public static final RegistryObject<Item> CITRUS_SIGN = ITEMS.register("citrus_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_CITRUS.get(), REOBlocks.SIGN_CITRUS_WALL.get()));
-    public static final RegistryObject<Item> SIGN_HANGING_CITRUS = ITEMS.register("sign_hanging_citrus",
+    public static final RegistryObject<Item> CITRUS_HANGING_SIGN = ITEMS.register("citrus_hanging_sign",
             () -> new HangingSignItem(REOBlocks.SIGN_HANGING_CITRUS.get(), REOBlocks.SIGN_HANGING_CITRUS_WALL.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> BOAT_CITRUS = ITEMS.register("boat_citrus",
+    public static final RegistryObject<Item> CITRUS_BOAT = ITEMS.register("citrus_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.CITRUS, new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> BOAT_CITRUS_CHEST = ITEMS.register("boat_citrus_chest",
+    public static final RegistryObject<Item> CITRUS_CHEST_BOAT = ITEMS.register("citrus_chest_boat",
             () -> new ModBoatItem(true, REOBoatEntity.Type.CITRUS, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> SIGN_EBONY = ITEMS.register("sign_ebony",
+    // Ebony
+    public static final RegistryObject<Item> EBONY_SIGN = ITEMS.register("ebony_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_EBONY.get(), REOBlocks.SIGN_EBONY_WALL.get()));
-    public static final RegistryObject<Item> SIGN_HANGING_EBONY = ITEMS.register("sign_hanging_ebony",
+    public static final RegistryObject<Item> EBONY_HANGING_SIGN = ITEMS.register("ebony_hanging_sign",
             () -> new HangingSignItem(REOBlocks.SIGN_HANGING_EBONY.get(), REOBlocks.SIGN_HANGING_EBONY_WALL.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> BOAT_EBONY = ITEMS.register("boat_ebony",
+    public static final RegistryObject<Item> EBONY_BOAT = ITEMS.register("ebony_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.EBONY, new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> BOAT_EBONY_CHEST = ITEMS.register("boat_ebony_chest",
+    public static final RegistryObject<Item> EBONY_CHEST_BOAT = ITEMS.register("ebony_chest_boat",
             () -> new ModBoatItem(true, REOBoatEntity.Type.EBONY, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> SIGN_LARCH = ITEMS.register("sign_larch",
+    // Larch
+    public static final RegistryObject<Item> LARCH_SIGN = ITEMS.register("larch_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_LARCH.get(), REOBlocks.SIGN_LARCH_WALL.get()));
-    public static final RegistryObject<Item> SIGN_HANGING_LARCH = ITEMS.register("sign_hanging_larch",
+    public static final RegistryObject<Item> LARCH_HANGING_SIGN = ITEMS.register("larch_hanging_sign",
             () -> new HangingSignItem(REOBlocks.SIGN_HANGING_LARCH.get(), REOBlocks.SIGN_HANGING_LARCH_WALL.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> BOAT_LARCH = ITEMS.register("boat_larch",
+    public static final RegistryObject<Item> LARCH_BOAT = ITEMS.register("larch_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.LARCH, new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> BOAT_LARCH_CHEST = ITEMS.register("boat_larch_chest",
+    public static final RegistryObject<Item> LARCH_CHEST_BOAT = ITEMS.register("larch_chest_boat",
             () -> new ModBoatItem(true, REOBoatEntity.Type.LARCH, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> SIGN_LIME = ITEMS.register("sign_lime",
+    // Lime
+    public static final RegistryObject<Item> LIME_SIGN = ITEMS.register("lime_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_LIME.get(), REOBlocks.SIGN_LIME_WALL.get()));
-    public static final RegistryObject<Item> SIGN_HANGING_LIME = ITEMS.register("sign_hanging_lime",
+    public static final RegistryObject<Item> LIME_HANGING_SIGN = ITEMS.register("lime_hanging_sign",
             () -> new HangingSignItem(REOBlocks.SIGN_HANGING_LIME.get(), REOBlocks.SIGN_HANGING_LIME_WALL.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> BOAT_LIME = ITEMS.register("boat_lime",
+    public static final RegistryObject<Item> LIME_BOAT = ITEMS.register("lime_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.LIME, new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> BOAT_LIME_CHEST = ITEMS.register("boat_lime_chest",
+    public static final RegistryObject<Item> LIME_CHEST_BOAT = ITEMS.register("lime_chest_boat",
             () -> new ModBoatItem(true, REOBoatEntity.Type.LIME, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> SIGN_MAHOGANY = ITEMS.register("sign_mahogany",
+    // Mahogany
+    public static final RegistryObject<Item> MAHOGANY_SIGN = ITEMS.register("mahogany_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_MAHOGANY.get(), REOBlocks.SIGN_MAHOGANY_WALL.get()));
-    public static final RegistryObject<Item> SIGN_HANGING_MAHOGANY = ITEMS.register("sign_hanging_mahogany",
+    public static final RegistryObject<Item> MAHOGANY_HANGING_SIGN = ITEMS.register("mahogany_hanging_sign",
             () -> new HangingSignItem(REOBlocks.SIGN_HANGING_MAHOGANY.get(), REOBlocks.SIGN_HANGING_MAHOGANY_WALL.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> BOAT_MAHOGANY = ITEMS.register("boat_mahogany",
+    public static final RegistryObject<Item> MAHOGANY_BOAT = ITEMS.register("mahogany_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.MAHOGANY, new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> BOAT_MAHOGANY_CHEST = ITEMS.register("boat_mahogany_chest",
+    public static final RegistryObject<Item> MAHOGANY_CHEST_BOAT = ITEMS.register("mahogany_chest_boat",
             () -> new ModBoatItem(true, REOBoatEntity.Type.MAHOGANY, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> SIGN_MAPLE = ITEMS.register("sign_maple",
+    // Maple
+    public static final RegistryObject<Item> MAPLE_SIGN = ITEMS.register("maple_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_MAPLE.get(), REOBlocks.SIGN_MAPLE_WALL.get()));
-    public static final RegistryObject<Item> SIGN_HANGING_MAPLE = ITEMS.register("sign_hanging_maple",
+    public static final RegistryObject<Item> MAPLE_HANGING_SIGN = ITEMS.register("maple_hanging_sign",
             () -> new HangingSignItem(REOBlocks.SIGN_HANGING_MAPLE.get(), REOBlocks.SIGN_HANGING_MAPLE_WALL.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> BOAT_MAPLE = ITEMS.register("boat_maple",
+    public static final RegistryObject<Item> MAPLE_BOAT = ITEMS.register("maple_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.MAPLE, new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> BOAT_MAPLE_CHEST = ITEMS.register("boat_maple_chest",
+    public static final RegistryObject<Item> MAPLE_CHEST_BOAT = ITEMS.register("maple_chest_boat",
             () -> new ModBoatItem(true, REOBoatEntity.Type.MAPLE, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> SIGN_PALM = ITEMS.register("sign_palm",
+    // Palm
+    public static final RegistryObject<Item> PALM_SIGN = ITEMS.register("palm_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_PALM.get(), REOBlocks.SIGN_PALM_WALL.get()));
-    public static final RegistryObject<Item> SIGN_HANGING_PALM = ITEMS.register("sign_hanging_palm",
+    public static final RegistryObject<Item> PALM_HANGING_SIGN = ITEMS.register("palm_hanging_sign",
             () -> new HangingSignItem(REOBlocks.SIGN_HANGING_PALM.get(), REOBlocks.SIGN_HANGING_PALM_WALL.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> BOAT_PALM = ITEMS.register("boat_palm",
+    public static final RegistryObject<Item> PALM_BOAT = ITEMS.register("palm_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.PALM, new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> BOAT_PALM_CHEST = ITEMS.register("boat_palm_chest",
+    public static final RegistryObject<Item> PALM_CHEST_BOAT = ITEMS.register("palm_chest_boat",
             () -> new ModBoatItem(true, REOBoatEntity.Type.PALM, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> SIGN_PAPAYA = ITEMS.register("sign_papaya",
+    // Papaya
+    public static final RegistryObject<Item> PAPAYA_SIGN = ITEMS.register("papaya_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_PAPAYA.get(), REOBlocks.SIGN_PAPAYA_WALL.get()));
-    public static final RegistryObject<Item> SIGN_HANGING_PAPAYA = ITEMS.register("sign_hanging_papaya",
+    public static final RegistryObject<Item> PAPAYA_HANGING_SIGN = ITEMS.register("papaya_hanging_sign",
             () -> new HangingSignItem(REOBlocks.SIGN_HANGING_PAPAYA.get(), REOBlocks.SIGN_HANGING_PAPAYA_WALL.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> BOAT_PAPAYA = ITEMS.register("boat_papaya",
+    public static final RegistryObject<Item> PAPAYA_BOAT = ITEMS.register("papaya_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.PAPAYA, new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> BOAT_PAPAYA_CHEST = ITEMS.register("boat_papaya_chest",
+    public static final RegistryObject<Item> PAPAYA_CHEST_BOAT = ITEMS.register("papaya_chest_boat",
             () -> new ModBoatItem(true, REOBoatEntity.Type.PAPAYA, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> SIGN_PINE = ITEMS.register("sign_pine",
+    // Pine
+    public static final RegistryObject<Item> PINE_SIGN = ITEMS.register("pine_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_PINE.get(), REOBlocks.SIGN_PINE_WALL.get()));
-    public static final RegistryObject<Item> SIGN_HANGING_PINE = ITEMS.register("sign_hanging_pine",
+    public static final RegistryObject<Item> PINE_HANGING_SIGN = ITEMS.register("pine_hanging_sign",
             () -> new HangingSignItem(REOBlocks.SIGN_HANGING_PINE.get(), REOBlocks.SIGN_HANGING_PINE_WALL.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> BOAT_PINE = ITEMS.register("boat_pine",
+    public static final RegistryObject<Item> PINE_BOAT = ITEMS.register("pine_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.PINE, new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> BOAT_PINE_CHEST = ITEMS.register("boat_pine_chest",
+    public static final RegistryObject<Item> PINE_CHEST_BOAT = ITEMS.register("pine_chest_boat",
             () -> new ModBoatItem(true, REOBoatEntity.Type.PINE, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> SIGN_PLUM = ITEMS.register("sign_plum",
+    // Plum
+    public static final RegistryObject<Item> PLUM_SIGN = ITEMS.register("plum_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_PLUM.get(), REOBlocks.SIGN_PLUM_WALL.get()));
-    public static final RegistryObject<Item> SIGN_HANGING_PLUM = ITEMS.register("sign_hanging_plum",
+    public static final RegistryObject<Item> PLUM_HANGING_SIGN = ITEMS.register("plum_hanging_sign",
             () -> new HangingSignItem(REOBlocks.SIGN_HANGING_PLUM.get(), REOBlocks.SIGN_HANGING_PLUM_WALL.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> BOAT_PLUM = ITEMS.register("boat_plum",
+    public static final RegistryObject<Item> PLUM_BOAT = ITEMS.register("plum_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.PLUM, new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> BOAT_PLUM_CHEST = ITEMS.register("boat_plum_chest",
+    public static final RegistryObject<Item> PLUM_CHEST_BOAT = ITEMS.register("plum_chest_boat",
             () -> new ModBoatItem(true, REOBoatEntity.Type.PLUM, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> SIGN_POPLAR = ITEMS.register("sign_poplar",
+    // Poplar
+    public static final RegistryObject<Item> POPLAR_SIGN = ITEMS.register("poplar_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_POPLAR.get(), REOBlocks.SIGN_POPLAR_WALL.get()));
-    public static final RegistryObject<Item> SIGN_HANGING_POPLAR = ITEMS.register("sign_hanging_poplar",
+    public static final RegistryObject<Item> POPLAR_HANGING_SIGN = ITEMS.register("poplar_hanging_sign",
             () -> new HangingSignItem(REOBlocks.SIGN_HANGING_POPLAR.get(), REOBlocks.SIGN_HANGING_POPLAR_WALL.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> BOAT_POPLAR = ITEMS.register("boat_poplar",
+    public static final RegistryObject<Item> POPLAR_BOAT = ITEMS.register("poplar_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.POPLAR, new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> BOAT_POPLAR_CHEST = ITEMS.register("boat_poplar_chest",
+    public static final RegistryObject<Item> POPLAR_CHEST_BOAT = ITEMS.register("poplar_chest_boat",
             () -> new ModBoatItem(true, REOBoatEntity.Type.POPLAR, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> SIGN_REDWOOD = ITEMS.register("sign_redwood",
+    // Redwood
+    public static final RegistryObject<Item> REDWOOD_SIGN = ITEMS.register("redwood_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_REDWOOD.get(), REOBlocks.SIGN_REDWOOD_WALL.get()));
-    public static final RegistryObject<Item> SIGN_HANGING_REDWOOD = ITEMS.register("sign_hanging_redwood",
+    public static final RegistryObject<Item> REDWOOD_HANGING_SIGN = ITEMS.register("redwood_hanging_sign",
             () -> new HangingSignItem(REOBlocks.SIGN_HANGING_REDWOOD.get(), REOBlocks.SIGN_HANGING_REDWOOD_WALL.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> BOAT_REDWOOD = ITEMS.register("boat_redwood",
+    public static final RegistryObject<Item> REDWOOD_BOAT = ITEMS.register("redwood_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.REDWOOD, new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> BOAT_REDWOOD_CHEST = ITEMS.register("boat_redwood_chest",
+    public static final RegistryObject<Item> REDWOOD_CHEST_BOAT = ITEMS.register("redwood_chest_boat",
             () -> new ModBoatItem(true, REOBoatEntity.Type.REDWOOD, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> SIGN_RUBBER = ITEMS.register("sign_rubber",
+    // Rubber
+    public static final RegistryObject<Item> RUBBER_SIGN = ITEMS.register("rubber_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_RUBBER.get(), REOBlocks.SIGN_RUBBER_WALL.get()));
-    public static final RegistryObject<Item> SIGN_HANGING_RUBBER = ITEMS.register("sign_hanging_rubber",
+    public static final RegistryObject<Item> RUBBER_HANGING_SIGN = ITEMS.register("rubber_hanging_sign",
             () -> new HangingSignItem(REOBlocks.SIGN_HANGING_RUBBER.get(), REOBlocks.SIGN_HANGING_RUBBER_WALL.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> BOAT_RUBBER = ITEMS.register("boat_rubber",
+    public static final RegistryObject<Item> RUBBER_BOAT = ITEMS.register("rubber_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.RUBBER, new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> BOAT_RUBBER_CHEST = ITEMS.register("boat_rubber_chest",
+    public static final RegistryObject<Item> RUBBER_CHEST_BOAT = ITEMS.register("rubber_chest_boat",
             () -> new ModBoatItem(true, REOBoatEntity.Type.RUBBER, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> SIGN_TEAK = ITEMS.register("sign_teak",
+    // Teak
+    public static final RegistryObject<Item> TEAK_SIGN = ITEMS.register("teak_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_TEAK.get(), REOBlocks.SIGN_TEAK_WALL.get()));
-    public static final RegistryObject<Item> SIGN_HANGING_TEAK = ITEMS.register("sign_hanging_teak",
+    public static final RegistryObject<Item> TEAK_HANGING_SIGN = ITEMS.register("teak_hanging_sign",
             () -> new HangingSignItem(REOBlocks.SIGN_HANGING_TEAK.get(), REOBlocks.SIGN_HANGING_TEAK_WALL.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> BOAT_TEAK = ITEMS.register("boat_teak",
+    public static final RegistryObject<Item> TEAK_BOAT = ITEMS.register("teak_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.TEAK, new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> BOAT_TEAK_CHEST = ITEMS.register("boat_teak_chest",
+    public static final RegistryObject<Item> TEAK_CHEST_BOAT = ITEMS.register("teak_chest_boat",
             () -> new ModBoatItem(true, REOBoatEntity.Type.TEAK, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> SIGN_WALNUT = ITEMS.register("sign_walnut",
+    // Walnut
+    public static final RegistryObject<Item> WALNUT_SIGN = ITEMS.register("walnut_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_WALNUT.get(), REOBlocks.SIGN_WALNUT_WALL.get()));
-    public static final RegistryObject<Item> SIGN_HANGING_WALNUT = ITEMS.register("sign_hanging_walnut",
+    public static final RegistryObject<Item> WALNUT_HANGING_SIGN = ITEMS.register("walnut_hanging_sign",
             () -> new HangingSignItem(REOBlocks.SIGN_HANGING_WALNUT.get(), REOBlocks.SIGN_HANGING_WALNUT_WALL.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> BOAT_WALNUT = ITEMS.register("boat_walnut",
+    public static final RegistryObject<Item> WALNUT_BOAT = ITEMS.register("walnut_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.WALNUT, new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> BOAT_WALNUT_CHEST = ITEMS.register("boat_walnut_chest",
+    public static final RegistryObject<Item> WALNUT_CHEST_BOAT = ITEMS.register("walnut_chest_boat",
             () -> new ModBoatItem(true, REOBoatEntity.Type.WALNUT, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> SIGN_WILLOW = ITEMS.register("sign_willow",
+    // Willow
+    public static final RegistryObject<Item> WILLOW_SIGN = ITEMS.register("willow_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_WILLOW.get(), REOBlocks.SIGN_WILLOW_WALL.get()));
-    public static final RegistryObject<Item> SIGN_HANGING_WILLOW = ITEMS.register("sign_hanging_willow",
+    public static final RegistryObject<Item> WILLOW_HANGING_SIGN = ITEMS.register("willow_hanging_sign",
             () -> new HangingSignItem(REOBlocks.SIGN_HANGING_WILLOW.get(), REOBlocks.SIGN_HANGING_WILLOW_WALL.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> BOAT_WILLOW = ITEMS.register("boat_willow",
+    public static final RegistryObject<Item> WILLOW_BOAT = ITEMS.register("willow_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.WILLOW, new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> BOAT_WILLOW_CHEST = ITEMS.register("boat_willow_chest",
+    public static final RegistryObject<Item> WILLOW_CHEST_BOAT = ITEMS.register("willow_chest_boat",
             () -> new ModBoatItem(true, REOBoatEntity.Type.WILLOW, new Item.Properties().stacksTo(1)));
 
+    // Food //
     // Seeds
-    public static final RegistryObject<Item> SEED_BARLEY= ITEMS.register("seed_barley",
+    public static final RegistryObject<Item> BARLEY_SEED = ITEMS.register("barley_seed",
             () -> new ItemNameBlockItem(REOBlocks.CROP_BARLEY.get(), new Item.Properties()));
-    public static final RegistryObject<Item> SEED_CAULIFLOWER= ITEMS.register("seed_cauliflower",
+    public static final RegistryObject<Item> CAULIFLOWER_SEED = ITEMS.register("cauliflower_seed",
             () -> new ItemNameBlockItem(REOBlocks.CROP_CAULIFLOWER.get(), new Item.Properties()));
-    public static final RegistryObject<Item> SEED_COTTON= ITEMS.register("seed_cotton",
+    public static final RegistryObject<Item> COTTON_SEED = ITEMS.register("cotton_seed",
             () -> new ItemNameBlockItem(REOBlocks.CROP_COTTON.get(), new Item.Properties()));
-    public static final RegistryObject<Item> SEED_RICE= ITEMS.register("seed_rice",
+    public static final RegistryObject<Item> ENDER_LILLY_SEED = ITEMS.register("ender_lilly_seed",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RICE_SEED = ITEMS.register("rice_seed",
             () -> new ItemNameBlockItem(REOBlocks.CROP_RICE.get(), new Item.Properties()));
-    public static final RegistryObject<Item> SEED_STRAWBERRY= ITEMS.register("seed_strawberry",
+    public static final RegistryObject<Item> STRAWBERRY_SEED = ITEMS.register("strawberry_seed",
             () -> new Item( new Item.Properties()));
-    public static final RegistryObject<Item> SEED_TOMATO= ITEMS.register("seed_tomato",
+    public static final RegistryObject<Item> TOMATO_SEED = ITEMS.register("tomato_seed",
             () -> new ItemNameBlockItem(REOBlocks.CROP_TOMATO.get(), new Item.Properties()));
 
-    // Food
-    public static final RegistryObject<Item> PLANT_BARLEY = ITEMS.register("plant_barley",
+    // Crops
+    public static final RegistryObject<Item> BARLEY_PLANT = ITEMS.register("barley_plant",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PLANT_COTTON = ITEMS.register("plant_cotton",
+    public static final RegistryObject<Item> COTTON_PLANT = ITEMS.register("cotton_plant",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PLANT_RICE = ITEMS.register("plant_rice",
+    public static final RegistryObject<Item> RICE_PLANT = ITEMS.register("rice_plant",
             () -> new Item(new Item.Properties()));
 
     // Flour
-    public static final RegistryObject<Item> FLOUR_BARLEY = ITEMS.register("flour_barley",
+    public static final RegistryObject<Item> BARLEY_FLOUR = ITEMS.register("barley_flour",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> FLOUR_WHEAT = ITEMS.register("flour_wheat",
+    public static final RegistryObject<Item> WHEAT_FLOUR = ITEMS.register("wheat_flour",
             () -> new Item(new Item.Properties()));
 
-    // Food //
     // Fruit
-    public static final RegistryObject<Item> FOOD_CHERRY = ITEMS.register("food_cherry",
+    public static final RegistryObject<Item> CHERRY = ITEMS.register("cherry",
             () -> new Item(new Item.Properties().food(REOFoods.FRUIT)));
-    public static final RegistryObject<Item> FOOD_CHESTNUT = ITEMS.register("food_chestnut",
-            () -> new Item(new Item.Properties().food(REOFoods.NUT)));
-    public static final RegistryObject<Item> FOOD_DATES = ITEMS.register("food_dates",
+    public static final RegistryObject<Item> DATES = ITEMS.register("dates",
             () -> new Item(new Item.Properties().food(REOFoods.FRUIT)));
-    public static final RegistryObject<Item> FOOD_LEMON = ITEMS.register("food_lemon",
+    public static final RegistryObject<Item> LEMON = ITEMS.register("lemon",
             () -> new ItemNameBlockItem(REOBlocks.FRUIT_CITRUS_BLOCK.get(), new Item.Properties().food(REOFoods.FRUIT)));
-    public static final RegistryObject<Item> FOOD_LIME = ITEMS.register("food_lime",
+    public static final RegistryObject<Item> LIME = ITEMS.register("lime",
             () -> new ItemNameBlockItem(REOBlocks.FRUIT_LIME_BLOCK.get(), new Item.Properties().food(REOFoods.FRUIT)));
-    public static final RegistryObject<Item> FOOD_PAPAYA = ITEMS.register("food_papaya",
+    public static final RegistryObject<Item> PAPAYA = ITEMS.register("papaya",
             () -> new ItemNameBlockItem(REOBlocks.FRUIT_PAPAYA_BLOCK.get(), new Item.Properties().food(REOFoods.FRUIT)));
-    public static final RegistryObject<Item> FOOD_PEACH = ITEMS.register("food_peach",
+    public static final RegistryObject<Item> PEACH = ITEMS.register("peach",
             () -> new Item(new Item.Properties().food(REOFoods.FRUIT)));
-    public static final RegistryObject<Item> FOOD_PEAR = ITEMS.register("food_pear",
+    public static final RegistryObject<Item> PEAR = ITEMS.register("pear",
             () -> new ItemNameBlockItem(REOBlocks.FRUIT_PEAR_BLOCK.get(), new Item.Properties().food(REOFoods.FRUIT)));
-    public static final RegistryObject<Item> FOOD_PLUM = ITEMS.register("food_plum",
+    public static final RegistryObject<Item> PLUM = ITEMS.register("plum",
             () -> new ItemNameBlockItem(REOBlocks.FRUIT_PLUM_BLOCK.get(), new Item.Properties().food(REOFoods.FRUIT)));
-    public static final RegistryObject<Item> FOOD_WALNUT = ITEMS.register("food_walnut",
+
+    // Nuts
+    public static final RegistryObject<Item> CHESTNUT = ITEMS.register("chestnut",
+            () -> new Item(new Item.Properties().food(REOFoods.NUT)));
+    public static final RegistryObject<Item> WALNUT = ITEMS.register("walnut",
             () -> new ItemNameBlockItem(REOBlocks.FRUIT_WALNUT_BLOCK.get(), new Item.Properties().food(REOFoods.NUT)));
 
     // Veg
-    public static final RegistryObject<Item> FOOD_CAULIFLOWER = ITEMS.register("food_cauliflower",
+    public static final RegistryObject<Item> CAULIFLOWER = ITEMS.register("cauliflower",
             () -> new Item(new Item.Properties().food(REOFoods.VEGETABLE)));
-    public static final RegistryObject<Item> FOOD_ONION = ITEMS.register("food_onion",
+    public static final RegistryObject<Item> ONION = ITEMS.register("onion",
             () -> new ItemNameBlockItem(REOBlocks.CROP_ONIONS.get(), new Item.Properties().food(REOFoods.VEGETABLE)));
-    public static final RegistryObject<Item> FOOD_RICE = ITEMS.register("food_rice",
+    public static final RegistryObject<Item> RICE = ITEMS.register("rice",
             () -> new Item(new Item.Properties().food(REOFoods.RICE)));
-    public static final RegistryObject<Item> FOOD_TOMATO = ITEMS.register("food_tomato",
+    public static final RegistryObject<Item> TOMATO = ITEMS.register("tomato",
             () -> new Item(new Item.Properties().food(REOFoods.VEGETABLE)));
-    public static final RegistryObject<Item> FOOD_TOMATO_ROTTEN = ITEMS.register("food_tomato_rotten",
+    public static final RegistryObject<Item> TOMATO_ROTTEN = ITEMS.register("tomato_rotten",
             () -> new Item(new Item.Properties().food(REOFoods.TOMATO_ROTTEN)));
 
     // Berries
-    public static final RegistryObject<Item> FOOD_BLACKBERRY = ITEMS.register("food_blackberry",
+    public static final RegistryObject<Item> BLACKBERRY = ITEMS.register("blackberry",
             () -> new ItemNameBlockItem(REOBlocks.BERRY_BLACKBERRY_BLOCK.get(), new Item.Properties().food(REOFoods.BERRY)));
-    public static final RegistryObject<Item> FOOD_BLUEBERRY = ITEMS.register("food_blueberry",
+    public static final RegistryObject<Item> BLUEBERRY = ITEMS.register("blueberry",
             () -> new ItemNameBlockItem(REOBlocks.BERRY_BLUEBERRY_BLOCK.get(), new Item.Properties().food(REOFoods.BERRY)));
-    public static final RegistryObject<Item> FOOD_RASPBERRY = ITEMS.register("food_raspberry",
+    public static final RegistryObject<Item> RASPBERRY = ITEMS.register("raspberry",
             () -> new ItemNameBlockItem(REOBlocks.BERRY_RASPBERRY_BLOCK.get(), new Item.Properties().food(REOFoods.BERRY)));
-    public static final RegistryObject<Item> FOOD_STRAWBERRY = ITEMS.register("food_strawberry",
+    public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry",
             () -> new Item(new Item.Properties().food(REOFoods.BERRY)));
 
     // Ore Seeds
-    //public static final RegistryObject<Item> SEED_ALUMINIUM = ITEMS.register("seed_aluminium",
+    //public static final RegistryObject<Item> ALUMINIUM_SEED = ITEMS.register("aluminium_seed",
     //        () -> new ItemNameBlockItem(REOBlocks.CROP_ALUMINIUM.get(), new Item.Properties()));
 
     // Tech //
@@ -1288,103 +1310,103 @@ public class REOItems {
             () -> new Item(new Item.Properties()));
 
     // Gear
-    public static final RegistryObject<Item> GEAR_ALUMINIUM = ITEMS.register("gear_aluminium",
+    public static final RegistryObject<Item> ALUMINUM_GEAR = ITEMS.register("aluminium_gear",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GEAR_AMETHYST = ITEMS.register("gear_amethyst",
+    public static final RegistryObject<Item> AMETHYST_GEAR = ITEMS.register("amethyst_gear",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GEAR_BRASS = ITEMS.register("gear_brass",
+    public static final RegistryObject<Item> BRASS_GEAR = ITEMS.register("brass_gear",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GEAR_BRONZE = ITEMS.register("gear_bronze",
+    public static final RegistryObject<Item> BRONZE_GEAR = ITEMS.register("bronze_gear",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GEAR_COPPER = ITEMS.register("gear_copper",
+    public static final RegistryObject<Item> COPPER_GEAR = ITEMS.register("copper_gear",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GEAR_DIAMOND = ITEMS.register("gear_diamond",
+    public static final RegistryObject<Item> DIAMOND_GEAR = ITEMS.register("diamond_gear",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GEAR_ELECTRUM = ITEMS.register("gear_electrum",
+    public static final RegistryObject<Item> ELECTRUM_GEAR = ITEMS.register("electrum_gear",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GEAR_EMERALD = ITEMS.register("gear_emerald",
+    public static final RegistryObject<Item> EMERALD_GEAR = ITEMS.register("emerald_gear",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GEAR_ENDERITE = ITEMS.register("gear_enderite",
+    public static final RegistryObject<Item> ENDERITE_GEAR = ITEMS.register("enderite_gear",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GEAR_GOLDEN = ITEMS.register("gear_golden",
+    public static final RegistryObject<Item> GOLD_GERAR = ITEMS.register("golden_gear",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GEAR_IRON = ITEMS.register("gear_iron",
+    public static final RegistryObject<Item> IRON_GEAR = ITEMS.register("iron_gear",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GEAR_LEAD = ITEMS.register("gear_lead",
+    public static final RegistryObject<Item> LEAD_GEAR = ITEMS.register("lead_gear",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GEAR_NICKEL = ITEMS.register("gear_nickel",
+    public static final RegistryObject<Item> NICKEL_GEAR = ITEMS.register("nickel_gear",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GEAR_PLATINUM = ITEMS.register("gear_platinum",
+    public static final RegistryObject<Item> PLATINUM_GEAR = ITEMS.register("platinum_gear",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GEAR_PERIDOT = ITEMS.register("gear_peridot",
+    public static final RegistryObject<Item> PERIDOT_GEAR = ITEMS.register("peridot_gear",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GEAR_RUBY = ITEMS.register("gear_ruby",
+    public static final RegistryObject<Item> RUBY_GEAR = ITEMS.register("ruby_gear",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GEAR_SAPPHIRE = ITEMS.register("gear_sapphire",
+    public static final RegistryObject<Item> SAPPHIRE_GEAR = ITEMS.register("sapphire_gear",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GEAR_SILVER = ITEMS.register("gear_silver",
+    public static final RegistryObject<Item> SILVER_GEAR = ITEMS.register("silver_gear",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GEAR_STEEL = ITEMS.register("gear_steel",
+    public static final RegistryObject<Item> STEEL_GEAR = ITEMS.register("steel_gear",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GEAR_STONE = ITEMS.register("gear_stone",
+    public static final RegistryObject<Item> STONE_GEAR = ITEMS.register("stone_gear",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GEAR_TIN = ITEMS.register("gear_tin",
+    public static final RegistryObject<Item> TIN_GEAR = ITEMS.register("tin_gear",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GEAR_WOODEN = ITEMS.register("gear_wooden",
+    public static final RegistryObject<Item> WOOD_GEAR = ITEMS.register("wooden_gear",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GEAR_ZINC = ITEMS.register("gear_zinc",
+    public static final RegistryObject<Item> ZINC_GEAR = ITEMS.register("zinc_gear",
             () -> new Item(new Item.Properties()));
 
     // Plate
-    public static final RegistryObject<Item> PLATE_ALUMINIUM = ITEMS.register("plate_aluminium",
+    public static final RegistryObject<Item> ALUMINUM_PLATE = ITEMS.register("aluminium_plate",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PLATE_AMETHYST = ITEMS.register("plate_amethyst",
+    public static final RegistryObject<Item> AMETHYST_PLATE = ITEMS.register("amethyst_plate",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PLATE_BRASS = ITEMS.register("plate_brass",
+    public static final RegistryObject<Item> BRASS_PALTE = ITEMS.register("brass_plate",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PLATE_BRONZE = ITEMS.register("plate_bronze",
+    public static final RegistryObject<Item> BRONZE_PLATE = ITEMS.register("bronze_plate",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PLATE_COPPER = ITEMS.register("plate_copper",
+    public static final RegistryObject<Item> COPPER_PALTE = ITEMS.register("copper_plate",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PLATE_DIAMOND = ITEMS.register("plate_diamond",
+    public static final RegistryObject<Item> DIAMOND_PLATE = ITEMS.register("diamond_plate",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PLATE_ELECTRUM = ITEMS.register("plate_electrum",
+    public static final RegistryObject<Item> ELECTRUM_PLATE = ITEMS.register("electrum_plate",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PLATE_EMERALD = ITEMS.register("plate_emerald",
+    public static final RegistryObject<Item> EMERALD_PLATE = ITEMS.register("emerald_plate",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PLATE_ENDERITE = ITEMS.register("plate_enderite",
+    public static final RegistryObject<Item> ENDERITE_PLATE = ITEMS.register("enderite_plate",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PLATE_GOLDEN = ITEMS.register("plate_golden",
+    public static final RegistryObject<Item> GOLD_PLATE = ITEMS.register("golden_plate",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PLATE_IRON = ITEMS.register("plate_iron",
+    public static final RegistryObject<Item> IRON_PLATE = ITEMS.register("iron_plate",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PLATE_LEAD = ITEMS.register("plate_lead",
+    public static final RegistryObject<Item> LEAD_PLATE = ITEMS.register("lead_plate",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PLATE_NICKEL = ITEMS.register("plate_nickel",
+    public static final RegistryObject<Item> NICKEL_PLATE = ITEMS.register("nickel_plate",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PLATE_PLATINUM = ITEMS.register("plate_platinum",
+    public static final RegistryObject<Item> PLATINUM_PLATE = ITEMS.register("platinum_plate",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PLATE_PERIDOT = ITEMS.register("plate_peridot",
+    public static final RegistryObject<Item> PERIDOT_PLATE = ITEMS.register("peridot_plate",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PLATE_RUBY = ITEMS.register("plate_ruby",
+    public static final RegistryObject<Item> RUBY_PLATE = ITEMS.register("ruby_plate",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PLATE_SAPPHIRE = ITEMS.register("plate_sapphire",
+    public static final RegistryObject<Item> SAPPHIRE_PLATE = ITEMS.register("sapphire_plate",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PLATE_SILVER = ITEMS.register("plate_silver",
+    public static final RegistryObject<Item> SILVER_PLATE = ITEMS.register("silver_plate",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PLATE_STEEL = ITEMS.register("plate_steel",
+    public static final RegistryObject<Item> STEEL_PLATE = ITEMS.register("steel_plate",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PLATE_TIN = ITEMS.register("plate_tin",
+    public static final RegistryObject<Item> TIN_PLATE = ITEMS.register("tin_plate",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PLATE_ZINC = ITEMS.register("plate_zinc",
+    public static final RegistryObject<Item> ZINC_PLATE = ITEMS.register("zinc_plate",
             () -> new Item(new Item.Properties()));
 
     // Capacitor
-    public static final RegistryObject<Item> CAPACITOR_BASIC = ITEMS.register("capacitor_basic",
+    public static final RegistryObject<Item> BASIC_CAPACITOR = ITEMS.register("basic_capacitor",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> CAPACITOR_ADVANCED = ITEMS.register("capacitor_advanced",
+    public static final RegistryObject<Item> ADVANCED_CAPACITOR = ITEMS.register("advanced_capacitor",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> CAPACITOR_ULTIMATE = ITEMS.register("capacitor_ultimate",
+    public static final RegistryObject<Item> ULTIMATE_CAPACITOR = ITEMS.register("ultimate_capacitor",
             () -> new Item(new Item.Properties()));
 
 }

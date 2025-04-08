@@ -1,24 +1,24 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dust_gold": {
+    "has_gold_dust": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:dust_gold"
+              "realearthores:gold_dust"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_dust_silver": {
+    "has_silver_dust": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:dust_silver"
+              "realearthores:silver_dust"
             ]
           }
         ]
@@ -34,8 +34,8 @@
   },
   "requirements": [
     [
-      "has_dust_gold",
-      "has_dust_silver",
+      "has_gold_dust",
+      "has_silver_dust",
       "has_the_recipe"
     ]
   ],

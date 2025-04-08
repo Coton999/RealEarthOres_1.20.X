@@ -20,7 +20,7 @@ public class TomatoBlock extends CropBlock {
     @Override
     protected ItemLike getBaseSeedId() {
 
-        return REOItems.SEED_TOMATO.get();
+        return REOItems.TOMATO_SEED.get();
     }
 
     @Override

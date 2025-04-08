@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "realearthores:sign_papaya"
+          "name": "realearthores:papaya_sign"
         }
       ],
       "rolls": 1.0

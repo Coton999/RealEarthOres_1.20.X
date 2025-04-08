@@ -11,25 +11,25 @@ import java.util.function.Supplier;
 
 public enum REOArmourMaterials implements ArmorMaterial {
     ALUMINIUM("aluminium", 15, new int[]{ 1, 5, 5, 2 }, 12,
-            SoundEvents.ARMOR_EQUIP_IRON, 0f, 0f, () -> Ingredient.of(REOItems.INGOT_ALUMINIUM.get())),
+            SoundEvents.ARMOR_EQUIP_IRON, 0f, 0f, () -> Ingredient.of(REOItems.ALUMINUM_INGOT.get())),
     AMETHYST("amethyst", 15, new int[]{ 1, 4, 5, 2 }, 12,
-            SoundEvents.ARMOR_EQUIP_DIAMOND, 0f, 0f, () -> Ingredient.of(REOItems.GEM_AMETHYST.get())),
+            SoundEvents.ARMOR_EQUIP_DIAMOND, 0f, 0f, () -> Ingredient.of(REOItems.AMETHYST.get())),
     BRONZE("bronze", 26, new int[]{ 3, 5, 6, 3 }, 10,
-            SoundEvents.ARMOR_EQUIP_IRON, 0f, 0f, () -> Ingredient.of(REOItems.INGOT_BRONZE.get())),
+            SoundEvents.ARMOR_EQUIP_IRON, 0f, 0f, () -> Ingredient.of(REOItems.BRONZE_INGOT.get())),
     ENDERITE("enderite", 37, new int[]{ 3, 6, 8, 3 }, 15,
-            SoundEvents.ARMOR_EQUIP_NETHERITE, 3f, 0.25f, () -> Ingredient.of(REOItems.INGOT_ENDERITE.get())),
+            SoundEvents.ARMOR_EQUIP_NETHERITE, 3f, 0.25f, () -> Ingredient.of(REOItems.ENDERITE_INGOT.get())),
     PERIDOT("peridot", 15, new int[]{ 1, 4, 5, 2 }, 12,
-            SoundEvents.ARMOR_EQUIP_DIAMOND, 0f, 0f, () -> Ingredient.of(REOItems.GEM_PERIDOT.get())),
+            SoundEvents.ARMOR_EQUIP_DIAMOND, 0f, 0f, () -> Ingredient.of(REOItems.PERIDOT.get())),
     PLATINUM("platinum", 33, new int[]{ 3, 6, 8, 3 }, 10,
-            SoundEvents.ARMOR_EQUIP_NETHERITE, 1f, 0f, () -> Ingredient.of(REOItems.INGOT_PLATINUM.get())),
+            SoundEvents.ARMOR_EQUIP_NETHERITE, 1f, 0f, () -> Ingredient.of(REOItems.PLATINUM_INGOT.get())),
     RUBY("ruby", 15, new int[]{ 1, 4, 5, 2 }, 12,
-         SoundEvents.ARMOR_EQUIP_DIAMOND, 0f, 0f, () -> Ingredient.of(REOItems.GEM_RUBY.get())),
+         SoundEvents.ARMOR_EQUIP_DIAMOND, 0f, 0f, () -> Ingredient.of(REOItems.RUBY.get())),
     SAPPHIRE("sapphire", 15, new int[]{ 1, 4, 5, 2 }, 12,
-            SoundEvents.ARMOR_EQUIP_DIAMOND, 0f, 0f, () -> Ingredient.of(REOItems.GEM_SAPPHIRE.get())),
+            SoundEvents.ARMOR_EQUIP_DIAMOND, 0f, 0f, () -> Ingredient.of(REOItems.SAPPHIRE.get())),
     SILVER("silver", 7, new int[]{ 1, 3, 5, 2 }, 25,
-            SoundEvents.ARMOR_EQUIP_GOLD, 0f, 0f, () -> Ingredient.of(REOItems.INGOT_SILVER.get())),
+            SoundEvents.ARMOR_EQUIP_GOLD, 0f, 0f, () -> Ingredient.of(REOItems.SILVER_INGOT.get())),
     STEEL("steel", 26, new int[]{ 2, 6, 7, 2 }, 20,
-         SoundEvents.ARMOR_EQUIP_CHAIN, 1f, 0f, () -> Ingredient.of(REOItems.INGOT_STEEL.get()));
+         SoundEvents.ARMOR_EQUIP_CHAIN, 1f, 0f, () -> Ingredient.of(REOItems.STEEL_INGOT.get()));
 
     private final String name;
     private final int durabilityMultiplier;

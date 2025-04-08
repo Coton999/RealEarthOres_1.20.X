@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "realearthores:sign_baobab"
+          "name": "realearthores:baobab_sign"
         }
       ],
       "rolls": 1.0

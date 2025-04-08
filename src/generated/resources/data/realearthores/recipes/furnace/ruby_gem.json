@@ -8,11 +8,11 @@
       "item": "realearthores:cluster_ruby"
     },
     {
-      "item": "realearthores:dust_ruby"
+      "item": "realearthores:ruby_dust"
     },
     {
-      "item": "realearthores:dirty_ruby"
+      "item": "realearthores:ruby_dirty"
     }
   ],
-  "result": "realearthores:gem_ruby"
+  "result": "realearthores:ruby"
 }

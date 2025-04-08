@@ -20,11 +20,11 @@
       "item": "realearthores:raw_lead"
     },
     {
-      "item": "realearthores:dust_lead"
+      "item": "realearthores:lead_dust"
     },
     {
-      "item": "realearthores:dirty_lead"
+      "item": "realearthores:lead_dirty"
     }
   ],
-  "result": "realearthores:ingot_lead"
+  "result": "realearthores:lead_ingot"
 }

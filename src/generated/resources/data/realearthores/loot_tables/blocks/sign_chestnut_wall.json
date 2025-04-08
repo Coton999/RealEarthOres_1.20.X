@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "realearthores:sign_chestnut"
+          "name": "realearthores:chestnut_sign"
         }
       ],
       "rolls": 1.0

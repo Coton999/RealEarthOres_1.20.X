@@ -20,7 +20,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "realearthores:food_blueberry"
+          "name": "realearthores:blueberry"
         }
       ],
       "functions": [
@@ -58,7 +58,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "realearthores:food_blueberry"
+          "name": "realearthores:blueberry"
         }
       ],
       "functions": [

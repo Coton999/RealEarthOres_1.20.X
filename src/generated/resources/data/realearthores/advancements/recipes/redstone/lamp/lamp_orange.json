@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_luminous_orange": {
+    "has_orange_luminous": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:luminous_orange"
+              "realearthores:orange_luminous"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_luminous_orange",
+      "has_orange_luminous",
       "has_the_recipe"
     ]
   ],

@@ -20,11 +20,11 @@
       "item": "realearthores:raw_nickel"
     },
     {
-      "item": "realearthores:dust_nickel"
+      "item": "realearthores:nickel_dust"
     },
     {
-      "item": "realearthores:dirty_nickel"
+      "item": "realearthores:nickel_dirty"
     }
   ],
-  "result": "realearthores:ingot_nickel"
+  "result": "realearthores:nickel_ingot"
 }

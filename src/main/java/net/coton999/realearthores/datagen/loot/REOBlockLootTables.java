@@ -125,51 +125,51 @@ public class REOBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(REOBlocks.NETHERRACK_WALL.get());
 
         // Crops //
-        this.cropLootTable(REOBlocks.CROP_BARLEY.get(), REOItems.SEED_BARLEY.get(),
-                REOItems.PLANT_BARLEY.get(), BarleyBlock.AGE, BarleyBlock.MAX_AGE);
-        this.cropLootTable(REOBlocks.CROP_CAULIFLOWER.get(), REOItems.SEED_CAULIFLOWER.get(),
-                REOItems.FOOD_CAULIFLOWER.get(), CauliflowerBlock.AGE, CauliflowerBlock.MAX_AGE);
-        this.cropLootTable(REOBlocks.CROP_COTTON.get(), REOItems.SEED_COTTON.get(),
-                REOItems.PLANT_COTTON.get(), CottonBlock.AGE, CottonBlock.MAX_AGE);
-        this.cropLootTable(REOBlocks.CROP_ONIONS.get(), REOItems.FOOD_ONION.get(),
-                REOItems.FOOD_ONION.get(), BarleyBlock.AGE, BarleyBlock.MAX_AGE);
-        this.cropLootTable(REOBlocks.CROP_RICE.get(), REOItems.SEED_RICE.get(),
-                REOItems.PLANT_RICE.get(), BarleyBlock.AGE, BarleyBlock.MAX_AGE);
-        this.cropLootTable(REOBlocks.CROP_TOMATO.get(), REOItems.SEED_TOMATO.get(),
-                REOItems.FOOD_TOMATO.get(), BarleyBlock.AGE, BarleyBlock.MAX_AGE);
+        this.cropLootTable(REOBlocks.CROP_BARLEY.get(), REOItems.BARLEY_SEED.get(),
+                REOItems.BARLEY_PLANT.get(), BarleyBlock.AGE, BarleyBlock.MAX_AGE);
+        this.cropLootTable(REOBlocks.CROP_CAULIFLOWER.get(), REOItems.CAULIFLOWER_SEED.get(),
+                REOItems.CAULIFLOWER.get(), CauliflowerBlock.AGE, CauliflowerBlock.MAX_AGE);
+        this.cropLootTable(REOBlocks.CROP_COTTON.get(), REOItems.COTTON_SEED.get(),
+                REOItems.COTTON_PLANT.get(), CottonBlock.AGE, CottonBlock.MAX_AGE);
+        this.cropLootTable(REOBlocks.CROP_ONIONS.get(), REOItems.ONION.get(),
+                REOItems.ONION.get(), BarleyBlock.AGE, BarleyBlock.MAX_AGE);
+        this.cropLootTable(REOBlocks.CROP_RICE.get(), REOItems.RICE_SEED.get(),
+                REOItems.RICE_PLANT.get(), BarleyBlock.AGE, BarleyBlock.MAX_AGE);
+        this.cropLootTable(REOBlocks.CROP_TOMATO.get(), REOItems.TOMATO_SEED.get(),
+                REOItems.TOMATO.get(), BarleyBlock.AGE, BarleyBlock.MAX_AGE);
 
-        this.dropOther(REOBlocks.WILD_BARLEY.get(), REOItems.SEED_BARLEY.get());
-        this.dropOther(REOBlocks.WILD_COTTON.get(), REOItems.SEED_COTTON.get());
-        this.dropOther(REOBlocks.WILD_RICE.get(), REOItems.SEED_RICE.get());
-        this.dropOther(REOBlocks.WILD_TOMATO.get(), REOItems.SEED_TOMATO.get());
+        this.dropOther(REOBlocks.WILD_BARLEY.get(), REOItems.BARLEY_SEED.get());
+        this.dropOther(REOBlocks.WILD_COTTON.get(), REOItems.COTTON_SEED.get());
+        this.dropOther(REOBlocks.WILD_RICE.get(), REOItems.RICE_SEED.get());
+        this.dropOther(REOBlocks.WILD_TOMATO.get(), REOItems.TOMATO_SEED.get());
 
 
         // Fruit //
-        this.cropLootTable(REOBlocks.FRUIT_CITRUS_BLOCK.get(), REOItems.FOOD_LEMON.get(),
-                REOItems.FOOD_LEMON.get(), CitrusBlock.AGE, BarleyBlock.MAX_AGE);
-        this.cropLootTable(REOBlocks.FRUIT_LIME_BLOCK.get(), REOItems.FOOD_LIME.get(),
-                REOItems.FOOD_LIME.get(), LimeBlock.AGE, BarleyBlock.MAX_AGE);
-        this.cropLootTable(REOBlocks.FRUIT_PAPAYA_BLOCK.get(), REOItems.FOOD_PAPAYA.get(),
-                REOItems.FOOD_PAPAYA.get(), PapayaBlock.AGE, BarleyBlock.MAX_AGE);
-        this.cropLootTable(REOBlocks.FRUIT_PEAR_BLOCK.get(), REOItems.FOOD_PEAR.get(),
-                REOItems.FOOD_PEAR.get(), PearBlock.AGE, BarleyBlock.MAX_AGE);
-        this.cropLootTable(REOBlocks.FRUIT_PLUM_BLOCK.get(), REOItems.FOOD_PLUM.get(),
-                REOItems.FOOD_PLUM.get(), PlumBlock.AGE, BarleyBlock.MAX_AGE);
-        this.cropLootTable(REOBlocks.FRUIT_WALNUT_BLOCK.get(), REOItems.FOOD_WALNUT.get(),
-                REOItems.FOOD_WALNUT.get(), WalnutBlock.AGE, BarleyBlock.MAX_AGE);
+        this.cropLootTable(REOBlocks.FRUIT_CITRUS_BLOCK.get(), REOItems.LEMON.get(),
+                REOItems.LEMON.get(), CitrusBlock.AGE, BarleyBlock.MAX_AGE);
+        this.cropLootTable(REOBlocks.FRUIT_LIME_BLOCK.get(), REOItems.LIME.get(),
+                REOItems.LIME.get(), LimeBlock.AGE, BarleyBlock.MAX_AGE);
+        this.cropLootTable(REOBlocks.FRUIT_PAPAYA_BLOCK.get(), REOItems.PAPAYA.get(),
+                REOItems.PAPAYA.get(), PapayaBlock.AGE, BarleyBlock.MAX_AGE);
+        this.cropLootTable(REOBlocks.FRUIT_PEAR_BLOCK.get(), REOItems.PEAR.get(),
+                REOItems.PEAR.get(), PearBlock.AGE, BarleyBlock.MAX_AGE);
+        this.cropLootTable(REOBlocks.FRUIT_PLUM_BLOCK.get(), REOItems.PLUM.get(),
+                REOItems.PLUM.get(), PlumBlock.AGE, BarleyBlock.MAX_AGE);
+        this.cropLootTable(REOBlocks.FRUIT_WALNUT_BLOCK.get(), REOItems.WALNUT.get(),
+                REOItems.WALNUT.get(), WalnutBlock.AGE, BarleyBlock.MAX_AGE);
 
         // Berry //
         this.add(REOBlocks.BERRY_BLACKBERRY_BLOCK.get(), block -> this.applyExplosionDecay(
                 block,LootTable.lootTable().withPool(LootPool.lootPool().when(
                                         LootItemBlockStatePropertyCondition.hasBlockStateProperties(REOBlocks.BERRY_BLACKBERRY_BLOCK.get())
                                                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SweetBerryBushBlock.AGE, 3))
-                                ).add(LootItem.lootTableItem(REOItems.FOOD_BLACKBERRY.get()))
+                                ).add(LootItem.lootTableItem(REOItems.BLACKBERRY.get()))
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 3.0F)))
                                 .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE))
                 ).withPool(LootPool.lootPool().when(
                                         LootItemBlockStatePropertyCondition.hasBlockStateProperties(REOBlocks.BERRY_BLACKBERRY_BLOCK.get())
                                                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SweetBerryBushBlock.AGE, 2))
-                                ).add(LootItem.lootTableItem(REOItems.FOOD_BLACKBERRY.get()))
+                                ).add(LootItem.lootTableItem(REOItems.BLACKBERRY.get()))
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F)))
                                 .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE))
                 )));
@@ -178,13 +178,13 @@ public class REOBlockLootTables extends BlockLootSubProvider {
                 block,LootTable.lootTable().withPool(LootPool.lootPool().when(
                                         LootItemBlockStatePropertyCondition.hasBlockStateProperties(REOBlocks.BERRY_BLUEBERRY_BLOCK.get())
                                                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SweetBerryBushBlock.AGE, 3))
-                                ).add(LootItem.lootTableItem(REOItems.FOOD_BLUEBERRY.get()))
+                                ).add(LootItem.lootTableItem(REOItems.BLUEBERRY.get()))
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 3.0F)))
                                 .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE))
                 ).withPool(LootPool.lootPool().when(
                                         LootItemBlockStatePropertyCondition.hasBlockStateProperties(REOBlocks.BERRY_BLUEBERRY_BLOCK.get())
                                                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SweetBerryBushBlock.AGE, 2))
-                                ).add(LootItem.lootTableItem(REOItems.FOOD_BLUEBERRY.get()))
+                                ).add(LootItem.lootTableItem(REOItems.BLUEBERRY.get()))
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F)))
                                 .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE))
                 )));
@@ -193,13 +193,13 @@ public class REOBlockLootTables extends BlockLootSubProvider {
                 block,LootTable.lootTable().withPool(LootPool.lootPool().when(
                                         LootItemBlockStatePropertyCondition.hasBlockStateProperties(REOBlocks.BERRY_RASPBERRY_BLOCK.get())
                                                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SweetBerryBushBlock.AGE, 3))
-                                ).add(LootItem.lootTableItem(REOItems.FOOD_RASPBERRY.get()))
+                                ).add(LootItem.lootTableItem(REOItems.RASPBERRY.get()))
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 3.0F)))
                                 .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE))
                 ).withPool(LootPool.lootPool().when(
                                         LootItemBlockStatePropertyCondition.hasBlockStateProperties(REOBlocks.BERRY_RASPBERRY_BLOCK.get())
                                                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SweetBerryBushBlock.AGE, 2))
-                                ).add(LootItem.lootTableItem(REOItems.FOOD_RASPBERRY.get()))
+                                ).add(LootItem.lootTableItem(REOItems.RASPBERRY.get()))
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F)))
                                 .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE))
                 )));
@@ -326,13 +326,13 @@ public class REOBlockLootTables extends BlockLootSubProvider {
                 createModLeavesDrops(REOBlocks.LEAVES_BALSA.get(), REOBlocks.SAPLING_BALSA.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         this.add(REOBlocks.SIGN_BALSA.get(), block ->
-                createSingleItemTable(REOItems.SIGN_BALSA.get()));
+                createSingleItemTable(REOItems.BALSA_SIGN.get()));
         this.add(REOBlocks.SIGN_BALSA_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_BALSA.get()));
+                createSingleItemTable(REOItems.BALSA_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_BALSA.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_BALSA.get()));
+                createSingleItemTable(REOItems.BALSA_HANGING_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_BALSA_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_BALSA.get()));
+                createSingleItemTable(REOItems.BALSA_HANGING_SIGN.get()));
 
         this.add(REOBlocks.DOOR_BALSA.get(),
                 block -> createDoorTable(REOBlocks.DOOR_BALSA.get()));
@@ -359,13 +359,13 @@ public class REOBlockLootTables extends BlockLootSubProvider {
                 createModLeavesDrops(REOBlocks.LEAVES_BAOBAB.get(), REOBlocks.SAPLING_BAOBAB.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         this.add(REOBlocks.SIGN_BAOBAB.get(), block ->
-                createSingleItemTable(REOItems.SIGN_BAOBAB.get()));
+                createSingleItemTable(REOItems.BAOBAB_SIGN.get()));
         this.add(REOBlocks.SIGN_BAOBAB_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_BAOBAB.get()));
+                createSingleItemTable(REOItems.BAOBAB_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_BAOBAB.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_BAOBAB.get()));
+                createSingleItemTable(REOItems.BAOBAB_HANGING_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_BAOBAB_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_BAOBAB.get()));
+                createSingleItemTable(REOItems.BAOBAB_HANGING_SIGN.get()));
 
         this.add(REOBlocks.DOOR_BAOBAB.get(),
                 block -> createDoorTable(REOBlocks.DOOR_BAOBAB.get()));
@@ -392,13 +392,13 @@ public class REOBlockLootTables extends BlockLootSubProvider {
                 createModLeavesDrops(REOBlocks.LEAVES_HILL_CHERRY.get(), REOBlocks.SAPLING_HILL_CHERRY.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         this.add(REOBlocks.SIGN_HILL_CHERRY.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HILL_CHERRY.get()));
+                createSingleItemTable(REOItems.HILL_CHERRY_SIGN.get()));
         this.add(REOBlocks.SIGN_HILL_CHERRY_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HILL_CHERRY.get()));
+                createSingleItemTable(REOItems.HILL_CHERRY_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_HILL_CHERRY.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_HILL_CHERRY.get()));
+                createSingleItemTable(REOItems.HILL_CHERRY_HANGING_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_HILL_CHERRY_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_HILL_CHERRY.get()));
+                createSingleItemTable(REOItems.HILL_CHERRY_HANGING_SIGN.get()));
 
         this.add(REOBlocks.DOOR_HILL_CHERRY.get(),
                 block -> createDoorTable(REOBlocks.DOOR_HILL_CHERRY.get()));
@@ -423,16 +423,16 @@ public class REOBlockLootTables extends BlockLootSubProvider {
         this.add(REOBlocks.POTTED_SAPLING_CHESTNUT.get(), createPotFlowerItemTable(REOBlocks.SAPLING_CHESTNUT.get()));
         this.add(REOBlocks.LEAVES_CHESTNUT.get(),
                 createModLeavesDrops(REOBlocks.LEAVES_CHESTNUT.get(), REOBlocks.SAPLING_CHESTNUT.get(), NORMAL_LEAVES_SAPLING_CHANCES));
-        this.dropOther(REOBlocks.LEAVES_CHESTNUT_FRUIT.get(), REOItems.FOOD_CHESTNUT.get());
+        this.dropOther(REOBlocks.LEAVES_CHESTNUT_FRUIT.get(), REOItems.CHESTNUT.get());
 
         this.add(REOBlocks.SIGN_CHESTNUT.get(), block ->
-                createSingleItemTable(REOItems.SIGN_CHESTNUT.get()));
+                createSingleItemTable(REOItems.CHESTNUT_SIGN.get()));
         this.add(REOBlocks.SIGN_CHESTNUT_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_CHESTNUT.get()));
+                createSingleItemTable(REOItems.CHESTNUT_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_CHESTNUT.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_CHESTNUT.get()));
+                createSingleItemTable(REOItems.CHESTNUT_HANGING_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_CHESTNUT_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_CHESTNUT.get()));
+                createSingleItemTable(REOItems.CHESTNUT_HANGING_SIGN.get()));
 
         this.add(REOBlocks.DOOR_CHESTNUT.get(),
                 block -> createDoorTable(REOBlocks.DOOR_CHESTNUT.get()));
@@ -458,16 +458,16 @@ public class REOBlockLootTables extends BlockLootSubProvider {
         this.add(REOBlocks.POTTED_SAPLING_CITRUS.get(), createPotFlowerItemTable(REOBlocks.SAPLING_CITRUS.get()));
         this.add(REOBlocks.LEAVES_CITRUS.get(),
                 createModLeavesDrops(REOBlocks.LEAVES_CITRUS.get(), REOBlocks.SAPLING_CITRUS.get(), NORMAL_LEAVES_SAPLING_CHANCES));
-        this.dropOther(REOBlocks.LEAVES_CITRUS_FRUIT.get(), REOItems.FOOD_LEMON.get());
+        this.dropOther(REOBlocks.LEAVES_CITRUS_FRUIT.get(), REOItems.LEMON.get());
 
         this.add(REOBlocks.SIGN_CITRUS.get(), block ->
-                createSingleItemTable(REOItems.SIGN_CITRUS.get()));
+                createSingleItemTable(REOItems.CITRUS_SIGN.get()));
         this.add(REOBlocks.SIGN_CITRUS_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_CITRUS.get()));
+                createSingleItemTable(REOItems.CITRUS_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_CITRUS.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_CITRUS.get()));
+                createSingleItemTable(REOItems.CITRUS_HANGING_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_CITRUS_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_CITRUS.get()));
+                createSingleItemTable(REOItems.CITRUS_HANGING_SIGN.get()));
 
         this.add(REOBlocks.DOOR_CITRUS.get(),
                 block -> createDoorTable(REOBlocks.DOOR_CITRUS.get()));
@@ -495,13 +495,13 @@ public class REOBlockLootTables extends BlockLootSubProvider {
                 createModLeavesDrops(REOBlocks.LEAVES_EBONY.get(), REOBlocks.SAPLING_EBONY.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         this.add(REOBlocks.SIGN_EBONY.get(), block ->
-                createSingleItemTable(REOItems.SIGN_EBONY.get()));
+                createSingleItemTable(REOItems.EBONY_SIGN.get()));
         this.add(REOBlocks.SIGN_EBONY_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_EBONY.get()));
+                createSingleItemTable(REOItems.EBONY_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_EBONY.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_EBONY.get()));
+                createSingleItemTable(REOItems.EBONY_HANGING_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_EBONY_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_EBONY.get()));
+                createSingleItemTable(REOItems.EBONY_HANGING_SIGN.get()));
 
         this.add(REOBlocks.DOOR_EBONY.get(),
                 block -> createDoorTable(REOBlocks.DOOR_EBONY.get()));
@@ -529,13 +529,13 @@ public class REOBlockLootTables extends BlockLootSubProvider {
                 createModLeavesDrops(REOBlocks.LEAVES_LARCH.get(), REOBlocks.SAPLING_LARCH.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         this.add(REOBlocks.SIGN_LARCH.get(), block ->
-                createSingleItemTable(REOItems.SIGN_LARCH.get()));
+                createSingleItemTable(REOItems.LARCH_SIGN.get()));
         this.add(REOBlocks.SIGN_LARCH_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_LARCH.get()));
+                createSingleItemTable(REOItems.LARCH_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_LARCH.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_LARCH.get()));
+                createSingleItemTable(REOItems.LARCH_HANGING_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_LARCH_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_LARCH.get()));
+                createSingleItemTable(REOItems.LARCH_HANGING_SIGN.get()));
 
         this.add(REOBlocks.DOOR_LARCH.get(),
                 block -> createDoorTable(REOBlocks.DOOR_LARCH.get()));
@@ -561,16 +561,16 @@ public class REOBlockLootTables extends BlockLootSubProvider {
         this.add(REOBlocks.POTTED_SAPLING_LIME.get(), createPotFlowerItemTable(REOBlocks.SAPLING_LIME.get()));
         this.add(REOBlocks.LEAVES_LIME.get(),
                 createModLeavesDrops(REOBlocks.LEAVES_LIME.get(), REOBlocks.SAPLING_LIME.get(), NORMAL_LEAVES_SAPLING_CHANCES));
-        this.dropOther(REOBlocks.LEAVES_LIME_FRUIT.get(), REOItems.FOOD_LIME.get());
+        this.dropOther(REOBlocks.LEAVES_LIME_FRUIT.get(), REOItems.LIME.get());
 
         this.add(REOBlocks.SIGN_LIME.get(), block ->
-                createSingleItemTable(REOItems.SIGN_LIME.get()));
+                createSingleItemTable(REOItems.LIME_SIGN.get()));
         this.add(REOBlocks.SIGN_LIME_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_LIME.get()));
+                createSingleItemTable(REOItems.LIME_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_LIME.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_LIME.get()));
+                createSingleItemTable(REOItems.LIME_HANGING_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_LIME_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_LIME.get()));
+                createSingleItemTable(REOItems.LIME_HANGING_SIGN.get()));
 
         this.add(REOBlocks.DOOR_LIME.get(),
                 block -> createDoorTable(REOBlocks.DOOR_LIME.get()));
@@ -598,13 +598,13 @@ public class REOBlockLootTables extends BlockLootSubProvider {
                 createModLeavesDrops(REOBlocks.LEAVES_MAHOGANY.get(), REOBlocks.SAPLING_MAHOGANY.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         this.add(REOBlocks.SIGN_MAHOGANY.get(), block ->
-                createSingleItemTable(REOItems.SIGN_MAHOGANY.get()));
+                createSingleItemTable(REOItems.MAHOGANY_SIGN.get()));
         this.add(REOBlocks.SIGN_MAHOGANY_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_MAHOGANY.get()));
+                createSingleItemTable(REOItems.MAHOGANY_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_MAHOGANY.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_MAHOGANY.get()));
+                createSingleItemTable(REOItems.MAHOGANY_HANGING_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_MAHOGANY_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_MAHOGANY.get()));
+                createSingleItemTable(REOItems.MAHOGANY_HANGING_SIGN.get()));
 
         this.add(REOBlocks.DOOR_MAHOGANY.get(),
                 block -> createDoorTable(REOBlocks.DOOR_MAHOGANY.get()));
@@ -632,13 +632,13 @@ public class REOBlockLootTables extends BlockLootSubProvider {
                 createModLeavesDrops(REOBlocks.LEAVES_MAPLE.get(), REOBlocks.SAPLING_MAPLE.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         this.add(REOBlocks.SIGN_MAPLE.get(), block ->
-                createSingleItemTable(REOItems.SIGN_MAPLE.get()));
+                createSingleItemTable(REOItems.MAPLE_SIGN.get()));
         this.add(REOBlocks.SIGN_MAPLE_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_MAPLE.get()));
+                createSingleItemTable(REOItems.MAPLE_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_MAPLE.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_MAPLE.get()));
+                createSingleItemTable(REOItems.MAPLE_HANGING_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_MAPLE_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_MAPLE.get()));
+                createSingleItemTable(REOItems.MAPLE_HANGING_SIGN.get()));
 
         this.add(REOBlocks.DOOR_MAPLE.get(),
                 block -> createDoorTable(REOBlocks.DOOR_MAPLE.get()));
@@ -666,13 +666,13 @@ public class REOBlockLootTables extends BlockLootSubProvider {
                 createModLeavesDrops(REOBlocks.LEAVES_PALM.get(), REOBlocks.SAPLING_PALM.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         this.add(REOBlocks.SIGN_PALM.get(), block ->
-                createSingleItemTable(REOItems.SIGN_PALM.get()));
+                createSingleItemTable(REOItems.PALM_SIGN.get()));
         this.add(REOBlocks.SIGN_PALM_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_PALM.get()));
+                createSingleItemTable(REOItems.PALM_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_PALM.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_PALM.get()));
+                createSingleItemTable(REOItems.PALM_HANGING_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_PALM_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_PALM.get()));
+                createSingleItemTable(REOItems.PALM_HANGING_SIGN.get()));
 
         this.add(REOBlocks.DOOR_PALM.get(),
                 block -> createDoorTable(REOBlocks.DOOR_PALM.get()));
@@ -698,16 +698,16 @@ public class REOBlockLootTables extends BlockLootSubProvider {
         this.add(REOBlocks.POTTED_SAPLING_PAPAYA.get(), createPotFlowerItemTable(REOBlocks.SAPLING_PAPAYA.get()));
         this.add(REOBlocks.LEAVES_PAPAYA.get(),
                 createModLeavesDrops(REOBlocks.LEAVES_PAPAYA.get(), REOBlocks.SAPLING_PAPAYA.get(), NORMAL_LEAVES_SAPLING_CHANCES));
-        this.dropOther(REOBlocks.LEAVES_PAPAYA_FRUIT.get(), REOItems.FOOD_PAPAYA.get());
+        this.dropOther(REOBlocks.LEAVES_PAPAYA_FRUIT.get(), REOItems.PAPAYA.get());
 
         this.add(REOBlocks.SIGN_PAPAYA.get(), block ->
-                createSingleItemTable(REOItems.SIGN_PAPAYA.get()));
+                createSingleItemTable(REOItems.PAPAYA_SIGN.get()));
         this.add(REOBlocks.SIGN_PAPAYA_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_PAPAYA.get()));
+                createSingleItemTable(REOItems.PAPAYA_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_PAPAYA.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_PAPAYA.get()));
+                createSingleItemTable(REOItems.PAPAYA_HANGING_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_PAPAYA_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_PAPAYA.get()));
+                createSingleItemTable(REOItems.PAPAYA_HANGING_SIGN.get()));
 
         this.add(REOBlocks.DOOR_PAPAYA.get(),
                 block -> createDoorTable(REOBlocks.DOOR_PAPAYA.get()));
@@ -735,13 +735,13 @@ public class REOBlockLootTables extends BlockLootSubProvider {
                 createModLeavesDrops(REOBlocks.LEAVES_PINE.get(), REOBlocks.SAPLING_PINE.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         this.add(REOBlocks.SIGN_PINE.get(), block ->
-                createSingleItemTable(REOItems.SIGN_PINE.get()));
+                createSingleItemTable(REOItems.PINE_SIGN.get()));
         this.add(REOBlocks.SIGN_PINE_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_PINE.get()));
+                createSingleItemTable(REOItems.PINE_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_PINE.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_PINE.get()));
+                createSingleItemTable(REOItems.PINE_HANGING_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_PINE_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_PINE.get()));
+                createSingleItemTable(REOItems.PINE_HANGING_SIGN.get()));
 
         this.add(REOBlocks.DOOR_PINE.get(),
                 block -> createDoorTable(REOBlocks.DOOR_PINE.get()));
@@ -767,16 +767,16 @@ public class REOBlockLootTables extends BlockLootSubProvider {
         this.add(REOBlocks.POTTED_SAPLING_PLUM.get(), createPotFlowerItemTable(REOBlocks.SAPLING_PLUM.get()));
         this.add(REOBlocks.LEAVES_PLUM.get(),
                 createModLeavesDrops(REOBlocks.LEAVES_PLUM.get(), REOBlocks.SAPLING_PLUM.get(), NORMAL_LEAVES_SAPLING_CHANCES));
-        this.dropOther(REOBlocks.LEAVES_PLUM_FRUIT.get(), REOItems.FOOD_PLUM.get());
+        this.dropOther(REOBlocks.LEAVES_PLUM_FRUIT.get(), REOItems.PLUM.get());
 
         this.add(REOBlocks.SIGN_PLUM.get(), block ->
-                createSingleItemTable(REOItems.SIGN_PLUM.get()));
+                createSingleItemTable(REOItems.PLUM_SIGN.get()));
         this.add(REOBlocks.SIGN_PLUM_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_PLUM.get()));
+                createSingleItemTable(REOItems.PLUM_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_PLUM.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_PLUM.get()));
+                createSingleItemTable(REOItems.PLUM_HANGING_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_PLUM_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_PLUM.get()));
+                createSingleItemTable(REOItems.PLUM_HANGING_SIGN.get()));
 
         this.add(REOBlocks.DOOR_PLUM.get(),
                 block -> createDoorTable(REOBlocks.DOOR_PLUM.get()));
@@ -804,13 +804,13 @@ public class REOBlockLootTables extends BlockLootSubProvider {
                 createModLeavesDrops(REOBlocks.LEAVES_POPLAR.get(), REOBlocks.SAPLING_POPLAR.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         this.add(REOBlocks.SIGN_POPLAR.get(), block ->
-                createSingleItemTable(REOItems.SIGN_POPLAR.get()));
+                createSingleItemTable(REOItems.POPLAR_SIGN.get()));
         this.add(REOBlocks.SIGN_POPLAR_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_POPLAR.get()));
+                createSingleItemTable(REOItems.POPLAR_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_POPLAR.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_POPLAR.get()));
+                createSingleItemTable(REOItems.POPLAR_HANGING_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_POPLAR_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_POPLAR.get()));
+                createSingleItemTable(REOItems.POPLAR_HANGING_SIGN.get()));
 
         this.add(REOBlocks.DOOR_POPLAR.get(),
                 block -> createDoorTable(REOBlocks.DOOR_POPLAR.get()));
@@ -837,13 +837,13 @@ public class REOBlockLootTables extends BlockLootSubProvider {
                 createModLeavesDrops(REOBlocks.LEAVES_REDWOOD.get(), REOBlocks.SAPLING_REDWOOD.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         this.add(REOBlocks.SIGN_REDWOOD.get(), block ->
-                createSingleItemTable(REOItems.SIGN_REDWOOD.get()));
+                createSingleItemTable(REOItems.REDWOOD_SIGN.get()));
         this.add(REOBlocks.SIGN_REDWOOD_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_REDWOOD.get()));
+                createSingleItemTable(REOItems.REDWOOD_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_REDWOOD.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_REDWOOD.get()));
+                createSingleItemTable(REOItems.REDWOOD_HANGING_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_REDWOOD_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_REDWOOD.get()));
+                createSingleItemTable(REOItems.REDWOOD_HANGING_SIGN.get()));
 
         this.add(REOBlocks.DOOR_REDWOOD.get(),
                 block -> createDoorTable(REOBlocks.DOOR_REDWOOD.get()));
@@ -873,13 +873,13 @@ public class REOBlockLootTables extends BlockLootSubProvider {
                 createModLeavesDrops(REOBlocks.LEAVES_RUBBER.get(), REOBlocks.SAPLING_RUBBER.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         this.add(REOBlocks.SIGN_RUBBER.get(), block ->
-                createSingleItemTable(REOItems.SIGN_RUBBER.get()));
+                createSingleItemTable(REOItems.RUBBER_SIGN.get()));
         this.add(REOBlocks.SIGN_RUBBER_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_RUBBER.get()));
+                createSingleItemTable(REOItems.RUBBER_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_RUBBER.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_RUBBER.get()));
+                createSingleItemTable(REOItems.RUBBER_HANGING_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_RUBBER_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_RUBBER.get()));
+                createSingleItemTable(REOItems.RUBBER_HANGING_SIGN.get()));
 
         this.add(REOBlocks.DOOR_RUBBER.get(),
                 block -> createDoorTable(REOBlocks.DOOR_RUBBER.get()));
@@ -907,13 +907,13 @@ public class REOBlockLootTables extends BlockLootSubProvider {
                 createModLeavesDrops(REOBlocks.LEAVES_TEAK.get(), REOBlocks.SAPLING_TEAK.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         this.add(REOBlocks.SIGN_TEAK.get(), block ->
-                createSingleItemTable(REOItems.SIGN_TEAK.get()));
+                createSingleItemTable(REOItems.TEAK_SIGN.get()));
         this.add(REOBlocks.SIGN_TEAK_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_TEAK.get()));
+                createSingleItemTable(REOItems.TEAK_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_TEAK.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_TEAK.get()));
+                createSingleItemTable(REOItems.TEAK_HANGING_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_TEAK_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_TEAK.get()));
+                createSingleItemTable(REOItems.TEAK_HANGING_SIGN.get()));
 
         this.add(REOBlocks.DOOR_TEAK.get(),
                 block -> createDoorTable(REOBlocks.DOOR_TEAK.get()));
@@ -939,16 +939,16 @@ public class REOBlockLootTables extends BlockLootSubProvider {
         this.add(REOBlocks.POTTED_SAPLING_WALNUT.get(), createPotFlowerItemTable(REOBlocks.SAPLING_WALNUT.get()));
         this.add(REOBlocks.LEAVES_WALNUT.get(),
                 createModLeavesDrops(REOBlocks.LEAVES_WALNUT.get(), REOBlocks.SAPLING_WALNUT.get(), NORMAL_LEAVES_SAPLING_CHANCES));
-        this.dropOther(REOBlocks.LEAVES_WALNUT_FRUIT.get(), REOItems.FOOD_WALNUT.get());
+        this.dropOther(REOBlocks.LEAVES_WALNUT_FRUIT.get(), REOItems.WALNUT.get());
 
         this.add(REOBlocks.SIGN_WALNUT.get(), block ->
-                createSingleItemTable(REOItems.SIGN_WALNUT.get()));
+                createSingleItemTable(REOItems.WALNUT_SIGN.get()));
         this.add(REOBlocks.SIGN_WALNUT_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_WALNUT.get()));
+                createSingleItemTable(REOItems.WALNUT_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_WALNUT.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_WALNUT.get()));
+                createSingleItemTable(REOItems.WALNUT_HANGING_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_WALNUT_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_WALNUT.get()));
+                createSingleItemTable(REOItems.WALNUT_HANGING_SIGN.get()));
 
         this.add(REOBlocks.DOOR_WALNUT.get(),
                 block -> createDoorTable(REOBlocks.DOOR_WALNUT.get()));
@@ -976,13 +976,13 @@ public class REOBlockLootTables extends BlockLootSubProvider {
                 createModLeavesDrops(REOBlocks.LEAVES_WILLOW.get(), REOBlocks.SAPLING_WILLOW.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         this.add(REOBlocks.SIGN_WILLOW.get(), block ->
-                createSingleItemTable(REOItems.SIGN_WILLOW.get()));
+                createSingleItemTable(REOItems.WILLOW_SIGN.get()));
         this.add(REOBlocks.SIGN_WILLOW_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_WILLOW.get()));
+                createSingleItemTable(REOItems.WILLOW_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_WILLOW.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_WILLOW.get()));
+                createSingleItemTable(REOItems.WILLOW_HANGING_SIGN.get()));
         this.add(REOBlocks.SIGN_HANGING_WILLOW_WALL.get(), block ->
-                createSingleItemTable(REOItems.SIGN_HANGING_WILLOW.get()));
+                createSingleItemTable(REOItems.WILLOW_HANGING_SIGN.get()));
 
         this.add(REOBlocks.DOOR_WILLOW.get(),
                 block -> createDoorTable(REOBlocks.DOOR_WILLOW.get()));
@@ -1320,19 +1320,19 @@ public class REOBlockLootTables extends BlockLootSubProvider {
 
         // Cluster
         this.add(REOBlocks.CLUSTER_PERIDOT.get(),
-                (block) -> createNetherOreDrops(REOBlocks.CLUSTER_PERIDOT.get(), REOItems.SHARD_PERIDOT.get(), 4f, 4f));
+                (block) -> createNetherOreDrops(REOBlocks.CLUSTER_PERIDOT.get(), REOItems.PERIDOT_SHARD.get(), 4f, 4f));
         this.dropOther(REOBlocks.LARGE_PERIDOT_BUD.get(), Blocks.AIR);
         this.dropOther(REOBlocks.MEDIUM_PERIDOT_BUD.get(), Blocks.AIR);
         this.dropOther(REOBlocks.SMALL_PERIDOT_BUD.get(), Blocks.AIR);
 
         this.add(REOBlocks.CLUSTER_RUBY.get(),
-                (block) -> createNetherOreDrops(REOBlocks.CLUSTER_RUBY.get(), REOItems.SHARD_RUBY.get(), 4f, 4f));
+                (block) -> createNetherOreDrops(REOBlocks.CLUSTER_RUBY.get(), REOItems.RUBY_SHARD.get(), 4f, 4f));
         this.dropOther(REOBlocks.LARGE_RUBY_BUD.get(), Blocks.AIR);
         this.dropOther(REOBlocks.MEDIUM_RUBY_BUD.get(), Blocks.AIR);
         this.dropOther(REOBlocks.SMALL_RUBY_BUD.get(), Blocks.AIR);
 
         this.add(REOBlocks.CLUSTER_SAPPHIRE.get(),
-                (block) -> createNetherOreDrops(REOBlocks.CLUSTER_SAPPHIRE.get(), REOItems.SHARD_SAPPHIRE.get(), 4f, 4f));
+                (block) -> createNetherOreDrops(REOBlocks.CLUSTER_SAPPHIRE.get(), REOItems.SAPPHIRE_SHARD.get(), 4f, 4f));
         this.dropOther(REOBlocks.LARGE_SAPPHIRE_BUD.get(), Blocks.AIR);
         this.dropOther(REOBlocks.MEDIUM_SAPPHIRE_BUD.get(), Blocks.AIR);
         this.dropOther(REOBlocks.SMALL_SAPPHIRE_BUD.get(), Blocks.AIR);
@@ -1389,7 +1389,7 @@ public class REOBlockLootTables extends BlockLootSubProvider {
 
         // Nether Ore
         this.add(REOBlocks.NETHER_ALUMINIUM.get(),
-                (block) -> createNetherOreDrops(block, REOItems.NUGGET_ALUMINIUM.get(), 2F, 6F));
+                (block) -> createNetherOreDrops(block, REOItems.ALUMINUM_NUGGET.get(), 2F, 6F));
         this.add(REOBlocks.NETHER_COAL.get(),
                 (block) -> createNetherOreDrops(block, Items.COAL, 1F, 4F));
         this.add(REOBlocks.NETHER_COPPER.get(),
@@ -1403,19 +1403,19 @@ public class REOBlockLootTables extends BlockLootSubProvider {
         this.add(REOBlocks.NETHER_LAPIS.get(),
                 (block) -> createNetherOreDrops(block, Items.LAPIS_LAZULI, 8F, 18F));
         this.add(REOBlocks.NETHER_LEAD.get(),
-                (block) -> createNetherOreDrops(block, REOItems.NUGGET_LEAD.get(), 2F, 6F));
+                (block) -> createNetherOreDrops(block, REOItems.LEAD_NUGGET.get(), 2F, 6F));
         this.add(REOBlocks.NETHER_NICKEL.get(),
-                (block) -> createNetherOreDrops(block, REOItems.NUGGET_NICKEL.get(), 2F, 6F));
+                (block) -> createNetherOreDrops(block, REOItems.NICKEL_NUGGET.get(), 2F, 6F));
         this.add(REOBlocks.NETHER_PLATINUM.get(),
-                (block) -> createNetherOreDrops(block, REOItems.NUGGET_PLATINUM.get(), 2F, 6F));
+                (block) -> createNetherOreDrops(block, REOItems.PLATINUM_NUGGET.get(), 2F, 6F));
         this.add(REOBlocks.NETHER_REDSTONE.get(),
                 (block) -> createNetherOreDrops(block, Items.REDSTONE, 8F, 10F));
         this.add(REOBlocks.NETHER_SILVER.get(),
-                (block) -> createNetherOreDrops(block, REOItems.NUGGET_SILVER.get(), 2F, 6F));
+                (block) -> createNetherOreDrops(block, REOItems.SILVER_NUGGET.get(), 2F, 6F));
         this.add(REOBlocks.NETHER_TIN.get(),
-                (block) -> createNetherOreDrops(block, REOItems.NUGGET_TIN.get(), 2F, 6F));
+                (block) -> createNetherOreDrops(block, REOItems.TIN_NUGGET.get(), 2F, 6F));
         this.add(REOBlocks.NETHER_ZINC.get(),
-                (block) -> createNetherOreDrops(block, REOItems.NUGGET_ZINC.get(), 2F, 6F));
+                (block) -> createNetherOreDrops(block, REOItems.ZINC_NUGGET.get(), 2F, 6F));
 
         this.add(REOBlocks.NETHER_URANIUM.get(),
                 (block) -> createOreDrop(REOBlocks.NETHER_URANIUM.get(), REOItems.RAW_URANIUM.get()));

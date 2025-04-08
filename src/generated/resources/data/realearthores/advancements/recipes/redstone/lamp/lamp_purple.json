@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_luminous_purple": {
+    "has_purple_luminous": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:luminous_purple"
+              "realearthores:purple_luminous"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_luminous_purple",
+      "has_purple_luminous",
       "has_the_recipe"
     ]
   ],

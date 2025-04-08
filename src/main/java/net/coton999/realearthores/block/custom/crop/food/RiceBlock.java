@@ -24,7 +24,7 @@ public class RiceBlock extends CropBlock {
     @Override
     protected ItemLike getBaseSeedId() {
 
-        return REOItems.SEED_RICE.get();
+        return REOItems.RICE_SEED.get();
     }
 
     @Override

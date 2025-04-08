@@ -3,20 +3,20 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "realearthores:dust_copper"
+      "item": "realearthores:copper_dust"
     },
     {
-      "item": "realearthores:dust_zinc"
+      "item": "realearthores:zinc_dust"
     },
     {
-      "item": "realearthores:dust_zinc"
+      "item": "realearthores:zinc_dust"
     },
     {
-      "item": "realearthores:dust_zinc"
+      "item": "realearthores:zinc_dust"
     }
   ],
   "result": {
     "count": 2,
-    "item": "realearthores:dust_brass"
+    "item": "realearthores:brass_dust"
   }
 }

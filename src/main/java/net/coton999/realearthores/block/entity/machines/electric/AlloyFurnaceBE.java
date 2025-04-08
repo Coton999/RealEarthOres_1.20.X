@@ -56,9 +56,9 @@ public class AlloyFurnaceBE extends BlockEntity implements MenuProvider {
             return switch (slot) {
                 case 0, 1, 2 -> true;
                 case 3 -> false;
-                case 4 -> stack.getItem() == REOItems.CAPACITOR_ULTIMATE.get() ||
-                        stack.getItem() == REOItems.CAPACITOR_ADVANCED.get() ||
-                        stack.getItem() == REOItems.CAPACITOR_BASIC.get();
+                case 4 -> stack.getItem() == REOItems.ULTIMATE_CAPACITOR.get() ||
+                        stack.getItem() == REOItems.ADVANCED_CAPACITOR.get() ||
+                        stack.getItem() == REOItems.BASIC_CAPACITOR.get();
                 default -> super.isItemValid(slot, stack);
             };
         }
@@ -88,11 +88,11 @@ public class AlloyFurnaceBE extends BlockEntity implements MenuProvider {
     private int maxProgress = getMaxProgress();
 
     private int getMaxProgress(){
-        if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.CAPACITOR_ULTIMATE.get()){
+        if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.ULTIMATE_CAPACITOR.get()){
             return 50;
-        } if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.CAPACITOR_ADVANCED.get()) {
+        } if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.ADVANCED_CAPACITOR.get()) {
             return 100;
-        } if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.CAPACITOR_BASIC.get()) {
+        } if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.BASIC_CAPACITOR.get()) {
             return 150;
         } else {
             return 200;
@@ -250,11 +250,11 @@ public class AlloyFurnaceBE extends BlockEntity implements MenuProvider {
     }
 
     private void extractEnergy() {
-        if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.CAPACITOR_ULTIMATE.get()) {
+        if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.ULTIMATE_CAPACITOR.get()) {
             this.ENERGY_STORAGE.extractEnergy(10, false);
-        } if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.CAPACITOR_ADVANCED.get()) {
+        } if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.ADVANCED_CAPACITOR.get()) {
             this.ENERGY_STORAGE.extractEnergy(4, false);
-        } if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.CAPACITOR_BASIC.get()) {
+        } if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.BASIC_CAPACITOR.get()) {
             this.ENERGY_STORAGE.extractEnergy(2, false);
         } else {
             this.ENERGY_STORAGE.extractEnergy(1, false);
@@ -322,22 +322,22 @@ public class AlloyFurnaceBE extends BlockEntity implements MenuProvider {
         Optional<AlloyFurnaceRecipe> recipe = getCurrentRecipe();
         ItemStack resultItem = recipe.get().getResultItem(getLevel().registryAccess());
 
-        if (this.itemHandler.getStackInSlot(INPUT_SLOT_1).getItem() == REOItems.DUST_GOLD.get() ||
+        if (this.itemHandler.getStackInSlot(INPUT_SLOT_1).getItem() == REOItems.GOLD_DUST.get() ||
                 this.itemHandler.getStackInSlot(INPUT_SLOT_1).getItem() == Items.GOLD_INGOT){
             this.itemHandler.extractItem(INPUT_SLOT_1, 2, false);
         } else {
             this.itemHandler.extractItem(INPUT_SLOT_1, 1, false);
         }
 
-        if (this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.DUST_ZINC.get() ||
-                this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.DUST_TIN.get() ||
-                this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.DUST_SILVER.get() ||
-                this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.INGOT_ZINC.get() ||
-                this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.INGOT_TIN.get() ||
-                this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.INGOT_SILVER.get()){
+        if (this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.ZINC_DUST.get() ||
+                this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.TIN_DUST.get() ||
+                this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.SILVER_DUST.get() ||
+                this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.ZINC_INGOT.get() ||
+                this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.TIN_INGOT.get() ||
+                this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.SILVER_INGOT.get()){
         this.itemHandler.extractItem(INPUT_SLOT_2, 2, false);
         }
-        else if (this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.DUST_COAL.get() ||
+        else if (this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.COAL_DUST.get() ||
                 this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == Items.COAL) {
             this.itemHandler.extractItem(INPUT_SLOT_2, 3, false);
         } else {
@@ -377,17 +377,17 @@ public class AlloyFurnaceBE extends BlockEntity implements MenuProvider {
     }
 
     private boolean hasInputsToCraft() {
-        if (this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.DUST_TIN.get() && this.itemHandler.getStackInSlot(INPUT_SLOT_2).getCount() >= 2 ||
-                this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.DUST_ZINC.get() && this.itemHandler.getStackInSlot(INPUT_SLOT_2).getCount() >= 2 ||
-                this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.DUST_COAL.get() && this.itemHandler.getStackInSlot(INPUT_SLOT_2).getCount() >= 3 ||
-                this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.INGOT_TIN.get() && this.itemHandler.getStackInSlot(INPUT_SLOT_2).getCount() >= 2 ||
-                this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.INGOT_ZINC.get() && this.itemHandler.getStackInSlot(INPUT_SLOT_2).getCount() >= 2 ||
+        if (this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.TIN_DUST.get() && this.itemHandler.getStackInSlot(INPUT_SLOT_2).getCount() >= 2 ||
+                this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.ZINC_DUST.get() && this.itemHandler.getStackInSlot(INPUT_SLOT_2).getCount() >= 2 ||
+                this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.COAL_DUST.get() && this.itemHandler.getStackInSlot(INPUT_SLOT_2).getCount() >= 3 ||
+                this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.TIN_INGOT.get() && this.itemHandler.getStackInSlot(INPUT_SLOT_2).getCount() >= 2 ||
+                this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.ZINC_INGOT.get() && this.itemHandler.getStackInSlot(INPUT_SLOT_2).getCount() >= 2 ||
                 this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == Items.COAL && this.itemHandler.getStackInSlot(INPUT_SLOT_2).getCount() >= 3){
             return true;
-        } else return this.itemHandler.getStackInSlot(INPUT_SLOT_1).getItem() == REOItems.DUST_GOLD.get() && this.itemHandler.getStackInSlot(INPUT_SLOT_1).getCount() >= 2 &&
-                        this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.DUST_SILVER.get() && this.itemHandler.getStackInSlot(INPUT_SLOT_2).getCount() >= 2 ||
+        } else return this.itemHandler.getStackInSlot(INPUT_SLOT_1).getItem() == REOItems.GOLD_DUST.get() && this.itemHandler.getStackInSlot(INPUT_SLOT_1).getCount() >= 2 &&
+                        this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.SILVER_DUST.get() && this.itemHandler.getStackInSlot(INPUT_SLOT_2).getCount() >= 2 ||
                 this.itemHandler.getStackInSlot(INPUT_SLOT_1).getItem() == Items.GOLD_INGOT && this.itemHandler.getStackInSlot(INPUT_SLOT_1).getCount() >= 2 &&
-                        this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.INGOT_SILVER.get() && this.itemHandler.getStackInSlot(INPUT_SLOT_2).getCount() >= 2;
+                        this.itemHandler.getStackInSlot(INPUT_SLOT_2).getItem() == REOItems.SILVER_INGOT.get() && this.itemHandler.getStackInSlot(INPUT_SLOT_2).getCount() >= 2;
     }
 
     private Optional<AlloyFurnaceRecipe> getCurrentRecipe() {

@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "realearthores:sign_pine"
+          "name": "realearthores:pine_sign"
         }
       ],
       "rolls": 1.0

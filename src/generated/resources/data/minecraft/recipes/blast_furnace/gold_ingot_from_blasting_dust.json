@@ -8,10 +8,10 @@
       "item": "realearthores:gravel_ore_gold"
     },
     {
-      "item": "realearthores:dust_gold"
+      "item": "realearthores:gold_dust"
     },
     {
-      "item": "realearthores:dirty_gold"
+      "item": "realearthores:gold_dirty"
     }
   ],
   "result": "minecraft:gold_ingot"

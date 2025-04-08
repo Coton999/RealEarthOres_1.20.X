@@ -20,11 +20,11 @@
       "item": "realearthores:raw_aluminium"
     },
     {
-      "item": "realearthores:dust_aluminium"
+      "item": "realearthores:aluminium_dust"
     },
     {
-      "item": "realearthores:dirty_aluminium"
+      "item": "realearthores:aluminium_dirty"
     }
   ],
-  "result": "realearthores:ingot_aluminium"
+  "result": "realearthores:aluminium_ingot"
 }

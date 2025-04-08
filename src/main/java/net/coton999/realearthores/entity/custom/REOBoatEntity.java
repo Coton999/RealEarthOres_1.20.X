@@ -35,26 +35,26 @@ public class REOBoatEntity extends Boat {
     @Override
     public Item getDropItem() {
         return switch (getModVariant()) {
-            case BALSA -> REOItems.BOAT_BALSA.get();
-            case BAOBAB -> REOItems.BOAT_BAOBAB.get();
-            case HILL_CHERRY -> REOItems.BOAT_HILL_CHERRY.get();
+            case BALSA -> REOItems.BALSA_BOAT.get();
+            case BAOBAB -> REOItems.BAOBAB_BOAT.get();
+            case HILL_CHERRY -> REOItems.HILL_CHERRY_BOAT.get();
             case CHESTNUT -> REOItems.BOAT_CHESTNUT.get();
-            case CITRUS -> REOItems.BOAT_CITRUS.get();
-            case EBONY -> REOItems.BOAT_EBONY.get();
-            case LARCH -> REOItems.BOAT_LARCH.get();
-            case LIME -> REOItems.BOAT_LIME.get();
-            case MAHOGANY -> REOItems.BOAT_MAHOGANY.get();
-            case MAPLE -> REOItems.BOAT_MAPLE.get();
-            case PALM -> REOItems.BOAT_PALM.get();
-            case PAPAYA -> REOItems.BOAT_PAPAYA.get();
-            case PINE -> REOItems.BOAT_PINE.get();
-            case PLUM -> REOItems.BOAT_PLUM.get();
-            case POPLAR -> REOItems.BOAT_POPLAR.get();
-            case REDWOOD -> REOItems.BOAT_REDWOOD.get();
-            case RUBBER -> REOItems.BOAT_RUBBER.get();
-            case TEAK -> REOItems.BOAT_TEAK.get();
-            case WALNUT -> REOItems.BOAT_WALNUT.get();
-            case WILLOW -> REOItems.BOAT_WILLOW.get();
+            case CITRUS -> REOItems.CITRUS_BOAT.get();
+            case EBONY -> REOItems.EBONY_BOAT.get();
+            case LARCH -> REOItems.LARCH_BOAT.get();
+            case LIME -> REOItems.LIME_BOAT.get();
+            case MAHOGANY -> REOItems.MAHOGANY_BOAT.get();
+            case MAPLE -> REOItems.MAPLE_BOAT.get();
+            case PALM -> REOItems.PALM_BOAT.get();
+            case PAPAYA -> REOItems.PAPAYA_BOAT.get();
+            case PINE -> REOItems.PINE_BOAT.get();
+            case PLUM -> REOItems.PLUM_BOAT.get();
+            case POPLAR -> REOItems.POPLAR_BOAT.get();
+            case REDWOOD -> REOItems.REDWOOD_BOAT.get();
+            case RUBBER -> REOItems.RUBBER_BOAT.get();
+            case TEAK -> REOItems.TEAK_BOAT.get();
+            case WALNUT -> REOItems.WALNUT_BOAT.get();
+            case WILLOW -> REOItems.WILLOW_BOAT.get();
         };
     }
 

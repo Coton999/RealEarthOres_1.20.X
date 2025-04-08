@@ -23,11 +23,11 @@
                   }
                 }
               ],
-              "name": "realearthores:food_onion"
+              "name": "realearthores:onion"
             },
             {
               "type": "minecraft:item",
-              "name": "realearthores:food_onion"
+              "name": "realearthores:onion"
             }
           ]
         }
@@ -59,7 +59,7 @@
               }
             }
           ],
-          "name": "realearthores:food_onion"
+          "name": "realearthores:onion"
         }
       ],
       "rolls": 1.0

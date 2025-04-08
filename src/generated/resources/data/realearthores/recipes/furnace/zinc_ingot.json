@@ -20,11 +20,11 @@
       "item": "realearthores:raw_zinc"
     },
     {
-      "item": "realearthores:dust_zinc"
+      "item": "realearthores:zinc_dust"
     },
     {
-      "item": "realearthores:dirty_zinc"
+      "item": "realearthores:zinc_dirty"
     }
   ],
-  "result": "realearthores:ingot_zinc"
+  "result": "realearthores:zinc_ingot"
 }

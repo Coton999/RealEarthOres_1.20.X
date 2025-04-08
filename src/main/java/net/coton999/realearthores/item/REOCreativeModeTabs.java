@@ -34,152 +34,152 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                     pOutput.accept(REOItems.RAW_ZINC.get());
 
                     // Ingot
-                    pOutput.accept(REOItems.INGOT_ALUMINIUM.get());
-                    pOutput.accept(REOItems.INGOT_BRASS.get());
-                    pOutput.accept(REOItems.INGOT_BRONZE.get());
-                    pOutput.accept(REOItems.INGOT_ELECTRUM.get());
-                    pOutput.accept(REOItems.INGOT_ENDERITE.get());
-                    pOutput.accept(REOItems.INGOT_LEAD.get());
-                    pOutput.accept(REOItems.INGOT_NICKEL.get());
-                    pOutput.accept(REOItems.INGOT_OBSIDIAN.get());
-                    pOutput.accept(REOItems.INGOT_PLATINUM.get());
-                    pOutput.accept(REOItems.INGOT_SILVER.get());
-                    pOutput.accept(REOItems.INGOT_STEEL.get());
-                    pOutput.accept(REOItems.INGOT_TIN.get());
-                    pOutput.accept(REOItems.INGOT_URANIUM.get());
-                    pOutput.accept(REOItems.INGOT_ZINC.get());
+                    pOutput.accept(REOItems.ALUMINUM_INGOT.get());
+                    pOutput.accept(REOItems.BRASS_INGOT.get());
+                    pOutput.accept(REOItems.BRONZE_INGOT.get());
+                    pOutput.accept(REOItems.ELECTRUM_INGOT.get());
+                    pOutput.accept(REOItems.ENDERITE_INGOT.get());
+                    pOutput.accept(REOItems.LEAD_INGOT.get());
+                    pOutput.accept(REOItems.NICKEL_INGOT.get());
+                    pOutput.accept(REOItems.OBSIDIAN_INGOT.get());
+                    pOutput.accept(REOItems.PLATINUM_INGOT.get());
+                    pOutput.accept(REOItems.SILVER_INGOT.get());
+                    pOutput.accept(REOItems.STEEL_INGOT.get());
+                    pOutput.accept(REOItems.TIN_INGOT.get());
+                    pOutput.accept(REOItems.URANIUM_INGOT.get());
+                    pOutput.accept(REOItems.ZINC_INGOT.get());
 
                     // Gem
-                    pOutput.accept(REOItems.GEM_AMETHYST.get());
-                    pOutput.accept(REOItems.GEM_PERIDOT.get());
-                    pOutput.accept(REOItems.GEM_RUBY.get());
-                    pOutput.accept(REOItems.GEM_SAPPHIRE.get());
+                    pOutput.accept(REOItems.AMETHYST.get());
+                    pOutput.accept(REOItems.PERIDOT.get());
+                    pOutput.accept(REOItems.RUBY.get());
+                    pOutput.accept(REOItems.SAPPHIRE.get());
 
                     // Gem Shards
-                    pOutput.accept(REOItems.SHARD_PERIDOT.get());
-                    pOutput.accept(REOItems.SHARD_RUBY.get());
-                    pOutput.accept(REOItems.SHARD_SAPPHIRE.get());
+                    pOutput.accept(REOItems.PERIDOT_SHARD.get());
+                    pOutput.accept(REOItems.RUBY_SHARD.get());
+                    pOutput.accept(REOItems.SAPPHIRE_SHARD.get());
 
                     // Nugget
-                    pOutput.accept(REOItems.NUGGET_ALUMINIUM.get());
-                    pOutput.accept(REOItems.NUGGET_AMETHYST.get());
-                    pOutput.accept(REOItems.NUGGET_BRASS.get());
-                    pOutput.accept(REOItems.NUGGET_BRONZE.get());
-                    pOutput.accept(REOItems.NUGGET_COPPER.get());
-                    pOutput.accept(REOItems.NUGGET_DIAMOND.get());
-                    pOutput.accept(REOItems.NUGGET_ELECTRUM.get());
-                    pOutput.accept(REOItems.NUGGET_EMERALD.get());
-                    pOutput.accept(REOItems.NUGGET_ENDERITE.get());
-                    pOutput.accept(REOItems.NUGGET_LEAD.get());
-                    pOutput.accept(REOItems.NUGGET_NETHERITE.get());
-                    pOutput.accept(REOItems.NUGGET_NICKEL.get());
-                    pOutput.accept(REOItems.NUGGET_PERIDOT.get());
-                    pOutput.accept(REOItems.NUGGET_PLATINUM.get());
-                    pOutput.accept(REOItems.NUGGET_RUBY.get());
-                    pOutput.accept(REOItems.NUGGET_SAPPHIRE.get());
-                    pOutput.accept(REOItems.NUGGET_SILVER.get());
-                    pOutput.accept(REOItems.NUGGET_STEEL.get());
-                    pOutput.accept(REOItems.NUGGET_TIN.get());
-                    pOutput.accept(REOItems.NUGGET_ZINC.get());
+                    pOutput.accept(REOItems.ALUMINUM_NUGGET.get());
+                    pOutput.accept(REOItems.AMETHYST_NUGGET.get());
+                    pOutput.accept(REOItems.BRASS_NUGGET.get());
+                    pOutput.accept(REOItems.BRONZE_NUGGET.get());
+                    pOutput.accept(REOItems.COPPER_NUGGET.get());
+                    pOutput.accept(REOItems.DIAMOND_NUGGET.get());
+                    pOutput.accept(REOItems.ELECTRUM_NUGGET.get());
+                    pOutput.accept(REOItems.EMERALD_NUGGET.get());
+                    pOutput.accept(REOItems.ENDERITE_NUGGET.get());
+                    pOutput.accept(REOItems.LEAD_NUGGET.get());
+                    pOutput.accept(REOItems.NETHERITE_NUGGET.get());
+                    pOutput.accept(REOItems.NICKEL_NUGGET.get());
+                    pOutput.accept(REOItems.PERIDOT_NUGGET.get());
+                    pOutput.accept(REOItems.PLATINUM_NUGGET.get());
+                    pOutput.accept(REOItems.RUBY_NUGGET.get());
+                    pOutput.accept(REOItems.SAPPHIRE_NUGGET.get());
+                    pOutput.accept(REOItems.SILVER_NUGGET.get());
+                    pOutput.accept(REOItems.STEEL_NUGGET.get());
+                    pOutput.accept(REOItems.TIN_NUGGET.get());
+                    pOutput.accept(REOItems.ZINC_NUGGET.get());
 
                     // Dust
-                    pOutput.accept(REOItems.DUST_ALUMINIUM.get());
-                    pOutput.accept(REOItems.DUST_AMETHYST.get());
-                    pOutput.accept(REOItems.DUST_BRASS.get());
-                    pOutput.accept(REOItems.DUST_BRONZE.get());
-                    pOutput.accept(REOItems.DUST_CHARCOAL.get());
-                    pOutput.accept(REOItems.DUST_COAL.get());
-                    pOutput.accept(REOItems.DUST_COPPER.get());
-                    pOutput.accept(REOItems.DUST_DIAMOND.get());
-                    pOutput.accept(REOItems.DUST_ELECTRUM.get());
-                    pOutput.accept(REOItems.DUST_EMERALD.get());
-                    pOutput.accept(REOItems.DUST_ENDERITE.get());
-                    pOutput.accept(REOItems.DUST_GOLD.get());
-                    pOutput.accept(REOItems.DUST_IRON.get());
-                    pOutput.accept(REOItems.DUST_LEAD.get());
-                    pOutput.accept(REOItems.DUST_NETHERITE.get());
-                    pOutput.accept(REOItems.DUST_NICKEL.get());
-                    pOutput.accept(REOItems.DUST_OBSIDIAN.get());
-                    pOutput.accept(REOItems.DUST_PERIDOT.get());
-                    pOutput.accept(REOItems.DUST_PLATINUM.get());
-                    pOutput.accept(REOItems.DUST_RUBY.get());
-                    pOutput.accept(REOItems.DUST_SAPPHIRE.get());
-                    pOutput.accept(REOItems.DUST_SILVER.get());
-                    pOutput.accept(REOItems.DUST_STEEL.get());
-                    pOutput.accept(REOItems.DUST_TIN.get());
-                    pOutput.accept(REOItems.DUST_URANIUM.get());
-                    pOutput.accept(REOItems.DUST_ZINC.get());
+                    pOutput.accept(REOItems.ALUMINUM_DUST.get());
+                    pOutput.accept(REOItems.AMETHYST_DUST.get());
+                    pOutput.accept(REOItems.BRASS_DUST.get());
+                    pOutput.accept(REOItems.BRONZE_DUST.get());
+                    pOutput.accept(REOItems.CHARCOAL_DUST.get());
+                    pOutput.accept(REOItems.COAL_DUST.get());
+                    pOutput.accept(REOItems.COPPER_DUST.get());
+                    pOutput.accept(REOItems.DIAMOND_DUST.get());
+                    pOutput.accept(REOItems.ELECTRUM_DUST.get());
+                    pOutput.accept(REOItems.EMERALD_DUST.get());
+                    pOutput.accept(REOItems.ENDERITE_DUST.get());
+                    pOutput.accept(REOItems.GOLD_DUST.get());
+                    pOutput.accept(REOItems.IRON_DUST.get());
+                    pOutput.accept(REOItems.LEAD_DUST.get());
+                    pOutput.accept(REOItems.NETHERITE_DUST.get());
+                    pOutput.accept(REOItems.NICKEL_DUST.get());
+                    pOutput.accept(REOItems.OBSIDIAN_DUST.get());
+                    pOutput.accept(REOItems.PERIDOT_DUST.get());
+                    pOutput.accept(REOItems.PLATINUM_DUST.get());
+                    pOutput.accept(REOItems.RUBY_DUST.get());
+                    pOutput.accept(REOItems.SAPPHIRE_DUST.get());
+                    pOutput.accept(REOItems.SILVER_DUST.get());
+                    pOutput.accept(REOItems.STEEL_DUST.get());
+                    pOutput.accept(REOItems.TIN_DUST.get());
+                    pOutput.accept(REOItems.URANIUM_DUST.get());
+                    pOutput.accept(REOItems.ZINC_DUST.get());
 
                     // Dirty Dust
-                    pOutput.accept(REOItems.DIRTY_ALUMINIUM.get());
-                    pOutput.accept(REOItems.DIRTY_AMETHYST.get());
-                    pOutput.accept(REOItems.DIRTY_BRASS.get());
-                    pOutput.accept(REOItems.DIRTY_BRONZE.get());
-                    pOutput.accept(REOItems.DIRTY_COPPER.get());
-                    pOutput.accept(REOItems.DIRTY_DIAMOND.get());
-                    pOutput.accept(REOItems.DIRTY_ELECTRUM.get());
-                    pOutput.accept(REOItems.DIRTY_EMERALD.get());
-                    pOutput.accept(REOItems.DIRTY_ENDERITE.get());
-                    pOutput.accept(REOItems.DIRTY_GOLD.get());
-                    pOutput.accept(REOItems.DIRTY_IRON.get());
-                    pOutput.accept(REOItems.DIRTY_LEAD.get());
-                    pOutput.accept(REOItems.DIRTY_NETHERITE.get());
-                    pOutput.accept(REOItems.DIRTY_NICKEL.get());
-                    pOutput.accept(REOItems.DIRTY_OBSIDIAN.get());
-                    pOutput.accept(REOItems.DIRTY_PERIDOT.get());
-                    pOutput.accept(REOItems.DIRTY_PLATINUM.get());
-                    pOutput.accept(REOItems.DIRTY_RUBY.get());
-                    pOutput.accept(REOItems.DIRTY_SAPPHIRE.get());
-                    pOutput.accept(REOItems.DIRTY_SILVER.get());
-                    pOutput.accept(REOItems.DIRTY_STEEL.get());
-                    pOutput.accept(REOItems.DIRTY_TIN.get());
-                    pOutput.accept(REOItems.DIRTY_URANIUM.get());
-                    pOutput.accept(REOItems.DIRTY_ZINC.get());
+                    pOutput.accept(REOItems.ALUMINUM_DIRTY.get());
+                    pOutput.accept(REOItems.AMETHYST_DIRTY.get());
+                    pOutput.accept(REOItems.BRASS_DIRTY.get());
+                    pOutput.accept(REOItems.BRONZE_DIRTY.get());
+                    pOutput.accept(REOItems.COPPER_DIRTY.get());
+                    pOutput.accept(REOItems.DIAMOND_DIRTY.get());
+                    pOutput.accept(REOItems.ELECTRUM_DIRTY.get());
+                    pOutput.accept(REOItems.EMERALD_DIRTY.get());
+                    pOutput.accept(REOItems.ENDERITE_DIRTY.get());
+                    pOutput.accept(REOItems.GOLD_DIRTY.get());
+                    pOutput.accept(REOItems.IRON_DIRTY.get());
+                    pOutput.accept(REOItems.LEAD_DIRTY.get());
+                    pOutput.accept(REOItems.NETHERITE_DIRTY.get());
+                    pOutput.accept(REOItems.NICKEL_DIRTY.get());
+                    pOutput.accept(REOItems.OBSIDIAN_DIRTY.get());
+                    pOutput.accept(REOItems.PERIDOT_DIRTY.get());
+                    pOutput.accept(REOItems.PLATINUM_DIRTY.get());
+                    pOutput.accept(REOItems.RUBY_DIRTY.get());
+                    pOutput.accept(REOItems.SAPPHIRE_DIRTY.get());
+                    pOutput.accept(REOItems.SILVER_DIRTY.get());
+                    pOutput.accept(REOItems.STEEL_DIRTY.get());
+                    pOutput.accept(REOItems.TIN_DIRTY.get());
+                    pOutput.accept(REOItems.URANIUM_DIRTY.get());
+                    pOutput.accept(REOItems.ZINC_DIRTY.get());
 
                     // Bucket
-                    pOutput.accept(REOItems.BUCKET_MOLTEN_ALUMINIUM.get());
-                    pOutput.accept(REOItems.BUCKET_MOLTEN_AMETHYST.get());
-                    pOutput.accept(REOItems.BUCKET_MOLTEN_BRASS.get());
-                    pOutput.accept(REOItems.BUCKET_MOLTEN_BRONZE.get());
-                    pOutput.accept(REOItems.BUCKET_MOLTEN_COAL.get());
-                    pOutput.accept(REOItems.BUCKET_MOLTEN_COPPER.get());
-                    pOutput.accept(REOItems.BUCKET_MOLTEN_DIAMOND.get());
-                    pOutput.accept(REOItems.BUCKET_MOLTEN_ELECTRUM.get());
-                    pOutput.accept(REOItems.BUCKET_MOLTEN_EMERALD.get());
-                    pOutput.accept(REOItems.BUCKET_MOLTEN_ENDERITE.get());
-                    pOutput.accept(REOItems.BUCKET_MOLTEN_GOLD.get());
-                    pOutput.accept(REOItems.BUCKET_MOLTEN_IRON.get());
-                    pOutput.accept(REOItems.BUCKET_MOLTEN_LAPIS.get());
-                    pOutput.accept(REOItems.BUCKET_MOLTEN_LEAD.get());
-                    pOutput.accept(REOItems.BUCKET_MOLTEN_NICKEL.get());
-                    pOutput.accept(REOItems.BUCKET_MOLTEN_PERIDOT.get());
-                    pOutput.accept(REOItems.BUCKET_MOLTEN_PLATINUM.get());
-                    pOutput.accept(REOItems.BUCKET_MOLTEN_REDSTONE.get());
-                    pOutput.accept(REOItems.BUCKET_MOLTEN_RUBY.get());
-                    pOutput.accept(REOItems.BUCKET_MOLTEN_SAPPHIRE.get());
-                    pOutput.accept(REOItems.BUCKET_MOLTEN_SILVER.get());
-                    pOutput.accept(REOItems.BUCKET_MOLTEN_STEEL.get());
-                    pOutput.accept(REOItems.BUCKET_MOLTEN_TIN.get());
-                    pOutput.accept(REOItems.BUCKET_MOLTEN_URANIUM.get());
-                    pOutput.accept(REOItems.BUCKET_MOLTEN_ZINC.get());
+                    pOutput.accept(REOItems.ALUMINUM_BUCKET.get());
+                    pOutput.accept(REOItems.AMETHYST_BUCKET.get());
+                    pOutput.accept(REOItems.BRASS_BUCKET.get());
+                    pOutput.accept(REOItems.BRONZE_BUCKET.get());
+                    pOutput.accept(REOItems.COAL_BUCKET.get());
+                    pOutput.accept(REOItems.COPPER_BUCKET.get());
+                    pOutput.accept(REOItems.DIAMOND_BUCKET.get());
+                    pOutput.accept(REOItems.ELECTRUM_BUCKET.get());
+                    pOutput.accept(REOItems.EMERALD_BUCKET.get());
+                    pOutput.accept(REOItems.ENDERITE_BUCKET.get());
+                    pOutput.accept(REOItems.GOLD_BUCKET.get());
+                    pOutput.accept(REOItems.IRON_BUCKET.get());
+                    pOutput.accept(REOItems.LAPIS_BUCKET.get());
+                    pOutput.accept(REOItems.LEAD_BUCKET.get());
+                    pOutput.accept(REOItems.NICKEL_BUCKET.get());
+                    pOutput.accept(REOItems.PERIDOT_BUCKET.get());
+                    pOutput.accept(REOItems.PLATINUM_BUCKET.get());
+                    pOutput.accept(REOItems.REDSTONE_BUCKET.get());
+                    pOutput.accept(REOItems.RUBY_BUCKET.get());
+                    pOutput.accept(REOItems.SAPPHIRE_BUCKET.get());
+                    pOutput.accept(REOItems.SILVER_BUCKET.get());
+                    pOutput.accept(REOItems.STEEL_BUCKET.get());
+                    pOutput.accept(REOItems.TIN_BUCKET.get());
+                    pOutput.accept(REOItems.URANIUM_BUCKET.get());
+                    pOutput.accept(REOItems.ZINC_BUCKET.get());
 
                     // Luminous Powder
-                    pOutput.accept(REOItems.LUMINOUS_BLACK.get());
-                    pOutput.accept(REOItems.LUMINOUS_BLUE.get());
-                    pOutput.accept(REOItems.LUMINOUS_BROWN.get());
-                    pOutput.accept(REOItems.LUMINOUS_CYAN.get());
-                    pOutput.accept(REOItems.LUMINOUS_GRAY.get());
-                    pOutput.accept(REOItems.LUMINOUS_GREEN.get());
-                    pOutput.accept(REOItems.LUMINOUS_LIGHTBLUE.get());
-                    pOutput.accept(REOItems.LUMINOUS_LIGHTGRAY.get());
-                    pOutput.accept(REOItems.LUMINOUS_LIME.get());
-                    pOutput.accept(REOItems.LUMINOUS_MAGENTA.get());
-                    pOutput.accept(REOItems.LUMINOUS_ORANGE.get());
-                    pOutput.accept(REOItems.LUMINOUS_PINK.get());
-                    pOutput.accept(REOItems.LUMINOUS_PURPLE.get());
-                    pOutput.accept(REOItems.LUMINOUS_RED.get());
-                    pOutput.accept(REOItems.LUMINOUS_WHITE.get());
-                    pOutput.accept(REOItems.LUMINOUS_YELLOW.get());
+                    pOutput.accept(REOItems.BLACK_LUMINOUS.get());
+                    pOutput.accept(REOItems.BLUE_LUMINOUS.get());
+                    pOutput.accept(REOItems.BROWN_LUMINOUS.get());
+                    pOutput.accept(REOItems.CYAN_LUMINOUS.get());
+                    pOutput.accept(REOItems.GRAY_LUMINOUS.get());
+                    pOutput.accept(REOItems.GREEN_LUMINOUS.get());
+                    pOutput.accept(REOItems.LIGHT_BLUE_LUMINOUS.get());
+                    pOutput.accept(REOItems.LIGHT_GRAY_LUMINOUS.get());
+                    pOutput.accept(REOItems.LIME_LUMINOUS.get());
+                    pOutput.accept(REOItems.MAGENTA_LUMINOUS.get());
+                    pOutput.accept(REOItems.ORANGE_LUMINOUS.get());
+                    pOutput.accept(REOItems.PINK_LUMINOUS.get());
+                    pOutput.accept(REOItems.PURPLE_LUMINOUS.get());
+                    pOutput.accept(REOItems.RED_LUMINOUS.get());
+                    pOutput.accept(REOItems.WHITE_LUMINOUS.get());
+                    pOutput.accept(REOItems.YELLOW_LUMINOUS.get());
 
                     // Tech //
                     // Misc
@@ -188,57 +188,57 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                     pOutput.accept(REOItems.RUBBER.get());
 
                     // Gear
-                    pOutput.accept(REOItems.GEAR_ALUMINIUM.get());
-                    pOutput.accept(REOItems.GEAR_AMETHYST.get());
-                    pOutput.accept(REOItems.GEAR_BRASS.get());
-                    pOutput.accept(REOItems.GEAR_BRONZE.get());
-                    pOutput.accept(REOItems.GEAR_COPPER.get());
-                    pOutput.accept(REOItems.GEAR_DIAMOND.get());
-                    pOutput.accept(REOItems.GEAR_ELECTRUM.get());
-                    pOutput.accept(REOItems.GEAR_EMERALD.get());
-                    pOutput.accept(REOItems.GEAR_ENDERITE.get());
-                    pOutput.accept(REOItems.GEAR_GOLDEN.get());
-                    pOutput.accept(REOItems.GEAR_IRON.get());
-                    pOutput.accept(REOItems.GEAR_LEAD.get());
-                    pOutput.accept(REOItems.GEAR_NICKEL.get());
-                    pOutput.accept(REOItems.GEAR_PLATINUM.get());
-                    pOutput.accept(REOItems.GEAR_PERIDOT.get());
-                    pOutput.accept(REOItems.GEAR_RUBY.get());
-                    pOutput.accept(REOItems.GEAR_SAPPHIRE.get());
-                    pOutput.accept(REOItems.GEAR_SILVER.get());
-                    pOutput.accept(REOItems.GEAR_STEEL.get());
-                    pOutput.accept(REOItems.GEAR_STONE.get());
-                    pOutput.accept(REOItems.GEAR_TIN.get());
-                    pOutput.accept(REOItems.GEAR_WOODEN.get());
-                    pOutput.accept(REOItems.GEAR_ZINC.get());
+                    pOutput.accept(REOItems.ALUMINUM_GEAR.get());
+                    pOutput.accept(REOItems.AMETHYST_GEAR.get());
+                    pOutput.accept(REOItems.BRASS_GEAR.get());
+                    pOutput.accept(REOItems.BRONZE_GEAR.get());
+                    pOutput.accept(REOItems.COPPER_GEAR.get());
+                    pOutput.accept(REOItems.DIAMOND_GEAR.get());
+                    pOutput.accept(REOItems.ELECTRUM_GEAR.get());
+                    pOutput.accept(REOItems.EMERALD_GEAR.get());
+                    pOutput.accept(REOItems.ENDERITE_GEAR.get());
+                    pOutput.accept(REOItems.GOLD_GERAR.get());
+                    pOutput.accept(REOItems.IRON_GEAR.get());
+                    pOutput.accept(REOItems.LEAD_GEAR.get());
+                    pOutput.accept(REOItems.NICKEL_GEAR.get());
+                    pOutput.accept(REOItems.PLATINUM_GEAR.get());
+                    pOutput.accept(REOItems.PERIDOT_GEAR.get());
+                    pOutput.accept(REOItems.RUBY_GEAR.get());
+                    pOutput.accept(REOItems.SAPPHIRE_GEAR.get());
+                    pOutput.accept(REOItems.SILVER_GEAR.get());
+                    pOutput.accept(REOItems.STEEL_GEAR.get());
+                    pOutput.accept(REOItems.STONE_GEAR.get());
+                    pOutput.accept(REOItems.TIN_GEAR.get());
+                    pOutput.accept(REOItems.WOOD_GEAR.get());
+                    pOutput.accept(REOItems.ZINC_GEAR.get());
 
                     // Plate
-                    pOutput.accept(REOItems.PLATE_ALUMINIUM.get());
-                    pOutput.accept(REOItems.PLATE_AMETHYST.get());
-                    pOutput.accept(REOItems.PLATE_BRASS.get());
-                    pOutput.accept(REOItems.PLATE_BRONZE.get());
-                    pOutput.accept(REOItems.PLATE_COPPER.get());
-                    pOutput.accept(REOItems.PLATE_DIAMOND.get());
-                    pOutput.accept(REOItems.PLATE_ELECTRUM.get());
-                    pOutput.accept(REOItems.PLATE_EMERALD.get());
-                    pOutput.accept(REOItems.PLATE_ENDERITE.get());
-                    pOutput.accept(REOItems.PLATE_GOLDEN.get());
-                    pOutput.accept(REOItems.PLATE_IRON.get());
-                    pOutput.accept(REOItems.PLATE_LEAD.get());
-                    pOutput.accept(REOItems.PLATE_NICKEL.get());
-                    pOutput.accept(REOItems.PLATE_PLATINUM.get());
-                    pOutput.accept(REOItems.PLATE_PERIDOT.get());
-                    pOutput.accept(REOItems.PLATE_RUBY.get());
-                    pOutput.accept(REOItems.PLATE_SAPPHIRE.get());
-                    pOutput.accept(REOItems.PLATE_SILVER.get());
-                    pOutput.accept(REOItems.PLATE_STEEL.get());
-                    pOutput.accept(REOItems.PLATE_TIN.get());
-                    pOutput.accept(REOItems.PLATE_ZINC.get());
+                    pOutput.accept(REOItems.ALUMINUM_PLATE.get());
+                    pOutput.accept(REOItems.AMETHYST_PLATE.get());
+                    pOutput.accept(REOItems.BRASS_PALTE.get());
+                    pOutput.accept(REOItems.BRONZE_PLATE.get());
+                    pOutput.accept(REOItems.COPPER_PALTE.get());
+                    pOutput.accept(REOItems.DIAMOND_PLATE.get());
+                    pOutput.accept(REOItems.ELECTRUM_PLATE.get());
+                    pOutput.accept(REOItems.EMERALD_PLATE.get());
+                    pOutput.accept(REOItems.ENDERITE_PLATE.get());
+                    pOutput.accept(REOItems.GOLD_PLATE.get());
+                    pOutput.accept(REOItems.IRON_PLATE.get());
+                    pOutput.accept(REOItems.LEAD_PLATE.get());
+                    pOutput.accept(REOItems.NICKEL_PLATE.get());
+                    pOutput.accept(REOItems.PLATINUM_PLATE.get());
+                    pOutput.accept(REOItems.PERIDOT_PLATE.get());
+                    pOutput.accept(REOItems.RUBY_PLATE.get());
+                    pOutput.accept(REOItems.SAPPHIRE_PLATE.get());
+                    pOutput.accept(REOItems.SILVER_PLATE.get());
+                    pOutput.accept(REOItems.STEEL_PLATE.get());
+                    pOutput.accept(REOItems.TIN_PLATE.get());
+                    pOutput.accept(REOItems.ZINC_PLATE.get());
 
                     // Capcitor
-                    pOutput.accept(REOItems.CAPACITOR_BASIC.get());
-                    pOutput.accept(REOItems.CAPACITOR_ADVANCED.get());
-                    pOutput.accept(REOItems.CAPACITOR_ULTIMATE.get());
+                    pOutput.accept(REOItems.BASIC_CAPACITOR.get());
+                    pOutput.accept(REOItems.ADVANCED_CAPACITOR.get());
+                    pOutput.accept(REOItems.ULTIMATE_CAPACITOR.get());
 
 
                 })
@@ -457,8 +457,8 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
 
                         pOutput.accept(REOBlocks.SIGN_BALSA.get());
                         pOutput.accept(REOBlocks.SIGN_HANGING_BALSA.get());
-                        pOutput.accept(REOItems.BOAT_BALSA.get());
-                        pOutput.accept(REOItems.BOAT_BALSA_CHEST.get());
+                        pOutput.accept(REOItems.BALSA_BOAT.get());
+                        pOutput.accept(REOItems.BALSA_CHEST_BOAT.get());
 
                         pOutput.accept(REOBlocks.DOOR_BALSA.get());
                         pOutput.accept(REOBlocks.TRAPDOOR_BALSA.get());
@@ -493,8 +493,8 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.SIGN_BAOBAB.get());
                         pOutput.accept(REOBlocks.SIGN_HANGING_BAOBAB.get());
 
-                        pOutput.accept(REOItems.BOAT_BAOBAB.get());
-                        pOutput.accept(REOItems.BOAT_BAOBAB_CHEST.get());
+                        pOutput.accept(REOItems.BAOBAB_BOAT.get());
+                        pOutput.accept(REOItems.BAOBAB_CHEST_BOAT.get());
 
                         pOutput.accept(REOBlocks.DOOR_BAOBAB.get());
                         pOutput.accept(REOBlocks.TRAPDOOR_BAOBAB.get());
@@ -529,8 +529,8 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.SIGN_HILL_CHERRY.get());
                         pOutput.accept(REOBlocks.SIGN_HANGING_HILL_CHERRY.get());
 
-                        pOutput.accept(REOItems.BOAT_HILL_CHERRY.get());
-                        pOutput.accept(REOItems.BOAT_HILL_CHERRY_CHEST.get());
+                        pOutput.accept(REOItems.HILL_CHERRY_BOAT.get());
+                        pOutput.accept(REOItems.HILL_CHERRY_CHEST_BOAT.get());
 
                         pOutput.accept(REOBlocks.DOOR_HILL_CHERRY.get());
                         pOutput.accept(REOBlocks.TRAPDOOR_HILL_CHERRY.get());
@@ -566,7 +566,7 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.SIGN_HANGING_CHESTNUT.get());
 
                         pOutput.accept(REOItems.BOAT_CHESTNUT.get());
-                        pOutput.accept(REOItems.BOAT_CHESTNUT_CHEST.get());
+                        pOutput.accept(REOItems.CHESTNUT_CHEST_BOAT.get());
 
                         pOutput.accept(REOBlocks.DOOR_CHESTNUT.get());
                         pOutput.accept(REOBlocks.TRAPDOOR_CHESTNUT.get());
@@ -601,8 +601,8 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.SIGN_CITRUS.get());
                         pOutput.accept(REOBlocks.SIGN_HANGING_CITRUS.get());
 
-                        pOutput.accept(REOItems.BOAT_CITRUS.get());
-                        pOutput.accept(REOItems.BOAT_CITRUS_CHEST.get());
+                        pOutput.accept(REOItems.CITRUS_BOAT.get());
+                        pOutput.accept(REOItems.CITRUS_CHEST_BOAT.get());
 
                         pOutput.accept(REOBlocks.DOOR_CITRUS.get());
                         pOutput.accept(REOBlocks.TRAPDOOR_CITRUS.get());
@@ -637,8 +637,8 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.SIGN_EBONY.get());
                         pOutput.accept(REOBlocks.SIGN_HANGING_EBONY.get());
 
-                        pOutput.accept(REOItems.BOAT_EBONY.get());
-                        pOutput.accept(REOItems.BOAT_EBONY_CHEST.get());
+                        pOutput.accept(REOItems.EBONY_BOAT.get());
+                        pOutput.accept(REOItems.EBONY_CHEST_BOAT.get());
 
                         pOutput.accept(REOBlocks.DOOR_EBONY.get());
                         pOutput.accept(REOBlocks.TRAPDOOR_EBONY.get());
@@ -673,8 +673,8 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.SIGN_LARCH.get());
                         pOutput.accept(REOBlocks.SIGN_HANGING_LARCH.get());
 
-                        pOutput.accept(REOItems.BOAT_LARCH.get());
-                        pOutput.accept(REOItems.BOAT_LARCH_CHEST.get());
+                        pOutput.accept(REOItems.LARCH_BOAT.get());
+                        pOutput.accept(REOItems.LARCH_CHEST_BOAT.get());
 
                         pOutput.accept(REOBlocks.DOOR_LARCH.get());
                         pOutput.accept(REOBlocks.TRAPDOOR_LARCH.get());
@@ -709,8 +709,8 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.SIGN_LIME.get());
                         pOutput.accept(REOBlocks.SIGN_HANGING_LIME.get());
 
-                        pOutput.accept(REOItems.BOAT_LIME.get());
-                        pOutput.accept(REOItems.BOAT_LIME_CHEST.get());
+                        pOutput.accept(REOItems.LIME_BOAT.get());
+                        pOutput.accept(REOItems.LIME_CHEST_BOAT.get());
 
                         pOutput.accept(REOBlocks.DOOR_LIME.get());
                         pOutput.accept(REOBlocks.TRAPDOOR_LIME.get());
@@ -745,8 +745,8 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.SIGN_MAHOGANY.get());
                         pOutput.accept(REOBlocks.SIGN_HANGING_MAHOGANY.get());
 
-                        pOutput.accept(REOItems.BOAT_MAHOGANY.get());
-                        pOutput.accept(REOItems.BOAT_MAHOGANY_CHEST.get());
+                        pOutput.accept(REOItems.MAHOGANY_BOAT.get());
+                        pOutput.accept(REOItems.MAHOGANY_CHEST_BOAT.get());
 
                         pOutput.accept(REOBlocks.DOOR_MAHOGANY.get());
                         pOutput.accept(REOBlocks.TRAPDOOR_MAHOGANY.get());
@@ -781,8 +781,8 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.SIGN_MAPLE.get());
                         pOutput.accept(REOBlocks.SIGN_HANGING_MAPLE.get());
 
-                        pOutput.accept(REOItems.BOAT_MAPLE.get());
-                        pOutput.accept(REOItems.BOAT_MAPLE_CHEST.get());
+                        pOutput.accept(REOItems.MAPLE_BOAT.get());
+                        pOutput.accept(REOItems.MAPLE_CHEST_BOAT.get());
 
                         pOutput.accept(REOBlocks.DOOR_MAPLE.get());
                         pOutput.accept(REOBlocks.TRAPDOOR_MAPLE.get());
@@ -817,8 +817,8 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.SIGN_PALM.get());
                         pOutput.accept(REOBlocks.SIGN_HANGING_PALM.get());
 
-                        pOutput.accept(REOItems.BOAT_PALM.get());
-                        pOutput.accept(REOItems.BOAT_PALM_CHEST.get());
+                        pOutput.accept(REOItems.PALM_BOAT.get());
+                        pOutput.accept(REOItems.PALM_CHEST_BOAT.get());
 
                         pOutput.accept(REOBlocks.DOOR_PALM.get());
                         pOutput.accept(REOBlocks.TRAPDOOR_PALM.get());
@@ -853,8 +853,8 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.SIGN_PAPAYA.get());
                         pOutput.accept(REOBlocks.SIGN_HANGING_PAPAYA.get());
 
-                        pOutput.accept(REOItems.BOAT_PAPAYA.get());
-                        pOutput.accept(REOItems.BOAT_PAPAYA_CHEST.get());
+                        pOutput.accept(REOItems.PAPAYA_BOAT.get());
+                        pOutput.accept(REOItems.PAPAYA_CHEST_BOAT.get());
 
                         pOutput.accept(REOBlocks.DOOR_PAPAYA.get());
                         pOutput.accept(REOBlocks.TRAPDOOR_PAPAYA.get());
@@ -889,8 +889,8 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.SIGN_PINE.get());
                         pOutput.accept(REOBlocks.SIGN_HANGING_PINE.get());
 
-                        pOutput.accept(REOItems.BOAT_PINE.get());
-                        pOutput.accept(REOItems.BOAT_PINE_CHEST.get());
+                        pOutput.accept(REOItems.PINE_BOAT.get());
+                        pOutput.accept(REOItems.PINE_CHEST_BOAT.get());
 
                         pOutput.accept(REOBlocks.DOOR_PINE.get());
                         pOutput.accept(REOBlocks.TRAPDOOR_PINE.get());
@@ -925,8 +925,8 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.SIGN_PLUM.get());
                         pOutput.accept(REOBlocks.SIGN_HANGING_PLUM.get());
 
-                        pOutput.accept(REOItems.BOAT_PLUM.get());
-                        pOutput.accept(REOItems.BOAT_PLUM_CHEST.get());
+                        pOutput.accept(REOItems.PLUM_BOAT.get());
+                        pOutput.accept(REOItems.PLUM_CHEST_BOAT.get());
 
                         pOutput.accept(REOBlocks.DOOR_PLUM.get());
                         pOutput.accept(REOBlocks.TRAPDOOR_PLUM.get());
@@ -961,8 +961,8 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.SIGN_POPLAR.get());
                         pOutput.accept(REOBlocks.SIGN_HANGING_POPLAR.get());
 
-                        pOutput.accept(REOItems.BOAT_POPLAR.get());
-                        pOutput.accept(REOItems.BOAT_POPLAR_CHEST.get());
+                        pOutput.accept(REOItems.POPLAR_BOAT.get());
+                        pOutput.accept(REOItems.POPLAR_CHEST_BOAT.get());
 
                         pOutput.accept(REOBlocks.DOOR_POPLAR.get());
                         pOutput.accept(REOBlocks.TRAPDOOR_POPLAR.get());
@@ -997,8 +997,8 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.SIGN_REDWOOD.get());
                         pOutput.accept(REOBlocks.SIGN_HANGING_REDWOOD.get());
 
-                        pOutput.accept(REOItems.BOAT_REDWOOD.get());
-                        pOutput.accept(REOItems.BOAT_REDWOOD_CHEST.get());
+                        pOutput.accept(REOItems.REDWOOD_BOAT.get());
+                        pOutput.accept(REOItems.REDWOOD_CHEST_BOAT.get());
 
                         pOutput.accept(REOBlocks.DOOR_REDWOOD.get());
                         pOutput.accept(REOBlocks.TRAPDOOR_REDWOOD.get());
@@ -1033,8 +1033,8 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.SIGN_RUBBER.get());
                         pOutput.accept(REOBlocks.SIGN_HANGING_RUBBER.get());
 
-                        pOutput.accept(REOItems.BOAT_RUBBER.get());
-                        pOutput.accept(REOItems.BOAT_RUBBER_CHEST.get());
+                        pOutput.accept(REOItems.RUBBER_BOAT.get());
+                        pOutput.accept(REOItems.RUBBER_CHEST_BOAT.get());
 
                         pOutput.accept(REOBlocks.DOOR_RUBBER.get());
                         pOutput.accept(REOBlocks.TRAPDOOR_RUBBER.get());
@@ -1069,8 +1069,8 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.SIGN_TEAK.get());
                         pOutput.accept(REOBlocks.SIGN_HANGING_TEAK.get());
 
-                        pOutput.accept(REOItems.BOAT_TEAK.get());
-                        pOutput.accept(REOItems.BOAT_TEAK_CHEST.get());
+                        pOutput.accept(REOItems.TEAK_BOAT.get());
+                        pOutput.accept(REOItems.TEAK_CHEST_BOAT.get());
 
                         pOutput.accept(REOBlocks.DOOR_TEAK.get());
                         pOutput.accept(REOBlocks.TRAPDOOR_TEAK.get());
@@ -1105,8 +1105,8 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.SIGN_WALNUT.get());
                         pOutput.accept(REOBlocks.SIGN_HANGING_WALNUT.get());
 
-                        pOutput.accept(REOItems.BOAT_WALNUT.get());
-                        pOutput.accept(REOItems.BOAT_WALNUT_CHEST.get());
+                        pOutput.accept(REOItems.WALNUT_BOAT.get());
+                        pOutput.accept(REOItems.WALNUT_CHEST_BOAT.get());
 
                         pOutput.accept(REOBlocks.DOOR_WALNUT.get());
                         pOutput.accept(REOBlocks.TRAPDOOR_WALNUT.get());
@@ -1141,8 +1141,8 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.SIGN_WILLOW.get());
                         pOutput.accept(REOBlocks.SIGN_HANGING_WILLOW.get());
 
-                        pOutput.accept(REOItems.BOAT_WILLOW.get());
-                        pOutput.accept(REOItems.BOAT_WILLOW_CHEST.get());
+                        pOutput.accept(REOItems.WILLOW_BOAT.get());
+                        pOutput.accept(REOItems.WILLOW_CHEST_BOAT.get());
 
                         pOutput.accept(REOBlocks.DOOR_WILLOW.get());
                         pOutput.accept(REOBlocks.TRAPDOOR_WILLOW.get());
@@ -1475,7 +1475,7 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOItems.ALUMINIUM_LEGGINGS.get());
                         pOutput.accept(REOItems.ALUMINIUM_BOOTS.get());
 
-                        pOutput.accept(REOItems.HORSE_ARMOR_ALUMINIUM.get());
+                        pOutput.accept(REOItems.ALUMINIUM_HORSE_ARMOR.get());
 
                         // Amethyst
                         pOutput.accept(REOItems.AMETHYST_HELMET.get());
@@ -1483,7 +1483,7 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOItems.AMETHYST_LEGGINGS.get());
                         pOutput.accept(REOItems.AMETHYST_BOOTS.get());
 
-                        pOutput.accept(REOItems.HORSE_ARMOR_AMETHYST.get());
+                        pOutput.accept(REOItems.AMETHYST_HORSE_ARMOR.get());
 
                         // Bronze
                         pOutput.accept(REOItems.BRONZE_HELMET.get());
@@ -1491,7 +1491,7 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOItems.BRONZE_LEGGINGS.get());
                         pOutput.accept(REOItems.BRONZE_BOOTS.get());
 
-                        pOutput.accept(REOItems.HORSE_ARMOR_BRONZE.get());
+                        pOutput.accept(REOItems.BRONZE_HORSE_ARMOR.get());
 
                         // Chain
                         //pOutput.accept(REOItems.HORSE_ARMOR_CHAIN.get());
@@ -1502,7 +1502,7 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOItems.ENDERITE_LEGGINGS.get());
                         pOutput.accept(REOItems.ENDERITE_BOOTS.get());
 
-                        pOutput.accept(REOItems.HORSE_ARMOR_ENDERITE.get());
+                        pOutput.accept(REOItems.ENDERITE_HORSE_ARMOR.get());
 
                         // Netherite
                         //pOutput.accept(REOItems.HORSE_ARMOR_NETHERITE.get());
@@ -1513,7 +1513,7 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOItems.PLATINUM_LEGGINGS.get());
                         pOutput.accept(REOItems.PLATINUM_BOOTS.get());
 
-                        pOutput.accept(REOItems.HORSE_ARMOR_PLATINUM.get());
+                        pOutput.accept(REOItems.PLATINUM_HORSE_ARMOR.get());
 
                         // Peridot
                         pOutput.accept(REOItems.PERIDOT_HELMET.get());
@@ -1521,7 +1521,7 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOItems.PERIDOT_LEGGINGS.get());
                         pOutput.accept(REOItems.PERIDOT_BOOTS.get());
 
-                        pOutput.accept(REOItems.HORSE_ARMOR_PERIDOT.get());
+                        pOutput.accept(REOItems.PERIDOT_HORSE_ARMOR.get());
 
                         // Ruby
                         pOutput.accept(REOItems.RUBY_HELMET.get());
@@ -1529,7 +1529,7 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOItems.RUBY_LEGGINGS.get());
                         pOutput.accept(REOItems.RUBY_BOOTS.get());
 
-                        pOutput.accept(REOItems.HORSE_ARMOR_RUBY.get());
+                        pOutput.accept(REOItems.RUBY_HORSE_ARMOR.get());
 
                         // Sapphire
                         pOutput.accept(REOItems.SAPPHIRE_HELMET.get());
@@ -1537,7 +1537,7 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOItems.SAPPHIRE_LEGGINGS.get());
                         pOutput.accept(REOItems.SAPPHIRE_BOOTS.get());
 
-                        pOutput.accept(REOItems.HORSE_ARMOR_SAPPHIRE.get());
+                        pOutput.accept(REOItems.SAPPHIRE_HORSE_ARMOR.get());
 
                         // Silver
                         pOutput.accept(REOItems.SILVER_HELMET.get());
@@ -1545,7 +1545,7 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOItems.SILVER_LEGGINGS.get());
                         pOutput.accept(REOItems.SILVER_BOOTS.get());
 
-                        pOutput.accept(REOItems.HORSE_ARMOR_SILVER.get());
+                        pOutput.accept(REOItems.SILVER_HORSE_ARMOR.get());
 
                         // Steel
                         pOutput.accept(REOItems.STEEL_HELMET.get());
@@ -1553,7 +1553,7 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOItems.STEEL_LEGGINGS.get());
                         pOutput.accept(REOItems.STEEL_BOOTS.get());
 
-                        pOutput.accept(REOItems.HORSE_ARMOR_STEEL.get());
+                        pOutput.accept(REOItems.STEEL_HORSE_ARMOR.get());
 
                     })
                     .build());
@@ -1562,53 +1562,54 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
 
     public static RegistryObject<CreativeModeTab> FOOD_TAB = CREATIVE_MODE_TABS.register("realearthores_food",
             () -> CreativeModeTab.builder().withTabsBefore(REOCreativeModeTabs.TOOLS_TAB.getKey())
-                    .icon(() -> new ItemStack(REOItems.FOOD_ONION.get()))
+                    .icon(() -> new ItemStack(REOItems.ONION.get()))
                     .title(Component.translatable("tabs.realearthores_food"))
                     .displayItems((pParameters, pOutput) -> {
 
                         // Seeds
-                        pOutput.accept(REOItems.SEED_BARLEY.get());
-                        pOutput.accept(REOItems.SEED_CAULIFLOWER.get());
-                        pOutput.accept(REOItems.SEED_COTTON.get());
-                        pOutput.accept(REOItems.SEED_RICE.get());
-                        pOutput.accept(REOItems.SEED_STRAWBERRY.get());
-                        pOutput.accept(REOItems.SEED_TOMATO.get());
+                        pOutput.accept(REOItems.BARLEY_SEED.get());
+                        pOutput.accept(REOItems.CAULIFLOWER_SEED.get());
+                        pOutput.accept(REOItems.COTTON_SEED.get());
+                        pOutput.accept(REOItems.ENDER_LILLY_SEED.get());
+                        pOutput.accept(REOItems.RICE_SEED.get());
+                        pOutput.accept(REOItems.STRAWBERRY_SEED.get());
+                        pOutput.accept(REOItems.TOMATO_SEED.get());
 
                         // Plants
-                        pOutput.accept(REOItems.PLANT_BARLEY.get());
-                        pOutput.accept(REOItems.PLANT_COTTON.get());
-                        pOutput.accept(REOItems.PLANT_RICE.get());
+                        pOutput.accept(REOItems.BARLEY_PLANT.get());
+                        pOutput.accept(REOItems.COTTON_PLANT.get());
+                        pOutput.accept(REOItems.RICE_PLANT.get());
 
                         // Flour
-                        pOutput.accept(REOItems.FLOUR_BARLEY.get());
-                        pOutput.accept(REOItems.FLOUR_WHEAT.get());
+                        pOutput.accept(REOItems.BARLEY_FLOUR.get());
+                        pOutput.accept(REOItems.WHEAT_FLOUR.get());
 
                         // Fruit
-                        pOutput.accept(REOItems.FOOD_CHERRY.get());
-                        pOutput.accept(REOItems.FOOD_CHESTNUT.get());
-                        pOutput.accept(REOItems.FOOD_DATES.get());
-                        pOutput.accept(REOItems.FOOD_LEMON.get());
-                        pOutput.accept(REOItems.FOOD_LIME.get());
-                        pOutput.accept(REOItems.FOOD_PAPAYA.get());
-                        pOutput.accept(REOItems.FOOD_PEACH.get());
-                        pOutput.accept(REOItems.FOOD_PLUM.get());
-                        pOutput.accept(REOItems.FOOD_WALNUT.get());
+                        pOutput.accept(REOItems.CHERRY.get());
+                        pOutput.accept(REOItems.CHESTNUT.get());
+                        pOutput.accept(REOItems.DATES.get());
+                        pOutput.accept(REOItems.LEMON.get());
+                        pOutput.accept(REOItems.LIME.get());
+                        pOutput.accept(REOItems.PAPAYA.get());
+                        pOutput.accept(REOItems.PEACH.get());
+                        pOutput.accept(REOItems.PLUM.get());
+                        pOutput.accept(REOItems.WALNUT.get());
 
                         // Veg
-                        pOutput.accept(REOItems.FOOD_CAULIFLOWER.get());
-                        pOutput.accept(REOItems.FOOD_ONION.get());
-                        pOutput.accept(REOItems.FOOD_RICE.get());
-                        pOutput.accept(REOItems.FOOD_TOMATO.get());
-                        pOutput.accept(REOItems.FOOD_TOMATO_ROTTEN.get());
+                        pOutput.accept(REOItems.CAULIFLOWER.get());
+                        pOutput.accept(REOItems.ONION.get());
+                        pOutput.accept(REOItems.RICE.get());
+                        pOutput.accept(REOItems.TOMATO.get());
+                        pOutput.accept(REOItems.TOMATO_ROTTEN.get());
 
                         // Berries
-                        pOutput.accept(REOItems.FOOD_BLACKBERRY.get());
-                        pOutput.accept(REOItems.FOOD_BLUEBERRY.get());
-                        pOutput.accept(REOItems.FOOD_RASPBERRY.get());
-                        pOutput.accept(REOItems.FOOD_STRAWBERRY.get());
+                        pOutput.accept(REOItems.BLACKBERRY.get());
+                        pOutput.accept(REOItems.BLUEBERRY.get());
+                        pOutput.accept(REOItems.RASPBERRY.get());
+                        pOutput.accept(REOItems.STRAWBERRY.get());
 
                         // Ore Seeds
-                        //pOutput.accept(REOItems.SEED_ALUMINIUM.get());
+                        //pOutput.accept(REOItems.ALUMINIUM_SEED.get());
 
 
                     })

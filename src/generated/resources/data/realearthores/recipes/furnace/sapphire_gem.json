@@ -8,11 +8,11 @@
       "item": "realearthores:cluster_sapphire"
     },
     {
-      "item": "realearthores:dust_sapphire"
+      "item": "realearthores:sapphire_dust"
     },
     {
-      "item": "realearthores:dirty_sapphire"
+      "item": "realearthores:sapphire_dirty"
     }
   ],
-  "result": "realearthores:gem_sapphire"
+  "result": "realearthores:sapphire"
 }

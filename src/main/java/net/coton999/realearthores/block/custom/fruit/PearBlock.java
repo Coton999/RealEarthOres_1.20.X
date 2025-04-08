@@ -39,7 +39,7 @@ public class PearBlock extends CropBlock {
     @Override
     protected ItemLike getBaseSeedId() {
 
-        return REOItems.FOOD_PEAR.get();
+        return REOItems.PEAR.get();
     }
 
     @Override

@@ -6,17 +6,17 @@
       "item": "minecraft:copper_ingot"
     },
     {
-      "item": "realearthores:ingot_zinc"
+      "item": "realearthores:zinc_ingot"
     },
     {
-      "item": "realearthores:ingot_zinc"
+      "item": "realearthores:zinc_ingot"
     },
     {
-      "item": "realearthores:ingot_zinc"
+      "item": "realearthores:zinc_ingot"
     }
   ],
   "result": {
     "count": 2,
-    "item": "realearthores:ingot_brass"
+    "item": "realearthores:brass_ingot"
   }
 }

@@ -23,11 +23,11 @@
                   }
                 }
               ],
-              "name": "realearthores:food_papaya"
+              "name": "realearthores:papaya"
             },
             {
               "type": "minecraft:item",
-              "name": "realearthores:food_papaya"
+              "name": "realearthores:papaya"
             }
           ]
         }
@@ -59,7 +59,7 @@
               }
             }
           ],
-          "name": "realearthores:food_papaya"
+          "name": "realearthores:papaya"
         }
       ],
       "rolls": 1.0

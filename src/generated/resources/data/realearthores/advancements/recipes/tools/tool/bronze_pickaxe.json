@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ingot_bronze": {
+    "has_bronze_ingot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:ingot_bronze"
+              "realearthores:bronze_ingot"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_ingot_bronze",
+      "has_bronze_ingot",
       "has_the_recipe"
     ]
   ],

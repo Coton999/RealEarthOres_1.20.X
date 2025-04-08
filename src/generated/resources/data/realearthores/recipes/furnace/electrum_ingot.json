@@ -5,11 +5,11 @@
   "experience": 0.7,
   "ingredient": [
     {
-      "item": "realearthores:dust_electrum"
+      "item": "realearthores:electrum_dust"
     },
     {
-      "item": "realearthores:dirty_electrum"
+      "item": "realearthores:electrum_dirty"
     }
   ],
-  "result": "realearthores:ingot_electrum"
+  "result": "realearthores:electrum_ingot"
 }

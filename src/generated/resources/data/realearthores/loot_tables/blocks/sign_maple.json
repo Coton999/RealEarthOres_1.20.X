@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "realearthores:sign_maple"
+          "name": "realearthores:maple_sign"
         }
       ],
       "rolls": 1.0

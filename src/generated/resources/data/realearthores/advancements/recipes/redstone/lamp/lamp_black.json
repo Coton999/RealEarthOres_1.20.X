@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_luminous_black": {
+    "has_black_luminous": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:luminous_black"
+              "realearthores:black_luminous"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_luminous_black",
+      "has_black_luminous",
       "has_the_recipe"
     ]
   ],

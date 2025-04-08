@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "realearthores:sign_hanging_balsa"
+          "name": "realearthores:balsa_hanging_sign"
         }
       ],
       "rolls": 1.0

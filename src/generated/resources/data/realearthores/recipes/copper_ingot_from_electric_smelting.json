@@ -18,10 +18,10 @@
         "item": "realearthores:nether_copper"
       },
       {
-        "item": "realearthores:dust_copper"
+        "item": "realearthores:copper_dust"
       },
       {
-        "item": "realearthores:dirty_copper"
+        "item": "realearthores:copper_dirty"
       }
     ]
   ],

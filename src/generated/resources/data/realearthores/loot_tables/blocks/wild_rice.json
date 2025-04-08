@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "realearthores:seed_rice"
+          "name": "realearthores:rice_seed"
         }
       ],
       "rolls": 1.0

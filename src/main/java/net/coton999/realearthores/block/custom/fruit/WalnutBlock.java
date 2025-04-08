@@ -39,7 +39,7 @@ public class WalnutBlock extends CropBlock {
     @Override
     protected ItemLike getBaseSeedId() {
 
-        return REOItems.FOOD_WALNUT.get();
+        return REOItems.WALNUT.get();
     }
 
     @Override

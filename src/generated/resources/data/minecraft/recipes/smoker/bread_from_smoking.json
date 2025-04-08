@@ -5,10 +5,10 @@
   "experience": 0.35,
   "ingredient": [
     {
-      "item": "realearthores:flour_wheat"
+      "item": "realearthores:wheat_flour"
     },
     {
-      "item": "realearthores:flour_barley"
+      "item": "realearthores:barley_flour"
     }
   ],
   "result": "minecraft:bread"

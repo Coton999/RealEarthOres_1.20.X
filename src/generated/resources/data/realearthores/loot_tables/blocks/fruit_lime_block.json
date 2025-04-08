@@ -23,11 +23,11 @@
                   }
                 }
               ],
-              "name": "realearthores:food_lime"
+              "name": "realearthores:lime"
             },
             {
               "type": "minecraft:item",
-              "name": "realearthores:food_lime"
+              "name": "realearthores:lime"
             }
           ]
         }
@@ -59,7 +59,7 @@
               }
             }
           ],
-          "name": "realearthores:food_lime"
+          "name": "realearthores:lime"
         }
       ],
       "rolls": 1.0

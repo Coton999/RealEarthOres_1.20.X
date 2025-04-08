@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "realearthores:seed_cotton"
+          "name": "realearthores:cotton_seed"
         }
       ],
       "rolls": 1.0

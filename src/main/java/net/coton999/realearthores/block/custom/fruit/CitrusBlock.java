@@ -39,7 +39,7 @@ public class CitrusBlock extends CropBlock {
     @Override
     protected ItemLike getBaseSeedId() {
 
-        return REOItems.FOOD_LEMON.get();
+        return REOItems.LEMON.get();
     }
 
     @Override

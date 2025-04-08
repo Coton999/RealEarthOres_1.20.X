@@ -13,12 +13,12 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_ingot_nickel": {
+    "has_nickel_ingot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:ingot_nickel"
+              "realearthores:nickel_ingot"
             ]
           }
         ]
@@ -35,7 +35,7 @@
   "requirements": [
     [
       "has_copper_ingot",
-      "has_ingot_nickel",
+      "has_nickel_ingot",
       "has_the_recipe"
     ]
   ],

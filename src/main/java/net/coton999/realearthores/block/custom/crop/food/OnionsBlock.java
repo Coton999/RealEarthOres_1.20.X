@@ -21,7 +21,7 @@ public class OnionsBlock extends CropBlock {
     @Override
     protected ItemLike getBaseSeedId() {
 
-        return REOItems.FOOD_ONION.get();
+        return REOItems.ONION.get();
     }
 
     @Override

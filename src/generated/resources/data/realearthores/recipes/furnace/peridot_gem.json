@@ -8,11 +8,11 @@
       "item": "realearthores:cluster_peridot"
     },
     {
-      "item": "realearthores:dust_peridot"
+      "item": "realearthores:peridot_dust"
     },
     {
-      "item": "realearthores:dirty_peridot"
+      "item": "realearthores:peridot_dirty"
     }
   ],
-  "result": "realearthores:gem_peridot"
+  "result": "realearthores:peridot"
 }

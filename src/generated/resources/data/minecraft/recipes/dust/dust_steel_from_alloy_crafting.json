@@ -3,20 +3,20 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "realearthores:dust_iron"
+      "item": "realearthores:iron_dust"
     },
     {
-      "item": "realearthores:dust_coal"
+      "item": "realearthores:coal_dust"
     },
     {
-      "item": "realearthores:dust_coal"
+      "item": "realearthores:coal_dust"
     },
     {
-      "item": "realearthores:dust_coal"
+      "item": "realearthores:coal_dust"
     }
   ],
   "result": {
     "count": 2,
-    "item": "realearthores:dust_steel"
+    "item": "realearthores:steel_dust"
   }
 }

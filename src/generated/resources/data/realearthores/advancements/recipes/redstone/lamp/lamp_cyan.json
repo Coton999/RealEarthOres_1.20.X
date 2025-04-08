@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_luminous_cyan": {
+    "has_cyan_luminous": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:luminous_cyan"
+              "realearthores:cyan_luminous"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_luminous_cyan",
+      "has_cyan_luminous",
       "has_the_recipe"
     ]
   ],

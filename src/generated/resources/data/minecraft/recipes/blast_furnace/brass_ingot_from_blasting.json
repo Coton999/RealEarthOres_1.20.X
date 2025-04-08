@@ -8,11 +8,11 @@
       "item": "minecraft:iron_ingot"
     },
     {
-      "item": "realearthores:dust_steel"
+      "item": "realearthores:steel_dust"
     },
     {
-      "item": "realearthores:dirty_steel"
+      "item": "realearthores:steel_dirty"
     }
   ],
-  "result": "realearthores:ingot_steel"
+  "result": "realearthores:steel_ingot"
 }

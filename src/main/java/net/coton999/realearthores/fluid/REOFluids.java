@@ -147,127 +147,127 @@ public class REOFluids {
     public static final ForgeFlowingFluid.Properties MOLTEN_ALUMINIUM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             REOFluidTypes.MOLTEN_ALUMINIUM_FLUID_TYPE, MOLTEN_ALUMINIUM_SOURCE, MOLTEN_ALUMINIUM_FLOWING)
             .slopeFindDistance(4).levelDecreasePerBlock(2).tickRate(40).block(REOBlocks.MOLTEN_ALUMINIUM_BLOCK)
-            .bucket(REOItems.BUCKET_MOLTEN_ALUMINIUM);
+            .bucket(REOItems.ALUMINUM_BUCKET);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_AMETHYST_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             REOFluidTypes.MOLTEN_AMETHYST_FLUID_TYPE, MOLTEN_AMETHYST_SOURCE, MOLTEN_AMETHYST_FLOWING)
             .slopeFindDistance(4).levelDecreasePerBlock(2).tickRate(40).block(REOBlocks.MOLTEN_AMETHYST_BLOCK)
-            .bucket(REOItems.BUCKET_MOLTEN_AMETHYST);
+            .bucket(REOItems.AMETHYST_BUCKET);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_BRASS_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             REOFluidTypes.MOLTEN_BRASS_FLUID_TYPE, MOLTEN_BRASS_SOURCE, MOLTEN_BRASS_FLOWING)
             .slopeFindDistance(4).levelDecreasePerBlock(2).tickRate(40).block(REOBlocks.MOLTEN_BRASS_BLOCK)
-            .bucket(REOItems.BUCKET_MOLTEN_BRASS);
+            .bucket(REOItems.BRASS_BUCKET);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_BRONZE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             REOFluidTypes.MOLTEN_BRONZE_FLUID_TYPE, MOLTEN_BRONZE_SOURCE, MOLTEN_BRONZE_FLOWING)
             .slopeFindDistance(4).levelDecreasePerBlock(2).tickRate(40).block(REOBlocks.MOLTEN_BRONZE_BLOCK)
-            .bucket(REOItems.BUCKET_MOLTEN_BRONZE);
+            .bucket(REOItems.BRONZE_BUCKET);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_COAL_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             REOFluidTypes.MOLTEN_COAL_FLUID_TYPE, MOLTEN_COAL_SOURCE, MOLTEN_COAL_FLOWING)
             .slopeFindDistance(4).levelDecreasePerBlock(2).tickRate(40).block(REOBlocks.MOLTEN_COAL_BLOCK)
-            .bucket(REOItems.BUCKET_MOLTEN_COAL);
+            .bucket(REOItems.COAL_BUCKET);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_COPPER_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             REOFluidTypes.MOLTEN_COPPER_FLUID_TYPE, MOLTEN_COPPER_SOURCE, MOLTEN_COPPER_FLOWING)
             .slopeFindDistance(4).levelDecreasePerBlock(2).tickRate(40).block(REOBlocks.MOLTEN_COPPER_BLOCK)
-            .bucket(REOItems.BUCKET_MOLTEN_COPPER);
+            .bucket(REOItems.COPPER_BUCKET);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_DIAMOND_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             REOFluidTypes.MOLTEN_DIAMOND_FLUID_TYPE, MOLTEN_DIAMOND_SOURCE, MOLTEN_DIAMOND_FLOWING)
             .slopeFindDistance(4).levelDecreasePerBlock(2).tickRate(40).block(REOBlocks.MOLTEN_DIAMOND_BLOCK)
-            .bucket(REOItems.BUCKET_MOLTEN_DIAMOND);
+            .bucket(REOItems.DIAMOND_BUCKET);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_ELECTRUM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             REOFluidTypes.MOLTEN_ELECTRUM_FLUID_TYPE, MOLTEN_ELECTRUM_SOURCE, MOLTEN_ELECTRUM_FLOWING)
             .slopeFindDistance(4).levelDecreasePerBlock(2).tickRate(40).block(REOBlocks.MOLTEN_ELECTRUM_BLOCK)
-            .bucket(REOItems.BUCKET_MOLTEN_ELECTRUM);
+            .bucket(REOItems.ELECTRUM_BUCKET);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_EMERALD_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             REOFluidTypes.MOLTEN_EMERALD_FLUID_TYPE, MOLTEN_EMERALD_SOURCE, MOLTEN_EMERALD_FLOWING)
             .slopeFindDistance(4).levelDecreasePerBlock(2).tickRate(40).block(REOBlocks.MOLTEN_EMERALD_BLOCK)
-            .bucket(REOItems.BUCKET_MOLTEN_EMERALD);
+            .bucket(REOItems.EMERALD_BUCKET);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_ENDERITE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             REOFluidTypes.MOLTEN_ENDERITE_FLUID_TYPE, MOLTEN_ENDERITE_SOURCE, MOLTEN_ENDERITE_FLOWING)
             .slopeFindDistance(4).levelDecreasePerBlock(2).tickRate(40).block(REOBlocks.MOLTEN_ENDERITE_BLOCK)
-            .bucket(REOItems.BUCKET_MOLTEN_ENDERITE);
+            .bucket(REOItems.ENDERITE_BUCKET);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_GOLD_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             REOFluidTypes.MOLTEN_GOLD_FLUID_TYPE, MOLTEN_GOLD_SOURCE, MOLTEN_GOLD_FLOWING)
             .slopeFindDistance(4).levelDecreasePerBlock(2).tickRate(40).block(REOBlocks.MOLTEN_GOLD_BLOCK)
-            .bucket(REOItems.BUCKET_MOLTEN_GOLD);
+            .bucket(REOItems.GOLD_BUCKET);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_IRON_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             REOFluidTypes.MOLTEN_IRON_FLUID_TYPE, MOLTEN_IRON_SOURCE, MOLTEN_IRON_FLOWING)
             .slopeFindDistance(4).levelDecreasePerBlock(2).tickRate(40).block(REOBlocks.MOLTEN_IRON_BLOCK)
-            .bucket(REOItems.BUCKET_MOLTEN_IRON);
+            .bucket(REOItems.IRON_BUCKET);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_LAPIS_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             REOFluidTypes.MOLTEN_LAPIS_FLUID_TYPE, MOLTEN_LAPIS_SOURCE, MOLTEN_LAPIS_FLOWING)
             .slopeFindDistance(4).levelDecreasePerBlock(2).tickRate(40).block(REOBlocks.MOLTEN_LAPIS_BLOCK)
-            .bucket(REOItems.BUCKET_MOLTEN_LAPIS);
+            .bucket(REOItems.LAPIS_BUCKET);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_LEAD_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             REOFluidTypes.MOLTEN_LEAD_FLUID_TYPE, MOLTEN_LEAD_SOURCE, MOLTEN_LEAD_FLOWING)
             .slopeFindDistance(4).levelDecreasePerBlock(2).tickRate(40).block(REOBlocks.MOLTEN_LEAD_BLOCK)
-            .bucket(REOItems.BUCKET_MOLTEN_LEAD);
+            .bucket(REOItems.LEAD_BUCKET);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_NICKEL_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             REOFluidTypes.MOLTEN_NICKEL_FLUID_TYPE, MOLTEN_NICKEL_SOURCE, MOLTEN_NICKEL_FLOWING)
             .slopeFindDistance(4).levelDecreasePerBlock(2).tickRate(40).block(REOBlocks.MOLTEN_NICKEL_BLOCK)
-            .bucket(REOItems.BUCKET_MOLTEN_NICKEL);
+            .bucket(REOItems.NICKEL_BUCKET);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_PERIDOT_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             REOFluidTypes.MOLTEN_PERIDOT_FLUID_TYPE, MOLTEN_PERIDOT_SOURCE, MOLTEN_PERIDOT_FLOWING)
             .slopeFindDistance(4).levelDecreasePerBlock(2).tickRate(40).block(REOBlocks.MOLTEN_PERIDOT_BLOCK)
-            .bucket(REOItems.BUCKET_MOLTEN_PERIDOT);
+            .bucket(REOItems.PERIDOT_BUCKET);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_PLATINUM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             REOFluidTypes.MOLTEN_PLATINUM_FLUID_TYPE, MOLTEN_PLATINUM_SOURCE, MOLTEN_PLATINUM_FLOWING)
             .slopeFindDistance(4).levelDecreasePerBlock(2).tickRate(40).block(REOBlocks.MOLTEN_PLATINUM_BLOCK)
-            .bucket(REOItems.BUCKET_MOLTEN_PLATINUM);
+            .bucket(REOItems.PLATINUM_BUCKET);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_REDSTONE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             REOFluidTypes.MOLTEN_REDSTONE_FLUID_TYPE, MOLTEN_REDSTONE_SOURCE, MOLTEN_REDSTONE_FLOWING)
             .slopeFindDistance(4).levelDecreasePerBlock(2).tickRate(40).block(REOBlocks.MOLTEN_REDSTONE_BLOCK)
-            .bucket(REOItems.BUCKET_MOLTEN_REDSTONE);
+            .bucket(REOItems.REDSTONE_BUCKET);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_RUBY_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             REOFluidTypes.MOLTEN_RUBY_FLUID_TYPE, MOLTEN_RUBY_SOURCE, MOLTEN_RUBY_FLOWING)
             .slopeFindDistance(4).levelDecreasePerBlock(2).tickRate(40).block(REOBlocks.MOLTEN_RUBY_BLOCK)
-            .bucket(REOItems.BUCKET_MOLTEN_RUBY);
+            .bucket(REOItems.RUBY_BUCKET);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_SAPPHIRE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             REOFluidTypes.MOLTEN_SAPPHIRE_FLUID_TYPE, MOLTEN_SAPPHIRE_SOURCE, MOLTEN_SAPPHIRE_FLOWING)
             .slopeFindDistance(4).levelDecreasePerBlock(2).tickRate(40).block(REOBlocks.MOLTEN_SAPPHIRE_BLOCK)
-            .bucket(REOItems.BUCKET_MOLTEN_SAPPHIRE);
+            .bucket(REOItems.SAPPHIRE_BUCKET);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_SILVER_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             REOFluidTypes.MOLTEN_SILVER_FLUID_TYPE, MOLTEN_SILVER_SOURCE, MOLTEN_SILVER_FLOWING)
             .slopeFindDistance(4).levelDecreasePerBlock(2).tickRate(40).block(REOBlocks.MOLTEN_SILVER_BLOCK)
-            .bucket(REOItems.BUCKET_MOLTEN_SILVER);
+            .bucket(REOItems.SILVER_BUCKET);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_STEEL_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             REOFluidTypes.MOLTEN_STEEL_FLUID_TYPE, MOLTEN_STEEL_SOURCE, MOLTEN_STEEL_FLOWING)
             .slopeFindDistance(4).levelDecreasePerBlock(2).tickRate(40).block(REOBlocks.MOLTEN_STEEL_BLOCK)
-            .bucket(REOItems.BUCKET_MOLTEN_STEEL);
+            .bucket(REOItems.STEEL_BUCKET);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_TIN_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             REOFluidTypes.MOLTEN_TIN_FLUID_TYPE, MOLTEN_TIN_SOURCE, MOLTEN_TIN_FLOWING)
             .slopeFindDistance(4).levelDecreasePerBlock(2).tickRate(40).block(REOBlocks.MOLTEN_TIN_BLOCK)
-            .bucket(REOItems.BUCKET_MOLTEN_TIN);
+            .bucket(REOItems.TIN_BUCKET);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_URANIUM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             REOFluidTypes.MOLTEN_URANIUM_FLUID_TYPE, MOLTEN_URANIUM_SOURCE, MOLTEN_URANIUM_FLOWING)
             .slopeFindDistance(4).levelDecreasePerBlock(2).tickRate(40).block(REOBlocks.MOLTEN_URANIUM_BLOCK)
-            .bucket(REOItems.BUCKET_MOLTEN_URANIUM);
+            .bucket(REOItems.URANIUM_BUCKET);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_ZINC_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             REOFluidTypes.MOLTEN_ZINC_FLUID_TYPE, MOLTEN_ZINC_SOURCE, MOLTEN_ZINC_FLOWING)
             .slopeFindDistance(4).levelDecreasePerBlock(2).tickRate(40).block(REOBlocks.MOLTEN_ZINC_BLOCK)
-            .bucket(REOItems.BUCKET_MOLTEN_ZINC);
+            .bucket(REOItems.ZINC_BUCKET);
 
 
     public static void register(IEventBus eventBus) {

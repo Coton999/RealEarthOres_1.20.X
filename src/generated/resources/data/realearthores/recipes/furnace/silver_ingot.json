@@ -20,11 +20,11 @@
       "item": "realearthores:raw_silver"
     },
     {
-      "item": "realearthores:dust_silver"
+      "item": "realearthores:silver_dust"
     },
     {
-      "item": "realearthores:dirty_silver"
+      "item": "realearthores:silver_dirty"
     }
   ],
-  "result": "realearthores:ingot_silver"
+  "result": "realearthores:silver_ingot"
 }

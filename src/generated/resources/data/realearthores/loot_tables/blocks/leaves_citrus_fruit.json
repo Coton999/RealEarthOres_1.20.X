@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "realearthores:food_lemon"
+          "name": "realearthores:lemon"
         }
       ],
       "rolls": 1.0

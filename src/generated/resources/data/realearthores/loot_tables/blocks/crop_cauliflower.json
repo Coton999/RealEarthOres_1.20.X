@@ -23,11 +23,11 @@
                   }
                 }
               ],
-              "name": "realearthores:food_cauliflower"
+              "name": "realearthores:cauliflower"
             },
             {
               "type": "minecraft:item",
-              "name": "realearthores:seed_cauliflower"
+              "name": "realearthores:cauliflower_seed"
             }
           ]
         }
@@ -59,7 +59,7 @@
               }
             }
           ],
-          "name": "realearthores:seed_cauliflower"
+          "name": "realearthores:cauliflower_seed"
         }
       ],
       "rolls": 1.0

@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "realearthores:sign_mahogany"
+          "name": "realearthores:mahogany_sign"
         }
       ],
       "rolls": 1.0

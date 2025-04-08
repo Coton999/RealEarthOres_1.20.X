@@ -11,11 +11,11 @@
       "item": "realearthores:raw_enderite"
     },
     {
-      "item": "realearthores:dust_enderite"
+      "item": "realearthores:enderite_dust"
     },
     {
-      "item": "realearthores:dirty_enderite"
+      "item": "realearthores:enderite_dirty"
     }
   ],
-  "result": "realearthores:ingot_enderite"
+  "result": "realearthores:enderite_ingot"
 }

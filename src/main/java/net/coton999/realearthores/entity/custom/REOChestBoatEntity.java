@@ -31,64 +31,64 @@ public class REOChestBoatEntity extends ChestBoat {
     public Item getDropItem() {
         switch (getModVariant()) {
             case BALSA -> {
-                return REOItems.BOAT_BALSA_CHEST.get();
+                return REOItems.BALSA_CHEST_BOAT.get();
             }
             case BAOBAB -> {
-                return REOItems.BOAT_BAOBAB_CHEST.get();
+                return REOItems.BAOBAB_CHEST_BOAT.get();
             }
             case HILL_CHERRY -> {
-                return REOItems.BOAT_HILL_CHERRY_CHEST.get();
+                return REOItems.HILL_CHERRY_CHEST_BOAT.get();
             }
             case CHESTNUT -> {
-                return REOItems.BOAT_CHESTNUT_CHEST.get();
+                return REOItems.CHESTNUT_CHEST_BOAT.get();
             }
             case CITRUS -> {
-                return REOItems.BOAT_CITRUS_CHEST.get();
+                return REOItems.CITRUS_CHEST_BOAT.get();
             }
             case EBONY -> {
-                return REOItems.BOAT_EBONY_CHEST.get();
+                return REOItems.EBONY_CHEST_BOAT.get();
             }
             case LARCH -> {
-                return REOItems.BOAT_LARCH_CHEST.get();
+                return REOItems.LARCH_CHEST_BOAT.get();
             }
             case LIME -> {
-                return REOItems.BOAT_LIME_CHEST.get();
+                return REOItems.LIME_CHEST_BOAT.get();
             }
             case MAHOGANY -> {
-                return REOItems.BOAT_MAHOGANY_CHEST.get();
+                return REOItems.MAHOGANY_CHEST_BOAT.get();
             }
             case MAPLE -> {
-                return REOItems.BOAT_MAPLE_CHEST.get();
+                return REOItems.MAPLE_CHEST_BOAT.get();
             }
             case PALM -> {
-                return REOItems.BOAT_PALM_CHEST.get();
+                return REOItems.PALM_CHEST_BOAT.get();
             }
             case PAPAYA -> {
-                return REOItems.BOAT_PAPAYA_CHEST.get();
+                return REOItems.PAPAYA_CHEST_BOAT.get();
             }
             case PINE -> {
-                return REOItems.BOAT_PINE_CHEST.get();
+                return REOItems.PINE_CHEST_BOAT.get();
             }
             case PLUM -> {
-                return REOItems.BOAT_PLUM_CHEST.get();
+                return REOItems.PLUM_CHEST_BOAT.get();
             }
             case POPLAR -> {
-                return REOItems.BOAT_POPLAR_CHEST.get();
+                return REOItems.POPLAR_CHEST_BOAT.get();
             }
             case REDWOOD -> {
-                return REOItems.BOAT_REDWOOD_CHEST.get();
+                return REOItems.REDWOOD_CHEST_BOAT.get();
             }
             case RUBBER -> {
-                return REOItems.BOAT_RUBBER_CHEST.get();
+                return REOItems.RUBBER_CHEST_BOAT.get();
             }
             case TEAK -> {
-                return REOItems.BOAT_TEAK_CHEST.get();
+                return REOItems.TEAK_CHEST_BOAT.get();
             }
             case WALNUT -> {
-                return REOItems.BOAT_WALNUT_CHEST.get();
+                return REOItems.WALNUT_CHEST_BOAT.get();
             }
             case WILLOW -> {
-                return REOItems.BOAT_WILLOW_CHEST.get();
+                return REOItems.WILLOW_CHEST_BOAT.get();
             }
         }
         return super.getDropItem();

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_nugget_emerald": {
+    "has_emerald_nugget": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:nugget_emerald"
+              "realearthores:emerald_nugget"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_nugget_emerald",
+      "has_emerald_nugget",
       "has_the_recipe"
     ]
   ],

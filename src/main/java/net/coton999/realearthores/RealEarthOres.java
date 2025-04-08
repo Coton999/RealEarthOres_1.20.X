@@ -143,43 +143,43 @@ public class RealEarthOres {
             ComposterBlock.COMPOSTABLES.put(REOBlocks.SAPLING_WILLOW.get().asItem(), 0.3F);
 
             // Seeds
-            ComposterBlock.COMPOSTABLES.put(REOItems.SEED_BARLEY.get(), 0.3F);
-            ComposterBlock.COMPOSTABLES.put(REOItems.SEED_CAULIFLOWER.get(), 0.3F);
-            ComposterBlock.COMPOSTABLES.put(REOItems.SEED_COTTON.get(), 0.3F);
-            ComposterBlock.COMPOSTABLES.put(REOItems.SEED_RICE.get(), 0.3F);
-            ComposterBlock.COMPOSTABLES.put(REOItems.SEED_STRAWBERRY.get(), 0.3F);
-            ComposterBlock.COMPOSTABLES.put(REOItems.SEED_TOMATO.get(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.BARLEY_SEED.get(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.CAULIFLOWER_SEED.get(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.COTTON_SEED.get(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.RICE_SEED.get(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.STRAWBERRY_SEED.get(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.TOMATO_SEED.get(), 0.3F);
 
             // Crops
-            ComposterBlock.COMPOSTABLES.put(REOItems.PLANT_BARLEY.get(), 0.65F);
-            ComposterBlock.COMPOSTABLES.put(REOItems.PLANT_RICE.get(), 0.65F);
-            ComposterBlock.COMPOSTABLES.put(REOItems.PLANT_COTTON.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.BARLEY_PLANT.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.RICE_PLANT.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.COTTON_PLANT.get(), 0.65F);
 
             // Food //
             // Fruit
-            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_CHERRY.get(), 0.65F);
-            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_CHESTNUT.get(), 0.65F);
-            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_DATES.get(), 0.65F);
-            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_LEMON.get(), 0.65F);
-            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_LIME.get(), 0.65F);
-            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_PAPAYA.get(), 0.65F);
-            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_PEACH.get(), 0.65F);
-            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_PEAR.get(), 0.65F);
-            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_PLUM.get(), 0.65F);
-            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_WALNUT.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.CHERRY.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.CHESTNUT.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.DATES.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.LEMON.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.LIME.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.PAPAYA.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.PEACH.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.PEAR.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.PLUM.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.WALNUT.get(), 0.65F);
 
             // Veg
-            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_CAULIFLOWER.get(), 0.65F);
-            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_ONION.get(), 0.65F);
-            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_RICE.get(), 0.65F);
-            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_TOMATO.get(), 0.65F);
-            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_TOMATO_ROTTEN.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.CAULIFLOWER.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.ONION.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.RICE.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.TOMATO.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.TOMATO_ROTTEN.get(), 0.65F);
 
             // Berries
-            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_BLACKBERRY.get(), 0.65F);
-            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_BLUEBERRY.get(), 0.65F);
-            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_RASPBERRY.get(), 0.65F);
-            ComposterBlock.COMPOSTABLES.put(REOItems.FOOD_STRAWBERRY.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.BLACKBERRY.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.BLUEBERRY.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.RASPBERRY.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(REOItems.STRAWBERRY.get(), 0.65F);
 
         });
 

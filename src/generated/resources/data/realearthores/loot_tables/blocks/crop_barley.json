@@ -23,11 +23,11 @@
                   }
                 }
               ],
-              "name": "realearthores:plant_barley"
+              "name": "realearthores:barley_plant"
             },
             {
               "type": "minecraft:item",
-              "name": "realearthores:seed_barley"
+              "name": "realearthores:barley_seed"
             }
           ]
         }
@@ -59,7 +59,7 @@
               }
             }
           ],
-          "name": "realearthores:seed_barley"
+          "name": "realearthores:barley_seed"
         }
       ],
       "rolls": 1.0

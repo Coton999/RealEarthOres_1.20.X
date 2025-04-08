@@ -56,9 +56,9 @@ public class CrusherBE extends BlockEntity implements MenuProvider {
             return switch (slot) {
                 case 0, 1 -> true;
                 case 2 -> false;
-                case 3 -> stack.getItem() == REOItems.CAPACITOR_ULTIMATE.get() ||
-                        stack.getItem() == REOItems.CAPACITOR_ADVANCED.get() ||
-                        stack.getItem() == REOItems.CAPACITOR_BASIC.get();
+                case 3 -> stack.getItem() == REOItems.ULTIMATE_CAPACITOR.get() ||
+                        stack.getItem() == REOItems.ADVANCED_CAPACITOR.get() ||
+                        stack.getItem() == REOItems.BASIC_CAPACITOR.get();
                 default -> super.isItemValid(slot, stack);
             };
         }
@@ -86,11 +86,11 @@ public class CrusherBE extends BlockEntity implements MenuProvider {
     private int maxProgress = getMaxProgress();
 
     private int getMaxProgress(){
-        if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.CAPACITOR_ULTIMATE.get()){
+        if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.ULTIMATE_CAPACITOR.get()){
             return 50;
-        } if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.CAPACITOR_ADVANCED.get()) {
+        } if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.ADVANCED_CAPACITOR.get()) {
             return 100;
-        } if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.CAPACITOR_BASIC.get()) {
+        } if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.BASIC_CAPACITOR.get()) {
             return 150;
         } else {
             return 200;
@@ -247,11 +247,11 @@ public class CrusherBE extends BlockEntity implements MenuProvider {
     }
 
     private void extractEnergy() {
-        if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.CAPACITOR_ULTIMATE.get()) {
+        if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.ULTIMATE_CAPACITOR.get()) {
             this.ENERGY_STORAGE.extractEnergy(10, false);
-        } if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.CAPACITOR_ADVANCED.get()) {
+        } if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.ADVANCED_CAPACITOR.get()) {
             this.ENERGY_STORAGE.extractEnergy(4, false);
-        } if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.CAPACITOR_BASIC.get()) {
+        } if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.BASIC_CAPACITOR.get()) {
             this.ENERGY_STORAGE.extractEnergy(2, false);
         } else {
             this.ENERGY_STORAGE.extractEnergy(1, false);

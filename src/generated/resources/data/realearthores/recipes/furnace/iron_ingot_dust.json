@@ -11,10 +11,10 @@
       "item": "realearthores:nether_iron"
     },
     {
-      "item": "realearthores:dust_iron"
+      "item": "realearthores:iron_dust"
     },
     {
-      "item": "realearthores:dirty_iron"
+      "item": "realearthores:iron_dirty"
     }
   ],
   "result": "minecraft:iron_ingot"

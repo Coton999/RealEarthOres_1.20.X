@@ -56,152 +56,152 @@ public class REOItemModelProvider extends ItemModelProvider {
         rawItem(REOItems.RAW_ZINC);
 
         // Ingot
-        ingotItem(REOItems.INGOT_ALUMINIUM);
-        ingotItem(REOItems.INGOT_BRASS);
-        ingotItem(REOItems.INGOT_BRONZE);
-        ingotItem(REOItems.INGOT_ELECTRUM);
-        ingotItem(REOItems.INGOT_ENDERITE);
-        ingotItem(REOItems.INGOT_LEAD);
-        ingotItem(REOItems.INGOT_NICKEL);
-        ingotItem(REOItems.INGOT_OBSIDIAN);
-        ingotItem(REOItems.INGOT_PLATINUM);
-        ingotItem(REOItems.INGOT_SILVER);
-        ingotItem(REOItems.INGOT_STEEL);
-        ingotItem(REOItems.INGOT_TIN);
-        ingotItem(REOItems.INGOT_URANIUM);
-        ingotItem(REOItems.INGOT_ZINC);
+        ingotItem(REOItems.ALUMINUM_INGOT);
+        ingotItem(REOItems.BRASS_INGOT);
+        ingotItem(REOItems.BRONZE_INGOT);
+        ingotItem(REOItems.ELECTRUM_INGOT);
+        ingotItem(REOItems.ENDERITE_INGOT);
+        ingotItem(REOItems.LEAD_INGOT);
+        ingotItem(REOItems.NICKEL_INGOT);
+        ingotItem(REOItems.OBSIDIAN_INGOT);
+        ingotItem(REOItems.PLATINUM_INGOT);
+        ingotItem(REOItems.SILVER_INGOT);
+        ingotItem(REOItems.STEEL_INGOT);
+        ingotItem(REOItems.TIN_INGOT);
+        ingotItem(REOItems.URANIUM_INGOT);
+        ingotItem(REOItems.ZINC_INGOT);
 
         // Gem
-        gemItem(REOItems.GEM_AMETHYST);
-        gemItem(REOItems.GEM_PERIDOT);
-        gemItem(REOItems.GEM_RUBY);
-        gemItem(REOItems.GEM_SAPPHIRE);
+        gemItem(REOItems.AMETHYST);
+        gemItem(REOItems.PERIDOT);
+        gemItem(REOItems.RUBY);
+        gemItem(REOItems.SAPPHIRE);
 
         // Gem Shard
-        shardItem(REOItems.SHARD_PERIDOT);
-        shardItem(REOItems.SHARD_RUBY);
-        shardItem(REOItems.SHARD_SAPPHIRE);
+        shardItem(REOItems.PERIDOT_SHARD);
+        shardItem(REOItems.RUBY_SHARD);
+        shardItem(REOItems.SAPPHIRE_SHARD);
 
         // Nugget
-        nuggetItem(REOItems.NUGGET_ALUMINIUM);
-        nuggetItem(REOItems.NUGGET_AMETHYST);
-        nuggetItem(REOItems.NUGGET_BRASS);
-        nuggetItem(REOItems.NUGGET_BRONZE);
-        nuggetItem(REOItems.NUGGET_COPPER);
-        nuggetItem(REOItems.NUGGET_DIAMOND);
-        nuggetItem(REOItems.NUGGET_ELECTRUM);
-        nuggetItem(REOItems.NUGGET_EMERALD);
-        nuggetItem(REOItems.NUGGET_ENDERITE);
-        nuggetItem(REOItems.NUGGET_LEAD);
-        nuggetItem(REOItems.NUGGET_NETHERITE);
-        nuggetItem(REOItems.NUGGET_NICKEL);
-        nuggetItem(REOItems.NUGGET_PERIDOT);
-        nuggetItem(REOItems.NUGGET_PLATINUM);
-        nuggetItem(REOItems.NUGGET_RUBY);
-        nuggetItem(REOItems.NUGGET_SAPPHIRE);
-        nuggetItem(REOItems.NUGGET_SILVER);
-        nuggetItem(REOItems.NUGGET_STEEL);
-        nuggetItem(REOItems.NUGGET_TIN);
-        nuggetItem(REOItems.NUGGET_ZINC);
+        nuggetItem(REOItems.ALUMINUM_NUGGET);
+        nuggetItem(REOItems.AMETHYST_NUGGET);
+        nuggetItem(REOItems.BRASS_NUGGET);
+        nuggetItem(REOItems.BRONZE_NUGGET);
+        nuggetItem(REOItems.COPPER_NUGGET);
+        nuggetItem(REOItems.DIAMOND_NUGGET);
+        nuggetItem(REOItems.ELECTRUM_NUGGET);
+        nuggetItem(REOItems.EMERALD_NUGGET);
+        nuggetItem(REOItems.ENDERITE_NUGGET);
+        nuggetItem(REOItems.LEAD_NUGGET);
+        nuggetItem(REOItems.NETHERITE_NUGGET);
+        nuggetItem(REOItems.NICKEL_NUGGET);
+        nuggetItem(REOItems.PERIDOT_NUGGET);
+        nuggetItem(REOItems.PLATINUM_NUGGET);
+        nuggetItem(REOItems.RUBY_NUGGET);
+        nuggetItem(REOItems.SAPPHIRE_NUGGET);
+        nuggetItem(REOItems.SILVER_NUGGET);
+        nuggetItem(REOItems.STEEL_NUGGET);
+        nuggetItem(REOItems.TIN_NUGGET);
+        nuggetItem(REOItems.ZINC_NUGGET);
 
         // Bucket
-        bucketItem(REOItems.BUCKET_MOLTEN_ALUMINIUM);
-        bucketItem(REOItems.BUCKET_MOLTEN_AMETHYST);
-        bucketItem(REOItems.BUCKET_MOLTEN_BRASS);
-        bucketItem(REOItems.BUCKET_MOLTEN_BRONZE);
-        bucketItem(REOItems.BUCKET_MOLTEN_COAL);
-        bucketItem(REOItems.BUCKET_MOLTEN_COPPER);
-        bucketItem(REOItems.BUCKET_MOLTEN_DIAMOND);
-        bucketItem(REOItems.BUCKET_MOLTEN_ELECTRUM);
-        bucketItem(REOItems.BUCKET_MOLTEN_EMERALD);
-        bucketItem(REOItems.BUCKET_MOLTEN_ENDERITE);
-        bucketItem(REOItems.BUCKET_MOLTEN_GOLD);
-        bucketItem(REOItems.BUCKET_MOLTEN_IRON);
-        bucketItem(REOItems.BUCKET_MOLTEN_LAPIS);
-        bucketItem(REOItems.BUCKET_MOLTEN_LEAD);
-        bucketItem(REOItems.BUCKET_MOLTEN_NICKEL);
-        bucketItem(REOItems.BUCKET_MOLTEN_PERIDOT);
-        bucketItem(REOItems.BUCKET_MOLTEN_PLATINUM);
-        bucketItem(REOItems.BUCKET_MOLTEN_REDSTONE);
-        bucketItem(REOItems.BUCKET_MOLTEN_RUBY);
-        bucketItem(REOItems.BUCKET_MOLTEN_SAPPHIRE);
-        bucketItem(REOItems.BUCKET_MOLTEN_SILVER);
-        bucketItem(REOItems.BUCKET_MOLTEN_STEEL);
-        bucketItem(REOItems.BUCKET_MOLTEN_TIN);
-        bucketItem(REOItems.BUCKET_MOLTEN_URANIUM);
-        bucketItem(REOItems.BUCKET_MOLTEN_ZINC);
+        bucketItem(REOItems.ALUMINUM_BUCKET);
+        bucketItem(REOItems.AMETHYST_BUCKET);
+        bucketItem(REOItems.BRASS_BUCKET);
+        bucketItem(REOItems.BRONZE_BUCKET);
+        bucketItem(REOItems.COAL_BUCKET);
+        bucketItem(REOItems.COPPER_BUCKET);
+        bucketItem(REOItems.DIAMOND_BUCKET);
+        bucketItem(REOItems.ELECTRUM_BUCKET);
+        bucketItem(REOItems.EMERALD_BUCKET);
+        bucketItem(REOItems.ENDERITE_BUCKET);
+        bucketItem(REOItems.GOLD_BUCKET);
+        bucketItem(REOItems.IRON_BUCKET);
+        bucketItem(REOItems.LAPIS_BUCKET);
+        bucketItem(REOItems.LEAD_BUCKET);
+        bucketItem(REOItems.NICKEL_BUCKET);
+        bucketItem(REOItems.PERIDOT_BUCKET);
+        bucketItem(REOItems.PLATINUM_BUCKET);
+        bucketItem(REOItems.REDSTONE_BUCKET);
+        bucketItem(REOItems.RUBY_BUCKET);
+        bucketItem(REOItems.SAPPHIRE_BUCKET);
+        bucketItem(REOItems.SILVER_BUCKET);
+        bucketItem(REOItems.STEEL_BUCKET);
+        bucketItem(REOItems.TIN_BUCKET);
+        bucketItem(REOItems.URANIUM_BUCKET);
+        bucketItem(REOItems.ZINC_BUCKET);
 
         // Luminous Powder
-        luminousDustItem(REOItems.LUMINOUS_BLACK);
-        luminousDustItem(REOItems.LUMINOUS_BLUE);
-        luminousDustItem(REOItems.LUMINOUS_BROWN);
-        luminousDustItem(REOItems.LUMINOUS_CYAN);
-        luminousDustItem(REOItems.LUMINOUS_GRAY);
-        luminousDustItem(REOItems.LUMINOUS_GREEN);
-        luminousDustItem(REOItems.LUMINOUS_LIGHTBLUE);
-        luminousDustItem(REOItems.LUMINOUS_LIGHTGRAY);
-        luminousDustItem(REOItems.LUMINOUS_LIME);
-        luminousDustItem(REOItems.LUMINOUS_MAGENTA);
-        luminousDustItem(REOItems.LUMINOUS_ORANGE);
-        luminousDustItem(REOItems.LUMINOUS_PINK);
-        luminousDustItem(REOItems.LUMINOUS_PURPLE);
-        luminousDustItem(REOItems.LUMINOUS_RED);
-        luminousDustItem(REOItems.LUMINOUS_WHITE);
-        luminousDustItem(REOItems.LUMINOUS_YELLOW);
+        luminousDustItem(REOItems.BLACK_LUMINOUS);
+        luminousDustItem(REOItems.BLUE_LUMINOUS);
+        luminousDustItem(REOItems.BROWN_LUMINOUS);
+        luminousDustItem(REOItems.CYAN_LUMINOUS);
+        luminousDustItem(REOItems.GRAY_LUMINOUS);
+        luminousDustItem(REOItems.GREEN_LUMINOUS);
+        luminousDustItem(REOItems.LIGHT_BLUE_LUMINOUS);
+        luminousDustItem(REOItems.LIGHT_GRAY_LUMINOUS);
+        luminousDustItem(REOItems.LIME_LUMINOUS);
+        luminousDustItem(REOItems.MAGENTA_LUMINOUS);
+        luminousDustItem(REOItems.ORANGE_LUMINOUS);
+        luminousDustItem(REOItems.PINK_LUMINOUS);
+        luminousDustItem(REOItems.PURPLE_LUMINOUS);
+        luminousDustItem(REOItems.RED_LUMINOUS);
+        luminousDustItem(REOItems.WHITE_LUMINOUS);
+        luminousDustItem(REOItems.YELLOW_LUMINOUS);
 
         // Dust
-        dustItem(REOItems.DUST_ALUMINIUM);
-        dustItem(REOItems.DUST_AMETHYST);
-        dustItem(REOItems.DUST_BRASS);
-        dustItem(REOItems.DUST_BRONZE);
-        dustItem(REOItems.DUST_CHARCOAL);
-        dustItem(REOItems.DUST_COAL);
-        dustItem(REOItems.DUST_COPPER);
-        dustItem(REOItems.DUST_DIAMOND);
-        dustItem(REOItems.DUST_ELECTRUM);
-        dustItem(REOItems.DUST_EMERALD);
-        dustItem(REOItems.DUST_ENDERITE);
-        dustItem(REOItems.DUST_GOLD);
-        dustItem(REOItems.DUST_IRON);
-        dustItem(REOItems.DUST_LEAD);
-        dustItem(REOItems.DUST_NETHERITE);
-        dustItem(REOItems.DUST_NICKEL);
-        dustItem(REOItems.DUST_OBSIDIAN);
-        dustItem(REOItems.DUST_PERIDOT);
-        dustItem(REOItems.DUST_PLATINUM);
-        dustItem(REOItems.DUST_RUBY);
-        dustItem(REOItems.DUST_SAPPHIRE);
-        dustItem(REOItems.DUST_SILVER);
-        dustItem(REOItems.DUST_STEEL);
-        dustItem(REOItems.DUST_TIN);
-        dustItem(REOItems.DUST_URANIUM);
-        dustItem(REOItems.DUST_ZINC);
+        dustItem(REOItems.ALUMINUM_DUST);
+        dustItem(REOItems.AMETHYST_DUST);
+        dustItem(REOItems.BRASS_DUST);
+        dustItem(REOItems.BRONZE_DUST);
+        dustItem(REOItems.CHARCOAL_DUST);
+        dustItem(REOItems.COAL_DUST);
+        dustItem(REOItems.COPPER_DUST);
+        dustItem(REOItems.DIAMOND_DUST);
+        dustItem(REOItems.ELECTRUM_DUST);
+        dustItem(REOItems.EMERALD_DUST);
+        dustItem(REOItems.ENDERITE_DUST);
+        dustItem(REOItems.GOLD_DUST);
+        dustItem(REOItems.IRON_DUST);
+        dustItem(REOItems.LEAD_DUST);
+        dustItem(REOItems.NETHERITE_DUST);
+        dustItem(REOItems.NICKEL_DUST);
+        dustItem(REOItems.OBSIDIAN_DUST);
+        dustItem(REOItems.PERIDOT_DUST);
+        dustItem(REOItems.PLATINUM_DUST);
+        dustItem(REOItems.RUBY_DUST);
+        dustItem(REOItems.SAPPHIRE_DUST);
+        dustItem(REOItems.SILVER_DUST);
+        dustItem(REOItems.STEEL_DUST);
+        dustItem(REOItems.TIN_DUST);
+        dustItem(REOItems.URANIUM_DUST);
+        dustItem(REOItems.ZINC_DUST);
 
         // Dust
-        dirtyDustItem(REOItems.DIRTY_ALUMINIUM);
-        dirtyDustItem(REOItems.DIRTY_AMETHYST);
-        dirtyDustItem(REOItems.DIRTY_BRASS);
-        dirtyDustItem(REOItems.DIRTY_BRONZE);
-        dirtyDustItem(REOItems.DIRTY_COPPER);
-        dirtyDustItem(REOItems.DIRTY_DIAMOND);
-        dirtyDustItem(REOItems.DIRTY_ELECTRUM);
-        dirtyDustItem(REOItems.DIRTY_EMERALD);
-        dirtyDustItem(REOItems.DIRTY_ENDERITE);
-        dirtyDustItem(REOItems.DIRTY_GOLD);
-        dirtyDustItem(REOItems.DIRTY_IRON);
-        dirtyDustItem(REOItems.DIRTY_LEAD);
-        dirtyDustItem(REOItems.DIRTY_NETHERITE);
-        dirtyDustItem(REOItems.DIRTY_NICKEL);
-        dirtyDustItem(REOItems.DIRTY_OBSIDIAN);
-        dirtyDustItem(REOItems.DIRTY_PERIDOT);
-        dirtyDustItem(REOItems.DIRTY_PLATINUM);
-        dirtyDustItem(REOItems.DIRTY_RUBY);
-        dirtyDustItem(REOItems.DIRTY_SAPPHIRE);
-        dirtyDustItem(REOItems.DIRTY_SILVER);
-        dirtyDustItem(REOItems.DIRTY_STEEL);
-        dirtyDustItem(REOItems.DIRTY_TIN);
-        dirtyDustItem(REOItems.DIRTY_URANIUM);
-        dirtyDustItem(REOItems.DIRTY_ZINC);
+        dirtyDustItem(REOItems.ALUMINUM_DIRTY);
+        dirtyDustItem(REOItems.AMETHYST_DIRTY);
+        dirtyDustItem(REOItems.BRASS_DIRTY);
+        dirtyDustItem(REOItems.BRONZE_DIRTY);
+        dirtyDustItem(REOItems.COPPER_DIRTY);
+        dirtyDustItem(REOItems.DIAMOND_DIRTY);
+        dirtyDustItem(REOItems.ELECTRUM_DIRTY);
+        dirtyDustItem(REOItems.EMERALD_DIRTY);
+        dirtyDustItem(REOItems.ENDERITE_DIRTY);
+        dirtyDustItem(REOItems.GOLD_DIRTY);
+        dirtyDustItem(REOItems.IRON_DIRTY);
+        dirtyDustItem(REOItems.LEAD_DIRTY);
+        dirtyDustItem(REOItems.NETHERITE_DIRTY);
+        dirtyDustItem(REOItems.NICKEL_DIRTY);
+        dirtyDustItem(REOItems.OBSIDIAN_DIRTY);
+        dirtyDustItem(REOItems.PERIDOT_DIRTY);
+        dirtyDustItem(REOItems.PLATINUM_DIRTY);
+        dirtyDustItem(REOItems.RUBY_DIRTY);
+        dirtyDustItem(REOItems.SAPPHIRE_DIRTY);
+        dirtyDustItem(REOItems.SILVER_DIRTY);
+        dirtyDustItem(REOItems.STEEL_DIRTY);
+        dirtyDustItem(REOItems.TIN_DIRTY);
+        dirtyDustItem(REOItems.URANIUM_DIRTY);
+        dirtyDustItem(REOItems.ZINC_DIRTY);
 
         // Tech //
         // Misc
@@ -211,96 +211,101 @@ public class REOItemModelProvider extends ItemModelProvider {
         miscItem(REOItems.TREE_TAP);
 
         // Gear
-        gearItem(REOItems.GEAR_ALUMINIUM);
-        gearItem(REOItems.GEAR_AMETHYST);
-        gearItem(REOItems.GEAR_BRASS);
-        gearItem(REOItems.GEAR_BRONZE);
-        gearItem(REOItems.GEAR_COPPER);
-        gearItem(REOItems.GEAR_DIAMOND);
-        gearItem(REOItems.GEAR_ELECTRUM);
-        gearItem(REOItems.GEAR_EMERALD);
-        gearItem(REOItems.GEAR_ENDERITE);
-        gearItem(REOItems.GEAR_GOLDEN);
-        gearItem(REOItems.GEAR_IRON);
-        gearItem(REOItems.GEAR_LEAD);
-        gearItem(REOItems.GEAR_NICKEL);
-        gearItem(REOItems.GEAR_PLATINUM);
-        gearItem(REOItems.GEAR_PERIDOT);
-        gearItem(REOItems.GEAR_RUBY);
-        gearItem(REOItems.GEAR_SAPPHIRE);
-        gearItem(REOItems.GEAR_SILVER);
-        gearItem(REOItems.GEAR_STEEL);
-        gearItem(REOItems.GEAR_STONE);
-        gearItem(REOItems.GEAR_TIN);
-        gearItem(REOItems.GEAR_WOODEN);
-        gearItem(REOItems.GEAR_ZINC);
+        gearItem(REOItems.ALUMINUM_GEAR);
+        gearItem(REOItems.AMETHYST_GEAR);
+        gearItem(REOItems.BRASS_GEAR);
+        gearItem(REOItems.BRONZE_GEAR);
+        gearItem(REOItems.COPPER_GEAR);
+        gearItem(REOItems.DIAMOND_GEAR);
+        gearItem(REOItems.ELECTRUM_GEAR);
+        gearItem(REOItems.EMERALD_GEAR);
+        gearItem(REOItems.ENDERITE_GEAR);
+        gearItem(REOItems.GOLD_GERAR);
+        gearItem(REOItems.IRON_GEAR);
+        gearItem(REOItems.LEAD_GEAR);
+        gearItem(REOItems.NICKEL_GEAR);
+        gearItem(REOItems.PLATINUM_GEAR);
+        gearItem(REOItems.PERIDOT_GEAR);
+        gearItem(REOItems.RUBY_GEAR);
+        gearItem(REOItems.SAPPHIRE_GEAR);
+        gearItem(REOItems.SILVER_GEAR);
+        gearItem(REOItems.STEEL_GEAR);
+        gearItem(REOItems.STONE_GEAR);
+        gearItem(REOItems.TIN_GEAR);
+        gearItem(REOItems.WOOD_GEAR);
+        gearItem(REOItems.ZINC_GEAR);
 
         // Plate
-        plateItem(REOItems.PLATE_ALUMINIUM);
-        plateItem(REOItems.PLATE_AMETHYST);
-        plateItem(REOItems.PLATE_BRASS);
-        plateItem(REOItems.PLATE_BRONZE);
-        plateItem(REOItems.PLATE_COPPER);
-        plateItem(REOItems.PLATE_DIAMOND);
-        plateItem(REOItems.PLATE_ELECTRUM);
-        plateItem(REOItems.PLATE_EMERALD);
-        plateItem(REOItems.PLATE_ENDERITE);
-        plateItem(REOItems.PLATE_GOLDEN);
-        plateItem(REOItems.PLATE_IRON);
-        plateItem(REOItems.PLATE_LEAD);
-        plateItem(REOItems.PLATE_NICKEL);
-        plateItem(REOItems.PLATE_PLATINUM);
-        plateItem(REOItems.PLATE_PERIDOT);
-        plateItem(REOItems.PLATE_RUBY);
-        plateItem(REOItems.PLATE_SAPPHIRE);
-        plateItem(REOItems.PLATE_SILVER);
-        plateItem(REOItems.PLATE_STEEL);
-        plateItem(REOItems.PLATE_TIN);
-        plateItem(REOItems.PLATE_ZINC);
+        plateItem(REOItems.ALUMINUM_PLATE);
+        plateItem(REOItems.AMETHYST_PLATE);
+        plateItem(REOItems.BRASS_PALTE);
+        plateItem(REOItems.BRONZE_PLATE);
+        plateItem(REOItems.COPPER_PALTE);
+        plateItem(REOItems.DIAMOND_PLATE);
+        plateItem(REOItems.ELECTRUM_PLATE);
+        plateItem(REOItems.EMERALD_PLATE);
+        plateItem(REOItems.ENDERITE_PLATE);
+        plateItem(REOItems.GOLD_PLATE);
+        plateItem(REOItems.IRON_PLATE);
+        plateItem(REOItems.LEAD_PLATE);
+        plateItem(REOItems.NICKEL_PLATE);
+        plateItem(REOItems.PLATINUM_PLATE);
+        plateItem(REOItems.PERIDOT_PLATE);
+        plateItem(REOItems.RUBY_PLATE);
+        plateItem(REOItems.SAPPHIRE_PLATE);
+        plateItem(REOItems.SILVER_PLATE);
+        plateItem(REOItems.STEEL_PLATE);
+        plateItem(REOItems.TIN_PLATE);
+        plateItem(REOItems.ZINC_PLATE);
 
         // Capacitor
-        capacitorItem(REOItems.CAPACITOR_BASIC);
-        capacitorItem(REOItems.CAPACITOR_ADVANCED);
-        capacitorItem(REOItems.CAPACITOR_ULTIMATE);
+        capacitorItem(REOItems.BASIC_CAPACITOR);
+        capacitorItem(REOItems.ADVANCED_CAPACITOR);
+        capacitorItem(REOItems.ULTIMATE_CAPACITOR);
 
         // Foods //
         // Seeds
-        seedItem(REOItems.SEED_BARLEY);
-        seedItem(REOItems.SEED_CAULIFLOWER);
-        seedItem(REOItems.SEED_COTTON);
-        seedItem(REOItems.SEED_RICE);
-        seedItem(REOItems.SEED_STRAWBERRY);
-        seedItem(REOItems.SEED_TOMATO);
+        seedItem(REOItems.BARLEY_SEED);
+        seedItem(REOItems.CAULIFLOWER_SEED);
+        seedItem(REOItems.COTTON_SEED);
+        seedItem(REOItems.ENDER_LILLY_SEED);
+        seedItem(REOItems.RICE_SEED);
+        seedItem(REOItems.STRAWBERRY_SEED);
+        seedItem(REOItems.TOMATO_SEED);
 
         // Crops
-        foodItem(REOItems.PLANT_BARLEY);
-        foodItem(REOItems.PLANT_COTTON);
-        foodItem(REOItems.PLANT_RICE);
+        plantItem(REOItems.BARLEY_PLANT);
+        plantItem(REOItems.COTTON_PLANT);
+        plantItem(REOItems.RICE_PLANT);
 
         // Flour
-        foodItem(REOItems.FLOUR_BARLEY);
-        foodItem(REOItems.FLOUR_WHEAT);
+        foodItem(REOItems.BARLEY_FLOUR);
+        foodItem(REOItems.WHEAT_FLOUR);
 
-        // Food
-        foodItem(REOItems.FOOD_BLACKBERRY);
-        foodItem(REOItems.FOOD_BLUEBERRY);
-        foodItem(REOItems.FOOD_CAULIFLOWER);
-        foodItem(REOItems.FOOD_CHERRY);
-        foodItem(REOItems.FOOD_CHESTNUT);
-        foodItem(REOItems.FOOD_DATES);
-        foodItem(REOItems.FOOD_LEMON);
-        foodItem(REOItems.FOOD_LIME);
-        foodItem(REOItems.FOOD_ONION);
-        foodItem(REOItems.FOOD_PAPAYA);
-        foodItem(REOItems.FOOD_PEACH);
-        foodItem(REOItems.FOOD_PEAR);
-        foodItem(REOItems.FOOD_PLUM);
-        foodItem(REOItems.FOOD_RASPBERRY);
-        foodItem(REOItems.FOOD_RICE);
-        foodItem(REOItems.FOOD_STRAWBERRY);
-        foodItem(REOItems.FOOD_TOMATO);
-        foodItem(REOItems.FOOD_TOMATO_ROTTEN);
-        foodItem(REOItems.FOOD_WALNUT);
+        // Fruit
+        foodItem(REOItems.BLACKBERRY);
+        foodItem(REOItems.BLUEBERRY);
+        foodItem(REOItems.CHERRY);
+        foodItem(REOItems.DATES);
+        foodItem(REOItems.LEMON);
+        foodItem(REOItems.LIME);
+        foodItem(REOItems.PAPAYA);
+        foodItem(REOItems.PEACH);
+        foodItem(REOItems.PEAR);
+        foodItem(REOItems.PLUM);
+        foodItem(REOItems.RASPBERRY);
+        foodItem(REOItems.STRAWBERRY);
+
+        // Nuts
+        foodItem(REOItems.CHESTNUT);
+        foodItem(REOItems.WALNUT);
+
+        // Veg
+        foodItem(REOItems.CAULIFLOWER);
+        foodItem(REOItems.ONION);
+        foodItem(REOItems.RICE);
+        foodItem(REOItems.TOMATO);
+        foodItem(REOItems.TOMATO_ROTTEN);
 
 
         // Tools //
@@ -488,7 +493,7 @@ public class REOItemModelProvider extends ItemModelProvider {
         trimmedArmourItem(REOItems.ALUMINIUM_LEGGINGS);
         trimmedArmourItem(REOItems.ALUMINIUM_BOOTS);
 
-        horseArmorItem(REOItems.HORSE_ARMOR_ALUMINIUM);
+        horseArmorItem(REOItems.ALUMINIUM_HORSE_ARMOR);
 
         // Amethyst
         trimmedArmourItem(REOItems.AMETHYST_HELMET);
@@ -496,7 +501,7 @@ public class REOItemModelProvider extends ItemModelProvider {
         trimmedArmourItem(REOItems.AMETHYST_LEGGINGS);
         trimmedArmourItem(REOItems.AMETHYST_BOOTS);
 
-        horseArmorItem(REOItems.HORSE_ARMOR_AMETHYST);
+        horseArmorItem(REOItems.AMETHYST_HORSE_ARMOR);
 
         // Bronze
         trimmedArmourItem(REOItems.BRONZE_HELMET);
@@ -504,7 +509,7 @@ public class REOItemModelProvider extends ItemModelProvider {
         trimmedArmourItem(REOItems.BRONZE_LEGGINGS);
         trimmedArmourItem(REOItems.BRONZE_BOOTS);
 
-        horseArmorItem(REOItems.HORSE_ARMOR_BRONZE);
+        horseArmorItem(REOItems.BRONZE_HORSE_ARMOR);
 
         // Enderite
         trimmedArmourItem(REOItems.ENDERITE_HELMET);
@@ -512,7 +517,7 @@ public class REOItemModelProvider extends ItemModelProvider {
         trimmedArmourItem(REOItems.ENDERITE_LEGGINGS);
         trimmedArmourItem(REOItems.ENDERITE_BOOTS);
 
-        horseArmorItem(REOItems.HORSE_ARMOR_ENDERITE);
+        horseArmorItem(REOItems.ENDERITE_HORSE_ARMOR);
 
         // Platinum
         trimmedArmourItem(REOItems.PLATINUM_HELMET);
@@ -520,7 +525,7 @@ public class REOItemModelProvider extends ItemModelProvider {
         trimmedArmourItem(REOItems.PLATINUM_LEGGINGS);
         trimmedArmourItem(REOItems.PLATINUM_BOOTS);
 
-        horseArmorItem(REOItems.HORSE_ARMOR_PLATINUM);
+        horseArmorItem(REOItems.PLATINUM_HORSE_ARMOR);
 
         // Peridot
         trimmedArmourItem(REOItems.PERIDOT_HELMET);
@@ -528,7 +533,7 @@ public class REOItemModelProvider extends ItemModelProvider {
         trimmedArmourItem(REOItems.PERIDOT_LEGGINGS);
         trimmedArmourItem(REOItems.PERIDOT_BOOTS);
 
-        horseArmorItem(REOItems.HORSE_ARMOR_PERIDOT);
+        horseArmorItem(REOItems.PERIDOT_HORSE_ARMOR);
 
         // Ruby
         trimmedArmourItem(REOItems.RUBY_HELMET);
@@ -536,7 +541,7 @@ public class REOItemModelProvider extends ItemModelProvider {
         trimmedArmourItem(REOItems.RUBY_LEGGINGS);
         trimmedArmourItem(REOItems.RUBY_BOOTS);
 
-        horseArmorItem(REOItems.HORSE_ARMOR_RUBY);
+        horseArmorItem(REOItems.RUBY_HORSE_ARMOR);
 
         // Sapphire
         trimmedArmourItem(REOItems.SAPPHIRE_HELMET);
@@ -544,7 +549,7 @@ public class REOItemModelProvider extends ItemModelProvider {
         trimmedArmourItem(REOItems.SAPPHIRE_LEGGINGS);
         trimmedArmourItem(REOItems.SAPPHIRE_BOOTS);
 
-        horseArmorItem(REOItems.HORSE_ARMOR_SAPPHIRE);
+        horseArmorItem(REOItems.SAPPHIRE_HORSE_ARMOR);
 
         // Silver
         trimmedArmourItem(REOItems.SILVER_HELMET);
@@ -552,7 +557,7 @@ public class REOItemModelProvider extends ItemModelProvider {
         trimmedArmourItem(REOItems.SILVER_LEGGINGS);
         trimmedArmourItem(REOItems.SILVER_BOOTS);
 
-        horseArmorItem(REOItems.HORSE_ARMOR_SILVER);
+        horseArmorItem(REOItems.SILVER_HORSE_ARMOR);
 
         // Steel
         trimmedArmourItem(REOItems.STEEL_HELMET);
@@ -560,7 +565,7 @@ public class REOItemModelProvider extends ItemModelProvider {
         trimmedArmourItem(REOItems.STEEL_LEGGINGS);
         trimmedArmourItem(REOItems.STEEL_BOOTS);
 
-        horseArmorItem(REOItems.HORSE_ARMOR_STEEL);
+        horseArmorItem(REOItems.STEEL_HORSE_ARMOR);
 
 
         // Blocks //
@@ -690,11 +695,11 @@ public class REOItemModelProvider extends ItemModelProvider {
         simpleBlockItem(REOBlocks.PRESSURE_PLATE_BALSA);
 
         saplingItem(REOBlocks.SAPLING_BALSA, "balsa");
-        signItem(REOItems.SIGN_BALSA);
-        signItem(REOItems.SIGN_HANGING_BALSA);
+        signItem(REOItems.BALSA_SIGN);
+        signItem(REOItems.BALSA_HANGING_SIGN);
 
-        boatItem(REOItems.BOAT_BALSA);
-        boatItem(REOItems.BOAT_BALSA_CHEST);
+        boatItem(REOItems.BALSA_BOAT);
+        boatItem(REOItems.BALSA_CHEST_BOAT);
 
         doorItem(REOBlocks.DOOR_BALSA);
         trapdoorItem(REOBlocks.TRAPDOOR_BALSA);
@@ -714,11 +719,11 @@ public class REOItemModelProvider extends ItemModelProvider {
         simpleBlockItem(REOBlocks.PRESSURE_PLATE_BAOBAB);
 
         saplingItem(REOBlocks.SAPLING_BAOBAB, "baobab");
-        signItem(REOItems.SIGN_BAOBAB);
-        signItem(REOItems.SIGN_HANGING_BAOBAB);
+        signItem(REOItems.BAOBAB_SIGN);
+        signItem(REOItems.BAOBAB_HANGING_SIGN);
 
-        boatItem(REOItems.BOAT_BAOBAB);
-        boatItem(REOItems.BOAT_BAOBAB_CHEST);
+        boatItem(REOItems.BAOBAB_BOAT);
+        boatItem(REOItems.BAOBAB_CHEST_BOAT);
 
         doorItem(REOBlocks.DOOR_BAOBAB);
         trapdoorItem(REOBlocks.TRAPDOOR_BAOBAB);
@@ -738,11 +743,11 @@ public class REOItemModelProvider extends ItemModelProvider {
         simpleBlockItem(REOBlocks.PRESSURE_PLATE_HILL_CHERRY);
 
         saplingItem(REOBlocks.SAPLING_HILL_CHERRY, "cherry");
-        signItem(REOItems.SIGN_HILL_CHERRY);
-        signItem(REOItems.SIGN_HANGING_HILL_CHERRY);
+        signItem(REOItems.HILL_CHERRY_SIGN);
+        signItem(REOItems.HILL_CHERRY_HANGING_SIGN);
 
-        boatItem(REOItems.BOAT_HILL_CHERRY);
-        boatItem(REOItems.BOAT_HILL_CHERRY_CHEST);
+        boatItem(REOItems.HILL_CHERRY_BOAT);
+        boatItem(REOItems.HILL_CHERRY_CHEST_BOAT);
 
         doorItem(REOBlocks.DOOR_HILL_CHERRY);
         trapdoorItem(REOBlocks.TRAPDOOR_HILL_CHERRY);
@@ -762,11 +767,11 @@ public class REOItemModelProvider extends ItemModelProvider {
         simpleBlockItem(REOBlocks.PRESSURE_PLATE_CHESTNUT);
 
         saplingItem(REOBlocks.SAPLING_CHESTNUT, "chestnut");
-        signItem(REOItems.SIGN_CHESTNUT);
-        signItem(REOItems.SIGN_HANGING_CHESTNUT);
+        signItem(REOItems.CHESTNUT_SIGN);
+        signItem(REOItems.CHESTNUT_HANGING_SIGN);
 
         boatItem(REOItems.BOAT_CHESTNUT);
-        boatItem(REOItems.BOAT_CHESTNUT_CHEST);
+        boatItem(REOItems.CHESTNUT_CHEST_BOAT);
 
         doorItem(REOBlocks.DOOR_CHESTNUT);
         trapdoorItem(REOBlocks.TRAPDOOR_CHESTNUT);
@@ -785,11 +790,11 @@ public class REOItemModelProvider extends ItemModelProvider {
         simpleBlockItem(REOBlocks.PRESSURE_PLATE_CITRUS);
 
         saplingItem(REOBlocks.SAPLING_CITRUS, "citrus");
-        signItem(REOItems.SIGN_CITRUS);
-        signItem(REOItems.SIGN_HANGING_CITRUS);
+        signItem(REOItems.CITRUS_SIGN);
+        signItem(REOItems.CITRUS_HANGING_SIGN);
 
-        boatItem(REOItems.BOAT_CITRUS);
-        boatItem(REOItems.BOAT_CITRUS_CHEST);
+        boatItem(REOItems.CITRUS_BOAT);
+        boatItem(REOItems.CITRUS_CHEST_BOAT);
 
         doorItem(REOBlocks.DOOR_CITRUS);
         trapdoorItem(REOBlocks.TRAPDOOR_CITRUS);
@@ -809,11 +814,11 @@ public class REOItemModelProvider extends ItemModelProvider {
         simpleBlockItem(REOBlocks.PRESSURE_PLATE_EBONY);
 
         saplingItem(REOBlocks.SAPLING_EBONY, "ebony");
-        signItem(REOItems.SIGN_EBONY);
-        signItem(REOItems.SIGN_HANGING_EBONY);
+        signItem(REOItems.EBONY_SIGN);
+        signItem(REOItems.EBONY_HANGING_SIGN);
 
-        boatItem(REOItems.BOAT_EBONY);
-        boatItem(REOItems.BOAT_EBONY_CHEST);
+        boatItem(REOItems.EBONY_BOAT);
+        boatItem(REOItems.EBONY_CHEST_BOAT);
 
         doorItem(REOBlocks.DOOR_EBONY);
         trapdoorItem(REOBlocks.TRAPDOOR_EBONY);
@@ -833,11 +838,11 @@ public class REOItemModelProvider extends ItemModelProvider {
         simpleBlockItem(REOBlocks.PRESSURE_PLATE_LARCH);
 
         saplingItem(REOBlocks.SAPLING_LARCH, "larch");
-        signItem(REOItems.SIGN_LARCH);
-        signItem(REOItems.SIGN_HANGING_LARCH);
+        signItem(REOItems.LARCH_SIGN);
+        signItem(REOItems.LARCH_HANGING_SIGN);
 
-        boatItem(REOItems.BOAT_LARCH);
-        boatItem(REOItems.BOAT_LARCH_CHEST);
+        boatItem(REOItems.LARCH_BOAT);
+        boatItem(REOItems.LARCH_CHEST_BOAT);
 
         doorItem(REOBlocks.DOOR_LARCH);
         trapdoorItem(REOBlocks.TRAPDOOR_LARCH);
@@ -857,11 +862,11 @@ public class REOItemModelProvider extends ItemModelProvider {
         simpleBlockItem(REOBlocks.PRESSURE_PLATE_LIME);
 
         saplingItem(REOBlocks.SAPLING_LIME, "lime");
-        signItem(REOItems.SIGN_LIME);
-        signItem(REOItems.SIGN_HANGING_LIME);
+        signItem(REOItems.LIME_SIGN);
+        signItem(REOItems.LIME_HANGING_SIGN);
 
-        boatItem(REOItems.BOAT_LIME);
-        boatItem(REOItems.BOAT_LIME_CHEST);
+        boatItem(REOItems.LIME_BOAT);
+        boatItem(REOItems.LIME_CHEST_BOAT);
 
         doorItem(REOBlocks.DOOR_LIME);
         trapdoorItem(REOBlocks.TRAPDOOR_LIME);
@@ -881,11 +886,11 @@ public class REOItemModelProvider extends ItemModelProvider {
         simpleBlockItem(REOBlocks.PRESSURE_PLATE_MAHOGANY);
 
         saplingItem(REOBlocks.SAPLING_MAHOGANY, "mahogany");
-        signItem(REOItems.SIGN_MAHOGANY);
-        signItem(REOItems.SIGN_HANGING_MAHOGANY);
+        signItem(REOItems.MAHOGANY_SIGN);
+        signItem(REOItems.MAHOGANY_HANGING_SIGN);
 
-        boatItem(REOItems.BOAT_MAHOGANY);
-        boatItem(REOItems.BOAT_MAHOGANY_CHEST);
+        boatItem(REOItems.MAHOGANY_BOAT);
+        boatItem(REOItems.MAHOGANY_CHEST_BOAT);
 
         doorItem(REOBlocks.DOOR_MAHOGANY);
         trapdoorItem(REOBlocks.TRAPDOOR_MAHOGANY);
@@ -905,11 +910,11 @@ public class REOItemModelProvider extends ItemModelProvider {
         simpleBlockItem(REOBlocks.PRESSURE_PLATE_MAPLE);
 
         saplingItem(REOBlocks.SAPLING_MAPLE, "maple");
-        signItem(REOItems.SIGN_MAPLE);
-        signItem(REOItems.SIGN_HANGING_MAPLE);
+        signItem(REOItems.MAPLE_SIGN);
+        signItem(REOItems.MAPLE_HANGING_SIGN);
 
-        boatItem(REOItems.BOAT_MAPLE);
-        boatItem(REOItems.BOAT_MAPLE_CHEST);
+        boatItem(REOItems.MAPLE_BOAT);
+        boatItem(REOItems.MAPLE_CHEST_BOAT);
 
         doorItem(REOBlocks.DOOR_MAPLE);
         trapdoorItem(REOBlocks.TRAPDOOR_MAPLE);
@@ -929,11 +934,11 @@ public class REOItemModelProvider extends ItemModelProvider {
         simpleBlockItem(REOBlocks.PRESSURE_PLATE_PALM);
 
         saplingItem(REOBlocks.SAPLING_PALM, "palm");
-        signItem(REOItems.SIGN_PALM);
-        signItem(REOItems.SIGN_HANGING_PALM);
+        signItem(REOItems.PALM_SIGN);
+        signItem(REOItems.PALM_HANGING_SIGN);
 
-        boatItem(REOItems.BOAT_PALM);
-        boatItem(REOItems.BOAT_PALM_CHEST);
+        boatItem(REOItems.PALM_BOAT);
+        boatItem(REOItems.PALM_CHEST_BOAT);
 
         doorItem(REOBlocks.DOOR_PALM);
         trapdoorItem(REOBlocks.TRAPDOOR_PALM);
@@ -953,11 +958,11 @@ public class REOItemModelProvider extends ItemModelProvider {
         simpleBlockItem(REOBlocks.PRESSURE_PLATE_PAPAYA);
 
         saplingItem(REOBlocks.SAPLING_PAPAYA, "papaya");
-        signItem(REOItems.SIGN_PAPAYA);
-        signItem(REOItems.SIGN_HANGING_PAPAYA);
+        signItem(REOItems.PAPAYA_SIGN);
+        signItem(REOItems.PAPAYA_HANGING_SIGN);
 
-        boatItem(REOItems.BOAT_PAPAYA);
-        boatItem(REOItems.BOAT_PAPAYA_CHEST);
+        boatItem(REOItems.PAPAYA_BOAT);
+        boatItem(REOItems.PAPAYA_CHEST_BOAT);
 
         doorItem(REOBlocks.DOOR_PAPAYA);
         trapdoorItem(REOBlocks.TRAPDOOR_PAPAYA);
@@ -977,11 +982,11 @@ public class REOItemModelProvider extends ItemModelProvider {
         simpleBlockItem(REOBlocks.PRESSURE_PLATE_PINE);
 
         saplingItem(REOBlocks.SAPLING_PINE, "pine");
-        signItem(REOItems.SIGN_PINE);
-        signItem(REOItems.SIGN_HANGING_PINE);
+        signItem(REOItems.PINE_SIGN);
+        signItem(REOItems.PINE_HANGING_SIGN);
 
-        boatItem(REOItems.BOAT_PINE);
-        boatItem(REOItems.BOAT_PINE_CHEST);
+        boatItem(REOItems.PINE_BOAT);
+        boatItem(REOItems.PINE_CHEST_BOAT);
 
         doorItem(REOBlocks.DOOR_PINE);
         trapdoorItem(REOBlocks.TRAPDOOR_PINE);
@@ -1001,11 +1006,11 @@ public class REOItemModelProvider extends ItemModelProvider {
         simpleBlockItem(REOBlocks.PRESSURE_PLATE_PLUM);
 
         saplingItem(REOBlocks.SAPLING_PLUM, "plum");
-        signItem(REOItems.SIGN_PLUM);
-        signItem(REOItems.SIGN_HANGING_PLUM);
+        signItem(REOItems.PLUM_SIGN);
+        signItem(REOItems.PLUM_HANGING_SIGN);
 
-        boatItem(REOItems.BOAT_PLUM);
-        boatItem(REOItems.BOAT_PLUM_CHEST);
+        boatItem(REOItems.PLUM_BOAT);
+        boatItem(REOItems.PLUM_CHEST_BOAT);
 
         doorItem(REOBlocks.DOOR_PLUM);
         trapdoorItem(REOBlocks.TRAPDOOR_PLUM);
@@ -1025,11 +1030,11 @@ public class REOItemModelProvider extends ItemModelProvider {
         simpleBlockItem(REOBlocks.PRESSURE_PLATE_POPLAR);
 
         saplingItem(REOBlocks.SAPLING_POPLAR, "poplar");
-        signItem(REOItems.SIGN_POPLAR);
-        signItem(REOItems.SIGN_HANGING_POPLAR);
+        signItem(REOItems.POPLAR_SIGN);
+        signItem(REOItems.POPLAR_HANGING_SIGN);
 
-        boatItem(REOItems.BOAT_POPLAR);
-        boatItem(REOItems.BOAT_POPLAR_CHEST);
+        boatItem(REOItems.POPLAR_BOAT);
+        boatItem(REOItems.POPLAR_CHEST_BOAT);
 
         doorItem(REOBlocks.DOOR_POPLAR);
         trapdoorItem(REOBlocks.TRAPDOOR_POPLAR);
@@ -1049,11 +1054,11 @@ public class REOItemModelProvider extends ItemModelProvider {
         simpleBlockItem(REOBlocks.PRESSURE_PLATE_REDWOOD);
 
         saplingItem(REOBlocks.SAPLING_REDWOOD, "redwood");
-        signItem(REOItems.SIGN_REDWOOD);
-        signItem(REOItems.SIGN_HANGING_REDWOOD);
+        signItem(REOItems.REDWOOD_SIGN);
+        signItem(REOItems.REDWOOD_HANGING_SIGN);
 
-        boatItem(REOItems.BOAT_REDWOOD);
-        boatItem(REOItems.BOAT_REDWOOD_CHEST);
+        boatItem(REOItems.REDWOOD_BOAT);
+        boatItem(REOItems.REDWOOD_CHEST_BOAT);
 
         doorItem(REOBlocks.DOOR_REDWOOD);
         trapdoorItem(REOBlocks.TRAPDOOR_REDWOOD);
@@ -1073,11 +1078,11 @@ public class REOItemModelProvider extends ItemModelProvider {
         simpleBlockItem(REOBlocks.PRESSURE_PLATE_RUBBER);
 
         saplingItem(REOBlocks.SAPLING_RUBBER, "rubber");
-        signItem(REOItems.SIGN_RUBBER);
-        signItem(REOItems.SIGN_HANGING_RUBBER);
+        signItem(REOItems.RUBBER_SIGN);
+        signItem(REOItems.RUBBER_HANGING_SIGN);
 
-        boatItem(REOItems.BOAT_RUBBER);
-        boatItem(REOItems.BOAT_RUBBER_CHEST);
+        boatItem(REOItems.RUBBER_BOAT);
+        boatItem(REOItems.RUBBER_CHEST_BOAT);
 
         doorItem(REOBlocks.DOOR_RUBBER);
         trapdoorItem(REOBlocks.TRAPDOOR_RUBBER);
@@ -1097,11 +1102,11 @@ public class REOItemModelProvider extends ItemModelProvider {
         simpleBlockItem(REOBlocks.PRESSURE_PLATE_TEAK);
 
         saplingItem(REOBlocks.SAPLING_TEAK, "teak");
-        signItem(REOItems.SIGN_TEAK);
-        signItem(REOItems.SIGN_HANGING_TEAK);
+        signItem(REOItems.TEAK_SIGN);
+        signItem(REOItems.TEAK_HANGING_SIGN);
 
-        boatItem(REOItems.BOAT_TEAK);
-        boatItem(REOItems.BOAT_TEAK_CHEST);
+        boatItem(REOItems.TEAK_BOAT);
+        boatItem(REOItems.TEAK_CHEST_BOAT);
 
         doorItem(REOBlocks.DOOR_TEAK);
         trapdoorItem(REOBlocks.TRAPDOOR_TEAK);
@@ -1121,11 +1126,11 @@ public class REOItemModelProvider extends ItemModelProvider {
         simpleBlockItem(REOBlocks.PRESSURE_PLATE_WALNUT);
 
         saplingItem(REOBlocks.SAPLING_WALNUT, "walnut");
-        signItem(REOItems.SIGN_WALNUT);
-        signItem(REOItems.SIGN_HANGING_WALNUT);
+        signItem(REOItems.WALNUT_SIGN);
+        signItem(REOItems.WALNUT_HANGING_SIGN);
 
-        boatItem(REOItems.BOAT_WALNUT);
-        boatItem(REOItems.BOAT_WALNUT_CHEST);
+        boatItem(REOItems.WALNUT_BOAT);
+        boatItem(REOItems.WALNUT_CHEST_BOAT);
 
         doorItem(REOBlocks.DOOR_WALNUT);
         trapdoorItem(REOBlocks.TRAPDOOR_WALNUT);
@@ -1145,11 +1150,11 @@ public class REOItemModelProvider extends ItemModelProvider {
         simpleBlockItem(REOBlocks.PRESSURE_PLATE_WILLOW);
 
         saplingItem(REOBlocks.SAPLING_WILLOW, "willow");
-        signItem(REOItems.SIGN_WILLOW);
-        signItem(REOItems.SIGN_HANGING_WILLOW);
+        signItem(REOItems.WILLOW_SIGN);
+        signItem(REOItems.WILLOW_HANGING_SIGN);
 
-        boatItem(REOItems.BOAT_WILLOW);
-        boatItem(REOItems.BOAT_WILLOW_CHEST);
+        boatItem(REOItems.WILLOW_BOAT);
+        boatItem(REOItems.WILLOW_CHEST_BOAT);
 
         doorItem(REOBlocks.DOOR_WILLOW);
         trapdoorItem(REOBlocks.TRAPDOOR_WILLOW);
@@ -1398,6 +1403,12 @@ public class REOItemModelProvider extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(RealEarthOres.MOD_ID, "item/food/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder plantItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(RealEarthOres.MOD_ID, "item/food/plant/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder doorItem(RegistryObject<Block> item) {

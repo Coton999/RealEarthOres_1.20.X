@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_luminous_magenta": {
+    "has_magenta_luminous": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:luminous_magenta"
+              "realearthores:magenta_luminous"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_luminous_magenta",
+      "has_magenta_luminous",
       "has_the_recipe"
     ]
   ],

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_gem_amethyst": {
+    "has_amethyst": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:gem_amethyst"
+              "realearthores:amethyst"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_gem_amethyst",
+      "has_amethyst",
       "has_the_recipe"
     ]
   ],

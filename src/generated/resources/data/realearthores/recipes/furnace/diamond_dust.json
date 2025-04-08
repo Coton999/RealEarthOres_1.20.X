@@ -11,10 +11,10 @@
       "item": "realearthores:nether_diamond"
     },
     {
-      "item": "realearthores:dust_diamond"
+      "item": "realearthores:diamond_dust"
     },
     {
-      "item": "realearthores:dirty_diamond"
+      "item": "realearthores:diamond_dirty"
     }
   ],
   "result": "minecraft:diamond"

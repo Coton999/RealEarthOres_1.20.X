@@ -1,24 +1,24 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dust_copper": {
+    "has_copper_dust": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:dust_copper"
+              "realearthores:copper_dust"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_dust_nickel": {
+    "has_nickel_dust": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:dust_nickel"
+              "realearthores:nickel_dust"
             ]
           }
         ]
@@ -34,8 +34,8 @@
   },
   "requirements": [
     [
-      "has_dust_copper",
-      "has_dust_nickel",
+      "has_copper_dust",
+      "has_nickel_dust",
       "has_the_recipe"
     ]
   ],

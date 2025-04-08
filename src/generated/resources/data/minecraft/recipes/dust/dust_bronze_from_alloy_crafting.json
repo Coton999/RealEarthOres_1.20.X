@@ -3,20 +3,20 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "realearthores:dust_copper"
+      "item": "realearthores:copper_dust"
     },
     {
-      "item": "realearthores:dust_nickel"
+      "item": "realearthores:nickel_dust"
     },
     {
-      "item": "realearthores:dust_nickel"
+      "item": "realearthores:nickel_dust"
     },
     {
-      "item": "realearthores:dust_nickel"
+      "item": "realearthores:nickel_dust"
     }
   ],
   "result": {
     "count": 2,
-    "item": "realearthores:dust_bronze"
+    "item": "realearthores:bronze_dust"
   }
 }

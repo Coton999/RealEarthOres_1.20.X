@@ -5,11 +5,11 @@
   "experience": 0.7,
   "ingredient": [
     {
-      "item": "realearthores:dust_bronze"
+      "item": "realearthores:bronze_dust"
     },
     {
-      "item": "realearthores:dirty_bronze"
+      "item": "realearthores:bronze_dirty"
     }
   ],
-  "result": "realearthores:ingot_bronze"
+  "result": "realearthores:bronze_ingot"
 }

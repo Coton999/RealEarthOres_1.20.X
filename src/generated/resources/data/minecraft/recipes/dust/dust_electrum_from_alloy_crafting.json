@@ -3,20 +3,20 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "realearthores:dust_gold"
+      "item": "realearthores:gold_dust"
     },
     {
-      "item": "realearthores:dust_gold"
+      "item": "realearthores:gold_dust"
     },
     {
-      "item": "realearthores:dust_silver"
+      "item": "realearthores:silver_dust"
     },
     {
-      "item": "realearthores:dust_silver"
+      "item": "realearthores:silver_dust"
     }
   ],
   "result": {
     "count": 2,
-    "item": "realearthores:dust_electrum"
+    "item": "realearthores:electrum_dust"
   }
 }
