@@ -1,0 +1,66 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_silver": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:raw_materials/silver"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_silver_dirty": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "realearthores:dirty_dusts/silver"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_silver_dust": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:dusts/silver"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_silver_ores": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:ores/silver"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:blocks/furnace/silver_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_silver_ores",
+      "has_raw_silver",
+      "has_silver_dust",
+      "has_silver_dirty",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "realearthores:blocks/furnace/silver_ingot"
+    ]
+  },
+  "sends_telemetry_event": false
+}

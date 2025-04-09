@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": [
+    {
+      "item": "realearthores:brass_dust"
+    },
+    {
+      "item": "realearthores:brass_dirty"
+    }
+  ],
+  "result": "realearthores:brass_ingot"
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": [
+    {
+      "item": "realearthores:cluster_ruby"
+    },
+    {
+      "item": "realearthores:ruby_dust"
+    },
+    {
+      "item": "realearthores:ruby_dirty"
+    }
+  ],
+  "result": "realearthores:ruby"
+}

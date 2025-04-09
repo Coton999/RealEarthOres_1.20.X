@@ -1,0 +1,44 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_electrum_dirty": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "realearthores:dirty_dusts/electrum"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_electrum_dust": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:dusts/electrum"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:blocks/blast_furnace/electrum_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_electrum_dust",
+      "has_electrum_dirty",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "realearthores:blocks/blast_furnace/electrum_ingot"
+    ]
+  },
+  "sends_telemetry_event": false
+}

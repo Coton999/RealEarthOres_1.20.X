@@ -1,0 +1,55 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_enderite_dirty": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "realearthores:dirty_dusts/enderite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_enderite_dust": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:dusts/enderite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_enderite_ores": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:ores/enderite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:blocks/furnace/enderite_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_enderite_ores",
+      "has_enderite_dust",
+      "has_enderite_dirty",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "realearthores:blocks/furnace/enderite_ingot"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,55 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_gold_dirty": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "realearthores:dirty_dusts/gold"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_gold_dust": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:dusts/gold"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_gold_ores": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:gold_ores"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:blocks/blast_furnace/gold_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_gold_ores",
+      "has_gold_dust",
+      "has_gold_dirty",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "realearthores:blocks/blast_furnace/gold_ingot"
+    ]
+  },
+  "sends_telemetry_event": false
+}

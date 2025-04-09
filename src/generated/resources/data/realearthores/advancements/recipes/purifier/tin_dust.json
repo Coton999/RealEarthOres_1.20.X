@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:tin_dust"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tin_dirty": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "realearthores:dirty_dusts/tin"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_tin_dirty",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "realearthores:tin_dust"
+    ]
+  },
+  "sends_telemetry_event": true
+}

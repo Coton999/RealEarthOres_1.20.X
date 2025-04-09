@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": [
+    {
+      "item": "realearthores:ore_lead"
+    },
+    {
+      "item": "realearthores:deepslate_lead"
+    },
+    {
+      "item": "realearthores:gravel_ore_lead"
+    },
+    {
+      "item": "realearthores:nether_lead"
+    },
+    {
+      "item": "realearthores:raw_lead"
+    },
+    {
+      "item": "realearthores:lead_dust"
+    },
+    {
+      "item": "realearthores:lead_dirty"
+    }
+  ],
+  "result": "realearthores:lead_ingot"
+}

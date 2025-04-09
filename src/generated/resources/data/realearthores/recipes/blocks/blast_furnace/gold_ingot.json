@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": [
+    {
+      "item": "realearthores:gravel_ore_gold"
+    },
+    {
+      "item": "realearthores:gold_dust"
+    },
+    {
+      "item": "realearthores:gold_dirty"
+    }
+  ],
+  "result": "minecraft:gold_ingot"
+}

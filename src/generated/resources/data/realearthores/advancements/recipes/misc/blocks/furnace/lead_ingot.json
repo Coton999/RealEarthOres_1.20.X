@@ -1,0 +1,66 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lead_dirty": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "realearthores:dirty_dusts/lead"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_lead_dust": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:dusts/lead"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_lead_ores": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:ores/lead"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_raw_lead": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:raw_materials/lead"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:blocks/furnace/lead_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_lead_ores",
+      "has_raw_lead",
+      "has_lead_dust",
+      "has_lead_dirty",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "realearthores:blocks/furnace/lead_ingot"
+    ]
+  },
+  "sends_telemetry_event": false
+}

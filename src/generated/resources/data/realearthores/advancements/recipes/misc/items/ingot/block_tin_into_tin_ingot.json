@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:items/ingot/block_tin_into_tin_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tin_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "realearthores:tin_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_tin_ingot",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "realearthores:items/ingot/block_tin_into_tin_ingot"
+    ]
+  },
+  "sends_telemetry_event": false
+}

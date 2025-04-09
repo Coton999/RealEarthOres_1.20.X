@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:blocks/resistant/wood_palm_stripped_resistant"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wood_palm_stripped": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "realearthores:wood_palm_stripped"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_wood_palm_stripped",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "realearthores:blocks/resistant/wood_palm_stripped_resistant"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": [
+    {
+      "item": "realearthores:ore_platinum"
+    },
+    {
+      "item": "realearthores:deepslate_platinum"
+    },
+    {
+      "item": "realearthores:gravel_ore_platinum"
+    },
+    {
+      "item": "realearthores:nether_platinum"
+    },
+    {
+      "item": "realearthores:raw_platinum"
+    },
+    {
+      "item": "realearthores:platinum_dust"
+    },
+    {
+      "item": "realearthores:platinum_dirty"
+    }
+  ],
+  "result": "realearthores:platinum_ingot"
+}

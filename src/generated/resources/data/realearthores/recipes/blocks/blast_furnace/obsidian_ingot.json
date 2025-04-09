@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": [
+    {
+      "item": "minecraft:obsidian"
+    },
+    {
+      "item": "realearthores:obsidian_dust"
+    },
+    {
+      "item": "realearthores:obsidian_dirty"
+    }
+  ],
+  "result": "realearthores:obsidian_ingot"
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "ingot",
+  "ingredients": [
+    {
+      "item": "realearthores:block_silver"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "realearthores:silver_ingot"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": [
+    {
+      "item": "realearthores:gravel_ore_copper"
+    },
+    {
+      "item": "realearthores:nether_copper"
+    },
+    {
+      "item": "realearthores:copper_dust"
+    },
+    {
+      "item": "realearthores:copper_dirty"
+    }
+  ],
+  "result": "minecraft:copper_ingot"
+}

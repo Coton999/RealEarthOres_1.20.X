@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 2.0,
+  "ingredient": [
+    {
+      "item": "realearthores:netherite_dust"
+    },
+    {
+      "item": "realearthores:netherite_dirty"
+    }
+  ],
+  "result": "minecraft:netherite_scrap"
+}

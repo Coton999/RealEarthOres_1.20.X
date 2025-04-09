@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": [
+    {
+      "item": "realearthores:ore_zinc"
+    },
+    {
+      "item": "realearthores:deepslate_zinc"
+    },
+    {
+      "item": "realearthores:gravel_ore_zinc"
+    },
+    {
+      "item": "realearthores:nether_zinc"
+    },
+    {
+      "item": "realearthores:raw_zinc"
+    },
+    {
+      "item": "realearthores:zinc_dust"
+    },
+    {
+      "item": "realearthores:zinc_dirty"
+    }
+  ],
+  "result": "realearthores:zinc_ingot"
+}

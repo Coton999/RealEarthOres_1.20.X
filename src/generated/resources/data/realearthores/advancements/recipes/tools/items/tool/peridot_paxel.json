@@ -1,0 +1,61 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_peridot_axe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "realearthores:peridot_axe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_peridot_pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "realearthores:peridot_pickaxe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_peridot_shovel": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "realearthores:peridot_shovel"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:items/tool/peridot_paxel"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_peridot_axe",
+      "has_peridot_shovel",
+      "has_peridot_pickaxe",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "realearthores:items/tool/peridot_paxel"
+    ]
+  },
+  "sends_telemetry_event": false
+}

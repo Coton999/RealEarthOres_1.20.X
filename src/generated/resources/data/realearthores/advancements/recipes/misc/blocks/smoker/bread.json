@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_barley_flour": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "realearthores:barley_flour"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:blocks/smoker/bread"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wheat_flour": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "realearthores:wheat_flour"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_wheat_flour",
+      "has_barley_flour",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "realearthores:blocks/smoker/bread"
+    ]
+  },
+  "sends_telemetry_event": false
+}

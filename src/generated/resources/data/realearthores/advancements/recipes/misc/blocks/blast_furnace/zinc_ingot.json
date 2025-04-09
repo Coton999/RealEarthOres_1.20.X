@@ -1,0 +1,66 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_zinc": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:raw_materials/zinc"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:blocks/blast_furnace/zinc_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_zinc_dirty": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "realearthores:dirty_dusts/zinc"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_zinc_dust": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:dusts/zinc"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_zinc_ores": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:ores/zinc"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_zinc_ores",
+      "has_raw_zinc",
+      "has_zinc_dust",
+      "has_zinc_dirty",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "realearthores:blocks/blast_furnace/zinc_ingot"
+    ]
+  },
+  "sends_telemetry_event": false
+}

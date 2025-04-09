@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_coal_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "realearthores:coal_dust"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_iron_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "realearthores:iron_dust"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:steel_dust"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_iron_dust",
+      "has_coal_dust",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "realearthores:steel_dust"
+    ]
+  },
+  "sends_telemetry_event": true
+}

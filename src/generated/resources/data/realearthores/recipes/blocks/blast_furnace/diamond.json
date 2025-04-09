@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredient": [
+    {
+      "item": "realearthores:gravel_ore_diamond"
+    },
+    {
+      "item": "realearthores:nether_diamond"
+    },
+    {
+      "item": "realearthores:diamond_dust"
+    },
+    {
+      "item": "realearthores:diamond_dirty"
+    }
+  ],
+  "result": "minecraft:diamond"
+}

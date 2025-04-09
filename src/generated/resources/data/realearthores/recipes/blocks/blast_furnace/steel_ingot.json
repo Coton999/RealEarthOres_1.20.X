@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "realearthores:steel_dust"
+    },
+    {
+      "item": "realearthores:steel_dirty"
+    }
+  ],
+  "result": "realearthores:steel_ingot"
+}

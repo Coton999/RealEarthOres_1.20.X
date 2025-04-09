@@ -1,0 +1,66 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_platinum_dirty": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "realearthores:dirty_dusts/platinum"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_platinum_dust": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:dusts/platinum"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_platinum_ores": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:ores/platinum"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_raw_platinum": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:raw_materials/platinum"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:blocks/furnace/platinum_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_platinum_ores",
+      "has_raw_platinum",
+      "has_platinum_dust",
+      "has_platinum_dirty",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "realearthores:blocks/furnace/platinum_ingot"
+    ]
+  },
+  "sends_telemetry_event": false
+}

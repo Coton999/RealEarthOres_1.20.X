@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": [
+    {
+      "item": "realearthores:cluster_sapphire"
+    },
+    {
+      "item": "realearthores:sapphire_dust"
+    },
+    {
+      "item": "realearthores:sapphire_dirty"
+    }
+  ],
+  "result": "realearthores:sapphire"
+}
