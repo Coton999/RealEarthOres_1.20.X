@@ -62,7 +62,7 @@ public class KilnRecipeBuilder implements RecipeBuilder {
 
         pFinishedRecipeConsumer.accept(new KilnRecipeBuilder.Result(pRecipeId, this.ingredient, this.result,
                 this.experience, this.cookingTime, this.advancement,
-                new ResourceLocation(pRecipeId.getNamespace(), "recipes/" + pRecipeId.getPath())));
+                new ResourceLocation(RealEarthOres.MOD_ID, "recipes/kiln/" + pRecipeId.getPath())));
     }
 
     public static class Result implements FinishedRecipe {
@@ -99,7 +99,7 @@ public class KilnRecipeBuilder implements RecipeBuilder {
         @Override
         public ResourceLocation getId() {
             return new ResourceLocation(RealEarthOres.MOD_ID,
-                    ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_firing");
+                    "blocks/kiln/" + ForgeRegistries.ITEMS.getKey(this.result).getPath());
         }
 
         @Override

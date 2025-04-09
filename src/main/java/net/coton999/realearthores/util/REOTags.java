@@ -429,6 +429,7 @@ public class REOTags {
         public static final TagKey<Item> REO_END_ORES = forgeTag("ores/ores_in_ground/endstone");
 
         public static final TagKey<Item> ORES_ALUMINUM = forgeTag("ores/aluminum");
+        public static final TagKey<Item> ORES_ENDERITE = forgeTag("ores/enderite");
         public static final TagKey<Item> ORES_LEAD = forgeTag("ores/lead");
         public static final TagKey<Item> ORES_NICKEL = forgeTag("ores/nickel");
         public static final TagKey<Item> ORES_PLATINUM = forgeTag("ores/platinum");

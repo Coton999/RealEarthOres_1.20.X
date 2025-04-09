@@ -1,9 +1,9 @@
-package net.coton999.realearthores.datagen.custom.electric.basic;
+package net.coton999.realearthores.datagen.custom.electric;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import net.coton999.realearthores.RealEarthOres;
-import net.coton999.realearthores.recipe.machines.electric.CompressorRecipe;
+import net.coton999.realearthores.recipe.machines.electric.PurifierRecipe;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementRewards;
 import net.minecraft.advancements.CriterionTriggerInstance;
@@ -16,22 +16,30 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
-import net.minecraftforge.common.crafting.StrictNBTIngredient;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import javax.annotation.Nullable;
 import java.util.function.Consumer;
 
-public class CompressorRecipeBuilderBuilder implements RecipeBuilder {
+public class PurifierRecipeBuilder implements RecipeBuilder {
     private final Item result;
-    private final StrictNBTIngredient ingredient;
+    private final Ingredient ingredient;
     private final int count;
+    private final String name;
     private final Advancement.Builder advancement = Advancement.Builder.advancement();
 
-    public CompressorRecipeBuilderBuilder(ItemLike pResult, StrictNBTIngredient pIngredient, int pCount) {
+    public PurifierRecipeBuilder(ItemLike pResult, Ingredient pIngredient, int pCount, String pName) {
         this.ingredient = pIngredient;
         this.result = pResult.asItem();
         this.count = pCount;
+        this.name = pName;
+    }
+
+    public static PurifierRecipeBuilder generic(ItemLike pResult, Ingredient pIngredient, int pCount) {
+        return new PurifierRecipeBuilder(pResult, pIngredient, pCount, "");
+    }
+    public static PurifierRecipeBuilder named(ItemLike pResult, Ingredient pIngredient, int pCount, String pName) {
+        return new PurifierRecipeBuilder(pResult, pIngredient, pCount, pName);
     }
 
     @Override
@@ -56,8 +64,8 @@ public class CompressorRecipeBuilderBuilder implements RecipeBuilder {
                 .addCriterion("has_the_recipe", RecipeUnlockedTrigger.unlocked(pRecipeId))
                 .rewards(AdvancementRewards.Builder.recipe(pRecipeId)).requirements(RequirementsStrategy.OR);
 
-        pFinishedRecipeConsumer.accept(new Result(pRecipeId, this.result, this.count, this.ingredient,
-                this.advancement, new ResourceLocation(pRecipeId.getNamespace(), "recipes/"
+        pFinishedRecipeConsumer.accept(new Result(pRecipeId, this.result, this.count, this.name, this.ingredient,
+                this.advancement, new ResourceLocation(RealEarthOres.MOD_ID, "recipes/purifier/"
                 + pRecipeId.getPath())));
 
     }
@@ -67,14 +75,16 @@ public class CompressorRecipeBuilderBuilder implements RecipeBuilder {
         private final Item result;
         private final Ingredient ingredient;
         private final int count;
+        private final String name;
         private final Advancement.Builder advancement;
         private final ResourceLocation advancementId;
 
-        public Result(ResourceLocation pId, Item pResult, int pCount, Ingredient ingredient,
+        public Result(ResourceLocation pId, Item pResult, int pCount, String pName, Ingredient ingredient,
                       Advancement.Builder pAdvancement, ResourceLocation pAdvancementId) {
             this.id = pId;
             this.result = pResult;
             this.count = pCount;
+            this.name = pName;
             this.ingredient = ingredient;
             this.advancement = pAdvancement;
             this.advancementId = pAdvancementId;
@@ -98,12 +108,12 @@ public class CompressorRecipeBuilderBuilder implements RecipeBuilder {
         @Override
         public ResourceLocation getId() {
             return new ResourceLocation(RealEarthOres.MOD_ID,
-                    ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_compressing");
+                    "blocks/purifier/" + ForgeRegistries.ITEMS.getKey(this.result).getPath() + this.name);
         }
 
         @Override
         public RecipeSerializer<?> getType() {
-            return CompressorRecipe.Serializer.INSTANCE;
+            return PurifierRecipe.Serializer.INSTANCE;
         }
 
         @Nullable

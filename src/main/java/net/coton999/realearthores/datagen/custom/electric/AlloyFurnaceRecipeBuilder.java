@@ -1,9 +1,9 @@
-package net.coton999.realearthores.datagen.custom.electric.basic;
+package net.coton999.realearthores.datagen.custom.electric;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import net.coton999.realearthores.RealEarthOres;
-import net.coton999.realearthores.recipe.machines.electric.SawmillRecipe;
+import net.coton999.realearthores.recipe.machines.electric.AlloyFurnaceRecipe;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementRewards;
 import net.minecraft.advancements.CriterionTriggerInstance;
@@ -16,19 +16,22 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
+import net.minecraftforge.common.crafting.StrictNBTIngredient;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import javax.annotation.Nullable;
 import java.util.function.Consumer;
 
-public class SawmillRecipeBuilder implements RecipeBuilder {
+public class AlloyFurnaceRecipeBuilder implements RecipeBuilder {
     private final Item result;
-    private final Ingredient ingredient;
+    private final StrictNBTIngredient ingredient1;
+    private final StrictNBTIngredient ingredient2;
     private final int count;
     private final Advancement.Builder advancement = Advancement.Builder.advancement();
 
-    public SawmillRecipeBuilder(ItemLike pResult, Ingredient pIngredient, int pCount) {
-        this.ingredient = pIngredient;
+    public AlloyFurnaceRecipeBuilder(ItemLike pResult, StrictNBTIngredient pIngredient1, StrictNBTIngredient pIngredient2, int pCount) {
+        this.ingredient1 = pIngredient1;
+        this.ingredient2 = pIngredient2;
         this.result = pResult.asItem();
         this.count = pCount;
     }
@@ -55,8 +58,8 @@ public class SawmillRecipeBuilder implements RecipeBuilder {
                 .addCriterion("has_the_recipe", RecipeUnlockedTrigger.unlocked(pRecipeId))
                 .rewards(AdvancementRewards.Builder.recipe(pRecipeId)).requirements(RequirementsStrategy.OR);
 
-        pFinishedRecipeConsumer.accept(new Result(pRecipeId, this.result, this.count, this.ingredient,
-                this.advancement, new ResourceLocation(pRecipeId.getNamespace(), "recipes/"
+        pFinishedRecipeConsumer.accept(new Result(pRecipeId, this.result, this.count, this.ingredient1, this.ingredient2,
+                this.advancement, new ResourceLocation(RealEarthOres.MOD_ID, "recipes/alloy_furnace/"
                 + pRecipeId.getPath())));
 
     }
@@ -64,17 +67,19 @@ public class SawmillRecipeBuilder implements RecipeBuilder {
     public static class Result implements FinishedRecipe {
         private final ResourceLocation id;
         private final Item result;
-        private final Ingredient ingredient;
+        private final Ingredient ingredient1;
+        private final Ingredient ingredient2;
         private final int count;
         private final Advancement.Builder advancement;
         private final ResourceLocation advancementId;
 
-        public Result(ResourceLocation pId, Item pResult, int pCount, Ingredient ingredient, Advancement.Builder pAdvancement,
+        public Result(ResourceLocation pId, Item pResult, int pCount, Ingredient pIngredient1, Ingredient pIngredient2, Advancement.Builder pAdvancement,
                       ResourceLocation pAdvancementId) {
             this.id = pId;
             this.result = pResult;
             this.count = pCount;
-            this.ingredient = ingredient;
+            this.ingredient1 = pIngredient1;
+            this.ingredient2 = pIngredient2;
             this.advancement = pAdvancement;
             this.advancementId = pAdvancementId;
         }
@@ -82,7 +87,8 @@ public class SawmillRecipeBuilder implements RecipeBuilder {
         @Override
         public void serializeRecipeData(JsonObject pJson) {
             JsonArray jsonarray = new JsonArray();
-            jsonarray.add(ingredient.toJson());
+            jsonarray.add(ingredient1.toJson());
+            jsonarray.add(ingredient2.toJson());
 
             pJson.add("ingredients", jsonarray);
             JsonObject jsonobject = new JsonObject();
@@ -97,20 +103,20 @@ public class SawmillRecipeBuilder implements RecipeBuilder {
         @Override
         public ResourceLocation getId() {
             return new ResourceLocation(RealEarthOres.MOD_ID,
-                    ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_milling");
+                    "blocks/alloy_furnace/" + ForgeRegistries.ITEMS.getKey(this.result).getPath());
         }
 
         @Override
         public RecipeSerializer<?> getType() {
-            return SawmillRecipe.Serializer.INSTANCE;
+            return AlloyFurnaceRecipe.Serializer.INSTANCE;
         }
 
-        @Nullable
+        @javax.annotation.Nullable
         public JsonObject serializeAdvancement() {
             return this.advancement.serializeToJson();
         }
 
-        @Nullable
+        @javax.annotation.Nullable
         public ResourceLocation getAdvancementId() {
             return this.advancementId;
         }

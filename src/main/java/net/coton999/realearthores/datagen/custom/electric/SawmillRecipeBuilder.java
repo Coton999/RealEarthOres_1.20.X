@@ -1,9 +1,9 @@
-package net.coton999.realearthores.datagen.custom.electric.basic;
+package net.coton999.realearthores.datagen.custom.electric;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import net.coton999.realearthores.RealEarthOres;
-import net.coton999.realearthores.recipe.machines.electric.ExtractorRecipe;
+import net.coton999.realearthores.recipe.machines.electric.SawmillRecipe;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementRewards;
 import net.minecraft.advancements.CriterionTriggerInstance;
@@ -21,13 +21,13 @@ import net.minecraftforge.registries.ForgeRegistries;
 import javax.annotation.Nullable;
 import java.util.function.Consumer;
 
-public class ExtractorRecipeBuilder implements RecipeBuilder {
+public class SawmillRecipeBuilder implements RecipeBuilder {
     private final Item result;
     private final Ingredient ingredient;
     private final int count;
     private final Advancement.Builder advancement = Advancement.Builder.advancement();
 
-    public ExtractorRecipeBuilder(ItemLike pResult, Ingredient pIngredient, int pCount) {
+    public SawmillRecipeBuilder(ItemLike pResult, Ingredient pIngredient, int pCount) {
         this.ingredient = pIngredient;
         this.result = pResult.asItem();
         this.count = pCount;
@@ -56,7 +56,7 @@ public class ExtractorRecipeBuilder implements RecipeBuilder {
                 .rewards(AdvancementRewards.Builder.recipe(pRecipeId)).requirements(RequirementsStrategy.OR);
 
         pFinishedRecipeConsumer.accept(new Result(pRecipeId, this.result, this.count, this.ingredient,
-                this.advancement, new ResourceLocation(pRecipeId.getNamespace(), "recipes/"
+                this.advancement, new ResourceLocation(RealEarthOres.MOD_ID, "recipes/sawmill/"
                 + pRecipeId.getPath())));
 
     }
@@ -69,8 +69,8 @@ public class ExtractorRecipeBuilder implements RecipeBuilder {
         private final Advancement.Builder advancement;
         private final ResourceLocation advancementId;
 
-        public Result(ResourceLocation pId, Item pResult, int pCount, Ingredient ingredient,
-                      Advancement.Builder pAdvancement, ResourceLocation pAdvancementId) {
+        public Result(ResourceLocation pId, Item pResult, int pCount, Ingredient ingredient, Advancement.Builder pAdvancement,
+                      ResourceLocation pAdvancementId) {
             this.id = pId;
             this.result = pResult;
             this.count = pCount;
@@ -97,12 +97,12 @@ public class ExtractorRecipeBuilder implements RecipeBuilder {
         @Override
         public ResourceLocation getId() {
             return new ResourceLocation(RealEarthOres.MOD_ID,
-                    ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_extracting");
+                    "blocks/sawmill/" + ForgeRegistries.ITEMS.getKey(this.result).getPath());
         }
 
         @Override
         public RecipeSerializer<?> getType() {
-            return ExtractorRecipe.Serializer.INSTANCE;
+            return SawmillRecipe.Serializer.INSTANCE;
         }
 
         @Nullable

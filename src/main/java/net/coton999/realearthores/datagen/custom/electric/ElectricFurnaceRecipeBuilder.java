@@ -1,4 +1,4 @@
-package net.coton999.realearthores.datagen.custom.electric.basic;
+package net.coton999.realearthores.datagen.custom.electric;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
@@ -51,12 +51,12 @@ public class ElectricFurnaceRecipeBuilder implements RecipeBuilder {
 
     @Override
     public void save(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ResourceLocation pRecipeId) {
-        this.advancement.parent(new ResourceLocation("recipes/root"))
+        this.advancement.parent(new ResourceLocation("recipes/root/"))
                 .addCriterion("has_the_recipe", RecipeUnlockedTrigger.unlocked(pRecipeId))
                 .rewards(AdvancementRewards.Builder.recipe(pRecipeId)).requirements(RequirementsStrategy.OR);
 
         pFinishedRecipeConsumer.accept(new Result(pRecipeId, this.result, this.count, this.ingredient,
-                this.advancement, new ResourceLocation(pRecipeId.getNamespace(), "recipes/"
+                this.advancement, new ResourceLocation(RealEarthOres.MOD_ID, "recipes/electric_furnace/"
                 + pRecipeId.getPath())));
 
     }
@@ -97,7 +97,7 @@ public class ElectricFurnaceRecipeBuilder implements RecipeBuilder {
         @Override
         public ResourceLocation getId() {
             return new ResourceLocation(RealEarthOres.MOD_ID,
-                    ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_electric_smelting");
+                    "blocks/electric_furnace/" + ForgeRegistries.ITEMS.getKey(this.result).getPath());
         }
 
         @Override

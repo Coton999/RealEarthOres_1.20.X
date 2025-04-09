@@ -62,7 +62,7 @@ public class BasicPurifierRecipeBuilder implements RecipeBuilder {
                 .rewards(AdvancementRewards.Builder.recipe(pRecipeId)).requirements(RequirementsStrategy.OR);
 
         pFinishedRecipeConsumer.accept(new BasicPurifierRecipeBuilder.Result(pRecipeId, this.ingredient, this.result, this.experience, this.cookingTime, this.advancement,
-                new ResourceLocation(pRecipeId.getNamespace(), "recipes/" + pRecipeId.getPath())));
+                new ResourceLocation(RealEarthOres.MOD_ID, "recipes/coal_purifier/" + pRecipeId.getPath())));
     }
 
     public static class Result implements FinishedRecipe {
@@ -99,7 +99,7 @@ public class BasicPurifierRecipeBuilder implements RecipeBuilder {
         @Override
         public ResourceLocation getId() {
             return new ResourceLocation(RealEarthOres.MOD_ID,
-                    ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_coal_purifying");
+                    "blocks/coal_purifier/" + ForgeRegistries.ITEMS.getKey(this.result).getPath());
         }
 
         @Override

@@ -61,7 +61,7 @@ public class BasicExtractorRecipeBuilder implements RecipeBuilder {
                 .rewards(AdvancementRewards.Builder.recipe(pRecipeId)).requirements(RequirementsStrategy.OR);
 
         pFinishedRecipeConsumer.accept(new BasicExtractorRecipeBuilder.Result(pRecipeId, this.ingredient, this.result, this.experience, this.cookingTime, this.advancement,
-                new ResourceLocation(pRecipeId.getNamespace(), "recipes/" + pRecipeId.getPath())));
+                new ResourceLocation(RealEarthOres.MOD_ID, "recipes/coal_extractor/" + pRecipeId.getPath())));
     }
 
     public static class Result implements FinishedRecipe {
@@ -98,7 +98,7 @@ public class BasicExtractorRecipeBuilder implements RecipeBuilder {
         @Override
         public ResourceLocation getId() {
             return new ResourceLocation(RealEarthOres.MOD_ID,
-                    ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_coal_extracting");
+                    "blocks/coal_extractor/" + ForgeRegistries.ITEMS.getKey(this.result).getPath());
         }
 
         @Override

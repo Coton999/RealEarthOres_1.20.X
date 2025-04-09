@@ -6,7 +6,7 @@ import net.coton999.realearthores.datagen.custom.coal.BasicCrusherRecipeBuilder;
 import net.coton999.realearthores.datagen.custom.coal.BasicExtractorRecipeBuilder;
 import net.coton999.realearthores.datagen.custom.coal.BasicPurifierRecipeBuilder;
 import net.coton999.realearthores.datagen.custom.coal.KilnRecipeBuilder;
-import net.coton999.realearthores.datagen.custom.electric.basic.*;
+import net.coton999.realearthores.datagen.custom.electric.*;
 import net.coton999.realearthores.item.REOItems;
 import net.coton999.realearthores.util.REOTags;
 import net.minecraft.data.PackOutput;
@@ -39,331 +39,449 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOBlocks.MARBLE_COBBLE.get()), RecipeCategory.MISC,
                 REOBlocks.MARBLE.get(), 0.1f, 200)
                 .unlockedBy(getHasName(REOBlocks.MARBLE.get()), has(REOBlocks.MARBLE.get())).
-                save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/" + getItemName(REOBlocks.MARBLE.get()));
+                save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + getItemName(REOBlocks.MARBLE.get()));
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOBlocks.MARBLE_BRICK.get()), RecipeCategory.MISC,
                 REOBlocks.MARBLE_BRICK_CRACKED.get(), 0.1f, 200)
                 .unlockedBy(getHasName(REOBlocks.MARBLE_BRICK.get()), has(REOBlocks.MARBLE_BRICK.get()))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/" + getItemName(REOBlocks.MARBLE_BRICK_CRACKED.get()));
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + getItemName(REOBlocks.MARBLE_BRICK_CRACKED.get()));
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOBlocks.LIMESTONE_COBBLE.get()), RecipeCategory.MISC,
                         REOBlocks.LIMESTONE.get(), 0.1f, 200)
                 .unlockedBy(getHasName(REOBlocks.LIMESTONE.get()), has(REOBlocks.LIMESTONE.get()))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/" + getItemName(REOBlocks.LIMESTONE.get()));
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + getItemName(REOBlocks.LIMESTONE.get()));
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOBlocks.LIMESTONE_BRICK.get()), RecipeCategory.MISC,
                         REOBlocks.LIMESTONE_BRICK_CRACKED.get(), 0.1f, 200)
                 .unlockedBy(getHasName(REOBlocks.LIMESTONE_BRICK.get()), has(REOBlocks.LIMESTONE_BRICK.get()))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/" + getItemName(REOBlocks.LIMESTONE_BRICK_CRACKED.get()));
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + getItemName(REOBlocks.LIMESTONE_BRICK_CRACKED.get()));
 
         // Ores
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOBlocks.ORE_ALUMINIUM.get(), REOBlocks.DEEPSLATE_ALUMINIUM.get(), REOBlocks.GRAVEL_ORE_ALUMINIUM.get(),
                         REOBlocks.NETHER_ALUMINIUM.get(), REOItems.RAW_ALUMINIUM.get(), REOItems.ALUMINUM_DUST.get(), REOItems.ALUMINUM_DIRTY.get()),
                         RecipeCategory.MISC, REOItems.ALUMINUM_INGOT.get(), 0.7F, 200)
                 .unlockedBy("has_aluminium_ores", has(REOTags.Items.ORES_ALUMINUM))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/aluminium_ingot");
+                .unlockedBy(getHasName(REOItems.RAW_ALUMINIUM.get()), has(REOTags.Items.RAW_MATERIALS_ALUMINUM))
+                .unlockedBy(getHasName(REOItems.ALUMINUM_DUST.get()), has(REOTags.Items.DUSTS_ALUMINUM))
+                .unlockedBy(getHasName(REOItems.ALUMINUM_DIRTY.get()), has(REOTags.Items.DIRTY_ALUMINUM))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + REOItems.ALUMINUM_INGOT.get());
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(Blocks.AMETHYST_CLUSTER, REOItems.AMETHYST_DUST.get(), REOItems.AMETHYST_DIRTY.get()),
                         RecipeCategory.MISC, REOItems.AMETHYST.get(), 0.7F, 200)
-                .unlockedBy("has_amethyst_cluster", has(Blocks.AMETHYST_CLUSTER))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/amethyst_gem");
+                .unlockedBy(getHasName(Blocks.AMETHYST_CLUSTER), has(Blocks.AMETHYST_CLUSTER))
+                .unlockedBy(getHasName(REOItems.AMETHYST_DUST.get()), has(REOTags.Items.DUSTS_AMETHYST))
+                .unlockedBy(getHasName(REOItems.AMETHYST_DIRTY.get()), has(REOTags.Items.DIRTY_AMETHYST))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + REOItems.AMETHYST.get());
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOItems.BRASS_DUST.get(), REOItems.BRASS_DIRTY.get()),
                         RecipeCategory.MISC, REOItems.BRASS_INGOT.get(), 0.7F, 200)
-                .unlockedBy("has_dust_brass", has(REOItems.BRASS_DUST.get()))
-                .unlockedBy("has_dirty_brass", has(REOItems.BRASS_DIRTY.get()))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/steel_ingot");
+                .unlockedBy(getHasName(REOItems.BRASS_DUST.get()), has(REOTags.Items.DUSTS_BRASS))
+                .unlockedBy(getHasName(REOItems.BRASS_DIRTY.get()), has(REOTags.Items.DIRTY_BRASS))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + REOItems.BRASS_INGOT.get());
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOItems.BRONZE_DUST.get(), REOItems.BRONZE_DIRTY.get()),
                         RecipeCategory.MISC, REOItems.BRONZE_INGOT.get(), 0.7F, 200)
-                .unlockedBy("has_dust_bronze", has(REOItems.BRONZE_DUST.get()))
-                .unlockedBy("has_dirty_bronze", has(REOItems.BRONZE_DIRTY.get()))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/bronze_ingot");
+                .unlockedBy(getHasName(REOItems.BRONZE_DUST.get()), has(REOTags.Items.DUSTS_BRONZE))
+                .unlockedBy(getHasName(REOItems.BRONZE_DIRTY.get()), has(REOTags.Items.DIRTY_BRONZE))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + REOItems.BRONZE_INGOT.get());
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOBlocks.GRAVEL_ORE_COPPER.get(), REOBlocks.NETHER_COPPER.get(),
                         REOItems.COPPER_DUST.get(), REOItems.COPPER_DIRTY.get()),
                         RecipeCategory.MISC, Items.COPPER_INGOT, 0.7F, 200)
                 .unlockedBy("has_copper_ores", has(ItemTags.COPPER_ORES))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/copper_ingot");
+                .unlockedBy(getHasName(REOItems.BRONZE_DUST.get()), has(REOTags.Items.DUSTS_COPPER))
+                .unlockedBy(getHasName(REOItems.BRONZE_DIRTY.get()), has(REOTags.Items.DIRTY_COPPER))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + Items.COPPER_INGOT);
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOBlocks.GRAVEL_ORE_DIAMOND.get(), REOBlocks.NETHER_DIAMOND.get(),
                         REOItems.DIAMOND_DUST.get(), REOItems.DIAMOND_DIRTY.get()),
                         RecipeCategory.MISC, Items.DIAMOND, 1F, 200)
-                .unlockedBy("has_copper_ores", has(ItemTags.DIAMOND_ORES))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/diamond_dust");
+                .unlockedBy("has_diamond_ores", has(ItemTags.DIAMOND_ORES))
+                .unlockedBy(getHasName(REOItems.DIAMOND_DUST.get()), has(REOTags.Items.DUSTS_DIAMOND))
+                .unlockedBy(getHasName(REOItems.DIAMOND_DIRTY.get()), has(REOTags.Items.DIRTY_DIAMOND))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + Items.DIAMOND);
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOItems.ELECTRUM_DUST.get(), REOItems.ELECTRUM_DIRTY.get()),
                         RecipeCategory.MISC, REOItems.ELECTRUM_INGOT.get(), 0.7F, 200)
-                .unlockedBy("has_electrum_ores", has(REOTags.Items.DUSTS_ELECTRTUM))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/electrum_ingot");
+                .unlockedBy(getHasName(REOItems.ELECTRUM_DUST.get()), has(REOTags.Items.DUSTS_ELECTRTUM))
+                .unlockedBy(getHasName(REOItems.ELECTRUM_DIRTY.get()), has(REOTags.Items.DIRTY_ELECTRUM))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + REOItems.ELECTRUM_INGOT.get());
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOBlocks.GRAVEL_ORE_EMERALD.get(), REOBlocks.NETHER_EMERALD.get(),
                         REOItems.EMERALD_DUST.get(), REOItems.EMERALD_DIRTY.get()),
                         RecipeCategory.MISC, Items.EMERALD, 1F, 200)
-                .unlockedBy("has_copper_ores", has(ItemTags.EMERALD_ORES))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/emerald_dust");
+                .unlockedBy("has_emerald_ores", has(ItemTags.EMERALD_ORES))
+                .unlockedBy(getHasName(REOItems.EMERALD_DUST.get()), has(REOTags.Items.DUSTS_EMERALD))
+                .unlockedBy(getHasName(REOItems.EMERALD_DIRTY.get()), has(REOTags.Items.DIRTY_EMERALD))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + Items.EMERALD);
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOBlocks.ORE_ENDERITE.get(), REOItems.RAW_ENDERITE.get(),
                         REOItems.ENDERITE_DUST.get(), REOItems.ENDERITE_DIRTY.get()),
                         RecipeCategory.MISC, REOItems.ENDERITE_INGOT.get(), 1F, 200)
-                .unlockedBy("has_enderite_ores", has(REOBlocks.ORE_ENDERITE.get()))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/enderite_ingot");
+                .unlockedBy("has_enderite_ores", has(REOTags.Items.ORES_ENDERITE))
+                .unlockedBy(getHasName(REOItems.ENDERITE_DUST.get()), has(REOTags.Items.DUSTS_ENDERITE))
+                .unlockedBy(getHasName(REOItems.ENDERITE_DIRTY.get()), has(REOTags.Items.DIRTY_ENDERITE))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + REOItems.ENDERITE_INGOT.get());
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOBlocks.GRAVEL_ORE_GOLD.get(), REOItems.GOLD_DUST.get(), REOItems.GOLD_DIRTY.get()),
                         RecipeCategory.MISC, Items.GOLD_INGOT, 0.7F, 200)
-                .unlockedBy("has_copper_ores", has(ItemTags.GOLD_ORES))
-                .save(pWriter,RealEarthOres.MOD_ID + ":" +  "furnace/gold_ingot_dust");
+                .unlockedBy("has_gold_ores", has(ItemTags.GOLD_ORES))
+                .unlockedBy(getHasName(REOItems.GOLD_DUST.get()), has(REOTags.Items.DUSTS_GOLD))
+                .unlockedBy(getHasName(REOItems.GOLD_DIRTY.get()), has(REOTags.Items.DIRTY_GOLD))
+                .save(pWriter,RealEarthOres.MOD_ID +  ":blocks/furnace/" + Items.GOLD_INGOT);
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOBlocks.GRAVEL_ORE_IRON.get(), REOBlocks.NETHER_IRON.get(),
                         REOItems.IRON_DUST.get(), REOItems.IRON_DIRTY.get()),
                         RecipeCategory.MISC, Items.IRON_INGOT, 0.7F, 200)
-                .unlockedBy("has_copper_ores", has(ItemTags.IRON_ORES))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/iron_ingot_dust");
+                .unlockedBy("has_iron_ores", has(ItemTags.IRON_ORES))
+                .unlockedBy(getHasName(REOItems.IRON_DUST.get()), has(REOTags.Items.DUSTS_IRON))
+                .unlockedBy(getHasName(REOItems.IRON_DIRTY.get()), has(REOTags.Items.DIRTY_IRON))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + Items.IRON_INGOT);
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOBlocks.ORE_LEAD.get(), REOBlocks.DEEPSLATE_LEAD.get(), REOBlocks.GRAVEL_ORE_LEAD.get(),
                         REOBlocks.NETHER_LEAD.get(), REOItems.RAW_LEAD.get(), REOItems.LEAD_DUST.get(), REOItems.LEAD_DIRTY.get()),
                         RecipeCategory.MISC, REOItems.LEAD_INGOT.get(), 0.7F, 200)
                 .unlockedBy("has_lead_ores", has(REOTags.Items.ORES_LEAD))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/lead_ingot");
+                .unlockedBy(getHasName(REOItems.RAW_LEAD.get()), has(REOTags.Items.RAW_MATERIALS_LEAD))
+                .unlockedBy(getHasName(REOItems.LEAD_DUST.get()), has(REOTags.Items.DUSTS_LEAD))
+                .unlockedBy(getHasName(REOItems.LEAD_DIRTY.get()), has(REOTags.Items.DIRTY_LEAD))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + REOItems.LEAD_INGOT.get());
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOItems.NETHERITE_DUST.get(), REOItems.NETHERITE_DIRTY.get()),
                         RecipeCategory.MISC, Items.NETHERITE_SCRAP, 2F, 200)
-                .unlockedBy("has_netherite_ores", has(REOTags.Items.DUSTS_NETHERITE))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/netherite_ingot_dust");
+                .unlockedBy(getHasName(REOItems.NETHERITE_DUST.get()), has(REOTags.Items.DUSTS_NETHERITE))
+                .unlockedBy(getHasName(REOItems.NETHERITE_DIRTY.get()), has(REOTags.Items.DIRTY_NETHERITE))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + Items.NETHERITE_SCRAP);
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOBlocks.ORE_NICKEL.get(), REOBlocks.DEEPSLATE_NICKEL.get(), REOBlocks.GRAVEL_ORE_NICKEL.get(),
                         REOBlocks.NETHER_NICKEL.get(), REOItems.RAW_NICKEL.get(), REOItems.NICKEL_DUST.get(), REOItems.NICKEL_DIRTY.get()),
                         RecipeCategory.MISC, REOItems.NICKEL_INGOT.get(), 0.7F, 200)
                 .unlockedBy("has_nickel_ores", has(REOTags.Items.ORES_NICKEL))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/nickel_ingot");
+                .unlockedBy(getHasName(REOItems.RAW_NICKEL.get()), has(REOTags.Items.RAW_MATERIALS_NICKEL))
+                .unlockedBy(getHasName(REOItems.NICKEL_DUST.get()), has(REOTags.Items.DUSTS_NICKEL))
+                .unlockedBy(getHasName(REOItems.NICKEL_DIRTY.get()), has(REOTags.Items.DIRTY_NICKEL))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + REOItems.NICKEL_INGOT.get());
 
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOItems.OBSIDIAN_DUST.get(), REOItems.OBSIDIAN_DIRTY.get()),
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(Blocks.OBSIDIAN, REOItems.OBSIDIAN_DUST.get(), REOItems.OBSIDIAN_DIRTY.get()),
                         RecipeCategory.MISC, REOItems.OBSIDIAN_INGOT.get(), 0.7F, 200)
-                .unlockedBy("has_obsidian_ores", has(REOTags.Items.DUSTS_OBSIDIAN))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/obsidian_ingot");
+                .unlockedBy(getHasName(Blocks.OBSIDIAN), has(Blocks.OBSIDIAN))
+                .unlockedBy(getHasName(REOItems.OBSIDIAN_DUST.get()), has(REOTags.Items.DUSTS_OBSIDIAN))
+                .unlockedBy(getHasName(REOItems.OBSIDIAN_DIRTY.get()), has(REOTags.Items.DIRTY_OBSIDIAN))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + REOItems.OBSIDIAN_INGOT.get());
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOBlocks.CLUSTER_PERIDOT.get(), REOItems.PERIDOT_DUST.get(), REOItems.PERIDOT_DIRTY.get()),
                         RecipeCategory.MISC, REOItems.PERIDOT.get(), 0.7F, 200)
-                .unlockedBy("has_peridot_cluster", has(REOBlocks.CLUSTER_PERIDOT.get()))
-                .save(pWriter,RealEarthOres.MOD_ID + ":" +  "furnace/peridot_gem");
+                .unlockedBy(getHasName(REOBlocks.CLUSTER_PERIDOT.get()), has(REOBlocks.CLUSTER_PERIDOT.get()))
+                .unlockedBy(getHasName(REOItems.PERIDOT_DUST.get()), has(REOTags.Items.DUSTS_PERIDOT))
+                .unlockedBy(getHasName(REOItems.PERIDOT_DIRTY.get()), has(REOTags.Items.DIRTY_PERIDOT))
+                .save(pWriter,RealEarthOres.MOD_ID +  ":blocks/furnace/" + REOItems.PERIDOT.get());
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOBlocks.ORE_PLATINUM.get(), REOBlocks.DEEPSLATE_PLATINUM.get(), REOBlocks.GRAVEL_ORE_PLATINUM.get(),
                         REOBlocks.NETHER_PLATINUM.get(), REOItems.RAW_PLATINUM.get(), REOItems.PLATINUM_DUST.get(), REOItems.PLATINUM_DIRTY.get()),
                         RecipeCategory.MISC, REOItems.PLATINUM_INGOT.get(), 0.7F, 200)
                 .unlockedBy("has_platinum_ores", has(REOTags.Items.ORES_PLATINUM))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/platinum_ingot");
+                .unlockedBy(getHasName(REOItems.RAW_PLATINUM.get()), has(REOTags.Items.RAW_MATERIALS_PLATINUM))
+                .unlockedBy(getHasName(REOItems.PLATINUM_DUST.get()), has(REOTags.Items.DUSTS_PLATINUM))
+                .unlockedBy(getHasName(REOItems.PLATINUM_DIRTY.get()), has(REOTags.Items.DIRTY_PLATINUM))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + REOItems.PLATINUM_INGOT.get());
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOBlocks.CLUSTER_RUBY.get(), REOItems.RUBY_DUST.get(), REOItems.RUBY_DIRTY.get()),
                         RecipeCategory.MISC, REOItems.RUBY.get(), 0.7F, 200)
-                .unlockedBy("has_ruby_cluster", has(REOBlocks.CLUSTER_RUBY.get()))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/ruby_gem");
+                .unlockedBy(getHasName(REOBlocks.CLUSTER_RUBY.get()), has(REOBlocks.CLUSTER_RUBY.get()))
+                .unlockedBy(getHasName(REOItems.RUBY_DUST.get()), has(REOTags.Items.DUSTS_RUBY))
+                .unlockedBy(getHasName(REOItems.RUBY_DIRTY.get()), has(REOTags.Items.DIRTY_RUBY))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + REOItems.RUBY.get());
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOBlocks.CLUSTER_SAPPHIRE.get(), REOItems.SAPPHIRE_DUST.get(), REOItems.SAPPHIRE_DIRTY.get()),
                         RecipeCategory.MISC, REOItems.SAPPHIRE.get(), 0.7F, 200)
-                .unlockedBy("has_sapphire_cluster", has(REOBlocks.CLUSTER_SAPPHIRE.get()))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/sapphire_gem");
+                .unlockedBy(getHasName(REOBlocks.CLUSTER_SAPPHIRE.get()), has(REOBlocks.CLUSTER_SAPPHIRE.get()))
+                .unlockedBy(getHasName(REOItems.SAPPHIRE_DUST.get()), has(REOTags.Items.DUSTS_SAPPHIRE))
+                .unlockedBy(getHasName(REOItems.SAPPHIRE_DIRTY.get()), has(REOTags.Items.DIRTY_SAPPHIRE))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + REOItems.SAPPHIRE.get());
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOBlocks.ORE_SILVER.get(), REOBlocks.DEEPSLATE_SILVER.get(), REOBlocks.GRAVEL_ORE_SILVER.get(),
                         REOBlocks.NETHER_SILVER.get(), REOItems.RAW_SILVER.get(), REOItems.SILVER_DUST.get(), REOItems.SILVER_DIRTY.get()),
                         RecipeCategory.MISC, REOItems.SILVER_INGOT.get(), 0.7F, 200)
                 .unlockedBy("has_silver_ores", has(REOTags.Items.ORES_SILVER))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/silver_ingot");
+                .unlockedBy(getHasName(REOItems.RAW_SILVER.get()), has(REOTags.Items.RAW_MATERIALS_SILVER))
+                .unlockedBy(getHasName(REOItems.SILVER_DUST.get()), has(REOTags.Items.DUSTS_SILVER))
+                .unlockedBy(getHasName(REOItems.SILVER_DIRTY.get()), has(REOTags.Items.DIRTY_SILVER))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + REOItems.SILVER_INGOT.get());
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(Items.IRON_INGOT, REOItems.STEEL_DUST.get(), REOItems.STEEL_DIRTY.get()),
                         RecipeCategory.MISC, REOItems.STEEL_INGOT.get(), 0.7F, 200)
-                .unlockedBy("has_iron_ingot", has(Items.IRON_INGOT)).unlockedBy("has_dust_brass", has(REOItems.STEEL_DUST.get()))
-                .unlockedBy("has_dirty_brass", has(REOItems.STEEL_DIRTY.get()))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/brass_ingot");
+                .unlockedBy(getHasName(Items.IRON_INGOT), has(Tags.Items.INGOTS_IRON))
+                .unlockedBy(getHasName(REOItems.STEEL_DUST.get()), has(REOTags.Items.DUSTS_STEEL))
+                .unlockedBy(getHasName(REOItems.STEEL_DIRTY.get()), has(REOTags.Items.DIRTY_STEEL))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + REOItems.STEEL_INGOT.get());
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOBlocks.ORE_TIN.get(), REOBlocks.GRAVEL_ORE_TIN.get(),
                         REOBlocks.NETHER_TIN.get(), REOItems.RAW_TIN.get(), REOItems.TIN_DUST.get(), REOItems.TIN_DIRTY.get()),
                         RecipeCategory.MISC, REOItems.TIN_INGOT.get(), 0.7F, 200)
                 .unlockedBy("has_tin_ores", has(REOTags.Items.ORES_TIN))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/tin_ingot");
+                .unlockedBy(getHasName(REOItems.RAW_TIN.get()), has(REOTags.Items.RAW_MATERIALS_TIN))
+                .unlockedBy(getHasName(REOItems.TIN_DUST.get()), has(REOTags.Items.DUSTS_TIN))
+                .unlockedBy(getHasName(REOItems.TIN_DIRTY.get()), has(REOTags.Items.DIRTY_TIN))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + REOItems.TIN_INGOT.get());
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOBlocks.ORE_URANIUM.get(), REOBlocks.DEEPSLATE_URANIUM.get(), REOBlocks.GRAVEL_ORE_URANIUM.get(),
                         REOBlocks.NETHER_URANIUM.get(), REOItems.RAW_URANIUM.get(), REOItems.URANIUM_DUST.get(), REOItems.URANIUM_DIRTY.get()),
                         RecipeCategory.MISC, REOItems.URANIUM_INGOT.get(), 0.7F, 200)
                 .unlockedBy("has_uranium_ores", has(REOTags.Items.ORES_URANIUM))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/uranium_ingot");
+                .unlockedBy(getHasName(REOItems.RAW_URANIUM.get()), has(REOTags.Items.RAW_MATERIALS_URANIUM))
+                .unlockedBy(getHasName(REOItems.URANIUM_DUST.get()), has(REOTags.Items.DUSTS_URANIUM))
+                .unlockedBy(getHasName(REOItems.URANIUM_DIRTY.get()), has(REOTags.Items.DIRTY_URANIUM))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + REOItems.URANIUM_INGOT.get());
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOBlocks.ORE_ZINC.get(), REOBlocks.DEEPSLATE_ZINC.get(), REOBlocks.GRAVEL_ORE_ZINC.get(),
                         REOBlocks.NETHER_ZINC.get(), REOItems.RAW_ZINC.get(), REOItems.ZINC_DUST.get(), REOItems.ZINC_DIRTY.get()),
                         RecipeCategory.MISC, REOItems.ZINC_INGOT.get(), 0.7F, 200)
                 .unlockedBy("has_zinc_ores", has(REOTags.Items.ORES_ZINC))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/zinc_ingot");
+                .unlockedBy(getHasName(REOItems.RAW_ZINC.get()), has(REOTags.Items.RAW_MATERIALS_ZINC))
+                .unlockedBy(getHasName(REOItems.ZINC_DUST.get()), has(REOTags.Items.DUSTS_ZINC))
+                .unlockedBy(getHasName(REOItems.ZINC_DIRTY.get()), has(REOTags.Items.DIRTY_ZINC))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + REOItems.ZINC_INGOT.get());
 
         // Nuggets
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOTags.Items.TOOLS_AND_ARMOR_IRON),
                         RecipeCategory.MISC, Items.IRON_NUGGET, 0.1F, 200)
                 .unlockedBy("has_iron_tools_and_armour", has(REOTags.Items.TOOLS_AND_ARMOR_IRON))
-                .save(pWriter,RealEarthOres.MOD_ID + ":" +  "furnace/" + Items.IRON_NUGGET);
+                .save(pWriter,RealEarthOres.MOD_ID +  ":blocks/furnace/" + Items.IRON_NUGGET);
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOTags.Items.TOOLS_AND_ARMOR_DIAMOND),
                         RecipeCategory.MISC, REOItems.DIAMOND_NUGGET.get(), 0.1F, 200)
                 .unlockedBy("has_diamond_tools_and_armour", has(REOTags.Items.TOOLS_AND_ARMOR_DIAMOND))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/" + REOItems.DIAMOND_NUGGET.get());
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + REOItems.DIAMOND_NUGGET.get());
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOTags.Items.TOOLS_AND_ARMOR_GOLD),
                         RecipeCategory.MISC, Items.GOLD_NUGGET, 0.1F, 200)
                 .unlockedBy("has_golden_tools_and_armour", has(REOTags.Items.TOOLS_AND_ARMOR_GOLD))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/" + Items.GOLD_NUGGET);
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + Items.GOLD_NUGGET);
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOTags.Items.TOOLS_AND_ARMOR_NETHERITE),
                         RecipeCategory.MISC, REOItems.NETHERITE_NUGGET.get(), 0.1F, 200)
                 .unlockedBy("has_netherite_tools_and_armour", has(REOTags.Items.TOOLS_AND_ARMOR_NETHERITE))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/" + REOItems.NETHERITE_NUGGET.get());
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + REOItems.NETHERITE_NUGGET.get());
 
         // Misc
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOItems.SAP.get(), REOItems.RESIN.get()),
                         RecipeCategory.MISC, REOItems.RUBBER.get(), 0.5F, 200)
                 .unlockedBy(getHasName(REOItems.SAP.get()), has(REOItems.SAP.get()))
                 .unlockedBy(getHasName(REOItems.RESIN.get()), has(REOItems.RESIN.get()))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/" + REOItems.RUBBER.get());
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + REOItems.RUBBER.get());
 
         // Food
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(REOItems.WHEAT_FLOUR.get(), REOItems.BARLEY_FLOUR.get()),
                         RecipeCategory.MISC, Items.BREAD, 0.35F, 200)
                 .unlockedBy(getHasName(REOItems.WHEAT_FLOUR.get()), has(REOItems.WHEAT_FLOUR.get()))
                 .unlockedBy(getHasName(REOItems.BARLEY_FLOUR.get()), has(REOItems.BARLEY_FLOUR.get()))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "furnace/" + Items.BREAD);
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/furnace/" + Items.BREAD);
 
 
         // Blast Furnace //
         // Ores
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(REOBlocks.ORE_ALUMINIUM.get(), REOBlocks.DEEPSLATE_ALUMINIUM.get(), REOBlocks.GRAVEL_ORE_ALUMINIUM.get(),
-                        REOBlocks.NETHER_ALUMINIUM.get(), REOItems.RAW_ALUMINIUM.get(), REOItems.ALUMINUM_DUST.get(), REOItems.ALUMINUM_DIRTY.get()),
-                        RecipeCategory.MISC, REOItems.ALUMINUM_INGOT.get(), 0.7F, 100)
-                .unlockedBy("has_aluminium_ores", has(REOTags.Items.ORES_ALUMINUM)).save(pWriter, "blast_furnace/aluminium_ingot_from_blasting");
+                                REOBlocks.NETHER_ALUMINIUM.get(), REOItems.RAW_ALUMINIUM.get(), REOItems.ALUMINUM_DUST.get(), REOItems.ALUMINUM_DIRTY.get()),
+                        RecipeCategory.MISC, REOItems.ALUMINUM_INGOT.get(), 0.7F, 200)
+                .unlockedBy("has_aluminium_ores", has(REOTags.Items.ORES_ALUMINUM))
+                .unlockedBy(getHasName(REOItems.RAW_ALUMINIUM.get()), has(REOTags.Items.RAW_MATERIALS_ALUMINUM))
+                .unlockedBy(getHasName(REOItems.ALUMINUM_DUST.get()), has(REOTags.Items.DUSTS_ALUMINUM))
+                .unlockedBy(getHasName(REOItems.ALUMINUM_DIRTY.get()), has(REOTags.Items.DIRTY_ALUMINUM))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/blast_furnace/" + REOItems.ALUMINUM_INGOT.get());
 
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(Blocks.AMETHYST_CLUSTER, REOItems.AMETHYST_DUST.get(), REOItems.AMETHYST_DIRTY.get()),
-                        RecipeCategory.MISC, REOItems.AMETHYST.get(), 0.7F, 100)
-                .unlockedBy("has_amethyst_cluster", has(Blocks.AMETHYST_CLUSTER)).save(pWriter, "blast_furnace/amethyst_gem_from_blasting");
+                        RecipeCategory.MISC, REOItems.AMETHYST.get(), 0.7F, 200)
+                .unlockedBy(getHasName(Blocks.AMETHYST_CLUSTER), has(Blocks.AMETHYST_CLUSTER))
+                .unlockedBy(getHasName(REOItems.AMETHYST_DUST.get()), has(REOTags.Items.DUSTS_AMETHYST))
+                .unlockedBy(getHasName(REOItems.AMETHYST_DIRTY.get()), has(REOTags.Items.DIRTY_AMETHYST))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/blast_furnace/" + REOItems.AMETHYST.get());
 
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(REOItems.BRASS_DUST.get(), REOItems.BRASS_DIRTY.get()),
-                        RecipeCategory.MISC, REOItems.BRASS_INGOT.get(), 0.7F, 100)
-                .unlockedBy("has_dust_brass", has(REOItems.BRASS_DUST.get()))
-                .unlockedBy("has_dirty_brass", has(REOItems.BRASS_DIRTY.get())).save(pWriter, "blast_furnace/steel_ingot_from_blasting");
+                        RecipeCategory.MISC, REOItems.BRASS_INGOT.get(), 0.7F, 200)
+                .unlockedBy(getHasName(REOItems.BRASS_DUST.get()), has(REOTags.Items.DUSTS_BRASS))
+                .unlockedBy(getHasName(REOItems.BRASS_DIRTY.get()), has(REOTags.Items.DIRTY_BRASS))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/blast_furnace/" + REOItems.BRASS_INGOT.get());
 
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(REOItems.BRONZE_DUST.get(), REOItems.BRONZE_DIRTY.get()),
-                        RecipeCategory.MISC, REOItems.BRONZE_INGOT.get(), 0.7F, 100)
-                .unlockedBy("has_dust_bronze", has(REOItems.BRONZE_DUST.get()))
-                .unlockedBy("has_dirty_bronze", has(REOItems.BRONZE_DIRTY.get())).save(pWriter, "blast_furnace/bronze_ingot_from_blasting");
+                        RecipeCategory.MISC, REOItems.BRONZE_INGOT.get(), 0.7F, 200)
+                .unlockedBy(getHasName(REOItems.BRONZE_DUST.get()), has(REOTags.Items.DUSTS_BRONZE))
+                .unlockedBy(getHasName(REOItems.BRONZE_DIRTY.get()), has(REOTags.Items.DIRTY_BRONZE))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/blast_furnace/" + REOItems.BRONZE_INGOT.get());
 
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(REOBlocks.GRAVEL_ORE_COPPER.get(), REOBlocks.NETHER_COPPER.get(),
-                        REOItems.COPPER_DUST.get(), REOItems.COPPER_DIRTY.get()),
-                        RecipeCategory.MISC, Items.COPPER_INGOT, 0.7F, 100)
-                .unlockedBy("has_copper_ores", has(ItemTags.COPPER_ORES)).save(pWriter, "blast_furnace/copper_ingot_from_blasting");
+                                REOItems.COPPER_DUST.get(), REOItems.COPPER_DIRTY.get()),
+                        RecipeCategory.MISC, Items.COPPER_INGOT, 0.7F, 200)
+                .unlockedBy("has_copper_ores", has(ItemTags.COPPER_ORES))
+                .unlockedBy(getHasName(REOItems.BRONZE_DUST.get()), has(REOTags.Items.DUSTS_COPPER))
+                .unlockedBy(getHasName(REOItems.BRONZE_DIRTY.get()), has(REOTags.Items.DIRTY_COPPER))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/blast_furnace/" + Items.COPPER_INGOT);
 
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(REOBlocks.GRAVEL_ORE_DIAMOND.get(), REOBlocks.NETHER_DIAMOND.get(),
                                 REOItems.DIAMOND_DUST.get(), REOItems.DIAMOND_DIRTY.get()),
-                        RecipeCategory.MISC, Items.DIAMOND, 1F, 100)
-                .unlockedBy("has_copper_ores", has(ItemTags.DIAMOND_ORES)).save(pWriter, "blast_furnace/diamond_from_blasting_dust");
+                        RecipeCategory.MISC, Items.DIAMOND, 1F, 200)
+                .unlockedBy("has_diamond_ores", has(ItemTags.DIAMOND_ORES))
+                .unlockedBy(getHasName(REOItems.DIAMOND_DUST.get()), has(REOTags.Items.DUSTS_DIAMOND))
+                .unlockedBy(getHasName(REOItems.DIAMOND_DIRTY.get()), has(REOTags.Items.DIRTY_DIAMOND))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/blast_furnace/" + Items.DIAMOND);
 
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(REOItems.ELECTRUM_DUST.get(), REOItems.ELECTRUM_DIRTY.get()),
-                        RecipeCategory.MISC, REOItems.ELECTRUM_INGOT.get(), 0.7F, 100)
-                .unlockedBy("has_electrum_ores", has(REOTags.Items.DUSTS_ELECTRTUM)).save(pWriter, "blast_furnace/electrum_ingot_from_blasting");
+                        RecipeCategory.MISC, REOItems.ELECTRUM_INGOT.get(), 0.7F, 200)
+                .unlockedBy(getHasName(REOItems.ELECTRUM_DUST.get()), has(REOTags.Items.DUSTS_ELECTRTUM))
+                .unlockedBy(getHasName(REOItems.ELECTRUM_DIRTY.get()), has(REOTags.Items.DIRTY_ELECTRUM))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/blast_furnace/" + REOItems.ELECTRUM_INGOT.get());
 
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(REOBlocks.GRAVEL_ORE_EMERALD.get(), REOBlocks.NETHER_EMERALD.get(),
                                 REOItems.EMERALD_DUST.get(), REOItems.EMERALD_DIRTY.get()),
-                        RecipeCategory.MISC, Items.EMERALD, 1F, 100)
-                .unlockedBy("has_copper_ores", has(ItemTags.EMERALD_ORES)).save(pWriter, "blast_furnace/emerald_from_blasting_dust");
+                        RecipeCategory.MISC, Items.EMERALD, 1F, 200)
+                .unlockedBy("has_emerald_ores", has(ItemTags.EMERALD_ORES))
+                .unlockedBy(getHasName(REOItems.EMERALD_DUST.get()), has(REOTags.Items.DUSTS_EMERALD))
+                .unlockedBy(getHasName(REOItems.EMERALD_DIRTY.get()), has(REOTags.Items.DIRTY_EMERALD))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/blast_furnace/" + Items.EMERALD);
 
-        SimpleCookingRecipeBuilder.blasting(Ingredient.of(REOBlocks.ORE_ENDERITE.get(), REOItems.RAW_ENDERITE.get(), REOItems.ENDERITE_DUST.get(), REOItems.ENDERITE_DIRTY.get()),
-                        RecipeCategory.MISC, REOItems.ENDERITE_INGOT.get(), 1F, 100)
-                .unlockedBy("has_enderite_ores", has(REOBlocks.ORE_ENDERITE.get())).save(pWriter, "blast_furnace/enderite_ingot_from_blasting");
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(REOBlocks.ORE_ENDERITE.get(), REOItems.RAW_ENDERITE.get(),
+                                REOItems.ENDERITE_DUST.get(), REOItems.ENDERITE_DIRTY.get()),
+                        RecipeCategory.MISC, REOItems.ENDERITE_INGOT.get(), 1F, 200)
+                .unlockedBy("has_enderite_ores", has(REOTags.Items.ORES_ENDERITE))
+                .unlockedBy(getHasName(REOItems.ENDERITE_DUST.get()), has(REOTags.Items.DUSTS_ENDERITE))
+                .unlockedBy(getHasName(REOItems.ENDERITE_DIRTY.get()), has(REOTags.Items.DIRTY_ENDERITE))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/blast_furnace/" + REOItems.ENDERITE_INGOT.get());
 
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(REOBlocks.GRAVEL_ORE_GOLD.get(), REOItems.GOLD_DUST.get(), REOItems.GOLD_DIRTY.get()),
-                        RecipeCategory.MISC, Items.GOLD_INGOT, 0.7F, 100)
-                .unlockedBy("has_copper_ores", has(ItemTags.GOLD_ORES)).save(pWriter, "blast_furnace/gold_ingot_from_blasting_dust");
+                        RecipeCategory.MISC, Items.GOLD_INGOT, 0.7F, 200)
+                .unlockedBy("has_gold_ores", has(ItemTags.GOLD_ORES))
+                .unlockedBy(getHasName(REOItems.GOLD_DUST.get()), has(REOTags.Items.DUSTS_GOLD))
+                .unlockedBy(getHasName(REOItems.GOLD_DIRTY.get()), has(REOTags.Items.DIRTY_GOLD))
+                .save(pWriter,RealEarthOres.MOD_ID +  ":blocks/blast_furnace/" + Items.GOLD_INGOT);
 
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(REOBlocks.GRAVEL_ORE_IRON.get(), REOBlocks.NETHER_IRON.get(),
                                 REOItems.IRON_DUST.get(), REOItems.IRON_DIRTY.get()),
-                        RecipeCategory.MISC, Items.IRON_INGOT, 0.7F, 100)
-                .unlockedBy("has_copper_ores", has(ItemTags.IRON_ORES)).save(pWriter, "blast_furnace/iron_ingot_from_blasting_dust");
+                        RecipeCategory.MISC, Items.IRON_INGOT, 0.7F, 200)
+                .unlockedBy("has_iron_ores", has(ItemTags.IRON_ORES))
+                .unlockedBy(getHasName(REOItems.IRON_DUST.get()), has(REOTags.Items.DUSTS_IRON))
+                .unlockedBy(getHasName(REOItems.IRON_DIRTY.get()), has(REOTags.Items.DIRTY_IRON))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/blast_furnace/" + Items.IRON_INGOT);
 
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(REOBlocks.ORE_LEAD.get(), REOBlocks.DEEPSLATE_LEAD.get(), REOBlocks.GRAVEL_ORE_LEAD.get(),
-                        REOBlocks.NETHER_LEAD.get(), REOItems.RAW_LEAD.get(), REOItems.LEAD_DUST.get(), REOItems.LEAD_DIRTY.get()),
-                        RecipeCategory.MISC, REOItems.LEAD_INGOT.get(), 0.7F, 100)
-                .unlockedBy("has_lead_ores", has(REOTags.Items.ORES_LEAD)).save(pWriter, "blast_furnace/lead_ingot_from_blasting");
+                                REOBlocks.NETHER_LEAD.get(), REOItems.RAW_LEAD.get(), REOItems.LEAD_DUST.get(), REOItems.LEAD_DIRTY.get()),
+                        RecipeCategory.MISC, REOItems.LEAD_INGOT.get(), 0.7F, 200)
+                .unlockedBy("has_lead_ores", has(REOTags.Items.ORES_LEAD))
+                .unlockedBy(getHasName(REOItems.RAW_LEAD.get()), has(REOTags.Items.RAW_MATERIALS_LEAD))
+                .unlockedBy(getHasName(REOItems.LEAD_DUST.get()), has(REOTags.Items.DUSTS_LEAD))
+                .unlockedBy(getHasName(REOItems.LEAD_DIRTY.get()), has(REOTags.Items.DIRTY_LEAD))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/blast_furnace/" + REOItems.LEAD_INGOT.get());
 
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(REOItems.NETHERITE_DUST.get(), REOItems.NETHERITE_DIRTY.get()),
-                        RecipeCategory.MISC, Items.NETHERITE_SCRAP, 2F, 100)
-                .unlockedBy("has_netherite_ores", has(REOTags.Items.DUSTS_NETHERITE)).save(pWriter, "blast_furnace/netherite_ingot_from_blasting_dust");
+                        RecipeCategory.MISC, Items.NETHERITE_SCRAP, 2F, 200)
+                .unlockedBy(getHasName(REOItems.NETHERITE_DUST.get()), has(REOTags.Items.DUSTS_NETHERITE))
+                .unlockedBy(getHasName(REOItems.NETHERITE_DIRTY.get()), has(REOTags.Items.DIRTY_NETHERITE))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/blast_furnace/" + Items.NETHERITE_SCRAP);
 
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(REOBlocks.ORE_NICKEL.get(), REOBlocks.DEEPSLATE_NICKEL.get(), REOBlocks.GRAVEL_ORE_NICKEL.get(),
-                        REOBlocks.NETHER_NICKEL.get(), REOItems.RAW_NICKEL.get(), REOItems.NICKEL_DUST.get(), REOItems.NICKEL_DIRTY.get()),
-                        RecipeCategory.MISC, REOItems.NICKEL_INGOT.get(), 0.7F, 100)
-                .unlockedBy("has_nickel_ores", has(REOTags.Items.ORES_NICKEL)).save(pWriter, "blast_furnace/nickel_ingot_from_blasting");
+                                REOBlocks.NETHER_NICKEL.get(), REOItems.RAW_NICKEL.get(), REOItems.NICKEL_DUST.get(), REOItems.NICKEL_DIRTY.get()),
+                        RecipeCategory.MISC, REOItems.NICKEL_INGOT.get(), 0.7F, 200)
+                .unlockedBy("has_nickel_ores", has(REOTags.Items.ORES_NICKEL))
+                .unlockedBy(getHasName(REOItems.RAW_NICKEL.get()), has(REOTags.Items.RAW_MATERIALS_NICKEL))
+                .unlockedBy(getHasName(REOItems.NICKEL_DUST.get()), has(REOTags.Items.DUSTS_NICKEL))
+                .unlockedBy(getHasName(REOItems.NICKEL_DIRTY.get()), has(REOTags.Items.DIRTY_NICKEL))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/blast_furnace/" + REOItems.NICKEL_INGOT.get());
 
-        SimpleCookingRecipeBuilder.blasting(Ingredient.of(REOItems.OBSIDIAN_DUST.get(), REOItems.OBSIDIAN_DIRTY.get()),
-                        RecipeCategory.MISC, REOItems.OBSIDIAN_INGOT.get(), 0.7F, 100)
-                .unlockedBy("has_obsidian_ores", has(REOTags.Items.DUSTS_OBSIDIAN)).save(pWriter, "blast_furnace/obsidian_ingot_from_blasting");
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(Blocks.OBSIDIAN, REOItems.OBSIDIAN_DUST.get(), REOItems.OBSIDIAN_DIRTY.get()),
+                        RecipeCategory.MISC, REOItems.OBSIDIAN_INGOT.get(), 0.7F, 200)
+                .unlockedBy(getHasName(Blocks.OBSIDIAN), has(Blocks.OBSIDIAN))
+                .unlockedBy(getHasName(REOItems.OBSIDIAN_DUST.get()), has(REOTags.Items.DUSTS_OBSIDIAN))
+                .unlockedBy(getHasName(REOItems.OBSIDIAN_DIRTY.get()), has(REOTags.Items.DIRTY_OBSIDIAN))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/blast_furnace/" + REOItems.OBSIDIAN_INGOT.get());
 
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(REOBlocks.CLUSTER_PERIDOT.get(), REOItems.PERIDOT_DUST.get(), REOItems.PERIDOT_DIRTY.get()),
-                        RecipeCategory.MISC, REOItems.PERIDOT.get(), 0.7F, 100)
-                .unlockedBy("has_peridot_cluster", has(REOBlocks.CLUSTER_PERIDOT.get())).save(pWriter, "blast_furnace/peridot_gem_from_blasting");
+                        RecipeCategory.MISC, REOItems.PERIDOT.get(), 0.7F, 200)
+                .unlockedBy(getHasName(REOBlocks.CLUSTER_PERIDOT.get()), has(REOBlocks.CLUSTER_PERIDOT.get()))
+                .unlockedBy(getHasName(REOItems.PERIDOT_DUST.get()), has(REOTags.Items.DUSTS_PERIDOT))
+                .unlockedBy(getHasName(REOItems.PERIDOT_DIRTY.get()), has(REOTags.Items.DIRTY_PERIDOT))
+                .save(pWriter,RealEarthOres.MOD_ID +  ":blocks/blast_furnace/" + REOItems.PERIDOT.get());
 
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(REOBlocks.ORE_PLATINUM.get(), REOBlocks.DEEPSLATE_PLATINUM.get(), REOBlocks.GRAVEL_ORE_PLATINUM.get(),
-                        REOBlocks.NETHER_PLATINUM.get(), REOItems.RAW_PLATINUM.get(), REOItems.PLATINUM_DUST.get(), REOItems.PLATINUM_DIRTY.get()),
-                        RecipeCategory.MISC, REOItems.PLATINUM_INGOT.get(), 0.7F, 100)
-                .unlockedBy("has_platinum_ores", has(REOTags.Items.ORES_PLATINUM)).save(pWriter, "blast_furnace/platinum_ingot_from_blasting");
+                                REOBlocks.NETHER_PLATINUM.get(), REOItems.RAW_PLATINUM.get(), REOItems.PLATINUM_DUST.get(), REOItems.PLATINUM_DIRTY.get()),
+                        RecipeCategory.MISC, REOItems.PLATINUM_INGOT.get(), 0.7F, 200)
+                .unlockedBy("has_platinum_ores", has(REOTags.Items.ORES_PLATINUM))
+                .unlockedBy(getHasName(REOItems.RAW_PLATINUM.get()), has(REOTags.Items.RAW_MATERIALS_PLATINUM))
+                .unlockedBy(getHasName(REOItems.PLATINUM_DUST.get()), has(REOTags.Items.DUSTS_PLATINUM))
+                .unlockedBy(getHasName(REOItems.PLATINUM_DIRTY.get()), has(REOTags.Items.DIRTY_PLATINUM))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/blast_furnace/" + REOItems.PLATINUM_INGOT.get());
 
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(REOBlocks.CLUSTER_RUBY.get(), REOItems.RUBY_DUST.get(), REOItems.RUBY_DIRTY.get()),
-                        RecipeCategory.MISC, REOItems.RUBY.get(), 0.7F, 100)
-                .unlockedBy("has_ruby_cluster", has(REOBlocks.CLUSTER_RUBY.get())).save(pWriter, "blast_furnace/ruby_gem_from_blasting");
+                        RecipeCategory.MISC, REOItems.RUBY.get(), 0.7F, 200)
+                .unlockedBy(getHasName(REOBlocks.CLUSTER_RUBY.get()), has(REOBlocks.CLUSTER_RUBY.get()))
+                .unlockedBy(getHasName(REOItems.RUBY_DUST.get()), has(REOTags.Items.DUSTS_RUBY))
+                .unlockedBy(getHasName(REOItems.RUBY_DIRTY.get()), has(REOTags.Items.DIRTY_RUBY))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/blast_furnace/" + REOItems.RUBY.get());
 
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(REOBlocks.CLUSTER_SAPPHIRE.get(), REOItems.SAPPHIRE_DUST.get(), REOItems.SAPPHIRE_DIRTY.get()),
-                        RecipeCategory.MISC, REOItems.SAPPHIRE.get(), 0.7F, 100)
-                .unlockedBy("has_sapphire_cluster", has(REOBlocks.CLUSTER_SAPPHIRE.get())).save(pWriter, "blast_furnace/sapphire_gem_from_blasting");
+                        RecipeCategory.MISC, REOItems.SAPPHIRE.get(), 0.7F, 200)
+                .unlockedBy(getHasName(REOBlocks.CLUSTER_SAPPHIRE.get()), has(REOBlocks.CLUSTER_SAPPHIRE.get()))
+                .unlockedBy(getHasName(REOItems.SAPPHIRE_DUST.get()), has(REOTags.Items.DUSTS_SAPPHIRE))
+                .unlockedBy(getHasName(REOItems.SAPPHIRE_DIRTY.get()), has(REOTags.Items.DIRTY_SAPPHIRE))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/blast_furnace/" + REOItems.SAPPHIRE.get());
 
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(REOBlocks.ORE_SILVER.get(), REOBlocks.DEEPSLATE_SILVER.get(), REOBlocks.GRAVEL_ORE_SILVER.get(),
-                        REOBlocks.NETHER_SILVER.get(), REOItems.RAW_SILVER.get(), REOItems.SILVER_DUST.get(), REOItems.SILVER_DIRTY.get()),
-                        RecipeCategory.MISC, REOItems.SILVER_INGOT.get(), 0.7F, 100)
-                .unlockedBy("has_silver_ores", has(REOTags.Items.ORES_SILVER)).save(pWriter, "blast_furnace/silver_ingot_from_blasting");
+                                REOBlocks.NETHER_SILVER.get(), REOItems.RAW_SILVER.get(), REOItems.SILVER_DUST.get(), REOItems.SILVER_DIRTY.get()),
+                        RecipeCategory.MISC, REOItems.SILVER_INGOT.get(), 0.7F, 200)
+                .unlockedBy("has_silver_ores", has(REOTags.Items.ORES_SILVER))
+                .unlockedBy(getHasName(REOItems.RAW_SILVER.get()), has(REOTags.Items.RAW_MATERIALS_SILVER))
+                .unlockedBy(getHasName(REOItems.SILVER_DUST.get()), has(REOTags.Items.DUSTS_SILVER))
+                .unlockedBy(getHasName(REOItems.SILVER_DIRTY.get()), has(REOTags.Items.DIRTY_SILVER))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/blast_furnace/" + REOItems.SILVER_INGOT.get());
 
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(Items.IRON_INGOT, REOItems.STEEL_DUST.get(), REOItems.STEEL_DIRTY.get()),
-                        RecipeCategory.MISC, REOItems.STEEL_INGOT.get(), 0.7F, 100)
-                .unlockedBy("has_iron_ingot", has(Items.IRON_INGOT)).unlockedBy("has_dust_brass", has(REOItems.STEEL_DUST.get()))
-                .unlockedBy("has_dirty_brass", has(REOItems.STEEL_DIRTY.get())).save(pWriter, "blast_furnace/brass_ingot_from_blasting");
+                        RecipeCategory.MISC, REOItems.STEEL_INGOT.get(), 0.7F, 200)
+                .unlockedBy(getHasName(Items.IRON_INGOT), has(Tags.Items.INGOTS_IRON))
+                .unlockedBy(getHasName(REOItems.STEEL_DUST.get()), has(REOTags.Items.DUSTS_STEEL))
+                .unlockedBy(getHasName(REOItems.STEEL_DIRTY.get()), has(REOTags.Items.DIRTY_STEEL))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/blast_furnace/" + REOItems.STEEL_INGOT.get());
 
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(REOBlocks.ORE_TIN.get(), REOBlocks.GRAVEL_ORE_TIN.get(),
-                        REOBlocks.NETHER_TIN.get(), REOItems.RAW_TIN.get(), REOItems.TIN_DUST.get(), REOItems.TIN_DIRTY.get()),
-                        RecipeCategory.MISC, REOItems.TIN_INGOT.get(), 0.7F, 100)
-                .unlockedBy("has_tin_ores", has(REOTags.Items.ORES_TIN)).save(pWriter, "blast_furnace/tin_ingot_from_blasting");
+                                REOBlocks.NETHER_TIN.get(), REOItems.RAW_TIN.get(), REOItems.TIN_DUST.get(), REOItems.TIN_DIRTY.get()),
+                        RecipeCategory.MISC, REOItems.TIN_INGOT.get(), 0.7F, 200)
+                .unlockedBy("has_tin_ores", has(REOTags.Items.ORES_TIN))
+                .unlockedBy(getHasName(REOItems.RAW_TIN.get()), has(REOTags.Items.RAW_MATERIALS_TIN))
+                .unlockedBy(getHasName(REOItems.TIN_DUST.get()), has(REOTags.Items.DUSTS_TIN))
+                .unlockedBy(getHasName(REOItems.TIN_DIRTY.get()), has(REOTags.Items.DIRTY_TIN))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/blast_furnace/" + REOItems.TIN_INGOT.get());
 
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(REOBlocks.ORE_URANIUM.get(), REOBlocks.DEEPSLATE_URANIUM.get(), REOBlocks.GRAVEL_ORE_URANIUM.get(),
-                        REOBlocks.NETHER_URANIUM.get(), REOItems.RAW_URANIUM.get(), REOItems.URANIUM_DUST.get(), REOItems.URANIUM_DIRTY.get()),
-                        RecipeCategory.MISC, REOItems.URANIUM_INGOT.get(), 0.7F, 100)
-                .unlockedBy("has_uranium_ores", has(REOTags.Items.ORES_URANIUM)).save(pWriter, "blast_furnace/uranium_ingot_from_blasting");
+                                REOBlocks.NETHER_URANIUM.get(), REOItems.RAW_URANIUM.get(), REOItems.URANIUM_DUST.get(), REOItems.URANIUM_DIRTY.get()),
+                        RecipeCategory.MISC, REOItems.URANIUM_INGOT.get(), 0.7F, 200)
+                .unlockedBy("has_uranium_ores", has(REOTags.Items.ORES_URANIUM))
+                .unlockedBy(getHasName(REOItems.RAW_URANIUM.get()), has(REOTags.Items.RAW_MATERIALS_URANIUM))
+                .unlockedBy(getHasName(REOItems.URANIUM_DUST.get()), has(REOTags.Items.DUSTS_URANIUM))
+                .unlockedBy(getHasName(REOItems.URANIUM_DIRTY.get()), has(REOTags.Items.DIRTY_URANIUM))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/blast_furnace/" + REOItems.URANIUM_INGOT.get());
 
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(REOBlocks.ORE_ZINC.get(), REOBlocks.DEEPSLATE_ZINC.get(), REOBlocks.GRAVEL_ORE_ZINC.get(),
-                        REOBlocks.NETHER_ZINC.get(), REOItems.RAW_ZINC.get(), REOItems.ZINC_DUST.get(), REOItems.ZINC_DIRTY.get()),
-                        RecipeCategory.MISC, REOItems.ZINC_INGOT.get(), 0.7F, 100)
-                .unlockedBy("has_zinc_ores", has(REOTags.Items.ORES_ZINC)).save(pWriter, "blast_furnace/zinc_ingot_from_blasting");
+                                REOBlocks.NETHER_ZINC.get(), REOItems.RAW_ZINC.get(), REOItems.ZINC_DUST.get(), REOItems.ZINC_DIRTY.get()),
+                        RecipeCategory.MISC, REOItems.ZINC_INGOT.get(), 0.7F, 200)
+                .unlockedBy("has_zinc_ores", has(REOTags.Items.ORES_ZINC))
+                .unlockedBy(getHasName(REOItems.RAW_ZINC.get()), has(REOTags.Items.RAW_MATERIALS_ZINC))
+                .unlockedBy(getHasName(REOItems.ZINC_DUST.get()), has(REOTags.Items.DUSTS_ZINC))
+                .unlockedBy(getHasName(REOItems.ZINC_DIRTY.get()), has(REOTags.Items.DIRTY_ZINC))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/blast_furnace/" + REOItems.ZINC_INGOT.get());
 
         // Nuggets
-        SimpleCookingRecipeBuilder.blasting(Ingredient.of(Items.IRON_AXE, Items.IRON_PICKAXE, Items.IRON_SHOVEL, Items.IRON_HOE, Items.IRON_SWORD,
-                        Items.IRON_HELMET, Items.IRON_CHESTPLATE, Items.IRON_LEGGINGS, Items.IRON_BOOTS,
-                        Items.CHAINMAIL_HELMET, Items.CHAINMAIL_CHESTPLATE, Items.CHAINMAIL_LEGGINGS, Items.CHAINMAIL_BOOTS,
-                        Items.IRON_HORSE_ARMOR, REOItems.IRON_BOW.get(), REOItems.IRON_EXCAVATOR.get(), REOItems.IRON_HAMMER.get(),
-                        REOItems.IRON_HATCHET.get(), REOItems.IRON_PAXEL.get(), REOItems.IRON_SICKLE.get()), RecipeCategory.MISC, Items.IRON_NUGGET, 0.1F, 100)
-                .unlockedBy("has_iron_tools_and_armour", has(Items.IRON_SWORD)).save(pWriter, "blast_furnace/iron_nugget_from_blasting");
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(REOTags.Items.TOOLS_AND_ARMOR_IRON),
+                        RecipeCategory.MISC, Items.IRON_NUGGET, 0.1F, 200)
+                .unlockedBy("has_iron_tools_and_armour", has(REOTags.Items.TOOLS_AND_ARMOR_IRON))
+                .save(pWriter,RealEarthOres.MOD_ID +  ":blocks/blast_furnace/" + Items.IRON_NUGGET);
 
-        SimpleCookingRecipeBuilder.blasting(Ingredient.of(Items.DIAMOND_AXE, Items.DIAMOND_PICKAXE, Items.DIAMOND_SHOVEL, Items.DIAMOND_HOE, Items.DIAMOND_SWORD,
-                        Items.DIAMOND_HELMET, Items.DIAMOND_CHESTPLATE, Items.DIAMOND_LEGGINGS, Items.DIAMOND_BOOTS,
-                        Items.DIAMOND_HORSE_ARMOR, REOItems.DIAMOND_BOW.get(), REOItems.DIAMOND_EXCAVATOR.get(), REOItems.DIAMOND_HAMMER.get(),
-                        REOItems.DIAMOND_HATCHET.get(), REOItems.DIAMOND_PAXEL.get(), REOItems.DIAMOND_SICKLE.get()), RecipeCategory.MISC, REOItems.DIAMOND_NUGGET.get(), 0.1F, 100)
-                .unlockedBy("has_diamond_tools_and_armour", has(Items.DIAMOND_SWORD)).save(pWriter, "blast_furnace/nugget_diamond_from_blasting");
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(REOTags.Items.TOOLS_AND_ARMOR_DIAMOND),
+                        RecipeCategory.MISC, REOItems.DIAMOND_NUGGET.get(), 0.1F, 200)
+                .unlockedBy("has_diamond_tools_and_armour", has(REOTags.Items.TOOLS_AND_ARMOR_DIAMOND))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/blast_furnace/" + REOItems.DIAMOND_NUGGET.get());
 
-        SimpleCookingRecipeBuilder.blasting(Ingredient.of(Items.GOLDEN_AXE, Items.GOLDEN_PICKAXE, Items.GOLDEN_SHOVEL, Items.GOLDEN_HOE, Items.GOLDEN_SWORD,
-                        Items.GOLDEN_HELMET, Items.GOLDEN_CHESTPLATE, Items.GOLDEN_LEGGINGS, Items.GOLDEN_BOOTS,
-                        Items.GOLDEN_HORSE_ARMOR, REOItems.GOLDEN_BOW.get(), REOItems.GOLDEN_EXCAVATOR.get(), REOItems.GOLDEN_HAMMER.get(),
-                        REOItems.GOLDEN_HATCHET.get(), REOItems.GOLDEN_PAXEL.get(), REOItems.GOLDEN_SICKLE.get()), RecipeCategory.MISC, Items.GOLD_NUGGET, 0.1F, 100)
-                .unlockedBy("has_golden_tools_and_armour", has(Items.GOLDEN_SWORD)).save(pWriter, "blast_furnace/gold_nugget_from_blasting");
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(REOTags.Items.TOOLS_AND_ARMOR_GOLD),
+                        RecipeCategory.MISC, Items.GOLD_NUGGET, 0.1F, 200)
+                .unlockedBy("has_golden_tools_and_armour", has(REOTags.Items.TOOLS_AND_ARMOR_GOLD))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/blast_furnace/" + Items.GOLD_NUGGET);
 
-        SimpleCookingRecipeBuilder.blasting(Ingredient.of(Items.NETHERITE_AXE, Items.NETHERITE_PICKAXE, Items.NETHERITE_SHOVEL, Items.NETHERITE_HOE, Items.NETHERITE_SWORD,
-                        Items.NETHERITE_HELMET, Items.NETHERITE_CHESTPLATE, Items.NETHERITE_LEGGINGS, Items.NETHERITE_BOOTS,
-                        REOItems.NETHERITE_BOW.get(), REOItems.NETHERITE_EXCAVATOR.get(), REOItems.NETHERITE_HAMMER.get(),
-                        REOItems.NETHERITE_HATCHET.get(), REOItems.NETHERITE_PAXEL.get(), REOItems.NETHERITE_SICKLE.get()), RecipeCategory.MISC, REOItems.NETHERITE_NUGGET.get(), 0.1F, 100)
-                .unlockedBy("has_netherite_tools_and_armour", has(Items.NETHERITE_SWORD)).save(pWriter, "blast_furnace/nugget_netherite_from_blasting");
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(REOTags.Items.TOOLS_AND_ARMOR_NETHERITE),
+                        RecipeCategory.MISC, REOItems.NETHERITE_NUGGET.get(), 0.1F, 200)
+                .unlockedBy("has_netherite_tools_and_armour", has(REOTags.Items.TOOLS_AND_ARMOR_NETHERITE))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/blast_furnace/" + REOItems.NETHERITE_NUGGET.get());
 
 
         // SMOKER //
@@ -371,31 +489,37 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
         SimpleCookingRecipeBuilder.smoking(Ingredient.of(REOItems.SAP.get(), REOItems.RESIN.get()),
                         RecipeCategory.MISC, REOItems.RUBBER.get(), 0.5F, 100)
                 .unlockedBy(getHasName(REOItems.SAP.get()), has(REOItems.SAP.get()))
-                .unlockedBy(getHasName(REOItems.RESIN.get()), has(REOItems.RESIN.get())).save(pWriter, "smoker/rubber_from_smoking");
+                .unlockedBy(getHasName(REOItems.RESIN.get()), has(REOItems.RESIN.get()))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/smoker/" + REOItems.RUBBER.get());
 
         // Food
         SimpleCookingRecipeBuilder.smoking(Ingredient.of(REOItems.WHEAT_FLOUR.get(), REOItems.BARLEY_FLOUR.get()),
                         RecipeCategory.MISC, Items.BREAD, 0.35F, 100)
                 .unlockedBy(getHasName(REOItems.WHEAT_FLOUR.get()), has(REOItems.WHEAT_FLOUR.get()))
-                .unlockedBy(getHasName(REOItems.BARLEY_FLOUR.get()), has(REOItems.BARLEY_FLOUR.get())).save(pWriter, "smoker/bread_from_smoking");
+                .unlockedBy(getHasName(REOItems.BARLEY_FLOUR.get()), has(REOItems.BARLEY_FLOUR.get()))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/smoker/" + Items.BREAD);
 
         // Campfire //
         // Misc
         SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(REOItems.SAP.get(), REOItems.RESIN.get()),
                         RecipeCategory.MISC, REOItems.RUBBER.get(), 0.5F, 600)
                 .unlockedBy(getHasName(REOItems.SAP.get()), has(REOItems.SAP.get()))
-                .unlockedBy(getHasName(REOItems.RESIN.get()), has(REOItems.RESIN.get())).save(pWriter, "campfire/rubber_from_campfire");
+                .unlockedBy(getHasName(REOItems.RESIN.get()), has(REOItems.RESIN.get()))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/camp_fire/" + REOItems.RUBBER.get());
 
         // Food
         SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(REOItems.WHEAT_FLOUR.get(), REOItems.BARLEY_FLOUR.get()),
                         RecipeCategory.MISC, Items.BREAD, 0.35F, 600)
                 .unlockedBy(getHasName(REOItems.WHEAT_FLOUR.get()), has(REOItems.WHEAT_FLOUR.get()))
-                .unlockedBy(getHasName(REOItems.BARLEY_FLOUR.get()), has(REOItems.BARLEY_FLOUR.get())).save(pWriter, "campfire/bread_from_campfire");
+                .unlockedBy(getHasName(REOItems.BARLEY_FLOUR.get()), has(REOItems.BARLEY_FLOUR.get()))
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/camp_fire/" + Items.BREAD);
+
 
         // Modded Furnaces//
-        // Eletric Furnace
+        // Electric Furnace
         new ElectricFurnaceRecipeBuilder(Items.BAKED_POTATO, Ingredient.of(Items.POTATO), 1)
-                .unlockedBy(getHasName(Items.POTATO), has(Items.POTATO)).save(pWriter);
+                .unlockedBy(getHasName(Items.POTATO), has(Items.POTATO))
+                .save(pWriter);
         new ElectricFurnaceRecipeBuilder(Items.DRIED_KELP, Ingredient.of(Items.KELP), 1)
                 .unlockedBy(getHasName(Items.KELP), has(Items.KELP)).save(pWriter);
         new ElectricFurnaceRecipeBuilder(Items.COOKED_BEEF, Ingredient.of(Items.BEEF), 1)
@@ -740,13 +864,13 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
         BasicCrusherRecipeBuilder.generic(RecipeCategory.MISC, REOItems.CHARCOAL_DUST.get(), Ingredient.of(Items.CHARCOAL),
                 0.3F, 200).unlockedBy(getHasName(Items.CHARCOAL), has(Items.CHARCOAL)).save(pWriter);
         BasicCrusherRecipeBuilder.named(RecipeCategory.MISC, REOItems.COAL_DUST.get(), Ingredient.of(Items.COAL),
-                0.5F, 200, "_coal").unlockedBy(getHasName(Items.COAL), has(Items.COAL)).save(pWriter);
+                0.5F, 200, "_from_coal").unlockedBy(getHasName(Items.COAL), has(Items.COAL)).save(pWriter);
         BasicCrusherRecipeBuilder.generic(RecipeCategory.MISC, REOItems.OBSIDIAN_DIRTY.get(), Ingredient.of(Blocks.OBSIDIAN),
                 0.5F, 200).unlockedBy(getHasName(Blocks.OBSIDIAN), has(Blocks.OBSIDIAN)).save(pWriter);
         BasicCrusherRecipeBuilder.generic(RecipeCategory.MISC, Blocks.GRAVEL, Ingredient.of(Blocks.COBBLESTONE),
                 0.3F, 200).unlockedBy(getHasName(Blocks.COBBLESTONE), has(Blocks.COBBLESTONE)).save(pWriter);
         BasicCrusherRecipeBuilder.named(RecipeCategory.BUILDING_BLOCKS, Blocks.SAND, Ingredient.of(Blocks.SANDSTONE),
-                0.1F, 200, "_sandstone").unlockedBy(getHasName(Blocks.SANDSTONE), has(Blocks.SANDSTONE)).save(pWriter);
+                0.1F, 200, "_from_sandstone").unlockedBy(getHasName(Blocks.SANDSTONE), has(Blocks.SANDSTONE)).save(pWriter);
         BasicCrusherRecipeBuilder.generic(RecipeCategory.MISC, Blocks.RED_SAND, Ingredient.of(Blocks.RED_SANDSTONE),
                 0.1F, 200).unlockedBy(getHasName(Blocks.RED_SANDSTONE), has(Blocks.RED_SANDSTONE)).save(pWriter);
         BasicCrusherRecipeBuilder.generic(RecipeCategory.MISC, Items.GLOWSTONE_DUST, Ingredient.of(Blocks.GLOWSTONE),
@@ -813,7 +937,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Blocks.COBBLESTONE), has(Blocks.COBBLESTONE)).save(pWriter);
         CrusherRecipeBuilder.generic(Blocks.SAND, Ingredient.of(Blocks.GRAVEL), 1)
                 .unlockedBy(getHasName(Blocks.GRAVEL), has(Blocks.GRAVEL)).save(pWriter);
-        CrusherRecipeBuilder.named(Blocks.SAND, Ingredient.of(Blocks.GRAVEL), 1, "_sandstone")
+        CrusherRecipeBuilder.named(Blocks.SAND, Ingredient.of(Blocks.GRAVEL), 1, "_from_sandstone")
                 .unlockedBy(getHasName(Blocks.GRAVEL), has(Blocks.GRAVEL)).save(pWriter);
         CrusherRecipeBuilder.generic(Blocks.RED_SAND, Ingredient.of(Blocks.RED_SANDSTONE), 4)
                 .unlockedBy(getHasName(Blocks.RED_SANDSTONE), has(Blocks.RED_SANDSTONE)).save(pWriter);
@@ -831,43 +955,43 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.BLAZE_ROD), has(Items.BLAZE_ROD)).save(pWriter);
 
         // Ingots
-        CrusherRecipeBuilder.named(REOItems.ALUMINUM_DIRTY.get(), Ingredient.of(REOItems.ALUMINUM_INGOT.get()), 1, "_ingot")
+        CrusherRecipeBuilder.named(REOItems.ALUMINUM_DIRTY.get(), Ingredient.of(REOItems.ALUMINUM_INGOT.get()), 1, "_from_ingot")
                 .unlockedBy(getHasName(REOItems.ALUMINUM_INGOT.get()), has(REOItems.ALUMINUM_INGOT.get())).save(pWriter);
-        CrusherRecipeBuilder.named(REOItems.AMETHYST_DIRTY.get(), Ingredient.of(REOItems.AMETHYST.get()), 1, "_gem")
+        CrusherRecipeBuilder.named(REOItems.AMETHYST_DIRTY.get(), Ingredient.of(REOItems.AMETHYST.get()), 1, "_from_gem")
                 .unlockedBy(getHasName(REOItems.AMETHYST.get()), has(REOItems.AMETHYST.get())).save(pWriter);
-        CrusherRecipeBuilder.named(REOItems.COAL_DUST.get(), Ingredient.of(Items.COAL), 1, "_coal")
+        CrusherRecipeBuilder.named(REOItems.COAL_DUST.get(), Ingredient.of(Items.COAL), 1, "_from_coal")
                 .unlockedBy(getHasName(Items.COAL), has(Items.COAL)).save(pWriter);
-        CrusherRecipeBuilder.named(REOItems.COPPER_DIRTY.get(), Ingredient.of(Items.COPPER_INGOT), 1, "_ingot")
+        CrusherRecipeBuilder.named(REOItems.COPPER_DIRTY.get(), Ingredient.of(Items.COPPER_INGOT), 1, "_from_ingot")
                 .unlockedBy(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT)).save(pWriter);
-        CrusherRecipeBuilder.named(REOItems.DIAMOND_DIRTY.get(), Ingredient.of(Items.DIAMOND), 1, "_ingot")
+        CrusherRecipeBuilder.named(REOItems.DIAMOND_DIRTY.get(), Ingredient.of(Items.DIAMOND), 1, "_from_ingot")
                 .unlockedBy(getHasName(Items.DIAMOND), has(Items.DIAMOND)).save(pWriter);
-        CrusherRecipeBuilder.named(REOItems.EMERALD_DIRTY.get(), Ingredient.of(Items.EMERALD), 1, "_ingot")
+        CrusherRecipeBuilder.named(REOItems.EMERALD_DIRTY.get(), Ingredient.of(Items.EMERALD), 1, "_from_ingot")
                 .unlockedBy(getHasName(Items.EMERALD), has(Items.EMERALD)).save(pWriter);
-        CrusherRecipeBuilder.named(REOItems.ENDERITE_DIRTY.get(), Ingredient.of(REOItems.ENDERITE_INGOT.get()), 1, "_ingot")
+        CrusherRecipeBuilder.named(REOItems.ENDERITE_DIRTY.get(), Ingredient.of(REOItems.ENDERITE_INGOT.get()), 1, "_from_ingot")
                 .unlockedBy(getHasName(REOItems.ENDERITE_INGOT.get()), has(REOItems.ENDERITE_INGOT.get())).save(pWriter);
-        CrusherRecipeBuilder.named(REOItems.GOLD_DIRTY.get(), Ingredient.of(Items.GOLD_INGOT), 1, "_ingot")
+        CrusherRecipeBuilder.named(REOItems.GOLD_DIRTY.get(), Ingredient.of(Items.GOLD_INGOT), 1, "_from_ingot")
                 .unlockedBy(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT)).save(pWriter);
-        CrusherRecipeBuilder.named(REOItems.IRON_DIRTY.get(), Ingredient.of(Items.IRON_INGOT), 1, "_ingot")
+        CrusherRecipeBuilder.named(REOItems.IRON_DIRTY.get(), Ingredient.of(Items.IRON_INGOT), 1, "_from_ingot")
                 .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT)).save(pWriter);
-        CrusherRecipeBuilder.named(REOItems.LEAD_DIRTY.get(), Ingredient.of(REOItems.LEAD_INGOT.get()), 1, "_ingot")
+        CrusherRecipeBuilder.named(REOItems.LEAD_DIRTY.get(), Ingredient.of(REOItems.LEAD_INGOT.get()), 1, "_from_ingot")
                 .unlockedBy(getHasName(REOItems.LEAD_INGOT.get()), has(REOItems.LEAD_INGOT.get())).save(pWriter);
-        CrusherRecipeBuilder.named(REOItems.NICKEL_DIRTY.get(), Ingredient.of(REOItems.NICKEL_INGOT.get()), 1, "_ingot")
+        CrusherRecipeBuilder.named(REOItems.NICKEL_DIRTY.get(), Ingredient.of(REOItems.NICKEL_INGOT.get()), 1, "_from_ingot")
                 .unlockedBy(getHasName(REOItems.NICKEL_INGOT.get()), has(REOItems.NICKEL_INGOT.get())).save(pWriter);
-        CrusherRecipeBuilder.named(REOItems.PERIDOT_DIRTY.get(),Ingredient.of(REOItems.PERIDOT.get()), 1, "_gem")
+        CrusherRecipeBuilder.named(REOItems.PERIDOT_DIRTY.get(),Ingredient.of(REOItems.PERIDOT.get()), 1, "_from_gem")
                 .unlockedBy(getHasName(REOItems.PERIDOT.get()), has(REOItems.PERIDOT.get())).save(pWriter);
-        CrusherRecipeBuilder.named(REOItems.PLATINUM_DIRTY.get(), Ingredient.of(REOItems.PLATINUM_INGOT.get()), 1, "_ingot")
+        CrusherRecipeBuilder.named(REOItems.PLATINUM_DIRTY.get(), Ingredient.of(REOItems.PLATINUM_INGOT.get()), 1, "_from_ingot")
                 .unlockedBy(getHasName(REOItems.PLATINUM_INGOT.get()), has(REOItems.PLATINUM_INGOT.get())).save(pWriter);
-        CrusherRecipeBuilder.named(REOItems.RUBY_DIRTY.get(), Ingredient.of(REOItems.RUBY.get()), 1, "_gem")
+        CrusherRecipeBuilder.named(REOItems.RUBY_DIRTY.get(), Ingredient.of(REOItems.RUBY.get()), 1, "_from_gem")
                 .unlockedBy(getHasName(REOItems.RUBY.get()), has(REOItems.RUBY.get())).save(pWriter);
-        CrusherRecipeBuilder.named(REOItems.SAPPHIRE_DIRTY.get(), Ingredient.of(REOItems.SAPPHIRE.get()), 1, "_gem")
+        CrusherRecipeBuilder.named(REOItems.SAPPHIRE_DIRTY.get(), Ingredient.of(REOItems.SAPPHIRE.get()), 1, "_from_gem")
                 .unlockedBy(getHasName(REOItems.SAPPHIRE.get()), has(REOItems.SAPPHIRE.get())).save(pWriter);
-        CrusherRecipeBuilder.named(REOItems.SILVER_DIRTY.get(), Ingredient.of(REOItems.SILVER_INGOT.get()), 1, "_ingot")
+        CrusherRecipeBuilder.named(REOItems.SILVER_DIRTY.get(), Ingredient.of(REOItems.SILVER_INGOT.get()), 1, "_from_ingot")
                 .unlockedBy(getHasName(REOItems.SILVER_INGOT.get()), has(REOItems.SILVER_INGOT.get())).save(pWriter);
-        CrusherRecipeBuilder.named(REOItems.TIN_DIRTY.get(), Ingredient.of(REOItems.TIN_INGOT.get()), 1, "_ingot")
+        CrusherRecipeBuilder.named(REOItems.TIN_DIRTY.get(), Ingredient.of(REOItems.TIN_INGOT.get()), 1, "_from_ingot")
                 .unlockedBy(getHasName(REOItems.TIN_INGOT.get()), has(REOItems.TIN_INGOT.get())).save(pWriter);
-        CrusherRecipeBuilder.named(REOItems.URANIUM_DIRTY.get(), Ingredient.of(REOItems.URANIUM_INGOT.get()), 1, "_ingot")
+        CrusherRecipeBuilder.named(REOItems.URANIUM_DIRTY.get(), Ingredient.of(REOItems.URANIUM_INGOT.get()), 1, "_from_ingot")
                 .unlockedBy(getHasName(REOItems.URANIUM_INGOT.get()), has(REOItems.URANIUM_INGOT.get())).save(pWriter);
-        CrusherRecipeBuilder.named(REOItems.ZINC_DIRTY.get(), Ingredient.of(REOItems.ZINC_INGOT.get()), 1, "_ingot")
+        CrusherRecipeBuilder.named(REOItems.ZINC_DIRTY.get(), Ingredient.of(REOItems.ZINC_INGOT.get()), 1, "_from_ingot")
                 .unlockedBy(getHasName(REOItems.ZINC_INGOT.get()), has(REOItems.ZINC_INGOT.get())).save(pWriter);
 
         // Alloy Furnace //
@@ -1235,50 +1359,34 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
 
         // Blocks //
         // Storage
-        nineBlockStorageRecipesRecipesWithCustomUnpacking(pWriter, RecipeCategory.MISC, REOItems.ALUMINUM_INGOT.get(),
-                RecipeCategory.MISC, REOBlocks.BLOCK_ALUMINIUM.get(), getSimpleRecipeName(REOItems.ALUMINUM_INGOT.get()), getItemName(REOItems.ALUMINUM_INGOT.get()));
-        nineBlockStorageRecipesRecipesWithCustomUnpacking(pWriter, RecipeCategory.MISC, REOItems.ENDERITE_INGOT.get(), RecipeCategory.MISC,
-                REOBlocks.BLOCK_ENDERITE.get(), getSimpleRecipeName(REOItems.ENDERITE_INGOT.get()), getItemName(REOItems.ENDERITE_INGOT.get()));
-        nineBlockStorageRecipesRecipesWithCustomUnpacking(pWriter, RecipeCategory.MISC, REOItems.LEAD_INGOT.get(), RecipeCategory.MISC,
-                REOBlocks.BLOCK_LEAD.get(), getSimpleRecipeName(REOItems.LEAD_INGOT.get()), getItemName(REOItems.LEAD_INGOT.get()));
-        nineBlockStorageRecipesRecipesWithCustomUnpacking(pWriter, RecipeCategory.MISC, REOItems.NICKEL_INGOT.get(), RecipeCategory.MISC,
-                REOBlocks.BLOCK_NICKEL.get(), getSimpleRecipeName(REOItems.NICKEL_INGOT.get()), getItemName(REOItems.NICKEL_INGOT.get()));
-        nineBlockStorageRecipesRecipesWithCustomUnpacking(pWriter, RecipeCategory.MISC, REOItems.PLATINUM_INGOT.get(), RecipeCategory.MISC,
-                REOBlocks.BLOCK_PLATINUM.get(), getSimpleRecipeName(REOItems.PLATINUM_INGOT.get()), getItemName(REOItems.PLATINUM_INGOT.get()));
-        nineBlockStorageRecipesRecipesWithCustomUnpacking(pWriter, RecipeCategory.MISC, REOItems.SILVER_INGOT.get(), RecipeCategory.MISC,
-                REOBlocks.BLOCK_SILVER.get(), getSimpleRecipeName(REOItems.SILVER_INGOT.get()), getItemName(REOItems.SILVER_INGOT.get()));
-        nineBlockStorageRecipesRecipesWithCustomUnpacking(pWriter, RecipeCategory.MISC, REOItems.STEEL_INGOT.get(), RecipeCategory.MISC,
-                REOBlocks.BLOCK_STEEL.get(), getSimpleRecipeName(REOItems.STEEL_INGOT.get()), getItemName(REOItems.STEEL_INGOT.get()));
-        nineBlockStorageRecipesRecipesWithCustomUnpacking(pWriter, RecipeCategory.MISC, REOItems.TIN_INGOT.get(), RecipeCategory.MISC,
-                REOBlocks.BLOCK_TIN.get(), getSimpleRecipeName(REOItems.TIN_INGOT.get()), getItemName(REOItems.TIN_INGOT.get()));
-        nineBlockStorageRecipesRecipesWithCustomUnpacking(pWriter, RecipeCategory.MISC, REOItems.URANIUM_INGOT.get(), RecipeCategory.MISC,
-                REOBlocks.BLOCK_URANIUM.get(), getSimpleRecipeName(REOItems.URANIUM_INGOT.get()), getItemName(REOItems.URANIUM_INGOT.get()));
-        nineBlockStorageRecipesRecipesWithCustomUnpacking(pWriter, RecipeCategory.MISC, REOItems.ZINC_INGOT.get(), RecipeCategory.MISC,
-                REOBlocks.BLOCK_ZINC.get(), getSimpleRecipeName(REOItems.ZINC_INGOT.get()), getItemName(REOItems.ZINC_INGOT.get()));
+        storageBlockRecipe(pWriter, REOBlocks.BLOCK_ALUMINIUM.get(), REOItems.ALUMINUM_INGOT.get());
+        storageBlockRecipe(pWriter, REOBlocks.BLOCK_BRASS.get(), REOItems.BRASS_INGOT.get());
+        storageBlockRecipe(pWriter, REOBlocks.BLOCK_BRONZE.get(), REOItems.BRONZE_INGOT.get());
+        storageBlockRecipe(pWriter, REOBlocks.BLOCK_ELECTRUM.get(), REOItems.ELECTRUM_INGOT.get());
+        storageBlockRecipe(pWriter, REOBlocks.BLOCK_ENDERITE.get(), REOItems.ENDERITE_INGOT.get());
+        storageBlockRecipe(pWriter, REOBlocks.BLOCK_LEAD.get(), REOItems.LEAD_INGOT.get());
+        storageBlockRecipe(pWriter, REOBlocks.BLOCK_NICKEL.get(), REOItems.NICKEL_INGOT.get());
+        storageBlockRecipe(pWriter, REOBlocks.BLOCK_PLATINUM.get(), REOItems.PLATINUM_INGOT.get());
+        storageBlockRecipe(pWriter, REOBlocks.BLOCK_SILVER.get(), REOItems.SILVER_INGOT.get());
+        storageBlockRecipe(pWriter, REOBlocks.BLOCK_STEEL.get(), REOItems.STEEL_INGOT.get());
+        storageBlockRecipe(pWriter, REOBlocks.BLOCK_TIN.get(), REOItems.TIN_INGOT.get());
+        storageBlockRecipe(pWriter, REOBlocks.BLOCK_URANIUM.get(), REOItems.URANIUM_INGOT.get());
+        storageBlockRecipe(pWriter, REOBlocks.BLOCK_ZINC.get(), REOItems.ZINC_INGOT.get());
 
-        twoByTwoPacker(pWriter, RecipeCategory.MISC, REOBlocks.BLOCK_PERIDOT.get(), REOItems.PERIDOT_SHARD.get());
-        twoByTwoPacker(pWriter, RecipeCategory.MISC, REOBlocks.BLOCK_RUBY.get(), REOItems.RUBY_SHARD.get());
-        twoByTwoPacker(pWriter, RecipeCategory.MISC, REOBlocks.BLOCK_SAPPHIRE.get(), REOItems.SAPPHIRE_SHARD.get());
+        geodeBlockRecipe(pWriter, REOBlocks.BLOCK_PERIDOT.get(), REOItems.PERIDOT_SHARD.get());
+        geodeBlockRecipe(pWriter, REOBlocks.BLOCK_RUBY.get(), REOItems.RUBY_SHARD.get());
+        geodeBlockRecipe(pWriter, REOBlocks.BLOCK_SAPPHIRE.get(), REOItems.SAPPHIRE_SHARD.get());
 
         // Raw Storage
-        nineBlockStorageRecipesRecipesWithCustomUnpacking(pWriter, RecipeCategory.MISC, REOItems.RAW_ALUMINIUM.get(), RecipeCategory.MISC,
-                REOBlocks.BLOCK_RAW_ALUMINIUM.get(), getSimpleRecipeName(REOItems.RAW_ALUMINIUM.get()), getItemName(REOItems.RAW_ALUMINIUM.get()));
-        nineBlockStorageRecipesRecipesWithCustomUnpacking(pWriter, RecipeCategory.MISC, REOItems.RAW_ENDERITE.get(), RecipeCategory.MISC,
-                REOBlocks.BLOCK_RAW_ENDERITE.get(), getSimpleRecipeName(REOItems.RAW_ENDERITE.get()), getItemName(REOItems.RAW_ENDERITE.get()));
-        nineBlockStorageRecipesRecipesWithCustomUnpacking(pWriter, RecipeCategory.MISC, REOItems.RAW_LEAD.get(), RecipeCategory.MISC,
-                REOBlocks.BLOCK_RAW_LEAD.get(), getSimpleRecipeName(REOItems.RAW_LEAD.get()), getItemName(REOItems.RAW_LEAD.get()));
-        nineBlockStorageRecipesRecipesWithCustomUnpacking(pWriter, RecipeCategory.MISC, REOItems.RAW_NICKEL.get(), RecipeCategory.MISC,
-                REOBlocks.BLOCK_RAW_NICKEL.get(), getSimpleRecipeName(REOItems.RAW_NICKEL.get()), getItemName(REOItems.RAW_NICKEL.get()));
-        nineBlockStorageRecipesRecipesWithCustomUnpacking(pWriter, RecipeCategory.MISC, REOItems.RAW_PLATINUM.get(), RecipeCategory.MISC,
-                REOBlocks.BLOCK_RAW_PLATINUM.get(), getSimpleRecipeName(REOItems.RAW_PLATINUM.get()), getItemName(REOItems.RAW_PLATINUM.get()));
-        nineBlockStorageRecipesRecipesWithCustomUnpacking(pWriter, RecipeCategory.MISC, REOItems.RAW_SILVER.get(), RecipeCategory.MISC,
-                REOBlocks.BLOCK_RAW_SILVER.get(), getSimpleRecipeName(REOItems.RAW_SILVER.get()), getItemName(REOItems.RAW_SILVER.get()));
-        nineBlockStorageRecipesRecipesWithCustomUnpacking(pWriter, RecipeCategory.MISC, REOItems.RAW_TIN.get(), RecipeCategory.MISC,
-                REOBlocks.BLOCK_RAW_TIN.get(), getSimpleRecipeName(REOItems.RAW_TIN.get()), getItemName(REOItems.RAW_TIN.get()));
-        nineBlockStorageRecipesRecipesWithCustomUnpacking(pWriter, RecipeCategory.MISC, REOItems.RAW_URANIUM.get(), RecipeCategory.MISC,
-                REOBlocks.BLOCK_RAW_URANIUM.get(), getSimpleRecipeName(REOItems.RAW_URANIUM.get()), getItemName(REOItems.RAW_URANIUM.get()));
-        nineBlockStorageRecipesRecipesWithCustomUnpacking(pWriter, RecipeCategory.MISC, REOItems.RAW_ZINC.get(), RecipeCategory.MISC,
-                REOBlocks.BLOCK_RAW_ZINC.get(), getSimpleRecipeName(REOItems.RAW_ZINC.get()), getItemName(REOItems.RAW_ZINC.get()));
+        storageBlockRecipe(pWriter, REOBlocks.BLOCK_RAW_ALUMINIUM.get(), REOItems.RAW_ALUMINIUM.get());
+        storageBlockRecipe(pWriter, REOBlocks.BLOCK_RAW_ENDERITE.get(), REOItems.RAW_ENDERITE.get());
+        storageBlockRecipe(pWriter, REOBlocks.BLOCK_RAW_LEAD.get(), REOItems.RAW_LEAD.get());
+        storageBlockRecipe(pWriter, REOBlocks.BLOCK_RAW_NICKEL.get(), REOItems.RAW_NICKEL.get());
+        storageBlockRecipe(pWriter, REOBlocks.BLOCK_RAW_PLATINUM.get(), REOItems.RAW_PLATINUM.get());
+        storageBlockRecipe(pWriter, REOBlocks.BLOCK_RAW_SILVER.get(), REOItems.RAW_SILVER.get());
+        storageBlockRecipe(pWriter, REOBlocks.BLOCK_RAW_TIN.get(), REOItems.RAW_TIN.get());
+        storageBlockRecipe(pWriter, REOBlocks.BLOCK_RAW_URANIUM.get(), REOItems.RAW_URANIUM.get());
+        storageBlockRecipe(pWriter, REOBlocks.BLOCK_RAW_ZINC.get(), REOItems.RAW_ZINC.get());
 
 
         // Building Blocks
@@ -2408,25 +2516,25 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(REOItems.NICKEL_INGOT.get(), 3)
                 .unlockedBy(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
                 .unlockedBy(getHasName(REOItems.NICKEL_INGOT.get()), has(REOItems.NICKEL_INGOT.get()))
-                .save(pWriter, "ingot/ingot_bronze_from_alloy_crafting");
+                .save(pWriter, RealEarthOres.MOD_ID + ":items/alloys/" + getItemName(REOItems.BRONZE_INGOT.get()));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, REOItems.BRASS_INGOT.get(), 2)
                 .requires(Items.COPPER_INGOT)
                 .requires(REOItems.ZINC_INGOT.get(), 3)
                 .unlockedBy(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
                 .unlockedBy(getHasName(REOItems.ZINC_INGOT.get()), has(REOItems.ZINC_INGOT.get()))
-                .save(pWriter, "ingot/ingot_brass_from_alloy_crafting");
+                .save(pWriter, RealEarthOres.MOD_ID + ":items/alloys/" + getItemName(REOItems.BRASS_INGOT.get()));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, REOItems.ELECTRUM_INGOT.get(), 2)
                 .requires(Items.GOLD_INGOT, 2)
                 .requires(REOItems.SILVER_INGOT.get(), 2)
                 .unlockedBy(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
                 .unlockedBy(getHasName(REOItems.SILVER_INGOT.get()), has(REOItems.SILVER_INGOT.get()))
-                .save(pWriter, "ingot/ingot_electrum_from_alloy_crafting");
+                .save(pWriter, RealEarthOres.MOD_ID + ":items/alloys/" + getItemName(REOItems.ELECTRUM_INGOT.get()));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, REOItems.STEEL_INGOT.get(), 2)
                 .requires(Items.IRON_INGOT)
                 .requires(Items.COAL, 3)
                 .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
                 .unlockedBy(getHasName(Items.COAL), has(Items.COAL))
-                .save(pWriter, "ingot/ingot_steel_from_alloy_crafting");
+                .save(pWriter, RealEarthOres.MOD_ID + ":items/alloys/" + getItemName(REOItems.STEEL_INGOT.get()));
 
         // Dust Alloys
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, REOItems.BRONZE_DUST.get(), 2)
@@ -2434,25 +2542,25 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(REOItems.NICKEL_DUST.get(), 3)
                 .unlockedBy(getHasName(REOItems.COPPER_DUST.get()), has(REOItems.COPPER_DUST.get()))
                 .unlockedBy(getHasName(REOItems.NICKEL_DUST.get()), has(REOItems.NICKEL_DUST.get()))
-                .save(pWriter, "dust/dust_bronze_from_alloy_crafting");
+                .save(pWriter, RealEarthOres.MOD_ID + ":items/alloys/" + getItemName(REOItems.BRONZE_DUST.get()));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, REOItems.BRASS_DUST.get(), 2)
                 .requires(REOItems.COPPER_DUST.get())
                 .requires(REOItems.ZINC_DUST.get(), 3)
                 .unlockedBy(getHasName(REOItems.COPPER_DUST.get()), has(REOItems.COPPER_DUST.get()))
                 .unlockedBy(getHasName(REOItems.ZINC_DUST.get()), has(REOItems.ZINC_DUST.get()))
-                .save(pWriter, "dust/dust_brass_from_alloy_crafting");
+                .save(pWriter, RealEarthOres.MOD_ID + ":items/alloys/" + getItemName(REOItems.BRASS_DUST.get()));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, REOItems.ELECTRUM_DUST.get(), 2)
                 .requires(REOItems.GOLD_DUST.get(), 2)
                 .requires(REOItems.SILVER_DUST.get(), 2)
                 .unlockedBy(getHasName(REOItems.GOLD_DUST.get()), has(REOItems.GOLD_DUST.get()))
                 .unlockedBy(getHasName(REOItems.SILVER_DUST.get()), has(REOItems.SILVER_DUST.get()))
-                .save(pWriter, "dust/dust_electrum_from_alloy_crafting");
+                .save(pWriter, RealEarthOres.MOD_ID + ":items/alloys/" + getItemName(REOItems.ELECTRUM_DUST.get()));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, REOItems.STEEL_DUST.get(), 2)
                 .requires(REOItems.IRON_DUST.get())
                 .requires(REOItems.COAL_DUST.get(), 3)
                 .unlockedBy(getHasName(REOItems.IRON_DUST.get()), has(REOItems.IRON_DUST.get()))
                 .unlockedBy(getHasName(REOItems.COAL_DUST.get()), has(REOItems.COAL_DUST.get()))
-                .save(pWriter, "dust/dust_steel_from_alloy_crafting");
+                .save(pWriter, RealEarthOres.MOD_ID + ":items/alloys/" + getItemName(REOItems.STEEL_DUST.get()));
 
         // Nuggets
         nuggetRecipe(pWriter, REOItems.ALUMINUM_INGOT.get(), REOItems.ALUMINUM_NUGGET.get());
@@ -2497,6 +2605,19 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
         ingotRecipe(pWriter, REOItems.STEEL_NUGGET.get(), REOItems.STEEL_INGOT.get());
         ingotRecipe(pWriter, REOItems.TIN_NUGGET.get(), REOItems.TIN_INGOT.get());
         ingotRecipe(pWriter, REOItems.ZINC_NUGGET.get(), REOItems.ZINC_INGOT.get());
+
+        ingotRecipe(pWriter, REOItems.ALUMINUM_INGOT.get(), REOBlocks.BLOCK_ALUMINIUM.get());
+        ingotRecipe(pWriter, REOItems.BRASS_INGOT.get(), REOBlocks.BLOCK_BRASS.get());
+        ingotRecipe(pWriter, REOItems.BRONZE_INGOT.get(), REOBlocks.BLOCK_BRONZE.get());
+        ingotRecipe(pWriter, REOItems.ELECTRUM_INGOT.get(), REOBlocks.BLOCK_ELECTRUM.get());
+        ingotRecipe(pWriter, REOItems.ENDERITE_INGOT.get(), REOBlocks.BLOCK_ENDERITE.get());
+        ingotRecipe(pWriter, REOItems.LEAD_INGOT.get(), REOBlocks.BLOCK_LEAD.get());
+        ingotRecipe(pWriter, REOItems.NICKEL_INGOT.get(), REOBlocks.BLOCK_NICKEL.get());
+        ingotRecipe(pWriter, REOItems.PLATINUM_INGOT.get(), REOBlocks.BLOCK_PLATINUM.get());
+        ingotRecipe(pWriter, REOItems.SILVER_INGOT.get(), REOBlocks.BLOCK_SILVER.get());
+        ingotRecipe(pWriter, REOItems.STEEL_INGOT.get(), REOBlocks.BLOCK_STEEL.get());
+        ingotRecipe(pWriter, REOItems.TIN_INGOT.get(), REOBlocks.BLOCK_TIN.get());
+        ingotRecipe(pWriter, REOItems.ZINC_INGOT.get(), REOBlocks.BLOCK_ZINC.get());
 
         // Luminous Powder
         luminousDustRecipe(pWriter, REOItems.BLACK_LUMINOUS.get(), Items.BLACK_DYE);
@@ -2582,7 +2703,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', Blocks.BRICKS)
                 .define('B', Blocks.FURNACE)
                 .unlockedBy(getHasName(Blocks.FURNACE), has(Blocks.FURNACE))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "machine/" + getItemName(REOBlocks.KILN.get()));
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/machine/" + getItemName(REOBlocks.KILN.get()));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, REOBlocks.CRUSHER.get())
                 .pattern("AAA")
@@ -2593,7 +2714,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('C', Blocks.FURNACE)
                 .define('D', Blocks.COBBLESTONE)
                 .unlockedBy(getHasName(Blocks.FURNACE), has(Blocks.FURNACE))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "machine/" + getItemName(REOBlocks.CRUSHER.get()));
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/machine/" + getItemName(REOBlocks.CRUSHER.get()));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, REOBlocks.EXTRACTOR.get())
                 .pattern("AAA")
@@ -2603,7 +2724,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('B', REOItems.TREE_TAP.get())
                 .define('C', Blocks.FURNACE)
                 .unlockedBy(getHasName(Blocks.FURNACE), has(Blocks.FURNACE))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "machine/" + getItemName(REOBlocks.EXTRACTOR.get()));
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/machine/" + getItemName(REOBlocks.EXTRACTOR.get()));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, REOBlocks.PURIFIER.get())
                 .pattern("AAA")
@@ -2614,12 +2735,30 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('C', Blocks.FURNACE)
                 .define('D', Blocks.COBBLESTONE)
                 .unlockedBy(getHasName(Blocks.FURNACE), has(Blocks.FURNACE))
-                .save(pWriter, RealEarthOres.MOD_ID + ":" + "machine/" + getItemName(REOBlocks.PURIFIER.get()));
+                .save(pWriter, RealEarthOres.MOD_ID + ":blocks/machine/" + getItemName(REOBlocks.PURIFIER.get()));
 
     }
 
     protected static void stonecutterRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pResult, ItemLike pMaterial, int pResultCount) {
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(pMaterial), RecipeCategory.BUILDING_BLOCKS, pResult, pResultCount).unlockedBy(getHasName(pMaterial), has(pMaterial)).save(pFinishedRecipeConsumer, getConversionRecipeName(pResult, pMaterial) + "_stonecutting");
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(pMaterial), RecipeCategory.BUILDING_BLOCKS, pResult, pResultCount)
+                .unlockedBy(getHasName(pMaterial), has(pMaterial))
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":blocks/stonecutter/" + getConversionRecipeName(pResult, pMaterial) + "_stonecutting");
+    }
+
+
+    protected static void slab(Consumer<FinishedRecipe> pFinishedRecipeConsumer, RecipeCategory pCategory, ItemLike pPressurePlate, ItemLike pMaterial) {
+        slabBuilder(pCategory, pPressurePlate, Ingredient.of(pMaterial)).unlockedBy(getHasName(pMaterial), has(pMaterial))
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":blocks/building_blocks/" + getItemName(pPressurePlate));
+    }
+
+    protected static void wall(Consumer<FinishedRecipe> pFinishedRecipeConsumer, RecipeCategory pCategory, ItemLike pWall, ItemLike pMaterial) {
+        wallBuilder(pCategory, pWall, Ingredient.of(pMaterial)).unlockedBy(getHasName(pMaterial), has(pMaterial))
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":blocks/building_blocks/" + getItemName(pWall));
+    }
+
+    protected static void cut(Consumer<FinishedRecipe> pFinishedRecipeConsumer, RecipeCategory pCategory, ItemLike pCutResult, ItemLike pMaterial) {
+        cutBuilder(pCategory, pCutResult, Ingredient.of(pMaterial)).unlockedBy(getHasName(pMaterial), has(pMaterial))
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":blocks/building_blocks/" + getItemName(pCutResult));
     }
 
     protected static void shovelRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, TagKey<Item> pMaterial, ItemLike pName) {
@@ -2630,7 +2769,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("S")
                 .pattern("S")
                 .unlockedBy(getHasName(pName), has(pName))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "tool/" + pItemResult);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/tool/" + pItemResult);
     }
 
     protected static void pickaxeRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, TagKey<Item> pMaterial, ItemLike pName) {
@@ -2641,7 +2780,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" S ")
                 .pattern(" S ")
                 .unlockedBy(getHasName(pName), has(pName))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "tool/" + pItemResult);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/tool/" + pItemResult);
     }
 
     protected static void axeRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, TagKey<Item> pMaterial, ItemLike pName) {
@@ -2652,7 +2791,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("#S")
                 .pattern(" S")
                 .unlockedBy(getHasName(pName), has(pName))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "tool/" + pItemResult);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/tool/" + pItemResult);
     }
 
     protected static void hoeRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, TagKey<Item> pMaterial, ItemLike pName) {
@@ -2663,7 +2802,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" S")
                 .pattern(" S")
                 .unlockedBy(getHasName(pName), has(pName))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "tool/" + pItemResult);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/tool/" + pItemResult);
     }
 
     protected static void swordRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, TagKey<Item> pMaterial, ItemLike pName) {
@@ -2674,7 +2813,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("#")
                 .pattern("S")
                 .unlockedBy(getHasName(pName), has(pName))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "tool/" + pItemResult);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/tool/" + pItemResult);
     }
 
     protected static void hammerRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, TagKey<Item> pMaterial, ItemLike pName) {
@@ -2685,7 +2824,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("###")
                 .pattern(" S ")
                 .unlockedBy(getHasName(pName), has(pName))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "tool/" + pItemResult);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/tool/" + pItemResult);
     }
 
     protected static void excavatorRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, TagKey<Item> pMaterial, ItemLike pName) {
@@ -2696,7 +2835,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("#S#")
                 .pattern(" S ")
                 .unlockedBy(getHasName(pName), has(pName))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "tool/" + pItemResult);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/tool/" + pItemResult);
     }
     protected static void hatchetRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, TagKey<Item> pMaterial, ItemLike pName) {
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, pItemResult)
@@ -2706,7 +2845,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("#S ")
                 .pattern(" S ")
                 .unlockedBy(getHasName(pName), has(pName))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "tool/" + pItemResult);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/tool/" + pItemResult);
 
     }
 
@@ -2718,7 +2857,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("  #")
                 .pattern("S# ")
                 .unlockedBy(getHasName(pName), has(pName))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "tool/" + pItemResult);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/tool/" + pItemResult);
     }
 
     protected static void shearsRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, TagKey<Item> pMaterial, ItemLike pName) {
@@ -2727,7 +2866,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" #")
                 .pattern("# ")
                 .unlockedBy(getHasName(pName), has(pName))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "tool/" + pItemResult);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/tool/" + pItemResult);
     }
 
 
@@ -2743,7 +2882,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(pAxe), has(pAxe))
                 .unlockedBy(getHasName(pShovel), has(pShovel))
                 .unlockedBy(getHasName(pPickaxe), has(pPickaxe))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "tool/" + pItemResult);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/tool/" + pItemResult);
     }
 
     protected static void bowRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, TagKey<Item> pMaterial, ItemLike pName) {
@@ -2754,7 +2893,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("# @")
                 .pattern(" #@")
                 .unlockedBy(getHasName(pName), has(pName))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "tool/" + pItemResult);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/tool/" + pItemResult);
     }
 
     protected static void shieldRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, TagKey<Item> pMaterial, ItemLike pName) {
@@ -2765,7 +2904,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("#@#")
                 .pattern(" # ")
                 .unlockedBy(getHasName(pName), has(pName))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "tool/" + pItemResult);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/tool/" + pItemResult);
     }
 
     protected static void helmetRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, TagKey<Item> pMaterial, ItemLike pName) {
@@ -2774,7 +2913,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("###")
                 .pattern("# #")
                 .unlockedBy(getHasName(pName), has(pName))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "armor/" + pItemResult);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/armor/" + pItemResult);
     }
 
     protected static void chestplateRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, TagKey<Item> pMaterial, ItemLike pName) {
@@ -2784,7 +2923,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("###")
                 .pattern("###")
                 .unlockedBy(getHasName(pName), has(pName))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "armor/" + pItemResult);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/armor/" + pItemResult);
     }
 
     protected static void legginsRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, TagKey<Item> pMaterial, ItemLike pName) {
@@ -2794,7 +2933,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("# #")
                 .pattern("# #")
                 .unlockedBy(getHasName(pName), has(pName))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "armor/" + pItemResult);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/armor/" + pItemResult);
     }
 
     protected static void bootsRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, TagKey<Item> pMaterial, ItemLike pName) {
@@ -2803,7 +2942,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("# #")
                 .pattern("# #")
                 .unlockedBy(getHasName(pName), has(pName))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "armor/" + pItemResult);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/armor/" + pItemResult);
     }
 
     protected static void horseArmorRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, TagKey<Item> pMaterial, ItemLike pName) {
@@ -2814,7 +2953,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("#@#")
                 .pattern("###")
                 .unlockedBy(getHasName(pName), has(pName))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "horse_armor/" + pItemResult);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/horse_armor/" + pItemResult);
     }
 
     protected static void saddleRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer) {
@@ -2825,7 +2964,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("#@#")
                 .pattern("@ @")
                 .unlockedBy(getHasName(Items.LEATHER), has(Items.LEATHER))
-                .save(pFinishedRecipeConsumer);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/misc/" + Items.SADDLE);
     }
 
     protected static void nuggetRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, ItemLike pMaterial) {
@@ -2835,14 +2974,14 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("###")
                 .pattern("###")
                 .unlockedBy(getHasName(pMaterial), has(pMaterial))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "nugget/" + pItemResult);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/nugget/" + pItemResult);
     }
 
     protected static void ingotRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, ItemLike pMaterial) {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, pItemResult, 9)
                 .requires(pMaterial).group("ingot")
                 .unlockedBy(getHasName(pItemResult), has(pItemResult))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "ingot/" + pItemResult);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/ingot/" + getItemName(pMaterial) + "_into_" + pItemResult);
     }
 
     protected static void luminousDustRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pDust, ItemLike pMaterial) {
@@ -2853,7 +2992,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("#G#")
                 .pattern("###")
                 .unlockedBy(getHasName(pMaterial), has(pMaterial))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "dust/" + pDust);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/dust/" + pDust);
     }
 
     protected static void lampRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pLamp, ItemLike pMaterial) {
@@ -2864,7 +3003,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("#G#")
                 .pattern("###")
                 .unlockedBy(getHasName(pMaterial), has(pMaterial))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "lamp/" + getItemName(pLamp));
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":blocks/lamp/" + getItemName(pLamp));
     }
 
     protected static void stairsRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, ItemLike pMaterial) {
@@ -2874,7 +3013,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("## ")
                 .pattern("###")
                 .unlockedBy(getHasName(pMaterial), has(pMaterial))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "stairs/" + getItemName(pItemResult));
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":blocks/stairs/" + getItemName(pItemResult));
     }
 
 
@@ -2885,7 +3024,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("#S#")
                 .pattern("#S#")
                 .unlockedBy(getHasName(pMaterial), has(pMaterial))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "fence/" + getItemName(pItemResult));
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":blocks/fence/" + getItemName(pItemResult));
     }
 
     protected static void fenceGateRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, ItemLike pMaterial) {
@@ -2895,7 +3034,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("S#S")
                 .pattern("S#S")
                 .unlockedBy(getHasName(pMaterial), has(pMaterial))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "fence_gate/" + getItemName(pItemResult));
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":blocks/fence_gate/" + getItemName(pItemResult));
     }
 
     protected static void signRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, ItemLike pMaterial) {
@@ -2906,7 +3045,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("###")
                 .pattern(" S ")
                 .unlockedBy(getHasName(pMaterial), has(pMaterial))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "sign/" + getItemName(pItemResult));
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/sign/" + getItemName(pItemResult));
     }
 
     protected static void hangingSignRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, ItemLike pMaterial) {
@@ -2917,7 +3056,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("###")
                 .pattern("###")
                 .unlockedBy(getHasName(pMaterial), has(pMaterial))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "hanging_sign/" + getItemName(pItemResult));
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/hanging_sign/" + getItemName(pItemResult));
     }
 
     protected static void doorRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, ItemLike pMaterial) {
@@ -2927,7 +3066,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("##")
                 .pattern("##")
                 .unlockedBy(getHasName(pMaterial), has(pMaterial))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "door/" + getItemName(pItemResult));
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":blocks/door/" + getItemName(pItemResult));
     }
 
     protected static void trapdoorRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, ItemLike pMaterial) {
@@ -2936,21 +3075,21 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("###")
                 .pattern("###")
                 .unlockedBy(getHasName(pMaterial), has(pMaterial))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "trapdoor/" + getItemName(pItemResult));
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":blocks/trapdoor/" + getItemName(pItemResult));
     }
 
     protected static void planksFromLogs(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pPlanks, Ingredient pLog) {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, pPlanks, 4)
                 .requires(pLog).group("planks")
                 .unlockedBy(getHasName(pPlanks), has(pPlanks))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "planks/" + getItemName(pPlanks));
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":blocks/planks/" + getItemName(pPlanks));
     }
 
     protected static void woodFromLogs(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pWood, ItemLike pLog) {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, pWood, 3)
                 .requires(pLog, 4).group("planks")
                 .unlockedBy(getHasName(pLog), has(pLog))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "wood/" + getItemName(pWood));
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":blocks/wood/" + getItemName(pWood));
     }
 
 
@@ -2959,14 +3098,14 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(pWood).requires(Items.HONEYCOMB)
                 .group("wood")
                 .unlockedBy(getHasName(pWood), has(pWood))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "resistant/" + getItemName(pItemResult));
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":blocks/resistant/" + getItemName(pItemResult));
     }
 
     protected static void buttonRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, ItemLike pPlanks) {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.REDSTONE, pItemResult)
                 .requires(pPlanks).group("planks")
                 .unlockedBy(getHasName(pPlanks), has(pPlanks))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "button/" + getItemName(pItemResult));
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":blocks/button/" + getItemName(pItemResult));
     }
 
 
@@ -2975,14 +3114,14 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('#', pPlanks)
                 .pattern("##")
                 .unlockedBy(getHasName(pPlanks), has(pPlanks))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "pressure_plate/" + getItemName(pItemResult));
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":blocks/pressure_plate/" + getItemName(pItemResult));
     }
 
     protected static void seedRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, ItemLike pItemFrom) {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, pItemResult)
                 .requires(pItemFrom).group("seeds")
                 .unlockedBy(getHasName(pItemFrom), has(pItemFrom))
-                .save(pFinishedRecipeConsumer,  RealEarthOres.MOD_ID + ":" + getItemName(pItemResult) + "_from_"+ getItemName(pItemFrom));
+                .save(pFinishedRecipeConsumer,  RealEarthOres.MOD_ID + ":items/seeds/" + pItemResult + "_from_" + pItemFrom);
     }
 
     protected static void flourRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, ItemLike pMaterial) {
@@ -2990,7 +3129,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('#', pMaterial)
                 .pattern("##")
                 .unlockedBy(getHasName(pMaterial), has(pMaterial))
-                .save(pFinishedRecipeConsumer,  RealEarthOres.MOD_ID + ":" + getItemName(pItemResult) + "_from_" + getItemName(pMaterial));
+                .save(pFinishedRecipeConsumer,  RealEarthOres.MOD_ID + ":items/flour/" + pItemResult);
     }
 
     protected static void breadLikeRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, ItemLike pMaterial) {
@@ -2998,7 +3137,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('#', pMaterial)
                 .pattern("###")
                 .unlockedBy(getHasName(pMaterial), has(pMaterial))
-                .save(pFinishedRecipeConsumer,  RealEarthOres.MOD_ID + ":" + getItemName(pItemResult) + "_from_" + getItemName(pMaterial));
+                .save(pFinishedRecipeConsumer,  RealEarthOres.MOD_ID + ":items/bread/" + pItemResult);
     }
 
     protected static void boatRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, ItemLike pMaterial) {
@@ -3007,14 +3146,14 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("# #")
                 .pattern("###")
                 .unlockedBy(getHasName(pMaterial), has(pMaterial))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "boat/" + pItemResult);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/boat/" + pItemResult);
     }
 
     protected static void chestBoatRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, ItemLike pBoat) {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.TRANSPORTATION, pItemResult)
                 .requires(pBoat).requires(Blocks.CHEST).group("chest_boat")
                 .unlockedBy(getHasName(pBoat), has(pBoat))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "chest_boat/" + pItemResult);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/chest_boat/" + pItemResult);
     }
 
     protected static void woodenGearRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult) {
@@ -3024,7 +3163,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("# #")
                 .pattern(" # ")
                 .unlockedBy(getHasName(Items.STICK), has(Items.STICK))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "gears/" + pItemResult);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/gears/" + pItemResult);
     }
 
     protected static void stoneGearRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult) {
@@ -3035,7 +3174,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("#G#")
                 .pattern(" # ")
                 .unlockedBy(getHasName(REOItems.WOOD_GEAR.get()), has(REOItems.WOOD_GEAR.get()))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "gears/" + pItemResult);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/gears/" + pItemResult);
     }
 
     protected static void tier1GearRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, ItemLike pMaterial) {
@@ -3046,7 +3185,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("#G#")
                 .pattern(" # ")
                 .unlockedBy(getHasName(pMaterial), has(pMaterial))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "gears/" + pItemResult);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/gears/" + pItemResult);
     }
 
     protected static void tier2GearRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, ItemLike pMaterial) {
@@ -3057,7 +3196,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("#G#")
                 .pattern(" # ")
                 .unlockedBy(getHasName(pMaterial), has(pMaterial))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "gears/" + pItemResult);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/gears/" + pItemResult);
     }
 
     protected static void tier3GearRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, ItemLike pMaterial) {
@@ -3068,7 +3207,7 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("#G#")
                 .pattern(" # ")
                 .unlockedBy(getHasName(pMaterial), has(pMaterial))
-                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID + ":" + "gears/" + pItemResult);
+                .save(pFinishedRecipeConsumer, RealEarthOres.MOD_ID +  ":items/gears/" + pItemResult);
     }
 
     protected static void plateRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, ItemLike pMaterial) {
@@ -3076,7 +3215,26 @@ public class REORecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('#', pMaterial)
                 .pattern("###")
                 .unlockedBy(getHasName(pMaterial), has(pItemResult))
-                .save(pFinishedRecipeConsumer,  RealEarthOres.MOD_ID + ":" + "plate/" + pItemResult);
+                .save(pFinishedRecipeConsumer,  RealEarthOres.MOD_ID +  ":items/plate/" + pItemResult);
+    }
+
+    protected static void storageBlockRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, ItemLike pMaterial) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, pItemResult)
+                .define('#', pMaterial)
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .unlockedBy(getHasName(pMaterial), has(pItemResult))
+                .save(pFinishedRecipeConsumer,  RealEarthOres.MOD_ID +  ":blocks/storage_block/" + getItemName(pItemResult));
+    }
+
+    protected static void geodeBlockRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pItemResult, ItemLike pMaterial) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, pItemResult)
+                .define('#', pMaterial)
+                .pattern("##")
+                .pattern("##")
+                .unlockedBy(getHasName(pMaterial), has(pItemResult))
+                .save(pFinishedRecipeConsumer,  RealEarthOres.MOD_ID +  ":blocks/storage_block/" + getItemName(pItemResult));
     }
 
 }

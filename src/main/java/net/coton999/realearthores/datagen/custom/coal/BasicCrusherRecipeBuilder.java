@@ -71,7 +71,7 @@ public class BasicCrusherRecipeBuilder implements RecipeBuilder {
 
         pFinishedRecipeConsumer.accept(new BasicCrusherRecipeBuilder.Result(pRecipeId, this.ingredient, this.result,
                 this.experience, this.cookingTime, this.name, this.advancement,
-                new ResourceLocation(pRecipeId.getNamespace(), "recipes/" + pRecipeId.getPath())));
+                new ResourceLocation(RealEarthOres.MOD_ID, "recipes/coal_crusher/" + pRecipeId.getPath())));
     }
 
     public static class Result implements FinishedRecipe {
@@ -110,7 +110,7 @@ public class BasicCrusherRecipeBuilder implements RecipeBuilder {
         @Override
         public ResourceLocation getId() {
             return new ResourceLocation(RealEarthOres.MOD_ID,
-                    ForgeRegistries.ITEMS.getKey(this.result).getPath() + "_from_coal_crushing" + this.name);
+                    "blocks/coal_crusher/" + ForgeRegistries.ITEMS.getKey(this.result).getPath() + this.name);
         }
 
         @Override
