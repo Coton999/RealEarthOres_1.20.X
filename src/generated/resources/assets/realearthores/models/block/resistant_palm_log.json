@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "end": "realearthores:block/tree/log/palm_top",
+    "front": "realearthores:block/tree/log/palm",
+    "side": "realearthores:block/tree/log/palm",
+    "top": "realearthores:block/tree/log/palm_top"
+  }
+}

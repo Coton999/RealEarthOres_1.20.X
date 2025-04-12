@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "realearthores:block/resistant_chestnut_wood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "realearthores:block/resistant_chestnut_wood"
+    },
+    "axis=z": {
+      "model": "realearthores:block/resistant_chestnut_wood_horizontal",
+      "x": 90
+    }
+  }
+}

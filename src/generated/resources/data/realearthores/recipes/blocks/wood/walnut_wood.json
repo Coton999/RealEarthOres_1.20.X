@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "realearthores:walnut_log"
+    },
+    {
+      "item": "realearthores:walnut_log"
+    },
+    {
+      "item": "realearthores:walnut_log"
+    },
+    {
+      "item": "realearthores:walnut_log"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "realearthores:walnut_wood"
+  }
+}

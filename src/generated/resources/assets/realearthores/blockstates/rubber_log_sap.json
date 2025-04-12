@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "realearthores:block/rubber_log_sap_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "realearthores:block/rubber_log_sap"
+    },
+    "axis=z": {
+      "model": "realearthores:block/rubber_log_sap_horizontal",
+      "x": 90
+    }
+  }
+}

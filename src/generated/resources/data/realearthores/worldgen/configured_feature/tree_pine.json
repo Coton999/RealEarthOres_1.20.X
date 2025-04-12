@@ -17,7 +17,7 @@
     "foliage_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "realearthores:leaves_pine",
+        "Name": "realearthores:pine_leaves",
         "Properties": {
           "distance": "7",
           "persistent": "false",
@@ -42,7 +42,7 @@
     "trunk_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "realearthores:log_pine",
+        "Name": "realearthores:pine_log",
         "Properties": {
           "axis": "y"
         }

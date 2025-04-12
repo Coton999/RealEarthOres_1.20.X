@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "realearthores:papaya_log"
+    },
+    {
+      "item": "realearthores:papaya_log"
+    },
+    {
+      "item": "realearthores:papaya_log"
+    },
+    {
+      "item": "realearthores:papaya_log"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "realearthores:papaya_wood"
+  }
+}

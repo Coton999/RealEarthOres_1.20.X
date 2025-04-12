@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_log_redwood_stripped": {
+    "has_stripped_redwood_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:log_redwood_stripped"
+              "realearthores:stripped_redwood_log"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_log_redwood_stripped",
+      "has_stripped_redwood_log",
       "has_the_recipe"
     ]
   ],

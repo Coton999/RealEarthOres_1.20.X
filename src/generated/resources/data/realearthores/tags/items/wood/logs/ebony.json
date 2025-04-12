@@ -1,8 +1,12 @@
 {
   "values": [
-    "realearthores:log_ebony",
-    "realearthores:log_ebony_stripped",
-    "realearthores:wood_ebony",
-    "realearthores:wood_ebony_stripped"
+    "realearthores:ebony_log",
+    "realearthores:stripped_ebony_log",
+    "realearthores:resistant_ebony_log",
+    "realearthores:resistant_stripped_ebony_log",
+    "realearthores:ebony_wood",
+    "realearthores:stripped_ebony_wood",
+    "realearthores:resistant_ebony_wood",
+    "realearthores:resistant_stripped_ebony_wood"
   ]
 }

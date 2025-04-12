@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "realearthores:larch_log"
+    },
+    {
+      "item": "realearthores:larch_log"
+    },
+    {
+      "item": "realearthores:larch_log"
+    },
+    {
+      "item": "realearthores:larch_log"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "realearthores:larch_wood"
+  }
+}

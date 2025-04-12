@@ -1,8 +1,12 @@
 {
   "values": [
-    "realearthores:log_lime",
-    "realearthores:log_lime_stripped",
-    "realearthores:wood_lime",
-    "realearthores:wood_lime_stripped"
+    "realearthores:lime_log",
+    "realearthores:stripped_lime_log",
+    "realearthores:resistant_lime_log",
+    "realearthores:resistant_stripped_lime_log",
+    "realearthores:lime_wood",
+    "realearthores:stripped_lime_wood",
+    "realearthores:resistant_lime_wood",
+    "realearthores:resistant_stripped_lime_wood"
   ]
 }

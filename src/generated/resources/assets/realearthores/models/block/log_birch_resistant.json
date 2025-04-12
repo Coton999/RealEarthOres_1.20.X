@@ -1,7 +1,6 @@
 {
   "parent": "minecraft:block/orientable",
   "textures": {
-    "end": "minecraft:block/birch_log_top",
     "front": "minecraft:block/birch_log",
     "side": "minecraft:block/birch_log",
     "top": "minecraft:block/birch_log_top"

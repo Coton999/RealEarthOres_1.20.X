@@ -1,8 +1,12 @@
 {
   "values": [
-    "realearthores:log_redwood",
-    "realearthores:log_redwood_stripped",
-    "realearthores:wood_redwood",
-    "realearthores:wood_redwood_stripped"
+    "realearthores:redwood_log",
+    "realearthores:stripped_redwood_log",
+    "realearthores:resistant_redwood_log",
+    "realearthores:resistant_stripped_redwood_log",
+    "realearthores:redwood_wood",
+    "realearthores:stripped_redwood_wood",
+    "realearthores:resistant_redwood_wood",
+    "realearthores:resistant_stripped_redwood_wood"
   ]
 }

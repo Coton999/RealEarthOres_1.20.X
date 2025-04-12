@@ -1,8 +1,12 @@
 {
   "values": [
-    "realearthores:log_balsa",
-    "realearthores:log_balsa_stripped",
-    "realearthores:wood_balsa",
-    "realearthores:wood_balsa_stripped"
+    "realearthores:balsa_log",
+    "realearthores:stripped_balsa_log",
+    "realearthores:resistant_balsa_log",
+    "realearthores:resistant_stripped_balsa_log",
+    "realearthores:balsa_wood",
+    "realearthores:stripped_balsa_wood",
+    "realearthores:resistant_balsa_wood",
+    "realearthores:resistant_stripped_balsa_wood"
   ]
 }

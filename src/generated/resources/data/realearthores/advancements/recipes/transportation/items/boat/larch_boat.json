@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_planks_larch": {
+    "has_larch_planks": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:planks_larch"
+              "realearthores:larch_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_planks_larch",
+      "has_larch_planks",
       "has_the_recipe"
     ]
   ],

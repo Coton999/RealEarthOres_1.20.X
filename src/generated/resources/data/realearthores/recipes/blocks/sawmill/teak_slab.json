@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:milling",
+  "ingredients": [
+    {
+      "item": "realearthores:teak_planks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "realearthores:teak_slab"
+  }
+}

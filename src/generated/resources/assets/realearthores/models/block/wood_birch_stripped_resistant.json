@@ -1,8 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "minecraft:block/stripped_birch_log",
-    "end": "minecraft:block/stripped_birch_log",
-    "side": "minecraft:block/stripped_birch_log"
+    "all": "minecraft:block/stripped_birch_log"
   }
 }

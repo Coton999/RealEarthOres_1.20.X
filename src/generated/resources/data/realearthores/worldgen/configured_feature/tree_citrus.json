@@ -19,7 +19,7 @@
       "entries": [
         {
           "data": {
-            "Name": "realearthores:leaves_citrus",
+            "Name": "realearthores:citrus_leaves",
             "Properties": {
               "distance": "7",
               "persistent": "false",
@@ -30,7 +30,7 @@
         },
         {
           "data": {
-            "Name": "realearthores:leaves_citrus_fruit",
+            "Name": "realearthores:citrus_fruit_leaves",
             "Properties": {
               "distance": "7",
               "persistent": "false",
@@ -58,7 +58,7 @@
     "trunk_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "realearthores:log_citrus",
+        "Name": "realearthores:citrus_log",
         "Properties": {
           "axis": "y"
         }

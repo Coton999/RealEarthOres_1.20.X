@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "end": "realearthores:block/tree/stripped/larch_top",
+    "front": "realearthores:block/tree/stripped/larch",
+    "side": "realearthores:block/tree/stripped/larch",
+    "top": "realearthores:block/tree/stripped/larch_top"
+  }
+}

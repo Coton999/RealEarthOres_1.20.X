@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_log_chestnut_stripped": {
+    "has_stripped_chestnut_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:log_chestnut_stripped"
+              "realearthores:stripped_chestnut_log"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_log_chestnut_stripped",
+      "has_stripped_chestnut_log",
       "has_the_recipe"
     ]
   ],

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "realearthores:block/tree/stripped/mahogany",
+    "end": "realearthores:block/tree/stripped/mahogany",
+    "side": "realearthores:block/tree/stripped/mahogany"
+  }
+}

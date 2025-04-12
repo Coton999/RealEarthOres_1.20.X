@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_log_walnut_stripped": {
+    "has_stripped_walnut_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:log_walnut_stripped"
+              "realearthores:stripped_walnut_log"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_log_walnut_stripped",
+      "has_stripped_walnut_log",
       "has_the_recipe"
     ]
   ],

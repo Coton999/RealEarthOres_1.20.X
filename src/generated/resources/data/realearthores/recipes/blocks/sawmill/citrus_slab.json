@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:milling",
+  "ingredients": [
+    {
+      "item": "realearthores:citrus_planks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "realearthores:citrus_slab"
+  }
+}

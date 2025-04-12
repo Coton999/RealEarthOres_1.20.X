@@ -1,8 +1,12 @@
 {
   "values": [
-    "realearthores:log_maple",
-    "realearthores:log_maple_stripped",
-    "realearthores:wood_maple",
-    "realearthores:wood_maple_stripped"
+    "realearthores:maple_log",
+    "realearthores:stripped_maple_log",
+    "realearthores:resistant_maple_log",
+    "realearthores:resistant_stripped_maple_log",
+    "realearthores:maple_wood",
+    "realearthores:stripped_maple_wood",
+    "realearthores:resistant_maple_wood",
+    "realearthores:resistant_stripped_maple_wood"
   ]
 }

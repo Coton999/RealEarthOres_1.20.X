@@ -1,8 +1,12 @@
 {
   "values": [
-    "realearthores:log_citrus",
-    "realearthores:log_citrus_stripped",
-    "realearthores:wood_citrus",
-    "realearthores:wood_citrus_stripped"
+    "realearthores:citrus_log",
+    "realearthores:stripped_citrus_log",
+    "realearthores:resistant_citrus_log",
+    "realearthores:resistant_stripped_citrus_log",
+    "realearthores:citrus_wood",
+    "realearthores:stripped_citrus_wood",
+    "realearthores:resistant_citrus_wood",
+    "realearthores:resistant_stripped_citrus_wood"
   ]
 }

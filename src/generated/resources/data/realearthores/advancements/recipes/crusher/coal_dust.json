@@ -1,11 +1,13 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ore_coal": {
+    "has_coal": {
       "conditions": {
         "items": [
           {
-            "tag": "minecraft:coal_ores"
+            "items": [
+              "minecraft:coal"
+            ]
           }
         ]
       },
@@ -20,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_ore_coal",
+      "has_coal",
       "has_the_recipe"
     ]
   ],

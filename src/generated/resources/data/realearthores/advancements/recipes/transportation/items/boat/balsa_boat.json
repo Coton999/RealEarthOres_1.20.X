@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_planks_balsa": {
+    "has_balsa_planks": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:planks_balsa"
+              "realearthores:balsa_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_planks_balsa",
+      "has_balsa_planks",
       "has_the_recipe"
     ]
   ],

@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:milling",
+  "ingredients": [
+    {
+      "item": "realearthores:rubber_planks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "realearthores:rubber_slab"
+  }
+}

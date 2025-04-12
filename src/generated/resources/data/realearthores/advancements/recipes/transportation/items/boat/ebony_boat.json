@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_planks_ebony": {
+    "has_ebony_planks": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:planks_ebony"
+              "realearthores:ebony_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_planks_ebony",
+      "has_ebony_planks",
       "has_the_recipe"
     ]
   ],

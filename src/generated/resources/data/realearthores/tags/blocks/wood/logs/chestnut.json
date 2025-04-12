@@ -1,12 +1,12 @@
 {
   "values": [
-    "realearthores:log_chestnut",
-    "realearthores:log_chestnut_stripped",
-    "realearthores:log_chestnut_resistant",
-    "realearthores:log_chestnut_stripped_resistant",
-    "realearthores:wood_chestnut",
-    "realearthores:wood_chestnut_stripped",
-    "realearthores:wood_chestnut_resistant",
-    "realearthores:wood_chestnut_stripped_resistant"
+    "realearthores:chestnut_log",
+    "realearthores:stripped_chestnut_log",
+    "realearthores:resistant_chestnut_log",
+    "realearthores:resistant_stripped_chestnut_log",
+    "realearthores:chestnut_wood",
+    "realearthores:stripped_chestnut_wood",
+    "realearthores:resistant_chestnut_wood",
+    "realearthores:resistant_stripped_chestnut_wood"
   ]
 }

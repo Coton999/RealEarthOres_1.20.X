@@ -1,8 +1,12 @@
 {
   "values": [
-    "realearthores:log_larch",
-    "realearthores:log_larch_stripped",
-    "realearthores:wood_larch",
-    "realearthores:wood_larch_stripped"
+    "realearthores:larch_log",
+    "realearthores:stripped_larch_log",
+    "realearthores:resistant_larch_log",
+    "realearthores:resistant_stripped_larch_log",
+    "realearthores:larch_wood",
+    "realearthores:stripped_larch_wood",
+    "realearthores:resistant_larch_wood",
+    "realearthores:resistant_stripped_larch_wood"
   ]
 }

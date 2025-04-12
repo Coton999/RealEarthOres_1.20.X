@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "realearthores:stripped_redwood_log"
+    },
+    {
+      "item": "realearthores:stripped_redwood_log"
+    },
+    {
+      "item": "realearthores:stripped_redwood_log"
+    },
+    {
+      "item": "realearthores:stripped_redwood_log"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "realearthores:stripped_redwood_wood"
+  }
+}

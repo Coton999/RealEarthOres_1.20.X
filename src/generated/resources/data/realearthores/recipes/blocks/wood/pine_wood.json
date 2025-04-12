@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "realearthores:pine_log"
+    },
+    {
+      "item": "realearthores:pine_log"
+    },
+    {
+      "item": "realearthores:pine_log"
+    },
+    {
+      "item": "realearthores:pine_log"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "realearthores:pine_wood"
+  }
+}

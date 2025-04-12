@@ -26,7 +26,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "realearthores:sapling_poplar"
+          "name": "realearthores:poplar_sapling"
         }
       ],
       "rolls": 1.0

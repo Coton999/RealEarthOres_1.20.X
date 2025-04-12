@@ -1,8 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "minecraft:block/mangrove_log",
-    "end": "minecraft:block/mangrove_log",
-    "side": "minecraft:block/mangrove_log"
+    "all": "minecraft:block/mangrove_log"
   }
 }

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "realearthores:ebony_log"
+    },
+    {
+      "item": "realearthores:ebony_log"
+    },
+    {
+      "item": "realearthores:ebony_log"
+    },
+    {
+      "item": "realearthores:ebony_log"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "realearthores:ebony_wood"
+  }
+}

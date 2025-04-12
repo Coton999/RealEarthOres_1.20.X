@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_top_left_open",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "realearthores:block/door/hill_cherry_lower",
+    "top": "realearthores:block/door/hill_cherry_upper"
+  }
+}

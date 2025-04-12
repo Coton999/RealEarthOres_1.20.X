@@ -1,7 +1,6 @@
 {
   "parent": "minecraft:block/orientable",
   "textures": {
-    "end": "minecraft:block/acacia_log_top",
     "front": "minecraft:block/acacia_log",
     "side": "minecraft:block/acacia_log",
     "top": "minecraft:block/acacia_log_top"

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_log_palm_stripped": {
+    "has_stripped_palm_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:log_palm_stripped"
+              "realearthores:stripped_palm_log"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_log_palm_stripped",
+      "has_stripped_palm_log",
       "has_the_recipe"
     ]
   ],

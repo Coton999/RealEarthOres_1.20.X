@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realearthores:block/resistant_pine_slab"
+    },
+    "type=double": {
+      "model": "realearthores:block/pine_planks"
+    },
+    "type=top": {
+      "model": "realearthores:block/resistant_pine_slab_top"
+    }
+  }
+}

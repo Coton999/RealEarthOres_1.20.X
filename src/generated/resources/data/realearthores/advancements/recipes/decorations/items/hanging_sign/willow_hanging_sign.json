@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_log_willow_stripped": {
+    "has_stripped_willow_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:log_willow_stripped"
+              "realearthores:stripped_willow_log"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_log_willow_stripped",
+      "has_stripped_willow_log",
       "has_the_recipe"
     ]
   ],

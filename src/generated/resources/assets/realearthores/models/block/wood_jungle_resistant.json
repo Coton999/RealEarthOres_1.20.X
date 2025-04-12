@@ -1,8 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "minecraft:block/jungle_log",
-    "end": "minecraft:block/jungle_log",
-    "side": "minecraft:block/jungle_log"
+    "all": "minecraft:block/jungle_log"
   }
 }

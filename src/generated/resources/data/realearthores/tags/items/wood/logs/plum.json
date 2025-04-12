@@ -1,8 +1,12 @@
 {
   "values": [
-    "realearthores:log_plum",
-    "realearthores:log_plum_stripped",
-    "realearthores:wood_plum",
-    "realearthores:wood_plum_stripped"
+    "realearthores:plum_log",
+    "realearthores:stripped_plum_log",
+    "realearthores:resistant_plum_log",
+    "realearthores:resistant_stripped_plum_log",
+    "realearthores:plum_wood",
+    "realearthores:stripped_plum_wood",
+    "realearthores:resistant_plum_wood",
+    "realearthores:resistant_stripped_plum_wood"
   ]
 }

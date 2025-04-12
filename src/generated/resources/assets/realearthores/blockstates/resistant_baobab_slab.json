@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realearthores:block/resistant_baobab_slab"
+    },
+    "type=double": {
+      "model": "realearthores:block/baobab_planks"
+    },
+    "type=top": {
+      "model": "realearthores:block/resistant_baobab_slab_top"
+    }
+  }
+}

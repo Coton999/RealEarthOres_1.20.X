@@ -19,7 +19,7 @@
       "entries": [
         {
           "data": {
-            "Name": "realearthores:leaves_plum",
+            "Name": "realearthores:plum_leaves",
             "Properties": {
               "distance": "7",
               "persistent": "false",
@@ -30,7 +30,7 @@
         },
         {
           "data": {
-            "Name": "realearthores:leaves_plum_fruit",
+            "Name": "realearthores:plum_fruit_leaves",
             "Properties": {
               "distance": "7",
               "persistent": "false",
@@ -58,7 +58,7 @@
     "trunk_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "realearthores:log_plum",
+        "Name": "realearthores:plum_log",
         "Properties": {
           "axis": "y"
         }

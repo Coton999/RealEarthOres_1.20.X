@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realearthores:block/redwood_slab"
+    },
+    "type=double": {
+      "model": "realearthores:block/redwood_planks"
+    },
+    "type=top": {
+      "model": "realearthores:block/redwood_slab_top"
+    }
+  }
+}

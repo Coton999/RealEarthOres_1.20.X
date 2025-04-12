@@ -1,12 +1,12 @@
 {
   "values": [
-    "realearthores:log_hill_cherry",
-    "realearthores:log_hill_cherry_stripped",
-    "realearthores:log_hill_cherry_resistant",
-    "realearthores:log_hill_cherry_stripped_resistant",
-    "realearthores:wood_hill_cherry",
-    "realearthores:wood_hill_cherry_stripped",
-    "realearthores:wood_hill_cherry_resistant",
-    "realearthores:wood_hill_cherry_stripped_resistant"
+    "realearthores:hill_cherry_log",
+    "realearthores:stripped_hill_cherry_log",
+    "realearthores:resistant_hill_cherry_log",
+    "realearthores:resistant_stripped_hill_cherry_log",
+    "realearthores:hill_cherry_wood",
+    "realearthores:stripped_hill_cherry_wood",
+    "realearthores:resistant_hill_cherry_wood",
+    "realearthores:resistant_stripped_hill_cherry_wood"
   ]
 }

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_planks_poplar": {
+    "has_poplar_planks": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:planks_poplar"
+              "realearthores:poplar_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_planks_poplar",
+      "has_poplar_planks",
       "has_the_recipe"
     ]
   ],

@@ -1,12 +1,12 @@
 {
   "values": [
-    "realearthores:log_willow",
-    "realearthores:log_willow_stripped",
-    "realearthores:log_willow_resistant",
-    "realearthores:log_willow_stripped_resistant",
-    "realearthores:wood_willow",
-    "realearthores:wood_willow_stripped",
-    "realearthores:wood_willow_resistant",
-    "realearthores:wood_willow_stripped_resistant"
+    "realearthores:willow_log",
+    "realearthores:stripped_willow_log",
+    "realearthores:resistant_willow_log",
+    "realearthores:resistant_stripped_willow_log",
+    "realearthores:willow_wood",
+    "realearthores:stripped_willow_wood",
+    "realearthores:resistant_willow_wood",
+    "realearthores:resistant_stripped_willow_wood"
   ]
 }

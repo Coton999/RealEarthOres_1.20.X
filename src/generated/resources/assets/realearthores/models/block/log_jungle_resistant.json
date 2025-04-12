@@ -1,7 +1,6 @@
 {
   "parent": "minecraft:block/orientable",
   "textures": {
-    "end": "minecraft:block/jungle_log_top",
     "front": "minecraft:block/jungle_log",
     "side": "minecraft:block/jungle_log",
     "top": "minecraft:block/jungle_log_top"

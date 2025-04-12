@@ -1,8 +1,12 @@
 {
   "values": [
-    "realearthores:log_teak",
-    "realearthores:log_teak_stripped",
-    "realearthores:wood_teak",
-    "realearthores:wood_teak_stripped"
+    "realearthores:teak_log",
+    "realearthores:stripped_teak_log",
+    "realearthores:resistant_teak_log",
+    "realearthores:resistant_stripped_teak_log",
+    "realearthores:teak_wood",
+    "realearthores:stripped_teak_wood",
+    "realearthores:resistant_teak_wood",
+    "realearthores:resistant_stripped_teak_wood"
   ]
 }

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_log_rubber_stripped": {
+    "has_stripped_rubber_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:log_rubber_stripped"
+              "realearthores:stripped_rubber_log"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_log_rubber_stripped",
+      "has_stripped_rubber_log",
       "has_the_recipe"
     ]
   ],

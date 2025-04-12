@@ -18,7 +18,7 @@
       "entries": [
         {
           "data": {
-            "Name": "realearthores:leaves_papaya",
+            "Name": "realearthores:papaya_leaves",
             "Properties": {
               "distance": "7",
               "persistent": "false",
@@ -29,7 +29,7 @@
         },
         {
           "data": {
-            "Name": "realearthores:leaves_papaya_fruit",
+            "Name": "realearthores:papaya_fruit_leaves",
             "Properties": {
               "distance": "7",
               "persistent": "false",
@@ -57,7 +57,7 @@
     "trunk_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "realearthores:log_papaya",
+        "Name": "realearthores:papaya_log",
         "Properties": {
           "axis": "y"
         }

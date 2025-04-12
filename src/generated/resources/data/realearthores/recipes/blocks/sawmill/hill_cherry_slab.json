@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:milling",
+  "ingredients": [
+    {
+      "item": "realearthores:hill_cherry_planks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "realearthores:hill_cherry_slab"
+  }
+}

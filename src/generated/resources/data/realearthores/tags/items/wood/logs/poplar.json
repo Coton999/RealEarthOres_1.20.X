@@ -1,8 +1,12 @@
 {
   "values": [
-    "realearthores:log_poplar",
-    "realearthores:log_poplar_stripped",
-    "realearthores:wood_poplar",
-    "realearthores:wood_poplar_stripped"
+    "realearthores:poplar_log",
+    "realearthores:stripped_poplar_log",
+    "realearthores:resistant_poplar_log",
+    "realearthores:resistant_stripped_poplar_log",
+    "realearthores:poplar_wood",
+    "realearthores:stripped_poplar_wood",
+    "realearthores:resistant_poplar_wood",
+    "realearthores:resistant_stripped_poplar_wood"
   ]
 }

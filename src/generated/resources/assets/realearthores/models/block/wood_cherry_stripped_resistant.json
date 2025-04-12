@@ -1,8 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "minecraft:block/stripped_cherry_log",
-    "end": "minecraft:block/stripped_cherry_log",
-    "side": "minecraft:block/stripped_cherry_log"
+    "all": "minecraft:block/stripped_cherry_log"
   }
 }

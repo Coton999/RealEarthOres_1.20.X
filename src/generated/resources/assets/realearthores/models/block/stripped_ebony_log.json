@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "end": "realearthores:block/tree/stripped/ebony_top",
+    "front": "realearthores:block/tree/stripped/ebony",
+    "side": "realearthores:block/tree/stripped/ebony",
+    "top": "realearthores:block/tree/stripped/ebony_top"
+  }
+}

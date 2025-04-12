@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "realearthores:teak_planks"
+    }
+  ],
+  "result": {
+    "item": "realearthores:teak_button"
+  }
+}

@@ -1,8 +1,14 @@
 {
   "values": [
-    "realearthores:log_rubber",
-    "realearthores:log_rubber_stripped",
-    "realearthores:wood_rubber",
-    "realearthores:wood_rubber_stripped"
+    "realearthores:rubber_log",
+    "realearthores:rubber_log_sap",
+    "realearthores:stripped_rubber_log",
+    "realearthores:resistant_rubber_log",
+    "realearthores:resistant_stripped_rubber_log",
+    "realearthores:rubber_wood",
+    "realearthores:rubber_wood_sap",
+    "realearthores:stripped_rubber_wood",
+    "realearthores:resistant_rubber",
+    "realearthores:resistant_stripped_rubber_wood"
   ]
 }

@@ -1,7 +1,6 @@
 {
   "parent": "minecraft:block/orientable",
   "textures": {
-    "end": "minecraft:block/mangrove_log_top",
     "front": "minecraft:block/mangrove_log",
     "side": "minecraft:block/mangrove_log",
     "top": "minecraft:block/mangrove_log_top"

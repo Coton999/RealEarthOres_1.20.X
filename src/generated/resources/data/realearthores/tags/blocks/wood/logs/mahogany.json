@@ -1,12 +1,12 @@
 {
   "values": [
-    "realearthores:log_mahogany",
-    "realearthores:log_mahogany_stripped",
-    "realearthores:log_mahogany_resistant",
-    "realearthores:log_mahogany_stripped_resistant",
-    "realearthores:wood_mahogany",
-    "realearthores:wood_mahogany_stripped",
-    "realearthores:wood_mahogany_resistant",
-    "realearthores:wood_mahogany_stripped_resistant"
+    "realearthores:mahogany_log",
+    "realearthores:stripped_mahogany_log",
+    "realearthores:resistant_mahogany_log",
+    "realearthores:resistant_stripped_mahogany_log",
+    "realearthores:mahogany_wood",
+    "realearthores:stripped_mahogany_wood",
+    "realearthores:resistant_mahogany_wood",
+    "realearthores:resistant_stripped_mahogany_wood"
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realearthores:block/resistant_rubber_slab"
+    },
+    "type=double": {
+      "model": "realearthores:block/rubber_planks"
+    },
+    "type=top": {
+      "model": "realearthores:block/resistant_rubber_slab_top"
+    }
+  }
+}

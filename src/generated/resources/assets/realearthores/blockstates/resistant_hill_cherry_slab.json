@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realearthores:block/resistant_hill_cherry_slab"
+    },
+    "type=double": {
+      "model": "realearthores:block/hill_cherry_planks"
+    },
+    "type=top": {
+      "model": "realearthores:block/resistant_hill_cherry_slab_top"
+    }
+  }
+}

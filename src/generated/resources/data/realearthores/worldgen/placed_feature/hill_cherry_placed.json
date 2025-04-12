@@ -36,7 +36,7 @@
       "predicate": {
         "type": "minecraft:would_survive",
         "state": {
-          "Name": "realearthores:sapling_hill_cherry",
+          "Name": "realearthores:hill_cherry_sapling",
           "Properties": {
             "stage": "0"
           }

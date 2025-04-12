@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:milling",
+  "ingredients": [
+    {
+      "item": "realearthores:chestnut_planks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "realearthores:chestnut_slab"
+  }
+}

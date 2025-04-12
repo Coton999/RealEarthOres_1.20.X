@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_log_balsa_stripped": {
+    "has_stripped_balsa_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:log_balsa_stripped"
+              "realearthores:stripped_balsa_log"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_log_balsa_stripped",
+      "has_stripped_balsa_log",
       "has_the_recipe"
     ]
   ],

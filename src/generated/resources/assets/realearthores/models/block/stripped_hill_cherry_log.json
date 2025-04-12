@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "end": "realearthores:block/tree/stripped/hill_cherry_top",
+    "front": "realearthores:block/tree/stripped/hill_cherry",
+    "side": "realearthores:block/tree/stripped/hill_cherry",
+    "top": "realearthores:block/tree/stripped/hill_cherry_top"
+  }
+}

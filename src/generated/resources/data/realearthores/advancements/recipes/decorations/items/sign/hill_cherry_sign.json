@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_planks_hill_cherry": {
+    "has_hill_cherry_planks": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:planks_hill_cherry"
+              "realearthores:hill_cherry_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_planks_hill_cherry",
+      "has_hill_cherry_planks",
       "has_the_recipe"
     ]
   ],

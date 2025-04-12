@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:milling",
+  "ingredients": [
+    {
+      "item": "realearthores:walnut_planks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "realearthores:walnut_slab"
+  }
+}

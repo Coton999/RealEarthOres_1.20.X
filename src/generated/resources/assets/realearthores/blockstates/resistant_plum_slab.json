@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realearthores:block/resistant_plum_slab"
+    },
+    "type=double": {
+      "model": "realearthores:block/plum_planks"
+    },
+    "type=top": {
+      "model": "realearthores:block/resistant_plum_slab_top"
+    }
+  }
+}

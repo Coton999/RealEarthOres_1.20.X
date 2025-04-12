@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_log_hill_cherry_stripped": {
+    "has_stripped_hill_cherry_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:log_hill_cherry_stripped"
+              "realearthores:stripped_hill_cherry_log"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_log_hill_cherry_stripped",
+      "has_stripped_hill_cherry_log",
       "has_the_recipe"
     ]
   ],

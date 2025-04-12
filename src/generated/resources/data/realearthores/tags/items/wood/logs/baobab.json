@@ -1,8 +1,12 @@
 {
   "values": [
-    "realearthores:log_baobab",
-    "realearthores:log_baobab_stripped",
-    "realearthores:wood_baobab",
-    "realearthores:wood_baobab_stripped"
+    "realearthores:baobab_log",
+    "realearthores:stripped_baobab_log",
+    "realearthores:resistant_baobab_log",
+    "realearthores:resistant_stripped_baobab_log",
+    "realearthores:baobab_wood",
+    "realearthores:stripped_baobab_wood",
+    "realearthores:resistant_baobab_wood",
+    "realearthores:resistant_stripped_baobab_wood"
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realearthores:block/citrus_slab"
+    },
+    "type=double": {
+      "model": "realearthores:block/citrus_planks"
+    },
+    "type=top": {
+      "model": "realearthores:block/citrus_slab_top"
+    }
+  }
+}

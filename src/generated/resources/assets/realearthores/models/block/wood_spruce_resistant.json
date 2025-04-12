@@ -1,8 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "minecraft:block/spruce_log",
-    "end": "minecraft:block/spruce_log",
-    "side": "minecraft:block/spruce_log"
+    "all": "minecraft:block/spruce_log"
   }
 }

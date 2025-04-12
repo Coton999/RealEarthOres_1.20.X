@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "realearthores:stripped_poplar_log"
+    },
+    "S": {
+      "item": "minecraft:chain"
+    }
+  },
+  "pattern": [
+    "S S",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "realearthores:poplar_hanging_sign"
+  },
+  "show_notification": true
+}

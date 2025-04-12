@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realearthores:block/resistant_acacia_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/acacia_planks"
+    },
+    "type=top": {
+      "model": "realearthores:block/resistant_acacia_slab_top"
+    }
+  }
+}

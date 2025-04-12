@@ -1,8 +1,12 @@
 {
   "values": [
-    "realearthores:log_walnut",
-    "realearthores:log_walnut_stripped",
-    "realearthores:wood_walnut",
-    "realearthores:wood_walnut_stripped"
+    "realearthores:walnut_log",
+    "realearthores:stripped_walnut_log",
+    "realearthores:resistant_walnut_log",
+    "realearthores:resistant_stripped_walnut_log",
+    "realearthores:walnut_wood",
+    "realearthores:stripped_walnut_wood",
+    "realearthores:resistant_walnut_wood",
+    "realearthores:resistant_stripped_walnut_wood"
   ]
 }

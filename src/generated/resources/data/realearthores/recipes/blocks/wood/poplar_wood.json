@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "realearthores:poplar_log"
+    },
+    {
+      "item": "realearthores:poplar_log"
+    },
+    {
+      "item": "realearthores:poplar_log"
+    },
+    {
+      "item": "realearthores:poplar_log"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "realearthores:poplar_wood"
+  }
+}

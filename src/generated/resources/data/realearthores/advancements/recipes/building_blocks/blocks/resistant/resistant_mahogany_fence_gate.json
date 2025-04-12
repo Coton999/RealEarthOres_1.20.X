@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mahogany_fence_gate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "realearthores:mahogany_fence_gate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realearthores:blocks/resistant/resistant_mahogany_fence_gate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_mahogany_fence_gate",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "realearthores:blocks/resistant/resistant_mahogany_fence_gate"
+    ]
+  },
+  "sends_telemetry_event": false
+}

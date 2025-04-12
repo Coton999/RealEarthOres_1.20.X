@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:milling",
+  "ingredients": [
+    {
+      "tag": "realearthores:wood/logs/citrus"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "item": "realearthores:citrus_planks"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:milling",
+  "ingredients": [
+    {
+      "tag": "realearthores:wood/logs/maple"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "item": "realearthores:maple_planks"
+  }
+}

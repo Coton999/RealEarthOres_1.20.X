@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "end": "realearthores:block/tree/log/rubber_top",
+    "front": "realearthores:block/tree/log/rubber_sap",
+    "side": "realearthores:block/tree/log/rubber",
+    "top": "realearthores:block/tree/log/rubber_top"
+  }
+}

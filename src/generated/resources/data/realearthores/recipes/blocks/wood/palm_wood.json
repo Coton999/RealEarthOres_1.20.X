@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "realearthores:palm_log"
+    },
+    {
+      "item": "realearthores:palm_log"
+    },
+    {
+      "item": "realearthores:palm_log"
+    },
+    {
+      "item": "realearthores:palm_log"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "realearthores:palm_wood"
+  }
+}

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_log_maple_stripped": {
+    "has_stripped_maple_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:log_maple_stripped"
+              "realearthores:stripped_maple_log"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_log_maple_stripped",
+      "has_stripped_maple_log",
       "has_the_recipe"
     ]
   ],

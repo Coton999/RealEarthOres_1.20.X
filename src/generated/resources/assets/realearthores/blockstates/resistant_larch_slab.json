@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realearthores:block/resistant_larch_slab"
+    },
+    "type=double": {
+      "model": "realearthores:block/larch_planks"
+    },
+    "type=top": {
+      "model": "realearthores:block/resistant_larch_slab_top"
+    }
+  }
+}

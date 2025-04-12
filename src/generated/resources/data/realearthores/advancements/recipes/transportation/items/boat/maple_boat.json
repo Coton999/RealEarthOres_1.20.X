@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_planks_maple": {
+    "has_maple_planks": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:planks_maple"
+              "realearthores:maple_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_planks_maple",
+      "has_maple_planks",
       "has_the_recipe"
     ]
   ],

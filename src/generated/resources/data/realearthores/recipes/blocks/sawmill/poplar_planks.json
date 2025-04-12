@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:milling",
+  "ingredients": [
+    {
+      "tag": "realearthores:wood/logs/poplar"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "item": "realearthores:poplar_planks"
+  }
+}

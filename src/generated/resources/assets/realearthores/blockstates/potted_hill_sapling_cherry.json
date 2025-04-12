@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "realearthores:block/potted_sapling_cherry"
+      "model": "realearthores:block/potted_sapling_hill_cherry"
     }
   }
 }
