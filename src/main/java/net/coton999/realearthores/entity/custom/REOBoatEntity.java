@@ -82,26 +82,26 @@ public class REOBoatEntity extends Boat {
     }
 
     public static enum Type implements StringRepresentable {
-        BALSA(REOBlocks.PLANKS_BALSA.get(), "balsa"),
-        BAOBAB(REOBlocks.PLANKS_BAOBAB.get(), "baobab"),
-        HILL_CHERRY(REOBlocks.PLANKS_HILL_CHERRY.get(), "hill_cherry"),
-        CHESTNUT(REOBlocks.PLANKS_CHESTNUT.get(), "chestnut"),
-        CITRUS(REOBlocks.PLANKS_CITRUS.get(), "citrus"),
-        EBONY(REOBlocks.PLANKS_EBONY.get(), "ebony"),
-        LARCH(REOBlocks.PLANKS_LARCH.get(), "larch"),
-        LIME(REOBlocks.PLANKS_LIME.get(), "lime"),
-        MAHOGANY(REOBlocks.PLANKS_MAHOGANY.get(), "mahogany"),
-        MAPLE(REOBlocks.PLANKS_MAPLE.get(), "maple"),
-        PALM(REOBlocks.PLANKS_PALM.get(), "palm"),
-        PAPAYA(REOBlocks.PLANKS_PAPAYA.get(), "papaya"),
-        PINE(REOBlocks.PLANKS_PINE.get(), "pine"),
-        PLUM(REOBlocks.PLANKS_PLUM.get(), "plum"),
-        POPLAR(REOBlocks.PLANKS_POPLAR.get(), "poplar"),
-        REDWOOD(REOBlocks.PLANKS_REDWOOD.get(), "redwood"),
-        RUBBER(REOBlocks.PLANKS_RUBBER.get(), "rubber"),
-        TEAK(REOBlocks.PLANKS_TEAK.get(), "teak"),
-        WALNUT(REOBlocks.PLANKS_WALNUT.get(), "walnut"),
-        WILLOW(REOBlocks.PLANKS_WILLOW.get(), "willow");
+        BALSA(REOBlocks.BALSA_PLANKS.get(), "balsa"),
+        BAOBAB(REOBlocks.BAOBAB_PLANKS.get(), "baobab"),
+        HILL_CHERRY(REOBlocks.HILL_CHERRY_PLANKS.get(), "hill_cherry"),
+        CHESTNUT(REOBlocks.CHESTNUT_PLANKS.get(), "chestnut"),
+        CITRUS(REOBlocks.CITRUS_PLANKS.get(), "citrus"),
+        EBONY(REOBlocks.EBONY_PLANKS.get(), "ebony"),
+        LARCH(REOBlocks.LARCH_PLANKS.get(), "larch"),
+        LIME(REOBlocks.LIME_PLANKS.get(), "lime"),
+        MAHOGANY(REOBlocks.MAHOGANY_PLANKS.get(), "mahogany"),
+        MAPLE(REOBlocks.MAPLE_PLANKS.get(), "maple"),
+        PALM(REOBlocks.PALM_PLANKS.get(), "palm"),
+        PAPAYA(REOBlocks.PAPAYA_PLANKS.get(), "papaya"),
+        PINE(REOBlocks.PINE_PLANKS.get(), "pine"),
+        PLUM(REOBlocks.PLUM_PLANKS.get(), "plum"),
+        POPLAR(REOBlocks.POPLAR_PLANKS.get(), "poplar"),
+        REDWOOD(REOBlocks.REDWOOD_PLANKS.get(), "redwood"),
+        RUBBER(REOBlocks.RUBBER_PLANKS.get(), "rubber"),
+        TEAK(REOBlocks.TEAK_PLANKS.get(), "teak"),
+        WALNUT(REOBlocks.WALNUT_PLANKS.get(), "walnut"),
+        WILLOW(REOBlocks.WILLOW_PLANKS.get(), "willow");
 
         private final String name;
         private final Block planks;

@@ -36,7 +36,7 @@ public class BuddingSapphireBlock extends AmethystBlock {
             } else if (blockstate.is(REOBlocks.MEDIUM_SAPPHIRE_BUD.get()) && blockstate.getValue(AmethystClusterBlock.FACING) == direction) {
                 block = REOBlocks.LARGE_SAPPHIRE_BUD.get();
             } else if (blockstate.is(REOBlocks.LARGE_SAPPHIRE_BUD.get()) && blockstate.getValue(AmethystClusterBlock.FACING) == direction) {
-                block = REOBlocks.CLUSTER_SAPPHIRE.get();
+                block = REOBlocks.SAPPHIRE_CLUSTER.get();
             }
 
             if (block != null) {

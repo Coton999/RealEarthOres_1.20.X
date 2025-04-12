@@ -999,9 +999,9 @@ public class REOItems {
     // Wood //
     // Balsa
     public static final RegistryObject<Item> BALSA_SIGN = ITEMS.register("balsa_sign",
-            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_BALSA.get(), REOBlocks.SIGN_BALSA_WALL.get()));
+            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.BALSA_SIGN.get(), REOBlocks.BALSA_WALL_SIGN.get()));
     public static final RegistryObject<Item> BALSA_HANGING_SIGN = ITEMS.register("balsa_hanging_sign",
-            () -> new HangingSignItem(REOBlocks.SIGN_HANGING_BALSA.get(), REOBlocks.SIGN_HANGING_BALSA_WALL.get(), new Item.Properties().stacksTo(16)));
+            () -> new HangingSignItem(REOBlocks.BALSA_HANGING_SIGN.get(), REOBlocks.BALSA_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> BALSA_BOAT = ITEMS.register("balsa_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.BALSA, new Item.Properties().stacksTo(1)));
@@ -1010,9 +1010,9 @@ public class REOItems {
 
     // Baobab
     public static final RegistryObject<Item> BAOBAB_SIGN = ITEMS.register("baobab_sign",
-            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_BAOBAB.get(), REOBlocks.SIGN_BAOBAB_WALL.get()));
+            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.BAOBAB_SIGN.get(), REOBlocks.BAOBAB_WALL_SIGN.get()));
     public static final RegistryObject<Item> BAOBAB_HANGING_SIGN = ITEMS.register("baobab_hanging_sign",
-            () -> new HangingSignItem(REOBlocks.SIGN_HANGING_BAOBAB.get(), REOBlocks.SIGN_HANGING_BAOBAB_WALL.get(), new Item.Properties().stacksTo(16)));
+            () -> new HangingSignItem(REOBlocks.BAOBAB_HANGING_SIGN.get(), REOBlocks.BAOBAB_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> BAOBAB_BOAT = ITEMS.register("baobab_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.BAOBAB, new Item.Properties().stacksTo(1)));
@@ -1021,9 +1021,9 @@ public class REOItems {
 
     // Hill Cherry
     public static final RegistryObject<Item> HILL_CHERRY_SIGN = ITEMS.register("hill_cherry_sign",
-            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_HILL_CHERRY.get(), REOBlocks.SIGN_HILL_CHERRY_WALL.get()));
+            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.HILL_CHERRY_SIGN.get(), REOBlocks.HILL_CHERRY_WALL_SIGN.get()));
     public static final RegistryObject<Item> HILL_CHERRY_HANGING_SIGN = ITEMS.register("hill_cherry_hanging_sign",
-            () -> new HangingSignItem(REOBlocks.SIGN_HANGING_HILL_CHERRY.get(), REOBlocks.SIGN_HANGING_HILL_CHERRY_WALL.get(), new Item.Properties().stacksTo(16)));
+            () -> new HangingSignItem(REOBlocks.HILL_CHERRY_HANGING_SIGN.get(), REOBlocks.HILL_CHERRY_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> HILL_CHERRY_BOAT = ITEMS.register("hill_cherry_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.HILL_CHERRY, new Item.Properties().stacksTo(1)));
@@ -1032,9 +1032,9 @@ public class REOItems {
 
     // Chestnut
     public static final RegistryObject<Item> CHESTNUT_SIGN = ITEMS.register("chestnut_sign",
-            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_CHESTNUT.get(), REOBlocks.SIGN_CHESTNUT_WALL.get()));
+            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.CHESTNUT_SIGN.get(), REOBlocks.CHESTNUT_WALL_SIGN.get()));
     public static final RegistryObject<Item> CHESTNUT_HANGING_SIGN = ITEMS.register("chestnut_hanging_sign",
-            () -> new HangingSignItem(REOBlocks.SIGN_HANGING_CHESTNUT.get(), REOBlocks.SIGN_HANGING_CHESTNUT_WALL.get(), new Item.Properties().stacksTo(16)));
+            () -> new HangingSignItem(REOBlocks.CHESTNUT_HANGING_SIGN.get(), REOBlocks.CHESTNUT_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> BOAT_CHESTNUT = ITEMS.register("chestnut_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.CHESTNUT, new Item.Properties().stacksTo(1)));
@@ -1043,9 +1043,9 @@ public class REOItems {
 
     // Citrus
     public static final RegistryObject<Item> CITRUS_SIGN = ITEMS.register("citrus_sign",
-            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_CITRUS.get(), REOBlocks.SIGN_CITRUS_WALL.get()));
+            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.CITRUS_SIGN.get(), REOBlocks.CITRUS_WALL_SIGN.get()));
     public static final RegistryObject<Item> CITRUS_HANGING_SIGN = ITEMS.register("citrus_hanging_sign",
-            () -> new HangingSignItem(REOBlocks.SIGN_HANGING_CITRUS.get(), REOBlocks.SIGN_HANGING_CITRUS_WALL.get(), new Item.Properties().stacksTo(16)));
+            () -> new HangingSignItem(REOBlocks.CITRUS_HANGING_SIGN.get(), REOBlocks.CITRUS_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> CITRUS_BOAT = ITEMS.register("citrus_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.CITRUS, new Item.Properties().stacksTo(1)));
@@ -1054,9 +1054,9 @@ public class REOItems {
 
     // Ebony
     public static final RegistryObject<Item> EBONY_SIGN = ITEMS.register("ebony_sign",
-            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_EBONY.get(), REOBlocks.SIGN_EBONY_WALL.get()));
+            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.EBONY_SIGN.get(), REOBlocks.EBONY_WALL_SIGN.get()));
     public static final RegistryObject<Item> EBONY_HANGING_SIGN = ITEMS.register("ebony_hanging_sign",
-            () -> new HangingSignItem(REOBlocks.SIGN_HANGING_EBONY.get(), REOBlocks.SIGN_HANGING_EBONY_WALL.get(), new Item.Properties().stacksTo(16)));
+            () -> new HangingSignItem(REOBlocks.EBONY_HANGING_SIGN.get(), REOBlocks.EBONY_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> EBONY_BOAT = ITEMS.register("ebony_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.EBONY, new Item.Properties().stacksTo(1)));
@@ -1065,9 +1065,9 @@ public class REOItems {
 
     // Larch
     public static final RegistryObject<Item> LARCH_SIGN = ITEMS.register("larch_sign",
-            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_LARCH.get(), REOBlocks.SIGN_LARCH_WALL.get()));
+            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.LARCH_SIGN.get(), REOBlocks.LARCH_WALL_SIGN.get()));
     public static final RegistryObject<Item> LARCH_HANGING_SIGN = ITEMS.register("larch_hanging_sign",
-            () -> new HangingSignItem(REOBlocks.SIGN_HANGING_LARCH.get(), REOBlocks.SIGN_HANGING_LARCH_WALL.get(), new Item.Properties().stacksTo(16)));
+            () -> new HangingSignItem(REOBlocks.LARCH_HANGING_SIGN.get(), REOBlocks.LARCH_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> LARCH_BOAT = ITEMS.register("larch_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.LARCH, new Item.Properties().stacksTo(1)));
@@ -1076,9 +1076,9 @@ public class REOItems {
 
     // Lime
     public static final RegistryObject<Item> LIME_SIGN = ITEMS.register("lime_sign",
-            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_LIME.get(), REOBlocks.SIGN_LIME_WALL.get()));
+            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.LIME_SIGN.get(), REOBlocks.LIME_WALL_SIGN.get()));
     public static final RegistryObject<Item> LIME_HANGING_SIGN = ITEMS.register("lime_hanging_sign",
-            () -> new HangingSignItem(REOBlocks.SIGN_HANGING_LIME.get(), REOBlocks.SIGN_HANGING_LIME_WALL.get(), new Item.Properties().stacksTo(16)));
+            () -> new HangingSignItem(REOBlocks.LIME_HANGING_SIGN.get(), REOBlocks.LIME_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> LIME_BOAT = ITEMS.register("lime_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.LIME, new Item.Properties().stacksTo(1)));
@@ -1087,9 +1087,9 @@ public class REOItems {
 
     // Mahogany
     public static final RegistryObject<Item> MAHOGANY_SIGN = ITEMS.register("mahogany_sign",
-            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_MAHOGANY.get(), REOBlocks.SIGN_MAHOGANY_WALL.get()));
+            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.MAHOGANY_SIGN.get(), REOBlocks.MAHOGANY_WALL_SIGN.get()));
     public static final RegistryObject<Item> MAHOGANY_HANGING_SIGN = ITEMS.register("mahogany_hanging_sign",
-            () -> new HangingSignItem(REOBlocks.SIGN_HANGING_MAHOGANY.get(), REOBlocks.SIGN_HANGING_MAHOGANY_WALL.get(), new Item.Properties().stacksTo(16)));
+            () -> new HangingSignItem(REOBlocks.MAHOGANY_HANGING_SIGN.get(), REOBlocks.MAHOGANY_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> MAHOGANY_BOAT = ITEMS.register("mahogany_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.MAHOGANY, new Item.Properties().stacksTo(1)));
@@ -1098,9 +1098,9 @@ public class REOItems {
 
     // Maple
     public static final RegistryObject<Item> MAPLE_SIGN = ITEMS.register("maple_sign",
-            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_MAPLE.get(), REOBlocks.SIGN_MAPLE_WALL.get()));
+            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.MAPLE_SIGN.get(), REOBlocks.MAPLE_WALL_SIGN.get()));
     public static final RegistryObject<Item> MAPLE_HANGING_SIGN = ITEMS.register("maple_hanging_sign",
-            () -> new HangingSignItem(REOBlocks.SIGN_HANGING_MAPLE.get(), REOBlocks.SIGN_HANGING_MAPLE_WALL.get(), new Item.Properties().stacksTo(16)));
+            () -> new HangingSignItem(REOBlocks.MAPLE_HANGING_SIGN.get(), REOBlocks.MAPLE_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> MAPLE_BOAT = ITEMS.register("maple_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.MAPLE, new Item.Properties().stacksTo(1)));
@@ -1109,9 +1109,9 @@ public class REOItems {
 
     // Palm
     public static final RegistryObject<Item> PALM_SIGN = ITEMS.register("palm_sign",
-            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_PALM.get(), REOBlocks.SIGN_PALM_WALL.get()));
+            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.PALM_SIGN.get(), REOBlocks.PALM_WALL_SIGN.get()));
     public static final RegistryObject<Item> PALM_HANGING_SIGN = ITEMS.register("palm_hanging_sign",
-            () -> new HangingSignItem(REOBlocks.SIGN_HANGING_PALM.get(), REOBlocks.SIGN_HANGING_PALM_WALL.get(), new Item.Properties().stacksTo(16)));
+            () -> new HangingSignItem(REOBlocks.PALM_HANGING_SIGN.get(), REOBlocks.PALM_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> PALM_BOAT = ITEMS.register("palm_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.PALM, new Item.Properties().stacksTo(1)));
@@ -1120,9 +1120,9 @@ public class REOItems {
 
     // Papaya
     public static final RegistryObject<Item> PAPAYA_SIGN = ITEMS.register("papaya_sign",
-            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_PAPAYA.get(), REOBlocks.SIGN_PAPAYA_WALL.get()));
+            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.PAPAYA_SIGN.get(), REOBlocks.PAPAYA_WALL_SIGN.get()));
     public static final RegistryObject<Item> PAPAYA_HANGING_SIGN = ITEMS.register("papaya_hanging_sign",
-            () -> new HangingSignItem(REOBlocks.SIGN_HANGING_PAPAYA.get(), REOBlocks.SIGN_HANGING_PAPAYA_WALL.get(), new Item.Properties().stacksTo(16)));
+            () -> new HangingSignItem(REOBlocks.PAPAYA_HANGING_SIGN.get(), REOBlocks.PAPAYA_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> PAPAYA_BOAT = ITEMS.register("papaya_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.PAPAYA, new Item.Properties().stacksTo(1)));
@@ -1131,9 +1131,9 @@ public class REOItems {
 
     // Pine
     public static final RegistryObject<Item> PINE_SIGN = ITEMS.register("pine_sign",
-            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_PINE.get(), REOBlocks.SIGN_PINE_WALL.get()));
+            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.PINE_SIGN.get(), REOBlocks.PINE_WALL_SIGN.get()));
     public static final RegistryObject<Item> PINE_HANGING_SIGN = ITEMS.register("pine_hanging_sign",
-            () -> new HangingSignItem(REOBlocks.SIGN_HANGING_PINE.get(), REOBlocks.SIGN_HANGING_PINE_WALL.get(), new Item.Properties().stacksTo(16)));
+            () -> new HangingSignItem(REOBlocks.PINE_HANGING_SIGN.get(), REOBlocks.PINE_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> PINE_BOAT = ITEMS.register("pine_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.PINE, new Item.Properties().stacksTo(1)));
@@ -1142,9 +1142,9 @@ public class REOItems {
 
     // Plum
     public static final RegistryObject<Item> PLUM_SIGN = ITEMS.register("plum_sign",
-            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_PLUM.get(), REOBlocks.SIGN_PLUM_WALL.get()));
+            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.PLUM_SIGN.get(), REOBlocks.PLUM_WALL_SIGN.get()));
     public static final RegistryObject<Item> PLUM_HANGING_SIGN = ITEMS.register("plum_hanging_sign",
-            () -> new HangingSignItem(REOBlocks.SIGN_HANGING_PLUM.get(), REOBlocks.SIGN_HANGING_PLUM_WALL.get(), new Item.Properties().stacksTo(16)));
+            () -> new HangingSignItem(REOBlocks.PLUM_HANGING_SIGN.get(), REOBlocks.PLUM_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> PLUM_BOAT = ITEMS.register("plum_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.PLUM, new Item.Properties().stacksTo(1)));
@@ -1153,9 +1153,9 @@ public class REOItems {
 
     // Poplar
     public static final RegistryObject<Item> POPLAR_SIGN = ITEMS.register("poplar_sign",
-            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_POPLAR.get(), REOBlocks.SIGN_POPLAR_WALL.get()));
+            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.POPLAR_SIGN.get(), REOBlocks.POPLAR_WALL_SIGN.get()));
     public static final RegistryObject<Item> POPLAR_HANGING_SIGN = ITEMS.register("poplar_hanging_sign",
-            () -> new HangingSignItem(REOBlocks.SIGN_HANGING_POPLAR.get(), REOBlocks.SIGN_HANGING_POPLAR_WALL.get(), new Item.Properties().stacksTo(16)));
+            () -> new HangingSignItem(REOBlocks.POPLAR_HANGING_SIGN.get(), REOBlocks.POPLAR_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> POPLAR_BOAT = ITEMS.register("poplar_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.POPLAR, new Item.Properties().stacksTo(1)));
@@ -1164,9 +1164,9 @@ public class REOItems {
 
     // Redwood
     public static final RegistryObject<Item> REDWOOD_SIGN = ITEMS.register("redwood_sign",
-            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_REDWOOD.get(), REOBlocks.SIGN_REDWOOD_WALL.get()));
+            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.REDWOOD_SIGN.get(), REOBlocks.REDWOOD_WALL_SIGN.get()));
     public static final RegistryObject<Item> REDWOOD_HANGING_SIGN = ITEMS.register("redwood_hanging_sign",
-            () -> new HangingSignItem(REOBlocks.SIGN_HANGING_REDWOOD.get(), REOBlocks.SIGN_HANGING_REDWOOD_WALL.get(), new Item.Properties().stacksTo(16)));
+            () -> new HangingSignItem(REOBlocks.REDWOOD_HANGING_SIGN.get(), REOBlocks.REDWOOD_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> REDWOOD_BOAT = ITEMS.register("redwood_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.REDWOOD, new Item.Properties().stacksTo(1)));
@@ -1175,9 +1175,9 @@ public class REOItems {
 
     // Rubber
     public static final RegistryObject<Item> RUBBER_SIGN = ITEMS.register("rubber_sign",
-            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_RUBBER.get(), REOBlocks.SIGN_RUBBER_WALL.get()));
+            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.RUBBER_SIGN.get(), REOBlocks.RUBBER_WALL_SIGN.get()));
     public static final RegistryObject<Item> RUBBER_HANGING_SIGN = ITEMS.register("rubber_hanging_sign",
-            () -> new HangingSignItem(REOBlocks.SIGN_HANGING_RUBBER.get(), REOBlocks.SIGN_HANGING_RUBBER_WALL.get(), new Item.Properties().stacksTo(16)));
+            () -> new HangingSignItem(REOBlocks.RUBBER_HANGING_SIGN.get(), REOBlocks.RUBBER_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> RUBBER_BOAT = ITEMS.register("rubber_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.RUBBER, new Item.Properties().stacksTo(1)));
@@ -1186,9 +1186,9 @@ public class REOItems {
 
     // Teak
     public static final RegistryObject<Item> TEAK_SIGN = ITEMS.register("teak_sign",
-            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_TEAK.get(), REOBlocks.SIGN_TEAK_WALL.get()));
+            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.TEAK_SIGN.get(), REOBlocks.TEAK_WALL_SIGN.get()));
     public static final RegistryObject<Item> TEAK_HANGING_SIGN = ITEMS.register("teak_hanging_sign",
-            () -> new HangingSignItem(REOBlocks.SIGN_HANGING_TEAK.get(), REOBlocks.SIGN_HANGING_TEAK_WALL.get(), new Item.Properties().stacksTo(16)));
+            () -> new HangingSignItem(REOBlocks.TEAK_HANGING_SIGN.get(), REOBlocks.TEAK_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> TEAK_BOAT = ITEMS.register("teak_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.TEAK, new Item.Properties().stacksTo(1)));
@@ -1197,9 +1197,9 @@ public class REOItems {
 
     // Walnut
     public static final RegistryObject<Item> WALNUT_SIGN = ITEMS.register("walnut_sign",
-            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_WALNUT.get(), REOBlocks.SIGN_WALNUT_WALL.get()));
+            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.WALNUT_SIGN.get(), REOBlocks.WALNUT_WALL_SIGN.get()));
     public static final RegistryObject<Item> WALNUT_HANGING_SIGN = ITEMS.register("walnut_hanging_sign",
-            () -> new HangingSignItem(REOBlocks.SIGN_HANGING_WALNUT.get(), REOBlocks.SIGN_HANGING_WALNUT_WALL.get(), new Item.Properties().stacksTo(16)));
+            () -> new HangingSignItem(REOBlocks.WALNUT_HANGING_SIGN.get(), REOBlocks.WALNUT_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> WALNUT_BOAT = ITEMS.register("walnut_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.WALNUT, new Item.Properties().stacksTo(1)));
@@ -1208,9 +1208,9 @@ public class REOItems {
 
     // Willow
     public static final RegistryObject<Item> WILLOW_SIGN = ITEMS.register("willow_sign",
-            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.SIGN_WILLOW.get(), REOBlocks.SIGN_WILLOW_WALL.get()));
+            () -> new SignItem(new Item.Properties().stacksTo(16), REOBlocks.WILLOW_SIGN.get(), REOBlocks.WILLOW_WALL_SIGN.get()));
     public static final RegistryObject<Item> WILLOW_HANGING_SIGN = ITEMS.register("willow_hanging_sign",
-            () -> new HangingSignItem(REOBlocks.SIGN_HANGING_WILLOW.get(), REOBlocks.SIGN_HANGING_WILLOW_WALL.get(), new Item.Properties().stacksTo(16)));
+            () -> new HangingSignItem(REOBlocks.WILLOW_HANGING_SIGN.get(), REOBlocks.WILLOW_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> WILLOW_BOAT = ITEMS.register("willow_boat",
             () -> new ModBoatItem(false, REOBoatEntity.Type.WILLOW, new Item.Properties().stacksTo(1)));
@@ -1220,19 +1220,19 @@ public class REOItems {
     // Food //
     // Seeds
     public static final RegistryObject<Item> BARLEY_SEED = ITEMS.register("barley_seed",
-            () -> new ItemNameBlockItem(REOBlocks.CROP_BARLEY.get(), new Item.Properties()));
+            () -> new ItemNameBlockItem(REOBlocks.BARLEY_CROP.get(), new Item.Properties()));
     public static final RegistryObject<Item> CAULIFLOWER_SEED = ITEMS.register("cauliflower_seed",
-            () -> new ItemNameBlockItem(REOBlocks.CROP_CAULIFLOWER.get(), new Item.Properties()));
+            () -> new ItemNameBlockItem(REOBlocks.CAULIFLOWER_CROP.get(), new Item.Properties()));
     public static final RegistryObject<Item> COTTON_SEED = ITEMS.register("cotton_seed",
-            () -> new ItemNameBlockItem(REOBlocks.CROP_COTTON.get(), new Item.Properties()));
+            () -> new ItemNameBlockItem(REOBlocks.COTTON_CROP.get(), new Item.Properties()));
     public static final RegistryObject<Item> ENDER_LILLY_SEED = ITEMS.register("ender_lilly_seed",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RICE_SEED = ITEMS.register("rice_seed",
-            () -> new ItemNameBlockItem(REOBlocks.CROP_RICE.get(), new Item.Properties()));
+            () -> new ItemNameBlockItem(REOBlocks.RICE_CROP.get(), new Item.Properties()));
     public static final RegistryObject<Item> STRAWBERRY_SEED = ITEMS.register("strawberry_seed",
             () -> new Item( new Item.Properties()));
     public static final RegistryObject<Item> TOMATO_SEED = ITEMS.register("tomato_seed",
-            () -> new ItemNameBlockItem(REOBlocks.CROP_TOMATO.get(), new Item.Properties()));
+            () -> new ItemNameBlockItem(REOBlocks.TOMATO_CROP.get(), new Item.Properties()));
 
     // Crops
     public static final RegistryObject<Item> BARLEY_PLANT = ITEMS.register("barley_plant",
@@ -1254,29 +1254,29 @@ public class REOItems {
     public static final RegistryObject<Item> DATES = ITEMS.register("dates",
             () -> new Item(new Item.Properties().food(REOFoods.FRUIT)));
     public static final RegistryObject<Item> LEMON = ITEMS.register("lemon",
-            () -> new ItemNameBlockItem(REOBlocks.FRUIT_CITRUS_BLOCK.get(), new Item.Properties().food(REOFoods.FRUIT)));
+            () -> new ItemNameBlockItem(REOBlocks.CITRUS_FRUIT.get(), new Item.Properties().food(REOFoods.FRUIT)));
     public static final RegistryObject<Item> LIME = ITEMS.register("lime",
-            () -> new ItemNameBlockItem(REOBlocks.FRUIT_LIME_BLOCK.get(), new Item.Properties().food(REOFoods.FRUIT)));
+            () -> new ItemNameBlockItem(REOBlocks.LIME_FRUIT.get(), new Item.Properties().food(REOFoods.FRUIT)));
     public static final RegistryObject<Item> PAPAYA = ITEMS.register("papaya",
-            () -> new ItemNameBlockItem(REOBlocks.FRUIT_PAPAYA_BLOCK.get(), new Item.Properties().food(REOFoods.FRUIT)));
+            () -> new ItemNameBlockItem(REOBlocks.PAPAYA_FRUIT.get(), new Item.Properties().food(REOFoods.FRUIT)));
     public static final RegistryObject<Item> PEACH = ITEMS.register("peach",
             () -> new Item(new Item.Properties().food(REOFoods.FRUIT)));
     public static final RegistryObject<Item> PEAR = ITEMS.register("pear",
-            () -> new ItemNameBlockItem(REOBlocks.FRUIT_PEAR_BLOCK.get(), new Item.Properties().food(REOFoods.FRUIT)));
+            () -> new ItemNameBlockItem(REOBlocks.PEAR_FRUIT.get(), new Item.Properties().food(REOFoods.FRUIT)));
     public static final RegistryObject<Item> PLUM = ITEMS.register("plum",
-            () -> new ItemNameBlockItem(REOBlocks.FRUIT_PLUM_BLOCK.get(), new Item.Properties().food(REOFoods.FRUIT)));
+            () -> new ItemNameBlockItem(REOBlocks.PLUM_FRUIT.get(), new Item.Properties().food(REOFoods.FRUIT)));
 
     // Nuts
     public static final RegistryObject<Item> CHESTNUT = ITEMS.register("chestnut",
             () -> new Item(new Item.Properties().food(REOFoods.NUT)));
     public static final RegistryObject<Item> WALNUT = ITEMS.register("walnut",
-            () -> new ItemNameBlockItem(REOBlocks.FRUIT_WALNUT_BLOCK.get(), new Item.Properties().food(REOFoods.NUT)));
+            () -> new ItemNameBlockItem(REOBlocks.WALNUT_FRUIT.get(), new Item.Properties().food(REOFoods.NUT)));
 
     // Veg
     public static final RegistryObject<Item> CAULIFLOWER = ITEMS.register("cauliflower",
             () -> new Item(new Item.Properties().food(REOFoods.VEGETABLE)));
     public static final RegistryObject<Item> ONION = ITEMS.register("onion",
-            () -> new ItemNameBlockItem(REOBlocks.CROP_ONIONS.get(), new Item.Properties().food(REOFoods.VEGETABLE)));
+            () -> new ItemNameBlockItem(REOBlocks.ONIONS_CROP.get(), new Item.Properties().food(REOFoods.VEGETABLE)));
     public static final RegistryObject<Item> RICE = ITEMS.register("rice",
             () -> new Item(new Item.Properties().food(REOFoods.RICE)));
     public static final RegistryObject<Item> TOMATO = ITEMS.register("tomato",
@@ -1286,11 +1286,11 @@ public class REOItems {
 
     // Berries
     public static final RegistryObject<Item> BLACKBERRY = ITEMS.register("blackberry",
-            () -> new ItemNameBlockItem(REOBlocks.BERRY_BLACKBERRY_BLOCK.get(), new Item.Properties().food(REOFoods.BERRY)));
+            () -> new ItemNameBlockItem(REOBlocks.BLACKBERRY_FRUIT.get(), new Item.Properties().food(REOFoods.BERRY)));
     public static final RegistryObject<Item> BLUEBERRY = ITEMS.register("blueberry",
-            () -> new ItemNameBlockItem(REOBlocks.BERRY_BLUEBERRY_BLOCK.get(), new Item.Properties().food(REOFoods.BERRY)));
+            () -> new ItemNameBlockItem(REOBlocks.BLUEBERRY_FRUIT.get(), new Item.Properties().food(REOFoods.BERRY)));
     public static final RegistryObject<Item> RASPBERRY = ITEMS.register("raspberry",
-            () -> new ItemNameBlockItem(REOBlocks.BERRY_RASPBERRY_BLOCK.get(), new Item.Properties().food(REOFoods.BERRY)));
+            () -> new ItemNameBlockItem(REOBlocks.RASPBERRY_FRUIT.get(), new Item.Properties().food(REOFoods.BERRY)));
     public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry",
             () -> new Item(new Item.Properties().food(REOFoods.BERRY)));
 

@@ -79,8 +79,8 @@ public class REOEventBusClientEvents {
     public static void registerColoredBlocks(RegisterColorHandlersEvent.Block event) {
         event.register((pState, pLevel, pPos, pTintIndex) -> pLevel != null &&
                 pPos != null ? BiomeColors.getAverageFoliageColor(pLevel, pPos) : FoliageColor.getDefaultColor(),
-                REOBlocks.LEAVES_CHESTNUT.get(), REOBlocks.LEAVES_CITRUS.get(), REOBlocks.LEAVES_LIME.get(),
-                REOBlocks.LEAVES_PAPAYA.get(), REOBlocks.LEAVES_PLUM.get(), REOBlocks.LEAVES_WALNUT.get());
+                REOBlocks.CHESTNUT_LEAVES.get(), REOBlocks.CITRUS_LEAVES.get(), REOBlocks.LIME_LEAVES.get(),
+                REOBlocks.PAPAYA_LEAVES.get(), REOBlocks.PLUM_LEAVES.get(), REOBlocks.WALNUT_LEAVES.get());
     }
 
     @SubscribeEvent
@@ -88,7 +88,7 @@ public class REOEventBusClientEvents {
         event.register((pStack, pTintIndex) -> {
             BlockState state = ((BlockItem)pStack.getItem()).getBlock().defaultBlockState();
             return event.getBlockColors().getColor(state, null, null, pTintIndex);
-        }, REOBlocks.LEAVES_CHESTNUT.get(), REOBlocks.LEAVES_CITRUS.get(), REOBlocks.LEAVES_LIME.get(),
-                REOBlocks.LEAVES_PAPAYA.get(), REOBlocks.LEAVES_PLUM.get(), REOBlocks.LEAVES_WALNUT.get());
+        }, REOBlocks.CHESTNUT_LEAVES.get(), REOBlocks.CITRUS_LEAVES.get(), REOBlocks.LIME_LEAVES.get(),
+                REOBlocks.PAPAYA_LEAVES.get(), REOBlocks.PLUM_LEAVES.get(), REOBlocks.WALNUT_LEAVES.get());
     }
 }

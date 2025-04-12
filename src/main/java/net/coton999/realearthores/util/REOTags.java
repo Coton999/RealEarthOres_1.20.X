@@ -22,27 +22,27 @@ public class REOTags {
         public static final TagKey<Block> GENERATORS = reoTag("machines/generators");
 
         // Wood
-        public static final TagKey<Block> LOGS_BALSA = reoTag("wood/logs/balsa");
-        public static final TagKey<Block> LOGS_BAOBAB = reoTag("wood/logs/baobab");
-        public static final TagKey<Block> LOGS_HILL_CHERRY = reoTag("wood/logs/hill_cherry");
-        public static final TagKey<Block> LOGS_CHESTNUT = reoTag("wood/logs/chestnut");
-        public static final TagKey<Block> LOGS_CITRUS = reoTag("wood/logs/citrus");
-        public static final TagKey<Block> LOGS_EBONY = reoTag("wood/logs/ebony");
-        public static final TagKey<Block> LOGS_LARCH = reoTag("wood/logs/larch");
-        public static final TagKey<Block> LOGS_LIME = reoTag("wood/logs/lime");
-        public static final TagKey<Block> LOGS_MAHOGANY = reoTag("wood/logs/mahogany");
-        public static final TagKey<Block> LOGS_MAPLE = reoTag("wood/logs/maple");
-        public static final TagKey<Block> LOGS_PALM = reoTag("wood/logs/palm");
-        public static final TagKey<Block> LOGS_PAPAYA = reoTag("wood/logs/papaya");
-        public static final TagKey<Block> LOGS_PINE = reoTag("wood/logs/pine");
-        public static final TagKey<Block> LOGS_PLUM = reoTag("wood/logs/plum");
-        public static final TagKey<Block> LOGS_POPLAR = reoTag("wood/logs/poplar");
-        public static final TagKey<Block> LOGS_REDWOOD = reoTag("wood/logs/redwood");
-        public static final TagKey<Block> LOGS_RUBBER = reoTag("wood/logs/rubber");
-        public static final TagKey<Block> LOGS_TEAK = reoTag("wood/logs/teak");
-        public static final TagKey<Block> LOGS_WALNUT = reoTag("wood/logs/walnut");
-        public static final TagKey<Block> LOGS_WILLOW = reoTag("wood/logs/willow");
-        public static final TagKey<Block> LOGS_VANILLA_RESISTANT = reoTag("wood/logs/vanilla_resistant");
+        public static final TagKey<Block> BALSA_LOGS = reoTag("wood/logs/balsa");
+        public static final TagKey<Block> BAOBAB_LOGS = reoTag("wood/logs/baobab");
+        public static final TagKey<Block> HILL_CHERRY_LOGS = reoTag("wood/logs/hill_cherry");
+        public static final TagKey<Block> CHESTNUT_LOGS = reoTag("wood/logs/chestnut");
+        public static final TagKey<Block> CITRUS_LOGS = reoTag("wood/logs/citrus");
+        public static final TagKey<Block> EBONY_LOGS = reoTag("wood/logs/ebony");
+        public static final TagKey<Block> LARCH_LOGS = reoTag("wood/logs/larch");
+        public static final TagKey<Block> LIME_LOGS = reoTag("wood/logs/lime");
+        public static final TagKey<Block> MAHOGANY_LOGS = reoTag("wood/logs/mahogany");
+        public static final TagKey<Block> MAPLE_LOGS = reoTag("wood/logs/maple");
+        public static final TagKey<Block> PALM_LOGS = reoTag("wood/logs/palm");
+        public static final TagKey<Block> PAPAYA_LOGS = reoTag("wood/logs/papaya");
+        public static final TagKey<Block> PINE_LOGS = reoTag("wood/logs/pine");
+        public static final TagKey<Block> PLUM_LOGS = reoTag("wood/logs/plum");
+        public static final TagKey<Block> POPLAR_LOGS = reoTag("wood/logs/poplar");
+        public static final TagKey<Block> REDWOOD_LOGS = reoTag("wood/logs/redwood");
+        public static final TagKey<Block> RUBBER_LOGS = reoTag("wood/logs/rubber");
+        public static final TagKey<Block> TEAK_LOGS = reoTag("wood/logs/teak");
+        public static final TagKey<Block> WALNUT_LOGS = reoTag("wood/logs/walnut");
+        public static final TagKey<Block> WILLOW_LOGS = reoTag("wood/logs/willow");
+        public static final TagKey<Block> VANILLA_RESISTANT_LOGS = reoTag("wood/logs/vanilla_resistant");
 
         // Ores
         public static final TagKey<Block> REO_ORES = forgeTag("ores_in_ground/stone");
@@ -61,7 +61,7 @@ public class REOTags {
         public static final TagKey<Block> ORES_ZINC = forgeTag("ores/zinc");
 
         // Storage Blocks
-        public static final TagKey<Block> STORAGE_BLOCKS= reoTag("storage_blocks");
+        public static final TagKey<Block> STORAGE_BLOCKS = reoTag("storage_blocks");
         public static final TagKey<Block> STORAGE_BLOCKS_ALUMINUM = forgeTag("storage_blocks/aluminum");
         public static final TagKey<Block> STORAGE_BLOCKS_LEAD = forgeTag("storage_blocks/lead");
         public static final TagKey<Block> STORAGE_BLOCKS_BRASS = forgeTag("storage_blocks/brass");
@@ -80,7 +80,7 @@ public class REOTags {
         public static final TagKey<Block> STORAGE_BLOCKS_ZINC = forgeTag("storage_blocks/zinc");
 
         // Raw
-        public static final TagKey<Block> RAW_STORAGE_BLOCKS= reoTag("raw_storage_blocks");
+        public static final TagKey<Block> RAW_STORAGE_BLOCKS = reoTag("raw_storage_blocks");
         public static final TagKey<Block> RAW_STORAGE_BLOCKS_ALUMINUM = forgeTag("storage_blocks/raw_aluminum");
         public static final TagKey<Block> RAW_STORAGE_BLOCKS_ENDERITE = forgeTag("storage_blocks/raw_enderite");
         public static final TagKey<Block> RAW_STORAGE_BLOCKS_LEAD = forgeTag("storage_blocks/raw_lead");
@@ -92,12 +92,14 @@ public class REOTags {
         public static final TagKey<Block> RAW_STORAGE_BLOCKS_ZINC = forgeTag("storage_blocks/raw_zinc");
 
         // Building Blocks //
-        public static final TagKey<Block> MARBLE_BLOCKS= reoTag("marble");
-        public static final TagKey<Block> LIMESTONE_BLOCKS= reoTag("limestone");
-        public static final TagKey<Block> CALCITE_BLOCKS= reoTag("calcite");
-        public static final TagKey<Block> NETHERRACK_BLOCKS= reoTag("netherrack");
+        public static final TagKey<Block> MARBLE_BLOCKS = reoTag("marble");
+        public static final TagKey<Block> LIMESTONE_BLOCKS = reoTag("limestone");
+        public static final TagKey<Block> CALCITE_BLOCKS = reoTag("calcite");
+        public static final TagKey<Block> NETHERRACK_BLOCKS = reoTag("netherrack");
 
-
+        // Crops //
+        public static final TagKey<Block> REO_CROPS = reoTag("crops");
+        public static final TagKey<Block> REO_FRUITS = reoTag("fruits");
 
         private static TagKey<Block> reoTag(String name) {
             return BlockTags.create(new ResourceLocation(RealEarthOres.MOD_ID, name));

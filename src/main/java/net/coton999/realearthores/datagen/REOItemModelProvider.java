@@ -570,17 +570,17 @@ public class REOItemModelProvider extends ItemModelProvider {
 
         // Blocks //
         // Cluster
-        clusterBlockItem(REOBlocks.CLUSTER_PERIDOT, "cluster/peridot");
+        clusterBlockItem(REOBlocks.PERIDOT_CLUSTER, "cluster/peridot");
         clusterBlockItem(REOBlocks.LARGE_PERIDOT_BUD, "bud/large_peridot");
         clusterBlockItem(REOBlocks.MEDIUM_PERIDOT_BUD, "bud/medium_peridot");
         clusterBlockItem(REOBlocks.SMALL_PERIDOT_BUD, "bud/small_peridot");
 
-        clusterBlockItem(REOBlocks.CLUSTER_RUBY, "cluster/ruby");
+        clusterBlockItem(REOBlocks.RUBY_CLUSTER, "cluster/ruby");
         clusterBlockItem(REOBlocks.LARGE_RUBY_BUD, "bud/large_ruby");
         clusterBlockItem(REOBlocks.MEDIUM_RUBY_BUD, "bud/medium_ruby");
         clusterBlockItem(REOBlocks.SMALL_RUBY_BUD, "bud/small_ruby");
 
-        clusterBlockItem(REOBlocks.CLUSTER_SAPPHIRE, "cluster/sapphire");
+        clusterBlockItem(REOBlocks.SAPPHIRE_CLUSTER, "cluster/sapphire");
         clusterBlockItem(REOBlocks.LARGE_SAPPHIRE_BUD, "bud/large_sapphire");
         clusterBlockItem(REOBlocks.MEDIUM_SAPPHIRE_BUD, "bud/medium_sapphire");
         clusterBlockItem(REOBlocks.SMALL_SAPPHIRE_BUD, "bud/small_sapphire");
@@ -625,544 +625,544 @@ public class REOItemModelProvider extends ItemModelProvider {
         vanillaWallItem(REOBlocks.NETHERRACK_WALL, "netherrack");
 
         // Lamp
-        lampBlockItem(REOBlocks.LAMP_BLACK);
-        lampBlockItem(REOBlocks.LAMP_RED);
-        lampBlockItem(REOBlocks.LAMP_GREEN);
-        lampBlockItem(REOBlocks.LAMP_BROWN);
-        lampBlockItem(REOBlocks.LAMP_PURPLE);
-        lampBlockItem(REOBlocks.LAMP_CYAN);
-        lampBlockItem(REOBlocks.LAMP_LIGHTGRAY);
-        lampBlockItem(REOBlocks.LAMP_GRAY);
-        lampBlockItem(REOBlocks.LAMP_PINK);
-        lampBlockItem(REOBlocks.LAMP_LIME);
-        lampBlockItem(REOBlocks.LAMP_YELLOW);
-        lampBlockItem(REOBlocks.LAMP_BLUE);
-        lampBlockItem(REOBlocks.LAMP_LIGHTBLUE);
-        lampBlockItem(REOBlocks.LAMP_MAGENTA);
-        lampBlockItem(REOBlocks.LAMP_ORANGE);
-        lampBlockItem(REOBlocks.LAMP_WHITE);
+        lampBlockItem(REOBlocks.BLACK_LAMP);
+        lampBlockItem(REOBlocks.RED_LAMP);
+        lampBlockItem(REOBlocks.GREEN_LAMP);
+        lampBlockItem(REOBlocks.BROWN_LAMP);
+        lampBlockItem(REOBlocks.PURPLE_LAMP);
+        lampBlockItem(REOBlocks.CYAN_LAMP);
+        lampBlockItem(REOBlocks.LIGHT_GRAY_LAMP);
+        lampBlockItem(REOBlocks.GRAY_LAMP);
+        lampBlockItem(REOBlocks.PINK_LAMP);
+        lampBlockItem(REOBlocks.LIME_LAMP);
+        lampBlockItem(REOBlocks.YELLOW_LAMP);
+        lampBlockItem(REOBlocks.BLUE_LAMP);
+        lampBlockItem(REOBlocks.LIGHT_BLUE_LAMP);
+        lampBlockItem(REOBlocks.MAGENTA_LAMP);
+        lampBlockItem(REOBlocks.ORANGE_LAMP);
+        lampBlockItem(REOBlocks.WHITE_LAMP);
 
         // Wood
         // Vanilla
-        simpleBlockItem(REOBlocks.STAIRS_OAK_RESISTANT);
-        simpleBlockItem(REOBlocks.SLAB_OAK_RESISTANT);
-        vanillaWoodFenceItem(REOBlocks.FENCE_OAK_RESISTANT, "oak_planks");
-        simpleBlockItem(REOBlocks.FENCE_GATE_OAK_RESISTANT);
+        simpleBlockItem(REOBlocks.RESISTANT_OAK_STAIRS);
+        simpleBlockItem(REOBlocks.RESISTANT_OAK_SLAB);
+        vanillaWoodFenceItem(REOBlocks.RESISTANT_OAK_FENCE, "oak_planks");
+        simpleBlockItem(REOBlocks.RESISTANT_OAK_FENCE_GATE);
 
-        simpleBlockItem(REOBlocks.STAIRS_SPRUCE_RESISTANT);
-        simpleBlockItem(REOBlocks.SLAB_SPRUCE_RESISTANT);
-        vanillaWoodFenceItem(REOBlocks.FENCE_SPRUCE_RESISTANT, "spruce_planks");
-        simpleBlockItem(REOBlocks.FENCE_GATE_SPRUCE_RESISTANT);
+        simpleBlockItem(REOBlocks.RESISTANT_SPRUCE_STAIRS);
+        simpleBlockItem(REOBlocks.RESISTANT_SPRUCE_SLAB);
+        vanillaWoodFenceItem(REOBlocks.RESISTANT_SPRUCE_FENCE, "spruce_planks");
+        simpleBlockItem(REOBlocks.RESISTANT_SPRUCE_FENCE_GATE);
 
-        simpleBlockItem(REOBlocks.STAIRS_BIRCH_RESISTANT);
-        simpleBlockItem(REOBlocks.SLAB_BIRCH_RESISTANT);
-        vanillaWoodFenceItem(REOBlocks.FENCE_BIRCH_RESISTANT, "birch_planks");
-        simpleBlockItem(REOBlocks.FENCE_GATE_BIRCH_RESISTANT);
+        simpleBlockItem(REOBlocks.RESISTANT_BIRCH_STAIRS);
+        simpleBlockItem(REOBlocks.RESISTANT_BIRCH_SLAB);
+        vanillaWoodFenceItem(REOBlocks.RESISTANT_BIRCH_FENCE, "birch_planks");
+        simpleBlockItem(REOBlocks.RESISTANT_BIRCH_FENCE_GATE);
 
-        simpleBlockItem(REOBlocks.STAIRS_JUNGLE_RESISTANT);
-        simpleBlockItem(REOBlocks.SLAB_JUNGLE_RESISTANT);
-        vanillaWoodFenceItem(REOBlocks.FENCE_JUNGLE_RESISTANT, "jungle_planks");
-        simpleBlockItem(REOBlocks.FENCE_GATE_JUNGLE_RESISTANT);
+        simpleBlockItem(REOBlocks.RESISTANT_JUNGLE_STAIRS);
+        simpleBlockItem(REOBlocks.RESISTANT_JUNGLE_SLAB);
+        vanillaWoodFenceItem(REOBlocks.RESISTANT_JUNGLE_FENCE, "jungle_planks");
+        simpleBlockItem(REOBlocks.RESISTANT_JUNGLE_FENCE_GATE);
 
-        simpleBlockItem(REOBlocks.STAIRS_ACACIA_RESISTANT);
-        simpleBlockItem(REOBlocks.SLAB_ACACIA_RESISTANT);
-        vanillaWoodFenceItem(REOBlocks.FENCE_ACACIA_RESISTANT, "acacia_planks");
-        simpleBlockItem(REOBlocks.FENCE_GATE_ACACIA_RESISTANT);
+        simpleBlockItem(REOBlocks.RESISTANT_ACACIA_STAIRS);
+        simpleBlockItem(REOBlocks.RESISTANT_ACACIA_SLAB);
+        vanillaWoodFenceItem(REOBlocks.RESISTANT_ACACIA_FENCE, "acacia_planks");
+        simpleBlockItem(REOBlocks.RESISTANT_ACACIA_FENCE_GATE);
 
-        simpleBlockItem(REOBlocks.STAIRS_DARK_OAK_RESISTANT);
-        simpleBlockItem(REOBlocks.SLAB_DARK_OAK_RESISTANT);
-        vanillaWoodFenceItem(REOBlocks.FENCE_DARK_OAK_RESISTANT, "dark_oak_planks");
-        simpleBlockItem(REOBlocks.FENCE_GATE_DARK_OAK_RESISTANT);
+        simpleBlockItem(REOBlocks.RESISTANT_DARK_OAK_STAIRS);
+        simpleBlockItem(REOBlocks.RESISTANT_DARK_OAK_SLAB);
+        vanillaWoodFenceItem(REOBlocks.RESISTANT_DARK_OAK_FENCE, "dark_oak_planks");
+        simpleBlockItem(REOBlocks.RESISTANT_DARK_OAK_FENCE_GATE);
 
-        simpleBlockItem(REOBlocks.STAIRS_MANGROVE_RESISTANT);
-        simpleBlockItem(REOBlocks.SLAB_MANGROVE_RESISTANT);
-        vanillaWoodFenceItem(REOBlocks.FENCE_MANGROVE_RESISTANT, "mangrove_planks");
-        simpleBlockItem(REOBlocks.FENCE_GATE_MANGROVE_RESISTANT);
+        simpleBlockItem(REOBlocks.RESISTANT_MANGROVE_STAIRS);
+        simpleBlockItem(REOBlocks.RESISTANT_MANGROVE_SLAB);
+        vanillaWoodFenceItem(REOBlocks.RESISTANT_MANGROVE_FENCE, "mangrove_planks");
+        simpleBlockItem(REOBlocks.RESISTANT_MANGROVE_FENCE_GATE);
 
-        simpleBlockItem(REOBlocks.STAIRS_CHERRY_RESISTANT);
-        simpleBlockItem(REOBlocks.SLAB_CHERRY_RESISTANT);
-        vanillaWoodFenceItem(REOBlocks.FENCE_CHERRY_RESISTANT, "cherry_planks");
-        simpleBlockItem(REOBlocks.FENCE_GATE_CHERRY_RESISTANT);
+        simpleBlockItem(REOBlocks.RESISTANT_CHERRY_STAIRS);
+        simpleBlockItem(REOBlocks.RESISTANT_CHERRY_SLAB);
+        vanillaWoodFenceItem(REOBlocks.RESISTANT_CHERRY_FENCE, "cherry_planks");
+        simpleBlockItem(REOBlocks.RESISTANT_CHERRY_FENCE_GATE);
 
 
         // Modded
-        simpleBlockItem(REOBlocks.STAIRS_BALSA);
-        simpleBlockItem(REOBlocks.SLAB_BALSA);
-        woodFenceItem(REOBlocks.FENCE_BALSA, "balsa");
-        simpleBlockItem(REOBlocks.FENCE_GATE_BALSA);
+        simpleBlockItem(REOBlocks.BALSA_STAIRS);
+        simpleBlockItem(REOBlocks.BALSA_SLAB);
+        woodFenceItem(REOBlocks.BALSA_FENCE, "balsa");
+        simpleBlockItem(REOBlocks.BALSA_FENCE_GATE);
 
-        buttonItem(REOBlocks.BUTTON_BALSA, "balsa");
-        simpleBlockItem(REOBlocks.PRESSURE_PLATE_BALSA);
+        buttonItem(REOBlocks.BALSA_BUTTON, "balsa");
+        simpleBlockItem(REOBlocks.BALSA_PRESSURE_PLATE);
 
-        saplingItem(REOBlocks.SAPLING_BALSA, "balsa");
+        saplingItem(REOBlocks.BALSA_SAPLING, "balsa");
         signItem(REOItems.BALSA_SIGN);
         signItem(REOItems.BALSA_HANGING_SIGN);
 
         boatItem(REOItems.BALSA_BOAT);
         boatItem(REOItems.BALSA_CHEST_BOAT);
 
-        doorItem(REOBlocks.DOOR_BALSA);
-        trapdoorItem(REOBlocks.TRAPDOOR_BALSA);
+        doorItem(REOBlocks.BALSA_DOOR);
+        trapdoorItem(REOBlocks.BALSA_TRAPDOOR);
 
-        simpleBlockItem(REOBlocks.STAIRS_BALSA_RESISTANT);
-        simpleBlockItem(REOBlocks.SLAB_BALSA_RESISTANT);
-        woodFenceItem(REOBlocks.FENCE_BALSA_RESISTANT, "balsa");
-        simpleBlockItem(REOBlocks.FENCE_GATE_BALSA_RESISTANT);
+        simpleBlockItem(REOBlocks.RESISTANT_BALSA_STAIRS);
+        simpleBlockItem(REOBlocks.RESISTANT_BALSA_SLAB);
+        woodFenceItem(REOBlocks.RESISTANT_BALSA_FENCE, "balsa");
+        simpleBlockItem(REOBlocks.RESISTANT_BALSA_FENCE_GATE);
 
 
-        simpleBlockItem(REOBlocks.STAIRS_BAOBAB);
-        simpleBlockItem(REOBlocks.SLAB_BAOBAB);
-        woodFenceItem(REOBlocks.FENCE_BAOBAB, "baobab");
-        simpleBlockItem(REOBlocks.FENCE_GATE_BAOBAB);
+        simpleBlockItem(REOBlocks.BAOBAB_STAIRS);
+        simpleBlockItem(REOBlocks.BAOBAB_SLAB);
+        woodFenceItem(REOBlocks.BAOBAB_FENCE, "baobab");
+        simpleBlockItem(REOBlocks.BAOBAB_FENCE_GATE);
 
-        buttonItem(REOBlocks.BUTTON_BAOBAB, "baobab");
-        simpleBlockItem(REOBlocks.PRESSURE_PLATE_BAOBAB);
+        buttonItem(REOBlocks.BAOBAB_BUTTON, "baobab");
+        simpleBlockItem(REOBlocks.BAOBAB_PRESSURE_PLATE);
 
-        saplingItem(REOBlocks.SAPLING_BAOBAB, "baobab");
+        saplingItem(REOBlocks.BAOBAB_SAPLING, "baobab");
         signItem(REOItems.BAOBAB_SIGN);
         signItem(REOItems.BAOBAB_HANGING_SIGN);
 
         boatItem(REOItems.BAOBAB_BOAT);
         boatItem(REOItems.BAOBAB_CHEST_BOAT);
 
-        doorItem(REOBlocks.DOOR_BAOBAB);
-        trapdoorItem(REOBlocks.TRAPDOOR_BAOBAB);
+        doorItem(REOBlocks.BAOBAB_DOOR);
+        trapdoorItem(REOBlocks.BAOBAB_TRAPDOOR);
 
-        simpleBlockItem(REOBlocks.STAIRS_BAOBAB_RESISTANT);
-        simpleBlockItem(REOBlocks.SLAB_BAOBAB_RESISTANT);
-        woodFenceItem(REOBlocks.FENCE_BAOBAB_RESISTANT, "baobab");
-        simpleBlockItem(REOBlocks.FENCE_GATE_BAOBAB_RESISTANT);
+        simpleBlockItem(REOBlocks.RESISTANT_BAOBAB_STAIRS);
+        simpleBlockItem(REOBlocks.RESISTANT_BAOBAB_SLAB);
+        woodFenceItem(REOBlocks.RESISTANT_BAOBAB_FENCE, "baobab");
+        simpleBlockItem(REOBlocks.RESISTANT_BAOBAB_FENCE_GATE);
 
 
-        simpleBlockItem(REOBlocks.STAIRS_HILL_CHERRY);
-        simpleBlockItem(REOBlocks.SLAB_HILL_CHERRY);
-        woodFenceItem(REOBlocks.FENCE_HILL_CHERRY, "cherry");
-        simpleBlockItem(REOBlocks.FENCE_GATE_HILL_CHERRY);
+        simpleBlockItem(REOBlocks.HILL_CHERRY_STAIRS);
+        simpleBlockItem(REOBlocks.HILL_CHERRY_SLAB);
+        woodFenceItem(REOBlocks.HILL_CHERRY_FENCE, "hill_cherry");
+        simpleBlockItem(REOBlocks.HILL_CHERRY_FENCE_GATE);
 
-        buttonItem(REOBlocks.BUTTON_HILL_CHERRY, "cherry");
-        simpleBlockItem(REOBlocks.PRESSURE_PLATE_HILL_CHERRY);
+        buttonItem(REOBlocks.HILL_CHERRY_BUTTON, "hill_cherry");
+        simpleBlockItem(REOBlocks.HILL_CHERRY_PRESSURE_PLATE);
 
-        saplingItem(REOBlocks.SAPLING_HILL_CHERRY, "cherry");
+        saplingItem(REOBlocks.HILL_CHERRY_SAPLING, "hill_cherry");
         signItem(REOItems.HILL_CHERRY_SIGN);
         signItem(REOItems.HILL_CHERRY_HANGING_SIGN);
 
         boatItem(REOItems.HILL_CHERRY_BOAT);
         boatItem(REOItems.HILL_CHERRY_CHEST_BOAT);
 
-        doorItem(REOBlocks.DOOR_HILL_CHERRY);
-        trapdoorItem(REOBlocks.TRAPDOOR_HILL_CHERRY);
+        doorItem(REOBlocks.HILL_CHERRY_DOOR);
+        trapdoorItem(REOBlocks.HILL_CHERRY_TRAPDOOR);
 
-        simpleBlockItem(REOBlocks.STAIRS_HILL_CHERRY_RESISTANT);
-        simpleBlockItem(REOBlocks.SLAB_HILL_CHERRY_RESISTANT);
-        woodFenceItem(REOBlocks.FENCE_HILL_CHERRY_RESISTANT, "cherry");
-        simpleBlockItem(REOBlocks.FENCE_GATE_HILL_CHERRY_RESISTANT);
+        simpleBlockItem(REOBlocks.RESISTANT_HILL_CHERRY_STAIRS);
+        simpleBlockItem(REOBlocks.RESISTANT_HILL_CHERRY_SLAB);
+        woodFenceItem(REOBlocks.RESISTANT_HILL_CHERRY_FENCE, "hill_cherry");
+        simpleBlockItem(REOBlocks.RESISTANT_HILL_CHERRY_FENCE_GATE);
 
 
-        simpleBlockItem(REOBlocks.STAIRS_CHESTNUT);
-        simpleBlockItem(REOBlocks.SLAB_CHESTNUT);
-        woodFenceItem(REOBlocks.FENCE_CHESTNUT, "chestnut");
-        simpleBlockItem(REOBlocks.FENCE_GATE_CHESTNUT);
+        simpleBlockItem(REOBlocks.CHESTNUT_STAIRS);
+        simpleBlockItem(REOBlocks.CHESTNUT_SLAB);
+        woodFenceItem(REOBlocks.CHESTNUT_FENCE, "chestnut");
+        simpleBlockItem(REOBlocks.CHESTNUT_FENCE_GATE);
 
-        buttonItem(REOBlocks.BUTTON_CHESTNUT, "chestnut");
-        simpleBlockItem(REOBlocks.PRESSURE_PLATE_CHESTNUT);
+        buttonItem(REOBlocks.CHESTNUT_BUTTON, "chestnut");
+        simpleBlockItem(REOBlocks.CHESTNUT_PRESSURE_PLATE);
 
-        saplingItem(REOBlocks.SAPLING_CHESTNUT, "chestnut");
+        saplingItem(REOBlocks.CHESTNUT_SAPLING, "chestnut");
         signItem(REOItems.CHESTNUT_SIGN);
         signItem(REOItems.CHESTNUT_HANGING_SIGN);
 
         boatItem(REOItems.BOAT_CHESTNUT);
         boatItem(REOItems.CHESTNUT_CHEST_BOAT);
 
-        doorItem(REOBlocks.DOOR_CHESTNUT);
-        trapdoorItem(REOBlocks.TRAPDOOR_CHESTNUT);
+        doorItem(REOBlocks.CHESTNUT_DOOR);
+        trapdoorItem(REOBlocks.CHESTNUT_TRAPDOOR);
 
-        simpleBlockItem(REOBlocks.STAIRS_CHESTNUT_RESISTANT);
-        simpleBlockItem(REOBlocks.SLAB_CHESTNUT_RESISTANT);
-        woodFenceItem(REOBlocks.FENCE_CHESTNUT_RESISTANT, "chestnut");
-        simpleBlockItem(REOBlocks.FENCE_GATE_CHESTNUT_RESISTANT);
+        simpleBlockItem(REOBlocks.RESISTANT_CHESTNUT_STAIRS);
+        simpleBlockItem(REOBlocks.RESISTANT_CHESTNUT_SLAB);
+        woodFenceItem(REOBlocks.RESISTANT_CHESTNUT_FENCE, "chestnut");
+        simpleBlockItem(REOBlocks.RESISTANT_CHESTNUT_FENCE_GATE);
 
-        simpleBlockItem(REOBlocks.STAIRS_CITRUS);
-        simpleBlockItem(REOBlocks.SLAB_CITRUS);
-        woodFenceItem(REOBlocks.FENCE_CITRUS, "citrus");
-        simpleBlockItem(REOBlocks.FENCE_GATE_CITRUS);
+        simpleBlockItem(REOBlocks.CITRUS_STAIRS);
+        simpleBlockItem(REOBlocks.CITRUS_SLAB);
+        woodFenceItem(REOBlocks.CITRUS_FENCE, "citrus");
+        simpleBlockItem(REOBlocks.CITRUS_FENCE_GATE);
 
-        buttonItem(REOBlocks.BUTTON_CITRUS, "citrus");
-        simpleBlockItem(REOBlocks.PRESSURE_PLATE_CITRUS);
+        buttonItem(REOBlocks.CITRUS_BUTTON, "citrus");
+        simpleBlockItem(REOBlocks.CITRUS_PRESSURE_PLATE);
 
-        saplingItem(REOBlocks.SAPLING_CITRUS, "citrus");
+        saplingItem(REOBlocks.CITRUS_SAPLING, "citrus");
         signItem(REOItems.CITRUS_SIGN);
         signItem(REOItems.CITRUS_HANGING_SIGN);
 
         boatItem(REOItems.CITRUS_BOAT);
         boatItem(REOItems.CITRUS_CHEST_BOAT);
 
-        doorItem(REOBlocks.DOOR_CITRUS);
-        trapdoorItem(REOBlocks.TRAPDOOR_CITRUS);
+        doorItem(REOBlocks.CITRUS_DOOR);
+        trapdoorItem(REOBlocks.CITRUS_TRAPDOOR);
 
-        simpleBlockItem(REOBlocks.STAIRS_CITRUS_RESISTANT);
-        simpleBlockItem(REOBlocks.SLAB_CITRUS_RESISTANT);
-        woodFenceItem(REOBlocks.FENCE_CITRUS_RESISTANT, "citrus");
-        simpleBlockItem(REOBlocks.FENCE_GATE_CITRUS_RESISTANT);
+        simpleBlockItem(REOBlocks.RESISTANT_CITRUS_STAIRS);
+        simpleBlockItem(REOBlocks.RESISTANT_CITRUS_SLAB);
+        woodFenceItem(REOBlocks.RESISTANT_CITRUS_FENCE, "citrus");
+        simpleBlockItem(REOBlocks.RESISTANT_CITRUS_FENCE_GATE);
 
 
-        simpleBlockItem(REOBlocks.STAIRS_EBONY);
-        simpleBlockItem(REOBlocks.SLAB_EBONY);
-        woodFenceItem(REOBlocks.FENCE_EBONY, "ebony");
-        simpleBlockItem(REOBlocks.FENCE_GATE_EBONY);
+        simpleBlockItem(REOBlocks.EBONY_STAIRS);
+        simpleBlockItem(REOBlocks.EBONY_SLAB);
+        woodFenceItem(REOBlocks.EBONY_FENCE, "ebony");
+        simpleBlockItem(REOBlocks.EBONY_FENCE_GATE);
 
-        buttonItem(REOBlocks.BUTTON_EBONY, "ebony");
-        simpleBlockItem(REOBlocks.PRESSURE_PLATE_EBONY);
+        buttonItem(REOBlocks.EBONY_BUTTON, "ebony");
+        simpleBlockItem(REOBlocks.EBONY_PRESSURE_PLATE);
 
-        saplingItem(REOBlocks.SAPLING_EBONY, "ebony");
+        saplingItem(REOBlocks.EBONY_SAPLING, "ebony");
         signItem(REOItems.EBONY_SIGN);
         signItem(REOItems.EBONY_HANGING_SIGN);
 
         boatItem(REOItems.EBONY_BOAT);
         boatItem(REOItems.EBONY_CHEST_BOAT);
 
-        doorItem(REOBlocks.DOOR_EBONY);
-        trapdoorItem(REOBlocks.TRAPDOOR_EBONY);
+        doorItem(REOBlocks.EBONY_DOOR);
+        trapdoorItem(REOBlocks.EBONY_TRAPDOOR);
 
-        simpleBlockItem(REOBlocks.STAIRS_EBONY_RESISTANT);
-        simpleBlockItem(REOBlocks.SLAB_EBONY_RESISTANT);
-        woodFenceItem(REOBlocks.FENCE_EBONY_RESISTANT, "ebony");
-        simpleBlockItem(REOBlocks.FENCE_GATE_EBONY_RESISTANT);
+        simpleBlockItem(REOBlocks.RESISTANT_EBONY_STAIRS);
+        simpleBlockItem(REOBlocks.RESISTANT_EBONY_SLAB);
+        woodFenceItem(REOBlocks.RESISTANT_EBONY_FENCE, "ebony");
+        simpleBlockItem(REOBlocks.RESISTANT_EBONY_FENCE_GATE);
 
 
-        simpleBlockItem(REOBlocks.STAIRS_LARCH);
-        simpleBlockItem(REOBlocks.SLAB_LARCH);
-        woodFenceItem(REOBlocks.FENCE_LARCH, "larch");
-        simpleBlockItem(REOBlocks.FENCE_GATE_LARCH);
+        simpleBlockItem(REOBlocks.LARCH_STAIRS);
+        simpleBlockItem(REOBlocks.LARCH_SLAB);
+        woodFenceItem(REOBlocks.LARCH_FENCE, "larch");
+        simpleBlockItem(REOBlocks.LARCH_FENCE_GATE);
 
-        buttonItem(REOBlocks.BUTTON_LARCH, "larch");
-        simpleBlockItem(REOBlocks.PRESSURE_PLATE_LARCH);
+        buttonItem(REOBlocks.LARCH_BUTTON, "larch");
+        simpleBlockItem(REOBlocks.LARCH_PRESSURE_PLATE);
 
-        saplingItem(REOBlocks.SAPLING_LARCH, "larch");
+        saplingItem(REOBlocks.LARCH_SAPLING, "larch");
         signItem(REOItems.LARCH_SIGN);
         signItem(REOItems.LARCH_HANGING_SIGN);
 
         boatItem(REOItems.LARCH_BOAT);
         boatItem(REOItems.LARCH_CHEST_BOAT);
 
-        doorItem(REOBlocks.DOOR_LARCH);
-        trapdoorItem(REOBlocks.TRAPDOOR_LARCH);
+        doorItem(REOBlocks.LARCH_DOOR);
+        trapdoorItem(REOBlocks.LARCH_TRAPDOOR);
 
-        simpleBlockItem(REOBlocks.STAIRS_LARCH_RESISTANT);
-        simpleBlockItem(REOBlocks.SLAB_LARCH_RESISTANT);
-        woodFenceItem(REOBlocks.FENCE_LARCH_RESISTANT, "larch");
-        simpleBlockItem(REOBlocks.FENCE_GATE_LARCH_RESISTANT);
+        simpleBlockItem(REOBlocks.RESISTANT_LARCH_STAIRS);
+        simpleBlockItem(REOBlocks.RESISTANT_LARCH_SLAB);
+        woodFenceItem(REOBlocks.RESISTANT_LARCH_FENCE, "larch");
+        simpleBlockItem(REOBlocks.RESISTANT_LARCH_FENCE_GATE);
 
 
-        simpleBlockItem(REOBlocks.STAIRS_LIME);
-        simpleBlockItem(REOBlocks.SLAB_LIME);
-        woodFenceItem(REOBlocks.FENCE_LIME, "lime");
-        simpleBlockItem(REOBlocks.FENCE_GATE_LIME);
+        simpleBlockItem(REOBlocks.LIME_STAIRS);
+        simpleBlockItem(REOBlocks.LIME_SLAB);
+        woodFenceItem(REOBlocks.LIME_FENCE, "lime");
+        simpleBlockItem(REOBlocks.LIME_FENCE_GATE);
 
-        buttonItem(REOBlocks.BUTTON_LIME, "lime");
-        simpleBlockItem(REOBlocks.PRESSURE_PLATE_LIME);
+        buttonItem(REOBlocks.LIME_BUTTON, "lime");
+        simpleBlockItem(REOBlocks.LIME_PRESSURE_PLATE);
 
-        saplingItem(REOBlocks.SAPLING_LIME, "lime");
+        saplingItem(REOBlocks.LIME_SAPLING, "lime");
         signItem(REOItems.LIME_SIGN);
         signItem(REOItems.LIME_HANGING_SIGN);
 
         boatItem(REOItems.LIME_BOAT);
         boatItem(REOItems.LIME_CHEST_BOAT);
 
-        doorItem(REOBlocks.DOOR_LIME);
-        trapdoorItem(REOBlocks.TRAPDOOR_LIME);
+        doorItem(REOBlocks.LIME_DOOR);
+        trapdoorItem(REOBlocks.LIME_TRAPDOOR);
 
-        simpleBlockItem(REOBlocks.STAIRS_LIME_RESISTANT);
-        simpleBlockItem(REOBlocks.SLAB_LIME_RESISTANT);
-        woodFenceItem(REOBlocks.FENCE_LIME_RESISTANT, "lime");
-        simpleBlockItem(REOBlocks.FENCE_GATE_LIME_RESISTANT);
+        simpleBlockItem(REOBlocks.RESISTANT_LIME_STAIRS);
+        simpleBlockItem(REOBlocks.RESISTANT_LIME_SLAB);
+        woodFenceItem(REOBlocks.RESISTANT_LIME_FENCE, "lime");
+        simpleBlockItem(REOBlocks.RESISTANT_LIME_FENCE_GATE);
 
 
-        simpleBlockItem(REOBlocks.STAIRS_MAHOGANY);
-        simpleBlockItem(REOBlocks.SLAB_MAHOGANY);
-        woodFenceItem(REOBlocks.FENCE_MAHOGANY, "mahogany");
-        simpleBlockItem(REOBlocks.FENCE_GATE_MAHOGANY);
+        simpleBlockItem(REOBlocks.MAHOGANY_STAIRS);
+        simpleBlockItem(REOBlocks.MAHOGANY_SLAB);
+        woodFenceItem(REOBlocks.MAHOGANY_FENCE, "mahogany");
+        simpleBlockItem(REOBlocks.MAHOGANY_FENCE_GATE);
 
-        buttonItem(REOBlocks.BUTTON_MAHOGANY, "mahogany");
-        simpleBlockItem(REOBlocks.PRESSURE_PLATE_MAHOGANY);
+        buttonItem(REOBlocks.MAHOGANY_BUTTON, "mahogany");
+        simpleBlockItem(REOBlocks.MAHOGANY_PRESSURE_PLATE);
 
-        saplingItem(REOBlocks.SAPLING_MAHOGANY, "mahogany");
+        saplingItem(REOBlocks.MAHOGANY_SAPLING, "mahogany");
         signItem(REOItems.MAHOGANY_SIGN);
         signItem(REOItems.MAHOGANY_HANGING_SIGN);
 
         boatItem(REOItems.MAHOGANY_BOAT);
         boatItem(REOItems.MAHOGANY_CHEST_BOAT);
 
-        doorItem(REOBlocks.DOOR_MAHOGANY);
-        trapdoorItem(REOBlocks.TRAPDOOR_MAHOGANY);
+        doorItem(REOBlocks.MAHOGANY_DOOR);
+        trapdoorItem(REOBlocks.MAHOGANY_TRAPDOOR);
 
-        simpleBlockItem(REOBlocks.STAIRS_MAHOGANY_RESISTANT);
-        simpleBlockItem(REOBlocks.SLAB_MAHOGANY_RESISTANT);
-        woodFenceItem(REOBlocks.FENCE_MAHOGANY_RESISTANT, "mahogany");
-        simpleBlockItem(REOBlocks.FENCE_GATE_MAHOGANY_RESISTANT);
+        simpleBlockItem(REOBlocks.RESISTANT_MAHOGANY_STAIRS);
+        simpleBlockItem(REOBlocks.RESISTANT_MAHOGANY_SLAB);
+        woodFenceItem(REOBlocks.RESISTANT_MAHOGANY_FENCE, "mahogany");
+        simpleBlockItem(REOBlocks.RESISTANT_MAHOGANY_FENCE_GATE);
 
 
-        simpleBlockItem(REOBlocks.STAIRS_MAPLE);
-        simpleBlockItem(REOBlocks.SLAB_MAPLE);
-        woodFenceItem(REOBlocks.FENCE_MAPLE, "maple");
-        simpleBlockItem(REOBlocks.FENCE_GATE_MAPLE);
+        simpleBlockItem(REOBlocks.MAPLE_STAIRS);
+        simpleBlockItem(REOBlocks.MAPLE_SLAB);
+        woodFenceItem(REOBlocks.MAPLE_FENCE, "maple");
+        simpleBlockItem(REOBlocks.MAPLE_FENCE_GATE);
 
-        buttonItem(REOBlocks.BUTTON_MAPLE, "maple");
-        simpleBlockItem(REOBlocks.PRESSURE_PLATE_MAPLE);
+        buttonItem(REOBlocks.MAPLE_BUTTON, "maple");
+        simpleBlockItem(REOBlocks.MAPLE_PRESSURE_PLATE);
 
-        saplingItem(REOBlocks.SAPLING_MAPLE, "maple");
+        saplingItem(REOBlocks.MAPLE_SAPLING, "maple");
         signItem(REOItems.MAPLE_SIGN);
         signItem(REOItems.MAPLE_HANGING_SIGN);
 
         boatItem(REOItems.MAPLE_BOAT);
         boatItem(REOItems.MAPLE_CHEST_BOAT);
 
-        doorItem(REOBlocks.DOOR_MAPLE);
-        trapdoorItem(REOBlocks.TRAPDOOR_MAPLE);
+        doorItem(REOBlocks.MAPLE_DOOR);
+        trapdoorItem(REOBlocks.MAPLE_TRAPDOOR);
 
-        simpleBlockItem(REOBlocks.STAIRS_MAPLE_RESISTANT);
-        simpleBlockItem(REOBlocks.SLAB_MAPLE_RESISTANT);
-        woodFenceItem(REOBlocks.FENCE_MAPLE_RESISTANT, "maple");
-        simpleBlockItem(REOBlocks.FENCE_GATE_MAPLE_RESISTANT);
+        simpleBlockItem(REOBlocks.RESISTANT_MAPLE_STAIRS);
+        simpleBlockItem(REOBlocks.RESISTANT_MAPLE_SLAB);
+        woodFenceItem(REOBlocks.RESISTANT_MAPLE_FENCE, "maple");
+        simpleBlockItem(REOBlocks.RESISTANT_MAPLE_FENCE_GATE);
 
 
-        simpleBlockItem(REOBlocks.STAIRS_PALM);
-        simpleBlockItem(REOBlocks.SLAB_PALM);
-        woodFenceItem(REOBlocks.FENCE_PALM, "palm");
-        simpleBlockItem(REOBlocks.FENCE_GATE_PALM);
+        simpleBlockItem(REOBlocks.PALM_STAIRS);
+        simpleBlockItem(REOBlocks.PALM_SLAB);
+        woodFenceItem(REOBlocks.PALM_FENCE, "palm");
+        simpleBlockItem(REOBlocks.PALM_FENCE_GATE);
 
-        buttonItem(REOBlocks.BUTTON_PALM, "palm");
-        simpleBlockItem(REOBlocks.PRESSURE_PLATE_PALM);
+        buttonItem(REOBlocks.PALM_BUTTON, "palm");
+        simpleBlockItem(REOBlocks.PALM_PRESSURE_PLATE);
 
-        saplingItem(REOBlocks.SAPLING_PALM, "palm");
+        saplingItem(REOBlocks.PALM_SAPLING, "palm");
         signItem(REOItems.PALM_SIGN);
         signItem(REOItems.PALM_HANGING_SIGN);
 
         boatItem(REOItems.PALM_BOAT);
         boatItem(REOItems.PALM_CHEST_BOAT);
 
-        doorItem(REOBlocks.DOOR_PALM);
-        trapdoorItem(REOBlocks.TRAPDOOR_PALM);
+        doorItem(REOBlocks.PALM_DOOR);
+        trapdoorItem(REOBlocks.PALM_TRAPDOOR);
 
-        simpleBlockItem(REOBlocks.STAIRS_PALM_RESISTANT);
-        simpleBlockItem(REOBlocks.SLAB_PALM_RESISTANT);
-        woodFenceItem(REOBlocks.FENCE_PALM_RESISTANT, "palm");
-        simpleBlockItem(REOBlocks.FENCE_GATE_PALM_RESISTANT);
+        simpleBlockItem(REOBlocks.RESISTANT_PALM_STAIRS);
+        simpleBlockItem(REOBlocks.RESISTANT_PALM_SLAB);
+        woodFenceItem(REOBlocks.RESISTANT_PALM_FENCE, "palm");
+        simpleBlockItem(REOBlocks.RESISTANT_PALM_FENCE_GATE);
 
 
-        simpleBlockItem(REOBlocks.STAIRS_PAPAYA);
-        simpleBlockItem(REOBlocks.SLAB_PAPAYA);
-        woodFenceItem(REOBlocks.FENCE_PAPAYA, "papaya");
-        simpleBlockItem(REOBlocks.FENCE_GATE_PAPAYA);
+        simpleBlockItem(REOBlocks.PAPAYA_STAIRS);
+        simpleBlockItem(REOBlocks.PAPAYA_SLAB);
+        woodFenceItem(REOBlocks.PAPAYA_FENCE, "papaya");
+        simpleBlockItem(REOBlocks.PAPAYA_FENCE_GATE);
 
-        buttonItem(REOBlocks.BUTTON_PAPAYA, "papaya");
-        simpleBlockItem(REOBlocks.PRESSURE_PLATE_PAPAYA);
+        buttonItem(REOBlocks.PAPAYA_BUTTON, "papaya");
+        simpleBlockItem(REOBlocks.PAPAYA_PRESSURE_PLATE);
 
-        saplingItem(REOBlocks.SAPLING_PAPAYA, "papaya");
+        saplingItem(REOBlocks.PAPAYA_SAPLING, "papaya");
         signItem(REOItems.PAPAYA_SIGN);
         signItem(REOItems.PAPAYA_HANGING_SIGN);
 
         boatItem(REOItems.PAPAYA_BOAT);
         boatItem(REOItems.PAPAYA_CHEST_BOAT);
 
-        doorItem(REOBlocks.DOOR_PAPAYA);
-        trapdoorItem(REOBlocks.TRAPDOOR_PAPAYA);
+        doorItem(REOBlocks.PAPAYA_DOOR);
+        trapdoorItem(REOBlocks.PAPAYA_TRAPDOOR);
 
-        simpleBlockItem(REOBlocks.STAIRS_PAPAYA_RESISTANT);
-        simpleBlockItem(REOBlocks.SLAB_PAPAYA_RESISTANT);
-        woodFenceItem(REOBlocks.FENCE_PAPAYA_RESISTANT, "papaya");
-        simpleBlockItem(REOBlocks.FENCE_GATE_PAPAYA_RESISTANT);
+        simpleBlockItem(REOBlocks.RESISTANT_PAPAYA_STAIRS);
+        simpleBlockItem(REOBlocks.RESISTANT_PAPAYA_SLAB);
+        woodFenceItem(REOBlocks.RESISTANT_PAPAYA_FENCE, "papaya");
+        simpleBlockItem(REOBlocks.RESISTANT_PAPAYA_FENCE_GATE);
 
 
-        simpleBlockItem(REOBlocks.STAIRS_PINE);
-        simpleBlockItem(REOBlocks.SLAB_PINE);
-        woodFenceItem(REOBlocks.FENCE_PINE, "pine");
-        simpleBlockItem(REOBlocks.FENCE_GATE_PINE);
+        simpleBlockItem(REOBlocks.PINE_STAIRS);
+        simpleBlockItem(REOBlocks.PINE_SLAB);
+        woodFenceItem(REOBlocks.PINE_FENCE, "pine");
+        simpleBlockItem(REOBlocks.PINE_FENCE_GATE);
 
-        buttonItem(REOBlocks.BUTTON_PINE, "pine");
-        simpleBlockItem(REOBlocks.PRESSURE_PLATE_PINE);
+        buttonItem(REOBlocks.PINE_BUTTON, "pine");
+        simpleBlockItem(REOBlocks.PINE_PRESSURE_PLATE);
 
-        saplingItem(REOBlocks.SAPLING_PINE, "pine");
+        saplingItem(REOBlocks.PINE_SAPLING, "pine");
         signItem(REOItems.PINE_SIGN);
         signItem(REOItems.PINE_HANGING_SIGN);
 
         boatItem(REOItems.PINE_BOAT);
         boatItem(REOItems.PINE_CHEST_BOAT);
 
-        doorItem(REOBlocks.DOOR_PINE);
-        trapdoorItem(REOBlocks.TRAPDOOR_PINE);
+        doorItem(REOBlocks.PINE_DOOR);
+        trapdoorItem(REOBlocks.PINE_TRAPDOOR);
 
-        simpleBlockItem(REOBlocks.STAIRS_PINE_RESISTANT);
-        simpleBlockItem(REOBlocks.SLAB_PINE_RESISTANT);
-        woodFenceItem(REOBlocks.FENCE_PINE_RESISTANT, "pine");
-        simpleBlockItem(REOBlocks.FENCE_GATE_PINE_RESISTANT);
+        simpleBlockItem(REOBlocks.RESISTANT_PINE_STAIRS);
+        simpleBlockItem(REOBlocks.RESISTANT_PINE_SLAB);
+        woodFenceItem(REOBlocks.RESISTANT_PINE_FENCE, "pine");
+        simpleBlockItem(REOBlocks.RESISTANT_PINE_FENCE_GATE);
 
 
-        simpleBlockItem(REOBlocks.STAIRS_PLUM);
-        simpleBlockItem(REOBlocks.SLAB_PLUM);
-        woodFenceItem(REOBlocks.FENCE_PLUM, "plum");
-        simpleBlockItem(REOBlocks.FENCE_GATE_PLUM);
+        simpleBlockItem(REOBlocks.PLUM_STAIRS);
+        simpleBlockItem(REOBlocks.PLUM_SLAB);
+        woodFenceItem(REOBlocks.PLUM_FENCE, "plum");
+        simpleBlockItem(REOBlocks.PLUM_FENCE_GATE);
 
-        buttonItem(REOBlocks.BUTTON_PLUM, "plum");
-        simpleBlockItem(REOBlocks.PRESSURE_PLATE_PLUM);
+        buttonItem(REOBlocks.PLUM_BUTTON, "plum");
+        simpleBlockItem(REOBlocks.PLUM_PRESSURE_PLATE);
 
-        saplingItem(REOBlocks.SAPLING_PLUM, "plum");
+        saplingItem(REOBlocks.PLUM_SAPLING, "plum");
         signItem(REOItems.PLUM_SIGN);
         signItem(REOItems.PLUM_HANGING_SIGN);
 
         boatItem(REOItems.PLUM_BOAT);
         boatItem(REOItems.PLUM_CHEST_BOAT);
 
-        doorItem(REOBlocks.DOOR_PLUM);
-        trapdoorItem(REOBlocks.TRAPDOOR_PLUM);
+        doorItem(REOBlocks.PLUM_DOOR);
+        trapdoorItem(REOBlocks.PLUM_TRAPDOOR);
 
-        simpleBlockItem(REOBlocks.STAIRS_PLUM_RESISTANT);
-        simpleBlockItem(REOBlocks.SLAB_PLUM_RESISTANT);
-        woodFenceItem(REOBlocks.FENCE_PLUM_RESISTANT, "plum");
-        simpleBlockItem(REOBlocks.FENCE_GATE_PLUM_RESISTANT);
+        simpleBlockItem(REOBlocks.RESISTANT_PLUM_STAIRS);
+        simpleBlockItem(REOBlocks.RESISTANT_PLUM_SLAB);
+        woodFenceItem(REOBlocks.RESISTANT_PLUM_FENCE, "plum");
+        simpleBlockItem(REOBlocks.RESISTANT_PLUM_FENCE_GATE);
 
 
-        simpleBlockItem(REOBlocks.STAIRS_POPLAR);
-        simpleBlockItem(REOBlocks.SLAB_POPLAR);
-        woodFenceItem(REOBlocks.FENCE_POPLAR, "poplar");
-        simpleBlockItem(REOBlocks.FENCE_GATE_POPLAR);
+        simpleBlockItem(REOBlocks.POPLAR_STAIRS);
+        simpleBlockItem(REOBlocks.POPLAR_SLAB);
+        woodFenceItem(REOBlocks.POPLAR_FENCE, "poplar");
+        simpleBlockItem(REOBlocks.POPLAR_FENCE_GATE);
 
-        buttonItem(REOBlocks.BUTTON_POPLAR, "poplar");
-        simpleBlockItem(REOBlocks.PRESSURE_PLATE_POPLAR);
+        buttonItem(REOBlocks.POPLAR_BUTTON, "poplar");
+        simpleBlockItem(REOBlocks.POPLAR_PRESSURE_PLATE);
 
-        saplingItem(REOBlocks.SAPLING_POPLAR, "poplar");
+        saplingItem(REOBlocks.POPLAR_SAPLING, "poplar");
         signItem(REOItems.POPLAR_SIGN);
         signItem(REOItems.POPLAR_HANGING_SIGN);
 
         boatItem(REOItems.POPLAR_BOAT);
         boatItem(REOItems.POPLAR_CHEST_BOAT);
 
-        doorItem(REOBlocks.DOOR_POPLAR);
-        trapdoorItem(REOBlocks.TRAPDOOR_POPLAR);
+        doorItem(REOBlocks.POPLAR_DOOR);
+        trapdoorItem(REOBlocks.POPLAR_TRAPDOOR);
 
-        simpleBlockItem(REOBlocks.STAIRS_POPLAR_RESISTANT);
-        simpleBlockItem(REOBlocks.SLAB_POPLAR_RESISTANT);
-        woodFenceItem(REOBlocks.FENCE_POPLAR_RESISTANT, "poplar");
-        simpleBlockItem(REOBlocks.FENCE_GATE_POPLAR_RESISTANT);
+        simpleBlockItem(REOBlocks.RESISTANT_POPLAR_STAIRS);
+        simpleBlockItem(REOBlocks.RESISTANT_POPLAR_SLAB);
+        woodFenceItem(REOBlocks.RESISTANT_POPLAR_FENCE, "poplar");
+        simpleBlockItem(REOBlocks.RESISTANT_POPLAR_FENCE_GATE);
 
 
-        simpleBlockItem(REOBlocks.STAIRS_REDWOOD);
-        simpleBlockItem(REOBlocks.SLAB_REDWOOD);
-        woodFenceItem(REOBlocks.FENCE_REDWOOD, "redwood");
-        simpleBlockItem(REOBlocks.FENCE_GATE_REDWOOD);
+        simpleBlockItem(REOBlocks.REDWOOD_STAIRS);
+        simpleBlockItem(REOBlocks.REDWOOD_SLAB);
+        woodFenceItem(REOBlocks.REDWOOD_FENCE, "redwood");
+        simpleBlockItem(REOBlocks.REDWOOD_FENCE_GATE);
 
-        buttonItem(REOBlocks.BUTTON_REDWOOD, "redwood");
-        simpleBlockItem(REOBlocks.PRESSURE_PLATE_REDWOOD);
+        buttonItem(REOBlocks.REDWOOD_BUTTON, "redwood");
+        simpleBlockItem(REOBlocks.REDWOOD_PRESSURE_PLATE);
 
-        saplingItem(REOBlocks.SAPLING_REDWOOD, "redwood");
+        saplingItem(REOBlocks.REDWOOD_SAPLING, "redwood");
         signItem(REOItems.REDWOOD_SIGN);
         signItem(REOItems.REDWOOD_HANGING_SIGN);
 
         boatItem(REOItems.REDWOOD_BOAT);
         boatItem(REOItems.REDWOOD_CHEST_BOAT);
 
-        doorItem(REOBlocks.DOOR_REDWOOD);
-        trapdoorItem(REOBlocks.TRAPDOOR_REDWOOD);
+        doorItem(REOBlocks.REDWOOD_DOOR);
+        trapdoorItem(REOBlocks.REDWOOD_TRAPDOOR);
 
-        simpleBlockItem(REOBlocks.STAIRS_REDWOOD_RESISTANT);
-        simpleBlockItem(REOBlocks.SLAB_REDWOOD_RESISTANT);
-        woodFenceItem(REOBlocks.FENCE_REDWOOD_RESISTANT, "redwood");
-        simpleBlockItem(REOBlocks.FENCE_GATE_REDWOOD_RESISTANT);
+        simpleBlockItem(REOBlocks.RESISTANT_REDWOOD_STAIRS);
+        simpleBlockItem(REOBlocks.RESISTANT_REDWOOD_SLAB);
+        woodFenceItem(REOBlocks.RESISTANT_REDWOOD_FENCE, "redwood");
+        simpleBlockItem(REOBlocks.RESISTANT_REDWOOD_FENCE_GATE);
 
 
-        simpleBlockItem(REOBlocks.STAIRS_RUBBER);
-        simpleBlockItem(REOBlocks.SLAB_RUBBER);
-        woodFenceItem(REOBlocks.FENCE_RUBBER, "rubber");
-        simpleBlockItem(REOBlocks.FENCE_GATE_RUBBER);
+        simpleBlockItem(REOBlocks.RUBBER_STAIRS);
+        simpleBlockItem(REOBlocks.RUBBER_SLAB);
+        woodFenceItem(REOBlocks.RUBBER_FENCE, "rubber");
+        simpleBlockItem(REOBlocks.RUBBER_FENCE_GATE);
 
-        buttonItem(REOBlocks.BUTTON_RUBBER, "rubber");
-        simpleBlockItem(REOBlocks.PRESSURE_PLATE_RUBBER);
+        buttonItem(REOBlocks.RUBBER_BUTTON, "rubber");
+        simpleBlockItem(REOBlocks.RUBBER_PRESSURE_PLATE);
 
-        saplingItem(REOBlocks.SAPLING_RUBBER, "rubber");
+        saplingItem(REOBlocks.RUBBER_SAPLING, "rubber");
         signItem(REOItems.RUBBER_SIGN);
         signItem(REOItems.RUBBER_HANGING_SIGN);
 
         boatItem(REOItems.RUBBER_BOAT);
         boatItem(REOItems.RUBBER_CHEST_BOAT);
 
-        doorItem(REOBlocks.DOOR_RUBBER);
-        trapdoorItem(REOBlocks.TRAPDOOR_RUBBER);
+        doorItem(REOBlocks.RUBBER_DOOR);
+        trapdoorItem(REOBlocks.RUBBER_TRAPDOOR);
 
-        simpleBlockItem(REOBlocks.STAIRS_RUBBER_RESISTANT);
-        simpleBlockItem(REOBlocks.SLAB_RUBBER_RESISTANT);
-        woodFenceItem(REOBlocks.FENCE_RUBBER_RESISTANT, "rubber");
-        simpleBlockItem(REOBlocks.FENCE_GATE_RUBBER_RESISTANT);
+        simpleBlockItem(REOBlocks.RESISTANT_RUBBER_STAIRS);
+        simpleBlockItem(REOBlocks.RESISTANT_RUBBER_SLAB);
+        woodFenceItem(REOBlocks.RESISTANT_RUBBER_FENCE, "rubber");
+        simpleBlockItem(REOBlocks.RESISTANT_RUBBER_FENCE_GATE);
 
 
-        simpleBlockItem(REOBlocks.STAIRS_TEAK);
-        simpleBlockItem(REOBlocks.SLAB_TEAK);
-        woodFenceItem(REOBlocks.FENCE_TEAK, "teak");
-        simpleBlockItem(REOBlocks.FENCE_GATE_TEAK);
+        simpleBlockItem(REOBlocks.TEAK_STAIRS);
+        simpleBlockItem(REOBlocks.TEAK_SLAB);
+        woodFenceItem(REOBlocks.TEAK_FENCE, "teak");
+        simpleBlockItem(REOBlocks.TEAK_FENCE_GATE);
 
-        buttonItem(REOBlocks.BUTTON_TEAK, "teak");
-        simpleBlockItem(REOBlocks.PRESSURE_PLATE_TEAK);
+        buttonItem(REOBlocks.TEAK_BUTTON, "teak");
+        simpleBlockItem(REOBlocks.TEAK_PRESSURE_PLATE);
 
-        saplingItem(REOBlocks.SAPLING_TEAK, "teak");
+        saplingItem(REOBlocks.TEAK_SAPLING, "teak");
         signItem(REOItems.TEAK_SIGN);
         signItem(REOItems.TEAK_HANGING_SIGN);
 
         boatItem(REOItems.TEAK_BOAT);
         boatItem(REOItems.TEAK_CHEST_BOAT);
 
-        doorItem(REOBlocks.DOOR_TEAK);
-        trapdoorItem(REOBlocks.TRAPDOOR_TEAK);
+        doorItem(REOBlocks.TEAK_DOOR);
+        trapdoorItem(REOBlocks.TEAK_TRAPDOOR);
 
-        simpleBlockItem(REOBlocks.STAIRS_TEAK_RESISTANT);
-        simpleBlockItem(REOBlocks.SLAB_TEAK_RESISTANT);
-        woodFenceItem(REOBlocks.FENCE_TEAK_RESISTANT, "teak");
-        simpleBlockItem(REOBlocks.FENCE_GATE_TEAK_RESISTANT);
+        simpleBlockItem(REOBlocks.RESISTANT_TEAK_STAIRS);
+        simpleBlockItem(REOBlocks.RESISTANT_TEAK_SLAB);
+        woodFenceItem(REOBlocks.RESISTANT_TEAK_FENCE, "teak");
+        simpleBlockItem(REOBlocks.RESISTANT_TEAK_FENCE_GATE);
 
-        //
-        simpleBlockItem(REOBlocks.STAIRS_WALNUT);
-        simpleBlockItem(REOBlocks.SLAB_WALNUT);
-        woodFenceItem(REOBlocks.FENCE_WALNUT, "walnut");
-        simpleBlockItem(REOBlocks.FENCE_GATE_WALNUT);
 
-        buttonItem(REOBlocks.BUTTON_WALNUT, "walnut");
-        simpleBlockItem(REOBlocks.PRESSURE_PLATE_WALNUT);
+        simpleBlockItem(REOBlocks.WALNUT_STAIRS);
+        simpleBlockItem(REOBlocks.WALNUT_SLAB);
+        woodFenceItem(REOBlocks.WALNUT_FENCE, "walnut");
+        simpleBlockItem(REOBlocks.WALNUT_FENCE_GATE);
 
-        saplingItem(REOBlocks.SAPLING_WALNUT, "walnut");
+        buttonItem(REOBlocks.WALNUT_BUTTON, "walnut");
+        simpleBlockItem(REOBlocks.WALNUT_PRESSURE_PLATE);
+
+        saplingItem(REOBlocks.WALNUT_SAPLING, "walnut");
         signItem(REOItems.WALNUT_SIGN);
         signItem(REOItems.WALNUT_HANGING_SIGN);
 
         boatItem(REOItems.WALNUT_BOAT);
         boatItem(REOItems.WALNUT_CHEST_BOAT);
 
-        doorItem(REOBlocks.DOOR_WALNUT);
-        trapdoorItem(REOBlocks.TRAPDOOR_WALNUT);
+        doorItem(REOBlocks.WALNUT_DOOR);
+        trapdoorItem(REOBlocks.WALNUT_TRAPDOOR);
 
-        simpleBlockItem(REOBlocks.STAIRS_WALNUT_RESISTANT);
-        simpleBlockItem(REOBlocks.SLAB_WALNUT_RESISTANT);
-        woodFenceItem(REOBlocks.FENCE_WALNUT_RESISTANT, "walnut");
-        simpleBlockItem(REOBlocks.FENCE_GATE_WALNUT_RESISTANT);
+        simpleBlockItem(REOBlocks.RESISTANT_WALNUT_STAIRS);
+        simpleBlockItem(REOBlocks.RESISTANT_WALNUT_SLAB);
+        woodFenceItem(REOBlocks.RESISTANT_WALNUT_FENCE, "walnut");
+        simpleBlockItem(REOBlocks.RESISTANT_WALNUT_FENCE_GATE);
 
 
-        simpleBlockItem(REOBlocks.STAIRS_WILLOW);
-        simpleBlockItem(REOBlocks.SLAB_WILLOW);
-        woodFenceItem(REOBlocks.FENCE_WILLOW, "willow");
-        simpleBlockItem(REOBlocks.FENCE_GATE_WILLOW);
+        simpleBlockItem(REOBlocks.WILLOW_STAIRS);
+        simpleBlockItem(REOBlocks.WILLOW_SLAB);
+        woodFenceItem(REOBlocks.WILLOW_FENCE, "willow");
+        simpleBlockItem(REOBlocks.WILLOW_FENCE_GATE);
 
-        buttonItem(REOBlocks.BUTTON_WILLOW, "willow");
-        simpleBlockItem(REOBlocks.PRESSURE_PLATE_WILLOW);
+        buttonItem(REOBlocks.WILLOW_BUTTON, "willow");
+        simpleBlockItem(REOBlocks.WILLOW_PRESSURE_PLATE);
 
-        saplingItem(REOBlocks.SAPLING_WILLOW, "willow");
+        saplingItem(REOBlocks.WILLOW_SAPLING, "willow");
         signItem(REOItems.WILLOW_SIGN);
         signItem(REOItems.WILLOW_HANGING_SIGN);
 
         boatItem(REOItems.WILLOW_BOAT);
         boatItem(REOItems.WILLOW_CHEST_BOAT);
 
-        doorItem(REOBlocks.DOOR_WILLOW);
-        trapdoorItem(REOBlocks.TRAPDOOR_WILLOW);
+        doorItem(REOBlocks.WILLOW_DOOR);
+        trapdoorItem(REOBlocks.WILLOW_TRAPDOOR);
 
-        simpleBlockItem(REOBlocks.STAIRS_WILLOW_RESISTANT);
-        simpleBlockItem(REOBlocks.SLAB_WILLOW_RESISTANT);
-        woodFenceItem(REOBlocks.FENCE_WILLOW_RESISTANT, "willow");
-        simpleBlockItem(REOBlocks.FENCE_GATE_WILLOW_RESISTANT);
+        simpleBlockItem(REOBlocks.RESISTANT_WILLOW_STAIRS);
+        simpleBlockItem(REOBlocks.RESISTANT_WILLOW_SLAB);
+        woodFenceItem(REOBlocks.RESISTANT_WILLOW_FENCE, "willow");
+        simpleBlockItem(REOBlocks.RESISTANT_WILLOW_FENCE_GATE);
 
         // Food
         wildBlockItem(REOBlocks.WILD_BARLEY, "wild_barley");

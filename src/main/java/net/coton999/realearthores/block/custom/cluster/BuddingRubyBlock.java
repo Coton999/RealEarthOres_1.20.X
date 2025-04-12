@@ -36,7 +36,7 @@ public class BuddingRubyBlock extends AmethystBlock {
             } else if (blockstate.is(REOBlocks.MEDIUM_RUBY_BUD.get()) && blockstate.getValue(AmethystClusterBlock.FACING) == direction) {
                 block = REOBlocks.LARGE_RUBY_BUD.get();
             } else if (blockstate.is(REOBlocks.LARGE_RUBY_BUD.get()) && blockstate.getValue(AmethystClusterBlock.FACING) == direction) {
-                block = REOBlocks.CLUSTER_RUBY.get();
+                block = REOBlocks.RUBY_CLUSTER.get();
             }
 
             if (block != null) {

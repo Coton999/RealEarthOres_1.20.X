@@ -261,64 +261,64 @@ public class REOPlacedFeatures {
         // Tree //
         register(context, BALSA_PLACED_KEY, configuredFeatures.getOrThrow(REOConfiguredFeatures.BALSA_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.05f, 1),
-                        REOBlocks.SAPLING_BALSA.get())); //                   Gaurenteed        Chance          Extra
+                        REOBlocks.BALSA_SAPLING.get())); //                   Gaurenteed        Chance          Extra
         register(context, BAOBAB_PLACED_KEY, configuredFeatures.getOrThrow(REOConfiguredFeatures.BAOBAB_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.025f, 1),
-                        REOBlocks.SAPLING_BAOBAB.get())); //                   Gaurenteed        Chance          Extra
+                        REOBlocks.BAOBAB_SAPLING.get())); //                   Gaurenteed        Chance          Extra
         register(context, HILL_CHERRY_PLACED_KEY, configuredFeatures.getOrThrow(REOConfiguredFeatures.HILL_CHERRY_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.05f, 1),
-                        REOBlocks.SAPLING_HILL_CHERRY.get())); //                   Gaurenteed       Chance      Extra
+                        REOBlocks.HILL_CHERRY_SAPLING.get())); //                   Gaurenteed       Chance      Extra
         register(context, CHESTNUT_PLACED_KEY, configuredFeatures.getOrThrow(REOConfiguredFeatures.CHESTNUT_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.05f, 1),
-                        REOBlocks.SAPLING_CHESTNUT.get())); //                   Gaurenteed       Chance      Extra
+                        REOBlocks.CHESTNUT_SAPLING.get())); //                   Gaurenteed       Chance      Extra
         register(context, CITRUS_PLACED_KEY, configuredFeatures.getOrThrow(REOConfiguredFeatures.CITRUS_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.05f, 1),
-                        REOBlocks.SAPLING_CITRUS.get())); //                   Gaurenteed        Chance        Extra
+                        REOBlocks.CITRUS_SAPLING.get())); //                   Gaurenteed        Chance        Extra
         register(context, EBONY_PLACED_KEY, configuredFeatures.getOrThrow(REOConfiguredFeatures.EBONY_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.1f, 2),
-                        REOBlocks.SAPLING_EBONY.get())); //                   Gaurenteed        Chance        Extra
+                        REOBlocks.EBONY_SAPLING.get())); //                   Gaurenteed        Chance        Extra
         register(context, LARCH_PLACED_KEY, configuredFeatures.getOrThrow(REOConfiguredFeatures.LARCH_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 2),
-                        REOBlocks.SAPLING_LARCH.get())); //                   Gaurenteed        Chance        Extra
+                        REOBlocks.LARCH_SAPLING.get())); //                   Gaurenteed        Chance        Extra
         register(context, LIME_PLACED_KEY, configuredFeatures.getOrThrow(REOConfiguredFeatures.LIME_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.05f, 1),
-                        REOBlocks.SAPLING_LIME.get())); //                   Gaurenteed        Chance        Extra
+                        REOBlocks.LIME_SAPLING.get())); //                   Gaurenteed        Chance        Extra
         register(context, MAHOGANY_PLACED_KEY, configuredFeatures.getOrThrow(REOConfiguredFeatures.MAHOGANY_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.2f, 1),
-                        REOBlocks.SAPLING_MAHOGANY.get())); //                Gaurenteed       Chance       Extra
+                        REOBlocks.MAHOGANY_SAPLING.get())); //                Gaurenteed       Chance       Extra
         register(context, MAPLE_PLACED_KEY, configuredFeatures.getOrThrow(REOConfiguredFeatures.MAPLE_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 2),
-                        REOBlocks.SAPLING_MAPLE.get())); //                   Gaurenteed        Chance       Extra
+                        REOBlocks.MAPLE_SAPLING.get())); //                   Gaurenteed        Chance       Extra
         register(context, PALM_PLACED_KEY, configuredFeatures.getOrThrow(REOConfiguredFeatures.PALM_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.2f, 2),
-                        REOBlocks.SAPLING_PALM.get())); //                   Gaurenteed        Chance       Extra
+                        REOBlocks.PALM_SAPLING.get())); //                   Gaurenteed        Chance       Extra
         register(context, PAPAYA_PLACED_KEY, configuredFeatures.getOrThrow(REOConfiguredFeatures.PAPAYA_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.05f, 1),
-                        REOBlocks.SAPLING_PAPAYA.get())); //                   Gaurenteed        Chance       Extra
+                        REOBlocks.PAPAYA_SAPLING.get())); //                   Gaurenteed        Chance       Extra
         register(context, PINE_PLACED_KEY, configuredFeatures.getOrThrow(REOConfiguredFeatures.PINE_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 2),
-                        REOBlocks.SAPLING_PINE.get())); //                   Gaurenteed        Chance       Extra
+                        REOBlocks.PINE_SAPLING.get())); //                   Gaurenteed        Chance       Extra
         register(context, PLUM_PLACED_KEY, configuredFeatures.getOrThrow(REOConfiguredFeatures.PLUM_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.05f, 1),
-                        REOBlocks.SAPLING_PLUM.get())); //                   Gaurenteed        Chance       Extra
+                        REOBlocks.PLUM_SAPLING.get())); //                   Gaurenteed        Chance       Extra
         register(context, POPLAR_PLACED_KEY, configuredFeatures.getOrThrow(REOConfiguredFeatures.POPLAR_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 2),
-                        REOBlocks.SAPLING_POPLAR.get())); //                   Gaurenteed        Chance       Extra
+                        REOBlocks.POPLAR_SAPLING.get())); //                   Gaurenteed        Chance       Extra
         register(context, REDWOOD_PLACED_KEY, configuredFeatures.getOrThrow(REOConfiguredFeatures.REDWOOD_MEGA_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.2f, 2),
-                        REOBlocks.SAPLING_REDWOOD.get())); //                   Gaurenteed        Chance       Extra
+                        REOBlocks.REDWOOD_SAPLING.get())); //                   Gaurenteed        Chance       Extra
         register(context, RUBBER_PLACED_KEY, configuredFeatures.getOrThrow(REOConfiguredFeatures.RUBBER_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.2f, 3),
-                        REOBlocks.SAPLING_RUBBER.get())); //                   Gaurenteed        Chance       Extra
+                        REOBlocks.RUBBER_SAPLING.get())); //                   Gaurenteed        Chance       Extra
         register(context, TEAK_PLACED_KEY, configuredFeatures.getOrThrow(REOConfiguredFeatures.TEAK_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 2),
-                        REOBlocks.SAPLING_TEAK.get())); //                   Gaurenteed        Chance       Extra
+                        REOBlocks.TEAK_SAPLING.get())); //                   Gaurenteed        Chance       Extra
         register(context, WALNUT_PLACED_KEY, configuredFeatures.getOrThrow(REOConfiguredFeatures.WALNUT_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.05f, 1),
-                        REOBlocks.SAPLING_WALNUT.get())); //                   Gaurenteed        Chance       Extra
+                        REOBlocks.WALNUT_SAPLING.get())); //                   Gaurenteed        Chance       Extra
         register(context, WILLOW_PLACED_KEY, configuredFeatures.getOrThrow(REOConfiguredFeatures.WILLOW_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 2),
-                        REOBlocks.SAPLING_WILLOW.get())); //                   Gaurenteed        Chance       Extra
+                        REOBlocks.WILLOW_SAPLING.get())); //                   Gaurenteed        Chance       Extra
 
         // Wild Plants
         register(context, WILD_BARLEY_PLACED_KEY, configuredFeatures.getOrThrow(REOConfiguredFeatures.WILD_BARLEY_KEY),

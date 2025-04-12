@@ -71,6 +71,6 @@ public class WalnutBlock extends CropBlock {
         BlockPos pAbove = pos.above();
         BlockState pLeaves = level.getBlockState(pAbove);
 
-        return pLeaves.is(REOBlocks.LEAVES_WALNUT.get());
+        return pLeaves.is(REOBlocks.WALNUT_LEAVES.get());
     }
 }

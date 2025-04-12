@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "realearthores:block/tree/planks/cherry",
-    "side": "realearthores:block/tree/planks/cherry",
-    "top": "realearthores:block/tree/planks/cherry"
-  }
-}

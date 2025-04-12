@@ -36,51 +36,51 @@ public class REOBlockTagGenerator extends BlockTagsProvider {
 
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(REOBlocks.ORE_ALUMINIUM.get(), REOBlocks.ORE_SILVER.get(),
+                .add(REOBlocks.ALUMINUM_ORE.get(), REOBlocks.SILVER_ORE.get(),
 
-                        REOBlocks.GRAVEL_ORE_ALUMINIUM.get(), REOBlocks.GRAVEL_ORE_DIAMOND.get(), REOBlocks.GRAVEL_ORE_EMERALD.get(),
-                        REOBlocks.GRAVEL_ORE_REDSTONE.get(), REOBlocks.GRAVEL_ORE_SILVER.get(),
+                        REOBlocks.ALUMINUM_GRAVEL_ORE.get(), REOBlocks.DIAMOND_GRAVEL_ORE.get(), REOBlocks.EMERALD_GRAVEL_ORE.get(),
+                        REOBlocks.REDSTONE_GRAVEL_ORE.get(), REOBlocks.SILVER_GRAVEL_ORE.get(),
 
-                        REOBlocks.DEEPSLATE_SILVER.get(),
+                        REOBlocks.DEEPSLATE_SILVER_ORE.get(),
 
-                        REOBlocks.NETHER_ALUMINIUM.get(), REOBlocks.NETHER_DIAMOND.get(), REOBlocks.NETHER_EMERALD.get(),
-                        REOBlocks.NETHER_REDSTONE.get(), REOBlocks.NETHER_SILVER.get(),
+                        REOBlocks.NETHER_ALUMINIUM_ORE.get(), REOBlocks.NETHER_DIAMOND_ORE.get(), REOBlocks.NETHER_EMERALD_ORE.get(),
+                        REOBlocks.NETHER_REDSTONE_ORE.get(), REOBlocks.NETHER_SILVER_ORE.get(),
 
 
-                        REOBlocks.BLOCK_ALUMINIUM.get(), REOBlocks.BLOCK_PERIDOT.get(), REOBlocks.BLOCK_RUBY.get(),
-                        REOBlocks.BLOCK_SAPPHIRE.get(), REOBlocks.BLOCK_SILVER.get());
+                        REOBlocks.ALUMINUM_BLOCK.get(), REOBlocks.PERIDOT_BLOCK.get(), REOBlocks.RUBY_BLOCK.get(),
+                        REOBlocks.SAPPHIRE_BLOCK.get(), REOBlocks.SILVER_BLOCK.get());
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(REOBlocks.ORE_PLATINUM.get(), REOBlocks.ORE_URANIUM.get(),
+                .add(REOBlocks.PLATINUM_ORE.get(), REOBlocks.URANIUM_ORE.get(),
 
-                        REOBlocks.GRAVEL_ORE_PLATINUM.get(), REOBlocks.GRAVEL_ORE_URANIUM.get(),
+                        REOBlocks.PLATINUM_GRAVEL_ORE.get(), REOBlocks.URANIUM_GRAVEL_ORE.get(),
 
-                        REOBlocks.DEEPSLATE_PLATINUM.get(), REOBlocks.DEEPSLATE_URANIUM.get(),
+                        REOBlocks.DEEPSLATE_PLATINUM_ORE.get(), REOBlocks.DEEPSLATE_URANIUM_ORE.get(),
 
-                        REOBlocks.NETHER_PLATINUM.get(), REOBlocks.NETHER_URANIUM.get(),
+                        REOBlocks.NETHER_PLATINUM_ORE.get(), REOBlocks.NETHER_URANIUM_ORE.get(),
 
-                        REOBlocks.ORE_ENDERITE.get(),
+                        REOBlocks.ENDERITE_ORE.get(),
 
-                        REOBlocks.BLOCK_ENDERITE.get(), REOBlocks.BLOCK_PLATINUM.get(), REOBlocks.BLOCK_URANIUM.get());
+                        REOBlocks.ENDERITE_BLOCK.get(), REOBlocks.PLATINUM_BLOCK.get(), REOBlocks.URANIUM_BLOCK.get());
 
 
         this.tag(BlockTags.NEEDS_STONE_TOOL)
-                .add(REOBlocks.ORE_NICKEL.get(), REOBlocks.ORE_TIN.get(), REOBlocks.ORE_ZINC.get(),
+                .add(REOBlocks.NICKEL_ORE.get(), REOBlocks.TIN_ORE.get(), REOBlocks.ZINC_ORE.get(),
 
-                        REOBlocks.GRAVEL_ORE_COPPER.get(), REOBlocks.GRAVEL_ORE_IRON.get(), REOBlocks.GRAVEL_ORE_LAPIS.get(),
-                        REOBlocks.GRAVEL_ORE_NICKEL.get(), REOBlocks.GRAVEL_ORE_TIN.get(), REOBlocks.GRAVEL_ORE_ZINC.get(),
+                        REOBlocks.COPPER_GRAVEL_ORE.get(), REOBlocks.IRON_GRAVEL_ORE.get(), REOBlocks.LAPIS_GRAVEL_ORE.get(),
+                        REOBlocks.NICKEL_GRAVEL_ORE.get(), REOBlocks.TIN_GRAVEL_ORE.get(), REOBlocks.ZINC_GRAVEL_ORE.get(),
 
-                        REOBlocks.DEEPSLATE_NICKEL.get(), REOBlocks.DEEPSLATE_ZINC.get(),
+                        REOBlocks.DEEPSLATE_NICKEL_ORE.get(), REOBlocks.DEEPSLATE_ZINC_ORE.get(),
 
-                        REOBlocks.NETHER_COPPER.get(), REOBlocks.NETHER_IRON.get(), REOBlocks.NETHER_LAPIS.get(),
-                        REOBlocks.NETHER_NICKEL.get(), REOBlocks.NETHER_TIN.get(), REOBlocks.NETHER_ZINC.get(),
+                        REOBlocks.NETHER_COPPER_ORE.get(), REOBlocks.NETHER_IRON_ORE.get(), REOBlocks.NETHER_LAPIS_ORE.get(),
+                        REOBlocks.NETHER_NICKEL_ORE.get(), REOBlocks.NETHER_TIN_ORE.get(), REOBlocks.NETHER_ZINC_ORE.get(),
 
-                        REOBlocks.BLOCK_ALUMINIUM.get(), REOBlocks.BLOCK_NICKEL.get(),
-                        REOBlocks.BLOCK_TIN.get(), REOBlocks.BLOCK_ZINC.get(),
+                        REOBlocks.ALUMINUM_BLOCK.get(), REOBlocks.NICKEL_BLOCK.get(),
+                        REOBlocks.TIN_BLOCK.get(), REOBlocks.ZINC_BLOCK.get(),
 
-                        REOBlocks.BLOCK_RAW_ALUMINIUM.get(), REOBlocks.BLOCK_RAW_ENDERITE.get(), REOBlocks.BLOCK_RAW_LEAD.get(),
-                        REOBlocks.BLOCK_RAW_NICKEL.get(), REOBlocks.BLOCK_RAW_PLATINUM.get(), REOBlocks.BLOCK_RAW_SILVER.get(),
-                        REOBlocks.BLOCK_RAW_TIN.get(), REOBlocks.BLOCK_RAW_URANIUM.get(), REOBlocks.BLOCK_RAW_ZINC.get());
+                        REOBlocks.RAW_ALUMINIUM_BLOCK.get(), REOBlocks.RAW_ENDERITE_BLOCK.get(), REOBlocks.RAW_LEAD_BLOCK.get(),
+                        REOBlocks.RAW_NICKEL_BLOCK.get(), REOBlocks.RAW_PLATINUM_BLOCK.get(), REOBlocks.RAW_SILVER_BLOCK.get(),
+                        REOBlocks.RAW_TIN_BLOCK.get(), REOBlocks.RAW_URANIUM_BLOCK.get(), REOBlocks.RAW_ZINC_BLOCK.get());
 
         //this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
         //        .add(ModBlocks..get());
@@ -106,8 +106,8 @@ public class REOBlockTagGenerator extends BlockTagsProvider {
         this.tag(REOTags.Blocks.GENERATORS).add(REOBlocks.COAL_GENERATOR.get());
 
         this.tag(BlockTags.CROPS)
-                .add(REOBlocks.CROP_BARLEY.get(), REOBlocks.CROP_CAULIFLOWER.get(),
-                REOBlocks.CROP_ONIONS.get(), REOBlocks.CROP_RICE.get(), REOBlocks.CROP_TOMATO.get());
+                .add(REOBlocks.BARLEY_CROP.get(), REOBlocks.CAULIFLOWER_CROP.get(),
+                REOBlocks.ONIONS_CROP.get(), REOBlocks.RICE_CROP.get(), REOBlocks.TOMATO_CROP.get());
 
 
         this.tag(BlockTags.WALLS)
@@ -116,479 +116,512 @@ public class REOBlockTagGenerator extends BlockTagsProvider {
                         REOBlocks.CALCITE_WALL.get(), REOBlocks.NETHERRACK_WALL.get());
 
         this.tag(BlockTags.LOGS_THAT_BURN)
-                .add(REOBlocks.LOG_BALSA.get(), REOBlocks.WOOD_BALSA.get(), REOBlocks.LOG_BALSA_STRIPPED.get(),
-                        REOBlocks.WOOD_BALSA_STRIPPED.get(), REOBlocks.PLANKS_BALSA.get(), REOBlocks.STAIRS_BALSA.get(),
-                        REOBlocks.SLAB_BALSA.get(), REOBlocks.FENCE_BALSA.get(), REOBlocks.FENCE_GATE_BALSA.get(),
+                .add(REOBlocks.BALSA_LOG.get(), REOBlocks.BALSA_WOOD.get(), REOBlocks.STRIPPED_BALSA_LOG.get(),
+                        REOBlocks.STRIPPED_BALSA_WOOD.get(), REOBlocks.BALSA_PLANKS.get(), REOBlocks.BALSA_STAIRS.get(),
+                        REOBlocks.BALSA_SLAB.get(), REOBlocks.BALSA_FENCE.get(), REOBlocks.BALSA_FENCE_GATE.get(),
 
-                        REOBlocks.LOG_BAOBAB.get(), REOBlocks.WOOD_BAOBAB.get(), REOBlocks.LOG_BAOBAB_STRIPPED.get(),
-                        REOBlocks.WOOD_BAOBAB_STRIPPED.get(), REOBlocks.PLANKS_BAOBAB.get(), REOBlocks.STAIRS_BAOBAB.get(),
-                        REOBlocks.SLAB_BAOBAB.get(), REOBlocks.FENCE_BAOBAB.get(), REOBlocks.FENCE_GATE_BAOBAB.get(),
+                        REOBlocks.BAOBAB_LOG.get(), REOBlocks.BAOBAB_WOOD.get(), REOBlocks.STRIPPED_BAOBAB_LOG.get(),
+                        REOBlocks.STRIPPED_BAOBAB_WOOD.get(), REOBlocks.BAOBAB_PLANKS.get(), REOBlocks.BAOBAB_STAIRS.get(),
+                        REOBlocks.BAOBAB_SLAB.get(), REOBlocks.BAOBAB_FENCE.get(), REOBlocks.BAOBAB_FENCE_GATE.get(),
 
-                        REOBlocks.LOG_HILL_CHERRY.get(), REOBlocks.WOOD_HILL_CHERRY.get(), REOBlocks.LOG_HILL_CHERRY_STRIPPED.get(),
-                        REOBlocks.WOOD_HILL_CHERRY_STRIPPED.get(), REOBlocks.PLANKS_HILL_CHERRY.get(), REOBlocks.STAIRS_HILL_CHERRY.get(),
-                        REOBlocks.SLAB_HILL_CHERRY.get(), REOBlocks.FENCE_HILL_CHERRY.get(), REOBlocks.FENCE_GATE_HILL_CHERRY.get(),
+                        REOBlocks.HILL_CHERRY_LOG.get(), REOBlocks.HILL_CHERRY_WOOD.get(), REOBlocks.STRIPPED_HILL_CHERRY_LOG.get(),
+                        REOBlocks.STRIPPED_HILL_CHERRY_WOOD.get(), REOBlocks.HILL_CHERRY_PLANKS.get(), REOBlocks.HILL_CHERRY_STAIRS.get(),
+                        REOBlocks.HILL_CHERRY_SLAB.get(), REOBlocks.HILL_CHERRY_FENCE.get(), REOBlocks.HILL_CHERRY_FENCE_GATE.get(),
 
-                        REOBlocks.LOG_CHESTNUT.get(), REOBlocks.WOOD_CHESTNUT.get(), REOBlocks.LOG_CHESTNUT_STRIPPED.get(),
-                        REOBlocks.WOOD_CHESTNUT_STRIPPED.get(), REOBlocks.PLANKS_CHESTNUT.get(), REOBlocks.STAIRS_CHESTNUT.get(),
-                        REOBlocks.SLAB_CHESTNUT.get(), REOBlocks.FENCE_CHESTNUT.get(), REOBlocks.FENCE_GATE_CHESTNUT.get(),
+                        REOBlocks.CHESTNUT_LOG.get(), REOBlocks.CHESTNUT_WOOD.get(), REOBlocks.STRIPPED_CHESTNUT_LOG.get(),
+                        REOBlocks.STRIPPED_CHESTNUT_WOOD.get(), REOBlocks.CHESTNUT_PLANKS.get(), REOBlocks.CHESTNUT_STAIRS.get(),
+                        REOBlocks.CHESTNUT_SLAB.get(), REOBlocks.CHESTNUT_FENCE.get(), REOBlocks.CHESTNUT_FENCE_GATE.get(),
 
-                        REOBlocks.LOG_CITRUS.get(), REOBlocks.WOOD_CITRUS.get(), REOBlocks.LOG_CITRUS_STRIPPED.get(),
-                        REOBlocks.WOOD_CITRUS_STRIPPED.get(), REOBlocks.PLANKS_CITRUS.get(), REOBlocks.STAIRS_CITRUS.get(),
-                        REOBlocks.SLAB_CITRUS.get(), REOBlocks.FENCE_CITRUS.get(), REOBlocks.FENCE_GATE_CITRUS.get(),
+                        REOBlocks.CITRUS_LOG.get(), REOBlocks.CITRUS_WOOD.get(), REOBlocks.STRIPPED_CITRUS_LOG.get(),
+                        REOBlocks.STRIPPED_CITRUS_WOOD.get(), REOBlocks.CITRUS_PLANKS.get(), REOBlocks.CITRUS_STAIRS.get(),
+                        REOBlocks.CITRUS_SLAB.get(), REOBlocks.CITRUS_FENCE.get(), REOBlocks.CITRUS_FENCE_GATE.get(),
 
-                        REOBlocks.LOG_EBONY.get(), REOBlocks.WOOD_EBONY.get(), REOBlocks.LOG_EBONY_STRIPPED.get(),
-                        REOBlocks.WOOD_EBONY_STRIPPED.get(), REOBlocks.PLANKS_EBONY.get(), REOBlocks.STAIRS_EBONY.get(),
-                        REOBlocks.SLAB_EBONY.get(), REOBlocks.FENCE_EBONY.get(), REOBlocks.FENCE_GATE_EBONY.get(),
+                        REOBlocks.EBONY_LOG.get(), REOBlocks.EBONY_WOOD.get(), REOBlocks.STRIPPED_EBONY_LOG.get(),
+                        REOBlocks.STRIPPED_EBONY_WOOD.get(), REOBlocks.EBONY_PLANKS.get(), REOBlocks.EBONY_STAIRS.get(),
+                        REOBlocks.EBONY_SLAB.get(), REOBlocks.EBONY_FENCE.get(), REOBlocks.EBONY_FENCE_GATE.get(),
 
-                        REOBlocks.LOG_LARCH.get(), REOBlocks.WOOD_LARCH.get(), REOBlocks.LOG_LARCH_STRIPPED.get(),
-                        REOBlocks.WOOD_LARCH_STRIPPED.get(), REOBlocks.PLANKS_LARCH.get(), REOBlocks.STAIRS_LARCH.get(),
-                        REOBlocks.SLAB_LARCH.get(), REOBlocks.FENCE_LARCH.get(), REOBlocks.FENCE_GATE_LARCH.get(),
+                        REOBlocks.LARCH_LOG.get(), REOBlocks.LARCH_WOOD.get(), REOBlocks.STRIPPED_LARCH_LOG.get(),
+                        REOBlocks.STRIPPED_LARCH_WOOD.get(), REOBlocks.LARCH_PLANKS.get(), REOBlocks.LARCH_STAIRS.get(),
+                        REOBlocks.LARCH_SLAB.get(), REOBlocks.LARCH_FENCE.get(), REOBlocks.LARCH_FENCE_GATE.get(),
 
-                        REOBlocks.LOG_LIME.get(), REOBlocks.WOOD_LIME.get(), REOBlocks.LOG_LIME_STRIPPED.get(),
-                        REOBlocks.WOOD_LIME_STRIPPED.get(), REOBlocks.PLANKS_LIME.get(), REOBlocks.STAIRS_LIME.get(),
-                        REOBlocks.SLAB_LIME.get(), REOBlocks.FENCE_LIME.get(), REOBlocks.FENCE_GATE_LIME.get(),
+                        REOBlocks.LIME_LOG.get(), REOBlocks.LIME_WOOD.get(), REOBlocks.STRIPPED_LIME_LOG.get(),
+                        REOBlocks.STRIPPED_LIME_WOOD.get(), REOBlocks.LIME_PLANKS.get(), REOBlocks.LIME_STAIRS.get(),
+                        REOBlocks.LIME_SLAB.get(), REOBlocks.LIME_FENCE.get(), REOBlocks.LIME_FENCE_GATE.get(),
 
-                        REOBlocks.LOG_MAHOGANY.get(), REOBlocks.WOOD_MAHOGANY.get(), REOBlocks.LOG_MAHOGANY_STRIPPED.get(),
-                        REOBlocks.WOOD_MAHOGANY_STRIPPED.get(), REOBlocks.PLANKS_MAHOGANY.get(), REOBlocks.STAIRS_MAHOGANY.get(),
-                        REOBlocks.SLAB_MAHOGANY.get(), REOBlocks.FENCE_MAHOGANY.get(), REOBlocks.FENCE_GATE_MAHOGANY.get(),
+                        REOBlocks.MAHOGANY_LOG.get(), REOBlocks.MAHOGANY_WOOD.get(), REOBlocks.STRIPPED_MAHOGANY_LOG.get(),
+                        REOBlocks.STRIPPED_MAHOGANY_WOOD.get(), REOBlocks.MAHOGANY_PLANKS.get(), REOBlocks.MAHOGANY_STAIRS.get(),
+                        REOBlocks.MAHOGANY_SLAB.get(), REOBlocks.MAHOGANY_FENCE.get(), REOBlocks.MAHOGANY_FENCE_GATE.get(),
 
-                        REOBlocks.LOG_MAPLE.get(), REOBlocks.WOOD_MAPLE.get(), REOBlocks.LOG_MAPLE_STRIPPED.get(),
-                        REOBlocks.WOOD_MAPLE_STRIPPED.get(), REOBlocks.PLANKS_MAPLE.get(), REOBlocks.STAIRS_MAPLE.get(),
-                        REOBlocks.SLAB_MAPLE.get(), REOBlocks.FENCE_MAPLE.get(), REOBlocks.FENCE_GATE_MAPLE.get(),
+                        REOBlocks.MAPLE_LOG.get(), REOBlocks.MAPLE_WOOD.get(), REOBlocks.STRIPPED_MAPLE_LOG.get(),
+                        REOBlocks.STRIPPED_MAPLE_WOOD.get(), REOBlocks.MAPLE_PLANKS.get(), REOBlocks.MAPLE_STAIRS.get(),
+                        REOBlocks.MAPLE_SLAB.get(), REOBlocks.MAPLE_FENCE.get(), REOBlocks.MAPLE_FENCE_GATE.get(),
 
-                        REOBlocks.LOG_PALM.get(), REOBlocks.WOOD_PALM.get(), REOBlocks.LOG_PALM_STRIPPED.get(),
-                        REOBlocks.WOOD_PALM_STRIPPED.get(), REOBlocks.PLANKS_PALM.get(), REOBlocks.STAIRS_PALM.get(),
-                        REOBlocks.SLAB_PALM.get(), REOBlocks.FENCE_PALM.get(), REOBlocks.FENCE_GATE_PALM.get(),
+                        REOBlocks.PALM_LOG.get(), REOBlocks.PALM_WOOD.get(), REOBlocks.STRIPPED_PALM_LOG.get(),
+                        REOBlocks.STRIPPED_PALM_WOOD.get(), REOBlocks.PALM_PLANKS.get(), REOBlocks.PALM_STAIRS.get(),
+                        REOBlocks.PALM_SLAB.get(), REOBlocks.PALM_FENCE.get(), REOBlocks.PALM_FENCE_GATE.get(),
 
-                        REOBlocks.LOG_PAPAYA.get(), REOBlocks.WOOD_PAPAYA.get(), REOBlocks.LOG_PAPAYA_STRIPPED.get(),
-                        REOBlocks.WOOD_PAPAYA_STRIPPED.get(), REOBlocks.PLANKS_PAPAYA.get(), REOBlocks.STAIRS_PAPAYA.get(),
-                        REOBlocks.SLAB_PAPAYA.get(), REOBlocks.FENCE_PAPAYA.get(), REOBlocks.FENCE_GATE_PAPAYA.get(),
+                        REOBlocks.PAPAYA_LOG.get(), REOBlocks.PAPAYA_WOOD.get(), REOBlocks.STRIPPED_PAPAYA_LOG.get(),
+                        REOBlocks.STRIPPED_PAPAYA_WOOD.get(), REOBlocks.PAPAYA_PLANKS.get(), REOBlocks.PAPAYA_STAIRS.get(),
+                        REOBlocks.PAPAYA_SLAB.get(), REOBlocks.PAPAYA_FENCE.get(), REOBlocks.PAPAYA_FENCE_GATE.get(),
 
-                        REOBlocks.LOG_PINE.get(), REOBlocks.WOOD_PINE.get(), REOBlocks.LOG_PINE_STRIPPED.get(),
-                        REOBlocks.WOOD_PINE_STRIPPED.get(), REOBlocks.PLANKS_PINE.get(), REOBlocks.STAIRS_PINE.get(),
-                        REOBlocks.SLAB_PINE.get(), REOBlocks.FENCE_PINE.get(), REOBlocks.FENCE_GATE_PINE.get(),
+                        REOBlocks.PINE_LOG.get(), REOBlocks.PINE_WOOD.get(), REOBlocks.STRIPPED_PINE_LOG.get(),
+                        REOBlocks.STRIPPED_PINE_WOOD.get(), REOBlocks.PINE_PLANKS.get(), REOBlocks.PINE_STAIRS.get(),
+                        REOBlocks.PINE_SLAB.get(), REOBlocks.PINE_FENCE.get(), REOBlocks.PINE_FENCE_GATE.get(),
 
-                        REOBlocks.LOG_PLUM.get(), REOBlocks.WOOD_PLUM.get(), REOBlocks.LOG_PLUM_STRIPPED.get(),
-                        REOBlocks.WOOD_PLUM_STRIPPED.get(), REOBlocks.PLANKS_PLUM.get(), REOBlocks.STAIRS_PLUM.get(),
-                        REOBlocks.SLAB_PLUM.get(), REOBlocks.FENCE_PLUM.get(), REOBlocks.FENCE_GATE_PLUM.get(),
+                        REOBlocks.PLUM_LOG.get(), REOBlocks.PLUM_WOOD.get(), REOBlocks.STRIPPED_PLUM_LOG.get(),
+                        REOBlocks.STRIPPED_PLUM_WOOD.get(), REOBlocks.PLUM_PLANKS.get(), REOBlocks.PLUM_STAIRS.get(),
+                        REOBlocks.PLUM_SLAB.get(), REOBlocks.PLUM_FENCE.get(), REOBlocks.PLUM_FENCE_GATE.get(),
 
-                        REOBlocks.LOG_POPLAR.get(), REOBlocks.WOOD_POPLAR.get(), REOBlocks.LOG_POPLAR_STRIPPED.get(),
-                        REOBlocks.WOOD_POPLAR_STRIPPED.get(), REOBlocks.PLANKS_POPLAR.get(), REOBlocks.STAIRS_POPLAR.get(),
-                        REOBlocks.SLAB_POPLAR.get(), REOBlocks.FENCE_POPLAR.get(), REOBlocks.FENCE_GATE_POPLAR.get(),
+                        REOBlocks.POPLAR_LOG.get(), REOBlocks.POPLAR_WOOD.get(), REOBlocks.STRIPPED_POPLAR_LOG.get(),
+                        REOBlocks.STRIPPED_POPLAR_WOOD.get(), REOBlocks.POPLAR_PLANKS.get(), REOBlocks.POPLAR_STAIRS.get(),
+                        REOBlocks.POPLAR_SLAB.get(), REOBlocks.POPLAR_FENCE.get(), REOBlocks.POPLAR_FENCE_GATE.get(),
 
-                        REOBlocks.LOG_REDWOOD.get(), REOBlocks.WOOD_REDWOOD.get(), REOBlocks.LOG_REDWOOD_STRIPPED.get(),
-                        REOBlocks.WOOD_REDWOOD_STRIPPED.get(), REOBlocks.PLANKS_REDWOOD.get(), REOBlocks.STAIRS_REDWOOD.get(),
-                        REOBlocks.SLAB_REDWOOD.get(), REOBlocks.FENCE_REDWOOD.get(), REOBlocks.FENCE_GATE_REDWOOD.get(),
+                        REOBlocks.REDWOOD_LOG.get(), REOBlocks.REDWOOD_WOOD.get(), REOBlocks.STRIPPED_REDWOOD_LOG.get(),
+                        REOBlocks.STRIPPED_REDWOOD_WOOD.get(), REOBlocks.REDWOOD_PLANKS.get(), REOBlocks.REDWOOD_STAIRS.get(),
+                        REOBlocks.REDWOOD_SLAB.get(), REOBlocks.REDWOOD_FENCE.get(), REOBlocks.REDWOOD_FENCE_GATE.get(),
 
-                        REOBlocks.LOG_RUBBER.get(), REOBlocks.WOOD_RUBBER.get(), REOBlocks.LOG_RUBBER_STRIPPED.get(),
-                        REOBlocks.WOOD_RUBBER_STRIPPED.get(), REOBlocks.PLANKS_RUBBER.get(), REOBlocks.STAIRS_RUBBER.get(),
-                        REOBlocks.SLAB_RUBBER.get(), REOBlocks.FENCE_RUBBER.get(), REOBlocks.FENCE_GATE_RUBBER.get(),
+                        REOBlocks.RUBBER_LOG.get(), REOBlocks.RUBBER_LOG_SAP.get(), REOBlocks.RUBBER_WOOD.get(),
+                        REOBlocks.RUBBER_WOOD_SAP.get(), REOBlocks.STRIPPED_RUBBER_LOG.get(),
+                        REOBlocks.STRIPPED_RUBBER_WOOD.get(), REOBlocks.RUBBER_PLANKS.get(), REOBlocks.RUBBER_STAIRS.get(),
+                        REOBlocks.RUBBER_SLAB.get(), REOBlocks.RUBBER_FENCE.get(), REOBlocks.RUBBER_FENCE_GATE.get(),
 
-                        REOBlocks.LOG_WALNUT.get(), REOBlocks.WOOD_WALNUT.get(), REOBlocks.LOG_WALNUT_STRIPPED.get(),
-                        REOBlocks.WOOD_WALNUT_STRIPPED.get(), REOBlocks.PLANKS_WALNUT.get(), REOBlocks.STAIRS_WALNUT.get(),
-                        REOBlocks.SLAB_WALNUT.get(), REOBlocks.FENCE_WALNUT.get(), REOBlocks.FENCE_GATE_WALNUT.get(),
+                        REOBlocks.TEAK_LOG.get(), REOBlocks.TEAK_WOOD.get(), REOBlocks.STRIPPED_TEAK_LOG.get(),
+                        REOBlocks.STRIPPED_TEAK_WOOD.get(), REOBlocks.TEAK_PLANKS.get(), REOBlocks.TEAK_STAIRS.get(),
+                        REOBlocks.TEAK_SLAB.get(), REOBlocks.TEAK_FENCE.get(), REOBlocks.TEAK_FENCE_GATE.get(),
 
-                        REOBlocks.LOG_WILLOW.get(), REOBlocks.WOOD_WILLOW.get(), REOBlocks.LOG_WILLOW_STRIPPED.get(),
-                        REOBlocks.WOOD_WILLOW_STRIPPED.get(), REOBlocks.PLANKS_WILLOW.get(), REOBlocks.STAIRS_WILLOW.get(),
-                        REOBlocks.SLAB_WILLOW.get(), REOBlocks.FENCE_WILLOW.get(), REOBlocks.FENCE_GATE_WILLOW.get());
+                        REOBlocks.WALNUT_LOG.get(), REOBlocks.WALNUT_WOOD.get(), REOBlocks.STRIPPED_WALNUT_LOG.get(),
+                        REOBlocks.STRIPPED_WALNUT_WOOD.get(), REOBlocks.WALNUT_PLANKS.get(), REOBlocks.WALNUT_STAIRS.get(),
+                        REOBlocks.WALNUT_SLAB.get(), REOBlocks.WALNUT_FENCE.get(), REOBlocks.WALNUT_FENCE_GATE.get(),
+
+                        REOBlocks.WILLOW_LOG.get(), REOBlocks.WILLOW_WOOD.get(), REOBlocks.STRIPPED_WILLOW_LOG.get(),
+                        REOBlocks.STRIPPED_WILLOW_WOOD.get(), REOBlocks.WILLOW_PLANKS.get(), REOBlocks.WILLOW_STAIRS.get(),
+                        REOBlocks.WILLOW_SLAB.get(), REOBlocks.WILLOW_FENCE.get(), REOBlocks.WILLOW_FENCE_GATE.get());
 
         this.tag(BlockTags.PLANKS)
-                .add(REOBlocks.PLANKS_BALSA.get(), REOBlocks.PLANKS_BAOBAB.get(), REOBlocks.PLANKS_HILL_CHERRY.get(), REOBlocks.PLANKS_CHESTNUT.get(),
-                        REOBlocks.PLANKS_CITRUS.get(), REOBlocks.PLANKS_EBONY.get(), REOBlocks.PLANKS_LARCH.get(), REOBlocks.PLANKS_LIME.get(),
-                        REOBlocks.PLANKS_MAHOGANY.get(), REOBlocks.PLANKS_MAPLE.get(), REOBlocks.PLANKS_PALM.get(), REOBlocks.PLANKS_PAPAYA.get(),
-                        REOBlocks.PLANKS_PINE.get(), REOBlocks.PLANKS_PLUM.get(), REOBlocks.PLANKS_POPLAR.get(), REOBlocks.PLANKS_REDWOOD.get(),
-                        REOBlocks.PLANKS_RUBBER.get(), REOBlocks.PLANKS_TEAK.get(), REOBlocks.PLANKS_WALNUT.get(), REOBlocks.PLANKS_WILLOW.get(),
+                .add(REOBlocks.BALSA_PLANKS.get(), REOBlocks.BAOBAB_PLANKS.get(), REOBlocks.HILL_CHERRY_PLANKS.get(), REOBlocks.CHESTNUT_PLANKS.get(),
+                        REOBlocks.CITRUS_PLANKS.get(), REOBlocks.EBONY_PLANKS.get(), REOBlocks.LARCH_PLANKS.get(), REOBlocks.LIME_PLANKS.get(),
+                        REOBlocks.MAHOGANY_PLANKS.get(), REOBlocks.MAPLE_PLANKS.get(), REOBlocks.PALM_PLANKS.get(), REOBlocks.PAPAYA_PLANKS.get(),
+                        REOBlocks.PINE_PLANKS.get(), REOBlocks.PLUM_PLANKS.get(), REOBlocks.POPLAR_PLANKS.get(), REOBlocks.REDWOOD_PLANKS.get(),
+                        REOBlocks.RUBBER_PLANKS.get(), REOBlocks.TEAK_PLANKS.get(), REOBlocks.WALNUT_PLANKS.get(), REOBlocks.WILLOW_PLANKS.get(),
 
-                        REOBlocks.PLANKS_BALSA_RESISTANT.get(), REOBlocks.PLANKS_BAOBAB_RESISTANT.get(), REOBlocks.PLANKS_HILL_CHERRY_RESISTANT.get(),
-                        REOBlocks.PLANKS_CHESTNUT_RESISTANT.get(), REOBlocks.PLANKS_CITRUS_RESISTANT.get(), REOBlocks.PLANKS_EBONY_RESISTANT.get(),
-                        REOBlocks.PLANKS_LARCH_RESISTANT.get(), REOBlocks.PLANKS_LIME_RESISTANT.get(), REOBlocks.PLANKS_MAHOGANY_RESISTANT.get(),
-                        REOBlocks.PLANKS_MAPLE_RESISTANT.get(), REOBlocks.PLANKS_PALM_RESISTANT.get(), REOBlocks.PLANKS_PAPAYA_RESISTANT.get(),
-                        REOBlocks.PLANKS_PINE_RESISTANT.get(), REOBlocks.PLANKS_PLUM_RESISTANT.get(), REOBlocks.PLANKS_POPLAR_RESISTANT.get(),
-                        REOBlocks.PLANKS_REDWOOD_RESISTANT.get(), REOBlocks.PLANKS_RUBBER_RESISTANT.get(), REOBlocks.PLANKS_TEAK_RESISTANT.get(),
-                        REOBlocks.PLANKS_WALNUT_RESISTANT.get(), REOBlocks.PLANKS_WILLOW_RESISTANT.get(),
+                        REOBlocks.RESISTANT_BALSA_PLANKS.get(), REOBlocks.RESISTANT_BAOBAB_PLANKS.get(), REOBlocks.RESISTANT_HILL_CHERRY_PLANKS.get(),
+                        REOBlocks.RESISTANT_CHESTNUT_PLANKS.get(), REOBlocks.RESISTANT_CITRUS_PLANKS.get(), REOBlocks.RESISTANT_EBONY_PLANKS.get(),
+                        REOBlocks.RESISTANT_LARCH_PLANKS.get(), REOBlocks.RESISTANT_LIME_PLANKS.get(), REOBlocks.RESISTANT_MAHOGANY_PLANKS.get(),
+                        REOBlocks.RESISTANT_MAPLE_PLANKS.get(), REOBlocks.RESISTANT_PALM_PLANKS.get(), REOBlocks.RESISTANT_PAPAYA_PLANKS.get(),
+                        REOBlocks.RESISTANT_PINE_PLANKS.get(), REOBlocks.RESISTANT_PLUM_PLANKS.get(), REOBlocks.RESISTANT_POPLAR_PLANKS.get(),
+                        REOBlocks.RESISTANT_REDWOOD_PLANKS.get(), REOBlocks.RESISTANT_RUBBER_PLANKS.get(), REOBlocks.RESISTANT_TEAK_PLANKS.get(),
+                        REOBlocks.RESISTANT_WALNUT_PLANKS.get(), REOBlocks.RESISTANT_WILLOW_PLANKS.get(),
 
-                        REOBlocks.PLANKS_OAK_RESISTANT.get(), REOBlocks.PLANKS_SPRUCE_RESISTANT.get(), REOBlocks.PLANKS_BIRCH_RESISTANT.get(),
-                        REOBlocks.PLANKS_JUNGLE_RESISTANT.get(), REOBlocks.PLANKS_ACACIA_RESISTANT.get(), REOBlocks.PLANKS_DARK_OAK_RESISTANT.get(),
-                        REOBlocks.PLANKS_MANGROVE_RESISTANT.get(), REOBlocks.PLANKS_CHESTNUT.get()
+                        REOBlocks.RESISTANT_OAK_PLANKS.get(), REOBlocks.RESISTANT_SPRUCE_PLANKS.get(), REOBlocks.RESISTANT_BIRCH_PLANKS.get(),
+                        REOBlocks.RESISTANT_JUNGLE_PLANKS.get(), REOBlocks.RESISTANT_ACACIA_PLANKS.get(), REOBlocks.RESISTANT_DARK_OAK_PLANKS.get(),
+                        REOBlocks.RESISTANT_MANGROVE_PLANKS.get(), REOBlocks.CHESTNUT_PLANKS.get()
 
                 );
 
         this.tag(BlockTags.WOODEN_SLABS)
-                .add(REOBlocks.SLAB_BALSA.get(), REOBlocks.SLAB_BAOBAB.get(), REOBlocks.SLAB_HILL_CHERRY.get(), REOBlocks.SLAB_CHESTNUT.get(),
-                        REOBlocks.SLAB_CITRUS.get(), REOBlocks.SLAB_EBONY.get(), REOBlocks.SLAB_LARCH.get(), REOBlocks.SLAB_LIME.get(),
-                        REOBlocks.SLAB_MAHOGANY.get(), REOBlocks.SLAB_MAPLE.get(), REOBlocks.SLAB_PALM.get(), REOBlocks.SLAB_PAPAYA.get(),
-                        REOBlocks.SLAB_PINE.get(), REOBlocks.SLAB_PLUM.get(), REOBlocks.SLAB_POPLAR.get(), REOBlocks.SLAB_REDWOOD.get(),
-                        REOBlocks.SLAB_RUBBER.get(), REOBlocks.SLAB_TEAK.get(), REOBlocks.SLAB_WALNUT.get(), REOBlocks.SLAB_WILLOW.get(),
+                .add(REOBlocks.BALSA_SLAB.get(), REOBlocks.BAOBAB_SLAB.get(), REOBlocks.HILL_CHERRY_SLAB.get(), REOBlocks.CHESTNUT_SLAB.get(),
+                        REOBlocks.CITRUS_SLAB.get(), REOBlocks.EBONY_SLAB.get(), REOBlocks.LARCH_SLAB.get(), REOBlocks.LIME_SLAB.get(),
+                        REOBlocks.MAHOGANY_SLAB.get(), REOBlocks.MAPLE_SLAB.get(), REOBlocks.PALM_SLAB.get(), REOBlocks.PAPAYA_SLAB.get(),
+                        REOBlocks.PINE_SLAB.get(), REOBlocks.PLUM_SLAB.get(), REOBlocks.POPLAR_SLAB.get(), REOBlocks.REDWOOD_SLAB.get(),
+                        REOBlocks.RUBBER_SLAB.get(), REOBlocks.TEAK_SLAB.get(), REOBlocks.WALNUT_SLAB.get(), REOBlocks.WILLOW_SLAB.get(),
 
-                        REOBlocks.SLAB_BALSA_RESISTANT.get(), REOBlocks.SLAB_BAOBAB_RESISTANT.get(), REOBlocks.SLAB_HILL_CHERRY_RESISTANT.get(),
-                        REOBlocks.SLAB_CHESTNUT_RESISTANT.get(), REOBlocks.SLAB_CITRUS_RESISTANT.get(), REOBlocks.SLAB_EBONY_RESISTANT.get(),
-                        REOBlocks.SLAB_LARCH_RESISTANT.get(), REOBlocks.SLAB_LIME_RESISTANT.get(), REOBlocks.SLAB_MAHOGANY_RESISTANT.get(),
-                        REOBlocks.SLAB_MAPLE_RESISTANT.get(), REOBlocks.SLAB_PALM_RESISTANT.get(), REOBlocks.SLAB_PAPAYA_RESISTANT.get(),
-                        REOBlocks.SLAB_PINE_RESISTANT.get(), REOBlocks.SLAB_PLUM_RESISTANT.get(), REOBlocks.SLAB_POPLAR_RESISTANT.get(),
-                        REOBlocks.SLAB_REDWOOD_RESISTANT.get(), REOBlocks.SLAB_RUBBER_RESISTANT.get(), REOBlocks.SLAB_TEAK_RESISTANT.get(),
-                        REOBlocks.SLAB_WALNUT_RESISTANT.get(), REOBlocks.SLAB_WILLOW_RESISTANT.get(),
-                        REOBlocks.SLAB_OAK_RESISTANT.get(), REOBlocks.SLAB_SPRUCE_RESISTANT.get(), REOBlocks.SLAB_BIRCH_RESISTANT.get(),
-                        REOBlocks.SLAB_JUNGLE_RESISTANT.get(), REOBlocks.SLAB_ACACIA_RESISTANT.get(), REOBlocks.SLAB_DARK_OAK_RESISTANT.get(),
-                        REOBlocks.SLAB_MANGROVE_RESISTANT.get(), REOBlocks.SLAB_CHESTNUT.get()
+                        REOBlocks.RESISTANT_BALSA_SLAB.get(), REOBlocks.RESISTANT_BAOBAB_SLAB.get(), REOBlocks.RESISTANT_HILL_CHERRY_SLAB.get(),
+                        REOBlocks.RESISTANT_CHESTNUT_SLAB.get(), REOBlocks.RESISTANT_CITRUS_SLAB.get(), REOBlocks.RESISTANT_EBONY_SLAB.get(),
+                        REOBlocks.RESISTANT_LARCH_SLAB.get(), REOBlocks.RESISTANT_LIME_SLAB.get(), REOBlocks.RESISTANT_MAHOGANY_SLAB.get(),
+                        REOBlocks.RESISTANT_MAPLE_SLAB.get(), REOBlocks.RESISTANT_PALM_SLAB.get(), REOBlocks.RESISTANT_PAPAYA_SLAB.get(),
+                        REOBlocks.RESISTANT_PINE_SLAB.get(), REOBlocks.RESISTANT_PLUM_SLAB.get(), REOBlocks.RESISTANT_POPLAR_SLAB.get(),
+                        REOBlocks.RESISTANT_REDWOOD_SLAB.get(), REOBlocks.RESISTANT_RUBBER_SLAB.get(), REOBlocks.RESISTANT_TEAK_SLAB.get(),
+                        REOBlocks.RESISTANT_WALNUT_SLAB.get(), REOBlocks.RESISTANT_WILLOW_SLAB.get(),
+
+                        REOBlocks.RESISTANT_OAK_SLAB.get(), REOBlocks.RESISTANT_SPRUCE_SLAB.get(), REOBlocks.RESISTANT_BIRCH_SLAB.get(),
+                        REOBlocks.RESISTANT_JUNGLE_SLAB.get(), REOBlocks.RESISTANT_ACACIA_SLAB.get(), REOBlocks.RESISTANT_DARK_OAK_SLAB.get(),
+                        REOBlocks.RESISTANT_MANGROVE_SLAB.get(), REOBlocks.CHESTNUT_SLAB.get()
 
                 );
 
         this.tag(BlockTags.WOODEN_STAIRS)
-                .add(REOBlocks.STAIRS_BALSA.get(), REOBlocks.STAIRS_BAOBAB.get(), REOBlocks.STAIRS_HILL_CHERRY.get(), REOBlocks.STAIRS_CHESTNUT.get(),
-                        REOBlocks.STAIRS_CITRUS.get(), REOBlocks.STAIRS_EBONY.get(), REOBlocks.STAIRS_LARCH.get(), REOBlocks.STAIRS_LIME.get(),
-                        REOBlocks.STAIRS_MAHOGANY.get(), REOBlocks.STAIRS_MAPLE.get(), REOBlocks.STAIRS_PALM.get(), REOBlocks.STAIRS_PAPAYA.get(),
-                        REOBlocks.STAIRS_PINE.get(), REOBlocks.STAIRS_PLUM.get(), REOBlocks.STAIRS_POPLAR.get(), REOBlocks.STAIRS_REDWOOD.get(),
-                        REOBlocks.STAIRS_RUBBER.get(), REOBlocks.STAIRS_TEAK.get(), REOBlocks.STAIRS_WALNUT.get(), REOBlocks.STAIRS_WILLOW.get(),
+                .add(REOBlocks.BALSA_STAIRS.get(), REOBlocks.BAOBAB_STAIRS.get(), REOBlocks.HILL_CHERRY_STAIRS.get(), REOBlocks.CHESTNUT_STAIRS.get(),
+                        REOBlocks.CITRUS_STAIRS.get(), REOBlocks.EBONY_STAIRS.get(), REOBlocks.LARCH_STAIRS.get(), REOBlocks.LIME_STAIRS.get(),
+                        REOBlocks.MAHOGANY_STAIRS.get(), REOBlocks.MAPLE_STAIRS.get(), REOBlocks.PALM_STAIRS.get(), REOBlocks.PAPAYA_STAIRS.get(),
+                        REOBlocks.PINE_STAIRS.get(), REOBlocks.PLUM_STAIRS.get(), REOBlocks.POPLAR_STAIRS.get(), REOBlocks.REDWOOD_STAIRS.get(),
+                        REOBlocks.RUBBER_STAIRS.get(), REOBlocks.TEAK_STAIRS.get(), REOBlocks.WALNUT_STAIRS.get(), REOBlocks.WILLOW_STAIRS.get(),
 
-                        REOBlocks.STAIRS_BALSA_RESISTANT.get(), REOBlocks.STAIRS_BAOBAB_RESISTANT.get(), REOBlocks.STAIRS_HILL_CHERRY_RESISTANT.get(),
-                        REOBlocks.STAIRS_CHESTNUT_RESISTANT.get(), REOBlocks.STAIRS_CITRUS_RESISTANT.get(), REOBlocks.STAIRS_EBONY_RESISTANT.get(),
-                        REOBlocks.STAIRS_LARCH_RESISTANT.get(), REOBlocks.STAIRS_LIME_RESISTANT.get(), REOBlocks.STAIRS_MAHOGANY_RESISTANT.get(),
-                        REOBlocks.STAIRS_MAPLE_RESISTANT.get(), REOBlocks.STAIRS_PALM_RESISTANT.get(), REOBlocks.STAIRS_PAPAYA_RESISTANT.get(),
-                        REOBlocks.STAIRS_PINE_RESISTANT.get(), REOBlocks.STAIRS_PLUM_RESISTANT.get(), REOBlocks.STAIRS_POPLAR_RESISTANT.get(),
-                        REOBlocks.STAIRS_REDWOOD_RESISTANT.get(), REOBlocks.STAIRS_RUBBER_RESISTANT.get(), REOBlocks.STAIRS_TEAK_RESISTANT.get(),
-                        REOBlocks.STAIRS_WALNUT_RESISTANT.get(), REOBlocks.STAIRS_WILLOW_RESISTANT.get(),
-                        REOBlocks.STAIRS_OAK_RESISTANT.get(), REOBlocks.STAIRS_SPRUCE_RESISTANT.get(), REOBlocks.STAIRS_BIRCH_RESISTANT.get(),
-                        REOBlocks.STAIRS_JUNGLE_RESISTANT.get(), REOBlocks.STAIRS_ACACIA_RESISTANT.get(), REOBlocks.STAIRS_DARK_OAK_RESISTANT.get(),
-                        REOBlocks.STAIRS_MANGROVE_RESISTANT.get(), REOBlocks.STAIRS_CHESTNUT.get()
+                        REOBlocks.RESISTANT_BALSA_STAIRS.get(), REOBlocks.RESISTANT_BAOBAB_STAIRS.get(), REOBlocks.RESISTANT_HILL_CHERRY_STAIRS.get(),
+                        REOBlocks.RESISTANT_CHESTNUT_STAIRS.get(), REOBlocks.RESISTANT_CITRUS_STAIRS.get(), REOBlocks.RESISTANT_EBONY_STAIRS.get(),
+                        REOBlocks.RESISTANT_LARCH_STAIRS.get(), REOBlocks.RESISTANT_LIME_STAIRS.get(), REOBlocks.RESISTANT_MAHOGANY_STAIRS.get(),
+                        REOBlocks.RESISTANT_MAPLE_STAIRS.get(), REOBlocks.RESISTANT_PALM_STAIRS.get(), REOBlocks.RESISTANT_PAPAYA_STAIRS.get(),
+                        REOBlocks.RESISTANT_PINE_STAIRS.get(), REOBlocks.RESISTANT_PLUM_STAIRS.get(), REOBlocks.RESISTANT_POPLAR_STAIRS.get(),
+                        REOBlocks.RESISTANT_REDWOOD_STAIRS.get(), REOBlocks.RESISTANT_RUBBER_STAIRS.get(), REOBlocks.RESISTANT_TEAK_STAIRS.get(),
+                        REOBlocks.RESISTANT_WALNUT_STAIRS.get(), REOBlocks.RESISTANT_WILLOW_STAIRS.get(),
+
+                        REOBlocks.RESISTANT_OAK_STAIRS.get(), REOBlocks.RESISTANT_SPRUCE_STAIRS.get(), REOBlocks.RESISTANT_BIRCH_STAIRS.get(),
+                        REOBlocks.RESISTANT_JUNGLE_STAIRS.get(), REOBlocks.RESISTANT_ACACIA_STAIRS.get(), REOBlocks.RESISTANT_DARK_OAK_STAIRS.get(),
+                        REOBlocks.RESISTANT_MANGROVE_STAIRS.get(), REOBlocks.CHESTNUT_STAIRS.get()
 
                 );
 
         this.tag(BlockTags.ALL_SIGNS)
-                .add(REOBlocks.SIGN_BALSA.get(), REOBlocks.SIGN_BAOBAB.get(),  REOBlocks.SIGN_HILL_CHERRY.get(), REOBlocks.SIGN_CHESTNUT.get(),
-                        REOBlocks.SIGN_CITRUS.get(), REOBlocks.SIGN_EBONY.get(), REOBlocks.SIGN_LARCH.get(),
-                        REOBlocks.SIGN_LIME.get(), REOBlocks.SIGN_MAHOGANY.get(), REOBlocks.SIGN_MAPLE.get(),
-                        REOBlocks.SIGN_PALM.get(), REOBlocks.SIGN_PAPAYA.get(), REOBlocks.SIGN_PINE.get(),
-                        REOBlocks.SIGN_PLUM.get(), REOBlocks.SIGN_POPLAR.get(), REOBlocks.SIGN_REDWOOD.get(),
-                        REOBlocks.SIGN_RUBBER.get(), REOBlocks.SIGN_TEAK.get(), REOBlocks.SIGN_WALNUT.get(),
-                        REOBlocks.SIGN_WILLOW.get());
+                .add(REOBlocks.BALSA_SIGN.get(), REOBlocks.BAOBAB_SIGN.get(), REOBlocks.HILL_CHERRY_SIGN.get(), REOBlocks.CHESTNUT_SIGN.get(),
+                        REOBlocks.CITRUS_SIGN.get(), REOBlocks.EBONY_SIGN.get(), REOBlocks.LARCH_SIGN.get(), REOBlocks.LIME_SIGN.get(),
+                        REOBlocks.MAHOGANY_SIGN.get(), REOBlocks.MAPLE_SIGN.get(), REOBlocks.PALM_SIGN.get(), REOBlocks.PAPAYA_SIGN.get(),
+                        REOBlocks.PINE_SIGN.get(), REOBlocks.PLUM_SIGN.get(), REOBlocks.POPLAR_SIGN.get(), REOBlocks.REDWOOD_SIGN.get(),
+                        REOBlocks.RUBBER_SIGN.get(), REOBlocks.TEAK_SIGN.get(), REOBlocks.WALNUT_SIGN.get(), REOBlocks.WILLOW_SIGN.get());
 
         this.tag(BlockTags.ALL_HANGING_SIGNS)
-                .add(REOBlocks.SIGN_HANGING_BALSA.get(), REOBlocks.SIGN_HANGING_BAOBAB.get(), REOBlocks.SIGN_HANGING_HILL_CHERRY.get(), REOBlocks.SIGN_HANGING_CHESTNUT.get(),
-                        REOBlocks.SIGN_HANGING_CITRUS.get(), REOBlocks.SIGN_HANGING_EBONY.get(), REOBlocks.SIGN_HANGING_LARCH.get(),
-                        REOBlocks.SIGN_HANGING_LIME.get(), REOBlocks.SIGN_HANGING_MAHOGANY.get(), REOBlocks.SIGN_HANGING_MAPLE.get(),
-                        REOBlocks.SIGN_HANGING_PALM.get(), REOBlocks.SIGN_HANGING_PAPAYA.get(), REOBlocks.SIGN_HANGING_PINE.get(),
-                        REOBlocks.SIGN_HANGING_PLUM.get(), REOBlocks.SIGN_HANGING_POPLAR.get(), REOBlocks.SIGN_HANGING_REDWOOD.get(),
-                        REOBlocks.SIGN_HANGING_RUBBER.get(), REOBlocks.SIGN_HANGING_TEAK.get(), REOBlocks.SIGN_HANGING_WALNUT.get(),
-                        REOBlocks.SIGN_HANGING_WILLOW.get());
+                .add(REOBlocks.BALSA_HANGING_SIGN.get(), REOBlocks.BAOBAB_HANGING_SIGN.get(), REOBlocks.HILL_CHERRY_HANGING_SIGN.get(),
+                        REOBlocks.CHESTNUT_HANGING_SIGN.get(), REOBlocks.CITRUS_HANGING_SIGN.get(), REOBlocks.EBONY_HANGING_SIGN.get(),
+                        REOBlocks.LARCH_HANGING_SIGN.get(), REOBlocks.LIME_HANGING_SIGN.get(), REOBlocks.MAHOGANY_HANGING_SIGN.get(),
+                        REOBlocks.MAPLE_HANGING_SIGN.get(), REOBlocks.PALM_HANGING_SIGN.get(), REOBlocks.PAPAYA_HANGING_SIGN.get(),
+                        REOBlocks.PINE_HANGING_SIGN.get(), REOBlocks.PLUM_HANGING_SIGN.get(), REOBlocks.POPLAR_HANGING_SIGN.get(),
+                        REOBlocks.REDWOOD_HANGING_SIGN.get(), REOBlocks.RUBBER_HANGING_SIGN.get(), REOBlocks.TEAK_HANGING_SIGN.get(),
+                        REOBlocks.WALNUT_HANGING_SIGN.get(), REOBlocks.WILLOW_HANGING_SIGN.get());
 
         this.tag(BlockTags.WOODEN_BUTTONS)
-                .add(REOBlocks.BUTTON_BALSA.get(), REOBlocks.BUTTON_BAOBAB.get(), REOBlocks.BUTTON_HILL_CHERRY.get(), REOBlocks.BUTTON_CHESTNUT.get(),
-                        REOBlocks.BUTTON_CITRUS.get(), REOBlocks.BUTTON_EBONY.get(), REOBlocks.BUTTON_LARCH.get(),
-                        REOBlocks.BUTTON_LIME.get(), REOBlocks.BUTTON_MAHOGANY.get(), REOBlocks.BUTTON_MAPLE.get(),
-                        REOBlocks.BUTTON_PALM.get(), REOBlocks.BUTTON_PAPAYA.get(), REOBlocks.BUTTON_PINE.get(),
-                        REOBlocks.BUTTON_PLUM.get(), REOBlocks.BUTTON_POPLAR.get(), REOBlocks.BUTTON_REDWOOD.get(),
-                        REOBlocks.BUTTON_RUBBER.get(), REOBlocks.BUTTON_TEAK.get(), REOBlocks.BUTTON_WALNUT.get(),
-                        REOBlocks.BUTTON_WILLOW.get());
+                .add(REOBlocks.BALSA_BUTTON.get(), REOBlocks.BAOBAB_BUTTON.get(), REOBlocks.HILL_CHERRY_BUTTON.get(), REOBlocks.CHESTNUT_BUTTON.get(),
+                        REOBlocks.CITRUS_BUTTON.get(), REOBlocks.EBONY_BUTTON.get(), REOBlocks.LARCH_BUTTON.get(), REOBlocks.LIME_BUTTON.get(),
+                        REOBlocks.MAHOGANY_BUTTON.get(), REOBlocks.MAPLE_BUTTON.get(), REOBlocks.PALM_BUTTON.get(), REOBlocks.PAPAYA_BUTTON.get(),
+                        REOBlocks.PINE_BUTTON.get(), REOBlocks.PLUM_BUTTON.get(), REOBlocks.POPLAR_BUTTON.get(), REOBlocks.REDWOOD_BUTTON.get(),
+                        REOBlocks.RUBBER_BUTTON.get(), REOBlocks.TEAK_BUTTON.get(), REOBlocks.WALNUT_BUTTON.get(), REOBlocks.WILLOW_BUTTON.get());
 
         this.tag(BlockTags.WOODEN_TRAPDOORS)
-                .add(REOBlocks.TRAPDOOR_BALSA.get(), REOBlocks.TRAPDOOR_BAOBAB.get(), REOBlocks.TRAPDOOR_HILL_CHERRY.get(), REOBlocks.TRAPDOOR_CHESTNUT.get(),
-                        REOBlocks.TRAPDOOR_CITRUS.get(), REOBlocks.TRAPDOOR_EBONY.get(), REOBlocks.TRAPDOOR_LARCH.get(),
-                        REOBlocks.TRAPDOOR_LIME.get(), REOBlocks.TRAPDOOR_MAHOGANY.get(), REOBlocks.TRAPDOOR_MAPLE.get(),
-                        REOBlocks.TRAPDOOR_PALM.get(), REOBlocks.TRAPDOOR_PAPAYA.get(), REOBlocks.TRAPDOOR_PINE.get(),
-                        REOBlocks.TRAPDOOR_PLUM.get(), REOBlocks.TRAPDOOR_POPLAR.get(), REOBlocks.TRAPDOOR_REDWOOD.get(),
-                        REOBlocks.TRAPDOOR_RUBBER.get(), REOBlocks.TRAPDOOR_TEAK.get(), REOBlocks.TRAPDOOR_WALNUT.get(),
-                        REOBlocks.TRAPDOOR_WILLOW.get());
+                .add(REOBlocks.BALSA_TRAPDOOR.get(), REOBlocks.BAOBAB_TRAPDOOR.get(), REOBlocks.HILL_CHERRY_TRAPDOOR.get(), REOBlocks.CHESTNUT_TRAPDOOR.get(),
+                        REOBlocks.CITRUS_TRAPDOOR.get(), REOBlocks.EBONY_TRAPDOOR.get(), REOBlocks.LARCH_TRAPDOOR.get(), REOBlocks.LIME_TRAPDOOR.get(),
+                        REOBlocks.MAHOGANY_TRAPDOOR.get(), REOBlocks.MAPLE_TRAPDOOR.get(), REOBlocks.PALM_TRAPDOOR.get(), REOBlocks.PAPAYA_TRAPDOOR.get(),
+                        REOBlocks.PINE_TRAPDOOR.get(), REOBlocks.PLUM_TRAPDOOR.get(), REOBlocks.POPLAR_TRAPDOOR.get(), REOBlocks.REDWOOD_TRAPDOOR.get(),
+                        REOBlocks.RUBBER_TRAPDOOR.get(), REOBlocks.TEAK_TRAPDOOR.get(), REOBlocks.WALNUT_TRAPDOOR.get(), REOBlocks.WILLOW_TRAPDOOR.get());
 
 
         this.tag(BlockTags.WOODEN_DOORS)
-                .add(REOBlocks.DOOR_BALSA.get(), REOBlocks.DOOR_BAOBAB.get(), REOBlocks.DOOR_HILL_CHERRY.get(), REOBlocks.DOOR_CHESTNUT.get(),
-                        REOBlocks.DOOR_CITRUS.get(), REOBlocks.DOOR_EBONY.get(), REOBlocks.DOOR_LARCH.get(),
-                        REOBlocks.DOOR_LIME.get(), REOBlocks.DOOR_MAHOGANY.get(), REOBlocks.DOOR_MAPLE.get(),
-                        REOBlocks.DOOR_PALM.get(), REOBlocks.DOOR_PAPAYA.get(), REOBlocks.DOOR_PINE.get(),
-                        REOBlocks.DOOR_PLUM.get(), REOBlocks.DOOR_POPLAR.get(), REOBlocks.DOOR_REDWOOD.get(),
-                        REOBlocks.DOOR_RUBBER.get(), REOBlocks.DOOR_TEAK.get(), REOBlocks.DOOR_WALNUT.get(),
-                        REOBlocks.DOOR_WILLOW.get());
+                .add(REOBlocks.BALSA_DOOR.get(), REOBlocks.BAOBAB_DOOR.get(), REOBlocks.HILL_CHERRY_DOOR.get(), REOBlocks.CHESTNUT_DOOR.get(),
+                        REOBlocks.CITRUS_DOOR.get(), REOBlocks.EBONY_DOOR.get(), REOBlocks.LARCH_DOOR.get(), REOBlocks.LIME_DOOR.get(),
+                        REOBlocks.MAHOGANY_DOOR.get(), REOBlocks.MAPLE_DOOR.get(), REOBlocks.PALM_DOOR.get(), REOBlocks.PAPAYA_DOOR.get(),
+                        REOBlocks.PINE_DOOR.get(), REOBlocks.PLUM_DOOR.get(), REOBlocks.POPLAR_DOOR.get(), REOBlocks.REDWOOD_DOOR.get(),
+                        REOBlocks.RUBBER_DOOR.get(), REOBlocks.TEAK_DOOR.get(), REOBlocks.WALNUT_DOOR.get(), REOBlocks.WILLOW_DOOR.get());
 
         this.tag(BlockTags.WOODEN_PRESSURE_PLATES)
-                .add(REOBlocks.PRESSURE_PLATE_BALSA.get(), REOBlocks.PRESSURE_PLATE_BAOBAB.get(), REOBlocks.PRESSURE_PLATE_HILL_CHERRY.get(),
-                        REOBlocks.PRESSURE_PLATE_CHESTNUT.get(), REOBlocks.PRESSURE_PLATE_CITRUS.get(), REOBlocks.PRESSURE_PLATE_EBONY.get(),
-                        REOBlocks.PRESSURE_PLATE_LARCH.get(), REOBlocks.PRESSURE_PLATE_LIME.get(), REOBlocks.PRESSURE_PLATE_MAHOGANY.get(),
-                        REOBlocks.PRESSURE_PLATE_MAPLE.get(), REOBlocks.PRESSURE_PLATE_PALM.get(), REOBlocks.PRESSURE_PLATE_PAPAYA.get(),
-                        REOBlocks.PRESSURE_PLATE_PINE.get(), REOBlocks.PRESSURE_PLATE_PLUM.get(), REOBlocks.PRESSURE_PLATE_POPLAR.get(),
-                        REOBlocks.PRESSURE_PLATE_REDWOOD.get(), REOBlocks.PRESSURE_PLATE_RUBBER.get(), REOBlocks.PRESSURE_PLATE_TEAK.get(),
-                        REOBlocks.PRESSURE_PLATE_WALNUT.get(), REOBlocks.PRESSURE_PLATE_WILLOW.get());
+                .add(REOBlocks.BALSA_PRESSURE_PLATE.get(), REOBlocks.BAOBAB_PRESSURE_PLATE.get(), REOBlocks.HILL_CHERRY_PRESSURE_PLATE.get(), REOBlocks.CHESTNUT_PRESSURE_PLATE.get(),
+                        REOBlocks.CITRUS_PRESSURE_PLATE.get(), REOBlocks.EBONY_PRESSURE_PLATE.get(), REOBlocks.LARCH_PRESSURE_PLATE.get(), REOBlocks.LIME_PRESSURE_PLATE.get(),
+                        REOBlocks.MAHOGANY_PRESSURE_PLATE.get(), REOBlocks.MAPLE_PRESSURE_PLATE.get(), REOBlocks.PALM_PRESSURE_PLATE.get(), REOBlocks.PAPAYA_PRESSURE_PLATE.get(),
+                        REOBlocks.PINE_PRESSURE_PLATE.get(), REOBlocks.PLUM_PRESSURE_PLATE.get(), REOBlocks.POPLAR_PRESSURE_PLATE.get(), REOBlocks.REDWOOD_PRESSURE_PLATE.get(),
+                        REOBlocks.RUBBER_PRESSURE_PLATE.get(), REOBlocks.TEAK_PRESSURE_PLATE.get(), REOBlocks.WALNUT_PRESSURE_PLATE.get(), REOBlocks.WILLOW_PRESSURE_PLATE.get());
 
 
         this.tag(BlockTags.WOODEN_FENCES)
-                .add(REOBlocks.FENCE_BALSA.get(), REOBlocks.FENCE_BAOBAB.get(), REOBlocks.FENCE_HILL_CHERRY.get(), REOBlocks.FENCE_CHESTNUT.get(),
-                        REOBlocks.FENCE_CITRUS.get(), REOBlocks.FENCE_EBONY.get(), REOBlocks.FENCE_LARCH.get(), REOBlocks.FENCE_LIME.get(),
-                        REOBlocks.FENCE_MAHOGANY.get(), REOBlocks.FENCE_MAPLE.get(), REOBlocks.FENCE_PALM.get(), REOBlocks.FENCE_PAPAYA.get(),
-                        REOBlocks.FENCE_PINE.get(), REOBlocks.FENCE_PLUM.get(), REOBlocks.FENCE_POPLAR.get(), REOBlocks.FENCE_REDWOOD.get(),
-                        REOBlocks.FENCE_RUBBER.get(), REOBlocks.FENCE_TEAK.get(), REOBlocks.FENCE_WALNUT.get(), REOBlocks.FENCE_WILLOW.get(),
+                .add(REOBlocks.BALSA_FENCE.get(), REOBlocks.BAOBAB_FENCE.get(), REOBlocks.HILL_CHERRY_FENCE.get(), REOBlocks.CHESTNUT_FENCE.get(),
+                        REOBlocks.CITRUS_FENCE.get(), REOBlocks.EBONY_FENCE.get(), REOBlocks.LARCH_FENCE.get(), REOBlocks.LIME_FENCE.get(),
+                        REOBlocks.MAHOGANY_FENCE.get(), REOBlocks.MAPLE_FENCE.get(), REOBlocks.PALM_FENCE.get(), REOBlocks.PAPAYA_FENCE.get(),
+                        REOBlocks.PINE_FENCE.get(), REOBlocks.PLUM_FENCE.get(), REOBlocks.POPLAR_FENCE.get(), REOBlocks.REDWOOD_FENCE.get(),
+                        REOBlocks.RUBBER_FENCE.get(), REOBlocks.TEAK_FENCE.get(), REOBlocks.WALNUT_FENCE.get(), REOBlocks.WILLOW_FENCE.get(),
 
-                        REOBlocks.FENCE_BALSA_RESISTANT.get(), REOBlocks.FENCE_BAOBAB_RESISTANT.get(), REOBlocks.FENCE_HILL_CHERRY_RESISTANT.get(),
-                        REOBlocks.FENCE_CHESTNUT_RESISTANT.get(), REOBlocks.FENCE_CITRUS_RESISTANT.get(), REOBlocks.FENCE_EBONY_RESISTANT.get(),
-                        REOBlocks.FENCE_LARCH_RESISTANT.get(), REOBlocks.FENCE_LIME_RESISTANT.get(), REOBlocks.FENCE_MAHOGANY_RESISTANT.get(),
-                        REOBlocks.FENCE_MAPLE_RESISTANT.get(), REOBlocks.FENCE_PALM_RESISTANT.get(), REOBlocks.FENCE_PAPAYA_RESISTANT.get(),
-                        REOBlocks.FENCE_PINE_RESISTANT.get(), REOBlocks.FENCE_PLUM_RESISTANT.get(), REOBlocks.FENCE_POPLAR_RESISTANT.get(),
-                        REOBlocks.FENCE_REDWOOD_RESISTANT.get(), REOBlocks.FENCE_RUBBER_RESISTANT.get(), REOBlocks.FENCE_TEAK_RESISTANT.get(),
-                        REOBlocks.FENCE_WALNUT_RESISTANT.get(), REOBlocks.FENCE_WILLOW_RESISTANT.get(),
-                        REOBlocks.FENCE_OAK_RESISTANT.get(), REOBlocks.FENCE_SPRUCE_RESISTANT.get(), REOBlocks.FENCE_BIRCH_RESISTANT.get(),
-                        REOBlocks.FENCE_JUNGLE_RESISTANT.get(), REOBlocks.FENCE_ACACIA_RESISTANT.get(), REOBlocks.FENCE_DARK_OAK_RESISTANT.get(),
-                        REOBlocks.FENCE_MANGROVE_RESISTANT.get(), REOBlocks.FENCE_CHERRY_RESISTANT.get()
+                        REOBlocks.RESISTANT_BALSA_FENCE.get(), REOBlocks.RESISTANT_BAOBAB_FENCE.get(), REOBlocks.RESISTANT_HILL_CHERRY_FENCE.get(),
+                        REOBlocks.RESISTANT_CHESTNUT_FENCE.get(), REOBlocks.RESISTANT_CITRUS_FENCE.get(), REOBlocks.RESISTANT_EBONY_FENCE.get(),
+                        REOBlocks.RESISTANT_LARCH_FENCE.get(), REOBlocks.RESISTANT_LIME_FENCE.get(), REOBlocks.RESISTANT_MAHOGANY_FENCE.get(),
+                        REOBlocks.RESISTANT_MAPLE_FENCE.get(), REOBlocks.RESISTANT_PALM_FENCE.get(), REOBlocks.RESISTANT_PAPAYA_FENCE.get(),
+                        REOBlocks.RESISTANT_PINE_FENCE.get(), REOBlocks.RESISTANT_PLUM_FENCE.get(), REOBlocks.RESISTANT_POPLAR_FENCE.get(),
+                        REOBlocks.RESISTANT_REDWOOD_FENCE.get(), REOBlocks.RESISTANT_RUBBER_FENCE.get(), REOBlocks.RESISTANT_TEAK_FENCE.get(),
+                        REOBlocks.RESISTANT_WALNUT_FENCE.get(), REOBlocks.RESISTANT_WILLOW_FENCE.get(),
+
+                        REOBlocks.RESISTANT_OAK_FENCE.get(), REOBlocks.RESISTANT_SPRUCE_FENCE.get(), REOBlocks.RESISTANT_BIRCH_FENCE.get(),
+                        REOBlocks.RESISTANT_JUNGLE_FENCE.get(), REOBlocks.RESISTANT_ACACIA_FENCE.get(), REOBlocks.RESISTANT_DARK_OAK_FENCE.get(),
+                        REOBlocks.RESISTANT_MANGROVE_FENCE.get(), REOBlocks.CHESTNUT_FENCE.get()
 
                 );
 
         this.tag(BlockTags.FENCE_GATES)
-                .add(REOBlocks.FENCE_GATE_BALSA.get(), REOBlocks.FENCE_GATE_BAOBAB.get(), REOBlocks.FENCE_GATE_HILL_CHERRY.get(), REOBlocks.FENCE_GATE_CHESTNUT.get(),
-                        REOBlocks.FENCE_GATE_CITRUS.get(), REOBlocks.FENCE_GATE_EBONY.get(), REOBlocks.FENCE_GATE_LARCH.get(), REOBlocks.FENCE_GATE_LIME.get(),
-                        REOBlocks.FENCE_GATE_MAHOGANY.get(), REOBlocks.FENCE_GATE_MAPLE.get(),
-                        REOBlocks.FENCE_GATE_PALM.get(), REOBlocks.FENCE_GATE_PAPAYA.get(), REOBlocks.FENCE_GATE_PINE.get(),
-                        REOBlocks.FENCE_GATE_PLUM.get(), REOBlocks.FENCE_GATE_POPLAR.get(), REOBlocks.FENCE_GATE_REDWOOD.get(),
-                        REOBlocks.FENCE_GATE_RUBBER.get(), REOBlocks.FENCE_GATE_TEAK.get(), REOBlocks.FENCE_GATE_WALNUT.get(),
-                        REOBlocks.FENCE_GATE_WILLOW.get(),
-                        REOBlocks.FENCE_GATE_BALSA_RESISTANT.get(), REOBlocks.FENCE_GATE_BAOBAB_RESISTANT.get(), REOBlocks.FENCE_GATE_HILL_CHERRY_RESISTANT.get(), REOBlocks.FENCE_GATE_CHESTNUT_RESISTANT.get(),
-                        REOBlocks.FENCE_GATE_CITRUS_RESISTANT.get(), REOBlocks.FENCE_GATE_EBONY_RESISTANT.get(), REOBlocks.FENCE_GATE_LARCH_RESISTANT.get(),
-                        REOBlocks.FENCE_GATE_LIME_RESISTANT.get(), REOBlocks.FENCE_GATE_MAHOGANY_RESISTANT.get(), REOBlocks.FENCE_GATE_MAPLE_RESISTANT.get(),
-                        REOBlocks.FENCE_GATE_PALM_RESISTANT.get(), REOBlocks.FENCE_GATE_PAPAYA_RESISTANT.get(), REOBlocks.FENCE_GATE_PINE_RESISTANT.get(),
-                        REOBlocks.FENCE_GATE_PLUM_RESISTANT.get(), REOBlocks.FENCE_GATE_POPLAR_RESISTANT.get(), REOBlocks.FENCE_GATE_REDWOOD_RESISTANT.get(),
-                        REOBlocks.FENCE_GATE_RUBBER_RESISTANT.get(), REOBlocks.FENCE_GATE_TEAK_RESISTANT.get(), REOBlocks.FENCE_GATE_WALNUT_RESISTANT.get(),
-                        REOBlocks.FENCE_GATE_WILLOW_RESISTANT.get(),
-                        REOBlocks.FENCE_GATE_OAK_RESISTANT.get(), REOBlocks.FENCE_GATE_SPRUCE_RESISTANT.get(), REOBlocks.FENCE_GATE_BIRCH_RESISTANT.get(),
-                        REOBlocks.FENCE_GATE_JUNGLE_RESISTANT.get(), REOBlocks.FENCE_GATE_ACACIA_RESISTANT.get(), REOBlocks.FENCE_GATE_DARK_OAK_RESISTANT.get(),
-                        REOBlocks.FENCE_GATE_MANGROVE_RESISTANT.get(), REOBlocks.FENCE_GATE_CHERRY_RESISTANT.get()
+                .add(REOBlocks.BALSA_FENCE_GATE.get(), REOBlocks.BAOBAB_FENCE_GATE.get(), REOBlocks.HILL_CHERRY_FENCE_GATE.get(), REOBlocks.CHESTNUT_FENCE_GATE.get(),
+                        REOBlocks.CITRUS_FENCE_GATE.get(), REOBlocks.EBONY_FENCE_GATE.get(), REOBlocks.LARCH_FENCE_GATE.get(), REOBlocks.LIME_FENCE_GATE.get(),
+                        REOBlocks.MAHOGANY_FENCE_GATE.get(), REOBlocks.MAPLE_FENCE_GATE.get(), REOBlocks.PALM_FENCE_GATE.get(), REOBlocks.PAPAYA_FENCE_GATE.get(),
+                        REOBlocks.PINE_FENCE_GATE.get(), REOBlocks.PLUM_FENCE_GATE.get(), REOBlocks.POPLAR_FENCE_GATE.get(), REOBlocks.REDWOOD_FENCE_GATE.get(),
+                        REOBlocks.RUBBER_FENCE_GATE.get(), REOBlocks.TEAK_FENCE_GATE.get(), REOBlocks.WALNUT_FENCE_GATE.get(), REOBlocks.WILLOW_FENCE_GATE.get(),
+
+                        REOBlocks.RESISTANT_BALSA_FENCE_GATE.get(), REOBlocks.RESISTANT_BAOBAB_FENCE_GATE.get(), REOBlocks.RESISTANT_HILL_CHERRY_FENCE_GATE.get(),
+                        REOBlocks.RESISTANT_CHESTNUT_FENCE_GATE.get(), REOBlocks.RESISTANT_CITRUS_FENCE_GATE.get(), REOBlocks.RESISTANT_EBONY_FENCE_GATE.get(),
+                        REOBlocks.RESISTANT_LARCH_FENCE_GATE.get(), REOBlocks.RESISTANT_LIME_FENCE_GATE.get(), REOBlocks.RESISTANT_MAHOGANY_FENCE_GATE.get(),
+                        REOBlocks.RESISTANT_MAPLE_FENCE_GATE.get(), REOBlocks.RESISTANT_PALM_FENCE_GATE.get(), REOBlocks.RESISTANT_PAPAYA_FENCE_GATE.get(),
+                        REOBlocks.RESISTANT_PINE_FENCE_GATE.get(), REOBlocks.RESISTANT_PLUM_FENCE_GATE.get(), REOBlocks.RESISTANT_POPLAR_FENCE_GATE.get(),
+                        REOBlocks.RESISTANT_REDWOOD_FENCE_GATE.get(), REOBlocks.RESISTANT_RUBBER_FENCE_GATE.get(), REOBlocks.RESISTANT_TEAK_FENCE_GATE.get(),
+                        REOBlocks.RESISTANT_WALNUT_FENCE_GATE.get(), REOBlocks.RESISTANT_WILLOW_FENCE_GATE.get(),
+
+                        REOBlocks.RESISTANT_OAK_FENCE_GATE.get(), REOBlocks.RESISTANT_SPRUCE_FENCE_GATE.get(), REOBlocks.RESISTANT_BIRCH_FENCE_GATE.get(),
+                        REOBlocks.RESISTANT_JUNGLE_FENCE_GATE.get(), REOBlocks.RESISTANT_ACACIA_FENCE_GATE.get(), REOBlocks.RESISTANT_DARK_OAK_FENCE_GATE.get(),
+                        REOBlocks.RESISTANT_MANGROVE_FENCE_GATE.get(), REOBlocks.CHESTNUT_FENCE_GATE.get()
 
                 );
 
         this.tag(BlockTags.SAPLINGS)
-                .add(REOBlocks.SAPLING_BALSA.get(), REOBlocks.SAPLING_BAOBAB.get(), REOBlocks.SAPLING_HILL_CHERRY.get(), REOBlocks.SAPLING_CHESTNUT.get(),
-                        REOBlocks.SAPLING_CITRUS.get(), REOBlocks.SAPLING_EBONY.get(), REOBlocks.SAPLING_LARCH.get(),
-                        REOBlocks.SAPLING_LIME.get(), REOBlocks.SAPLING_MAHOGANY.get(), REOBlocks.SAPLING_MAPLE.get(),
-                        REOBlocks.SAPLING_PALM.get(), REOBlocks.SAPLING_PAPAYA.get(), REOBlocks.SAPLING_PINE.get(),
-                        REOBlocks.SAPLING_PLUM.get(), REOBlocks.SAPLING_POPLAR.get(), REOBlocks.SAPLING_REDWOOD.get(),
-                        REOBlocks.SAPLING_RUBBER.get(), REOBlocks.SAPLING_TEAK.get(), REOBlocks.SAPLING_WALNUT.get(),
-                        REOBlocks.SAPLING_WILLOW.get());
+                .add(REOBlocks.BALSA_SAPLING.get(), REOBlocks.BAOBAB_SAPLING.get(), REOBlocks.HILL_CHERRY_SAPLING.get(), REOBlocks.CHESTNUT_SAPLING.get(),
+                        REOBlocks.CITRUS_SAPLING.get(), REOBlocks.EBONY_SAPLING.get(), REOBlocks.LARCH_SAPLING.get(), REOBlocks.LIME_SAPLING.get(),
+                        REOBlocks.MAHOGANY_SAPLING.get(), REOBlocks.MAPLE_SAPLING.get(), REOBlocks.PALM_SAPLING.get(), REOBlocks.PAPAYA_SAPLING.get(),
+                        REOBlocks.PINE_SAPLING.get(), REOBlocks.PLUM_SAPLING.get(), REOBlocks.POPLAR_SAPLING.get(), REOBlocks.REDWOOD_SAPLING.get(),
+                        REOBlocks.RUBBER_SAPLING.get(), REOBlocks.TEAK_SAPLING.get(), REOBlocks.WALNUT_SAPLING.get(), REOBlocks.WILLOW_SAPLING.get());
 
         this.tag(BlockTags.LEAVES)
-                .add(REOBlocks.LEAVES_BALSA.get(), REOBlocks.LEAVES_BAOBAB.get(), REOBlocks.LEAVES_HILL_CHERRY.get(),
-                        REOBlocks.LEAVES_CHESTNUT.get(), REOBlocks.LEAVES_CHESTNUT_FRUIT.get(),
-                        REOBlocks.LEAVES_CITRUS.get(), REOBlocks.LEAVES_CITRUS_FRUIT.get(),
-                        REOBlocks.LEAVES_EBONY.get(), REOBlocks.LEAVES_LARCH.get(),
-                        REOBlocks.LEAVES_LIME.get(), REOBlocks.LEAVES_LIME_FRUIT.get(),
-                        REOBlocks.LEAVES_MAHOGANY.get(), REOBlocks.LEAVES_MAPLE.get(),
-                        REOBlocks.LEAVES_PALM.get(),
-                        REOBlocks.LEAVES_PAPAYA.get(), REOBlocks.LEAVES_PAPAYA_FRUIT.get(),
-                        REOBlocks.LEAVES_PINE.get(),
-                        REOBlocks.LEAVES_PLUM.get(), REOBlocks.LEAVES_PLUM_FRUIT.get(),
-                        REOBlocks.LEAVES_POPLAR.get(), REOBlocks.LEAVES_REDWOOD.get(),
-                        REOBlocks.LEAVES_RUBBER.get(), REOBlocks.LEAVES_TEAK.get(),
-                        REOBlocks.LEAVES_WALNUT.get(), REOBlocks.LEAVES_WALNUT_FRUIT.get(),
-                        REOBlocks.LEAVES_WILLOW.get());
+                .add(REOBlocks.BALSA_LEAVES.get(), REOBlocks.BAOBAB_LEAVES.get(), REOBlocks.HILL_CHERRY_LEAVES.get(),
+                        REOBlocks.CHESTNUT_LEAVES.get(), REOBlocks.CHESTNUT_FRUIT_LEAVES.get(),
+                        REOBlocks.CITRUS_LEAVES.get(), REOBlocks.CITRUS_FRUIT_LEAVES.get(),
+                        REOBlocks.EBONY_LEAVES.get(), REOBlocks.LARCH_LEAVES.get(),
+                        REOBlocks.LIME_LEAVES.get(), REOBlocks.LIME_FRUIT_LEAVES.get(),
+                        REOBlocks.MAHOGANY_LEAVES.get(), REOBlocks.MAPLE_LEAVES.get(), REOBlocks.PALM_LEAVES.get(),
+                        REOBlocks.PAPAYA_LEAVES.get(), REOBlocks.PAPAYA_FRUIT_LEAVES.get(),
+                        REOBlocks.PINE_LEAVES.get(), REOBlocks.PLUM_LEAVES.get(), REOBlocks.PLUM_FRUIT_LEAVES.get(),
+                        REOBlocks.POPLAR_LEAVES.get(), REOBlocks.REDWOOD_LEAVES.get(),
+                        REOBlocks.RUBBER_LEAVES.get(), REOBlocks.TEAK_LEAVES.get(),
+                        REOBlocks.WALNUT_LEAVES.get(), REOBlocks.WALNUT_FRUIT_LEAVES.get(), REOBlocks.WILLOW_LEAVES.get());
 
-        this.tag(REOTags.Blocks.LOGS_BALSA)
-                .add(REOBlocks.LOG_BALSA.get(),REOBlocks.LOG_BALSA_STRIPPED.get(),REOBlocks.LOG_BALSA_RESISTANT.get(),REOBlocks.LOG_BALSA_STRIPPED_RESISTANT.get(),
-                        REOBlocks.WOOD_BALSA.get(),REOBlocks.WOOD_BALSA_STRIPPED.get(),REOBlocks.WOOD_BALSA_RESISTANT.get(),REOBlocks.WOOD_BALSA_STRIPPED_RESISTANT.get());
+        this.tag(REOTags.Blocks.BALSA_LOGS)
+                .add(REOBlocks.BALSA_LOG.get(), REOBlocks.STRIPPED_BALSA_LOG.get(), REOBlocks.RESISTANT_BALSA_LOG.get(),
+                        REOBlocks.RESISTANT_STRIPPED_BALSA_LOG.get(), REOBlocks.BALSA_WOOD.get(),
+                        REOBlocks.STRIPPED_BALSA_WOOD.get(), REOBlocks.RESISTANT_BALSA_WOOD.get(),
+                        REOBlocks.RESISTANT_STRIPPED_BALSA_WOOD.get());
 
-        this.tag(REOTags.Blocks.LOGS_BAOBAB)
-                .add(REOBlocks.LOG_BAOBAB.get(),REOBlocks.LOG_BAOBAB_STRIPPED.get(),REOBlocks.LOG_BAOBAB_RESISTANT.get(),REOBlocks.LOG_BAOBAB_STRIPPED_RESISTANT.get(),
-                        REOBlocks.WOOD_BAOBAB.get(),REOBlocks.WOOD_BAOBAB_STRIPPED.get(),REOBlocks.WOOD_BAOBAB_RESISTANT.get(),REOBlocks.WOOD_BAOBAB_STRIPPED_RESISTANT.get());
+        this.tag(REOTags.Blocks.BAOBAB_LOGS)
+                .add(REOBlocks.BAOBAB_LOG.get(), REOBlocks.STRIPPED_BAOBAB_LOG.get(), REOBlocks.RESISTANT_BAOBAB_LOG.get(),
+                        REOBlocks.RESISTANT_STRIPPED_BAOBAB_LOG.get(), REOBlocks.BAOBAB_WOOD.get(), REOBlocks.STRIPPED_BAOBAB_WOOD.get(),
+                        REOBlocks.RESISTANT_BAOBAB_WOOD.get(), REOBlocks.RESISTANT_STRIPPED_BAOBAB_WOOD.get());
 
-        this.tag(REOTags.Blocks.LOGS_HILL_CHERRY)
-                .add(REOBlocks.LOG_HILL_CHERRY.get(),REOBlocks.LOG_HILL_CHERRY_STRIPPED.get(),REOBlocks.LOG_HILL_CHERRY_RESISTANT.get(),REOBlocks.LOG_HILL_CHERRY_STRIPPED_RESISTANT.get(),
-                        REOBlocks.WOOD_HILL_CHERRY.get(),REOBlocks.WOOD_HILL_CHERRY_STRIPPED.get(),REOBlocks.WOOD_HILL_CHERRY_RESISTANT.get(),REOBlocks.WOOD_HILL_CHERRY_STRIPPED_RESISTANT.get());
+        this.tag(REOTags.Blocks.HILL_CHERRY_LOGS)
+                .add(REOBlocks.HILL_CHERRY_LOG.get(), REOBlocks.STRIPPED_HILL_CHERRY_LOG.get(),
+                        REOBlocks.RESISTANT_HILL_CHERRY_LOG.get(), REOBlocks.RESISTANT_STRIPPED_HILL_CHERRY_LOG.get(),
+                        REOBlocks.HILL_CHERRY_WOOD.get(), REOBlocks.STRIPPED_HILL_CHERRY_WOOD.get(),
+                        REOBlocks.RESISTANT_HILL_CHERRY_WOOD.get(), REOBlocks.RESISTANT_STRIPPED_HILL_CHERRY_WOOD.get());
 
-        this.tag(REOTags.Blocks.LOGS_CHESTNUT)
-                .add(REOBlocks.LOG_CHESTNUT.get(),REOBlocks.LOG_CHESTNUT_STRIPPED.get(),REOBlocks.LOG_CHESTNUT_RESISTANT.get(),REOBlocks.LOG_CHESTNUT_STRIPPED_RESISTANT.get(),
-                        REOBlocks.WOOD_CHESTNUT.get(),REOBlocks.WOOD_CHESTNUT_STRIPPED.get(),REOBlocks.WOOD_CHESTNUT_RESISTANT.get(),REOBlocks.WOOD_CHESTNUT_STRIPPED_RESISTANT.get());
+        this.tag(REOTags.Blocks.CHESTNUT_LOGS)
+                .add(REOBlocks.CHESTNUT_LOG.get(), REOBlocks.STRIPPED_CHESTNUT_LOG.get(),
+                        REOBlocks.RESISTANT_CHESTNUT_LOG.get(), REOBlocks.RESISTANT_STRIPPED_CHESTNUT_LOG.get(),
+                        REOBlocks.CHESTNUT_WOOD.get(), REOBlocks.STRIPPED_CHESTNUT_WOOD.get(),
+                        REOBlocks.RESISTANT_CHESTNUT_WOOD.get(), REOBlocks.RESISTANT_STRIPPED_CHESTNUT_WOOD.get());
 
-        this.tag(REOTags.Blocks.LOGS_CITRUS)
-                .add(REOBlocks.LOG_CITRUS.get(),REOBlocks.LOG_CITRUS_STRIPPED.get(),REOBlocks.LOG_CITRUS_RESISTANT.get(),REOBlocks.LOG_CITRUS_STRIPPED_RESISTANT.get(),
-                        REOBlocks.WOOD_CITRUS.get(),REOBlocks.WOOD_CITRUS_STRIPPED.get(),REOBlocks.WOOD_CITRUS_RESISTANT.get(),REOBlocks.WOOD_CITRUS_STRIPPED_RESISTANT.get());
+        this.tag(REOTags.Blocks.CITRUS_LOGS)
+                .add(REOBlocks.CITRUS_LOG.get(), REOBlocks.STRIPPED_CITRUS_LOG.get(),
+                        REOBlocks.RESISTANT_CITRUS_LOG.get(), REOBlocks.RESISTANT_STRIPPED_CITRUS_LOG.get(),
+                        REOBlocks.CITRUS_WOOD.get(), REOBlocks.STRIPPED_CITRUS_WOOD.get(),
+                        REOBlocks.RESISTANT_CITRUS_WOOD.get(), REOBlocks.RESISTANT_STRIPPED_CITRUS_WOOD.get());
 
-        this.tag(REOTags.Blocks.LOGS_EBONY)
-                .add(REOBlocks.LOG_EBONY.get(),REOBlocks.LOG_EBONY_STRIPPED.get(),REOBlocks.LOG_EBONY_RESISTANT.get(),REOBlocks.LOG_EBONY_STRIPPED_RESISTANT.get(),
-                        REOBlocks.WOOD_EBONY.get(),REOBlocks.WOOD_EBONY_STRIPPED.get(),REOBlocks.WOOD_EBONY_RESISTANT.get(),REOBlocks.WOOD_EBONY_STRIPPED_RESISTANT.get());
+        this.tag(REOTags.Blocks.EBONY_LOGS)
+                .add(REOBlocks.EBONY_LOG.get(), REOBlocks.STRIPPED_EBONY_LOG.get(),
+                        REOBlocks.RESISTANT_EBONY_LOG.get(), REOBlocks.RESISTANT_STRIPPED_EBONY_LOG.get(),
+                        REOBlocks.EBONY_WOOD.get(), REOBlocks.STRIPPED_EBONY_WOOD.get(),
+                        REOBlocks.RESISTANT_EBONY_WOOD.get(), REOBlocks.RESISTANT_STRIPPED_EBONY_WOOD.get());
 
-        this.tag(REOTags.Blocks.LOGS_LARCH)
-                .add(REOBlocks.LOG_LARCH.get(),REOBlocks.LOG_LARCH_STRIPPED.get(),REOBlocks.LOG_LARCH_RESISTANT.get(),REOBlocks.LOG_LARCH_STRIPPED_RESISTANT.get(),
-                        REOBlocks.WOOD_LARCH.get(),REOBlocks.WOOD_LARCH_STRIPPED.get(),REOBlocks.WOOD_LARCH_RESISTANT.get(),REOBlocks.WOOD_LARCH_STRIPPED_RESISTANT.get());
+        this.tag(REOTags.Blocks.LARCH_LOGS)
+                .add(REOBlocks.LARCH_LOG.get(), REOBlocks.STRIPPED_LARCH_LOG.get(),
+                        REOBlocks.RESISTANT_LARCH_LOG.get(), REOBlocks.RESISTANT_STRIPPED_LARCH_LOG.get(),
+                        REOBlocks.LARCH_WOOD.get(), REOBlocks.STRIPPED_LARCH_WOOD.get(),
+                        REOBlocks.RESISTANT_LARCH_WOOD.get(), REOBlocks.RESISTANT_STRIPPED_LARCH_WOOD.get());
 
-        this.tag(REOTags.Blocks.LOGS_LIME)
-                .add(REOBlocks.LOG_LIME.get(),REOBlocks.LOG_LIME_STRIPPED.get(),REOBlocks.LOG_LIME_RESISTANT.get(),REOBlocks.LOG_LIME_STRIPPED_RESISTANT.get(),
-                        REOBlocks.WOOD_LIME.get(),REOBlocks.WOOD_LIME_STRIPPED.get(),REOBlocks.WOOD_LIME_RESISTANT.get(),REOBlocks.WOOD_LIME_STRIPPED_RESISTANT.get());
+        this.tag(REOTags.Blocks.LIME_LOGS)
+                .add(REOBlocks.LIME_LOG.get(), REOBlocks.STRIPPED_LIME_LOG.get(),
+                        REOBlocks.RESISTANT_LIME_LOG.get(), REOBlocks.RESISTANT_STRIPPED_LIME_LOG.get(),
+                        REOBlocks.LIME_WOOD.get(), REOBlocks.STRIPPED_LIME_WOOD.get(),
+                        REOBlocks.RESISTANT_LIME_WOOD.get(), REOBlocks.RESISTANT_STRIPPED_LIME_WOOD.get());
 
-        this.tag(REOTags.Blocks.LOGS_MAHOGANY)
-                .add(REOBlocks.LOG_MAHOGANY.get(),REOBlocks.LOG_MAHOGANY_STRIPPED.get(),REOBlocks.LOG_MAHOGANY_RESISTANT.get(),REOBlocks.LOG_MAHOGANY_STRIPPED_RESISTANT.get(),
-                        REOBlocks.WOOD_MAHOGANY.get(),REOBlocks.WOOD_MAHOGANY_STRIPPED.get(),REOBlocks.WOOD_MAHOGANY_RESISTANT.get(),REOBlocks.WOOD_MAHOGANY_STRIPPED_RESISTANT.get());
+        this.tag(REOTags.Blocks.MAHOGANY_LOGS)
+                .add(REOBlocks.MAHOGANY_LOG.get(), REOBlocks.STRIPPED_MAHOGANY_LOG.get(),
+                        REOBlocks.RESISTANT_MAHOGANY_LOG.get(), REOBlocks.RESISTANT_STRIPPED_MAHOGANY_LOG.get(),
+                        REOBlocks.MAHOGANY_WOOD.get(), REOBlocks.STRIPPED_MAHOGANY_WOOD.get(),
+                        REOBlocks.RESISTANT_MAHOGANY_WOOD.get(), REOBlocks.RESISTANT_STRIPPED_MAHOGANY_WOOD.get());
 
-        this.tag(REOTags.Blocks.LOGS_MAPLE)
-                .add(REOBlocks.LOG_MAPLE.get(),REOBlocks.LOG_MAPLE_STRIPPED.get(),REOBlocks.LOG_MAPLE_RESISTANT.get(),REOBlocks.LOG_MAPLE_STRIPPED_RESISTANT.get(),
-                        REOBlocks.WOOD_MAPLE.get(),REOBlocks.WOOD_MAPLE_STRIPPED.get(),REOBlocks.WOOD_MAPLE_RESISTANT.get(),REOBlocks.WOOD_MAPLE_STRIPPED_RESISTANT.get());
+        this.tag(REOTags.Blocks.MAPLE_LOGS)
+                .add(REOBlocks.MAPLE_LOG.get(), REOBlocks.STRIPPED_MAPLE_LOG.get(),
+                        REOBlocks.RESISTANT_MAPLE_LOG.get(), REOBlocks.RESISTANT_STRIPPED_MAPLE_LOG.get(),
+                        REOBlocks.MAPLE_WOOD.get(), REOBlocks.STRIPPED_MAPLE_WOOD.get(),
+                        REOBlocks.RESISTANT_MAPLE_WOOD.get(), REOBlocks.RESISTANT_STRIPPED_MAPLE_WOOD.get());
 
-        this.tag(REOTags.Blocks.LOGS_PALM)
-                .add(REOBlocks.LOG_PALM.get(),REOBlocks.LOG_PALM_STRIPPED.get(),REOBlocks.LOG_PALM_RESISTANT.get(),REOBlocks.LOG_PALM_STRIPPED_RESISTANT.get(),
-                        REOBlocks.WOOD_PALM.get(),REOBlocks.WOOD_PALM_STRIPPED.get(),REOBlocks.WOOD_PALM_RESISTANT.get(),REOBlocks.WOOD_PALM_STRIPPED_RESISTANT.get());
+        this.tag(REOTags.Blocks.PALM_LOGS)
+                .add(REOBlocks.PALM_LOG.get(), REOBlocks.STRIPPED_PALM_LOG.get(),
+                        REOBlocks.RESISTANT_PALM_LOG.get(), REOBlocks.RESISTANT_STRIPPED_PALM_LOG.get(),
+                        REOBlocks.PALM_WOOD.get(), REOBlocks.STRIPPED_PALM_WOOD.get(),
+                        REOBlocks.RESISTANT_PALM_WOOD.get(), REOBlocks.RESISTANT_STRIPPED_PALM_WOOD.get());
 
-        this.tag(REOTags.Blocks.LOGS_PAPAYA)
-                .add(REOBlocks.LOG_PAPAYA.get(),REOBlocks.LOG_PAPAYA_STRIPPED.get(),REOBlocks.LOG_PAPAYA_RESISTANT.get(),REOBlocks.LOG_PAPAYA_STRIPPED_RESISTANT.get(),
-                        REOBlocks.WOOD_PAPAYA.get(),REOBlocks.WOOD_PAPAYA_STRIPPED.get(),REOBlocks.WOOD_PAPAYA_RESISTANT.get(),REOBlocks.WOOD_PAPAYA_STRIPPED_RESISTANT.get());
+        this.tag(REOTags.Blocks.PAPAYA_LOGS)
+                .add(REOBlocks.PAPAYA_LOG.get(), REOBlocks.STRIPPED_PAPAYA_LOG.get(),
+                        REOBlocks.RESISTANT_PAPAYA_LOG.get(), REOBlocks.RESISTANT_STRIPPED_PAPAYA_LOG.get(),
+                        REOBlocks.PAPAYA_WOOD.get(), REOBlocks.STRIPPED_PAPAYA_WOOD.get(),
+                        REOBlocks.RESISTANT_PAPAYA_WOOD.get(), REOBlocks.RESISTANT_STRIPPED_PAPAYA_WOOD.get());
 
-        this.tag(REOTags.Blocks.LOGS_PINE)
-                .add(REOBlocks.LOG_PINE.get(),REOBlocks.LOG_PINE_STRIPPED.get(),REOBlocks.LOG_PINE_RESISTANT.get(),REOBlocks.LOG_PINE_STRIPPED_RESISTANT.get(),
-                        REOBlocks.WOOD_PINE.get(),REOBlocks.WOOD_PINE_STRIPPED.get(),REOBlocks.WOOD_PINE_RESISTANT.get(),REOBlocks.WOOD_PINE_STRIPPED_RESISTANT.get());
+        this.tag(REOTags.Blocks.PINE_LOGS)
+                .add(REOBlocks.PINE_LOG.get(), REOBlocks.STRIPPED_PINE_LOG.get(),
+                        REOBlocks.RESISTANT_PINE_LOG.get(), REOBlocks.RESISTANT_STRIPPED_PINE_LOG.get(),
+                        REOBlocks.PINE_WOOD.get(), REOBlocks.STRIPPED_PINE_WOOD.get(),
+                        REOBlocks.RESISTANT_PINE_WOOD.get(), REOBlocks.RESISTANT_STRIPPED_PINE_WOOD.get());
 
-        this.tag(REOTags.Blocks.LOGS_PLUM)
-                .add(REOBlocks.LOG_PLUM.get(),REOBlocks.LOG_PLUM_STRIPPED.get(),REOBlocks.LOG_PLUM_RESISTANT.get(),REOBlocks.LOG_PLUM_STRIPPED_RESISTANT.get(),
-                        REOBlocks.WOOD_PLUM.get(),REOBlocks.WOOD_PLUM_STRIPPED.get(),REOBlocks.WOOD_PLUM_RESISTANT.get(),REOBlocks.WOOD_PLUM_STRIPPED_RESISTANT.get());
+        this.tag(REOTags.Blocks.PLUM_LOGS)
+                .add(REOBlocks.PLUM_LOG.get(), REOBlocks.STRIPPED_PLUM_LOG.get(),
+                        REOBlocks.RESISTANT_PLUM_LOG.get(), REOBlocks.RESISTANT_STRIPPED_PLUM_LOG.get(),
+                        REOBlocks.PLUM_WOOD.get(), REOBlocks.STRIPPED_PLUM_WOOD.get(),
+                        REOBlocks.RESISTANT_PLUM_WOOD.get(), REOBlocks.RESISTANT_STRIPPED_PLUM_WOOD.get());
 
-        this.tag(REOTags.Blocks.LOGS_POPLAR)
-                .add(REOBlocks.LOG_POPLAR.get(),REOBlocks.LOG_POPLAR_STRIPPED.get(),REOBlocks.LOG_POPLAR_RESISTANT.get(),REOBlocks.LOG_POPLAR_STRIPPED_RESISTANT.get(),
-                        REOBlocks.WOOD_POPLAR.get(),REOBlocks.WOOD_POPLAR_STRIPPED.get(),REOBlocks.WOOD_POPLAR_RESISTANT.get(),REOBlocks.WOOD_POPLAR_STRIPPED_RESISTANT.get());
+        this.tag(REOTags.Blocks.POPLAR_LOGS)
+                .add(REOBlocks.POPLAR_LOG.get(), REOBlocks.STRIPPED_POPLAR_LOG.get(),
+                        REOBlocks.RESISTANT_POPLAR_LOG.get(), REOBlocks.RESISTANT_STRIPPED_POPLAR_LOG.get(),
+                        REOBlocks.POPLAR_WOOD.get(), REOBlocks.STRIPPED_POPLAR_WOOD.get(),
+                        REOBlocks.RESISTANT_POPLAR_WOOD.get(), REOBlocks.RESISTANT_STRIPPED_POPLAR_WOOD.get());
 
-        this.tag(REOTags.Blocks.LOGS_REDWOOD)
-                .add(REOBlocks.LOG_REDWOOD.get(),REOBlocks.LOG_REDWOOD_STRIPPED.get(),REOBlocks.LOG_REDWOOD_RESISTANT.get(),REOBlocks.LOG_REDWOOD_STRIPPED_RESISTANT.get(),
-                        REOBlocks.WOOD_REDWOOD.get(),REOBlocks.WOOD_REDWOOD_STRIPPED.get(),REOBlocks.WOOD_REDWOOD_RESISTANT.get(),REOBlocks.WOOD_REDWOOD_STRIPPED_RESISTANT.get());
+        this.tag(REOTags.Blocks.REDWOOD_LOGS)
+                .add(REOBlocks.REDWOOD_LOG.get(), REOBlocks.STRIPPED_REDWOOD_LOG.get(),
+                        REOBlocks.RESISTANT_REDWOOD_LOG.get(), REOBlocks.RESISTANT_STRIPPED_REDWOOD_LOG.get(),
+                        REOBlocks.REDWOOD_WOOD.get(), REOBlocks.STRIPPED_REDWOOD_WOOD.get(),
+                        REOBlocks.RESISTANT_REDWOOD_WOOD.get(), REOBlocks.RESISTANT_STRIPPED_REDWOOD_WOOD.get());
 
-        this.tag(REOTags.Blocks.LOGS_RUBBER)
-                .add(REOBlocks.LOG_RUBBER.get(),REOBlocks.LOG_RUBBER_STRIPPED.get(),REOBlocks.LOG_RUBBER_RESISTANT.get(),REOBlocks.LOG_RUBBER_STRIPPED_RESISTANT.get(),
-                        REOBlocks.WOOD_RUBBER.get(),REOBlocks.WOOD_RUBBER_STRIPPED.get(),REOBlocks.WOOD_RUBBER_RESISTANT.get(),REOBlocks.WOOD_RUBBER_STRIPPED_RESISTANT.get());
+        this.tag(REOTags.Blocks.RUBBER_LOGS)
+                .add(REOBlocks.RUBBER_LOG.get(), REOBlocks.RUBBER_LOG_SAP.get(), REOBlocks.STRIPPED_RUBBER_LOG.get(),
+                        REOBlocks.RESISTANT_RUBBER_LOG.get(), REOBlocks.RESISTANT_STRIPPED_RUBBER_LOG.get(),
+                        REOBlocks.RUBBER_WOOD.get(), REOBlocks.RUBBER_WOOD_SAP.get(), REOBlocks.STRIPPED_RUBBER_WOOD.get(),
+                        REOBlocks.RESISTANT_RUBBER_WOOD.get(), REOBlocks.RESISTANT_STRIPPED_RUBBER_WOOD.get());
 
-        this.tag(REOTags.Blocks.LOGS_TEAK)
-                .add(REOBlocks.LOG_TEAK.get(),REOBlocks.LOG_TEAK_STRIPPED.get(),REOBlocks.LOG_TEAK_RESISTANT.get(),REOBlocks.LOG_TEAK_STRIPPED_RESISTANT.get(),
-                        REOBlocks.WOOD_TEAK.get(),REOBlocks.WOOD_TEAK_STRIPPED.get(),REOBlocks.WOOD_TEAK_RESISTANT.get(),REOBlocks.WOOD_TEAK_STRIPPED_RESISTANT.get());
+        this.tag(REOTags.Blocks.TEAK_LOGS)
+                .add(REOBlocks.TEAK_LOG.get(), REOBlocks.STRIPPED_TEAK_LOG.get(),
+                        REOBlocks.RESISTANT_TEAK_LOG.get(), REOBlocks.RESISTANT_STRIPPED_TEAK_LOG.get(),
+                        REOBlocks.TEAK_WOOD.get(), REOBlocks.STRIPPED_TEAK_WOOD.get(),
+                        REOBlocks.RESISTANT_TEAK_WOOD.get(), REOBlocks.RESISTANT_STRIPPED_TEAK_WOOD.get());
 
-        this.tag(REOTags.Blocks.LOGS_WALNUT)
-                .add(REOBlocks.LOG_WALNUT.get(),REOBlocks.LOG_WALNUT_STRIPPED.get(),REOBlocks.LOG_WALNUT_RESISTANT.get(),REOBlocks.LOG_WALNUT_STRIPPED_RESISTANT.get(),
-                        REOBlocks.WOOD_WALNUT.get(),REOBlocks.WOOD_WALNUT_STRIPPED.get(),REOBlocks.WOOD_WALNUT_RESISTANT.get(),REOBlocks.WOOD_WALNUT_STRIPPED_RESISTANT.get());
+        this.tag(REOTags.Blocks.WALNUT_LOGS)
+                .add(REOBlocks.WALNUT_LOG.get(), REOBlocks.STRIPPED_WALNUT_LOG.get(),
+                        REOBlocks.RESISTANT_WALNUT_LOG.get(), REOBlocks.RESISTANT_STRIPPED_WALNUT_LOG.get(),
+                        REOBlocks.WALNUT_WOOD.get(), REOBlocks.STRIPPED_WALNUT_WOOD.get(),
+                        REOBlocks.RESISTANT_WALNUT_WOOD.get(), REOBlocks.RESISTANT_STRIPPED_WALNUT_WOOD.get());
 
-        this.tag(REOTags.Blocks.LOGS_WILLOW)
-                .add(REOBlocks.LOG_WILLOW.get(),REOBlocks.LOG_WILLOW_STRIPPED.get(),REOBlocks.LOG_WILLOW_RESISTANT.get(),REOBlocks.LOG_WILLOW_STRIPPED_RESISTANT.get(),
-                        REOBlocks.WOOD_WILLOW.get(),REOBlocks.WOOD_WILLOW_STRIPPED.get(),REOBlocks.WOOD_WILLOW_RESISTANT.get(),REOBlocks.WOOD_WILLOW_STRIPPED_RESISTANT.get());
+        this.tag(REOTags.Blocks.WILLOW_LOGS)
+                .add(REOBlocks.WILLOW_LOG.get(), REOBlocks.STRIPPED_WILLOW_LOG.get(),
+                        REOBlocks.RESISTANT_WILLOW_LOG.get(), REOBlocks.RESISTANT_STRIPPED_WILLOW_LOG.get(),
+                        REOBlocks.WILLOW_WOOD.get(), REOBlocks.STRIPPED_WILLOW_WOOD.get(),
+                        REOBlocks.RESISTANT_WILLOW_WOOD.get(), REOBlocks.RESISTANT_STRIPPED_WILLOW_WOOD.get());
 
-        this.tag(REOTags.Blocks.LOGS_VANILLA_RESISTANT)
-                .add(REOBlocks.LOG_OAK_RESISTANT.get(),REOBlocks.LOG_OAK_STRIPPED_RESISTANT.get(),
-                        REOBlocks.WOOD_OAK_RESISTANT.get(),REOBlocks.WOOD_OAK_STRIPPED_RESISTANT.get(),
-                        REOBlocks.LOG_SPRUCE_RESISTANT.get(),REOBlocks.LOG_SPRUCE_STRIPPED_RESISTANT.get(),
-                        REOBlocks.WOOD_SPRUCE_RESISTANT.get(),REOBlocks.WOOD_SPRUCE_STRIPPED_RESISTANT.get(),
-                        REOBlocks.LOG_BIRCH_RESISTANT.get(),REOBlocks.LOG_BIRCH_STRIPPED_RESISTANT.get(),
-                        REOBlocks.WOOD_BIRCH_RESISTANT.get(),REOBlocks.WOOD_BIRCH_STRIPPED_RESISTANT.get(),
-                        REOBlocks.LOG_JUNGLE_RESISTANT.get(),REOBlocks.LOG_JUNGLE_STRIPPED_RESISTANT.get(),
-                        REOBlocks.WOOD_JUNGLE_RESISTANT.get(),REOBlocks.WOOD_JUNGLE_STRIPPED_RESISTANT.get(),
-                        REOBlocks.LOG_ACACIA_RESISTANT.get(),REOBlocks.LOG_ACACIA_STRIPPED_RESISTANT.get(),
-                        REOBlocks.WOOD_ACACIA_RESISTANT.get(),REOBlocks.WOOD_ACACIA_STRIPPED_RESISTANT.get(),
-                        REOBlocks.LOG_DARK_OAK_RESISTANT.get(),REOBlocks.LOG_DARK_OAK_STRIPPED_RESISTANT.get(),
-                        REOBlocks.WOOD_DARK_OAK_RESISTANT.get(),REOBlocks.WOOD_DARK_OAK_STRIPPED_RESISTANT.get(),
-                        REOBlocks.LOG_MANGROVE_RESISTANT.get(),REOBlocks.LOG_MANGROVE_STRIPPED_RESISTANT.get(),
-                        REOBlocks.WOOD_MANGROVE_RESISTANT.get(),REOBlocks.WOOD_MANGROVE_STRIPPED_RESISTANT.get(),
-                        REOBlocks.LOG_CHERRY_RESISTANT.get(),REOBlocks.LOG_CHERRY_STRIPPED_RESISTANT.get(),
-                        REOBlocks.WOOD_CHERRY_RESISTANT.get(),REOBlocks.WOOD_CHERRY_STRIPPED_RESISTANT.get());
+
+        this.tag(REOTags.Blocks.VANILLA_RESISTANT_LOGS)
+                .add(REOBlocks.RESISTANT_OAK_LOG.get(), REOBlocks.RESISTANT_STRIPPED_OAK_LOG.get(),
+                        REOBlocks.RESISTANT_OAK_WOOD.get(), REOBlocks.RESISTANT_STRIPPED_OAK_WOOD.get(),
+                        REOBlocks.RESISTANT_SPRUCE_LOG.get(), REOBlocks.RESISTANT_STRIPPED_SPRUCE_LOG.get(),
+                        REOBlocks.RESISTANT_SPRUCE_WOOD.get(), REOBlocks.RESISTANT_STRIPPED_SPRUCE_WOOD.get(),
+                        REOBlocks.RESISTANT_BIRCH_LOG.get(), REOBlocks.RESISTANT_STRIPPED_BIRCH_LOG.get(),
+                        REOBlocks.RESISTANT_BIRCH_WOOD.get(), REOBlocks.RESISTANT_STRIPPED_BIRCH_WOOD.get(),
+                        REOBlocks.RESISTANT_JUNGLE_LOG.get(), REOBlocks.RESISTANT_STRIPPED_JUNGLE_LOG.get(),
+                        REOBlocks.RESISTANT_JUNGLE_WOOD.get(), REOBlocks.RESISTANT_STRIPPED_JUNGLE_WOOD.get(),
+                        REOBlocks.RESISTANT_ACACIA_LOG.get(), REOBlocks.RESISTANT_STRIPPED_ACACIA_LOG.get(),
+                        REOBlocks.RESISTANT_ACACIA_WOOD.get(), REOBlocks.RESISTANT_STRIPPED_ACACIA_WOOD.get(),
+                        REOBlocks.RESISTANT_DARK_OAK_LOG.get(), REOBlocks.RESISTANT_STRIPPED_DARK_OAK_LOG.get(),
+                        REOBlocks.RESISTANT_DARK_OAK_WOOD.get(), REOBlocks.RESISTANT_STRIPPED_DARK_OAK_WOOD.get(),
+                        REOBlocks.RESISTANT_MANGROVE_LOG.get(), REOBlocks.RESISTANT_STRIPPED_MANGROVE_LOG.get(),
+                        REOBlocks.RESISTANT_MANGROVE_WOOD.get(), REOBlocks.RESISTANT_STRIPPED_MANGROVE_WOOD.get(),
+                        REOBlocks.RESISTANT_CHERRY_LOG.get(), REOBlocks.RESISTANT_STRIPPED_CHERRY_LOG.get(),
+                        REOBlocks.RESISTANT_CHERRY_WOOD.get(), REOBlocks.RESISTANT_STRIPPED_CHERRY_WOOD.get());
 
         this.tag(BlockTags.LOGS)
-                .addTag(REOTags.Blocks.LOGS_BALSA).addTag(REOTags.Blocks.LOGS_BAOBAB).addTag(REOTags.Blocks.LOGS_HILL_CHERRY)
-                .addTag(REOTags.Blocks.LOGS_CHESTNUT).addTag(REOTags.Blocks.LOGS_CITRUS).addTag(REOTags.Blocks.LOGS_EBONY)
-                .addTag(REOTags.Blocks.LOGS_LARCH).addTag(REOTags.Blocks.LOGS_MAHOGANY).addTag(REOTags.Blocks.LOGS_MAPLE)
-                .addTag(REOTags.Blocks.LOGS_PALM).addTag(REOTags.Blocks.LOGS_PAPAYA).addTag(REOTags.Blocks.LOGS_PINE)
-                .addTag(REOTags.Blocks.LOGS_PLUM).addTag(REOTags.Blocks.LOGS_POPLAR).addTag(REOTags.Blocks.LOGS_REDWOOD)
-                .addTag(REOTags.Blocks.LOGS_RUBBER).addTag(REOTags.Blocks.LOGS_TEAK).addTag(REOTags.Blocks.LOGS_WALNUT)
-                .addTag(REOTags.Blocks.LOGS_WILLOW).addTag(REOTags.Blocks.LOGS_VANILLA_RESISTANT);
+                .addTag(REOTags.Blocks.BALSA_LOGS).addTag(REOTags.Blocks.BAOBAB_LOGS).addTag(REOTags.Blocks.HILL_CHERRY_LOGS)
+                .addTag(REOTags.Blocks.CHESTNUT_LOGS).addTag(REOTags.Blocks.CITRUS_LOGS).addTag(REOTags.Blocks.EBONY_LOGS)
+                .addTag(REOTags.Blocks.LARCH_LOGS).addTag(REOTags.Blocks.MAHOGANY_LOGS).addTag(REOTags.Blocks.MAPLE_LOGS)
+                .addTag(REOTags.Blocks.PALM_LOGS).addTag(REOTags.Blocks.PAPAYA_LOGS).addTag(REOTags.Blocks.PINE_LOGS)
+                .addTag(REOTags.Blocks.PLUM_LOGS).addTag(REOTags.Blocks.POPLAR_LOGS).addTag(REOTags.Blocks.REDWOOD_LOGS)
+                .addTag(REOTags.Blocks.RUBBER_LOGS).addTag(REOTags.Blocks.TEAK_LOGS).addTag(REOTags.Blocks.WALNUT_LOGS)
+                .addTag(REOTags.Blocks.WILLOW_LOGS).addTag(REOTags.Blocks.VANILLA_RESISTANT_LOGS);
 
         this.tag(BlockTags.OVERWORLD_NATURAL_LOGS)
-                .addTag(REOTags.Blocks.LOGS_BALSA).addTag(REOTags.Blocks.LOGS_BAOBAB).addTag(REOTags.Blocks.LOGS_HILL_CHERRY)
-                .addTag(REOTags.Blocks.LOGS_CHESTNUT).addTag(REOTags.Blocks.LOGS_CITRUS).addTag(REOTags.Blocks.LOGS_EBONY)
-                .addTag(REOTags.Blocks.LOGS_LARCH).addTag(REOTags.Blocks.LOGS_MAHOGANY).addTag(REOTags.Blocks.LOGS_MAPLE)
-                .addTag(REOTags.Blocks.LOGS_PALM).addTag(REOTags.Blocks.LOGS_PAPAYA).addTag(REOTags.Blocks.LOGS_PINE)
-                .addTag(REOTags.Blocks.LOGS_PLUM).addTag(REOTags.Blocks.LOGS_POPLAR).addTag(REOTags.Blocks.LOGS_REDWOOD)
-                .addTag(REOTags.Blocks.LOGS_RUBBER).addTag(REOTags.Blocks.LOGS_TEAK).addTag(REOTags.Blocks.LOGS_WALNUT)
-                .addTag(REOTags.Blocks.LOGS_WILLOW).addTag(REOTags.Blocks.LOGS_VANILLA_RESISTANT);
+                .addTag(REOTags.Blocks.BALSA_LOGS).addTag(REOTags.Blocks.BAOBAB_LOGS).addTag(REOTags.Blocks.HILL_CHERRY_LOGS)
+                .addTag(REOTags.Blocks.CHESTNUT_LOGS).addTag(REOTags.Blocks.CITRUS_LOGS).addTag(REOTags.Blocks.EBONY_LOGS)
+                .addTag(REOTags.Blocks.LARCH_LOGS).addTag(REOTags.Blocks.MAHOGANY_LOGS).addTag(REOTags.Blocks.MAPLE_LOGS)
+                .addTag(REOTags.Blocks.PALM_LOGS).addTag(REOTags.Blocks.PAPAYA_LOGS).addTag(REOTags.Blocks.PINE_LOGS)
+                .addTag(REOTags.Blocks.PLUM_LOGS).addTag(REOTags.Blocks.POPLAR_LOGS).addTag(REOTags.Blocks.REDWOOD_LOGS)
+                .addTag(REOTags.Blocks.RUBBER_LOGS).addTag(REOTags.Blocks.TEAK_LOGS).addTag(REOTags.Blocks.WALNUT_LOGS)
+                .addTag(REOTags.Blocks.WILLOW_LOGS).addTag(REOTags.Blocks.VANILLA_RESISTANT_LOGS);
 
         // Ores
-        this.tag(REOTags.Blocks.REO_ORES).add(REOBlocks.ORE_ALUMINIUM.get(), REOBlocks.ORE_LEAD.get(),
-                REOBlocks.ORE_NICKEL.get(), REOBlocks.ORE_PLATINUM.get(), REOBlocks.ORE_SILVER.get(),
-                REOBlocks.ORE_TIN.get(), REOBlocks.ORE_URANIUM.get(), REOBlocks.ORE_ZINC.get());
+        this.tag(REOTags.Blocks.REO_ORES).add(REOBlocks.ALUMINUM_ORE.get(), REOBlocks.LEAD_ORE.get(),
+                REOBlocks.NICKEL_ORE.get(), REOBlocks.PLATINUM_ORE.get(), REOBlocks.SILVER_ORE.get(),
+                REOBlocks.TIN_ORE.get(), REOBlocks.URANIUM_ORE.get(), REOBlocks.ZINC_ORE.get());
 
-        this.tag(REOTags.Blocks.REO_DEEPSLATE_ORES).add(REOBlocks.DEEPSLATE_ALUMINIUM.get(), REOBlocks.DEEPSLATE_LEAD.get(),
-                REOBlocks.DEEPSLATE_NICKEL.get(), REOBlocks.DEEPSLATE_PLATINUM.get(),
-                REOBlocks.DEEPSLATE_SILVER.get(), REOBlocks.DEEPSLATE_URANIUM.get(), REOBlocks.DEEPSLATE_ZINC.get());
+        this.tag(REOTags.Blocks.REO_DEEPSLATE_ORES).add(REOBlocks.DEEPSLATE_ALUMINIUM_ORE.get(), REOBlocks.DEEPSLATE_LEAD_ORE.get(),
+                REOBlocks.DEEPSLATE_NICKEL_ORE.get(), REOBlocks.DEEPSLATE_PLATINUM_ORE.get(),
+                REOBlocks.DEEPSLATE_SILVER_ORE.get(), REOBlocks.DEEPSLATE_URANIUM_ORE.get(), REOBlocks.DEEPSLATE_ZINC_ORE.get());
 
-        this.tag(REOTags.Blocks.REO_GRAVEL_ORES).add(REOBlocks.GRAVEL_ORE_ALUMINIUM.get(), REOBlocks.GRAVEL_ORE_LEAD.get(),
-                REOBlocks.GRAVEL_ORE_NICKEL.get(), REOBlocks.GRAVEL_ORE_PLATINUM.get(),
-                REOBlocks.GRAVEL_ORE_SILVER.get(), REOBlocks.GRAVEL_ORE_TIN.get(),
-                REOBlocks.GRAVEL_ORE_URANIUM.get(), REOBlocks.GRAVEL_ORE_ZINC.get());
+        this.tag(REOTags.Blocks.REO_GRAVEL_ORES).add(REOBlocks.ALUMINUM_GRAVEL_ORE.get(), REOBlocks.LEAD_GRAVEL_ORE.get(),
+                REOBlocks.NICKEL_GRAVEL_ORE.get(), REOBlocks.PLATINUM_GRAVEL_ORE.get(),
+                REOBlocks.SILVER_GRAVEL_ORE.get(), REOBlocks.TIN_GRAVEL_ORE.get(),
+                REOBlocks.URANIUM_GRAVEL_ORE.get(), REOBlocks.ZINC_GRAVEL_ORE.get());
 
-        this.tag(REOTags.Blocks.REO_NETHER_ORES).add(REOBlocks.NETHER_ALUMINIUM.get(), REOBlocks.NETHER_LEAD.get(),
-                REOBlocks.NETHER_NICKEL.get(), REOBlocks.NETHER_PLATINUM.get(),
-                REOBlocks.NETHER_SILVER.get(), REOBlocks.NETHER_TIN.get(),
-                REOBlocks.NETHER_URANIUM.get(), REOBlocks.NETHER_ZINC.get());
+        this.tag(REOTags.Blocks.REO_NETHER_ORES).add(REOBlocks.NETHER_ALUMINIUM_ORE.get(), REOBlocks.NETHER_LEAD_ORE.get(),
+                REOBlocks.NETHER_NICKEL_ORE.get(), REOBlocks.NETHER_PLATINUM_ORE.get(),
+                REOBlocks.NETHER_SILVER_ORE.get(), REOBlocks.NETHER_TIN_ORE.get(),
+                REOBlocks.NETHER_URANIUM_ORE.get(), REOBlocks.NETHER_ZINC_ORE.get());
 
-        this.tag(REOTags.Blocks.REO_END_ORES).add(REOBlocks.ORE_ENDERITE.get());
+        this.tag(REOTags.Blocks.REO_END_ORES).add(REOBlocks.ENDERITE_ORE.get());
 
         // Vanilla
-        this.tag(BlockTags.GOLD_ORES).add(REOBlocks.GRAVEL_ORE_GOLD.get());
-        this.tag(BlockTags.IRON_ORES).add(REOBlocks.GRAVEL_ORE_IRON.get()).add(REOBlocks.NETHER_IRON.get());
-        this.tag(BlockTags.DIAMOND_ORES).add(REOBlocks.GRAVEL_ORE_DIAMOND.get()).add(REOBlocks.NETHER_DIAMOND.get());
-        this.tag(BlockTags.REDSTONE_ORES).add(REOBlocks.GRAVEL_ORE_REDSTONE.get()).add(REOBlocks.NETHER_REDSTONE.get());
-        this.tag(BlockTags.LAPIS_ORES).add(REOBlocks.GRAVEL_ORE_LAPIS.get()).add(REOBlocks.NETHER_LAPIS.get());
-        this.tag(BlockTags.COAL_ORES).add(REOBlocks.GRAVEL_ORE_COAL.get()).add(REOBlocks.NETHER_COAL.get());
-        this.tag(BlockTags.EMERALD_ORES).add(REOBlocks.GRAVEL_ORE_EMERALD.get()).add(REOBlocks.NETHER_EMERALD.get());
-        this.tag(BlockTags.COPPER_ORES).add(REOBlocks.GRAVEL_ORE_COPPER.get()).add(REOBlocks.NETHER_COPPER.get());
+        this.tag(BlockTags.GOLD_ORES).add(REOBlocks.GOLD_GRAVEL_ORE.get());
+        this.tag(BlockTags.IRON_ORES).add(REOBlocks.IRON_GRAVEL_ORE.get()).add(REOBlocks.NETHER_IRON_ORE.get());
+        this.tag(BlockTags.DIAMOND_ORES).add(REOBlocks.DIAMOND_GRAVEL_ORE.get()).add(REOBlocks.NETHER_DIAMOND_ORE.get());
+        this.tag(BlockTags.REDSTONE_ORES).add(REOBlocks.REDSTONE_GRAVEL_ORE.get()).add(REOBlocks.NETHER_REDSTONE_ORE.get());
+        this.tag(BlockTags.LAPIS_ORES).add(REOBlocks.LAPIS_GRAVEL_ORE.get()).add(REOBlocks.NETHER_LAPIS_ORE.get());
+        this.tag(BlockTags.COAL_ORES).add(REOBlocks.COAL_GRAVEL_ORE.get()).add(REOBlocks.NETHER_COAL_ORE.get());
+        this.tag(BlockTags.EMERALD_ORES).add(REOBlocks.EMERALD_GRAVEL_ORE.get()).add(REOBlocks.NETHER_EMERALD_ORE.get());
+        this.tag(BlockTags.COPPER_ORES).add(REOBlocks.COPPER_GRAVEL_ORE.get()).add(REOBlocks.NETHER_COPPER_ORE.get());
 
         // Modded
         this.tag(REOTags.Blocks.ORES_ALUMINUM)
-                .add(REOBlocks.ORE_ALUMINIUM.get()).add(REOBlocks.DEEPSLATE_ALUMINIUM.get())
-                .add(REOBlocks.GRAVEL_ORE_ALUMINIUM.get()).add(REOBlocks.NETHER_ALUMINIUM.get());
+                .add(REOBlocks.ALUMINUM_ORE.get()).add(REOBlocks.DEEPSLATE_ALUMINIUM_ORE.get())
+                .add(REOBlocks.ALUMINUM_GRAVEL_ORE.get()).add(REOBlocks.NETHER_ALUMINIUM_ORE.get());
         this.tag(REOTags.Blocks.ORES_LEAD)
-                .add(REOBlocks.ORE_LEAD.get()).add(REOBlocks.DEEPSLATE_LEAD.get())
-                .add(REOBlocks.GRAVEL_ORE_LEAD.get()).add(REOBlocks.NETHER_LEAD.get());
+                .add(REOBlocks.LEAD_ORE.get()).add(REOBlocks.DEEPSLATE_LEAD_ORE.get())
+                .add(REOBlocks.LEAD_GRAVEL_ORE.get()).add(REOBlocks.NETHER_LEAD_ORE.get());
         this.tag(REOTags.Blocks.ORES_NICKEL)
-                .add(REOBlocks.ORE_NICKEL.get()).add(REOBlocks.DEEPSLATE_NICKEL.get())
-                .add(REOBlocks.GRAVEL_ORE_NICKEL.get()).add(REOBlocks.NETHER_NICKEL.get());
+                .add(REOBlocks.NICKEL_ORE.get()).add(REOBlocks.DEEPSLATE_NICKEL_ORE.get())
+                .add(REOBlocks.NICKEL_GRAVEL_ORE.get()).add(REOBlocks.NETHER_NICKEL_ORE.get());
         this.tag(REOTags.Blocks.ORES_PLATINUM)
-                .add(REOBlocks.ORE_PLATINUM.get()).add(REOBlocks.DEEPSLATE_PLATINUM.get())
-                .add(REOBlocks.GRAVEL_ORE_PLATINUM.get()).add(REOBlocks.NETHER_PLATINUM.get());
+                .add(REOBlocks.PLATINUM_ORE.get()).add(REOBlocks.DEEPSLATE_PLATINUM_ORE.get())
+                .add(REOBlocks.PLATINUM_GRAVEL_ORE.get()).add(REOBlocks.NETHER_PLATINUM_ORE.get());
         this.tag(REOTags.Blocks.ORES_SILVER)
-                .add(REOBlocks.ORE_SILVER.get()).add(REOBlocks.DEEPSLATE_SILVER.get())
-                .add(REOBlocks.GRAVEL_ORE_SILVER.get()).add(REOBlocks.NETHER_SILVER.get());
+                .add(REOBlocks.SILVER_ORE.get()).add(REOBlocks.DEEPSLATE_SILVER_ORE.get())
+                .add(REOBlocks.SILVER_GRAVEL_ORE.get()).add(REOBlocks.NETHER_SILVER_ORE.get());
         this.tag(REOTags.Blocks.ORES_TIN)
-                .add(REOBlocks.ORE_TIN.get()).add(REOBlocks.GRAVEL_ORE_TIN.get())
-                .add(REOBlocks.NETHER_TIN.get());
+                .add(REOBlocks.TIN_ORE.get()).add(REOBlocks.TIN_GRAVEL_ORE.get())
+                .add(REOBlocks.NETHER_TIN_ORE.get());
         this.tag(REOTags.Blocks.ORES_URANIUM)
-                .add(REOBlocks.ORE_URANIUM.get()).add(REOBlocks.DEEPSLATE_URANIUM.get())
-                .add(REOBlocks.GRAVEL_ORE_URANIUM.get()).add(REOBlocks.NETHER_URANIUM.get());
+                .add(REOBlocks.URANIUM_ORE.get()).add(REOBlocks.DEEPSLATE_URANIUM_ORE.get())
+                .add(REOBlocks.URANIUM_GRAVEL_ORE.get()).add(REOBlocks.NETHER_URANIUM_ORE.get());
         this.tag(REOTags.Blocks.ORES_ZINC)
-                .add(REOBlocks.ORE_ZINC.get()).add(REOBlocks.DEEPSLATE_ZINC.get())
-                .add(REOBlocks.GRAVEL_ORE_ZINC.get()).add(REOBlocks.NETHER_ZINC.get());
+                .add(REOBlocks.ZINC_ORE.get()).add(REOBlocks.DEEPSLATE_ZINC_ORE.get())
+                .add(REOBlocks.ZINC_GRAVEL_ORE.get()).add(REOBlocks.NETHER_ZINC_ORE.get());
 
         // Storage Blocks //
         // Block
-        this.tag(REOTags.Blocks.STORAGE_BLOCKS).add(REOBlocks.BLOCK_ALUMINIUM.get(), REOBlocks.BLOCK_BRASS.get(),
-                REOBlocks.BLOCK_BRONZE.get(), REOBlocks.BLOCK_ELECTRUM.get(), REOBlocks.BLOCK_ENDERITE.get(),
-                REOBlocks.BLOCK_LEAD.get(), REOBlocks.BLOCK_NICKEL.get(), REOBlocks.BLOCK_PERIDOT.get(),
-                REOBlocks.BLOCK_PLATINUM.get(), REOBlocks.BLOCK_RUBY.get(), REOBlocks.BLOCK_SAPPHIRE.get(),
-                REOBlocks.BLOCK_SILVER.get(), REOBlocks.BLOCK_STEEL.get(), REOBlocks.BLOCK_TIN.get(),
-                REOBlocks.BLOCK_URANIUM.get(), REOBlocks.BLOCK_ZINC.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS).add(REOBlocks.ALUMINUM_BLOCK.get(), REOBlocks.BRASS_BLOCK.get(),
+                REOBlocks.BRONZE_BLOCK.get(), REOBlocks.ELECTRUM_BLOCK.get(), REOBlocks.ENDERITE_BLOCK.get(),
+                REOBlocks.LEAD_BLOCK.get(), REOBlocks.NICKEL_BLOCK.get(), REOBlocks.PERIDOT_BLOCK.get(),
+                REOBlocks.PLATINUM_BLOCK.get(), REOBlocks.RUBY_BLOCK.get(), REOBlocks.SAPPHIRE_BLOCK.get(),
+                REOBlocks.SILVER_BLOCK.get(), REOBlocks.STEEL_BLOCK.get(), REOBlocks.TIN_BLOCK.get(),
+                REOBlocks.URANIUM_BLOCK.get(), REOBlocks.ZINC_BLOCK.get());
 
-        this.tag(REOTags.Blocks.STORAGE_BLOCKS_ALUMINUM).add(REOBlocks.BLOCK_ALUMINIUM.get());
-        this.tag(REOTags.Blocks.STORAGE_BLOCKS_BRASS).add(REOBlocks.BLOCK_BRASS.get());
-        this.tag(REOTags.Blocks.STORAGE_BLOCKS_BRONZE).add(REOBlocks.BLOCK_BRONZE.get());
-        this.tag(REOTags.Blocks.STORAGE_BLOCKS_ELECTRUM).add(REOBlocks.BLOCK_ELECTRUM.get());
-        this.tag(REOTags.Blocks.STORAGE_BLOCKS_ENDERITE).add(REOBlocks.BLOCK_ENDERITE.get());
-        this.tag(REOTags.Blocks.STORAGE_BLOCKS_LEAD).add(REOBlocks.BLOCK_LEAD.get());
-        this.tag(REOTags.Blocks.STORAGE_BLOCKS_NICKEL).add(REOBlocks.BLOCK_NICKEL.get());
-        this.tag(REOTags.Blocks.STORAGE_BLOCKS_PERIDOT).add(REOBlocks.BLOCK_PERIDOT.get());
-        this.tag(REOTags.Blocks.STORAGE_BLOCKS_PLATINUM).add(REOBlocks.BLOCK_PLATINUM.get());
-        this.tag(REOTags.Blocks.STORAGE_BLOCKS_RUBY).add(REOBlocks.BLOCK_RUBY.get());
-        this.tag(REOTags.Blocks.STORAGE_BLOCKS_SAPPHIRE).add(REOBlocks.BLOCK_SAPPHIRE.get());
-        this.tag(REOTags.Blocks.STORAGE_BLOCKS_SILVER).add(REOBlocks.BLOCK_SILVER.get());
-        this.tag(REOTags.Blocks.STORAGE_BLOCKS_STEEL).add(REOBlocks.BLOCK_STEEL.get());
-        this.tag(REOTags.Blocks.STORAGE_BLOCKS_TIN).add(REOBlocks.BLOCK_TIN.get());
-        this.tag(REOTags.Blocks.STORAGE_BLOCKS_URANIUM).add(REOBlocks.BLOCK_URANIUM.get());
-        this.tag(REOTags.Blocks.STORAGE_BLOCKS_ZINC).add(REOBlocks.BLOCK_ZINC.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_ALUMINUM).add(REOBlocks.ALUMINUM_BLOCK.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_BRASS).add(REOBlocks.BRASS_BLOCK.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_BRONZE).add(REOBlocks.BRONZE_BLOCK.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_ELECTRUM).add(REOBlocks.ELECTRUM_BLOCK.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_ENDERITE).add(REOBlocks.ENDERITE_BLOCK.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_LEAD).add(REOBlocks.LEAD_BLOCK.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_NICKEL).add(REOBlocks.NICKEL_BLOCK.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_PERIDOT).add(REOBlocks.PERIDOT_BLOCK.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_PLATINUM).add(REOBlocks.PLATINUM_BLOCK.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_RUBY).add(REOBlocks.RUBY_BLOCK.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_SAPPHIRE).add(REOBlocks.SAPPHIRE_BLOCK.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_SILVER).add(REOBlocks.SILVER_BLOCK.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_STEEL).add(REOBlocks.STEEL_BLOCK.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_TIN).add(REOBlocks.TIN_BLOCK.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_URANIUM).add(REOBlocks.URANIUM_BLOCK.get());
+        this.tag(REOTags.Blocks.STORAGE_BLOCKS_ZINC).add(REOBlocks.ZINC_BLOCK.get());
 
         // Raw
-        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS).add(REOBlocks.BLOCK_RAW_ALUMINIUM.get(), REOBlocks.BLOCK_RAW_ENDERITE.get(),
-                REOBlocks.BLOCK_RAW_LEAD.get(), REOBlocks.BLOCK_RAW_NICKEL.get(), REOBlocks.BLOCK_RAW_PLATINUM.get(),
-                REOBlocks.BLOCK_RAW_SILVER.get(), REOBlocks.BLOCK_RAW_TIN.get(), REOBlocks.BLOCK_RAW_URANIUM.get(),
-                REOBlocks.BLOCK_RAW_ZINC.get());
+        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS).add(REOBlocks.RAW_ALUMINIUM_BLOCK.get(), REOBlocks.RAW_ENDERITE_BLOCK.get(),
+                REOBlocks.RAW_LEAD_BLOCK.get(), REOBlocks.RAW_NICKEL_BLOCK.get(), REOBlocks.RAW_PLATINUM_BLOCK.get(),
+                REOBlocks.RAW_SILVER_BLOCK.get(), REOBlocks.RAW_TIN_BLOCK.get(), REOBlocks.RAW_URANIUM_BLOCK.get(),
+                REOBlocks.RAW_ZINC_BLOCK.get());
 
-        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS_ALUMINUM).add(REOBlocks.BLOCK_RAW_ALUMINIUM.get());
-        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS_ENDERITE).add(REOBlocks.BLOCK_RAW_ENDERITE.get());
-        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS_LEAD).add(REOBlocks.BLOCK_RAW_LEAD.get());
-        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS_NICKEL).add(REOBlocks.BLOCK_RAW_NICKEL.get());
-        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS_PLATINUM).add(REOBlocks.BLOCK_RAW_PLATINUM.get());
-        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS_SILVER).add(REOBlocks.BLOCK_RAW_SILVER.get());
-        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS_TIN).add(REOBlocks.BLOCK_RAW_TIN.get());
-        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS_URANIUM).add(REOBlocks.BLOCK_RAW_URANIUM.get());
-        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS_ZINC).add(REOBlocks.BLOCK_RAW_ZINC.get());
+        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS_ALUMINUM).add(REOBlocks.RAW_ALUMINIUM_BLOCK.get());
+        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS_ENDERITE).add(REOBlocks.RAW_ENDERITE_BLOCK.get());
+        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS_LEAD).add(REOBlocks.RAW_LEAD_BLOCK.get());
+        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS_NICKEL).add(REOBlocks.RAW_NICKEL_BLOCK.get());
+        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS_PLATINUM).add(REOBlocks.RAW_PLATINUM_BLOCK.get());
+        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS_SILVER).add(REOBlocks.RAW_SILVER_BLOCK.get());
+        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS_TIN).add(REOBlocks.RAW_TIN_BLOCK.get());
+        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS_URANIUM).add(REOBlocks.RAW_URANIUM_BLOCK.get());
+        this.tag(REOTags.Blocks.RAW_STORAGE_BLOCKS_ZINC).add(REOBlocks.RAW_ZINC_BLOCK.get());
 
         this.tag(REOTags.Blocks.MARBLE_BLOCKS).add(REOBlocks.MARBLE.get(), REOBlocks.MARBLE_COBBLE.get(),
                 REOBlocks.MARBLE_COBBLE_MOSSY.get(), REOBlocks.MARBLE_BRICK.get(), REOBlocks.MARBLE_BRICK_MOSSY.get(),
@@ -609,6 +642,14 @@ public class REOBlockTagGenerator extends BlockTagsProvider {
         this.tag(REOTags.Blocks.CALCITE_BLOCKS).add(REOBlocks.CALCITE_STAIRS.get(), REOBlocks.CALCITE_SLAB.get(), REOBlocks.CALCITE_WALL.get());
 
         this.tag(REOTags.Blocks.NETHERRACK_BLOCKS).add(REOBlocks.NETHERRACK_STAIRS.get(), REOBlocks.NETHERRACK_SLAB.get(), REOBlocks.NETHERRACK_WALL.get());
+
+        this.tag(REOTags.Blocks.REO_CROPS).add(REOBlocks.BARLEY_CROP.get(), REOBlocks.CAULIFLOWER_CROP.get(), REOBlocks.COTTON_CROP.get(),
+                REOBlocks.ONIONS_CROP.get(), REOBlocks.RICE_CROP.get(), REOBlocks.TOMATO_CROP.get());
+
+        this.tag(REOTags.Blocks.REO_FRUITS).add(REOBlocks.CITRUS_FRUIT.get(), REOBlocks.LIME_FRUIT.get(), REOBlocks.PAPAYA_FRUIT.get(),
+                REOBlocks.PEAR_FRUIT.get(), REOBlocks.PLUM_FRUIT.get(), REOBlocks.WALNUT_FRUIT.get());
+
+        this.tag(BlockTags.BEE_GROWABLES).addTag(REOTags.Blocks.REO_CROPS).addTag(REOTags.Blocks.REO_FRUITS);
 
     }
 }

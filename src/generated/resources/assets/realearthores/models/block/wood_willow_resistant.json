@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "realearthores:block/tree/log/willow",
-    "side": "realearthores:block/tree/log/willow"
-  }
-}

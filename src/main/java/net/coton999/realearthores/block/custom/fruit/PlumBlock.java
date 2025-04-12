@@ -71,6 +71,6 @@ public class PlumBlock extends CropBlock {
         BlockPos pAbove = pos.above();
         BlockState pLeaves = level.getBlockState(pAbove);
 
-        return pLeaves.is(REOBlocks.LEAVES_PLUM.get());
+        return pLeaves.is(REOBlocks.PLUM_LEAVES.get());
     }
 }

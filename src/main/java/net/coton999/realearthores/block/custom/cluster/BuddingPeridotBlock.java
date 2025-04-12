@@ -37,7 +37,7 @@ public class BuddingPeridotBlock extends AmethystBlock {
             } else if (blockstate.is(REOBlocks.MEDIUM_PERIDOT_BUD.get()) && blockstate.getValue(AmethystClusterBlock.FACING) == direction) {
                 block = REOBlocks.LARGE_PERIDOT_BUD.get();
             } else if (blockstate.is(REOBlocks.LARGE_PERIDOT_BUD.get()) && blockstate.getValue(AmethystClusterBlock.FACING) == direction) {
-                block = REOBlocks.CLUSTER_PERIDOT.get();
+                block = REOBlocks.PERIDOT_CLUSTER.get();
             }
 
             if (block != null) {

@@ -140,28 +140,28 @@ public class REOConfiguredFeatures {
         // Ore //
         // Overworld
         List<OreConfiguration.TargetBlockState> overworldAluminiumOres = List.of(OreConfiguration.target(stoneReplaceables,
-                        REOBlocks.ORE_ALUMINIUM.get().defaultBlockState()),
-                OreConfiguration.target(deepslateReplaceables, REOBlocks.DEEPSLATE_ALUMINIUM.get().defaultBlockState()));
+                        REOBlocks.ALUMINUM_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, REOBlocks.DEEPSLATE_ALUMINIUM_ORE.get().defaultBlockState()));
         List<OreConfiguration.TargetBlockState> overworldLeadOres = List.of(OreConfiguration.target(stoneReplaceables,
-                        REOBlocks.ORE_LEAD.get().defaultBlockState()),
-                OreConfiguration.target(deepslateReplaceables, REOBlocks.DEEPSLATE_LEAD.get().defaultBlockState()));
+                        REOBlocks.LEAD_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, REOBlocks.DEEPSLATE_LEAD_ORE.get().defaultBlockState()));
         List<OreConfiguration.TargetBlockState> overworldNickelOres = List.of(OreConfiguration.target(stoneReplaceables,
-                        REOBlocks.ORE_NICKEL.get().defaultBlockState()),
-                OreConfiguration.target(deepslateReplaceables, REOBlocks.DEEPSLATE_NICKEL.get().defaultBlockState()));
+                        REOBlocks.NICKEL_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, REOBlocks.DEEPSLATE_NICKEL_ORE.get().defaultBlockState()));
         List<OreConfiguration.TargetBlockState> overworldPlatinumOres = List.of(OreConfiguration.target(stoneReplaceables,
-                        REOBlocks.ORE_PLATINUM.get().defaultBlockState()),
-                OreConfiguration.target(deepslateReplaceables, REOBlocks.DEEPSLATE_PLATINUM.get().defaultBlockState()));
+                        REOBlocks.PLATINUM_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, REOBlocks.DEEPSLATE_PLATINUM_ORE.get().defaultBlockState()));
         List<OreConfiguration.TargetBlockState> overworldSilverOres = List.of(OreConfiguration.target(stoneReplaceables,
-                        REOBlocks.ORE_SILVER.get().defaultBlockState()),
-                OreConfiguration.target(deepslateReplaceables, REOBlocks.DEEPSLATE_SILVER.get().defaultBlockState()));
+                        REOBlocks.SILVER_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, REOBlocks.DEEPSLATE_SILVER_ORE.get().defaultBlockState()));
         List<OreConfiguration.TargetBlockState> overworldTinOres = List.of(OreConfiguration.target(stoneReplaceables,
-                        REOBlocks.ORE_TIN.get().defaultBlockState()));
+                        REOBlocks.TIN_ORE.get().defaultBlockState()));
         List<OreConfiguration.TargetBlockState> overworldUraniumOres = List.of(OreConfiguration.target(stoneReplaceables,
-                        REOBlocks.ORE_URANIUM.get().defaultBlockState()),
-                OreConfiguration.target(deepslateReplaceables, REOBlocks.DEEPSLATE_URANIUM.get().defaultBlockState()));
+                        REOBlocks.URANIUM_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, REOBlocks.DEEPSLATE_URANIUM_ORE.get().defaultBlockState()));
         List<OreConfiguration.TargetBlockState> overworldZincOres = List.of(OreConfiguration.target(stoneReplaceables,
-                        REOBlocks.ORE_ZINC.get().defaultBlockState()),
-                OreConfiguration.target(deepslateReplaceables, REOBlocks.DEEPSLATE_ZINC.get().defaultBlockState()));
+                        REOBlocks.ZINC_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, REOBlocks.DEEPSLATE_ZINC_ORE.get().defaultBlockState()));
 
         // Building
         List<OreConfiguration.TargetBlockState> overworldMarble = List.of(OreConfiguration.target(stoneReplaceables,
@@ -185,82 +185,82 @@ public class REOConfiguredFeatures {
 
         // Nether
         register(context, NETHER_ALUMINIUM_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables,
-                REOBlocks.NETHER_ALUMINIUM.get().defaultBlockState(), 9));
+                REOBlocks.NETHER_ALUMINIUM_ORE.get().defaultBlockState(), 9));
         register(context, NETHER_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables,
-                REOBlocks.NETHER_COAL.get().defaultBlockState(), 17));
+                REOBlocks.NETHER_COAL_ORE.get().defaultBlockState(), 17));
         register(context, NETHER_COPPER_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables,
-                REOBlocks.NETHER_COPPER.get().defaultBlockState(), 10));
+                REOBlocks.NETHER_COPPER_ORE.get().defaultBlockState(), 10));
         register(context, NETHER_DIAMOND_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables,
-                REOBlocks.NETHER_DIAMOND.get().defaultBlockState(), 8, 0.5f));
+                REOBlocks.NETHER_DIAMOND_ORE.get().defaultBlockState(), 8, 0.5f));
         register(context, NETHER_EMERALD_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables,
-                REOBlocks.NETHER_EMERALD.get().defaultBlockState(), 3));
+                REOBlocks.NETHER_EMERALD_ORE.get().defaultBlockState(), 3));
         register(context, NETHER_IRON_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables,
-                REOBlocks.NETHER_IRON.get().defaultBlockState(), 9));
+                REOBlocks.NETHER_IRON_ORE.get().defaultBlockState(), 9));
         register(context, NETHER_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables,
-                REOBlocks.NETHER_LAPIS.get().defaultBlockState(), 2));
+                REOBlocks.NETHER_LAPIS_ORE.get().defaultBlockState(), 2));
         register(context, NETHER_LEAD_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables,
-                REOBlocks.NETHER_LEAD.get().defaultBlockState(), 9));
+                REOBlocks.NETHER_LEAD_ORE.get().defaultBlockState(), 9));
         register(context, NETHER_NICKEL_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables,
-                REOBlocks.NETHER_NICKEL.get().defaultBlockState(), 9));
+                REOBlocks.NETHER_NICKEL_ORE.get().defaultBlockState(), 9));
         register(context, NETHER_PLATINUM_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables,
-                REOBlocks.NETHER_PLATINUM.get().defaultBlockState(), 4));
+                REOBlocks.NETHER_PLATINUM_ORE.get().defaultBlockState(), 4));
         register(context, NETHER_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables,
-                REOBlocks.NETHER_REDSTONE.get().defaultBlockState(), 8));
+                REOBlocks.NETHER_REDSTONE_ORE.get().defaultBlockState(), 8));
         register(context, NETHER_SILVER_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables,
-                REOBlocks.NETHER_SILVER.get().defaultBlockState(), 9));
+                REOBlocks.NETHER_SILVER_ORE.get().defaultBlockState(), 9));
         register(context, NETHER_TIN_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables,
-                REOBlocks.NETHER_TIN.get().defaultBlockState(), 9));
+                REOBlocks.NETHER_TIN_ORE.get().defaultBlockState(), 9));
         register(context, NETHER_URANIUM_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables,
-                REOBlocks.NETHER_URANIUM.get().defaultBlockState(), 8, 0.5f));
+                REOBlocks.NETHER_URANIUM_ORE.get().defaultBlockState(), 8, 0.5f));
         register(context, NETHER_ZINC_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables,
-                REOBlocks.NETHER_ZINC.get().defaultBlockState(), 9));
+                REOBlocks.NETHER_ZINC_ORE.get().defaultBlockState(), 9));
 
         // Gravel
         register(context, GRAVEL_ALUMINIUM_ORE_KEY, Feature.ORE, new OreConfiguration(gravelReplaceables,
-                REOBlocks.GRAVEL_ORE_ALUMINIUM.get().defaultBlockState(), 9));
+                REOBlocks.ALUMINUM_GRAVEL_ORE.get().defaultBlockState(), 9));
         register(context, GRAVEL_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(gravelReplaceables,
-                REOBlocks.GRAVEL_ORE_COAL.get().defaultBlockState(), 17));
+                REOBlocks.COAL_GRAVEL_ORE.get().defaultBlockState(), 17));
         register(context, GRAVEL_COPPER_ORE_KEY, Feature.ORE, new OreConfiguration(gravelReplaceables,
-                REOBlocks.GRAVEL_ORE_COPPER.get().defaultBlockState(), 10));
+                REOBlocks.COPPER_GRAVEL_ORE.get().defaultBlockState(), 10));
         register(context, GRAVEL_DIAMOND_ORE_KEY, Feature.ORE, new OreConfiguration(gravelReplaceables,
-                REOBlocks.GRAVEL_ORE_DIAMOND.get().defaultBlockState(), 8, 0.5f));
+                REOBlocks.DIAMOND_GRAVEL_ORE.get().defaultBlockState(), 8, 0.5f));
         register(context, GRAVEL_EMERALD_ORE_KEY, Feature.ORE, new OreConfiguration(gravelReplaceables,
-                REOBlocks.GRAVEL_ORE_EMERALD.get().defaultBlockState(), 3));
+                REOBlocks.EMERALD_GRAVEL_ORE.get().defaultBlockState(), 3));
         register(context, GRAVEL_GOLD_ORE_KEY, Feature.ORE, new OreConfiguration(gravelReplaceables,
-                REOBlocks.GRAVEL_ORE_GOLD.get().defaultBlockState(), 9));
+                REOBlocks.GOLD_GRAVEL_ORE.get().defaultBlockState(), 9));
         register(context, GRAVEL_IRON_ORE_KEY, Feature.ORE, new OreConfiguration(gravelReplaceables,
-                REOBlocks.GRAVEL_ORE_IRON.get().defaultBlockState(), 9));
+                REOBlocks.IRON_GRAVEL_ORE.get().defaultBlockState(), 9));
         register(context, GRAVEL_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(gravelReplaceables,
-                REOBlocks.GRAVEL_ORE_LAPIS.get().defaultBlockState(), 2));
+                REOBlocks.LAPIS_GRAVEL_ORE.get().defaultBlockState(), 2));
         register(context, GRAVEL_LEAD_ORE_KEY, Feature.ORE, new OreConfiguration(gravelReplaceables,
-                REOBlocks.GRAVEL_ORE_LEAD.get().defaultBlockState(), 9));
+                REOBlocks.LEAD_GRAVEL_ORE.get().defaultBlockState(), 9));
         register(context, GRAVEL_NICKEL_ORE_KEY, Feature.ORE, new OreConfiguration(gravelReplaceables,
-                REOBlocks.GRAVEL_ORE_NICKEL.get().defaultBlockState(), 9));
+                REOBlocks.NICKEL_GRAVEL_ORE.get().defaultBlockState(), 9));
         register(context, GRAVEL_PLATINUM_ORE_KEY, Feature.ORE, new OreConfiguration(gravelReplaceables,
-                REOBlocks.GRAVEL_ORE_PLATINUM.get().defaultBlockState(), 4));
+                REOBlocks.PLATINUM_GRAVEL_ORE.get().defaultBlockState(), 4));
         register(context, GRAVEL_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(gravelReplaceables,
-                REOBlocks.GRAVEL_ORE_REDSTONE.get().defaultBlockState(), 8));
+                REOBlocks.REDSTONE_GRAVEL_ORE.get().defaultBlockState(), 8));
         register(context, GRAVEL_SILVER_ORE_KEY, Feature.ORE, new OreConfiguration(gravelReplaceables,
-                REOBlocks.GRAVEL_ORE_SILVER.get().defaultBlockState(), 9));
+                REOBlocks.SILVER_GRAVEL_ORE.get().defaultBlockState(), 9));
         register(context, GRAVEL_TIN_ORE_KEY, Feature.ORE, new OreConfiguration(gravelReplaceables,
-                REOBlocks.GRAVEL_ORE_TIN.get().defaultBlockState(), 9));
+                REOBlocks.TIN_GRAVEL_ORE.get().defaultBlockState(), 9));
         register(context, GRAVEL_URANIUM_ORE_KEY, Feature.ORE, new OreConfiguration(gravelReplaceables,
-                REOBlocks.GRAVEL_ORE_URANIUM.get().defaultBlockState(), 8, 0.5f));
+                REOBlocks.URANIUM_GRAVEL_ORE.get().defaultBlockState(), 8, 0.5f));
         register(context, GRAVEL_ZINC_ORE_KEY, Feature.ORE, new OreConfiguration(gravelReplaceables,
-                REOBlocks.GRAVEL_ORE_ZINC.get().defaultBlockState(), 9));
+                REOBlocks.ZINC_GRAVEL_ORE.get().defaultBlockState(), 9));
 
         // End
         register(context, END_ENDERITE_ORE_KEY, Feature.ORE, new OreConfiguration(endstoneReplaceables,
-                REOBlocks.ORE_ENDERITE.get().defaultBlockState(), 2));
+                REOBlocks.ENDERITE_ORE.get().defaultBlockState(), 2));
 
         // Geode //
         register(context, GEODE_PERIDOT_KEY, Feature.GEODE, new GeodeConfiguration(
                 new GeodeBlockSettings(BlockStateProvider.simple(Blocks.AIR),
-                BlockStateProvider.simple(REOBlocks.BLOCK_PERIDOT.get()),
+                BlockStateProvider.simple(REOBlocks.PERIDOT_BLOCK.get()),
                 BlockStateProvider.simple(REOBlocks.BUDDING_PERIDOT.get()),
                 BlockStateProvider.simple(REOBlocks.MARBLE.get()),
                 BlockStateProvider.simple(Blocks.SMOOTH_BASALT),
-                List.of(REOBlocks.CLUSTER_PERIDOT.get().defaultBlockState(),
+                List.of(REOBlocks.PERIDOT_CLUSTER.get().defaultBlockState(),
                         REOBlocks.LARGE_PERIDOT_BUD.get().defaultBlockState(),
                         REOBlocks.MEDIUM_PERIDOT_BUD.get().defaultBlockState(),
                         REOBlocks.SMALL_PERIDOT_BUD.get().defaultBlockState()),
@@ -273,11 +273,11 @@ public class REOConfiguredFeatures {
 
         register(context, GEODE_RUBY_KEY, Feature.GEODE, new GeodeConfiguration(
                 new GeodeBlockSettings(BlockStateProvider.simple(Blocks.AIR),
-                        BlockStateProvider.simple(REOBlocks.BLOCK_RUBY.get()),
+                        BlockStateProvider.simple(REOBlocks.RUBY_BLOCK.get()),
                         BlockStateProvider.simple(REOBlocks.BUDDING_RUBY.get()),
                         BlockStateProvider.simple(REOBlocks.LIMESTONE.get()),
                         BlockStateProvider.simple(Blocks.BLACKSTONE),
-                        List.of(REOBlocks.CLUSTER_RUBY.get().defaultBlockState(),
+                        List.of(REOBlocks.RUBY_CLUSTER.get().defaultBlockState(),
                                 REOBlocks.LARGE_RUBY_BUD.get().defaultBlockState(),
                                 REOBlocks.MEDIUM_RUBY_BUD.get().defaultBlockState(),
                                 REOBlocks.SMALL_RUBY_BUD.get().defaultBlockState()),
@@ -290,11 +290,11 @@ public class REOConfiguredFeatures {
 
         register(context, GEODE_SAPPHIRE_KEY, Feature.GEODE, new GeodeConfiguration(
                 new GeodeBlockSettings(BlockStateProvider.simple(Blocks.AIR),
-                        BlockStateProvider.simple(REOBlocks.BLOCK_SAPPHIRE.get()),
+                        BlockStateProvider.simple(REOBlocks.SAPPHIRE_BLOCK.get()),
                         BlockStateProvider.simple(REOBlocks.BUDDING_SAPPHIRE.get()),
                         BlockStateProvider.simple(Blocks.POLISHED_DIORITE),
                         BlockStateProvider.simple(Blocks.BASALT),
-                        List.of(REOBlocks.CLUSTER_SAPPHIRE.get().defaultBlockState(),
+                        List.of(REOBlocks.SAPPHIRE_CLUSTER.get().defaultBlockState(),
                                 REOBlocks.LARGE_SAPPHIRE_BUD.get().defaultBlockState(),
                                 REOBlocks.MEDIUM_SAPPHIRE_BUD.get().defaultBlockState(),
                                 REOBlocks.SMALL_SAPPHIRE_BUD.get().defaultBlockState()),
@@ -308,20 +308,20 @@ public class REOConfiguredFeatures {
         // Tree //
         // Balsa
         register(context, BALSA_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(REOBlocks.LOG_BALSA.get()),
+                BlockStateProvider.simple(REOBlocks.BALSA_LOG.get()),
                 new StraightTrunkPlacer(5, 6, 3),
                 //                       Height   Random Extra Height A & B
-                BlockStateProvider.simple(REOBlocks.LEAVES_BALSA.get()),
+                BlockStateProvider.simple(REOBlocks.BALSA_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
                 //                                     Radius                      Offset         Height
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         // Baobab
         register(context, BAOBAB_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(REOBlocks.LOG_BAOBAB.get()),
+                BlockStateProvider.simple(REOBlocks.BAOBAB_LOG.get()),
                 new BaobabTrunkPlacer(3, 1, 1),
                 //                       Height   Random Extra Height A & B
-                BlockStateProvider.simple(REOBlocks.LEAVES_BAOBAB.get()),
+                BlockStateProvider.simple(REOBlocks.BAOBAB_LEAVES.get()),
                 new BaobabFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 2),
                 //                                     Radius                      Offset         Height
                 new TwoLayersFeatureSize(1, 1, 2))
@@ -329,96 +329,96 @@ public class REOConfiguredFeatures {
 
         // Hill Cherry
         register(context, HILL_CHERRY_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(REOBlocks.LOG_HILL_CHERRY.get()),
+                BlockStateProvider.simple(REOBlocks.HILL_CHERRY_LOG.get()),
                 new StraightTrunkPlacer(3, 1, 1),
                 //                       Height   Random Extra Height A & B
-                BlockStateProvider.simple(REOBlocks.LEAVES_HILL_CHERRY.get()),
+                BlockStateProvider.simple(REOBlocks.HILL_CHERRY_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 2),
                 //                                     Radius                      Offset         Height
                 new TwoLayersFeatureSize(1, 1, 2)).build());
 
         // Chestnut
         register(context, CHESTNUT_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(REOBlocks.LOG_CHESTNUT.get()),
+                BlockStateProvider.simple(REOBlocks.CHESTNUT_LOG.get()),
                 new StraightTrunkPlacer(5, 2, 3),
                 //                       Height   Random Extra Height A & B
                 new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
-                        .add(REOBlocks.LEAVES_CHESTNUT.get().defaultBlockState(), 4)
-                        .add(REOBlocks.LEAVES_CHESTNUT_FRUIT.get().defaultBlockState(), 1)),
+                        .add(REOBlocks.CHESTNUT_LEAVES.get().defaultBlockState(), 4)
+                        .add(REOBlocks.CHESTNUT_FRUIT_LEAVES.get().defaultBlockState(), 1)),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
                 //                                     Radius                      Offset         Height
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         // Citrus
         register(context, CITRUS_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(REOBlocks.LOG_CITRUS.get()),
+                BlockStateProvider.simple(REOBlocks.CITRUS_LOG.get()),
                 new StraightTrunkPlacer(4, 2, 0),
 
                 new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
-                        .add(REOBlocks.LEAVES_CITRUS.get().defaultBlockState(), 5)
-                        .add(REOBlocks.LEAVES_CITRUS_FRUIT.get().defaultBlockState(), 1)),
+                        .add(REOBlocks.CITRUS_LEAVES.get().defaultBlockState(), 5)
+                        .add(REOBlocks.CITRUS_FRUIT_LEAVES.get().defaultBlockState(), 1)),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
 
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         // Ebony
         register(context, EBONY_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(REOBlocks.LOG_EBONY.get()),
+                BlockStateProvider.simple(REOBlocks.EBONY_LOG.get()),
                 new EbonyTrunkPlacer(5, 1, 2),
                 //                       Height   Random Extra Height A & B
-                BlockStateProvider.simple(REOBlocks.LEAVES_EBONY.get()),
+                BlockStateProvider.simple(REOBlocks.EBONY_LEAVES.get()),
                 new EbonyFoliagePlacer(ConstantInt.of(0), ConstantInt.of(0), 0),
                 //                                     Radius                      Offset         Height
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         // Larch
         register(context, LARCH_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(REOBlocks.LOG_LARCH.get()),
+                BlockStateProvider.simple(REOBlocks.LARCH_LOG.get()),
                 new StraightTrunkPlacer(5, 6, 3),
                 //                       Height   Random Extra Height A & B
-                BlockStateProvider.simple(REOBlocks.LEAVES_LARCH.get()),
+                BlockStateProvider.simple(REOBlocks.LARCH_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
                 //                                     Radius                      Offset         Height
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         // Lime
         register(context, LIME_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(REOBlocks.LOG_LIME.get()),
+                BlockStateProvider.simple(REOBlocks.LIME_LOG.get()),
                 new StraightTrunkPlacer(5, 2, 3),
                 //                       Height   Random Extra Height A & B
                 new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
-                        .add(REOBlocks.LEAVES_LIME.get().defaultBlockState(), 5)
-                        .add(REOBlocks.LEAVES_LIME_FRUIT.get().defaultBlockState(), 1)),
+                        .add(REOBlocks.LIME_LEAVES.get().defaultBlockState(), 5)
+                        .add(REOBlocks.LIME_FRUIT_LEAVES.get().defaultBlockState(), 1)),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
                 //                                     Radius                      Offset         Height
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         // Mahogany
         register(context, MAHOGANY_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(REOBlocks.LOG_MAHOGANY.get()),
+                BlockStateProvider.simple(REOBlocks.MAHOGANY_LOG.get()),
                 new StraightTrunkPlacer(5, 6, 3),
                 //                       Height   Random Extra Height A & B
-                BlockStateProvider.simple(REOBlocks.LEAVES_MAHOGANY.get()),
+                BlockStateProvider.simple(REOBlocks.MAHOGANY_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
                 //                                     Radius                      Offset         Height
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         // Maple
         register(context, MAPLE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(REOBlocks.LOG_MAPLE.get()),
+                BlockStateProvider.simple(REOBlocks.MAPLE_LOG.get()),
                 new StraightTrunkPlacer(5, 6, 3),
                 //                       Height   Random Extra Height A & B
-                BlockStateProvider.simple(REOBlocks.LEAVES_MAPLE.get()),
+                BlockStateProvider.simple(REOBlocks.MAPLE_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
                 //                                     Radius                      Offset         Height
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         // Palm
         register(context, PALM_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(REOBlocks.LOG_PALM.get()),
+                BlockStateProvider.simple(REOBlocks.PALM_LOG.get()),
                 new StraightTrunkPlacer(4, 1, 2),
                 //                       Height   Random Extra Height A & B
-                BlockStateProvider.simple(REOBlocks.LEAVES_PALM.get()),
+                BlockStateProvider.simple(REOBlocks.PALM_LEAVES.get()),
                 new PalmFoliagePlacer(ConstantInt.of(1), ConstantInt.of(0), 3),
                 //                                     Radius                      Offset         Height
                 new TwoLayersFeatureSize(1, 0, 2))
@@ -426,64 +426,64 @@ public class REOConfiguredFeatures {
 
         // Papaya
         register(context, PAPAYA_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(REOBlocks.LOG_PAPAYA.get()),
+                BlockStateProvider.simple(REOBlocks.PAPAYA_LOG.get()),
                 new ForkingTrunkPlacer(5, 2, 2),
                 //                       Height   Random Extra Height A & B
                 new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
-                        .add(REOBlocks.LEAVES_PAPAYA.get().defaultBlockState(), 5)
-                        .add(REOBlocks.LEAVES_PAPAYA_FRUIT.get().defaultBlockState(), 1)),
+                        .add(REOBlocks.PAPAYA_LEAVES.get().defaultBlockState(), 5)
+                        .add(REOBlocks.PAPAYA_FRUIT_LEAVES.get().defaultBlockState(), 1)),
                 new AcaciaFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0)),
                 //                                            Radius                       Height
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
 
         // Pine
         register(context, PINE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(REOBlocks.LOG_PINE.get()),
+                BlockStateProvider.simple(REOBlocks.PINE_LOG.get()),
                 new StraightTrunkPlacer(8, 4, 5),
                 //                       Height   Random Extra Height A & B
-                BlockStateProvider.simple(REOBlocks.LEAVES_PINE.get()),
+                BlockStateProvider.simple(REOBlocks.PINE_LEAVES.get()),
                 new REOPineFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
                 //                                     Radius                      Offset         Height
                 new TwoLayersFeatureSize(1, 1, 2)).build());
 
         // Plum
         register(context, PLUM_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(REOBlocks.LOG_PLUM.get()),
+                BlockStateProvider.simple(REOBlocks.PLUM_LOG.get()),
                 new StraightTrunkPlacer(5, 6, 3),
                 //                       Height   Random Extra Height A & B
                 new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
-                        .add(REOBlocks.LEAVES_PLUM.get().defaultBlockState(), 5)
-                        .add(REOBlocks.LEAVES_PLUM_FRUIT.get().defaultBlockState(), 1)),
+                        .add(REOBlocks.PLUM_LEAVES.get().defaultBlockState(), 5)
+                        .add(REOBlocks.PLUM_FRUIT_LEAVES.get().defaultBlockState(), 1)),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
                 //                                     Radius                      Offset         Height
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         // Poplar
         register(context, POPLAR_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(REOBlocks.LOG_POPLAR.get()),
+                BlockStateProvider.simple(REOBlocks.POPLAR_LOG.get()),
                 new StraightTrunkPlacer(6, 1, 2),
                 //                       Height   Random Extra Height A & B
-                BlockStateProvider.simple(REOBlocks.LEAVES_POPLAR.get()),
+                BlockStateProvider.simple(REOBlocks.POPLAR_LEAVES.get()),
                 new PoplarFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
                 //                                     Radius                      Offset         Height
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         // Redwood
         register(context, REDWOOD_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(REOBlocks.LOG_REDWOOD.get()),
+                BlockStateProvider.simple(REOBlocks.REDWOOD_LOG.get()),
                 new RedwoodTrunkPlacer(8, 2, 5),
                 //                       Height   Random Extra Height A & B
-                BlockStateProvider.simple(REOBlocks.LEAVES_REDWOOD.get()),
+                BlockStateProvider.simple(REOBlocks.REDWOOD_LEAVES.get()),
                 new MegaJungleFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 2),
                 //                                     Radius                      Offset         Height
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         // Redwood - Mega
         register(context, REDWOOD_MEGA_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(REOBlocks.LOG_REDWOOD.get()),
+                BlockStateProvider.simple(REOBlocks.REDWOOD_LOG.get()),
                 new RedwoodMegaTrunkPlacer(10, 2, 5),
                 //                       Height   Random Extra Height A & B
-                BlockStateProvider.simple(REOBlocks.LEAVES_REDWOOD.get()),
+                BlockStateProvider.simple(REOBlocks.REDWOOD_LEAVES.get()),
                 new MegaJungleFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 2),
                 //                                     Radius                      Offset         Height
                 new TwoLayersFeatureSize(1, 0, 2)).build());
@@ -491,43 +491,43 @@ public class REOConfiguredFeatures {
         // Rubber
         register(context, RUBBER_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
-                        .add(REOBlocks.LOG_RUBBER.get().defaultBlockState(), 4)
-                        .add(REOBlocks.LOG_RUBBER_SAP.get().defaultBlockState(), 1)),
+                        .add(REOBlocks.RUBBER_LOG.get().defaultBlockState(), 4)
+                        .add(REOBlocks.RUBBER_LOG_SAP.get().defaultBlockState(), 1)),
                 new StraightTrunkPlacer(4, 1, 3),
                 //                       Height   Random Extra Height A & B
-                BlockStateProvider.simple(REOBlocks.LEAVES_RUBBER.get()),
+                BlockStateProvider.simple(REOBlocks.RUBBER_LEAVES.get()),
                 new RubberFoliagePlacer(ConstantInt.of(0), ConstantInt.of(0), 0),
                 //                                     Radius                      Offset         Height
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         // Teak
         register(context, TEAK_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(REOBlocks.LOG_TEAK.get()),
+                BlockStateProvider.simple(REOBlocks.TEAK_LOG.get()),
                 new StraightTrunkPlacer(5, 6, 3),
                 //                       Height   Random Extra Height A & B
-                BlockStateProvider.simple(REOBlocks.LEAVES_TEAK.get()),
+                BlockStateProvider.simple(REOBlocks.TEAK_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
                 //                                     Radius                      Offset         Height
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         // Walnut
         register(context, WALNUT_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(REOBlocks.LOG_WALNUT.get()),
+                BlockStateProvider.simple(REOBlocks.WALNUT_LOG.get()),
                 new StraightTrunkPlacer(5, 2, 3),
                 //                       Height   Random Extra Height A & B
                 new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
-                        .add(REOBlocks.LEAVES_WALNUT.get().defaultBlockState(), 4)
-                        .add(REOBlocks.LEAVES_WALNUT_FRUIT.get().defaultBlockState(), 1)),
+                        .add(REOBlocks.WALNUT_LEAVES.get().defaultBlockState(), 4)
+                        .add(REOBlocks.WALNUT_FRUIT_LEAVES.get().defaultBlockState(), 1)),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
                 //                                     Radius                      Offset         Height
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         // Willow
         register(context, WILLOW_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(REOBlocks.LOG_WILLOW.get()),
+                BlockStateProvider.simple(REOBlocks.WILLOW_LOG.get()),
                 new StraightTrunkPlacer(5, 6, 3),
                 //                       Height   Random Extra Height A & B
-                BlockStateProvider.simple(REOBlocks.LEAVES_WILLOW.get()),
+                BlockStateProvider.simple(REOBlocks.WILLOW_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
                 //                                     Radius                      Offset         Height
                 new TwoLayersFeatureSize(1, 0, 2))

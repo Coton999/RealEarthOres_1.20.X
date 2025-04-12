@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/door_bottom_right_open",
-  "render_type": "minecraft:cutout",
-  "textures": {
-    "bottom": "realearthores:block/door/cherry_lower",
-    "top": "realearthores:block/door/cherry_upper"
-  }
-}

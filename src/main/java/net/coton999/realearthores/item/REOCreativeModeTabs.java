@@ -246,7 +246,7 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
 
     public static RegistryObject<CreativeModeTab> BLOCKS_TAB = CREATIVE_MODE_TABS.register("realearthores_blocks",
             () -> CreativeModeTab.builder().withTabsBefore(REOCreativeModeTabs.ITEMS_TAB.getKey())
-                    .icon(() -> new ItemStack(REOBlocks.BLOCK_URANIUM.get()))
+                    .icon(() -> new ItemStack(REOBlocks.URANIUM_BLOCK.get()))
                     .title(Component.translatable("tabs.realearthores_blocks"))
                     .displayItems((pParameters, pOutput) -> {
 
@@ -312,945 +312,947 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
 
                         // Decorative //
                         // Lamp
-                        pOutput.accept(REOBlocks.LAMP_BLACK.get());
-                        pOutput.accept(REOBlocks.LAMP_RED.get());
-                        pOutput.accept(REOBlocks.LAMP_GREEN.get());
-                        pOutput.accept(REOBlocks.LAMP_BROWN.get());
-                        pOutput.accept(REOBlocks.LAMP_PURPLE.get());
-                        pOutput.accept(REOBlocks.LAMP_CYAN.get());
-                        pOutput.accept(REOBlocks.LAMP_LIGHTGRAY.get());
-                        pOutput.accept(REOBlocks.LAMP_GRAY.get());
-                        pOutput.accept(REOBlocks.LAMP_PINK.get());
-                        pOutput.accept(REOBlocks.LAMP_LIME.get());
-                        pOutput.accept(REOBlocks.LAMP_YELLOW.get());
-                        pOutput.accept(REOBlocks.LAMP_BLUE.get());
-                        pOutput.accept(REOBlocks.LAMP_LIGHTBLUE.get());
-                        pOutput.accept(REOBlocks.LAMP_MAGENTA.get());
-                        pOutput.accept(REOBlocks.LAMP_ORANGE.get());
-                        pOutput.accept(REOBlocks.LAMP_WHITE.get());
+                        pOutput.accept(REOBlocks.BLACK_LAMP.get());
+                        pOutput.accept(REOBlocks.RED_LAMP.get());
+                        pOutput.accept(REOBlocks.GREEN_LAMP.get());
+                        pOutput.accept(REOBlocks.BROWN_LAMP.get());
+                        pOutput.accept(REOBlocks.PURPLE_LAMP.get());
+                        pOutput.accept(REOBlocks.CYAN_LAMP.get());
+                        pOutput.accept(REOBlocks.LIGHT_GRAY_LAMP.get());
+                        pOutput.accept(REOBlocks.GRAY_LAMP.get());
+                        pOutput.accept(REOBlocks.PINK_LAMP.get());
+                        pOutput.accept(REOBlocks.LIME_LAMP.get());
+                        pOutput.accept(REOBlocks.YELLOW_LAMP.get());
+                        pOutput.accept(REOBlocks.BLUE_LAMP.get());
+                        pOutput.accept(REOBlocks.LIGHT_BLUE_LAMP.get());
+                        pOutput.accept(REOBlocks.MAGENTA_LAMP.get());
+                        pOutput.accept(REOBlocks.ORANGE_LAMP.get());
+                        pOutput.accept(REOBlocks.WHITE_LAMP.get());
 
                         // Tree //
                         // Wood
                         // Oak
-                        pOutput.accept(REOBlocks.LOG_OAK_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_OAK_RESISTANT.get());
-                        pOutput.accept(REOBlocks.LOG_OAK_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_OAK_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.PLANKS_OAK_RESISTANT.get());
+                        pOutput.accept(REOBlocks.RESISTANT_OAK_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_OAK_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_OAK_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_OAK_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_OAK_PLANKS.get());
 
-                        pOutput.accept(REOBlocks.STAIRS_OAK_RESISTANT.get());
-                        pOutput.accept(REOBlocks.SLAB_OAK_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_OAK_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_OAK_RESISTANT.get());
+                        pOutput.accept(REOBlocks.RESISTANT_OAK_STAIRS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_OAK_SLAB.get());
+                        pOutput.accept(REOBlocks.RESISTANT_OAK_FENCE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_OAK_FENCE_GATE.get());
 
                         // Spruce
-                        pOutput.accept(REOBlocks.LOG_SPRUCE_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_SPRUCE_RESISTANT.get());
-                        pOutput.accept(REOBlocks.LOG_SPRUCE_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_SPRUCE_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.PLANKS_SPRUCE_RESISTANT.get());
+                        pOutput.accept(REOBlocks.RESISTANT_SPRUCE_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_SPRUCE_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_SPRUCE_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_SPRUCE_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_SPRUCE_PLANKS.get());
 
-                        pOutput.accept(REOBlocks.STAIRS_SPRUCE_RESISTANT.get());
-                        pOutput.accept(REOBlocks.SLAB_SPRUCE_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_SPRUCE_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_SPRUCE_RESISTANT.get());
+                        pOutput.accept(REOBlocks.RESISTANT_SPRUCE_STAIRS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_SPRUCE_SLAB.get());
+                        pOutput.accept(REOBlocks.RESISTANT_SPRUCE_FENCE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_SPRUCE_FENCE_GATE.get());
 
                         // Birch
-                        pOutput.accept(REOBlocks.LOG_BIRCH_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_BIRCH_RESISTANT.get());
-                        pOutput.accept(REOBlocks.LOG_BIRCH_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_BIRCH_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.PLANKS_BIRCH_RESISTANT.get());
+                        pOutput.accept(REOBlocks.RESISTANT_BIRCH_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_BIRCH_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_BIRCH_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_BIRCH_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_BIRCH_PLANKS.get());
 
-                        pOutput.accept(REOBlocks.STAIRS_BIRCH_RESISTANT.get());
-                        pOutput.accept(REOBlocks.SLAB_BIRCH_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_BIRCH_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_BIRCH_RESISTANT.get());
+                        pOutput.accept(REOBlocks.RESISTANT_BIRCH_STAIRS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_BIRCH_SLAB.get());
+                        pOutput.accept(REOBlocks.RESISTANT_BIRCH_FENCE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_BIRCH_FENCE_GATE.get());
 
                         // Jungle
-                        pOutput.accept(REOBlocks.LOG_JUNGLE_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_JUNGLE_RESISTANT.get());
-                        pOutput.accept(REOBlocks.LOG_JUNGLE_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_JUNGLE_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.PLANKS_JUNGLE_RESISTANT.get());
+                        pOutput.accept(REOBlocks.RESISTANT_JUNGLE_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_JUNGLE_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_JUNGLE_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_JUNGLE_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_JUNGLE_PLANKS.get());
 
-                        pOutput.accept(REOBlocks.STAIRS_JUNGLE_RESISTANT.get());
-                        pOutput.accept(REOBlocks.SLAB_JUNGLE_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_JUNGLE_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_JUNGLE_RESISTANT.get());
+                        pOutput.accept(REOBlocks.RESISTANT_JUNGLE_STAIRS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_JUNGLE_SLAB.get());
+                        pOutput.accept(REOBlocks.RESISTANT_JUNGLE_FENCE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_JUNGLE_FENCE_GATE.get());
 
                         // Acacia
-                        pOutput.accept(REOBlocks.LOG_ACACIA_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_ACACIA_RESISTANT.get());
-                        pOutput.accept(REOBlocks.LOG_ACACIA_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_ACACIA_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.PLANKS_ACACIA_RESISTANT.get());
+                        pOutput.accept(REOBlocks.RESISTANT_ACACIA_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_ACACIA_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_ACACIA_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_ACACIA_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_ACACIA_PLANKS.get());
 
-                        pOutput.accept(REOBlocks.STAIRS_ACACIA_RESISTANT.get());
-                        pOutput.accept(REOBlocks.SLAB_ACACIA_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_ACACIA_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_ACACIA_RESISTANT.get());
+                        pOutput.accept(REOBlocks.RESISTANT_ACACIA_STAIRS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_ACACIA_SLAB.get());
+                        pOutput.accept(REOBlocks.RESISTANT_ACACIA_FENCE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_ACACIA_FENCE_GATE.get());
 
                         // Dark Oak
-                        pOutput.accept(REOBlocks.LOG_DARK_OAK_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_DARK_OAK_RESISTANT.get());
-                        pOutput.accept(REOBlocks.LOG_DARK_OAK_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_DARK_OAK_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.PLANKS_DARK_OAK_RESISTANT.get());
+                        pOutput.accept(REOBlocks.RESISTANT_DARK_OAK_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_DARK_OAK_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_DARK_OAK_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_DARK_OAK_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_DARK_OAK_PLANKS.get());
 
-                        pOutput.accept(REOBlocks.STAIRS_DARK_OAK_RESISTANT.get());
-                        pOutput.accept(REOBlocks.SLAB_DARK_OAK_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_DARK_OAK_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_DARK_OAK_RESISTANT.get());
+                        pOutput.accept(REOBlocks.RESISTANT_DARK_OAK_STAIRS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_DARK_OAK_SLAB.get());
+                        pOutput.accept(REOBlocks.RESISTANT_DARK_OAK_FENCE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_DARK_OAK_FENCE_GATE.get());
 
                         // Mangrove
-                        pOutput.accept(REOBlocks.LOG_MANGROVE_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_MANGROVE_RESISTANT.get());
-                        pOutput.accept(REOBlocks.LOG_MANGROVE_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_MANGROVE_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.PLANKS_MANGROVE_RESISTANT.get());
+                        pOutput.accept(REOBlocks.RESISTANT_MANGROVE_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_MANGROVE_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_MANGROVE_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_MANGROVE_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_MANGROVE_PLANKS.get());
 
-                        pOutput.accept(REOBlocks.STAIRS_MANGROVE_RESISTANT.get());
-                        pOutput.accept(REOBlocks.SLAB_MANGROVE_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_MANGROVE_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_MANGROVE_RESISTANT.get());
+                        pOutput.accept(REOBlocks.RESISTANT_MANGROVE_STAIRS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_MANGROVE_SLAB.get());
+                        pOutput.accept(REOBlocks.RESISTANT_MANGROVE_FENCE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_MANGROVE_FENCE_GATE.get());
 
                         // Cherry
-                        pOutput.accept(REOBlocks.LOG_CHERRY_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_CHERRY_RESISTANT.get());
-                        pOutput.accept(REOBlocks.LOG_CHERRY_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_CHERRY_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.PLANKS_CHERRY_RESISTANT.get());
+                        pOutput.accept(REOBlocks.RESISTANT_CHERRY_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_CHERRY_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_CHERRY_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_CHERRY_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_CHERRY_PLANKS.get());
 
-                        pOutput.accept(REOBlocks.STAIRS_CHERRY_RESISTANT.get());
-                        pOutput.accept(REOBlocks.SLAB_CHERRY_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_CHERRY_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_CHERRY_RESISTANT.get());
+                        pOutput.accept(REOBlocks.RESISTANT_CHERRY_STAIRS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_CHERRY_SLAB.get());
+                        pOutput.accept(REOBlocks.RESISTANT_CHERRY_FENCE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_CHERRY_FENCE_GATE.get());
 
                         // Modded
                         // Balsa
-                        pOutput.accept(REOBlocks.LOG_BALSA.get());
-                        pOutput.accept(REOBlocks.LOG_BALSA_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_BALSA.get());
-                        pOutput.accept(REOBlocks.WOOD_BALSA_RESISTANT.get());
-                        pOutput.accept(REOBlocks.LOG_BALSA_STRIPPED.get());
-                        pOutput.accept(REOBlocks.LOG_BALSA_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_BALSA_STRIPPED.get());
-                        pOutput.accept(REOBlocks.WOOD_BALSA_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.PLANKS_BALSA.get());
-                        pOutput.accept(REOBlocks.PLANKS_BALSA_RESISTANT.get());
+                        pOutput.accept(REOBlocks.BALSA_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_BALSA_LOG.get());
+                        pOutput.accept(REOBlocks.BALSA_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_BALSA_WOOD.get());
+                        pOutput.accept(REOBlocks.STRIPPED_BALSA_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_BALSA_LOG.get());
+                        pOutput.accept(REOBlocks.STRIPPED_BALSA_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_BALSA_WOOD.get());
+                        pOutput.accept(REOBlocks.BALSA_PLANKS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_BALSA_PLANKS.get());
 
-                        pOutput.accept(REOBlocks.SAPLING_BALSA.get());
-                        pOutput.accept(REOBlocks.LEAVES_BALSA.get());
+                        pOutput.accept(REOBlocks.BALSA_SAPLING.get());
+                        pOutput.accept(REOBlocks.BALSA_LEAVES.get());
 
-                        pOutput.accept(REOBlocks.STAIRS_BALSA.get());
-                        pOutput.accept(REOBlocks.STAIRS_BALSA_RESISTANT.get());
-                        pOutput.accept(REOBlocks.SLAB_BALSA.get());
-                        pOutput.accept(REOBlocks.SLAB_BALSA_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_BALSA.get());
-                        pOutput.accept(REOBlocks.FENCE_BALSA_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_BALSA.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_BALSA_RESISTANT.get());
+                        pOutput.accept(REOBlocks.BALSA_STAIRS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_BALSA_STAIRS.get());
+                        pOutput.accept(REOBlocks.BALSA_SLAB.get());
+                        pOutput.accept(REOBlocks.RESISTANT_BALSA_SLAB.get());
+                        pOutput.accept(REOBlocks.BALSA_FENCE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_BALSA_FENCE.get());
+                        pOutput.accept(REOBlocks.BALSA_FENCE_GATE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_BALSA_FENCE_GATE.get());
 
-                        pOutput.accept(REOBlocks.BUTTON_BALSA.get());
-                        pOutput.accept(REOBlocks.PRESSURE_PLATE_BALSA.get());
+                        pOutput.accept(REOBlocks.BALSA_BUTTON.get());
+                        pOutput.accept(REOBlocks.BALSA_PRESSURE_PLATE.get());
 
-                        pOutput.accept(REOBlocks.SIGN_BALSA.get());
-                        pOutput.accept(REOBlocks.SIGN_HANGING_BALSA.get());
+                        pOutput.accept(REOBlocks.BALSA_SIGN.get());
+                        pOutput.accept(REOBlocks.BALSA_HANGING_SIGN.get());
                         pOutput.accept(REOItems.BALSA_BOAT.get());
                         pOutput.accept(REOItems.BALSA_CHEST_BOAT.get());
 
-                        pOutput.accept(REOBlocks.DOOR_BALSA.get());
-                        pOutput.accept(REOBlocks.TRAPDOOR_BALSA.get());
+                        pOutput.accept(REOBlocks.BALSA_DOOR.get());
+                        pOutput.accept(REOBlocks.BALSA_TRAPDOOR.get());
 
                         // Baobab
-                        pOutput.accept(REOBlocks.LOG_BAOBAB.get());
-                        pOutput.accept(REOBlocks.LOG_BAOBAB_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_BAOBAB.get());
-                        pOutput.accept(REOBlocks.WOOD_BAOBAB_RESISTANT.get());
-                        pOutput.accept(REOBlocks.LOG_BAOBAB_STRIPPED.get());
-                        pOutput.accept(REOBlocks.LOG_BAOBAB_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_BAOBAB_STRIPPED.get());
-                        pOutput.accept(REOBlocks.WOOD_BAOBAB_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.PLANKS_BAOBAB.get());
-                        pOutput.accept(REOBlocks.PLANKS_BAOBAB_RESISTANT.get());
+                        pOutput.accept(REOBlocks.BAOBAB_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_BAOBAB_LOG.get());
+                        pOutput.accept(REOBlocks.BAOBAB_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_BAOBAB_WOOD.get());
+                        pOutput.accept(REOBlocks.STRIPPED_BAOBAB_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_BAOBAB_LOG.get());
+                        pOutput.accept(REOBlocks.STRIPPED_BAOBAB_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_BAOBAB_WOOD.get());
+                        pOutput.accept(REOBlocks.BAOBAB_PLANKS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_BAOBAB_PLANKS.get());
 
-                        pOutput.accept(REOBlocks.SAPLING_BAOBAB.get());
-                        pOutput.accept(REOBlocks.LEAVES_BAOBAB.get());
+                        pOutput.accept(REOBlocks.BAOBAB_SAPLING.get());
+                        pOutput.accept(REOBlocks.BAOBAB_LEAVES.get());
 
-                        pOutput.accept(REOBlocks.STAIRS_BAOBAB.get());
-                        pOutput.accept(REOBlocks.STAIRS_BAOBAB_RESISTANT.get());
-                        pOutput.accept(REOBlocks.SLAB_BAOBAB.get());
-                        pOutput.accept(REOBlocks.SLAB_BAOBAB_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_BAOBAB.get());
-                        pOutput.accept(REOBlocks.FENCE_BAOBAB_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_BAOBAB.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_BAOBAB_RESISTANT.get());
+                        pOutput.accept(REOBlocks.BAOBAB_STAIRS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_BAOBAB_STAIRS.get());
+                        pOutput.accept(REOBlocks.BAOBAB_SLAB.get());
+                        pOutput.accept(REOBlocks.RESISTANT_BAOBAB_SLAB.get());
+                        pOutput.accept(REOBlocks.BAOBAB_FENCE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_BAOBAB_FENCE.get());
+                        pOutput.accept(REOBlocks.BAOBAB_FENCE_GATE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_BAOBAB_FENCE_GATE.get());
 
-                        pOutput.accept(REOBlocks.BUTTON_BAOBAB.get());
-                        pOutput.accept(REOBlocks.PRESSURE_PLATE_BAOBAB.get());
+                        pOutput.accept(REOBlocks.BAOBAB_BUTTON.get());
+                        pOutput.accept(REOBlocks.BAOBAB_PRESSURE_PLATE.get());
 
-                        pOutput.accept(REOBlocks.SIGN_BAOBAB.get());
-                        pOutput.accept(REOBlocks.SIGN_HANGING_BAOBAB.get());
+                        pOutput.accept(REOBlocks.BAOBAB_SIGN.get());
+                        pOutput.accept(REOBlocks.BAOBAB_HANGING_SIGN.get());
 
                         pOutput.accept(REOItems.BAOBAB_BOAT.get());
                         pOutput.accept(REOItems.BAOBAB_CHEST_BOAT.get());
 
-                        pOutput.accept(REOBlocks.DOOR_BAOBAB.get());
-                        pOutput.accept(REOBlocks.TRAPDOOR_BAOBAB.get());
+                        pOutput.accept(REOBlocks.BAOBAB_DOOR.get());
+                        pOutput.accept(REOBlocks.BAOBAB_TRAPDOOR.get());
 
                         // Hill Cherry
-                        pOutput.accept(REOBlocks.LOG_HILL_CHERRY.get());
-                        pOutput.accept(REOBlocks.LOG_HILL_CHERRY_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_HILL_CHERRY.get());
-                        pOutput.accept(REOBlocks.WOOD_HILL_CHERRY_RESISTANT.get());
-                        pOutput.accept(REOBlocks.LOG_HILL_CHERRY_STRIPPED.get());
-                        pOutput.accept(REOBlocks.LOG_HILL_CHERRY_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_HILL_CHERRY_STRIPPED.get());
-                        pOutput.accept(REOBlocks.WOOD_HILL_CHERRY_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.PLANKS_HILL_CHERRY.get());
-                        pOutput.accept(REOBlocks.PLANKS_HILL_CHERRY_RESISTANT.get());
+                        pOutput.accept(REOBlocks.HILL_CHERRY_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_HILL_CHERRY_LOG.get());
+                        pOutput.accept(REOBlocks.HILL_CHERRY_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_HILL_CHERRY_WOOD.get());
+                        pOutput.accept(REOBlocks.STRIPPED_HILL_CHERRY_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_HILL_CHERRY_LOG.get());
+                        pOutput.accept(REOBlocks.STRIPPED_HILL_CHERRY_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_HILL_CHERRY_WOOD.get());
+                        pOutput.accept(REOBlocks.HILL_CHERRY_PLANKS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_HILL_CHERRY_PLANKS.get());
 
-                        pOutput.accept(REOBlocks.SAPLING_HILL_CHERRY.get());
-                        pOutput.accept(REOBlocks.LEAVES_HILL_CHERRY.get());
+                        pOutput.accept(REOBlocks.HILL_CHERRY_SAPLING.get());
+                        pOutput.accept(REOBlocks.HILL_CHERRY_LEAVES.get());
 
-                        pOutput.accept(REOBlocks.STAIRS_HILL_CHERRY.get());
-                        pOutput.accept(REOBlocks.STAIRS_HILL_CHERRY_RESISTANT.get());
-                        pOutput.accept(REOBlocks.SLAB_HILL_CHERRY.get());
-                        pOutput.accept(REOBlocks.SLAB_HILL_CHERRY_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_HILL_CHERRY.get());
-                        pOutput.accept(REOBlocks.FENCE_HILL_CHERRY_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_HILL_CHERRY.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_HILL_CHERRY_RESISTANT.get());
+                        pOutput.accept(REOBlocks.HILL_CHERRY_STAIRS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_HILL_CHERRY_STAIRS.get());
+                        pOutput.accept(REOBlocks.HILL_CHERRY_SLAB.get());
+                        pOutput.accept(REOBlocks.RESISTANT_HILL_CHERRY_SLAB.get());
+                        pOutput.accept(REOBlocks.HILL_CHERRY_FENCE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_HILL_CHERRY_FENCE.get());
+                        pOutput.accept(REOBlocks.HILL_CHERRY_FENCE_GATE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_HILL_CHERRY_FENCE_GATE.get());
 
-                        pOutput.accept(REOBlocks.BUTTON_HILL_CHERRY.get());
-                        pOutput.accept(REOBlocks.PRESSURE_PLATE_HILL_CHERRY.get());
+                        pOutput.accept(REOBlocks.HILL_CHERRY_BUTTON.get());
+                        pOutput.accept(REOBlocks.HILL_CHERRY_PRESSURE_PLATE.get());
 
-                        pOutput.accept(REOBlocks.SIGN_HILL_CHERRY.get());
-                        pOutput.accept(REOBlocks.SIGN_HANGING_HILL_CHERRY.get());
+                        pOutput.accept(REOBlocks.HILL_CHERRY_SIGN.get());
+                        pOutput.accept(REOBlocks.HILL_CHERRY_HANGING_SIGN.get());
 
                         pOutput.accept(REOItems.HILL_CHERRY_BOAT.get());
                         pOutput.accept(REOItems.HILL_CHERRY_CHEST_BOAT.get());
 
-                        pOutput.accept(REOBlocks.DOOR_HILL_CHERRY.get());
-                        pOutput.accept(REOBlocks.TRAPDOOR_HILL_CHERRY.get());
+                        pOutput.accept(REOBlocks.HILL_CHERRY_DOOR.get());
+                        pOutput.accept(REOBlocks.HILL_CHERRY_TRAPDOOR.get());
 
                         // Chestnut
-                        pOutput.accept(REOBlocks.LOG_CHESTNUT.get());
-                        pOutput.accept(REOBlocks.LOG_CHESTNUT_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_CHESTNUT.get());
-                        pOutput.accept(REOBlocks.WOOD_CHESTNUT_RESISTANT.get());
-                        pOutput.accept(REOBlocks.LOG_CHESTNUT_STRIPPED.get());
-                        pOutput.accept(REOBlocks.LOG_CHESTNUT_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_CHESTNUT_STRIPPED.get());
-                        pOutput.accept(REOBlocks.WOOD_CHESTNUT_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.PLANKS_CHESTNUT.get());
-                        pOutput.accept(REOBlocks.PLANKS_CHESTNUT_RESISTANT.get());
+                        pOutput.accept(REOBlocks.CHESTNUT_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_CHESTNUT_LOG.get());
+                        pOutput.accept(REOBlocks.CHESTNUT_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_CHESTNUT_WOOD.get());
+                        pOutput.accept(REOBlocks.STRIPPED_CHESTNUT_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_CHESTNUT_LOG.get());
+                        pOutput.accept(REOBlocks.STRIPPED_CHESTNUT_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_CHESTNUT_WOOD.get());
+                        pOutput.accept(REOBlocks.CHESTNUT_PLANKS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_CHESTNUT_PLANKS.get());
 
-                        pOutput.accept(REOBlocks.SAPLING_CHESTNUT.get());
-                        pOutput.accept(REOBlocks.LEAVES_CHESTNUT.get());
+                        pOutput.accept(REOBlocks.CHESTNUT_SAPLING.get());
+                        pOutput.accept(REOBlocks.CHESTNUT_LEAVES.get());
 
-                        pOutput.accept(REOBlocks.STAIRS_CHESTNUT.get());
-                        pOutput.accept(REOBlocks.STAIRS_CHESTNUT_RESISTANT.get());
-                        pOutput.accept(REOBlocks.SLAB_CHESTNUT.get());
-                        pOutput.accept(REOBlocks.SLAB_CHESTNUT_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_CHESTNUT.get());
-                        pOutput.accept(REOBlocks.FENCE_CHESTNUT_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_CHESTNUT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_CHESTNUT_RESISTANT.get());
+                        pOutput.accept(REOBlocks.CHESTNUT_STAIRS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_CHESTNUT_STAIRS.get());
+                        pOutput.accept(REOBlocks.CHESTNUT_SLAB.get());
+                        pOutput.accept(REOBlocks.RESISTANT_CHESTNUT_SLAB.get());
+                        pOutput.accept(REOBlocks.CHESTNUT_FENCE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_CHESTNUT_FENCE.get());
+                        pOutput.accept(REOBlocks.CHESTNUT_FENCE_GATE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_CHESTNUT_FENCE_GATE.get());
 
-                        pOutput.accept(REOBlocks.BUTTON_CHESTNUT.get());
-                        pOutput.accept(REOBlocks.PRESSURE_PLATE_CHESTNUT.get());
+                        pOutput.accept(REOBlocks.CHESTNUT_BUTTON.get());
+                        pOutput.accept(REOBlocks.CHESTNUT_PRESSURE_PLATE.get());
 
-                        pOutput.accept(REOBlocks.SIGN_CHESTNUT.get());
-                        pOutput.accept(REOBlocks.SIGN_HANGING_CHESTNUT.get());
+                        pOutput.accept(REOBlocks.CHESTNUT_SIGN.get());
+                        pOutput.accept(REOBlocks.CHESTNUT_HANGING_SIGN.get());
 
                         pOutput.accept(REOItems.BOAT_CHESTNUT.get());
                         pOutput.accept(REOItems.CHESTNUT_CHEST_BOAT.get());
 
-                        pOutput.accept(REOBlocks.DOOR_CHESTNUT.get());
-                        pOutput.accept(REOBlocks.TRAPDOOR_CHESTNUT.get());
+                        pOutput.accept(REOBlocks.CHESTNUT_DOOR.get());
+                        pOutput.accept(REOBlocks.CHESTNUT_TRAPDOOR.get());
 
                         // Citrus
-                        pOutput.accept(REOBlocks.LOG_CITRUS.get());
-                        pOutput.accept(REOBlocks.LOG_CITRUS_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_CITRUS.get());
-                        pOutput.accept(REOBlocks.WOOD_CITRUS_RESISTANT.get());
-                        pOutput.accept(REOBlocks.LOG_CITRUS_STRIPPED.get());
-                        pOutput.accept(REOBlocks.LOG_CITRUS_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_CITRUS_STRIPPED.get());
-                        pOutput.accept(REOBlocks.WOOD_CITRUS_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.PLANKS_CITRUS.get());
-                        pOutput.accept(REOBlocks.PLANKS_CITRUS_RESISTANT.get());
+                        pOutput.accept(REOBlocks.CITRUS_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_CITRUS_LOG.get());
+                        pOutput.accept(REOBlocks.CITRUS_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_CITRUS_WOOD.get());
+                        pOutput.accept(REOBlocks.STRIPPED_CITRUS_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_CITRUS_LOG.get());
+                        pOutput.accept(REOBlocks.STRIPPED_CITRUS_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_CITRUS_WOOD.get());
+                        pOutput.accept(REOBlocks.CITRUS_PLANKS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_CITRUS_PLANKS.get());
 
-                        pOutput.accept(REOBlocks.SAPLING_CITRUS.get());
-                        pOutput.accept(REOBlocks.LEAVES_CITRUS.get());
+                        pOutput.accept(REOBlocks.CITRUS_SAPLING.get());
+                        pOutput.accept(REOBlocks.CITRUS_LEAVES.get());
 
-                        pOutput.accept(REOBlocks.STAIRS_CITRUS.get());
-                        pOutput.accept(REOBlocks.STAIRS_CITRUS_RESISTANT.get());
-                        pOutput.accept(REOBlocks.SLAB_CITRUS.get());
-                        pOutput.accept(REOBlocks.SLAB_CITRUS_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_CITRUS.get());
-                        pOutput.accept(REOBlocks.FENCE_CITRUS_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_CITRUS.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_CITRUS_RESISTANT.get());
+                        pOutput.accept(REOBlocks.CITRUS_STAIRS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_CITRUS_STAIRS.get());
+                        pOutput.accept(REOBlocks.CITRUS_SLAB.get());
+                        pOutput.accept(REOBlocks.RESISTANT_CITRUS_SLAB.get());
+                        pOutput.accept(REOBlocks.CITRUS_FENCE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_CITRUS_FENCE.get());
+                        pOutput.accept(REOBlocks.CITRUS_FENCE_GATE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_CITRUS_FENCE_GATE.get());
 
-                        pOutput.accept(REOBlocks.BUTTON_CITRUS.get());
-                        pOutput.accept(REOBlocks.PRESSURE_PLATE_CITRUS.get());
+                        pOutput.accept(REOBlocks.CITRUS_BUTTON.get());
+                        pOutput.accept(REOBlocks.CITRUS_PRESSURE_PLATE.get());
 
-                        pOutput.accept(REOBlocks.SIGN_CITRUS.get());
-                        pOutput.accept(REOBlocks.SIGN_HANGING_CITRUS.get());
+                        pOutput.accept(REOBlocks.CITRUS_SIGN.get());
+                        pOutput.accept(REOBlocks.CITRUS_HANGING_SIGN.get());
 
                         pOutput.accept(REOItems.CITRUS_BOAT.get());
                         pOutput.accept(REOItems.CITRUS_CHEST_BOAT.get());
 
-                        pOutput.accept(REOBlocks.DOOR_CITRUS.get());
-                        pOutput.accept(REOBlocks.TRAPDOOR_CITRUS.get());
+                        pOutput.accept(REOBlocks.CITRUS_DOOR.get());
+                        pOutput.accept(REOBlocks.CITRUS_TRAPDOOR.get());
 
                         // Ebony
-                        pOutput.accept(REOBlocks.LOG_EBONY.get());
-                        pOutput.accept(REOBlocks.LOG_EBONY_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_EBONY.get());
-                        pOutput.accept(REOBlocks.WOOD_EBONY_RESISTANT.get());
-                        pOutput.accept(REOBlocks.LOG_EBONY_STRIPPED.get());
-                        pOutput.accept(REOBlocks.LOG_EBONY_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_EBONY_STRIPPED.get());
-                        pOutput.accept(REOBlocks.WOOD_EBONY_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.PLANKS_EBONY.get());
-                        pOutput.accept(REOBlocks.PLANKS_EBONY_RESISTANT.get());
+                        pOutput.accept(REOBlocks.EBONY_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_EBONY_LOG.get());
+                        pOutput.accept(REOBlocks.EBONY_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_EBONY_WOOD.get());
+                        pOutput.accept(REOBlocks.STRIPPED_EBONY_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_EBONY_LOG.get());
+                        pOutput.accept(REOBlocks.STRIPPED_EBONY_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_EBONY_WOOD.get());
+                        pOutput.accept(REOBlocks.EBONY_PLANKS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_EBONY_PLANKS.get());
 
-                        pOutput.accept(REOBlocks.SAPLING_EBONY.get());
-                        pOutput.accept(REOBlocks.LEAVES_EBONY.get());
+                        pOutput.accept(REOBlocks.EBONY_SAPLING.get());
+                        pOutput.accept(REOBlocks.EBONY_LEAVES.get());
 
-                        pOutput.accept(REOBlocks.STAIRS_EBONY.get());
-                        pOutput.accept(REOBlocks.STAIRS_EBONY_RESISTANT.get());
-                        pOutput.accept(REOBlocks.SLAB_EBONY.get());
-                        pOutput.accept(REOBlocks.SLAB_EBONY_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_EBONY.get());
-                        pOutput.accept(REOBlocks.FENCE_EBONY_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_EBONY.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_EBONY_RESISTANT.get());
+                        pOutput.accept(REOBlocks.EBONY_STAIRS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_EBONY_STAIRS.get());
+                        pOutput.accept(REOBlocks.EBONY_SLAB.get());
+                        pOutput.accept(REOBlocks.RESISTANT_EBONY_SLAB.get());
+                        pOutput.accept(REOBlocks.EBONY_FENCE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_EBONY_FENCE.get());
+                        pOutput.accept(REOBlocks.EBONY_FENCE_GATE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_EBONY_FENCE_GATE.get());
 
-                        pOutput.accept(REOBlocks.BUTTON_EBONY.get());
-                        pOutput.accept(REOBlocks.PRESSURE_PLATE_EBONY.get());
+                        pOutput.accept(REOBlocks.EBONY_BUTTON.get());
+                        pOutput.accept(REOBlocks.EBONY_PRESSURE_PLATE.get());
 
-                        pOutput.accept(REOBlocks.SIGN_EBONY.get());
-                        pOutput.accept(REOBlocks.SIGN_HANGING_EBONY.get());
+                        pOutput.accept(REOBlocks.EBONY_SIGN.get());
+                        pOutput.accept(REOBlocks.EBONY_HANGING_SIGN.get());
 
                         pOutput.accept(REOItems.EBONY_BOAT.get());
                         pOutput.accept(REOItems.EBONY_CHEST_BOAT.get());
 
-                        pOutput.accept(REOBlocks.DOOR_EBONY.get());
-                        pOutput.accept(REOBlocks.TRAPDOOR_EBONY.get());
+                        pOutput.accept(REOBlocks.EBONY_DOOR.get());
+                        pOutput.accept(REOBlocks.EBONY_TRAPDOOR.get());
 
                         // Larch
-                        pOutput.accept(REOBlocks.LOG_LARCH.get());
-                        pOutput.accept(REOBlocks.LOG_LARCH_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_LARCH.get());
-                        pOutput.accept(REOBlocks.WOOD_LARCH_RESISTANT.get());
-                        pOutput.accept(REOBlocks.LOG_LARCH_STRIPPED.get());
-                        pOutput.accept(REOBlocks.LOG_LARCH_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_LARCH_STRIPPED.get());
-                        pOutput.accept(REOBlocks.WOOD_LARCH_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.PLANKS_LARCH.get());
-                        pOutput.accept(REOBlocks.PLANKS_LARCH_RESISTANT.get());
+                        pOutput.accept(REOBlocks.LARCH_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_LARCH_LOG.get());
+                        pOutput.accept(REOBlocks.LARCH_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_LARCH_WOOD.get());
+                        pOutput.accept(REOBlocks.STRIPPED_LARCH_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_LARCH_LOG.get());
+                        pOutput.accept(REOBlocks.STRIPPED_LARCH_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_LARCH_WOOD.get());
+                        pOutput.accept(REOBlocks.LARCH_PLANKS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_LARCH_PLANKS.get());
 
-                        pOutput.accept(REOBlocks.SAPLING_LARCH.get());
-                        pOutput.accept(REOBlocks.LEAVES_LARCH.get());
+                        pOutput.accept(REOBlocks.LARCH_SAPLING.get());
+                        pOutput.accept(REOBlocks.LARCH_LEAVES.get());
 
-                        pOutput.accept(REOBlocks.STAIRS_LARCH.get());
-                        pOutput.accept(REOBlocks.STAIRS_LARCH_RESISTANT.get());
-                        pOutput.accept(REOBlocks.SLAB_LARCH.get());
-                        pOutput.accept(REOBlocks.SLAB_LARCH_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_LARCH.get());
-                        pOutput.accept(REOBlocks.FENCE_LARCH_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_LARCH.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_LARCH_RESISTANT.get());
+                        pOutput.accept(REOBlocks.LARCH_STAIRS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_LARCH_STAIRS.get());
+                        pOutput.accept(REOBlocks.LARCH_SLAB.get());
+                        pOutput.accept(REOBlocks.RESISTANT_LARCH_SLAB.get());
+                        pOutput.accept(REOBlocks.LARCH_FENCE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_LARCH_FENCE.get());
+                        pOutput.accept(REOBlocks.LARCH_FENCE_GATE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_LARCH_FENCE_GATE.get());
 
-                        pOutput.accept(REOBlocks.BUTTON_LARCH.get());
-                        pOutput.accept(REOBlocks.PRESSURE_PLATE_LARCH.get());
+                        pOutput.accept(REOBlocks.LARCH_BUTTON.get());
+                        pOutput.accept(REOBlocks.LARCH_PRESSURE_PLATE.get());
 
-                        pOutput.accept(REOBlocks.SIGN_LARCH.get());
-                        pOutput.accept(REOBlocks.SIGN_HANGING_LARCH.get());
+                        pOutput.accept(REOBlocks.LARCH_SIGN.get());
+                        pOutput.accept(REOBlocks.LARCH_HANGING_SIGN.get());
 
                         pOutput.accept(REOItems.LARCH_BOAT.get());
                         pOutput.accept(REOItems.LARCH_CHEST_BOAT.get());
 
-                        pOutput.accept(REOBlocks.DOOR_LARCH.get());
-                        pOutput.accept(REOBlocks.TRAPDOOR_LARCH.get());
+                        pOutput.accept(REOBlocks.LARCH_DOOR.get());
+                        pOutput.accept(REOBlocks.LARCH_TRAPDOOR.get());
 
                         // Lime
-                        pOutput.accept(REOBlocks.LOG_LIME.get());
-                        pOutput.accept(REOBlocks.LOG_LIME_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_LIME.get());
-                        pOutput.accept(REOBlocks.WOOD_LIME_RESISTANT.get());
-                        pOutput.accept(REOBlocks.LOG_LIME_STRIPPED.get());
-                        pOutput.accept(REOBlocks.LOG_LIME_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_LIME_STRIPPED.get());
-                        pOutput.accept(REOBlocks.WOOD_LIME_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.PLANKS_LIME.get());
-                        pOutput.accept(REOBlocks.PLANKS_LIME_RESISTANT.get());
+                        pOutput.accept(REOBlocks.LIME_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_LIME_LOG.get());
+                        pOutput.accept(REOBlocks.LIME_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_LIME_WOOD.get());
+                        pOutput.accept(REOBlocks.STRIPPED_LIME_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_LIME_LOG.get());
+                        pOutput.accept(REOBlocks.STRIPPED_LIME_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_LIME_WOOD.get());
+                        pOutput.accept(REOBlocks.LIME_PLANKS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_LIME_PLANKS.get());
 
-                        pOutput.accept(REOBlocks.SAPLING_LIME.get());
-                        pOutput.accept(REOBlocks.LEAVES_LIME.get());
+                        pOutput.accept(REOBlocks.LIME_SAPLING.get());
+                        pOutput.accept(REOBlocks.LIME_LEAVES.get());
 
-                        pOutput.accept(REOBlocks.STAIRS_LIME.get());
-                        pOutput.accept(REOBlocks.STAIRS_LIME_RESISTANT.get());
-                        pOutput.accept(REOBlocks.SLAB_LIME.get());
-                        pOutput.accept(REOBlocks.SLAB_LIME_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_LIME.get());
-                        pOutput.accept(REOBlocks.FENCE_LIME_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_LIME.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_LIME_RESISTANT.get());
+                        pOutput.accept(REOBlocks.LIME_STAIRS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_LIME_STAIRS.get());
+                        pOutput.accept(REOBlocks.LIME_SLAB.get());
+                        pOutput.accept(REOBlocks.RESISTANT_LIME_SLAB.get());
+                        pOutput.accept(REOBlocks.LIME_FENCE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_LIME_FENCE.get());
+                        pOutput.accept(REOBlocks.LIME_FENCE_GATE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_LIME_FENCE_GATE.get());
 
-                        pOutput.accept(REOBlocks.BUTTON_LIME.get());
-                        pOutput.accept(REOBlocks.PRESSURE_PLATE_LIME.get());
+                        pOutput.accept(REOBlocks.LIME_BUTTON.get());
+                        pOutput.accept(REOBlocks.LIME_PRESSURE_PLATE.get());
 
-                        pOutput.accept(REOBlocks.SIGN_LIME.get());
-                        pOutput.accept(REOBlocks.SIGN_HANGING_LIME.get());
+                        pOutput.accept(REOBlocks.LIME_SIGN.get());
+                        pOutput.accept(REOBlocks.LIME_HANGING_SIGN.get());
 
                         pOutput.accept(REOItems.LIME_BOAT.get());
                         pOutput.accept(REOItems.LIME_CHEST_BOAT.get());
 
-                        pOutput.accept(REOBlocks.DOOR_LIME.get());
-                        pOutput.accept(REOBlocks.TRAPDOOR_LIME.get());
+                        pOutput.accept(REOBlocks.LIME_DOOR.get());
+                        pOutput.accept(REOBlocks.LIME_TRAPDOOR.get());
 
                         // Mahogany
-                        pOutput.accept(REOBlocks.LOG_MAHOGANY.get());
-                        pOutput.accept(REOBlocks.LOG_MAHOGANY_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_MAHOGANY.get());
-                        pOutput.accept(REOBlocks.WOOD_MAHOGANY_RESISTANT.get());
-                        pOutput.accept(REOBlocks.LOG_MAHOGANY_STRIPPED.get());
-                        pOutput.accept(REOBlocks.LOG_MAHOGANY_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_MAHOGANY_STRIPPED.get());
-                        pOutput.accept(REOBlocks.WOOD_MAHOGANY_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.PLANKS_MAHOGANY.get());
-                        pOutput.accept(REOBlocks.PLANKS_MAHOGANY_RESISTANT.get());
+                        pOutput.accept(REOBlocks.MAHOGANY_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_MAHOGANY_LOG.get());
+                        pOutput.accept(REOBlocks.MAHOGANY_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_MAHOGANY_WOOD.get());
+                        pOutput.accept(REOBlocks.STRIPPED_MAHOGANY_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_MAHOGANY_LOG.get());
+                        pOutput.accept(REOBlocks.STRIPPED_MAHOGANY_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_MAHOGANY_WOOD.get());
+                        pOutput.accept(REOBlocks.MAHOGANY_PLANKS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_MAHOGANY_PLANKS.get());
 
-                        pOutput.accept(REOBlocks.SAPLING_MAHOGANY.get());
-                        pOutput.accept(REOBlocks.LEAVES_MAHOGANY.get());
+                        pOutput.accept(REOBlocks.MAHOGANY_SAPLING.get());
+                        pOutput.accept(REOBlocks.MAHOGANY_LEAVES.get());
 
-                        pOutput.accept(REOBlocks.STAIRS_MAHOGANY.get());
-                        pOutput.accept(REOBlocks.STAIRS_MAHOGANY_RESISTANT.get());
-                        pOutput.accept(REOBlocks.SLAB_MAHOGANY.get());
-                        pOutput.accept(REOBlocks.SLAB_MAHOGANY_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_MAHOGANY.get());
-                        pOutput.accept(REOBlocks.FENCE_MAHOGANY_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_MAHOGANY.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_MAHOGANY_RESISTANT.get());
+                        pOutput.accept(REOBlocks.MAHOGANY_STAIRS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_MAHOGANY_STAIRS.get());
+                        pOutput.accept(REOBlocks.MAHOGANY_SLAB.get());
+                        pOutput.accept(REOBlocks.RESISTANT_MAHOGANY_SLAB.get());
+                        pOutput.accept(REOBlocks.MAHOGANY_FENCE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_MAHOGANY_FENCE.get());
+                        pOutput.accept(REOBlocks.MAHOGANY_FENCE_GATE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_MAHOGANY_FENCE_GATE.get());
 
-                        pOutput.accept(REOBlocks.BUTTON_MAHOGANY.get());
-                        pOutput.accept(REOBlocks.PRESSURE_PLATE_MAHOGANY.get());
+                        pOutput.accept(REOBlocks.MAHOGANY_BUTTON.get());
+                        pOutput.accept(REOBlocks.MAHOGANY_PRESSURE_PLATE.get());
 
-                        pOutput.accept(REOBlocks.SIGN_MAHOGANY.get());
-                        pOutput.accept(REOBlocks.SIGN_HANGING_MAHOGANY.get());
+                        pOutput.accept(REOBlocks.MAHOGANY_SIGN.get());
+                        pOutput.accept(REOBlocks.MAHOGANY_HANGING_SIGN.get());
 
                         pOutput.accept(REOItems.MAHOGANY_BOAT.get());
                         pOutput.accept(REOItems.MAHOGANY_CHEST_BOAT.get());
 
-                        pOutput.accept(REOBlocks.DOOR_MAHOGANY.get());
-                        pOutput.accept(REOBlocks.TRAPDOOR_MAHOGANY.get());
+                        pOutput.accept(REOBlocks.MAHOGANY_DOOR.get());
+                        pOutput.accept(REOBlocks.MAHOGANY_TRAPDOOR.get());
 
                         // Maple
-                        pOutput.accept(REOBlocks.LOG_MAPLE.get());
-                        pOutput.accept(REOBlocks.LOG_MAPLE_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_MAPLE.get());
-                        pOutput.accept(REOBlocks.WOOD_MAPLE_RESISTANT.get());
-                        pOutput.accept(REOBlocks.LOG_MAPLE_STRIPPED.get());
-                        pOutput.accept(REOBlocks.LOG_MAPLE_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_MAPLE_STRIPPED.get());
-                        pOutput.accept(REOBlocks.WOOD_MAPLE_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.PLANKS_MAPLE.get());
-                        pOutput.accept(REOBlocks.PLANKS_MAPLE_RESISTANT.get());
+                        pOutput.accept(REOBlocks.MAPLE_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_MAPLE_LOG.get());
+                        pOutput.accept(REOBlocks.MAPLE_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_MAPLE_WOOD.get());
+                        pOutput.accept(REOBlocks.STRIPPED_MAPLE_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_MAPLE_LOG.get());
+                        pOutput.accept(REOBlocks.STRIPPED_MAPLE_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_MAPLE_WOOD.get());
+                        pOutput.accept(REOBlocks.MAPLE_PLANKS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_MAPLE_PLANKS.get());
 
-                        pOutput.accept(REOBlocks.SAPLING_MAPLE.get());
-                        pOutput.accept(REOBlocks.LEAVES_MAPLE.get());
+                        pOutput.accept(REOBlocks.MAPLE_SAPLING.get());
+                        pOutput.accept(REOBlocks.MAPLE_LEAVES.get());
 
-                        pOutput.accept(REOBlocks.STAIRS_MAPLE.get());
-                        pOutput.accept(REOBlocks.STAIRS_MAPLE_RESISTANT.get());
-                        pOutput.accept(REOBlocks.SLAB_MAPLE.get());
-                        pOutput.accept(REOBlocks.SLAB_MAPLE_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_MAPLE.get());
-                        pOutput.accept(REOBlocks.FENCE_MAPLE_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_MAPLE.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_MAPLE_RESISTANT.get());
+                        pOutput.accept(REOBlocks.MAPLE_STAIRS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_MAPLE_STAIRS.get());
+                        pOutput.accept(REOBlocks.MAPLE_SLAB.get());
+                        pOutput.accept(REOBlocks.RESISTANT_MAPLE_SLAB.get());
+                        pOutput.accept(REOBlocks.MAPLE_FENCE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_MAPLE_FENCE.get());
+                        pOutput.accept(REOBlocks.MAPLE_FENCE_GATE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_MAPLE_FENCE_GATE.get());
 
-                        pOutput.accept(REOBlocks.BUTTON_MAPLE.get());
-                        pOutput.accept(REOBlocks.PRESSURE_PLATE_MAPLE.get());
+                        pOutput.accept(REOBlocks.MAPLE_BUTTON.get());
+                        pOutput.accept(REOBlocks.MAPLE_PRESSURE_PLATE.get());
 
-                        pOutput.accept(REOBlocks.SIGN_MAPLE.get());
-                        pOutput.accept(REOBlocks.SIGN_HANGING_MAPLE.get());
+                        pOutput.accept(REOBlocks.MAPLE_SIGN.get());
+                        pOutput.accept(REOBlocks.MAPLE_HANGING_SIGN.get());
 
                         pOutput.accept(REOItems.MAPLE_BOAT.get());
                         pOutput.accept(REOItems.MAPLE_CHEST_BOAT.get());
 
-                        pOutput.accept(REOBlocks.DOOR_MAPLE.get());
-                        pOutput.accept(REOBlocks.TRAPDOOR_MAPLE.get());
+                        pOutput.accept(REOBlocks.MAPLE_DOOR.get());
+                        pOutput.accept(REOBlocks.MAPLE_TRAPDOOR.get());
 
                         // Palm
-                        pOutput.accept(REOBlocks.LOG_PALM.get());
-                        pOutput.accept(REOBlocks.LOG_PALM_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_PALM.get());
-                        pOutput.accept(REOBlocks.WOOD_PALM_RESISTANT.get());
-                        pOutput.accept(REOBlocks.LOG_PALM_STRIPPED.get());
-                        pOutput.accept(REOBlocks.LOG_PALM_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_PALM_STRIPPED.get());
-                        pOutput.accept(REOBlocks.WOOD_PALM_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.PLANKS_PALM.get());
-                        pOutput.accept(REOBlocks.PLANKS_PALM_RESISTANT.get());
+                        pOutput.accept(REOBlocks.PALM_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_PALM_LOG.get());
+                        pOutput.accept(REOBlocks.PALM_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_PALM_WOOD.get());
+                        pOutput.accept(REOBlocks.STRIPPED_PALM_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_PALM_LOG.get());
+                        pOutput.accept(REOBlocks.STRIPPED_PALM_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_PALM_WOOD.get());
+                        pOutput.accept(REOBlocks.PALM_PLANKS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_PALM_PLANKS.get());
 
-                        pOutput.accept(REOBlocks.SAPLING_PALM.get());
-                        pOutput.accept(REOBlocks.LEAVES_PALM.get());
+                        pOutput.accept(REOBlocks.PALM_SAPLING.get());
+                        pOutput.accept(REOBlocks.PALM_LEAVES.get());
 
-                        pOutput.accept(REOBlocks.STAIRS_PALM.get());
-                        pOutput.accept(REOBlocks.STAIRS_PALM_RESISTANT.get());
-                        pOutput.accept(REOBlocks.SLAB_PALM.get());
-                        pOutput.accept(REOBlocks.SLAB_PALM_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_PALM.get());
-                        pOutput.accept(REOBlocks.FENCE_PALM_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_PALM.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_PALM_RESISTANT.get());
+                        pOutput.accept(REOBlocks.PALM_STAIRS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_PALM_STAIRS.get());
+                        pOutput.accept(REOBlocks.PALM_SLAB.get());
+                        pOutput.accept(REOBlocks.RESISTANT_PALM_SLAB.get());
+                        pOutput.accept(REOBlocks.PALM_FENCE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_PALM_FENCE.get());
+                        pOutput.accept(REOBlocks.PALM_FENCE_GATE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_PALM_FENCE_GATE.get());
 
-                        pOutput.accept(REOBlocks.BUTTON_PALM.get());
-                        pOutput.accept(REOBlocks.PRESSURE_PLATE_PALM.get());
+                        pOutput.accept(REOBlocks.PALM_BUTTON.get());
+                        pOutput.accept(REOBlocks.PALM_PRESSURE_PLATE.get());
 
-                        pOutput.accept(REOBlocks.SIGN_PALM.get());
-                        pOutput.accept(REOBlocks.SIGN_HANGING_PALM.get());
+                        pOutput.accept(REOBlocks.PALM_SIGN.get());
+                        pOutput.accept(REOBlocks.PALM_HANGING_SIGN.get());
 
                         pOutput.accept(REOItems.PALM_BOAT.get());
                         pOutput.accept(REOItems.PALM_CHEST_BOAT.get());
 
-                        pOutput.accept(REOBlocks.DOOR_PALM.get());
-                        pOutput.accept(REOBlocks.TRAPDOOR_PALM.get());
+                        pOutput.accept(REOBlocks.PALM_DOOR.get());
+                        pOutput.accept(REOBlocks.PALM_TRAPDOOR.get());
 
                         // Papaya
-                        pOutput.accept(REOBlocks.LOG_PAPAYA.get());
-                        pOutput.accept(REOBlocks.LOG_PAPAYA_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_PAPAYA.get());
-                        pOutput.accept(REOBlocks.WOOD_PAPAYA_RESISTANT.get());
-                        pOutput.accept(REOBlocks.LOG_PAPAYA_STRIPPED.get());
-                        pOutput.accept(REOBlocks.LOG_PAPAYA_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_PAPAYA_STRIPPED.get());
-                        pOutput.accept(REOBlocks.WOOD_PAPAYA_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.PLANKS_PAPAYA.get());
-                        pOutput.accept(REOBlocks.PLANKS_PAPAYA_RESISTANT.get());
+                        pOutput.accept(REOBlocks.PAPAYA_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_PAPAYA_LOG.get());
+                        pOutput.accept(REOBlocks.PAPAYA_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_PAPAYA_WOOD.get());
+                        pOutput.accept(REOBlocks.STRIPPED_PAPAYA_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_PAPAYA_LOG.get());
+                        pOutput.accept(REOBlocks.STRIPPED_PAPAYA_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_PAPAYA_WOOD.get());
+                        pOutput.accept(REOBlocks.PAPAYA_PLANKS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_PAPAYA_PLANKS.get());
 
-                        pOutput.accept(REOBlocks.SAPLING_PAPAYA.get());
-                        pOutput.accept(REOBlocks.LEAVES_PAPAYA.get());
+                        pOutput.accept(REOBlocks.PAPAYA_SAPLING.get());
+                        pOutput.accept(REOBlocks.PAPAYA_LEAVES.get());
 
-                        pOutput.accept(REOBlocks.STAIRS_PAPAYA.get());
-                        pOutput.accept(REOBlocks.STAIRS_PAPAYA_RESISTANT.get());
-                        pOutput.accept(REOBlocks.SLAB_PAPAYA.get());
-                        pOutput.accept(REOBlocks.SLAB_PAPAYA_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_PAPAYA.get());
-                        pOutput.accept(REOBlocks.FENCE_PAPAYA_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_PAPAYA.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_PAPAYA_RESISTANT.get());
+                        pOutput.accept(REOBlocks.PAPAYA_STAIRS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_PAPAYA_STAIRS.get());
+                        pOutput.accept(REOBlocks.PAPAYA_SLAB.get());
+                        pOutput.accept(REOBlocks.RESISTANT_PAPAYA_SLAB.get());
+                        pOutput.accept(REOBlocks.PAPAYA_FENCE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_PAPAYA_FENCE.get());
+                        pOutput.accept(REOBlocks.PAPAYA_FENCE_GATE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_PAPAYA_FENCE_GATE.get());
 
-                        pOutput.accept(REOBlocks.BUTTON_PAPAYA.get());
-                        pOutput.accept(REOBlocks.PRESSURE_PLATE_PAPAYA.get());
+                        pOutput.accept(REOBlocks.PAPAYA_BUTTON.get());
+                        pOutput.accept(REOBlocks.PAPAYA_PRESSURE_PLATE.get());
 
-                        pOutput.accept(REOBlocks.SIGN_PAPAYA.get());
-                        pOutput.accept(REOBlocks.SIGN_HANGING_PAPAYA.get());
+                        pOutput.accept(REOBlocks.PAPAYA_SIGN.get());
+                        pOutput.accept(REOBlocks.PAPAYA_HANGING_SIGN.get());
 
                         pOutput.accept(REOItems.PAPAYA_BOAT.get());
                         pOutput.accept(REOItems.PAPAYA_CHEST_BOAT.get());
 
-                        pOutput.accept(REOBlocks.DOOR_PAPAYA.get());
-                        pOutput.accept(REOBlocks.TRAPDOOR_PAPAYA.get());
+                        pOutput.accept(REOBlocks.PAPAYA_DOOR.get());
+                        pOutput.accept(REOBlocks.PAPAYA_TRAPDOOR.get());
 
                         // Pine
-                        pOutput.accept(REOBlocks.LOG_PINE.get());
-                        pOutput.accept(REOBlocks.LOG_PINE_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_PINE.get());
-                        pOutput.accept(REOBlocks.WOOD_PINE_RESISTANT.get());
-                        pOutput.accept(REOBlocks.LOG_PINE_STRIPPED.get());
-                        pOutput.accept(REOBlocks.LOG_PINE_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_PINE_STRIPPED.get());
-                        pOutput.accept(REOBlocks.WOOD_PINE_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.PLANKS_PINE.get());
-                        pOutput.accept(REOBlocks.PLANKS_PINE_RESISTANT.get());
+                        pOutput.accept(REOBlocks.PINE_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_PINE_LOG.get());
+                        pOutput.accept(REOBlocks.PINE_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_PINE_WOOD.get());
+                        pOutput.accept(REOBlocks.STRIPPED_PINE_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_PINE_LOG.get());
+                        pOutput.accept(REOBlocks.STRIPPED_PINE_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_PINE_WOOD.get());
+                        pOutput.accept(REOBlocks.PINE_PLANKS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_PINE_PLANKS.get());
 
-                        pOutput.accept(REOBlocks.SAPLING_PINE.get());
-                        pOutput.accept(REOBlocks.LEAVES_PINE.get());
+                        pOutput.accept(REOBlocks.PINE_SAPLING.get());
+                        pOutput.accept(REOBlocks.PINE_LEAVES.get());
 
-                        pOutput.accept(REOBlocks.STAIRS_PINE.get());
-                        pOutput.accept(REOBlocks.STAIRS_PINE_RESISTANT.get());
-                        pOutput.accept(REOBlocks.SLAB_PINE.get());
-                        pOutput.accept(REOBlocks.SLAB_PINE_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_PINE.get());
-                        pOutput.accept(REOBlocks.FENCE_PINE_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_PINE.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_PINE_RESISTANT.get());
+                        pOutput.accept(REOBlocks.PINE_STAIRS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_PINE_STAIRS.get());
+                        pOutput.accept(REOBlocks.PINE_SLAB.get());
+                        pOutput.accept(REOBlocks.RESISTANT_PINE_SLAB.get());
+                        pOutput.accept(REOBlocks.PINE_FENCE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_PINE_FENCE.get());
+                        pOutput.accept(REOBlocks.PINE_FENCE_GATE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_PINE_FENCE_GATE.get());
 
-                        pOutput.accept(REOBlocks.BUTTON_PINE.get());
-                        pOutput.accept(REOBlocks.PRESSURE_PLATE_PINE.get());
+                        pOutput.accept(REOBlocks.PINE_BUTTON.get());
+                        pOutput.accept(REOBlocks.PINE_PRESSURE_PLATE.get());
 
-                        pOutput.accept(REOBlocks.SIGN_PINE.get());
-                        pOutput.accept(REOBlocks.SIGN_HANGING_PINE.get());
+                        pOutput.accept(REOBlocks.PINE_SIGN.get());
+                        pOutput.accept(REOBlocks.PINE_HANGING_SIGN.get());
 
                         pOutput.accept(REOItems.PINE_BOAT.get());
                         pOutput.accept(REOItems.PINE_CHEST_BOAT.get());
 
-                        pOutput.accept(REOBlocks.DOOR_PINE.get());
-                        pOutput.accept(REOBlocks.TRAPDOOR_PINE.get());
+                        pOutput.accept(REOBlocks.PINE_DOOR.get());
+                        pOutput.accept(REOBlocks.PINE_TRAPDOOR.get());
 
                         // Plum
-                        pOutput.accept(REOBlocks.LOG_PLUM.get());
-                        pOutput.accept(REOBlocks.LOG_PLUM_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_PLUM.get());
-                        pOutput.accept(REOBlocks.WOOD_PLUM_RESISTANT.get());
-                        pOutput.accept(REOBlocks.LOG_PLUM_STRIPPED.get());
-                        pOutput.accept(REOBlocks.LOG_PLUM_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_PLUM_STRIPPED.get());
-                        pOutput.accept(REOBlocks.WOOD_PLUM_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.PLANKS_PLUM.get());
-                        pOutput.accept(REOBlocks.PLANKS_PLUM_RESISTANT.get());
+                        pOutput.accept(REOBlocks.PLUM_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_PLUM_LOG.get());
+                        pOutput.accept(REOBlocks.PLUM_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_PLUM_WOOD.get());
+                        pOutput.accept(REOBlocks.STRIPPED_PLUM_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_PLUM_LOG.get());
+                        pOutput.accept(REOBlocks.STRIPPED_PLUM_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_PLUM_WOOD.get());
+                        pOutput.accept(REOBlocks.PLUM_PLANKS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_PLUM_PLANKS.get());
 
-                        pOutput.accept(REOBlocks.SAPLING_PLUM.get());
-                        pOutput.accept(REOBlocks.LEAVES_PLUM.get());
+                        pOutput.accept(REOBlocks.PLUM_SAPLING.get());
+                        pOutput.accept(REOBlocks.PLUM_LEAVES.get());
 
-                        pOutput.accept(REOBlocks.STAIRS_PLUM.get());
-                        pOutput.accept(REOBlocks.STAIRS_PLUM_RESISTANT.get());
-                        pOutput.accept(REOBlocks.SLAB_PLUM.get());
-                        pOutput.accept(REOBlocks.SLAB_PLUM_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_PLUM.get());
-                        pOutput.accept(REOBlocks.FENCE_PLUM_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_PLUM.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_PLUM_RESISTANT.get());
+                        pOutput.accept(REOBlocks.PLUM_STAIRS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_PLUM_STAIRS.get());
+                        pOutput.accept(REOBlocks.PLUM_SLAB.get());
+                        pOutput.accept(REOBlocks.RESISTANT_PLUM_SLAB.get());
+                        pOutput.accept(REOBlocks.PLUM_FENCE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_PLUM_FENCE.get());
+                        pOutput.accept(REOBlocks.PLUM_FENCE_GATE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_PLUM_FENCE_GATE.get());
 
-                        pOutput.accept(REOBlocks.BUTTON_PLUM.get());
-                        pOutput.accept(REOBlocks.PRESSURE_PLATE_PLUM.get());
+                        pOutput.accept(REOBlocks.PLUM_BUTTON.get());
+                        pOutput.accept(REOBlocks.PLUM_PRESSURE_PLATE.get());
 
-                        pOutput.accept(REOBlocks.SIGN_PLUM.get());
-                        pOutput.accept(REOBlocks.SIGN_HANGING_PLUM.get());
+                        pOutput.accept(REOBlocks.PLUM_SIGN.get());
+                        pOutput.accept(REOBlocks.PLUM_HANGING_SIGN.get());
 
                         pOutput.accept(REOItems.PLUM_BOAT.get());
                         pOutput.accept(REOItems.PLUM_CHEST_BOAT.get());
 
-                        pOutput.accept(REOBlocks.DOOR_PLUM.get());
-                        pOutput.accept(REOBlocks.TRAPDOOR_PLUM.get());
+                        pOutput.accept(REOBlocks.PLUM_DOOR.get());
+                        pOutput.accept(REOBlocks.PLUM_TRAPDOOR.get());
 
                         // Poplar
-                        pOutput.accept(REOBlocks.LOG_POPLAR.get());
-                        pOutput.accept(REOBlocks.LOG_POPLAR_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_POPLAR.get());
-                        pOutput.accept(REOBlocks.WOOD_POPLAR_RESISTANT.get());
-                        pOutput.accept(REOBlocks.LOG_POPLAR_STRIPPED.get());
-                        pOutput.accept(REOBlocks.LOG_POPLAR_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_POPLAR_STRIPPED.get());
-                        pOutput.accept(REOBlocks.WOOD_POPLAR_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.PLANKS_POPLAR.get());
-                        pOutput.accept(REOBlocks.PLANKS_POPLAR_RESISTANT.get());
+                        pOutput.accept(REOBlocks.POPLAR_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_POPLAR_LOG.get());
+                        pOutput.accept(REOBlocks.POPLAR_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_POPLAR_WOOD.get());
+                        pOutput.accept(REOBlocks.STRIPPED_POPLAR_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_POPLAR_LOG.get());
+                        pOutput.accept(REOBlocks.STRIPPED_POPLAR_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_POPLAR_WOOD.get());
+                        pOutput.accept(REOBlocks.POPLAR_PLANKS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_POPLAR_PLANKS.get());
 
-                        pOutput.accept(REOBlocks.SAPLING_POPLAR.get());
-                        pOutput.accept(REOBlocks.LEAVES_POPLAR.get());
+                        pOutput.accept(REOBlocks.POPLAR_SAPLING.get());
+                        pOutput.accept(REOBlocks.POPLAR_LEAVES.get());
 
-                        pOutput.accept(REOBlocks.STAIRS_POPLAR.get());
-                        pOutput.accept(REOBlocks.STAIRS_POPLAR_RESISTANT.get());
-                        pOutput.accept(REOBlocks.SLAB_POPLAR.get());
-                        pOutput.accept(REOBlocks.SLAB_POPLAR_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_POPLAR.get());
-                        pOutput.accept(REOBlocks.FENCE_POPLAR_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_POPLAR.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_POPLAR_RESISTANT.get());
+                        pOutput.accept(REOBlocks.POPLAR_STAIRS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_POPLAR_STAIRS.get());
+                        pOutput.accept(REOBlocks.POPLAR_SLAB.get());
+                        pOutput.accept(REOBlocks.RESISTANT_POPLAR_SLAB.get());
+                        pOutput.accept(REOBlocks.POPLAR_FENCE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_POPLAR_FENCE.get());
+                        pOutput.accept(REOBlocks.POPLAR_FENCE_GATE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_POPLAR_FENCE_GATE.get());
 
-                        pOutput.accept(REOBlocks.BUTTON_POPLAR.get());
-                        pOutput.accept(REOBlocks.PRESSURE_PLATE_POPLAR.get());
+                        pOutput.accept(REOBlocks.POPLAR_BUTTON.get());
+                        pOutput.accept(REOBlocks.POPLAR_PRESSURE_PLATE.get());
 
-                        pOutput.accept(REOBlocks.SIGN_POPLAR.get());
-                        pOutput.accept(REOBlocks.SIGN_HANGING_POPLAR.get());
+                        pOutput.accept(REOBlocks.POPLAR_SIGN.get());
+                        pOutput.accept(REOBlocks.POPLAR_HANGING_SIGN.get());
 
                         pOutput.accept(REOItems.POPLAR_BOAT.get());
                         pOutput.accept(REOItems.POPLAR_CHEST_BOAT.get());
 
-                        pOutput.accept(REOBlocks.DOOR_POPLAR.get());
-                        pOutput.accept(REOBlocks.TRAPDOOR_POPLAR.get());
+                        pOutput.accept(REOBlocks.POPLAR_DOOR.get());
+                        pOutput.accept(REOBlocks.POPLAR_TRAPDOOR.get());
 
                         // Redwood
-                        pOutput.accept(REOBlocks.LOG_REDWOOD.get());
-                        pOutput.accept(REOBlocks.LOG_REDWOOD_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_REDWOOD.get());
-                        pOutput.accept(REOBlocks.WOOD_REDWOOD_RESISTANT.get());
-                        pOutput.accept(REOBlocks.LOG_REDWOOD_STRIPPED.get());
-                        pOutput.accept(REOBlocks.LOG_REDWOOD_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_REDWOOD_STRIPPED.get());
-                        pOutput.accept(REOBlocks.WOOD_REDWOOD_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.PLANKS_REDWOOD.get());
-                        pOutput.accept(REOBlocks.PLANKS_REDWOOD_RESISTANT.get());
+                        pOutput.accept(REOBlocks.REDWOOD_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_REDWOOD_LOG.get());
+                        pOutput.accept(REOBlocks.REDWOOD_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_REDWOOD_WOOD.get());
+                        pOutput.accept(REOBlocks.STRIPPED_REDWOOD_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_REDWOOD_LOG.get());
+                        pOutput.accept(REOBlocks.STRIPPED_REDWOOD_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_REDWOOD_WOOD.get());
+                        pOutput.accept(REOBlocks.REDWOOD_PLANKS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_REDWOOD_PLANKS.get());
 
-                        pOutput.accept(REOBlocks.SAPLING_REDWOOD.get());
-                        pOutput.accept(REOBlocks.LEAVES_REDWOOD.get());
+                        pOutput.accept(REOBlocks.REDWOOD_SAPLING.get());
+                        pOutput.accept(REOBlocks.REDWOOD_LEAVES.get());
 
-                        pOutput.accept(REOBlocks.STAIRS_REDWOOD.get());
-                        pOutput.accept(REOBlocks.STAIRS_REDWOOD_RESISTANT.get());
-                        pOutput.accept(REOBlocks.SLAB_REDWOOD.get());
-                        pOutput.accept(REOBlocks.SLAB_REDWOOD_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_REDWOOD.get());
-                        pOutput.accept(REOBlocks.FENCE_REDWOOD_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_REDWOOD.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_REDWOOD_RESISTANT.get());
+                        pOutput.accept(REOBlocks.REDWOOD_STAIRS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_REDWOOD_STAIRS.get());
+                        pOutput.accept(REOBlocks.REDWOOD_SLAB.get());
+                        pOutput.accept(REOBlocks.RESISTANT_REDWOOD_SLAB.get());
+                        pOutput.accept(REOBlocks.REDWOOD_FENCE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_REDWOOD_FENCE.get());
+                        pOutput.accept(REOBlocks.REDWOOD_FENCE_GATE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_REDWOOD_FENCE_GATE.get());
 
-                        pOutput.accept(REOBlocks.BUTTON_REDWOOD.get());
-                        pOutput.accept(REOBlocks.PRESSURE_PLATE_REDWOOD.get());
+                        pOutput.accept(REOBlocks.REDWOOD_BUTTON.get());
+                        pOutput.accept(REOBlocks.REDWOOD_PRESSURE_PLATE.get());
 
-                        pOutput.accept(REOBlocks.SIGN_REDWOOD.get());
-                        pOutput.accept(REOBlocks.SIGN_HANGING_REDWOOD.get());
+                        pOutput.accept(REOBlocks.REDWOOD_SIGN.get());
+                        pOutput.accept(REOBlocks.REDWOOD_HANGING_SIGN.get());
 
                         pOutput.accept(REOItems.REDWOOD_BOAT.get());
                         pOutput.accept(REOItems.REDWOOD_CHEST_BOAT.get());
 
-                        pOutput.accept(REOBlocks.DOOR_REDWOOD.get());
-                        pOutput.accept(REOBlocks.TRAPDOOR_REDWOOD.get());
+                        pOutput.accept(REOBlocks.REDWOOD_DOOR.get());
+                        pOutput.accept(REOBlocks.REDWOOD_TRAPDOOR.get());
 
                         // Rubber
-                        pOutput.accept(REOBlocks.LOG_RUBBER.get());
-                        pOutput.accept(REOBlocks.LOG_RUBBER_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_RUBBER.get());
-                        pOutput.accept(REOBlocks.WOOD_RUBBER_RESISTANT.get());
-                        pOutput.accept(REOBlocks.LOG_RUBBER_STRIPPED.get());
-                        pOutput.accept(REOBlocks.LOG_RUBBER_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_RUBBER_STRIPPED.get());
-                        pOutput.accept(REOBlocks.WOOD_RUBBER_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.PLANKS_RUBBER.get());
-                        pOutput.accept(REOBlocks.PLANKS_RUBBER_RESISTANT.get());
+                        pOutput.accept(REOBlocks.RUBBER_LOG.get());
+                        pOutput.accept(REOBlocks.RUBBER_LOG_SAP.get());
+                        pOutput.accept(REOBlocks.RESISTANT_RUBBER_LOG.get());
+                        pOutput.accept(REOBlocks.RUBBER_WOOD.get());
+                        pOutput.accept(REOBlocks.RUBBER_WOOD_SAP.get());
+                        pOutput.accept(REOBlocks.RESISTANT_RUBBER_WOOD.get());
+                        pOutput.accept(REOBlocks.STRIPPED_RUBBER_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_RUBBER_LOG.get());
+                        pOutput.accept(REOBlocks.STRIPPED_RUBBER_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_RUBBER_WOOD.get());
+                        pOutput.accept(REOBlocks.RUBBER_PLANKS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_RUBBER_PLANKS.get());
 
-                        pOutput.accept(REOBlocks.SAPLING_RUBBER.get());
-                        pOutput.accept(REOBlocks.LEAVES_RUBBER.get());
+                        pOutput.accept(REOBlocks.RUBBER_SAPLING.get());
+                        pOutput.accept(REOBlocks.RUBBER_LEAVES.get());
 
-                        pOutput.accept(REOBlocks.STAIRS_RUBBER.get());
-                        pOutput.accept(REOBlocks.STAIRS_RUBBER_RESISTANT.get());
-                        pOutput.accept(REOBlocks.SLAB_RUBBER.get());
-                        pOutput.accept(REOBlocks.SLAB_RUBBER_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_RUBBER.get());
-                        pOutput.accept(REOBlocks.FENCE_RUBBER_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_RUBBER.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_RUBBER_RESISTANT.get());
+                        pOutput.accept(REOBlocks.RUBBER_STAIRS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_RUBBER_STAIRS.get());
+                        pOutput.accept(REOBlocks.RUBBER_SLAB.get());
+                        pOutput.accept(REOBlocks.RESISTANT_RUBBER_SLAB.get());
+                        pOutput.accept(REOBlocks.RUBBER_FENCE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_RUBBER_FENCE.get());
+                        pOutput.accept(REOBlocks.RUBBER_FENCE_GATE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_RUBBER_FENCE_GATE.get());
 
-                        pOutput.accept(REOBlocks.BUTTON_RUBBER.get());
-                        pOutput.accept(REOBlocks.PRESSURE_PLATE_RUBBER.get());
+                        pOutput.accept(REOBlocks.RUBBER_BUTTON.get());
+                        pOutput.accept(REOBlocks.RUBBER_PRESSURE_PLATE.get());
 
-                        pOutput.accept(REOBlocks.SIGN_RUBBER.get());
-                        pOutput.accept(REOBlocks.SIGN_HANGING_RUBBER.get());
+                        pOutput.accept(REOBlocks.RUBBER_SIGN.get());
+                        pOutput.accept(REOBlocks.RUBBER_HANGING_SIGN.get());
 
                         pOutput.accept(REOItems.RUBBER_BOAT.get());
                         pOutput.accept(REOItems.RUBBER_CHEST_BOAT.get());
 
-                        pOutput.accept(REOBlocks.DOOR_RUBBER.get());
-                        pOutput.accept(REOBlocks.TRAPDOOR_RUBBER.get());
+                        pOutput.accept(REOBlocks.RUBBER_DOOR.get());
+                        pOutput.accept(REOBlocks.RUBBER_TRAPDOOR.get());
 
                         // Teak
-                        pOutput.accept(REOBlocks.LOG_TEAK.get());
-                        pOutput.accept(REOBlocks.LOG_TEAK_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_TEAK.get());
-                        pOutput.accept(REOBlocks.WOOD_TEAK_RESISTANT.get());
-                        pOutput.accept(REOBlocks.LOG_TEAK_STRIPPED.get());
-                        pOutput.accept(REOBlocks.LOG_TEAK_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_TEAK_STRIPPED.get());
-                        pOutput.accept(REOBlocks.WOOD_TEAK_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.PLANKS_TEAK.get());
-                        pOutput.accept(REOBlocks.PLANKS_TEAK_RESISTANT.get());
+                        pOutput.accept(REOBlocks.TEAK_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_TEAK_LOG.get());
+                        pOutput.accept(REOBlocks.TEAK_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_TEAK_WOOD.get());
+                        pOutput.accept(REOBlocks.STRIPPED_TEAK_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_TEAK_LOG.get());
+                        pOutput.accept(REOBlocks.STRIPPED_TEAK_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_TEAK_WOOD.get());
+                        pOutput.accept(REOBlocks.TEAK_PLANKS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_TEAK_PLANKS.get());
 
-                        pOutput.accept(REOBlocks.SAPLING_TEAK.get());
-                        pOutput.accept(REOBlocks.LEAVES_TEAK.get());
+                        pOutput.accept(REOBlocks.TEAK_SAPLING.get());
+                        pOutput.accept(REOBlocks.TEAK_LEAVES.get());
 
-                        pOutput.accept(REOBlocks.STAIRS_TEAK.get());
-                        pOutput.accept(REOBlocks.STAIRS_TEAK_RESISTANT.get());
-                        pOutput.accept(REOBlocks.SLAB_TEAK.get());
-                        pOutput.accept(REOBlocks.SLAB_TEAK_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_TEAK.get());
-                        pOutput.accept(REOBlocks.FENCE_TEAK_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_TEAK.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_TEAK_RESISTANT.get());
+                        pOutput.accept(REOBlocks.TEAK_STAIRS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_TEAK_STAIRS.get());
+                        pOutput.accept(REOBlocks.TEAK_SLAB.get());
+                        pOutput.accept(REOBlocks.RESISTANT_TEAK_SLAB.get());
+                        pOutput.accept(REOBlocks.TEAK_FENCE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_TEAK_FENCE.get());
+                        pOutput.accept(REOBlocks.TEAK_FENCE_GATE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_TEAK_FENCE_GATE.get());
 
-                        pOutput.accept(REOBlocks.BUTTON_TEAK.get());
-                        pOutput.accept(REOBlocks.PRESSURE_PLATE_TEAK.get());
+                        pOutput.accept(REOBlocks.TEAK_BUTTON.get());
+                        pOutput.accept(REOBlocks.TEAK_PRESSURE_PLATE.get());
 
-                        pOutput.accept(REOBlocks.SIGN_TEAK.get());
-                        pOutput.accept(REOBlocks.SIGN_HANGING_TEAK.get());
+                        pOutput.accept(REOBlocks.TEAK_SIGN.get());
+                        pOutput.accept(REOBlocks.TEAK_HANGING_SIGN.get());
 
                         pOutput.accept(REOItems.TEAK_BOAT.get());
                         pOutput.accept(REOItems.TEAK_CHEST_BOAT.get());
 
-                        pOutput.accept(REOBlocks.DOOR_TEAK.get());
-                        pOutput.accept(REOBlocks.TRAPDOOR_TEAK.get());
+                        pOutput.accept(REOBlocks.TEAK_DOOR.get());
+                        pOutput.accept(REOBlocks.TEAK_TRAPDOOR.get());
 
                         // Walnut
-                        pOutput.accept(REOBlocks.LOG_WALNUT.get());
-                        pOutput.accept(REOBlocks.LOG_WALNUT_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_WALNUT.get());
-                        pOutput.accept(REOBlocks.WOOD_WALNUT_RESISTANT.get());
-                        pOutput.accept(REOBlocks.LOG_WALNUT_STRIPPED.get());
-                        pOutput.accept(REOBlocks.LOG_WALNUT_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_WALNUT_STRIPPED.get());
-                        pOutput.accept(REOBlocks.WOOD_WALNUT_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.PLANKS_WALNUT.get());
-                        pOutput.accept(REOBlocks.PLANKS_WALNUT_RESISTANT.get());
+                        pOutput.accept(REOBlocks.WALNUT_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_WALNUT_LOG.get());
+                        pOutput.accept(REOBlocks.WALNUT_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_WALNUT_WOOD.get());
+                        pOutput.accept(REOBlocks.STRIPPED_WALNUT_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_WALNUT_LOG.get());
+                        pOutput.accept(REOBlocks.STRIPPED_WALNUT_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_WALNUT_WOOD.get());
+                        pOutput.accept(REOBlocks.WALNUT_PLANKS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_WALNUT_PLANKS.get());
 
-                        pOutput.accept(REOBlocks.SAPLING_WALNUT.get());
-                        pOutput.accept(REOBlocks.LEAVES_WALNUT.get());
+                        pOutput.accept(REOBlocks.WALNUT_SAPLING.get());
+                        pOutput.accept(REOBlocks.WALNUT_LEAVES.get());
 
-                        pOutput.accept(REOBlocks.STAIRS_WALNUT.get());
-                        pOutput.accept(REOBlocks.STAIRS_WALNUT_RESISTANT.get());
-                        pOutput.accept(REOBlocks.SLAB_WALNUT.get());
-                        pOutput.accept(REOBlocks.SLAB_WALNUT_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_WALNUT.get());
-                        pOutput.accept(REOBlocks.FENCE_WALNUT_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_WALNUT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_WALNUT_RESISTANT.get());
+                        pOutput.accept(REOBlocks.WALNUT_STAIRS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_WALNUT_STAIRS.get());
+                        pOutput.accept(REOBlocks.WALNUT_SLAB.get());
+                        pOutput.accept(REOBlocks.RESISTANT_WALNUT_SLAB.get());
+                        pOutput.accept(REOBlocks.WALNUT_FENCE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_WALNUT_FENCE.get());
+                        pOutput.accept(REOBlocks.WALNUT_FENCE_GATE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_WALNUT_FENCE_GATE.get());
 
-                        pOutput.accept(REOBlocks.BUTTON_WALNUT.get());
-                        pOutput.accept(REOBlocks.PRESSURE_PLATE_WALNUT.get());
+                        pOutput.accept(REOBlocks.WALNUT_BUTTON.get());
+                        pOutput.accept(REOBlocks.WALNUT_PRESSURE_PLATE.get());
 
-                        pOutput.accept(REOBlocks.SIGN_WALNUT.get());
-                        pOutput.accept(REOBlocks.SIGN_HANGING_WALNUT.get());
+                        pOutput.accept(REOBlocks.WALNUT_SIGN.get());
+                        pOutput.accept(REOBlocks.WALNUT_HANGING_SIGN.get());
 
                         pOutput.accept(REOItems.WALNUT_BOAT.get());
                         pOutput.accept(REOItems.WALNUT_CHEST_BOAT.get());
 
-                        pOutput.accept(REOBlocks.DOOR_WALNUT.get());
-                        pOutput.accept(REOBlocks.TRAPDOOR_WALNUT.get());
+                        pOutput.accept(REOBlocks.WALNUT_DOOR.get());
+                        pOutput.accept(REOBlocks.WALNUT_TRAPDOOR.get());
 
                         // Willow
-                        pOutput.accept(REOBlocks.LOG_WILLOW.get());
-                        pOutput.accept(REOBlocks.LOG_WILLOW_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_WILLOW.get());
-                        pOutput.accept(REOBlocks.WOOD_WILLOW_RESISTANT.get());
-                        pOutput.accept(REOBlocks.LOG_WILLOW_STRIPPED.get());
-                        pOutput.accept(REOBlocks.LOG_WILLOW_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.WOOD_WILLOW_STRIPPED.get());
-                        pOutput.accept(REOBlocks.WOOD_WILLOW_STRIPPED_RESISTANT.get());
-                        pOutput.accept(REOBlocks.PLANKS_WILLOW.get());
-                        pOutput.accept(REOBlocks.PLANKS_WILLOW_RESISTANT.get());
+                        pOutput.accept(REOBlocks.WILLOW_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_WILLOW_LOG.get());
+                        pOutput.accept(REOBlocks.WILLOW_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_WILLOW_WOOD.get());
+                        pOutput.accept(REOBlocks.STRIPPED_WILLOW_LOG.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_WILLOW_LOG.get());
+                        pOutput.accept(REOBlocks.STRIPPED_WILLOW_WOOD.get());
+                        pOutput.accept(REOBlocks.RESISTANT_STRIPPED_WILLOW_WOOD.get());
+                        pOutput.accept(REOBlocks.WILLOW_PLANKS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_WILLOW_PLANKS.get());
 
-                        pOutput.accept(REOBlocks.SAPLING_WILLOW.get());
-                        pOutput.accept(REOBlocks.LEAVES_WILLOW.get());
+                        pOutput.accept(REOBlocks.WILLOW_SAPLING.get());
+                        pOutput.accept(REOBlocks.WILLOW_LEAVES.get());
 
-                        pOutput.accept(REOBlocks.STAIRS_WILLOW.get());
-                        pOutput.accept(REOBlocks.STAIRS_WILLOW_RESISTANT.get());
-                        pOutput.accept(REOBlocks.SLAB_WILLOW.get());
-                        pOutput.accept(REOBlocks.SLAB_WILLOW_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_WILLOW.get());
-                        pOutput.accept(REOBlocks.FENCE_WILLOW_RESISTANT.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_WILLOW.get());
-                        pOutput.accept(REOBlocks.FENCE_GATE_WILLOW_RESISTANT.get());
+                        pOutput.accept(REOBlocks.WILLOW_STAIRS.get());
+                        pOutput.accept(REOBlocks.RESISTANT_WILLOW_STAIRS.get());
+                        pOutput.accept(REOBlocks.WILLOW_SLAB.get());
+                        pOutput.accept(REOBlocks.RESISTANT_WILLOW_SLAB.get());
+                        pOutput.accept(REOBlocks.WILLOW_FENCE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_WILLOW_FENCE.get());
+                        pOutput.accept(REOBlocks.WILLOW_FENCE_GATE.get());
+                        pOutput.accept(REOBlocks.RESISTANT_WILLOW_FENCE_GATE.get());
 
-                        pOutput.accept(REOBlocks.BUTTON_WILLOW.get());
-                        pOutput.accept(REOBlocks.PRESSURE_PLATE_WILLOW.get());
+                        pOutput.accept(REOBlocks.WILLOW_BUTTON.get());
+                        pOutput.accept(REOBlocks.WILLOW_PRESSURE_PLATE.get());
 
-                        pOutput.accept(REOBlocks.SIGN_WILLOW.get());
-                        pOutput.accept(REOBlocks.SIGN_HANGING_WILLOW.get());
+                        pOutput.accept(REOBlocks.WILLOW_SIGN.get());
+                        pOutput.accept(REOBlocks.WILLOW_HANGING_SIGN.get());
 
                         pOutput.accept(REOItems.WILLOW_BOAT.get());
                         pOutput.accept(REOItems.WILLOW_CHEST_BOAT.get());
 
-                        pOutput.accept(REOBlocks.DOOR_WILLOW.get());
-                        pOutput.accept(REOBlocks.TRAPDOOR_WILLOW.get());
+                        pOutput.accept(REOBlocks.WILLOW_DOOR.get());
+                        pOutput.accept(REOBlocks.WILLOW_TRAPDOOR.get());
 
 
                         // Ores //
                         // Overworld Ore
-                        pOutput.accept(REOBlocks.ORE_ALUMINIUM.get());
-                        pOutput.accept(REOBlocks.ORE_LEAD.get());
-                        pOutput.accept(REOBlocks.ORE_NICKEL.get());
-                        pOutput.accept(REOBlocks.ORE_PLATINUM.get());
-                        pOutput.accept(REOBlocks.ORE_SILVER.get());
-                        pOutput.accept(REOBlocks.ORE_TIN.get());
-                        pOutput.accept(REOBlocks.ORE_URANIUM.get());
-                        pOutput.accept(REOBlocks.ORE_ZINC.get());
+                        pOutput.accept(REOBlocks.ALUMINUM_ORE.get());
+                        pOutput.accept(REOBlocks.LEAD_ORE.get());
+                        pOutput.accept(REOBlocks.NICKEL_ORE.get());
+                        pOutput.accept(REOBlocks.PLATINUM_ORE.get());
+                        pOutput.accept(REOBlocks.SILVER_ORE.get());
+                        pOutput.accept(REOBlocks.TIN_ORE.get());
+                        pOutput.accept(REOBlocks.URANIUM_ORE.get());
+                        pOutput.accept(REOBlocks.ZINC_ORE.get());
 
                         // Cluster
-                        pOutput.accept(REOBlocks.CLUSTER_PERIDOT.get());
+                        pOutput.accept(REOBlocks.PERIDOT_CLUSTER.get());
                         pOutput.accept(REOBlocks.LARGE_PERIDOT_BUD.get());
                         pOutput.accept(REOBlocks.MEDIUM_PERIDOT_BUD.get());
                         pOutput.accept(REOBlocks.SMALL_PERIDOT_BUD.get());
 
-                        pOutput.accept(REOBlocks.CLUSTER_RUBY.get());
+                        pOutput.accept(REOBlocks.RUBY_CLUSTER.get());
                         pOutput.accept(REOBlocks.LARGE_RUBY_BUD.get());
                         pOutput.accept(REOBlocks.MEDIUM_RUBY_BUD.get());
                         pOutput.accept(REOBlocks.SMALL_RUBY_BUD.get());
 
-                        pOutput.accept(REOBlocks.CLUSTER_SAPPHIRE.get());
+                        pOutput.accept(REOBlocks.SAPPHIRE_CLUSTER.get());
                         pOutput.accept(REOBlocks.LARGE_SAPPHIRE_BUD.get());
                         pOutput.accept(REOBlocks.MEDIUM_SAPPHIRE_BUD.get());
                         pOutput.accept(REOBlocks.SMALL_SAPPHIRE_BUD.get());
 
                         // Gravel Ore
-                        pOutput.accept(REOBlocks.GRAVEL_ORE_ALUMINIUM.get());
-                        pOutput.accept(REOBlocks.GRAVEL_ORE_COAL.get());
-                        pOutput.accept(REOBlocks.GRAVEL_ORE_COPPER.get());
-                        pOutput.accept(REOBlocks.GRAVEL_ORE_DIAMOND.get());
-                        pOutput.accept(REOBlocks.GRAVEL_ORE_EMERALD.get());
-                        pOutput.accept(REOBlocks.GRAVEL_ORE_GOLD.get());
-                        pOutput.accept(REOBlocks.GRAVEL_ORE_IRON.get());
-                        pOutput.accept(REOBlocks.GRAVEL_ORE_LAPIS.get());
-                        pOutput.accept(REOBlocks.GRAVEL_ORE_LEAD.get());
-                        pOutput.accept(REOBlocks.GRAVEL_ORE_NICKEL.get());
-                        pOutput.accept(REOBlocks.GRAVEL_ORE_PLATINUM.get());
-                        pOutput.accept(REOBlocks.GRAVEL_ORE_REDSTONE.get());
-                        pOutput.accept(REOBlocks.GRAVEL_ORE_SILVER.get());
-                        pOutput.accept(REOBlocks.GRAVEL_ORE_TIN.get());
-                        pOutput.accept(REOBlocks.GRAVEL_ORE_URANIUM.get());
-                        pOutput.accept(REOBlocks.GRAVEL_ORE_ZINC.get());
+                        pOutput.accept(REOBlocks.ALUMINUM_GRAVEL_ORE.get());
+                        pOutput.accept(REOBlocks.COAL_GRAVEL_ORE.get());
+                        pOutput.accept(REOBlocks.COPPER_GRAVEL_ORE.get());
+                        pOutput.accept(REOBlocks.DIAMOND_GRAVEL_ORE.get());
+                        pOutput.accept(REOBlocks.EMERALD_GRAVEL_ORE.get());
+                        pOutput.accept(REOBlocks.GOLD_GRAVEL_ORE.get());
+                        pOutput.accept(REOBlocks.IRON_GRAVEL_ORE.get());
+                        pOutput.accept(REOBlocks.LAPIS_GRAVEL_ORE.get());
+                        pOutput.accept(REOBlocks.LEAD_GRAVEL_ORE.get());
+                        pOutput.accept(REOBlocks.NICKEL_GRAVEL_ORE.get());
+                        pOutput.accept(REOBlocks.PLATINUM_GRAVEL_ORE.get());
+                        pOutput.accept(REOBlocks.REDSTONE_GRAVEL_ORE.get());
+                        pOutput.accept(REOBlocks.SILVER_GRAVEL_ORE.get());
+                        pOutput.accept(REOBlocks.TIN_GRAVEL_ORE.get());
+                        pOutput.accept(REOBlocks.URANIUM_GRAVEL_ORE.get());
+                        pOutput.accept(REOBlocks.ZINC_GRAVEL_ORE.get());
 
                         // Deepslate Ore
-                        pOutput.accept(REOBlocks.DEEPSLATE_ALUMINIUM.get());
-                        pOutput.accept(REOBlocks.DEEPSLATE_LEAD.get());
-                        pOutput.accept(REOBlocks.DEEPSLATE_NICKEL.get());
-                        pOutput.accept(REOBlocks.DEEPSLATE_PLATINUM.get());
-                        pOutput.accept(REOBlocks.DEEPSLATE_SILVER.get());
-                        pOutput.accept(REOBlocks.DEEPSLATE_URANIUM.get());
-                        pOutput.accept(REOBlocks.DEEPSLATE_ZINC.get());
+                        pOutput.accept(REOBlocks.DEEPSLATE_ALUMINIUM_ORE.get());
+                        pOutput.accept(REOBlocks.DEEPSLATE_LEAD_ORE.get());
+                        pOutput.accept(REOBlocks.DEEPSLATE_NICKEL_ORE.get());
+                        pOutput.accept(REOBlocks.DEEPSLATE_PLATINUM_ORE.get());
+                        pOutput.accept(REOBlocks.DEEPSLATE_SILVER_ORE.get());
+                        pOutput.accept(REOBlocks.DEEPSLATE_URANIUM_ORE.get());
+                        pOutput.accept(REOBlocks.DEEPSLATE_ZINC_ORE.get());
 
                         // Nether Ore
-                        pOutput.accept(REOBlocks.NETHER_ALUMINIUM.get());
-                        pOutput.accept(REOBlocks.NETHER_COAL.get());
-                        pOutput.accept(REOBlocks.NETHER_COPPER.get());
-                        pOutput.accept(REOBlocks.NETHER_DIAMOND.get());
-                        pOutput.accept(REOBlocks.NETHER_EMERALD.get());
-                        pOutput.accept(REOBlocks.NETHER_IRON.get());
-                        pOutput.accept(REOBlocks.NETHER_LAPIS.get());
-                        pOutput.accept(REOBlocks.NETHER_LEAD.get());
-                        pOutput.accept(REOBlocks.NETHER_NICKEL.get());
-                        pOutput.accept(REOBlocks.NETHER_PLATINUM.get());
-                        pOutput.accept(REOBlocks.NETHER_REDSTONE.get());
-                        pOutput.accept(REOBlocks.NETHER_SILVER.get());
-                        pOutput.accept(REOBlocks.NETHER_TIN.get());
-                        pOutput.accept(REOBlocks.NETHER_URANIUM.get());
-                        pOutput.accept(REOBlocks.NETHER_ZINC.get());
+                        pOutput.accept(REOBlocks.NETHER_ALUMINIUM_ORE.get());
+                        pOutput.accept(REOBlocks.NETHER_COAL_ORE.get());
+                        pOutput.accept(REOBlocks.NETHER_COPPER_ORE.get());
+                        pOutput.accept(REOBlocks.NETHER_DIAMOND_ORE.get());
+                        pOutput.accept(REOBlocks.NETHER_EMERALD_ORE.get());
+                        pOutput.accept(REOBlocks.NETHER_IRON_ORE.get());
+                        pOutput.accept(REOBlocks.NETHER_LAPIS_ORE.get());
+                        pOutput.accept(REOBlocks.NETHER_LEAD_ORE.get());
+                        pOutput.accept(REOBlocks.NETHER_NICKEL_ORE.get());
+                        pOutput.accept(REOBlocks.NETHER_PLATINUM_ORE.get());
+                        pOutput.accept(REOBlocks.NETHER_REDSTONE_ORE.get());
+                        pOutput.accept(REOBlocks.NETHER_SILVER_ORE.get());
+                        pOutput.accept(REOBlocks.NETHER_TIN_ORE.get());
+                        pOutput.accept(REOBlocks.NETHER_URANIUM_ORE.get());
+                        pOutput.accept(REOBlocks.NETHER_ZINC_ORE.get());
 
                         // Nether Ore
-                        pOutput.accept(REOBlocks.ORE_ENDERITE.get());
+                        pOutput.accept(REOBlocks.ENDERITE_ORE.get());
 
                         // Storage //
                         // Ingot Storage
-                        pOutput.accept(REOBlocks.BLOCK_ALUMINIUM.get());
-                        pOutput.accept(REOBlocks.BLOCK_BRASS.get());
-                        pOutput.accept(REOBlocks.BLOCK_BRONZE.get());
-                        pOutput.accept(REOBlocks.BLOCK_ELECTRUM.get());
-                        pOutput.accept(REOBlocks.BLOCK_ENDERITE.get());
-                        pOutput.accept(REOBlocks.BLOCK_LEAD.get());
-                        pOutput.accept(REOBlocks.BLOCK_NICKEL.get());
-                        pOutput.accept(REOBlocks.BLOCK_PERIDOT.get());
-                        pOutput.accept(REOBlocks.BLOCK_PLATINUM.get());
-                        pOutput.accept(REOBlocks.BLOCK_RUBY.get());
-                        pOutput.accept(REOBlocks.BLOCK_SAPPHIRE.get());
-                        pOutput.accept(REOBlocks.BLOCK_SILVER.get());
-                        pOutput.accept(REOBlocks.BLOCK_STEEL.get());
-                        pOutput.accept(REOBlocks.BLOCK_TIN.get());
-                        pOutput.accept(REOBlocks.BLOCK_URANIUM.get());
-                        pOutput.accept(REOBlocks.BLOCK_ZINC.get());
+                        pOutput.accept(REOBlocks.ALUMINUM_BLOCK.get());
+                        pOutput.accept(REOBlocks.BRASS_BLOCK.get());
+                        pOutput.accept(REOBlocks.BRONZE_BLOCK.get());
+                        pOutput.accept(REOBlocks.ELECTRUM_BLOCK.get());
+                        pOutput.accept(REOBlocks.ENDERITE_BLOCK.get());
+                        pOutput.accept(REOBlocks.LEAD_BLOCK.get());
+                        pOutput.accept(REOBlocks.NICKEL_BLOCK.get());
+                        pOutput.accept(REOBlocks.PERIDOT_BLOCK.get());
+                        pOutput.accept(REOBlocks.PLATINUM_BLOCK.get());
+                        pOutput.accept(REOBlocks.RUBY_BLOCK.get());
+                        pOutput.accept(REOBlocks.SAPPHIRE_BLOCK.get());
+                        pOutput.accept(REOBlocks.SILVER_BLOCK.get());
+                        pOutput.accept(REOBlocks.STEEL_BLOCK.get());
+                        pOutput.accept(REOBlocks.TIN_BLOCK.get());
+                        pOutput.accept(REOBlocks.URANIUM_BLOCK.get());
+                        pOutput.accept(REOBlocks.ZINC_BLOCK.get());
 
                         // Raw Storage
-                        pOutput.accept(REOBlocks.BLOCK_RAW_ALUMINIUM.get());
-                        pOutput.accept(REOBlocks.BLOCK_RAW_ENDERITE.get());
-                        pOutput.accept(REOBlocks.BLOCK_RAW_LEAD.get());
-                        pOutput.accept(REOBlocks.BLOCK_RAW_NICKEL.get());
-                        pOutput.accept(REOBlocks.BLOCK_RAW_PLATINUM.get());
-                        pOutput.accept(REOBlocks.BLOCK_RAW_SILVER.get());
-                        pOutput.accept(REOBlocks.BLOCK_RAW_TIN.get());
-                        pOutput.accept(REOBlocks.BLOCK_RAW_URANIUM.get());
-                        pOutput.accept(REOBlocks.BLOCK_RAW_ZINC.get());
+                        pOutput.accept(REOBlocks.RAW_ALUMINIUM_BLOCK.get());
+                        pOutput.accept(REOBlocks.RAW_ENDERITE_BLOCK.get());
+                        pOutput.accept(REOBlocks.RAW_LEAD_BLOCK.get());
+                        pOutput.accept(REOBlocks.RAW_NICKEL_BLOCK.get());
+                        pOutput.accept(REOBlocks.RAW_PLATINUM_BLOCK.get());
+                        pOutput.accept(REOBlocks.RAW_SILVER_BLOCK.get());
+                        pOutput.accept(REOBlocks.RAW_TIN_BLOCK.get());
+                        pOutput.accept(REOBlocks.RAW_URANIUM_BLOCK.get());
+                        pOutput.accept(REOBlocks.RAW_ZINC_BLOCK.get());
 
                         // Budding
                         pOutput.accept(REOBlocks.BUDDING_PERIDOT.get());
@@ -1262,6 +1264,10 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.WILD_COTTON.get());
                         pOutput.accept(REOBlocks.WILD_RICE.get());
                         pOutput.accept(REOBlocks.WILD_TOMATO.get());
+
+                        // Misc //
+                        pOutput.accept(REOBlocks.WAX_BLOCK.get());
+
 
 
                     })

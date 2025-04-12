@@ -71,6 +71,6 @@ public class LimeBlock extends CropBlock {
         BlockPos pAbove = pos.above();
         BlockState pLeaves = level.getBlockState(pAbove);
 
-        return pLeaves.is(REOBlocks.LEAVES_LIME.get());
+        return pLeaves.is(REOBlocks.LIME_LEAVES.get());
     }
 }

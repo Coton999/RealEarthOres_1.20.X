@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "realearthores:block/tree/stripped/poplar_top",
-    "side": "realearthores:block/tree/stripped/poplar"
-  }
-}

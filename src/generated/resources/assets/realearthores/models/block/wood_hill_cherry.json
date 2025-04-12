@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "realearthores:block/tree/log/cherry",
-    "end": "realearthores:block/tree/log/cherry",
-    "side": "realearthores:block/tree/log/cherry"
-  }
-}

@@ -71,6 +71,6 @@ public class CitrusBlock extends CropBlock {
         BlockPos pAbove = pos.above();
         BlockState pLeaves = level.getBlockState(pAbove);
 
-        return pLeaves.is(REOBlocks.LEAVES_CITRUS.get());
+        return pLeaves.is(REOBlocks.CITRUS_LEAVES.get());
     }
 }

@@ -71,6 +71,6 @@ public class PapayaBlock extends CropBlock {
         BlockPos pAbove = pos.above();
         BlockState pLeaves = level.getBlockState(pAbove);
 
-        return pLeaves.is(REOBlocks.LEAVES_PAPAYA.get());
+        return pLeaves.is(REOBlocks.PAPAYA_LEAVES.get());
     }
 }

@@ -33,6 +33,10 @@ public class REOBlockStateProvider extends BlockStateProvider {
 
         // Building Blocks
         // Marble
+        simpleBlockWithItem(REOBlocks.WAX_BLOCK.get(),
+                models().cubeAll("wax_block", new ResourceLocation(RealEarthOres.MOD_ID, "block/misc/wax")));
+
+        // Marble
         simpleBlockWithItem(REOBlocks.MARBLE.get(),
                 models().cubeAll("marble", new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/marble/marble")));
         simpleBlockWithItem(REOBlocks.MARBLE_COBBLE.get(),
@@ -113,12 +117,12 @@ public class REOBlockStateProvider extends BlockStateProvider {
         wallBlock(((WallBlock) REOBlocks.NETHERRACK_WALL.get()), blockTexture(Blocks.NETHERRACK));
 
         // Crops //
-        makeBarleyCrop((CropBlock) REOBlocks.CROP_BARLEY.get(), "barley_stage_", "barley_stage_");
-        makeCauliflowerCrop((CropBlock) REOBlocks.CROP_CAULIFLOWER.get(), "cauliflower_stage_", "cauliflower_stage_");
-        makeCottonCrop((CropBlock) REOBlocks.CROP_COTTON.get(), "cotton_stage_", "cotton_stage_");
-        makeOnionsCrop((CropBlock) REOBlocks.CROP_ONIONS.get(), "onions_stage_", "onions_stage_");
-        makeRiceCrop((CropBlock) REOBlocks.CROP_RICE.get(), "rice_stage_", "rice_stage_");
-        makeTomatoCrop((CropBlock) REOBlocks.CROP_TOMATO.get(), "tomato_stage_", "tomato_stage_");
+        makeBarleyCrop((CropBlock) REOBlocks.BARLEY_CROP.get(), "barley_stage_", "barley_stage_");
+        makeCauliflowerCrop((CropBlock) REOBlocks.CAULIFLOWER_CROP.get(), "cauliflower_stage_", "cauliflower_stage_");
+        makeCottonCrop((CropBlock) REOBlocks.COTTON_CROP.get(), "cotton_stage_", "cotton_stage_");
+        makeOnionsCrop((CropBlock) REOBlocks.ONIONS_CROP.get(), "onions_stage_", "onions_stage_");
+        makeRiceCrop((CropBlock) REOBlocks.RICE_CROP.get(), "rice_stage_", "rice_stage_");
+        makeTomatoCrop((CropBlock) REOBlocks.TOMATO_CROP.get(), "tomato_stage_", "tomato_stage_");
 
         wildBlock(REOBlocks.WILD_BARLEY, "wild_barley");
         wildBlock(REOBlocks.WILD_COTTON, "wild_cotton");
@@ -126,1824 +130,2344 @@ public class REOBlockStateProvider extends BlockStateProvider {
         wildBlock(REOBlocks.WILD_TOMATO, "wild_tomato");
 
         // Fruits //
-        makeCitusFruit(REOBlocks.FRUIT_CITRUS_BLOCK.get(), "citrus_stage_", "citrus_stage_");
-        makeLimeFruit(REOBlocks.FRUIT_LIME_BLOCK.get(), "lime_stage_", "lime_stage_");
-        makePapayaFruit(REOBlocks.FRUIT_PAPAYA_BLOCK.get(), "papaya_stage_", "papaya_stage_");
-        makePearFruit(REOBlocks.FRUIT_PEAR_BLOCK.get(), "pear_stage_", "pear_stage_");
-        makePlumFruit(REOBlocks.FRUIT_PLUM_BLOCK.get(), "plum_stage_", "plum_stage_");
-        makeWalnutFruit(REOBlocks.FRUIT_WALNUT_BLOCK.get(), "walnut_stage_", "walnut_stage_");
+        makeCitusFruit(REOBlocks.CITRUS_FRUIT.get(), "citrus_stage_", "citrus_stage_");
+        makeLimeFruit(REOBlocks.LIME_FRUIT.get(), "lime_stage_", "lime_stage_");
+        makePapayaFruit(REOBlocks.PAPAYA_FRUIT.get(), "papaya_stage_", "papaya_stage_");
+        makePearFruit(REOBlocks.PEAR_FRUIT.get(), "pear_stage_", "pear_stage_");
+        makePlumFruit(REOBlocks.PLUM_FRUIT.get(), "plum_stage_", "plum_stage_");
+        makeWalnutFruit(REOBlocks.WALNUT_FRUIT.get(), "walnut_stage_", "walnut_stage_");
 
         // Berry //
-        makeBlackberryBush((SweetBerryBushBlock) REOBlocks.BERRY_BLACKBERRY_BLOCK.get(), "blackberry_bush_stage_", "blackberry_bush_stage_");
-        makeBlueberryBush((SweetBerryBushBlock) REOBlocks.BERRY_BLUEBERRY_BLOCK.get(), "blueberry_bush_stage_", "blueberry_bush_stage_");
-        makeRaspberryBush((SweetBerryBushBlock) REOBlocks.BERRY_RASPBERRY_BLOCK.get(), "raspberry_bush_stage_", "raspberry_bush_stage_");
+        makeBlackberryBush((SweetBerryBushBlock) REOBlocks.BLACKBERRY_FRUIT.get(), "blackberry_bush_stage_", "blackberry_bush_stage_");
+        makeBlueberryBush((SweetBerryBushBlock) REOBlocks.BLUEBERRY_FRUIT.get(), "blueberry_bush_stage_", "blueberry_bush_stage_");
+        makeRaspberryBush((SweetBerryBushBlock) REOBlocks.RASPBERRY_FRUIT.get(), "raspberry_bush_stage_", "raspberry_bush_stage_");
 
 
         // Wood
         // Vanilla
         // Oak
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_OAK_RESISTANT.get()), blockTexture(Blocks.OAK_LOG),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_OAK_LOG.get()), blockTexture(Blocks.OAK_LOG),
                 new ResourceLocation("block/oak_log_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_OAK_RESISTANT.get()), blockTexture(Blocks.OAK_LOG), blockTexture(Blocks.OAK_LOG));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_OAK_STRIPPED_RESISTANT.get()), blockTexture(Blocks.STRIPPED_OAK_LOG),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_OAK_WOOD.get()), blockTexture(Blocks.OAK_LOG), blockTexture(Blocks.OAK_LOG));
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_OAK_LOG.get()), blockTexture(Blocks.STRIPPED_OAK_LOG),
                 new ResourceLocation("block/stripped_oak_log_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_OAK_STRIPPED_RESISTANT.get()), blockTexture(Blocks.STRIPPED_OAK_LOG), blockTexture(Blocks.STRIPPED_OAK_LOG));
-        simpleBlockItem(REOBlocks.LOG_OAK_RESISTANT.get(),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_OAK_WOOD.get()), blockTexture(Blocks.STRIPPED_OAK_LOG), blockTexture(Blocks.STRIPPED_OAK_LOG));
+        simpleBlockItem(REOBlocks.RESISTANT_OAK_LOG.get(),
                 models().orientable("log_oak_resistant", blockTexture(Blocks.OAK_LOG), blockTexture(Blocks.OAK_LOG),
                         new ResourceLocation("block/oak_log_top")));
-        simpleBlockItem(REOBlocks.WOOD_OAK_RESISTANT.get(),
+        simpleBlockItem(REOBlocks.RESISTANT_OAK_WOOD.get(),
                 models().cubeAll("wood_oak_resistant", blockTexture(Blocks.OAK_LOG)));
-        simpleBlockItem(REOBlocks.LOG_OAK_STRIPPED_RESISTANT.get(),
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_OAK_LOG.get(),
                 models().orientable("log_oak_stripped_resistant", blockTexture(Blocks.OAK_LOG), blockTexture(Blocks.OAK_LOG),
                         new ResourceLocation("block/stripped_oak_log_top")));
-        simpleBlockItem(REOBlocks.WOOD_OAK_STRIPPED_RESISTANT.get(),
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_OAK_WOOD.get(),
                 models().cubeAll("wood_oak_stripped_resistant", blockTexture(Blocks.STRIPPED_OAK_LOG)));
-        simpleBlockWithItem(REOBlocks.PLANKS_OAK_RESISTANT.get(),
+        simpleBlockWithItem(REOBlocks.RESISTANT_OAK_PLANKS.get(),
                 models().cubeAll("planks_oak_resistant", blockTexture(Blocks.OAK_PLANKS)));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_OAK_RESISTANT.get()), blockTexture(Blocks.OAK_PLANKS));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_OAK_RESISTANT.get()), blockTexture(Blocks.OAK_PLANKS), blockTexture(Blocks.OAK_PLANKS));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_OAK_RESISTANT.get()), blockTexture(Blocks.OAK_PLANKS));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_OAK_RESISTANT.get()), blockTexture(Blocks.OAK_PLANKS));
+        stairsBlock(((StairBlock) REOBlocks.RESISTANT_OAK_STAIRS.get()), blockTexture(Blocks.OAK_PLANKS));
+        slabBlock(((SlabBlock) REOBlocks.RESISTANT_OAK_SLAB.get()), blockTexture(Blocks.OAK_PLANKS), blockTexture(Blocks.OAK_PLANKS));
+        fenceBlock(((FenceBlock) REOBlocks.RESISTANT_OAK_FENCE.get()), blockTexture(Blocks.OAK_PLANKS));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RESISTANT_OAK_FENCE_GATE.get()), blockTexture(Blocks.OAK_PLANKS));
 
         // Spruce
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_SPRUCE_RESISTANT.get()), blockTexture(Blocks.SPRUCE_LOG),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_SPRUCE_LOG.get()), blockTexture(Blocks.SPRUCE_LOG),
                 new ResourceLocation("block/spruce_log_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_SPRUCE_RESISTANT.get()), blockTexture(Blocks.SPRUCE_LOG), blockTexture(Blocks.SPRUCE_LOG));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_SPRUCE_STRIPPED_RESISTANT.get()), blockTexture(Blocks.STRIPPED_SPRUCE_LOG),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_SPRUCE_WOOD.get()), blockTexture(Blocks.SPRUCE_LOG), blockTexture(Blocks.SPRUCE_LOG));
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_SPRUCE_LOG.get()), blockTexture(Blocks.STRIPPED_SPRUCE_LOG),
                 new ResourceLocation("block/stripped_spruce_log_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_SPRUCE_STRIPPED_RESISTANT.get()), blockTexture(Blocks.STRIPPED_SPRUCE_LOG), blockTexture(Blocks.STRIPPED_SPRUCE_LOG));
-        simpleBlockItem(REOBlocks.LOG_SPRUCE_RESISTANT.get(),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_SPRUCE_WOOD.get()), blockTexture(Blocks.STRIPPED_SPRUCE_LOG), blockTexture(Blocks.STRIPPED_SPRUCE_LOG));
+        simpleBlockItem(REOBlocks.RESISTANT_SPRUCE_LOG.get(),
                 models().orientable("log_spruce_resistant", blockTexture(Blocks.SPRUCE_LOG), blockTexture(Blocks.SPRUCE_LOG),
                         new ResourceLocation("block/spruce_log_top")));
-        simpleBlockItem(REOBlocks.WOOD_SPRUCE_RESISTANT.get(),
+        simpleBlockItem(REOBlocks.RESISTANT_SPRUCE_WOOD.get(),
                 models().cubeAll("wood_spruce_resistant", blockTexture(Blocks.SPRUCE_LOG)));
-        simpleBlockItem(REOBlocks.LOG_SPRUCE_STRIPPED_RESISTANT.get(),
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_SPRUCE_LOG.get(),
                 models().orientable("log_spruce_stripped_resistant", blockTexture(Blocks.SPRUCE_LOG), blockTexture(Blocks.SPRUCE_LOG),
                         new ResourceLocation("block/stripped_spruce_log_top")));
-        simpleBlockItem(REOBlocks.WOOD_SPRUCE_STRIPPED_RESISTANT.get(),
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_SPRUCE_WOOD.get(),
                 models().cubeAll("wood_spruce_stripped_resistant", blockTexture(Blocks.STRIPPED_SPRUCE_LOG)));
-        simpleBlockWithItem(REOBlocks.PLANKS_SPRUCE_RESISTANT.get(),
+        simpleBlockWithItem(REOBlocks.RESISTANT_SPRUCE_PLANKS.get(),
                 models().cubeAll("planks_spruce_resistant", blockTexture(Blocks.SPRUCE_PLANKS)));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_SPRUCE_RESISTANT.get()), blockTexture(Blocks.SPRUCE_PLANKS));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_SPRUCE_RESISTANT.get()), blockTexture(Blocks.SPRUCE_PLANKS), blockTexture(Blocks.SPRUCE_PLANKS));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_SPRUCE_RESISTANT.get()), blockTexture(Blocks.SPRUCE_PLANKS));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_SPRUCE_RESISTANT.get()), blockTexture(Blocks.SPRUCE_PLANKS));
+        stairsBlock(((StairBlock) REOBlocks.RESISTANT_SPRUCE_STAIRS.get()), blockTexture(Blocks.SPRUCE_PLANKS));
+        slabBlock(((SlabBlock) REOBlocks.RESISTANT_SPRUCE_SLAB.get()), blockTexture(Blocks.SPRUCE_PLANKS), blockTexture(Blocks.SPRUCE_PLANKS));
+        fenceBlock(((FenceBlock) REOBlocks.RESISTANT_SPRUCE_FENCE.get()), blockTexture(Blocks.SPRUCE_PLANKS));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RESISTANT_SPRUCE_FENCE_GATE.get()), blockTexture(Blocks.SPRUCE_PLANKS));
 
         // Birch
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_BIRCH_RESISTANT.get()), blockTexture(Blocks.BIRCH_LOG),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_BIRCH_LOG.get()), blockTexture(Blocks.BIRCH_LOG),
                 new ResourceLocation("block/birch_log_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_BIRCH_RESISTANT.get()), blockTexture(Blocks.BIRCH_LOG), blockTexture(Blocks.BIRCH_LOG));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_BIRCH_STRIPPED_RESISTANT.get()), blockTexture(Blocks.STRIPPED_BIRCH_LOG),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_BIRCH_WOOD.get()), blockTexture(Blocks.BIRCH_LOG), blockTexture(Blocks.BIRCH_LOG));
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_BIRCH_LOG.get()), blockTexture(Blocks.STRIPPED_BIRCH_LOG),
                 new ResourceLocation("block/stripped_birch_log_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_BIRCH_STRIPPED_RESISTANT.get()), blockTexture(Blocks.STRIPPED_BIRCH_LOG), blockTexture(Blocks.STRIPPED_BIRCH_LOG));
-        simpleBlockItem(REOBlocks.LOG_BIRCH_RESISTANT.get(),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_BIRCH_WOOD.get()), blockTexture(Blocks.STRIPPED_BIRCH_LOG), blockTexture(Blocks.STRIPPED_BIRCH_LOG));
+        simpleBlockItem(REOBlocks.RESISTANT_BIRCH_LOG.get(),
                 models().orientable("log_birch_resistant", blockTexture(Blocks.BIRCH_LOG), blockTexture(Blocks.BIRCH_LOG),
                         new ResourceLocation("block/birch_log_top")));
-        simpleBlockItem(REOBlocks.WOOD_BIRCH_RESISTANT.get(),
+        simpleBlockItem(REOBlocks.RESISTANT_BIRCH_WOOD.get(),
                 models().cubeAll("wood_birch_resistant", blockTexture(Blocks.BIRCH_LOG)));
-        simpleBlockItem(REOBlocks.LOG_BIRCH_STRIPPED_RESISTANT.get(),
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_BIRCH_LOG.get(),
                 models().orientable("log_birch_stripped_resistant", blockTexture(Blocks.BIRCH_LOG), blockTexture(Blocks.BIRCH_LOG),
                         new ResourceLocation("block/stripped_birch_log_top")));
-        simpleBlockItem(REOBlocks.WOOD_BIRCH_STRIPPED_RESISTANT.get(),
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_BIRCH_WOOD.get(),
                 models().cubeAll("wood_birch_stripped_resistant", blockTexture(Blocks.STRIPPED_BIRCH_LOG)));
-        simpleBlockWithItem(REOBlocks.PLANKS_BIRCH_RESISTANT.get(),
+        simpleBlockWithItem(REOBlocks.RESISTANT_BIRCH_PLANKS.get(),
                 models().cubeAll("planks_birch_resistant", blockTexture(Blocks.BIRCH_PLANKS)));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_BIRCH_RESISTANT.get()), blockTexture(Blocks.BIRCH_PLANKS));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_BIRCH_RESISTANT.get()), blockTexture(Blocks.BIRCH_PLANKS), blockTexture(Blocks.BIRCH_PLANKS));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_BIRCH_RESISTANT.get()), blockTexture(Blocks.BIRCH_PLANKS));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_BIRCH_RESISTANT.get()), blockTexture(Blocks.BIRCH_PLANKS));
+        stairsBlock(((StairBlock) REOBlocks.RESISTANT_BIRCH_STAIRS.get()), blockTexture(Blocks.BIRCH_PLANKS));
+        slabBlock(((SlabBlock) REOBlocks.RESISTANT_BIRCH_SLAB.get()), blockTexture(Blocks.BIRCH_PLANKS), blockTexture(Blocks.BIRCH_PLANKS));
+        fenceBlock(((FenceBlock) REOBlocks.RESISTANT_BIRCH_FENCE.get()), blockTexture(Blocks.BIRCH_PLANKS));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RESISTANT_BIRCH_FENCE_GATE.get()), blockTexture(Blocks.BIRCH_PLANKS));
 
         // Jungle
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_JUNGLE_RESISTANT.get()), blockTexture(Blocks.JUNGLE_LOG),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_JUNGLE_LOG.get()), blockTexture(Blocks.JUNGLE_LOG),
                 new ResourceLocation("block/jungle_log_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_JUNGLE_RESISTANT.get()), blockTexture(Blocks.JUNGLE_LOG), blockTexture(Blocks.JUNGLE_LOG));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_JUNGLE_STRIPPED_RESISTANT.get()), blockTexture(Blocks.STRIPPED_JUNGLE_LOG),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_JUNGLE_WOOD.get()), blockTexture(Blocks.JUNGLE_LOG), blockTexture(Blocks.JUNGLE_LOG));
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_JUNGLE_LOG.get()), blockTexture(Blocks.STRIPPED_JUNGLE_LOG),
                 new ResourceLocation("block/stripped_jungle_log_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_JUNGLE_STRIPPED_RESISTANT.get()), blockTexture(Blocks.STRIPPED_JUNGLE_LOG), blockTexture(Blocks.STRIPPED_JUNGLE_LOG));
-        simpleBlockItem(REOBlocks.LOG_JUNGLE_RESISTANT.get(),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_JUNGLE_WOOD.get()), blockTexture(Blocks.STRIPPED_JUNGLE_LOG), blockTexture(Blocks.STRIPPED_JUNGLE_LOG));
+        simpleBlockItem(REOBlocks.RESISTANT_JUNGLE_LOG.get(),
                 models().orientable("log_jungle_resistant", blockTexture(Blocks.JUNGLE_LOG), blockTexture(Blocks.JUNGLE_LOG),
                         new ResourceLocation("block/jungle_log_top")));
-        simpleBlockItem(REOBlocks.WOOD_JUNGLE_RESISTANT.get(),
+        simpleBlockItem(REOBlocks.RESISTANT_JUNGLE_WOOD.get(),
                 models().cubeAll("wood_jungle_resistant", blockTexture(Blocks.JUNGLE_LOG)));
-        simpleBlockItem(REOBlocks.LOG_JUNGLE_STRIPPED_RESISTANT.get(),
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_JUNGLE_LOG.get(),
                 models().orientable("log_jungle_stripped_resistant", blockTexture(Blocks.JUNGLE_LOG), blockTexture(Blocks.JUNGLE_LOG),
                         new ResourceLocation("block/stripped_jungle_log_top")));
-        simpleBlockItem(REOBlocks.WOOD_JUNGLE_STRIPPED_RESISTANT.get(),
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_JUNGLE_WOOD.get(),
                 models().cubeAll("wood_jungle_stripped_resistant", blockTexture(Blocks.STRIPPED_JUNGLE_LOG)));
-        simpleBlockWithItem(REOBlocks.PLANKS_JUNGLE_RESISTANT.get(),
+        simpleBlockWithItem(REOBlocks.RESISTANT_JUNGLE_PLANKS.get(),
                 models().cubeAll("planks_jungle_resistant", blockTexture(Blocks.JUNGLE_PLANKS)));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_JUNGLE_RESISTANT.get()), blockTexture(Blocks.JUNGLE_PLANKS));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_JUNGLE_RESISTANT.get()), blockTexture(Blocks.JUNGLE_PLANKS), blockTexture(Blocks.JUNGLE_PLANKS));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_JUNGLE_RESISTANT.get()), blockTexture(Blocks.JUNGLE_PLANKS));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_JUNGLE_RESISTANT.get()), blockTexture(Blocks.JUNGLE_PLANKS));
+        stairsBlock(((StairBlock) REOBlocks.RESISTANT_JUNGLE_STAIRS.get()), blockTexture(Blocks.JUNGLE_PLANKS));
+        slabBlock(((SlabBlock) REOBlocks.RESISTANT_JUNGLE_SLAB.get()), blockTexture(Blocks.JUNGLE_PLANKS), blockTexture(Blocks.JUNGLE_PLANKS));
+        fenceBlock(((FenceBlock) REOBlocks.RESISTANT_JUNGLE_FENCE.get()), blockTexture(Blocks.JUNGLE_PLANKS));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RESISTANT_JUNGLE_FENCE_GATE.get()), blockTexture(Blocks.JUNGLE_PLANKS));
 
         // Acacia
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_ACACIA_RESISTANT.get()), blockTexture(Blocks.ACACIA_LOG),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_ACACIA_LOG.get()), blockTexture(Blocks.ACACIA_LOG),
                 new ResourceLocation("block/acacia_log_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_ACACIA_RESISTANT.get()), blockTexture(Blocks.ACACIA_LOG), blockTexture(Blocks.ACACIA_LOG));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_ACACIA_STRIPPED_RESISTANT.get()), blockTexture(Blocks.STRIPPED_ACACIA_LOG),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_ACACIA_WOOD.get()), blockTexture(Blocks.ACACIA_LOG), blockTexture(Blocks.ACACIA_LOG));
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_ACACIA_LOG.get()), blockTexture(Blocks.STRIPPED_ACACIA_LOG),
                 new ResourceLocation("block/stripped_acacia_log_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_ACACIA_STRIPPED_RESISTANT.get()), blockTexture(Blocks.STRIPPED_ACACIA_LOG), blockTexture(Blocks.STRIPPED_ACACIA_LOG));
-        simpleBlockItem(REOBlocks.LOG_ACACIA_RESISTANT.get(),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_ACACIA_WOOD.get()), blockTexture(Blocks.STRIPPED_ACACIA_LOG), blockTexture(Blocks.STRIPPED_ACACIA_LOG));
+        simpleBlockItem(REOBlocks.RESISTANT_ACACIA_LOG.get(),
                 models().orientable("log_acacia_resistant", blockTexture(Blocks.ACACIA_LOG), blockTexture(Blocks.ACACIA_LOG),
                         new ResourceLocation("block/acacia_log_top")));
-        simpleBlockItem(REOBlocks.WOOD_ACACIA_RESISTANT.get(),
+        simpleBlockItem(REOBlocks.RESISTANT_ACACIA_WOOD.get(),
                 models().cubeAll("wood_acacia_resistant", blockTexture(Blocks.ACACIA_LOG)));
-        simpleBlockItem(REOBlocks.LOG_ACACIA_STRIPPED_RESISTANT.get(),
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_ACACIA_LOG.get(),
                 models().orientable("log_acacia_stripped_resistant", blockTexture(Blocks.ACACIA_LOG), blockTexture(Blocks.ACACIA_LOG),
                         new ResourceLocation("block/stripped_acacia_log_top")));
-        simpleBlockItem(REOBlocks.WOOD_ACACIA_STRIPPED_RESISTANT.get(),
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_ACACIA_WOOD.get(),
                 models().cubeAll("wood_acacia_stripped_resistant", blockTexture(Blocks.STRIPPED_ACACIA_LOG)));
-        simpleBlockWithItem(REOBlocks.PLANKS_ACACIA_RESISTANT.get(),
+        simpleBlockWithItem(REOBlocks.RESISTANT_ACACIA_PLANKS.get(),
                 models().cubeAll("planks_acacia_resistant", blockTexture(Blocks.ACACIA_PLANKS)));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_ACACIA_RESISTANT.get()), blockTexture(Blocks.ACACIA_PLANKS));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_ACACIA_RESISTANT.get()), blockTexture(Blocks.ACACIA_PLANKS), blockTexture(Blocks.ACACIA_PLANKS));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_ACACIA_RESISTANT.get()), blockTexture(Blocks.ACACIA_PLANKS));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_ACACIA_RESISTANT.get()), blockTexture(Blocks.ACACIA_PLANKS));
+        stairsBlock(((StairBlock) REOBlocks.RESISTANT_ACACIA_STAIRS.get()), blockTexture(Blocks.ACACIA_PLANKS));
+        slabBlock(((SlabBlock) REOBlocks.RESISTANT_ACACIA_SLAB.get()), blockTexture(Blocks.ACACIA_PLANKS), blockTexture(Blocks.ACACIA_PLANKS));
+        fenceBlock(((FenceBlock) REOBlocks.RESISTANT_ACACIA_FENCE.get()), blockTexture(Blocks.ACACIA_PLANKS));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RESISTANT_ACACIA_FENCE_GATE.get()), blockTexture(Blocks.ACACIA_PLANKS));
 
         // Dark Oak
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_DARK_OAK_RESISTANT.get()), blockTexture(Blocks.DARK_OAK_LOG),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_DARK_OAK_LOG.get()), blockTexture(Blocks.DARK_OAK_LOG),
                 new ResourceLocation("block/dark_oak_log_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_DARK_OAK_RESISTANT.get()), blockTexture(Blocks.DARK_OAK_LOG), blockTexture(Blocks.DARK_OAK_LOG));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_DARK_OAK_STRIPPED_RESISTANT.get()), blockTexture(Blocks.STRIPPED_DARK_OAK_LOG),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_DARK_OAK_WOOD.get()), blockTexture(Blocks.DARK_OAK_LOG), blockTexture(Blocks.DARK_OAK_LOG));
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_DARK_OAK_LOG.get()), blockTexture(Blocks.STRIPPED_DARK_OAK_LOG),
                 new ResourceLocation("block/stripped_dark_oak_log_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_DARK_OAK_STRIPPED_RESISTANT.get()), blockTexture(Blocks.STRIPPED_DARK_OAK_LOG), blockTexture(Blocks.STRIPPED_DARK_OAK_LOG));
-        simpleBlockItem(REOBlocks.LOG_DARK_OAK_RESISTANT.get(),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_DARK_OAK_WOOD.get()), blockTexture(Blocks.STRIPPED_DARK_OAK_LOG), blockTexture(Blocks.STRIPPED_DARK_OAK_LOG));
+        simpleBlockItem(REOBlocks.RESISTANT_DARK_OAK_LOG.get(),
                 models().orientable("log_dark_oak_resistant", blockTexture(Blocks.DARK_OAK_LOG), blockTexture(Blocks.DARK_OAK_LOG),
                         new ResourceLocation("block/dark_oak_log_top")));
-        simpleBlockItem(REOBlocks.WOOD_DARK_OAK_RESISTANT.get(),
+        simpleBlockItem(REOBlocks.RESISTANT_DARK_OAK_WOOD.get(),
                 models().cubeAll("wood_dark_oak_resistant", blockTexture(Blocks.DARK_OAK_LOG)));
-        simpleBlockItem(REOBlocks.LOG_DARK_OAK_STRIPPED_RESISTANT.get(),
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_DARK_OAK_LOG.get(),
                 models().orientable("log_dark_oak_stripped_resistant", blockTexture(Blocks.DARK_OAK_LOG), blockTexture(Blocks.DARK_OAK_LOG),
                         new ResourceLocation("block/stripped_dark_oak_log_top")));
-        simpleBlockItem(REOBlocks.WOOD_DARK_OAK_STRIPPED_RESISTANT.get(),
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_DARK_OAK_WOOD.get(),
                 models().cubeAll("wood_dark_oak_stripped_resistant", blockTexture(Blocks.STRIPPED_DARK_OAK_LOG)));
-        simpleBlockWithItem(REOBlocks.PLANKS_DARK_OAK_RESISTANT.get(),
+        simpleBlockWithItem(REOBlocks.RESISTANT_DARK_OAK_PLANKS.get(),
                 models().cubeAll("planks_dark_oak_resistant", blockTexture(Blocks.DARK_OAK_PLANKS)));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_DARK_OAK_RESISTANT.get()), blockTexture(Blocks.DARK_OAK_PLANKS));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_DARK_OAK_RESISTANT.get()), blockTexture(Blocks.DARK_OAK_PLANKS), blockTexture(Blocks.DARK_OAK_PLANKS));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_DARK_OAK_RESISTANT.get()), blockTexture(Blocks.DARK_OAK_PLANKS));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_DARK_OAK_RESISTANT.get()), blockTexture(Blocks.DARK_OAK_PLANKS));
+        stairsBlock(((StairBlock) REOBlocks.RESISTANT_DARK_OAK_STAIRS.get()), blockTexture(Blocks.DARK_OAK_PLANKS));
+        slabBlock(((SlabBlock) REOBlocks.RESISTANT_DARK_OAK_SLAB.get()), blockTexture(Blocks.DARK_OAK_PLANKS), blockTexture(Blocks.DARK_OAK_PLANKS));
+        fenceBlock(((FenceBlock) REOBlocks.RESISTANT_DARK_OAK_FENCE.get()), blockTexture(Blocks.DARK_OAK_PLANKS));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RESISTANT_DARK_OAK_FENCE_GATE.get()), blockTexture(Blocks.DARK_OAK_PLANKS));
 
         // Mangrove
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_MANGROVE_RESISTANT.get()), blockTexture(Blocks.MANGROVE_LOG),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_MANGROVE_LOG.get()), blockTexture(Blocks.MANGROVE_LOG),
                 new ResourceLocation("block/mangrove_log_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_MANGROVE_RESISTANT.get()), blockTexture(Blocks.MANGROVE_LOG), blockTexture(Blocks.MANGROVE_LOG));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_MANGROVE_STRIPPED_RESISTANT.get()), blockTexture(Blocks.STRIPPED_MANGROVE_LOG),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_MANGROVE_WOOD.get()), blockTexture(Blocks.MANGROVE_LOG), blockTexture(Blocks.MANGROVE_LOG));
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_MANGROVE_LOG.get()), blockTexture(Blocks.STRIPPED_MANGROVE_LOG),
                 new ResourceLocation("block/stripped_mangrove_log_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_MANGROVE_STRIPPED_RESISTANT.get()), blockTexture(Blocks.STRIPPED_MANGROVE_LOG), blockTexture(Blocks.STRIPPED_MANGROVE_LOG));
-        simpleBlockItem(REOBlocks.LOG_MANGROVE_RESISTANT.get(),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_MANGROVE_WOOD.get()), blockTexture(Blocks.STRIPPED_MANGROVE_LOG), blockTexture(Blocks.STRIPPED_MANGROVE_LOG));
+        simpleBlockItem(REOBlocks.RESISTANT_MANGROVE_LOG.get(),
                 models().orientable("log_mangrove_resistant", blockTexture(Blocks.MANGROVE_LOG), blockTexture(Blocks.MANGROVE_LOG),
                         new ResourceLocation("block/mangrove_log_top")));
-        simpleBlockItem(REOBlocks.WOOD_MANGROVE_RESISTANT.get(),
+        simpleBlockItem(REOBlocks.RESISTANT_MANGROVE_WOOD.get(),
                 models().cubeAll("wood_mangrove_resistant", blockTexture(Blocks.MANGROVE_LOG)));
-        simpleBlockItem(REOBlocks.LOG_MANGROVE_STRIPPED_RESISTANT.get(),
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_MANGROVE_LOG.get(),
                 models().orientable("log_mangrove_stripped_resistant", blockTexture(Blocks.MANGROVE_LOG), blockTexture(Blocks.MANGROVE_LOG),
                         new ResourceLocation("block/stripped_mangrove_log_top")));
-        simpleBlockItem(REOBlocks.WOOD_MANGROVE_STRIPPED_RESISTANT.get(),
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_MANGROVE_WOOD.get(),
                 models().cubeAll("wood_mangrove_stripped_resistant", blockTexture(Blocks.STRIPPED_MANGROVE_LOG)));
-        simpleBlockWithItem(REOBlocks.PLANKS_MANGROVE_RESISTANT.get(),
+        simpleBlockWithItem(REOBlocks.RESISTANT_MANGROVE_PLANKS.get(),
                 models().cubeAll("planks_mangrove_resistant", blockTexture(Blocks.MANGROVE_PLANKS)));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_MANGROVE_RESISTANT.get()), blockTexture(Blocks.MANGROVE_PLANKS));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_MANGROVE_RESISTANT.get()), blockTexture(Blocks.MANGROVE_PLANKS), blockTexture(Blocks.MANGROVE_PLANKS));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_MANGROVE_RESISTANT.get()), blockTexture(Blocks.MANGROVE_PLANKS));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_MANGROVE_RESISTANT.get()), blockTexture(Blocks.MANGROVE_PLANKS));
+        stairsBlock(((StairBlock) REOBlocks.RESISTANT_MANGROVE_STAIRS.get()), blockTexture(Blocks.MANGROVE_PLANKS));
+        slabBlock(((SlabBlock) REOBlocks.RESISTANT_MANGROVE_SLAB.get()), blockTexture(Blocks.MANGROVE_PLANKS), blockTexture(Blocks.MANGROVE_PLANKS));
+        fenceBlock(((FenceBlock) REOBlocks.RESISTANT_MANGROVE_FENCE.get()), blockTexture(Blocks.MANGROVE_PLANKS));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RESISTANT_MANGROVE_FENCE_GATE.get()), blockTexture(Blocks.MANGROVE_PLANKS));
 
         // Cherry
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_CHERRY_RESISTANT.get()), blockTexture(Blocks.CHERRY_LOG),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_CHERRY_LOG.get()), blockTexture(Blocks.CHERRY_LOG),
                 new ResourceLocation("block/cherry_log_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_CHERRY_RESISTANT.get()), blockTexture(Blocks.CHERRY_LOG), blockTexture(Blocks.CHERRY_LOG));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_CHERRY_STRIPPED_RESISTANT.get()), blockTexture(Blocks.STRIPPED_CHERRY_LOG),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_CHERRY_WOOD.get()), blockTexture(Blocks.CHERRY_LOG), blockTexture(Blocks.CHERRY_LOG));
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_CHERRY_LOG.get()), blockTexture(Blocks.STRIPPED_CHERRY_LOG),
                 new ResourceLocation("block/stripped_cherry_log_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_CHERRY_STRIPPED_RESISTANT.get()), blockTexture(Blocks.STRIPPED_CHERRY_LOG), blockTexture(Blocks.STRIPPED_CHERRY_LOG));
-        simpleBlockItem(REOBlocks.LOG_CHERRY_RESISTANT.get(),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_CHERRY_WOOD.get()), blockTexture(Blocks.STRIPPED_CHERRY_LOG), blockTexture(Blocks.STRIPPED_CHERRY_LOG));
+        simpleBlockItem(REOBlocks.RESISTANT_CHERRY_LOG.get(),
                 models().orientable("log_cherry_resistant", blockTexture(Blocks.CHERRY_LOG), blockTexture(Blocks.CHERRY_LOG),
                         new ResourceLocation("block/cherry_log_top")));
-        simpleBlockItem(REOBlocks.WOOD_CHERRY_RESISTANT.get(),
+        simpleBlockItem(REOBlocks.RESISTANT_CHERRY_WOOD.get(),
                 models().cubeAll("wood_cherry_resistant", blockTexture(Blocks.CHERRY_LOG)));
-        simpleBlockItem(REOBlocks.LOG_CHERRY_STRIPPED_RESISTANT.get(),
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_CHERRY_LOG.get(),
                 models().orientable("log_cherry_stripped_resistant", blockTexture(Blocks.CHERRY_LOG), blockTexture(Blocks.CHERRY_LOG),
                         new ResourceLocation("block/stripped_cherry_log_top")));
-        simpleBlockItem(REOBlocks.WOOD_CHERRY_STRIPPED_RESISTANT.get(),
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_CHERRY_WOOD.get(),
                 models().cubeAll("wood_cherry_stripped_resistant", blockTexture(Blocks.STRIPPED_CHERRY_LOG)));
-        simpleBlockWithItem(REOBlocks.PLANKS_CHERRY_RESISTANT.get(),
+        simpleBlockWithItem(REOBlocks.RESISTANT_CHERRY_PLANKS.get(),
                 models().cubeAll("planks_cherry_resistant", blockTexture(Blocks.CHERRY_PLANKS)));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_CHERRY_RESISTANT.get()), blockTexture(Blocks.CHERRY_PLANKS));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_CHERRY_RESISTANT.get()), blockTexture(Blocks.CHERRY_PLANKS), blockTexture(Blocks.CHERRY_PLANKS));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_CHERRY_RESISTANT.get()), blockTexture(Blocks.CHERRY_PLANKS));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_CHERRY_RESISTANT.get()), blockTexture(Blocks.CHERRY_PLANKS));
+        stairsBlock(((StairBlock) REOBlocks.RESISTANT_CHERRY_STAIRS.get()), blockTexture(Blocks.CHERRY_PLANKS));
+        slabBlock(((SlabBlock) REOBlocks.RESISTANT_CHERRY_SLAB.get()), blockTexture(Blocks.CHERRY_PLANKS), blockTexture(Blocks.CHERRY_PLANKS));
+        fenceBlock(((FenceBlock) REOBlocks.RESISTANT_CHERRY_FENCE.get()), blockTexture(Blocks.CHERRY_PLANKS));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RESISTANT_CHERRY_FENCE_GATE.get()), blockTexture(Blocks.CHERRY_PLANKS));
 
 
         // Modded
         // Balsa
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_BALSA.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/balsa"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.BALSA_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/balsa"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/balsa_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_BALSA.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/balsa"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.BALSA_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/balsa"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/balsa"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_BALSA_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/balsa"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_BALSA_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/balsa"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/balsa_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_BALSA_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/balsa"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_BALSA_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/balsa"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/balsa"));
-        simpleBlockItem(REOBlocks.LOG_BALSA.get(),
-                models().orientable("log_balsa", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/balsa"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/balsa"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/balsa_top")));
-        simpleBlockItem(REOBlocks.WOOD_BALSA.get(),
-                models().cubeAll("wood_balsa", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/balsa")));
-        simpleBlockItem(REOBlocks.LOG_BALSA_STRIPPED.get(),
-                models().orientable("log_balsa_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/balsa"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/balsa"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/balsa_top")));
-        simpleBlockItem(REOBlocks.WOOD_BALSA_STRIPPED.get(),
-                models().cubeAll("wood_balsa_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/balsa")));
-        simpleBlockWithItem(REOBlocks.PLANKS_BALSA.get(),
-                models().cubeAll("planks_balsa", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/balsa")));
+        simpleBlockItem(REOBlocks.BALSA_LOG.get(), models().orientable("balsa_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/balsa"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/balsa"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/balsa_top")));
+        simpleBlockItem(REOBlocks.BALSA_WOOD.get(), models().cubeAll("balsa_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/balsa")));
+        simpleBlockItem(REOBlocks.STRIPPED_BALSA_LOG.get(), models().orientable("stripped_balsa_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/balsa"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/balsa"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/balsa_top")));
+        simpleBlockItem(REOBlocks.STRIPPED_BALSA_WOOD.get(), models().cubeAll("stripped_balsa_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/balsa")));
+        simpleBlockWithItem(REOBlocks.BALSA_PLANKS.get(), models().cubeAll("balsa_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/balsa")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_BALSA.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/balsa"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_BALSA.get()), blockTexture(REOBlocks.PLANKS_BALSA.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/balsa"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_BALSA.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/balsa"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_BALSA.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/balsa"));
+        stairsBlock(((StairBlock) REOBlocks.BALSA_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/balsa"));
+        slabBlock(((SlabBlock) REOBlocks.BALSA_SLAB.get()), blockTexture(REOBlocks.BALSA_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/balsa"));
+        fenceBlock(((FenceBlock) REOBlocks.BALSA_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/balsa"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.BALSA_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/balsa"));
 
-        buttonBlock(((ButtonBlock) REOBlocks.BUTTON_BALSA.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/balsa"));
-        pressurePlateBlock(((PressurePlateBlock) REOBlocks.PRESSURE_PLATE_BALSA.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/balsa"));
+        buttonBlock(((ButtonBlock) REOBlocks.BALSA_BUTTON.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/balsa"));
+        pressurePlateBlock(((PressurePlateBlock) REOBlocks.BALSA_PRESSURE_PLATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/balsa"));
 
-        saplingBlock(REOBlocks.SAPLING_BALSA, "balsa");
-        simpleBlockWithItem(REOBlocks.POTTED_SAPLING_BALSA.get(), models().singleTexture("potted_sapling_balsa", new ResourceLocation("flower_pot_cross"), "plant",
+        saplingBlock(REOBlocks.BALSA_SAPLING, "balsa");
+        simpleBlockWithItem(REOBlocks.POTTED_BALSA_SAPLING.get(), models().singleTexture("potted_sapling_balsa",
+                new ResourceLocation("flower_pot_cross"), "plant",
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/balsa")).renderType("cutout"));
 
-        simpleBlockWithItem(REOBlocks.LEAVES_BALSA.get(),
-                models().cubeAll("leaves_balsa", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/balsa")));
+        simpleBlockWithItem(REOBlocks.BALSA_LEAVES.get(), models().cubeAll("balsa_leaves",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/balsa")));
 
-        signBlock(((StandingSignBlock) REOBlocks.SIGN_BALSA.get()), ((WallSignBlock) REOBlocks.SIGN_BALSA_WALL.get()),
+        signBlock(((StandingSignBlock) REOBlocks.BALSA_SIGN.get()), ((WallSignBlock) REOBlocks.BALSA_WALL_SIGN.get()),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/balsa"));
 
-        hangingSignBlock(REOBlocks.SIGN_HANGING_BALSA.get(), REOBlocks.SIGN_HANGING_BALSA_WALL.get(), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/balsa"));
+        hangingSignBlock(REOBlocks.BALSA_HANGING_SIGN.get(), REOBlocks.BALSA_WALL_HANGING_SIGN.get(),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/balsa"));
 
-        doorBlockWithRenderType(((DoorBlock) REOBlocks.DOOR_BALSA.get()), modLoc("block/door/balsa_lower"), modLoc("block/door/balsa_upper"), "cutout");
-        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.TRAPDOOR_BALSA.get()), modLoc("block/trapdoor/trapdoor_balsa"), true, "cutout");
+        doorBlockWithRenderType(((DoorBlock) REOBlocks.BALSA_DOOR.get()), modLoc("block/door/balsa_lower"),
+                modLoc("block/door/balsa_upper"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.BALSA_TRAPDOOR.get()),
+                modLoc("block/trapdoor/balsa"), true, "cutout");
 
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_BALSA_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/balsa"),
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/balsa_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_BALSA_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/balsa"),
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/balsa"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_BALSA_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/balsa"),
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/balsa_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_BALSA_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/balsa"),
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/balsa"));
-        simpleBlockItem(REOBlocks.LOG_BALSA_RESISTANT.get(),
-                models().orientable("log_balsa", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/balsa"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/balsa"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/balsa_top")));
-        simpleBlockItem(REOBlocks.WOOD_BALSA_RESISTANT.get(),
-                models().cubeAll("wood_balsa", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/balsa")));
-        simpleBlockItem(REOBlocks.LOG_BALSA_STRIPPED_RESISTANT.get(),
-                models().orientable("log_balsa_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/balsa"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/balsa"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/balsa_top")));
-        simpleBlockItem(REOBlocks.WOOD_BALSA_STRIPPED_RESISTANT.get(),
-                models().cubeAll("wood_balsa_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/balsa")));
-        simpleBlockWithItem(REOBlocks.PLANKS_BALSA_RESISTANT.get(),
-                models().cubeAll("planks_balsa", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/balsa")));
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_BALSA_LOG.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                        "block/tree/log/balsa"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/balsa_top"));
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_BALSA_WOOD.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                        "block/tree/log/balsa"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/balsa"));
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_BALSA_LOG.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                        "block/tree/stripped/balsa"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/balsa_top"));
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_BALSA_WOOD.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                        "block/tree/stripped/balsa"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/balsa"));
+        simpleBlockItem(REOBlocks.RESISTANT_BALSA_LOG.get(), models().orientable("resistant_balsa_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/balsa"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/balsa"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/balsa_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_BALSA_WOOD.get(), models().cubeAll("resistant_balsa_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/balsa")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_BALSA_LOG.get(), models().orientable("resistant_stripped_balsa_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/balsa"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/balsa"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/balsa_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_BALSA_WOOD.get(), models().cubeAll("resistant_stripped_balsa_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/balsa")));
+        simpleBlockWithItem(REOBlocks.RESISTANT_BALSA_PLANKS.get(), models().cubeAll("resistant_balsa_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/balsa")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_BALSA_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/balsa"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_BALSA_RESISTANT.get()), blockTexture(REOBlocks.PLANKS_BALSA.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/balsa"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_BALSA_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/balsa"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_BALSA_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/balsa"));
+        stairsBlock(((StairBlock) REOBlocks.RESISTANT_BALSA_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/balsa"));
+        slabBlock(((SlabBlock) REOBlocks.RESISTANT_BALSA_SLAB.get()), blockTexture(REOBlocks.BALSA_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/balsa"));
+        fenceBlock(((FenceBlock) REOBlocks.RESISTANT_BALSA_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/balsa"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RESISTANT_BALSA_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/balsa"));
 
-        //
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_BAOBAB.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/baobab"),
+        // Baobab
+        axisBlock(((RotatedPillarBlock) REOBlocks.BAOBAB_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/baobab"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/baobab_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_BAOBAB.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/baobab"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.BAOBAB_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/baobab"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/baobab"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_BAOBAB_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/baobab"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_BAOBAB_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/baobab"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/baobab_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_BAOBAB_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/baobab"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_BAOBAB_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/baobab"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/baobab"));
-        simpleBlockItem(REOBlocks.LOG_BAOBAB.get(),
-                models().orientable("log_baobab", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/baobab"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/baobab"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/baobab_top")));
-        simpleBlockItem(REOBlocks.WOOD_BAOBAB.get(),
-                models().cubeAll("wood_baobab", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/baobab")));
-        simpleBlockItem(REOBlocks.LOG_BAOBAB_STRIPPED.get(),
-                models().orientable("log_baobab_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/baobab"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/baobab"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/baobab_top")));
-        simpleBlockItem(REOBlocks.WOOD_BAOBAB_STRIPPED.get(),
-                models().cubeAll("wood_baobab_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/baobab")));
-        simpleBlockWithItem(REOBlocks.PLANKS_BAOBAB.get(),
-                models().cubeAll("planks_baobab", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/baobab")));
+        simpleBlockItem(REOBlocks.BAOBAB_LOG.get(), models().orientable("baobab_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/baobab"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/baobab"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/baobab_top")));
+        simpleBlockItem(REOBlocks.BAOBAB_WOOD.get(), models().cubeAll("baobab_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/baobab")));
+        simpleBlockItem(REOBlocks.STRIPPED_BAOBAB_LOG.get(), models().orientable("stripped_baobab_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/baobab"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/baobab"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/baobab_top")));
+        simpleBlockItem(REOBlocks.STRIPPED_BAOBAB_WOOD.get(), models().cubeAll("stripped_baobab_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/baobab")));
+        simpleBlockWithItem(REOBlocks.BAOBAB_PLANKS.get(), models().cubeAll("baobab_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/baobab")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_BAOBAB.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/baobab"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_BAOBAB.get()), blockTexture(REOBlocks.PLANKS_BAOBAB.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/baobab"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_BAOBAB.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/baobab"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_BAOBAB.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/baobab"));
+        stairsBlock(((StairBlock) REOBlocks.BAOBAB_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/baobab"));
+        slabBlock(((SlabBlock) REOBlocks.BAOBAB_SLAB.get()), blockTexture(REOBlocks.BAOBAB_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/baobab"));
+        fenceBlock(((FenceBlock) REOBlocks.BAOBAB_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/baobab"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.BAOBAB_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/baobab"));
 
-        buttonBlock(((ButtonBlock) REOBlocks.BUTTON_BAOBAB.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/baobab"));
-        pressurePlateBlock(((PressurePlateBlock) REOBlocks.PRESSURE_PLATE_BAOBAB.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/baobab"));
-
-
-        saplingBlock(REOBlocks.SAPLING_BAOBAB, "baobab");
-        simpleBlockWithItem(REOBlocks.POTTED_SAPLING_BAOBAB.get(), models().singleTexture("potted_sapling_baobab", new ResourceLocation("flower_pot_cross"), "plant",
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/baobab")).renderType("cutout"));
-
-        simpleBlockWithItem(REOBlocks.LEAVES_BAOBAB.get(),
-                models().cubeAll("leaves_baobab", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/baobab")));
-
-        signBlock(((StandingSignBlock) REOBlocks.SIGN_BAOBAB.get()), ((WallSignBlock) REOBlocks.SIGN_BAOBAB_WALL.get()),
+        buttonBlock(((ButtonBlock) REOBlocks.BAOBAB_BUTTON.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/baobab"));
+        pressurePlateBlock(((PressurePlateBlock) REOBlocks.BAOBAB_PRESSURE_PLATE.get()),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/baobab"));
 
-        hangingSignBlock(REOBlocks.SIGN_HANGING_BAOBAB.get(), REOBlocks.SIGN_HANGING_BAOBAB_WALL.get(), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/baobab"));
+        saplingBlock(REOBlocks.BAOBAB_SAPLING, "baobab");
+        simpleBlockWithItem(REOBlocks.POTTED_BAOBAB_SAPLING.get(), models().singleTexture("potted_sapling_baobab",
+                new ResourceLocation("flower_pot_cross"), "plant",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/baobab")).renderType("cutout"));
 
-        doorBlockWithRenderType(((DoorBlock) REOBlocks.DOOR_BAOBAB.get()), modLoc("block/door/baobab_lower"), modLoc("block/door/baobab_upper"), "cutout");
-        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.TRAPDOOR_BAOBAB.get()), modLoc("block/trapdoor/trapdoor_baobab"), true, "cutout");
+        simpleBlockWithItem(REOBlocks.BAOBAB_LEAVES.get(), models().cubeAll("baobab_leaves",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/baobab")));
 
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_BAOBAB_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/baobab"),
+        signBlock(((StandingSignBlock) REOBlocks.BAOBAB_SIGN.get()), ((WallSignBlock) REOBlocks.BAOBAB_WALL_SIGN.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/baobab"));
+
+        hangingSignBlock(REOBlocks.BAOBAB_HANGING_SIGN.get(), REOBlocks.BAOBAB_WALL_HANGING_SIGN.get(),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/baobab"));
+
+        doorBlockWithRenderType(((DoorBlock) REOBlocks.BAOBAB_DOOR.get()), modLoc("block/door/baobab_lower"),
+                modLoc("block/door/baobab_upper"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.BAOBAB_TRAPDOOR.get()),
+                modLoc("block/trapdoor/baobab"), true, "cutout");
+
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_BAOBAB_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/baobab"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/baobab_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_BAOBAB_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/baobab"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_BAOBAB_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/baobab"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/baobab"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_BAOBAB_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/baobab"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_BAOBAB_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/baobab"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/baobab_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_BAOBAB_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/baobab"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_BAOBAB_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/baobab"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/baobab"));
-        simpleBlockItem(REOBlocks.LOG_BAOBAB_RESISTANT.get(),
-                models().orientable("log_baobab", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/baobab"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/baobab"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/baobab_top")));
-        simpleBlockItem(REOBlocks.WOOD_BAOBAB_RESISTANT.get(),
-                models().cubeAll("wood_baobab", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/baobab")));
-        simpleBlockItem(REOBlocks.LOG_BAOBAB_STRIPPED_RESISTANT.get(),
-                models().orientable("log_baobab_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/baobab"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/baobab"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/baobab_top")));
-        simpleBlockItem(REOBlocks.WOOD_BAOBAB_STRIPPED_RESISTANT.get(),
-                models().cubeAll("wood_baobab_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/baobab")));
-        simpleBlockWithItem(REOBlocks.PLANKS_BAOBAB_RESISTANT.get(),
-                models().cubeAll("planks_baobab", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/baobab")));
+        simpleBlockItem(REOBlocks.RESISTANT_BAOBAB_LOG.get(), models().orientable("resistant_baobab_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/baobab"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/baobab"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/baobab_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_BAOBAB_WOOD.get(), models().cubeAll("resistant_baobab_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/baobab")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_BAOBAB_LOG.get(), models().orientable("resistant_stripped_baobab_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/baobab"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/baobab"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/baobab_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_BAOBAB_WOOD.get(), models().cubeAll("resistant_stripped_baobab_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/baobab")));
+        simpleBlockWithItem(REOBlocks.RESISTANT_BAOBAB_PLANKS.get(), models().cubeAll("resistant_baobab_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/baobab")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_BAOBAB_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/baobab"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_BAOBAB_RESISTANT.get()), blockTexture(REOBlocks.PLANKS_BAOBAB.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/baobab"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_BAOBAB_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/baobab"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_BAOBAB_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/baobab"));
+        stairsBlock(((StairBlock) REOBlocks.RESISTANT_BAOBAB_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/baobab"));
+        slabBlock(((SlabBlock) REOBlocks.RESISTANT_BAOBAB_SLAB.get()), blockTexture(REOBlocks.BAOBAB_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/baobab"));
+        fenceBlock(((FenceBlock) REOBlocks.RESISTANT_BAOBAB_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/baobab"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RESISTANT_BAOBAB_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/baobab"));
 
-        //
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_HILL_CHERRY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/cherry"),
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/cherry_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_HILL_CHERRY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/cherry"),
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/cherry"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_HILL_CHERRY_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/cherry"),
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/cherry_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_HILL_CHERRY_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/cherry"),
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/cherry"));
-        simpleBlockItem(REOBlocks.LOG_HILL_CHERRY.get(),
-                models().orientable("log_hill_cherry", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/cherry"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/cherry"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/cherry_top")));
-        simpleBlockItem(REOBlocks.WOOD_HILL_CHERRY.get(),
-                models().cubeAll("wood_hill_cherry", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/cherry")));
-        simpleBlockItem(REOBlocks.LOG_HILL_CHERRY_STRIPPED.get(),
-                models().orientable("log_hill_cherry_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/cherry"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/cherry"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/cherry_top")));
-        simpleBlockItem(REOBlocks.WOOD_HILL_CHERRY_STRIPPED.get(),
-                models().cubeAll("wood_hill_cherry_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/cherry")));
-        simpleBlockWithItem(REOBlocks.PLANKS_HILL_CHERRY.get(),
-                models().cubeAll("planks_hill_cherry", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/cherry")));
+        // Hill Cherry
+        axisBlock(((RotatedPillarBlock) REOBlocks.HILL_CHERRY_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/hill_cherry"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/hill_cherry_top"));
+        axisBlock(((RotatedPillarBlock) REOBlocks.HILL_CHERRY_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/hill_cherry"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/hill_cherry"));
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_HILL_CHERRY_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/hill_cherry"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/hill_cherry_top"));
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_HILL_CHERRY_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/hill_cherry"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/hill_cherry"));
+        simpleBlockItem(REOBlocks.HILL_CHERRY_LOG.get(), models().orientable("hill_cherry_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/hill_cherry"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/hill_cherry"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/hill_cherry_top")));
+        simpleBlockItem(REOBlocks.HILL_CHERRY_WOOD.get(), models().cubeAll("hill_cherry_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/hill_cherry")));
+        simpleBlockItem(REOBlocks.STRIPPED_HILL_CHERRY_LOG.get(), models().orientable("stripped_hill_cherry_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/hill_cherry"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/hill_cherry"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/hill_cherry_top")));
+        simpleBlockItem(REOBlocks.STRIPPED_HILL_CHERRY_WOOD.get(), models().cubeAll("stripped_hill_cherry_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/hill_cherry")));
+        simpleBlockWithItem(REOBlocks.HILL_CHERRY_PLANKS.get(), models().cubeAll("hill_cherry_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/hill_cherry")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_HILL_CHERRY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/cherry"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_HILL_CHERRY.get()), blockTexture(REOBlocks.PLANKS_HILL_CHERRY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/cherry"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_HILL_CHERRY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/cherry"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_HILL_CHERRY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/cherry"));
+        stairsBlock(((StairBlock) REOBlocks.HILL_CHERRY_STAIRS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/hill_cherry"));
+        slabBlock(((SlabBlock) REOBlocks.HILL_CHERRY_SLAB.get()), blockTexture(REOBlocks.HILL_CHERRY_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/hill_cherry"));
+        fenceBlock(((FenceBlock) REOBlocks.HILL_CHERRY_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/hill_cherry"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.HILL_CHERRY_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/hill_cherry"));
 
-        buttonBlock(((ButtonBlock) REOBlocks.BUTTON_HILL_CHERRY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/cherry"));
-        pressurePlateBlock(((PressurePlateBlock) REOBlocks.PRESSURE_PLATE_HILL_CHERRY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/cherry"));
+        buttonBlock(((ButtonBlock) REOBlocks.HILL_CHERRY_BUTTON.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/hill_cherry"));
+        pressurePlateBlock(((PressurePlateBlock) REOBlocks.HILL_CHERRY_PRESSURE_PLATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/hill_cherry"));
 
+        saplingBlock(REOBlocks.HILL_CHERRY_SAPLING, "hill_cherry");
+        simpleBlockWithItem(REOBlocks.POTTED_HILL_CHERRY_SAPLING.get(), models().singleTexture("potted_sapling_hill_cherry",
+                new ResourceLocation("flower_pot_cross"), "plant",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/hill_cherry")).renderType("cutout"));
 
-        saplingBlock(REOBlocks.SAPLING_HILL_CHERRY, "cherry");
-        simpleBlockWithItem(REOBlocks.POTTED_SAPLING_HILL_CHERRY.get(), models().singleTexture("potted_sapling_cherry", new ResourceLocation("flower_pot_cross"), "plant",
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/cherry")).renderType("cutout"));
+        simpleBlockWithItem(REOBlocks.HILL_CHERRY_LEAVES.get(), models().cubeAll("hill_cherry_leaves",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/hill_cherry")));
 
-        simpleBlockWithItem(REOBlocks.LEAVES_HILL_CHERRY.get(),
-                models().cubeAll("leaves_cherry", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/cherry")));
+        signBlock(((StandingSignBlock) REOBlocks.HILL_CHERRY_SIGN.get()), ((WallSignBlock) REOBlocks.HILL_CHERRY_WALL_SIGN.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/hill_cherry"));
 
-        signBlock(((StandingSignBlock) REOBlocks.SIGN_HILL_CHERRY.get()), ((WallSignBlock) REOBlocks.SIGN_HILL_CHERRY_WALL.get()),
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/cherry"));
+        hangingSignBlock(REOBlocks.HILL_CHERRY_HANGING_SIGN.get(), REOBlocks.HILL_CHERRY_WALL_HANGING_SIGN.get(),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/hill_cherry"));
 
-        hangingSignBlock(REOBlocks.SIGN_HANGING_HILL_CHERRY.get(), REOBlocks.SIGN_HANGING_HILL_CHERRY_WALL.get(), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/cherry"));
+        doorBlockWithRenderType(((DoorBlock) REOBlocks.HILL_CHERRY_DOOR.get()), modLoc("block/door/hill_cherry_lower"),
+                modLoc("block/door/hill_cherry_upper"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.HILL_CHERRY_TRAPDOOR.get()), modLoc("block/trapdoor/hill_cherry"),
+                true, "cutout");
 
-        doorBlockWithRenderType(((DoorBlock) REOBlocks.DOOR_HILL_CHERRY.get()), modLoc("block/door/cherry_lower"), modLoc("block/door/cherry_upper"), "cutout");
-        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.TRAPDOOR_HILL_CHERRY.get()), modLoc("block/trapdoor/trapdoor_cherry"), true, "cutout");
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_HILL_CHERRY_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/hill_cherry"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/hill_cherry_top"));
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_HILL_CHERRY_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/hill_cherry"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/hill_cherry"));
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_HILL_CHERRY_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/hill_cherry"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/hill_cherry_top"));
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_HILL_CHERRY_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/hill_cherry"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/hill_cherry"));
+        simpleBlockItem(REOBlocks.RESISTANT_HILL_CHERRY_LOG.get(), models().orientable("resistant_hill_cherry_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/hill_cherry"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/hill_cherry"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/hill_cherry_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_HILL_CHERRY_WOOD.get(), models().cubeAll("resistant_hill_cherry_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/hill_cherry")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_HILL_CHERRY_LOG.get(), models().orientable("resistant_stripped_hill_cherry_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/hill_cherry"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/hill_cherry"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/hill_cherry_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_HILL_CHERRY_WOOD.get(), models().cubeAll("resistant_stripped_hill_cherry_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/hill_cherry")));
+        simpleBlockWithItem(REOBlocks.RESISTANT_HILL_CHERRY_PLANKS.get(), models().cubeAll("resistant_hill_cherry_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/hill_cherry")));
 
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_HILL_CHERRY_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/cherry"),
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/cherry_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_HILL_CHERRY_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/cherry"),
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/cherry"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_HILL_CHERRY_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/cherry"),
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/cherry_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_HILL_CHERRY_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/cherry"),
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/cherry"));
-        simpleBlockItem(REOBlocks.LOG_HILL_CHERRY_RESISTANT.get(),
-                models().orientable("log_cherry", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/cherry"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/cherry"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/cherry_top")));
-        simpleBlockItem(REOBlocks.WOOD_HILL_CHERRY_RESISTANT.get(),
-                models().cubeAll("wood_cherry", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/cherry")));
-        simpleBlockItem(REOBlocks.LOG_HILL_CHERRY_STRIPPED_RESISTANT.get(),
-                models().orientable("log_cherry_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/cherry"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/cherry"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/cherry_top")));
-        simpleBlockItem(REOBlocks.WOOD_HILL_CHERRY_STRIPPED_RESISTANT.get(),
-                models().cubeAll("wood_cherry_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/cherry")));
-        simpleBlockWithItem(REOBlocks.PLANKS_HILL_CHERRY_RESISTANT.get(),
-                models().cubeAll("planks_cherry", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/cherry")));
+        stairsBlock(((StairBlock) REOBlocks.RESISTANT_HILL_CHERRY_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/hill_cherry"));
+        slabBlock(((SlabBlock) REOBlocks.RESISTANT_HILL_CHERRY_SLAB.get()), blockTexture(REOBlocks.HILL_CHERRY_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/hill_cherry"));
+        fenceBlock(((FenceBlock) REOBlocks.RESISTANT_HILL_CHERRY_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/hill_cherry"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RESISTANT_HILL_CHERRY_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/hill_cherry"));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_HILL_CHERRY_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/cherry"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_HILL_CHERRY_RESISTANT.get()), blockTexture(REOBlocks.PLANKS_HILL_CHERRY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/cherry"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_HILL_CHERRY_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/cherry"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_HILL_CHERRY_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/cherry"));
-
-        //
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_CHESTNUT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/chestnut"),
+        // Chestnut
+        axisBlock(((RotatedPillarBlock) REOBlocks.CHESTNUT_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/chestnut"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/chestnut_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_CHESTNUT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/chestnut"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.CHESTNUT_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/chestnut"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/chestnut"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_CHESTNUT_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/chestnut"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_CHESTNUT_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/chestnut"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/chestnut_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_CHESTNUT_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/chestnut"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_CHESTNUT_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/chestnut"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/chestnut"));
-        simpleBlockItem(REOBlocks.LOG_CHESTNUT.get(),
-                models().orientable("log_chestnut", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/chestnut"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/chestnut"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/chestnut_top")));
-        simpleBlockItem(REOBlocks.WOOD_CHESTNUT.get(),
-                models().cubeAll("wood_chestnut", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/chestnut")));
-        simpleBlockItem(REOBlocks.LOG_CHESTNUT_STRIPPED.get(),
-                models().orientable("log_chestnut_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/chestnut"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/chestnut"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/chestnut_top")));
-        simpleBlockItem(REOBlocks.WOOD_CHESTNUT_STRIPPED.get(),
-                models().cubeAll("wood_chestnut_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/chestnut")));
-        simpleBlockWithItem(REOBlocks.PLANKS_CHESTNUT.get(),
-                models().cubeAll("planks_chestnut", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/chestnut")));
+        simpleBlockItem(REOBlocks.CHESTNUT_LOG.get(), models().orientable("chestnut_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/chestnut"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/chestnut"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/chestnut_top")));
+        simpleBlockItem(REOBlocks.CHESTNUT_WOOD.get(), models().cubeAll("chestnut_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/chestnut")));
+        simpleBlockItem(REOBlocks.STRIPPED_CHESTNUT_LOG.get(), models().orientable("stripped_chestnut_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/chestnut"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/chestnut"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/chestnut_top")));
+        simpleBlockItem(REOBlocks.STRIPPED_CHESTNUT_WOOD.get(), models().cubeAll("stripped_chestnut_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/chestnut")));
+        simpleBlockWithItem(REOBlocks.CHESTNUT_PLANKS.get(), models().cubeAll("chestnut_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/chestnut")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_CHESTNUT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/chestnut"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_CHESTNUT.get()), blockTexture(REOBlocks.PLANKS_CHESTNUT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/chestnut"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_CHESTNUT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/chestnut"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_CHESTNUT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/chestnut"));
+        stairsBlock(((StairBlock) REOBlocks.CHESTNUT_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/chestnut"));
+        slabBlock(((SlabBlock) REOBlocks.CHESTNUT_SLAB.get()), blockTexture(REOBlocks.CHESTNUT_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/chestnut"));
+        fenceBlock(((FenceBlock) REOBlocks.CHESTNUT_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/chestnut"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.CHESTNUT_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/chestnut"));
 
-        buttonBlock(((ButtonBlock) REOBlocks.BUTTON_CHESTNUT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/chestnut"));
-        pressurePlateBlock(((PressurePlateBlock) REOBlocks.PRESSURE_PLATE_CHESTNUT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/chestnut"));
-
-
-        saplingBlock(REOBlocks.SAPLING_CHESTNUT, "chestnut");
-        simpleBlockWithItem(REOBlocks.POTTED_SAPLING_CHESTNUT.get(), models().singleTexture("potted_sapling_chestnut", new ResourceLocation("flower_pot_cross"), "plant",
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/chestnut")).renderType("cutout"));
-
-        colourLeavesBlock(REOBlocks.LEAVES_CHESTNUT, "chestnut");
-
-        signBlock(((StandingSignBlock) REOBlocks.SIGN_CHESTNUT.get()), ((WallSignBlock) REOBlocks.SIGN_CHESTNUT_WALL.get()),
+        buttonBlock(((ButtonBlock) REOBlocks.CHESTNUT_BUTTON.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/chestnut"));
+        pressurePlateBlock(((PressurePlateBlock) REOBlocks.CHESTNUT_PRESSURE_PLATE.get()),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/chestnut"));
 
-        hangingSignBlock(REOBlocks.SIGN_HANGING_CHESTNUT.get(), REOBlocks.SIGN_HANGING_CHESTNUT_WALL.get(), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/chestnut"));
+        saplingBlock(REOBlocks.CHESTNUT_SAPLING, "chestnut");
+        simpleBlockWithItem(REOBlocks.POTTED_CHESTNUT_SAPLING.get(), models().singleTexture("potted_sapling_chestnut",
+                new ResourceLocation("flower_pot_cross"), "plant",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/chestnut")).renderType("cutout"));
 
-        doorBlockWithRenderType(((DoorBlock) REOBlocks.DOOR_CHESTNUT.get()), modLoc("block/door/chestnut_lower"), modLoc("block/door/chestnut_upper"), "cutout");
-        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.TRAPDOOR_CHESTNUT.get()), modLoc("block/trapdoor/trapdoor_chestnut"), true, "cutout");
+        simpleBlockWithItem(REOBlocks.CHESTNUT_LEAVES.get(), models().cubeAll("chestnut_leaves",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/chestnut")));
 
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_CHESTNUT_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/chestnut"),
+        signBlock(((StandingSignBlock) REOBlocks.CHESTNUT_SIGN.get()), ((WallSignBlock) REOBlocks.CHESTNUT_WALL_SIGN.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/chestnut"));
+
+        hangingSignBlock(REOBlocks.CHESTNUT_HANGING_SIGN.get(), REOBlocks.CHESTNUT_WALL_HANGING_SIGN.get(),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/chestnut"));
+
+        doorBlockWithRenderType(((DoorBlock) REOBlocks.CHESTNUT_DOOR.get()), modLoc("block/door/chestnut_lower"),
+                modLoc("block/door/chestnut_upper"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.CHESTNUT_TRAPDOOR.get()), modLoc("block/trapdoor/chestnut"),
+                true, "cutout");
+
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_CHESTNUT_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/chestnut"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/chestnut_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_CHESTNUT_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/chestnut"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_CHESTNUT_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/chestnut"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/chestnut"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_CHESTNUT_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/chestnut"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_CHESTNUT_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/chestnut"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/chestnut_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_CHESTNUT_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/chestnut"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_CHESTNUT_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/chestnut"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/chestnut"));
-        simpleBlockItem(REOBlocks.LOG_CHESTNUT_RESISTANT.get(),
-                models().orientable("log_chestnut", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/chestnut"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/chestnut"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/chestnut_top")));
-        simpleBlockItem(REOBlocks.WOOD_CHESTNUT_RESISTANT.get(),
-                models().cubeAll("wood_chestnut", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/chestnut")));
-        simpleBlockItem(REOBlocks.LOG_CHESTNUT_STRIPPED_RESISTANT.get(),
-                models().orientable("log_chestnut_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/chestnut"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/chestnut"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/chestnut_top")));
-        simpleBlockItem(REOBlocks.WOOD_CHESTNUT_STRIPPED_RESISTANT.get(),
-                models().cubeAll("wood_chestnut_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/chestnut")));
-        simpleBlockWithItem(REOBlocks.PLANKS_CHESTNUT_RESISTANT.get(),
-                models().cubeAll("planks_chestnut", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/chestnut")));
+        simpleBlockItem(REOBlocks.RESISTANT_CHESTNUT_LOG.get(), models().orientable("resistant_chestnut_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/chestnut"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/chestnut"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/chestnut_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_CHESTNUT_WOOD.get(), models().cubeAll("resistant_chestnut_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/chestnut")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_CHESTNUT_LOG.get(), models().orientable("resistant_stripped_chestnut_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/chestnut"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/chestnut"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/chestnut_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_CHESTNUT_WOOD.get(), models().cubeAll("resistant_stripped_chestnut_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/chestnut")));
+        simpleBlockWithItem(REOBlocks.RESISTANT_CHESTNUT_PLANKS.get(), models().cubeAll("resistant_chestnut_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/chestnut")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_CHESTNUT_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/chestnut"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_CHESTNUT_RESISTANT.get()), blockTexture(REOBlocks.PLANKS_CHESTNUT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/chestnut"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_CHESTNUT_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/chestnut"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_CHESTNUT_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/chestnut"));
+        stairsBlock(((StairBlock) REOBlocks.RESISTANT_CHESTNUT_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/chestnut"));
+        slabBlock(((SlabBlock) REOBlocks.RESISTANT_CHESTNUT_SLAB.get()), blockTexture(REOBlocks.CHESTNUT_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/chestnut"));
+        fenceBlock(((FenceBlock) REOBlocks.RESISTANT_CHESTNUT_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/chestnut"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RESISTANT_CHESTNUT_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/chestnut"));
 
-        //
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_CITRUS.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/citrus"),
+        // Citrus
+        axisBlock(((RotatedPillarBlock) REOBlocks.CITRUS_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/citrus"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/citrus_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_CITRUS.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/citrus"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.CITRUS_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/citrus"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/citrus"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_CITRUS_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/citrus"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_CITRUS_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/citrus"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/citrus_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_CITRUS_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/citrus"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_CITRUS_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/citrus"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/citrus"));
-        simpleBlockItem(REOBlocks.LOG_CITRUS.get(),
-                models().orientable("log_citrus", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/citrus"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/citrus"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/citrus_top")));
-        simpleBlockItem(REOBlocks.WOOD_CITRUS.get(),
-                models().cubeAll("wood_citrus", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/citrus")));
-        simpleBlockItem(REOBlocks.LOG_CITRUS_STRIPPED.get(),
-                models().orientable("log_citrus_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/citrus"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/citrus"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/citrus_top")));
-        simpleBlockItem(REOBlocks.WOOD_CITRUS_STRIPPED.get(),
-                models().cubeAll("wood_citrus_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/citrus")));
-        simpleBlockWithItem(REOBlocks.PLANKS_CITRUS.get(),
-                models().cubeAll("planks_citrus", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/citrus")));
+        simpleBlockItem(REOBlocks.CITRUS_LOG.get(), models().orientable("citrus_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/citrus"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/citrus"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/citrus_top")));
+        simpleBlockItem(REOBlocks.CITRUS_WOOD.get(), models().cubeAll("citrus_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/citrus")));
+        simpleBlockItem(REOBlocks.STRIPPED_CITRUS_LOG.get(), models().orientable("stripped_citrus_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/citrus"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/citrus"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/citrus_top")));
+        simpleBlockItem(REOBlocks.STRIPPED_CITRUS_WOOD.get(), models().cubeAll("stripped_citrus_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/citrus")));
+        simpleBlockWithItem(REOBlocks.CITRUS_PLANKS.get(), models().cubeAll("citrus_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/citrus")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_CITRUS.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/citrus"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_CITRUS.get()), blockTexture(REOBlocks.PLANKS_CITRUS.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/citrus"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_CITRUS.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/citrus"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_CITRUS.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/citrus"));
+        stairsBlock(((StairBlock) REOBlocks.CITRUS_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/citrus"));
+        slabBlock(((SlabBlock) REOBlocks.CITRUS_SLAB.get()), blockTexture(REOBlocks.CITRUS_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/citrus"));
+        fenceBlock(((FenceBlock) REOBlocks.CITRUS_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/citrus"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.CITRUS_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/citrus"));
 
-        buttonBlock(((ButtonBlock) REOBlocks.BUTTON_CITRUS.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/citrus"));
-        pressurePlateBlock(((PressurePlateBlock) REOBlocks.PRESSURE_PLATE_CITRUS.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/citrus"));
+        buttonBlock(((ButtonBlock) REOBlocks.CITRUS_BUTTON.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/citrus"));
+        pressurePlateBlock(((PressurePlateBlock) REOBlocks.CITRUS_PRESSURE_PLATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/citrus"));
 
-
-        saplingBlock(REOBlocks.SAPLING_CITRUS, "citrus");
-        simpleBlockWithItem(REOBlocks.POTTED_SAPLING_CITRUS.get(), models().singleTexture("potted_sapling_citrus", new ResourceLocation("flower_pot_cross"), "plant",
+        saplingBlock(REOBlocks.CITRUS_SAPLING, "citrus");
+        simpleBlockWithItem(REOBlocks.POTTED_CITRUS_SAPLING.get(), models().singleTexture("potted_sapling_citrus",
+                new ResourceLocation("flower_pot_cross"), "plant",
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/citrus")).renderType("cutout"));
 
-        colourLeavesBlock(REOBlocks.LEAVES_CITRUS, "citrus");
+        simpleBlockWithItem(REOBlocks.CITRUS_LEAVES.get(), models().cubeAll("citrus_leaves",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/citrus")));
 
-        signBlock(((StandingSignBlock) REOBlocks.SIGN_CITRUS.get()), ((WallSignBlock) REOBlocks.SIGN_CITRUS_WALL.get()),
+        signBlock(((StandingSignBlock) REOBlocks.CITRUS_SIGN.get()), ((WallSignBlock) REOBlocks.CITRUS_WALL_SIGN.get()),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/citrus"));
 
-        hangingSignBlock(REOBlocks.SIGN_HANGING_CITRUS.get(), REOBlocks.SIGN_HANGING_CITRUS_WALL.get(), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/citrus"));
+        hangingSignBlock(REOBlocks.CITRUS_HANGING_SIGN.get(), REOBlocks.CITRUS_WALL_HANGING_SIGN.get(),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/citrus"));
 
-        doorBlockWithRenderType(((DoorBlock) REOBlocks.DOOR_CITRUS.get()), modLoc("block/door/citrus_lower"), modLoc("block/door/citrus_upper"), "cutout");
-        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.TRAPDOOR_CITRUS.get()), modLoc("block/trapdoor/trapdoor_citrus"), true, "cutout");
+        doorBlockWithRenderType(((DoorBlock) REOBlocks.CITRUS_DOOR.get()), modLoc("block/door/citrus_lower"),
+                modLoc("block/door/citrus_upper"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.CITRUS_TRAPDOOR.get()), modLoc("block/trapdoor/citrus"),
+                true, "cutout");
 
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_CITRUS_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/citrus"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_CITRUS_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/citrus"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/citrus_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_CITRUS_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/citrus"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_CITRUS_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/citrus"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/citrus"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_CITRUS_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/citrus"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_CITRUS_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/citrus"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/citrus_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_CITRUS_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/citrus"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_CITRUS_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/citrus"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/citrus"));
-        simpleBlockItem(REOBlocks.LOG_CITRUS_RESISTANT.get(),
-                models().orientable("log_citrus", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/citrus"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/citrus"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/citrus_top")));
-        simpleBlockItem(REOBlocks.WOOD_CITRUS_RESISTANT.get(),
-                models().cubeAll("wood_citrus", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/citrus")));
-        simpleBlockItem(REOBlocks.LOG_CITRUS_STRIPPED_RESISTANT.get(),
-                models().orientable("log_citrus_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/citrus"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/citrus"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/citrus_top")));
-        simpleBlockItem(REOBlocks.WOOD_CITRUS_STRIPPED_RESISTANT.get(),
-                models().cubeAll("wood_citrus_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/citrus")));
-        simpleBlockWithItem(REOBlocks.PLANKS_CITRUS_RESISTANT.get(),
-                models().cubeAll("planks_citrus", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/citrus")));
+        simpleBlockItem(REOBlocks.RESISTANT_CITRUS_LOG.get(), models().orientable("resistant_citrus_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/citrus"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/citrus"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/citrus_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_CITRUS_WOOD.get(), models().cubeAll("resistant_citrus_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/citrus")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_CITRUS_LOG.get(), models().orientable("resistant_stripped_citrus_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/citrus"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/citrus"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/citrus_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_CITRUS_WOOD.get(), models().cubeAll("resistant_stripped_citrus_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/citrus")));
+        simpleBlockWithItem(REOBlocks.RESISTANT_CITRUS_PLANKS.get(), models().cubeAll("resistant_citrus_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/citrus")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_CITRUS_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/citrus"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_CITRUS_RESISTANT.get()), blockTexture(REOBlocks.PLANKS_CITRUS.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/citrus"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_CITRUS_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/citrus"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_CITRUS_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/citrus"));
+        stairsBlock(((StairBlock) REOBlocks.RESISTANT_CITRUS_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/citrus"));
+        slabBlock(((SlabBlock) REOBlocks.RESISTANT_CITRUS_SLAB.get()), blockTexture(REOBlocks.CITRUS_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/citrus"));
+        fenceBlock(((FenceBlock) REOBlocks.RESISTANT_CITRUS_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/citrus"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RESISTANT_CITRUS_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/citrus"));
 
-        //
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_EBONY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/ebony"),
+        // Ebony
+        axisBlock(((RotatedPillarBlock) REOBlocks.EBONY_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/ebony"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/ebony_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_EBONY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/ebony"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.EBONY_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/ebony"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/ebony"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_EBONY_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/ebony"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_EBONY_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/ebony"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/ebony_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_EBONY_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/ebony"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_EBONY_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/ebony"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/ebony"));
-        simpleBlockItem(REOBlocks.LOG_EBONY.get(),
-                models().orientable("log_ebony", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/ebony"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/ebony"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/ebony_top")));
-        simpleBlockItem(REOBlocks.WOOD_EBONY.get(),
-                models().cubeAll("wood_ebony", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/ebony")));
-        simpleBlockItem(REOBlocks.LOG_EBONY_STRIPPED.get(),
-                models().orientable("log_ebony_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/ebony"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/ebony"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/ebony_top")));
-        simpleBlockItem(REOBlocks.WOOD_EBONY_STRIPPED.get(),
-                models().cubeAll("wood_ebony_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/ebony")));
-        simpleBlockWithItem(REOBlocks.PLANKS_EBONY.get(),
-                models().cubeAll("planks_ebony", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/ebony")));
+        simpleBlockItem(REOBlocks.EBONY_LOG.get(), models().orientable("ebony_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/ebony"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/ebony"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/ebony_top")));
+        simpleBlockItem(REOBlocks.EBONY_WOOD.get(), models().cubeAll("ebony_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/ebony")));
+        simpleBlockItem(REOBlocks.STRIPPED_EBONY_LOG.get(), models().orientable("stripped_ebony_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/ebony"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/ebony"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/ebony_top")));
+        simpleBlockItem(REOBlocks.STRIPPED_EBONY_WOOD.get(), models().cubeAll("stripped_ebony_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/ebony")));
+        simpleBlockWithItem(REOBlocks.EBONY_PLANKS.get(), models().cubeAll("ebony_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/ebony")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_EBONY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/ebony"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_EBONY.get()), blockTexture(REOBlocks.PLANKS_EBONY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/ebony"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_EBONY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/ebony"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_EBONY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/ebony"));
+        stairsBlock(((StairBlock) REOBlocks.EBONY_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/ebony"));
+        slabBlock(((SlabBlock) REOBlocks.EBONY_SLAB.get()), blockTexture(REOBlocks.EBONY_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/ebony"));
+        fenceBlock(((FenceBlock) REOBlocks.EBONY_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/ebony"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.EBONY_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/ebony"));
 
-        buttonBlock(((ButtonBlock) REOBlocks.BUTTON_EBONY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/ebony"));
-        pressurePlateBlock(((PressurePlateBlock) REOBlocks.PRESSURE_PLATE_EBONY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/ebony"));
-
-
-        saplingBlock(REOBlocks.SAPLING_EBONY, "ebony");
-        simpleBlockWithItem(REOBlocks.POTTED_SAPLING_EBONY.get(), models().singleTexture("potted_sapling_ebony", new ResourceLocation("flower_pot_cross"), "plant",
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/ebony")).renderType("cutout"));
-
-        simpleBlockWithItem(REOBlocks.LEAVES_EBONY.get(),
-                models().cubeAll("leaves_ebony", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/ebony")));
-
-        signBlock(((StandingSignBlock) REOBlocks.SIGN_EBONY.get()), ((WallSignBlock) REOBlocks.SIGN_EBONY_WALL.get()),
+        buttonBlock(((ButtonBlock) REOBlocks.EBONY_BUTTON.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/ebony"));
+        pressurePlateBlock(((PressurePlateBlock) REOBlocks.EBONY_PRESSURE_PLATE.get()),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/ebony"));
 
-        hangingSignBlock(REOBlocks.SIGN_HANGING_EBONY.get(), REOBlocks.SIGN_HANGING_EBONY_WALL.get(), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/ebony"));
+        saplingBlock(REOBlocks.EBONY_SAPLING, "ebony");
+        simpleBlockWithItem(REOBlocks.POTTED_EBONY_SAPLING.get(), models().singleTexture("potted_sapling_ebony",
+                new ResourceLocation("flower_pot_cross"), "plant",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/ebony")).renderType("cutout"));
 
-        doorBlockWithRenderType(((DoorBlock) REOBlocks.DOOR_EBONY.get()), modLoc("block/door/ebony_lower"), modLoc("block/door/ebony_upper"), "cutout");
-        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.TRAPDOOR_EBONY.get()), modLoc("block/trapdoor/trapdoor_ebony"), true, "cutout");
+        simpleBlockWithItem(REOBlocks.EBONY_LEAVES.get(),
+                models().cubeAll("ebony_leaves", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/ebony")));
 
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_EBONY_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/ebony"),
+        signBlock(((StandingSignBlock) REOBlocks.EBONY_SIGN.get()), ((WallSignBlock) REOBlocks.EBONY_WALL_SIGN.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/ebony"));
+
+        hangingSignBlock(REOBlocks.EBONY_HANGING_SIGN.get(), REOBlocks.EBONY_WALL_HANGING_SIGN.get(),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/ebony"));
+
+        doorBlockWithRenderType(((DoorBlock) REOBlocks.EBONY_DOOR.get()), modLoc("block/door/ebony_lower"),
+                modLoc("block/door/ebony_upper"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.EBONY_TRAPDOOR.get()), modLoc("block/trapdoor/ebony"),
+                true, "cutout");
+
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_EBONY_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/ebony"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/ebony_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_EBONY_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/ebony"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_EBONY_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/ebony"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/ebony"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_EBONY_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/ebony"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_EBONY_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/ebony"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/ebony_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_EBONY_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/ebony"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_EBONY_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/ebony"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/ebony"));
-        simpleBlockItem(REOBlocks.LOG_EBONY_RESISTANT.get(),
-                models().orientable("log_ebony", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/ebony"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/ebony"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/ebony_top")));
-        simpleBlockItem(REOBlocks.WOOD_EBONY_RESISTANT.get(),
-                models().cubeAll("wood_ebony", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/ebony")));
-        simpleBlockItem(REOBlocks.LOG_EBONY_STRIPPED_RESISTANT.get(),
-                models().orientable("log_ebony_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/ebony"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/ebony"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/ebony_top")));
-        simpleBlockItem(REOBlocks.WOOD_EBONY_STRIPPED_RESISTANT.get(),
-                models().cubeAll("wood_ebony_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/ebony")));
-        simpleBlockWithItem(REOBlocks.PLANKS_EBONY_RESISTANT.get(),
-                models().cubeAll("planks_ebony", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/ebony")));
+        simpleBlockItem(REOBlocks.RESISTANT_EBONY_LOG.get(), models().orientable("resistant_ebony_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/ebony"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/ebony"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/ebony_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_EBONY_WOOD.get(), models().cubeAll("resistant_ebony_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/ebony")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_EBONY_LOG.get(), models().orientable("resistant_stripped_ebony_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/ebony"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/ebony"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/ebony_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_EBONY_WOOD.get(), models().cubeAll("resistant_stripped_ebony_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/ebony")));
+        simpleBlockWithItem(REOBlocks.RESISTANT_EBONY_PLANKS.get(), models().cubeAll("resistant_ebony_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/ebony")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_EBONY_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/ebony"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_EBONY_RESISTANT.get()), blockTexture(REOBlocks.PLANKS_EBONY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/ebony"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_EBONY_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/ebony"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_EBONY_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/ebony"));
+        stairsBlock(((StairBlock) REOBlocks.RESISTANT_EBONY_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/ebony"));
+        slabBlock(((SlabBlock) REOBlocks.RESISTANT_EBONY_SLAB.get()), blockTexture(REOBlocks.EBONY_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/ebony"));
+        fenceBlock(((FenceBlock) REOBlocks.RESISTANT_EBONY_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/ebony"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RESISTANT_EBONY_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/ebony"));
 
-        //
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_LARCH.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/larch"),
+        // Larch
+        axisBlock(((RotatedPillarBlock) REOBlocks.LARCH_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/larch"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/larch_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_LARCH.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/larch"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.LARCH_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/larch"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/larch"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_LARCH_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/larch"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_LARCH_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/larch"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/larch_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_LARCH_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/larch"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_LARCH_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/larch"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/larch"));
-        simpleBlockItem(REOBlocks.LOG_LARCH.get(),
-                models().orientable("log_larch", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/larch"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/larch"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/larch_top")));
-        simpleBlockItem(REOBlocks.WOOD_LARCH.get(),
-                models().cubeAll("wood_larch", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/larch")));
-        simpleBlockItem(REOBlocks.LOG_LARCH_STRIPPED.get(),
-                models().orientable("log_larch_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/larch"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/larch"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/larch_top")));
-        simpleBlockItem(REOBlocks.WOOD_LARCH_STRIPPED.get(),
-                models().cubeAll("wood_larch_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/larch")));
-        simpleBlockWithItem(REOBlocks.PLANKS_LARCH.get(),
-                models().cubeAll("planks_larch", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/larch")));
+        simpleBlockItem(REOBlocks.LARCH_LOG.get(), models().orientable("larch_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/larch"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/larch"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/larch_top")));
+        simpleBlockItem(REOBlocks.LARCH_WOOD.get(), models().cubeAll("larch_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/larch")));
+        simpleBlockItem(REOBlocks.STRIPPED_LARCH_LOG.get(), models().orientable("stripped_larch_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/larch"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/larch"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/larch_top")));
+        simpleBlockItem(REOBlocks.STRIPPED_LARCH_WOOD.get(), models().cubeAll("stripped_larch_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/larch")));
+        simpleBlockWithItem(REOBlocks.LARCH_PLANKS.get(), models().cubeAll("larch_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/larch")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_LARCH.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/larch"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_LARCH.get()), blockTexture(REOBlocks.PLANKS_LARCH.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/larch"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_LARCH.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/larch"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_LARCH.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/larch"));
+        stairsBlock(((StairBlock) REOBlocks.LARCH_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/larch"));
+        slabBlock(((SlabBlock) REOBlocks.LARCH_SLAB.get()), blockTexture(REOBlocks.LARCH_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/larch"));
+        fenceBlock(((FenceBlock) REOBlocks.LARCH_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/larch"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.LARCH_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/larch"));
 
-        buttonBlock(((ButtonBlock) REOBlocks.BUTTON_LARCH.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/larch"));
-        pressurePlateBlock(((PressurePlateBlock) REOBlocks.PRESSURE_PLATE_LARCH.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/larch"));
+        buttonBlock(((ButtonBlock) REOBlocks.LARCH_BUTTON.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/larch"));
+        pressurePlateBlock(((PressurePlateBlock) REOBlocks.LARCH_PRESSURE_PLATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/larch"));
 
-
-        saplingBlock(REOBlocks.SAPLING_LARCH, "larch");
-        simpleBlockWithItem(REOBlocks.POTTED_SAPLING_LARCH.get(), models().singleTexture("potted_sapling_larch", new ResourceLocation("flower_pot_cross"), "plant",
+        saplingBlock(REOBlocks.LARCH_SAPLING, "larch");
+        simpleBlockWithItem(REOBlocks.POTTED_LARCH_SAPLING.get(), models().singleTexture("potted_sapling_larch",
+                new ResourceLocation("flower_pot_cross"), "plant",
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/larch")).renderType("cutout"));
 
-        simpleBlockWithItem(REOBlocks.LEAVES_LARCH.get(),
-                models().cubeAll("leaves_larch", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/larch")));
+        simpleBlockWithItem(REOBlocks.LARCH_LEAVES.get(),
+                models().cubeAll("larch_leaves", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/larch")));
 
-        signBlock(((StandingSignBlock) REOBlocks.SIGN_LARCH.get()), ((WallSignBlock) REOBlocks.SIGN_LARCH_WALL.get()),
+        signBlock(((StandingSignBlock) REOBlocks.LARCH_SIGN.get()), ((WallSignBlock) REOBlocks.LARCH_WALL_SIGN.get()),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/larch"));
 
-        hangingSignBlock(REOBlocks.SIGN_HANGING_LARCH.get(), REOBlocks.SIGN_HANGING_LARCH_WALL.get(), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/larch"));
+        hangingSignBlock(REOBlocks.LARCH_HANGING_SIGN.get(), REOBlocks.LARCH_WALL_HANGING_SIGN.get(),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/larch"));
 
-        doorBlockWithRenderType(((DoorBlock) REOBlocks.DOOR_LARCH.get()), modLoc("block/door/larch_lower"), modLoc("block/door/larch_upper"), "cutout");
-        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.TRAPDOOR_LARCH.get()), modLoc("block/trapdoor/trapdoor_larch"), true, "cutout");
+        doorBlockWithRenderType(((DoorBlock) REOBlocks.LARCH_DOOR.get()), modLoc("block/door/larch_lower"),
+                modLoc("block/door/larch_upper"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.LARCH_TRAPDOOR.get()), modLoc("block/trapdoor/larch"),
+                true, "cutout");
 
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_LARCH_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/larch"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_LARCH_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/larch"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/larch_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_LARCH_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/larch"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_LARCH_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/larch"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/larch"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_LARCH_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/larch"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_LARCH_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/larch"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/larch_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_LARCH_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/larch"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_LARCH_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/larch"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/larch"));
-        simpleBlockItem(REOBlocks.LOG_LARCH_RESISTANT.get(),
-                models().orientable("log_larch", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/larch"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/larch"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/larch_top")));
-        simpleBlockItem(REOBlocks.WOOD_LARCH_RESISTANT.get(),
-                models().cubeAll("wood_larch", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/larch")));
-        simpleBlockItem(REOBlocks.LOG_LARCH_STRIPPED_RESISTANT.get(),
-                models().orientable("log_larch_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/larch"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/larch"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/larch_top")));
-        simpleBlockItem(REOBlocks.WOOD_LARCH_STRIPPED_RESISTANT.get(),
-                models().cubeAll("wood_larch_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/larch")));
-        simpleBlockWithItem(REOBlocks.PLANKS_LARCH_RESISTANT.get(),
-                models().cubeAll("planks_larch", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/larch")));
+        simpleBlockItem(REOBlocks.RESISTANT_LARCH_LOG.get(), models().orientable("resistant_larch_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/larch"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/larch"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/larch_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_LARCH_WOOD.get(), models().cubeAll("resistant_larch_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/larch")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_LARCH_LOG.get(), models().orientable("resistant_stripped_larch_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/larch"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/larch"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/larch_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_LARCH_WOOD.get(), models().cubeAll("resistant_stripped_larch_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/larch")));
+        simpleBlockWithItem(REOBlocks.RESISTANT_LARCH_PLANKS.get(), models().cubeAll("resistant_larch_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/larch")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_LARCH_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/larch"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_LARCH_RESISTANT.get()), blockTexture(REOBlocks.PLANKS_LARCH.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/larch"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_LARCH_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/larch"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_LARCH_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/larch"));
+        stairsBlock(((StairBlock) REOBlocks.RESISTANT_LARCH_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/larch"));
+        slabBlock(((SlabBlock) REOBlocks.RESISTANT_LARCH_SLAB.get()), blockTexture(REOBlocks.LARCH_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/larch"));
+        fenceBlock(((FenceBlock) REOBlocks.RESISTANT_LARCH_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/larch"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RESISTANT_LARCH_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/larch"));
 
-        //
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_LIME.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/lime"),
+        // Lime
+        axisBlock(((RotatedPillarBlock) REOBlocks.LIME_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/lime"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/lime_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_LIME.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/lime"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.LIME_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/lime"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/lime"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_LIME_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/lime"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_LIME_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/lime"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/lime_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_LIME_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/lime"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_LIME_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/lime"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/lime"));
-        simpleBlockItem(REOBlocks.LOG_LIME.get(),
-                models().orientable("log_lime", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/lime"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/lime"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/lime_top")));
-        simpleBlockItem(REOBlocks.WOOD_LIME.get(),
-                models().cubeAll("wood_lime", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/lime")));
-        simpleBlockItem(REOBlocks.LOG_LIME_STRIPPED.get(),
-                models().orientable("log_lime_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/lime"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/lime"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/lime_top")));
-        simpleBlockItem(REOBlocks.WOOD_LIME_STRIPPED.get(),
-                models().cubeAll("wood_lime_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/lime")));
-        simpleBlockWithItem(REOBlocks.PLANKS_LIME.get(),
-                models().cubeAll("planks_lime", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/lime")));
+        simpleBlockItem(REOBlocks.LIME_LOG.get(), models().orientable("lime_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/lime"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/lime"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/lime_top")));
+        simpleBlockItem(REOBlocks.LIME_WOOD.get(), models().cubeAll("lime_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/lime")));
+        simpleBlockItem(REOBlocks.STRIPPED_LIME_LOG.get(), models().orientable("stripped_lime_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/lime"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/lime"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/lime_top")));
+        simpleBlockItem(REOBlocks.STRIPPED_LIME_WOOD.get(), models().cubeAll("stripped_lime_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/lime")));
+        simpleBlockWithItem(REOBlocks.LIME_PLANKS.get(), models().cubeAll("lime_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/lime")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_LIME.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/lime"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_LIME.get()), blockTexture(REOBlocks.PLANKS_LIME.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/lime"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_LIME.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/lime"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_LIME.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/lime"));
+        stairsBlock(((StairBlock) REOBlocks.LIME_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/lime"));
+        slabBlock(((SlabBlock) REOBlocks.LIME_SLAB.get()), blockTexture(REOBlocks.LIME_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/lime"));
+        fenceBlock(((FenceBlock) REOBlocks.LIME_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/lime"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.LIME_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/lime"));
 
-        buttonBlock(((ButtonBlock) REOBlocks.BUTTON_LIME.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/lime"));
-        pressurePlateBlock(((PressurePlateBlock) REOBlocks.PRESSURE_PLATE_LIME.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/lime"));
-
-
-        saplingBlock(REOBlocks.SAPLING_LIME, "lime");
-        simpleBlockWithItem(REOBlocks.POTTED_SAPLING_LIME.get(), models().singleTexture("potted_sapling_lime", new ResourceLocation("flower_pot_cross"), "plant",
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/lime")).renderType("cutout"));
-
-        colourLeavesBlock(REOBlocks.LEAVES_LIME, "lime");
-
-        signBlock(((StandingSignBlock) REOBlocks.SIGN_LIME.get()), ((WallSignBlock) REOBlocks.SIGN_LIME_WALL.get()),
+        buttonBlock(((ButtonBlock) REOBlocks.LIME_BUTTON.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/lime"));
+        pressurePlateBlock(((PressurePlateBlock) REOBlocks.LIME_PRESSURE_PLATE.get()),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/lime"));
 
-        hangingSignBlock(REOBlocks.SIGN_HANGING_LIME.get(), REOBlocks.SIGN_HANGING_LIME_WALL.get(), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/lime"));
+        saplingBlock(REOBlocks.LIME_SAPLING, "lime");
+        simpleBlockWithItem(REOBlocks.POTTED_LIME_SAPLING.get(), models().singleTexture("potted_sapling_lime",
+                new ResourceLocation("flower_pot_cross"), "plant",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/lime")).renderType("cutout"));
 
-        doorBlockWithRenderType(((DoorBlock) REOBlocks.DOOR_LIME.get()), modLoc("block/door/lime_lower"), modLoc("block/door/lime_upper"), "cutout");
-        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.TRAPDOOR_LIME.get()), modLoc("block/trapdoor/trapdoor_lime"), true, "cutout");
+        simpleBlockWithItem(REOBlocks.LIME_LEAVES.get(),
+                models().cubeAll("lime_leaves", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/lime")));
 
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_LIME_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/lime"),
+        signBlock(((StandingSignBlock) REOBlocks.LIME_SIGN.get()), ((WallSignBlock) REOBlocks.LIME_WALL_SIGN.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/lime"));
+
+        hangingSignBlock(REOBlocks.LIME_HANGING_SIGN.get(), REOBlocks.LIME_WALL_HANGING_SIGN.get(),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/lime"));
+
+        doorBlockWithRenderType(((DoorBlock) REOBlocks.LIME_DOOR.get()), modLoc("block/door/lime_lower"),
+                modLoc("block/door/lime_upper"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.LIME_TRAPDOOR.get()), modLoc("block/trapdoor/lime"),
+                true, "cutout");
+
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_LIME_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/lime"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/lime_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_LIME_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/lime"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_LIME_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/lime"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/lime"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_LIME_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/lime"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_LIME_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/lime"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/lime_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_LIME_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/lime"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_LIME_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/lime"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/lime"));
-        simpleBlockItem(REOBlocks.LOG_LIME_RESISTANT.get(),
-                models().orientable("log_lime", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/lime"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/lime"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/lime_top")));
-        simpleBlockItem(REOBlocks.WOOD_LIME_RESISTANT.get(),
-                models().cubeAll("wood_lime", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/lime")));
-        simpleBlockItem(REOBlocks.LOG_LIME_STRIPPED_RESISTANT.get(),
-                models().orientable("log_lime_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/lime"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/lime"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/lime_top")));
-        simpleBlockItem(REOBlocks.WOOD_LIME_STRIPPED_RESISTANT.get(),
-                models().cubeAll("wood_lime_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/lime")));
-        simpleBlockWithItem(REOBlocks.PLANKS_LIME_RESISTANT.get(),
-                models().cubeAll("planks_lime", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/lime")));
+        simpleBlockItem(REOBlocks.RESISTANT_LIME_LOG.get(), models().orientable("resistant_lime_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/lime"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/lime"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/lime_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_LIME_WOOD.get(), models().cubeAll("resistant_lime_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/lime")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_LIME_LOG.get(), models().orientable("resistant_stripped_lime_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/lime"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/lime"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/lime_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_LIME_WOOD.get(), models().cubeAll("resistant_stripped_lime_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/lime")));
+        simpleBlockWithItem(REOBlocks.RESISTANT_LIME_PLANKS.get(), models().cubeAll("resistant_lime_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/lime")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_LIME_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/lime"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_LIME_RESISTANT.get()), blockTexture(REOBlocks.PLANKS_LIME.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/lime"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_LIME_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/lime"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_LIME_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/lime"));
+        stairsBlock(((StairBlock) REOBlocks.RESISTANT_LIME_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/lime"));
+        slabBlock(((SlabBlock) REOBlocks.RESISTANT_LIME_SLAB.get()), blockTexture(REOBlocks.LIME_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/lime"));
+        fenceBlock(((FenceBlock) REOBlocks.RESISTANT_LIME_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/lime"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RESISTANT_LIME_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/lime"));
 
-        //
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_MAHOGANY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/mahogany"),
+        // Mahogany
+        axisBlock(((RotatedPillarBlock) REOBlocks.MAHOGANY_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/mahogany"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/mahogany_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_MAHOGANY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/mahogany"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.MAHOGANY_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/mahogany"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/mahogany"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_MAHOGANY_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/mahogany"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_MAHOGANY_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/mahogany"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/mahogany_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_MAHOGANY_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/mahogany"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_MAHOGANY_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/mahogany"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/mahogany"));
-        simpleBlockItem(REOBlocks.LOG_MAHOGANY.get(),
-                models().orientable("log_mahogany", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/mahogany"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/mahogany"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/mahogany_top")));
-        simpleBlockItem(REOBlocks.WOOD_MAHOGANY.get(),
-                models().cubeAll("wood_mahogany", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/mahogany")));
-        simpleBlockItem(REOBlocks.LOG_MAHOGANY_STRIPPED.get(),
-                models().orientable("log_mahogany_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/mahogany"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/mahogany"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/mahogany_top")));
-        simpleBlockItem(REOBlocks.WOOD_MAHOGANY_STRIPPED.get(),
-                models().cubeAll("wood_mahogany_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/mahogany")));
-        simpleBlockWithItem(REOBlocks.PLANKS_MAHOGANY.get(),
-                models().cubeAll("planks_mahogany", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/mahogany")));
+        simpleBlockItem(REOBlocks.MAHOGANY_LOG.get(), models().orientable("mahogany_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/mahogany"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/mahogany"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/mahogany_top")));
+        simpleBlockItem(REOBlocks.MAHOGANY_WOOD.get(), models().cubeAll("mahogany_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/mahogany")));
+        simpleBlockItem(REOBlocks.STRIPPED_MAHOGANY_LOG.get(), models().orientable("stripped_mahogany_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/mahogany"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/mahogany"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/mahogany_top")));
+        simpleBlockItem(REOBlocks.STRIPPED_MAHOGANY_WOOD.get(), models().cubeAll("stripped_mahogany_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/mahogany")));
+        simpleBlockWithItem(REOBlocks.MAHOGANY_PLANKS.get(), models().cubeAll("mahogany_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/mahogany")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_MAHOGANY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/mahogany"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_MAHOGANY.get()), blockTexture(REOBlocks.PLANKS_MAHOGANY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/mahogany"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_MAHOGANY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/mahogany"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_MAHOGANY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/mahogany"));
+        stairsBlock(((StairBlock) REOBlocks.MAHOGANY_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/mahogany"));
+        slabBlock(((SlabBlock) REOBlocks.MAHOGANY_SLAB.get()), blockTexture(REOBlocks.MAHOGANY_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/mahogany"));
+        fenceBlock(((FenceBlock) REOBlocks.MAHOGANY_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/mahogany"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.MAHOGANY_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/mahogany"));
 
-        buttonBlock(((ButtonBlock) REOBlocks.BUTTON_MAHOGANY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/mahogany"));
-        pressurePlateBlock(((PressurePlateBlock) REOBlocks.PRESSURE_PLATE_MAHOGANY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/mahogany"));
-
-
-        saplingBlock(REOBlocks.SAPLING_MAHOGANY, "mahogany");
-        simpleBlockWithItem(REOBlocks.POTTED_SAPLING_MAHOGANY.get(), models().singleTexture("potted_sapling_mahogany", new ResourceLocation("flower_pot_cross"), "plant",
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/mahogany")).renderType("cutout"));
-
-        simpleBlockWithItem(REOBlocks.LEAVES_MAHOGANY.get(),
-                models().cubeAll("leaves_mahogany", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/mahogany")));
-
-        signBlock(((StandingSignBlock) REOBlocks.SIGN_MAHOGANY.get()), ((WallSignBlock) REOBlocks.SIGN_MAHOGANY_WALL.get()),
+        buttonBlock(((ButtonBlock) REOBlocks.MAHOGANY_BUTTON.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/mahogany"));
+        pressurePlateBlock(((PressurePlateBlock) REOBlocks.MAHOGANY_PRESSURE_PLATE.get()),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/mahogany"));
 
-        hangingSignBlock(REOBlocks.SIGN_HANGING_MAHOGANY.get(), REOBlocks.SIGN_HANGING_MAHOGANY_WALL.get(), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/mahogany"));
+        saplingBlock(REOBlocks.MAHOGANY_SAPLING, "mahogany");
+        simpleBlockWithItem(REOBlocks.POTTED_MAHOGANY_SAPLING.get(), models().singleTexture("potted_sapling_mahogany",
+                new ResourceLocation("flower_pot_cross"), "plant",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/mahogany")).renderType("cutout"));
 
-        doorBlockWithRenderType(((DoorBlock) REOBlocks.DOOR_MAHOGANY.get()), modLoc("block/door/mahogany_lower"), modLoc("block/door/mahogany_upper"), "cutout");
-        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.TRAPDOOR_MAHOGANY.get()), modLoc("block/trapdoor/trapdoor_mahogany"), true, "cutout");
+        simpleBlockWithItem(REOBlocks.MAHOGANY_LEAVES.get(),
+                models().cubeAll("mahogany_leaves", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/mahogany")));
 
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_MAHOGANY_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/mahogany"),
+        signBlock(((StandingSignBlock) REOBlocks.MAHOGANY_SIGN.get()), ((WallSignBlock) REOBlocks.MAHOGANY_WALL_SIGN.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/mahogany"));
+
+        hangingSignBlock(REOBlocks.MAHOGANY_HANGING_SIGN.get(), REOBlocks.MAHOGANY_WALL_HANGING_SIGN.get(),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/mahogany"));
+
+        doorBlockWithRenderType(((DoorBlock) REOBlocks.MAHOGANY_DOOR.get()), modLoc("block/door/mahogany_lower"),
+                modLoc("block/door/mahogany_upper"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.MAHOGANY_TRAPDOOR.get()), modLoc("block/trapdoor/mahogany"),
+                true, "cutout");
+
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_MAHOGANY_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/mahogany"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/mahogany_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_MAHOGANY_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/mahogany"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_MAHOGANY_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/mahogany"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/mahogany"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_MAHOGANY_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/mahogany"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_MAHOGANY_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/mahogany"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/mahogany_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_MAHOGANY_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/mahogany"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_MAHOGANY_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/mahogany"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/mahogany"));
-        simpleBlockItem(REOBlocks.LOG_MAHOGANY_RESISTANT.get(),
-                models().orientable("log_mahogany", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/mahogany"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/mahogany"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/mahogany_top")));
-        simpleBlockItem(REOBlocks.WOOD_MAHOGANY_RESISTANT.get(),
-                models().cubeAll("wood_mahogany", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/mahogany")));
-        simpleBlockItem(REOBlocks.LOG_MAHOGANY_STRIPPED_RESISTANT.get(),
-                models().orientable("log_mahogany_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/mahogany"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/mahogany"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/mahogany_top")));
-        simpleBlockItem(REOBlocks.WOOD_MAHOGANY_STRIPPED_RESISTANT.get(),
-                models().cubeAll("wood_mahogany_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/mahogany")));
-        simpleBlockWithItem(REOBlocks.PLANKS_MAHOGANY_RESISTANT.get(),
-                models().cubeAll("planks_mahogany", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/mahogany")));
+        simpleBlockItem(REOBlocks.RESISTANT_MAHOGANY_LOG.get(), models().orientable("resistant_mahogany_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/mahogany"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/mahogany"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/mahogany_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_MAHOGANY_WOOD.get(), models().cubeAll("resistant_mahogany_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/mahogany")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_MAHOGANY_LOG.get(), models().orientable("resistant_stripped_mahogany_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/mahogany"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/mahogany"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/mahogany_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_MAHOGANY_WOOD.get(), models().cubeAll("resistant_stripped_mahogany_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/mahogany")));
+        simpleBlockWithItem(REOBlocks.RESISTANT_MAHOGANY_PLANKS.get(), models().cubeAll("resistant_mahogany_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/mahogany")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_MAHOGANY_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/mahogany"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_MAHOGANY_RESISTANT.get()), blockTexture(REOBlocks.PLANKS_MAHOGANY.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/mahogany"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_MAHOGANY_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/mahogany"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_MAHOGANY_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/mahogany"));
+        stairsBlock(((StairBlock) REOBlocks.RESISTANT_MAHOGANY_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/mahogany"));
+        slabBlock(((SlabBlock) REOBlocks.RESISTANT_MAHOGANY_SLAB.get()), blockTexture(REOBlocks.MAHOGANY_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/mahogany"));
+        fenceBlock(((FenceBlock) REOBlocks.RESISTANT_MAHOGANY_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/mahogany"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RESISTANT_MAHOGANY_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/mahogany"));
 
-        //
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_MAPLE.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/maple"),
+        // Maple
+        axisBlock(((RotatedPillarBlock) REOBlocks.MAPLE_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/maple"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/maple_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_MAPLE.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/maple"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.MAPLE_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/maple"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/maple"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_MAPLE_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/maple"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_MAPLE_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/maple"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/maple_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_MAPLE_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/maple"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_MAPLE_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/maple"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/maple"));
-        simpleBlockItem(REOBlocks.LOG_MAPLE.get(),
-                models().orientable("log_maple", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/maple"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/maple"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/maple_top")));
-        simpleBlockItem(REOBlocks.WOOD_MAPLE.get(),
-                models().cubeAll("wood_maple", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/maple")));
-        simpleBlockItem(REOBlocks.LOG_MAPLE_STRIPPED.get(),
-                models().orientable("log_maple_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/maple"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/maple"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/maple_top")));
-        simpleBlockItem(REOBlocks.WOOD_MAPLE_STRIPPED.get(),
-                models().cubeAll("wood_maple_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/maple")));
-        simpleBlockWithItem(REOBlocks.PLANKS_MAPLE.get(),
-                models().cubeAll("planks_maple", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/maple")));
+        simpleBlockItem(REOBlocks.MAPLE_LOG.get(), models().orientable("maple_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/maple"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/maple"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/maple_top")));
+        simpleBlockItem(REOBlocks.MAPLE_WOOD.get(), models().cubeAll("maple_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/maple")));
+        simpleBlockItem(REOBlocks.STRIPPED_MAPLE_LOG.get(), models().orientable("stripped_maple_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/maple"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/maple"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/maple_top")));
+        simpleBlockItem(REOBlocks.STRIPPED_MAPLE_WOOD.get(), models().cubeAll("stripped_maple_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/maple")));
+        simpleBlockWithItem(REOBlocks.MAPLE_PLANKS.get(), models().cubeAll("maple_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/maple")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_MAPLE.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/maple"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_MAPLE.get()), blockTexture(REOBlocks.PLANKS_MAPLE.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/maple"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_MAPLE.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/maple"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_MAPLE.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/maple"));
+        stairsBlock(((StairBlock) REOBlocks.MAPLE_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/maple"));
+        slabBlock(((SlabBlock) REOBlocks.MAPLE_SLAB.get()), blockTexture(REOBlocks.MAPLE_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/maple"));
+        fenceBlock(((FenceBlock) REOBlocks.MAPLE_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/maple"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.MAPLE_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/maple"));
 
-        buttonBlock(((ButtonBlock) REOBlocks.BUTTON_MAPLE.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/maple"));
-        pressurePlateBlock(((PressurePlateBlock) REOBlocks.PRESSURE_PLATE_MAPLE.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/maple"));
-
-        saplingBlock(REOBlocks.SAPLING_MAPLE, "maple");
-        simpleBlockWithItem(REOBlocks.POTTED_SAPLING_MAPLE.get(), models().singleTexture("potted_sapling_maple", new ResourceLocation("flower_pot_cross"), "plant",
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/maple")).renderType("cutout"));
-
-        simpleBlockWithItem(REOBlocks.LEAVES_MAPLE.get(),
-                models().cubeAll("leaves_maple", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/maple")));
-
-        signBlock(((StandingSignBlock) REOBlocks.SIGN_MAPLE.get()), ((WallSignBlock) REOBlocks.SIGN_MAPLE_WALL.get()),
+        buttonBlock(((ButtonBlock) REOBlocks.MAPLE_BUTTON.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/maple"));
+        pressurePlateBlock(((PressurePlateBlock) REOBlocks.MAPLE_PRESSURE_PLATE.get()),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/maple"));
 
-        hangingSignBlock(REOBlocks.SIGN_HANGING_MAPLE.get(), REOBlocks.SIGN_HANGING_MAPLE_WALL.get(), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/maple"));
+        saplingBlock(REOBlocks.MAPLE_SAPLING, "maple");
+        simpleBlockWithItem(REOBlocks.POTTED_MAPLE_SAPLING.get(), models().singleTexture("potted_sapling_maple",
+                new ResourceLocation("flower_pot_cross"), "plant",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/maple")).renderType("cutout"));
 
-        doorBlockWithRenderType(((DoorBlock) REOBlocks.DOOR_MAPLE.get()), modLoc("block/door/maple_lower"), modLoc("block/door/maple_upper"), "cutout");
-        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.TRAPDOOR_MAPLE.get()), modLoc("block/trapdoor/trapdoor_maple"), true, "cutout");
+        simpleBlockWithItem(REOBlocks.MAPLE_LEAVES.get(),
+                models().cubeAll("maple_leaves", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/maple")));
 
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_MAPLE_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/maple"),
+        signBlock(((StandingSignBlock) REOBlocks.MAPLE_SIGN.get()), ((WallSignBlock) REOBlocks.MAPLE_WALL_SIGN.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/maple"));
+
+        hangingSignBlock(REOBlocks.MAPLE_HANGING_SIGN.get(), REOBlocks.MAPLE_WALL_HANGING_SIGN.get(),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/maple"));
+
+        doorBlockWithRenderType(((DoorBlock) REOBlocks.MAPLE_DOOR.get()), modLoc("block/door/maple_lower"),
+                modLoc("block/door/maple_upper"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.MAPLE_TRAPDOOR.get()), modLoc("block/trapdoor/maple"),
+                true, "cutout");
+
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_MAPLE_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/maple"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/maple_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_MAPLE_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/maple"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_MAPLE_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/maple"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/maple"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_MAPLE_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/maple"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_MAPLE_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/maple"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/maple_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_MAPLE_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/maple"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_MAPLE_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/maple"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/maple"));
-        simpleBlockItem(REOBlocks.LOG_MAPLE_RESISTANT.get(),
-                models().orientable("log_maple", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/maple"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/maple"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/maple_top")));
-        simpleBlockItem(REOBlocks.WOOD_MAPLE_RESISTANT.get(),
-                models().cubeAll("wood_maple", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/maple")));
-        simpleBlockItem(REOBlocks.LOG_MAPLE_STRIPPED_RESISTANT.get(),
-                models().orientable("log_maple_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/maple"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/maple"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/maple_top")));
-        simpleBlockItem(REOBlocks.WOOD_MAPLE_STRIPPED_RESISTANT.get(),
-                models().cubeAll("wood_maple_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/maple")));
-        simpleBlockWithItem(REOBlocks.PLANKS_MAPLE_RESISTANT.get(),
-                models().cubeAll("planks_maple", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/maple")));
+        simpleBlockItem(REOBlocks.RESISTANT_MAPLE_LOG.get(), models().orientable("resistant_maple_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/maple"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/maple"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/maple_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_MAPLE_WOOD.get(), models().cubeAll("resistant_maple_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/maple")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_MAPLE_LOG.get(), models().orientable("resistant_stripped_maple_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/maple"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/maple"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/maple_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_MAPLE_WOOD.get(), models().cubeAll("resistant_stripped_maple_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/maple")));
+        simpleBlockWithItem(REOBlocks.RESISTANT_MAPLE_PLANKS.get(), models().cubeAll("resistant_maple_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/maple")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_MAPLE_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/maple"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_MAPLE_RESISTANT.get()), blockTexture(REOBlocks.PLANKS_MAPLE.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/maple"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_MAPLE_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/maple"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_MAPLE_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/maple"));
+        stairsBlock(((StairBlock) REOBlocks.RESISTANT_MAPLE_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/maple"));
+        slabBlock(((SlabBlock) REOBlocks.RESISTANT_MAPLE_SLAB.get()), blockTexture(REOBlocks.MAPLE_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/maple"));
+        fenceBlock(((FenceBlock) REOBlocks.RESISTANT_MAPLE_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/maple"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RESISTANT_MAPLE_FENCE_GATE.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/maple"));
 
-        //
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_PALM.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/palm"),
+        // Palm
+        axisBlock(((RotatedPillarBlock) REOBlocks.PALM_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/palm"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/palm_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_PALM.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/palm"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.PALM_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/palm"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/palm"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_PALM_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/palm"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_PALM_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/palm"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/palm_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_PALM_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/palm"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_PALM_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/palm"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/palm"));
-        simpleBlockItem(REOBlocks.LOG_PALM.get(),
-                models().orientable("log_palm", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/palm"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/palm"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/palm_top")));
-        simpleBlockItem(REOBlocks.WOOD_PALM.get(),
-                models().cubeAll("wood_palm", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/palm")));
-        simpleBlockItem(REOBlocks.LOG_PALM_STRIPPED.get(),
-                models().orientable("log_palm_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/palm"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/palm"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/palm_top")));
-        simpleBlockItem(REOBlocks.WOOD_PALM_STRIPPED.get(),
-                models().cubeAll("wood_palm_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/palm")));
-        simpleBlockWithItem(REOBlocks.PLANKS_PALM.get(),
-                models().cubeAll("planks_palm", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/palm")));
+        simpleBlockItem(REOBlocks.PALM_LOG.get(), models().orientable("palm_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/palm"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/palm"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/palm_top")));
+        simpleBlockItem(REOBlocks.PALM_WOOD.get(), models().cubeAll("palm_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/palm")));
+        simpleBlockItem(REOBlocks.STRIPPED_PALM_LOG.get(), models().orientable("stripped_palm_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/palm"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/palm"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/palm_top")));
+        simpleBlockItem(REOBlocks.STRIPPED_PALM_WOOD.get(), models().cubeAll("stripped_palm_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/palm")));
+        simpleBlockWithItem(REOBlocks.PALM_PLANKS.get(), models().cubeAll("palm_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/palm")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_PALM.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/palm"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_PALM.get()), blockTexture(REOBlocks.PLANKS_PALM.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/palm"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_PALM.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/palm"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_PALM.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/palm"));
+        stairsBlock(((StairBlock) REOBlocks.PALM_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/palm"));
+        slabBlock(((SlabBlock) REOBlocks.PALM_SLAB.get()), blockTexture(REOBlocks.PALM_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/palm"));
+        fenceBlock(((FenceBlock) REOBlocks.PALM_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/palm"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.PALM_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/palm"));
 
-        buttonBlock(((ButtonBlock) REOBlocks.BUTTON_PALM.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/palm"));
-        pressurePlateBlock(((PressurePlateBlock) REOBlocks.PRESSURE_PLATE_PALM.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/palm"));
-
-        saplingBlock(REOBlocks.SAPLING_PALM, "palm");
-        simpleBlockWithItem(REOBlocks.POTTED_SAPLING_PALM.get(), models().singleTexture("potted_sapling_palm", new ResourceLocation("flower_pot_cross"), "plant",
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/palm")).renderType("cutout"));
-
-        simpleBlockWithItem(REOBlocks.LEAVES_PALM.get(),
-                models().cubeAll("leaves_palm", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/palm")));
-
-        signBlock(((StandingSignBlock) REOBlocks.SIGN_PALM.get()), ((WallSignBlock) REOBlocks.SIGN_PALM_WALL.get()),
+        buttonBlock(((ButtonBlock) REOBlocks.PALM_BUTTON.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/palm"));
+        pressurePlateBlock(((PressurePlateBlock) REOBlocks.PALM_PRESSURE_PLATE.get()),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/palm"));
 
-        hangingSignBlock(REOBlocks.SIGN_HANGING_PALM.get(), REOBlocks.SIGN_HANGING_PALM_WALL.get(), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/palm"));
+        saplingBlock(REOBlocks.PALM_SAPLING, "palm");
+        simpleBlockWithItem(REOBlocks.POTTED_PALM_SAPLING.get(), models().singleTexture("potted_sapling_palm",
+                new ResourceLocation("flower_pot_cross"), "plant",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/palm")).renderType("cutout"));
 
-        doorBlockWithRenderType(((DoorBlock) REOBlocks.DOOR_PALM.get()), modLoc("block/door/palm_lower"), modLoc("block/door/palm_upper"), "cutout");
-        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.TRAPDOOR_PALM.get()), modLoc("block/trapdoor/trapdoor_palm"), true, "cutout");
+        simpleBlockWithItem(REOBlocks.PALM_LEAVES.get(),
+                models().cubeAll("palm_leaves", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/palm")));
 
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_PALM_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/palm"),
+        signBlock(((StandingSignBlock) REOBlocks.PALM_SIGN.get()), ((WallSignBlock) REOBlocks.PALM_WALL_SIGN.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/palm"));
+
+        hangingSignBlock(REOBlocks.PALM_HANGING_SIGN.get(), REOBlocks.PALM_WALL_HANGING_SIGN.get(),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/palm"));
+
+        doorBlockWithRenderType(((DoorBlock) REOBlocks.PALM_DOOR.get()), modLoc("block/door/palm_lower"),
+                modLoc("block/door/palm_upper"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.PALM_TRAPDOOR.get()), modLoc("block/trapdoor/palm"),
+                true, "cutout");
+
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_PALM_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/palm"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/palm_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_PALM_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/palm"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_PALM_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/palm"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/palm"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_PALM_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/palm"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_PALM_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/palm"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/palm_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_PALM_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/palm"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_PALM_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/palm"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/palm"));
-        simpleBlockItem(REOBlocks.LOG_PALM_RESISTANT.get(),
-                models().orientable("log_palm", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/palm"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/palm"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/palm_top")));
-        simpleBlockItem(REOBlocks.WOOD_PALM_RESISTANT.get(),
-                models().cubeAll("wood_palm", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/palm")));
-        simpleBlockItem(REOBlocks.LOG_PALM_STRIPPED_RESISTANT.get(),
-                models().orientable("log_palm_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/palm"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/palm"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/palm_top")));
-        simpleBlockItem(REOBlocks.WOOD_PALM_STRIPPED_RESISTANT.get(),
-                models().cubeAll("wood_palm_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/palm")));
-        simpleBlockWithItem(REOBlocks.PLANKS_PALM_RESISTANT.get(),
-                models().cubeAll("planks_palm", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/palm")));
+        simpleBlockItem(REOBlocks.RESISTANT_PALM_LOG.get(), models().orientable("resistant_palm_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/palm"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/palm"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/palm_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_PALM_WOOD.get(), models().cubeAll("resistant_palm_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/palm")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_PALM_LOG.get(), models().orientable("resistant_stripped_palm_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/palm"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/palm"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/palm_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_PALM_WOOD.get(), models().cubeAll("resistant_stripped_palm_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/palm")));
+        simpleBlockWithItem(REOBlocks.RESISTANT_PALM_PLANKS.get(), models().cubeAll("resistant_palm_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/palm")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_PALM_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/palm"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_PALM_RESISTANT.get()), blockTexture(REOBlocks.PLANKS_PALM.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/palm"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_PALM_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/palm"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_PALM_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/palm"));
+        stairsBlock(((StairBlock) REOBlocks.RESISTANT_PALM_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/palm"));
+        slabBlock(((SlabBlock) REOBlocks.RESISTANT_PALM_SLAB.get()), blockTexture(REOBlocks.PALM_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/palm"));
+        fenceBlock(((FenceBlock) REOBlocks.RESISTANT_PALM_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/palm"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RESISTANT_PALM_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/palm"));
 
-        //
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_PAPAYA.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/papaya"),
+        // Papaya
+        axisBlock(((RotatedPillarBlock) REOBlocks.PAPAYA_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/papaya"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/papaya_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_PAPAYA.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/papaya"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.PAPAYA_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/papaya"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/papaya"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_PAPAYA_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/papaya"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_PAPAYA_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/papaya"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/papaya_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_PAPAYA_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/papaya"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_PAPAYA_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/papaya"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/papaya"));
-        simpleBlockItem(REOBlocks.LOG_PAPAYA.get(),
-                models().orientable("log_papaya", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/papaya"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/papaya"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/papaya_top")));
-        simpleBlockItem(REOBlocks.WOOD_PAPAYA.get(),
-                models().cubeAll("wood_papaya", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/papaya")));
-        simpleBlockItem(REOBlocks.LOG_PAPAYA_STRIPPED.get(),
-                models().orientable("log_papaya_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/papaya"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/papaya"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/papaya_top")));
-        simpleBlockItem(REOBlocks.WOOD_PAPAYA_STRIPPED.get(),
-                models().cubeAll("wood_papaya_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/papaya")));
-        simpleBlockWithItem(REOBlocks.PLANKS_PAPAYA.get(),
-                models().cubeAll("planks_papaya", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/papaya")));
+        simpleBlockItem(REOBlocks.PAPAYA_LOG.get(), models().orientable("papaya_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/papaya"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/papaya"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/papaya_top")));
+        simpleBlockItem(REOBlocks.PAPAYA_WOOD.get(), models().cubeAll("papaya_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/papaya")));
+        simpleBlockItem(REOBlocks.STRIPPED_PAPAYA_LOG.get(), models().orientable("stripped_papaya_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/papaya"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/papaya"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/papaya_top")));
+        simpleBlockItem(REOBlocks.STRIPPED_PAPAYA_WOOD.get(), models().cubeAll("stripped_papaya_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/papaya")));
+        simpleBlockWithItem(REOBlocks.PAPAYA_PLANKS.get(), models().cubeAll("papaya_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/papaya")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_PAPAYA.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/papaya"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_PAPAYA.get()), blockTexture(REOBlocks.PLANKS_PAPAYA.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/papaya"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_PAPAYA.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/papaya"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_PAPAYA.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/papaya"));
+        stairsBlock(((StairBlock) REOBlocks.PAPAYA_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/papaya"));
+        slabBlock(((SlabBlock) REOBlocks.PAPAYA_SLAB.get()), blockTexture(REOBlocks.PAPAYA_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/papaya"));
+        fenceBlock(((FenceBlock) REOBlocks.PAPAYA_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/papaya"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.PAPAYA_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/papaya"));
 
-        buttonBlock(((ButtonBlock) REOBlocks.BUTTON_PAPAYA.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/papaya"));
-        pressurePlateBlock(((PressurePlateBlock) REOBlocks.PRESSURE_PLATE_PAPAYA.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/papaya"));
-
-        saplingBlock(REOBlocks.SAPLING_PAPAYA, "papaya");
-        simpleBlockWithItem(REOBlocks.POTTED_SAPLING_PAPAYA.get(), models().singleTexture("potted_sapling_papaya", new ResourceLocation("flower_pot_cross"), "plant",
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/papaya")).renderType("cutout"));
-
-        colourLeavesBlock(REOBlocks.LEAVES_PAPAYA, "papaya");
-
-        signBlock(((StandingSignBlock) REOBlocks.SIGN_PAPAYA.get()), ((WallSignBlock) REOBlocks.SIGN_PAPAYA_WALL.get()),
+        buttonBlock(((ButtonBlock) REOBlocks.PAPAYA_BUTTON.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/papaya"));
+        pressurePlateBlock(((PressurePlateBlock) REOBlocks.PAPAYA_PRESSURE_PLATE.get()),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/papaya"));
 
-        hangingSignBlock(REOBlocks.SIGN_HANGING_PAPAYA.get(), REOBlocks.SIGN_HANGING_PAPAYA_WALL.get(), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/papaya"));
+        saplingBlock(REOBlocks.PAPAYA_SAPLING, "papaya");
+        simpleBlockWithItem(REOBlocks.POTTED_PAPAYA_SAPLING.get(), models().singleTexture("potted_sapling_papaya",
+                new ResourceLocation("flower_pot_cross"), "plant",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/papaya")).renderType("cutout"));
 
-        doorBlockWithRenderType(((DoorBlock) REOBlocks.DOOR_PAPAYA.get()), modLoc("block/door/papaya_lower"), modLoc("block/door/papaya_upper"), "cutout");
-        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.TRAPDOOR_PAPAYA.get()), modLoc("block/trapdoor/trapdoor_papaya"), true, "cutout");
+        simpleBlockWithItem(REOBlocks.PAPAYA_LEAVES.get(),
+                models().cubeAll("papaya_leaves", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/papaya")));
 
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_PAPAYA_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/papaya"),
+        signBlock(((StandingSignBlock) REOBlocks.PAPAYA_SIGN.get()), ((WallSignBlock) REOBlocks.PAPAYA_WALL_SIGN.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/papaya"));
+
+        hangingSignBlock(REOBlocks.PAPAYA_HANGING_SIGN.get(), REOBlocks.PAPAYA_WALL_HANGING_SIGN.get(),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/papaya"));
+
+        doorBlockWithRenderType(((DoorBlock) REOBlocks.PAPAYA_DOOR.get()), modLoc("block/door/papaya_lower"),
+                modLoc("block/door/papaya_upper"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.PAPAYA_TRAPDOOR.get()), modLoc("block/trapdoor/papaya"),
+                true, "cutout");
+
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_PAPAYA_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/papaya"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/papaya_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_PAPAYA_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/papaya"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_PAPAYA_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/papaya"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/papaya"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_PAPAYA_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/papaya"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_PAPAYA_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/papaya"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/papaya_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_PAPAYA_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/papaya"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_PAPAYA_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/papaya"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/papaya"));
-        simpleBlockItem(REOBlocks.LOG_PAPAYA_RESISTANT.get(),
-                models().orientable("log_papaya", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/papaya"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/papaya"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/papaya_top")));
-        simpleBlockItem(REOBlocks.WOOD_PAPAYA_RESISTANT.get(),
-                models().cubeAll("wood_papaya", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/papaya")));
-        simpleBlockItem(REOBlocks.LOG_PAPAYA_STRIPPED_RESISTANT.get(),
-                models().orientable("log_papaya_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/papaya"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/papaya"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/papaya_top")));
-        simpleBlockItem(REOBlocks.WOOD_PAPAYA_STRIPPED_RESISTANT.get(),
-                models().cubeAll("wood_papaya_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/papaya")));
-        simpleBlockWithItem(REOBlocks.PLANKS_PAPAYA_RESISTANT.get(),
-                models().cubeAll("planks_papaya", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/papaya")));
+        simpleBlockItem(REOBlocks.RESISTANT_PAPAYA_LOG.get(), models().orientable("resistant_papaya_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/papaya"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/papaya"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/papaya_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_PAPAYA_WOOD.get(), models().cubeAll("resistant_papaya_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/papaya")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_PAPAYA_LOG.get(), models().orientable("resistant_stripped_papaya_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/papaya"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/papaya"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/papaya_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_PAPAYA_WOOD.get(), models().cubeAll("resistant_stripped_papaya_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/papaya")));
+        simpleBlockWithItem(REOBlocks.RESISTANT_PAPAYA_PLANKS.get(), models().cubeAll("resistant_papaya_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/papaya")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_PAPAYA_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/papaya"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_PAPAYA_RESISTANT.get()), blockTexture(REOBlocks.PLANKS_PAPAYA.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/papaya"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_PAPAYA_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/papaya"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_PAPAYA_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/papaya"));
+        stairsBlock(((StairBlock) REOBlocks.RESISTANT_PAPAYA_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/papaya"));
+        slabBlock(((SlabBlock) REOBlocks.RESISTANT_PAPAYA_SLAB.get()), blockTexture(REOBlocks.PAPAYA_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/papaya"));
+        fenceBlock(((FenceBlock) REOBlocks.RESISTANT_PAPAYA_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/papaya"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RESISTANT_PAPAYA_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/papaya"));
 
-        //
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_PINE.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/pine"),
+        // Pine
+        axisBlock(((RotatedPillarBlock) REOBlocks.PINE_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/pine"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/pine_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_PINE.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/pine"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.PINE_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/pine"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/pine"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_PINE_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/pine"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_PINE_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/pine"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/pine_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_PINE_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/pine"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_PINE_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/pine"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/pine"));
-        simpleBlockItem(REOBlocks.LOG_PINE.get(),
-                models().orientable("log_pine", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/pine"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/pine"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/pine_top")));
-        simpleBlockItem(REOBlocks.WOOD_PINE.get(),
-                models().cubeAll("wood_pine", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/pine")));
-        simpleBlockItem(REOBlocks.LOG_PINE_STRIPPED.get(),
-                models().orientable("log_pine_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/pine"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/pine"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/pine_top")));
-        simpleBlockItem(REOBlocks.WOOD_PINE_STRIPPED.get(),
-                models().cubeAll("wood_pine_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/pine")));
-        simpleBlockWithItem(REOBlocks.PLANKS_PINE.get(),
-                models().cubeAll("planks_pine", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/pine")));
+        simpleBlockItem(REOBlocks.PINE_LOG.get(), models().orientable("pine_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/pine"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/pine"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/pine_top")));
+        simpleBlockItem(REOBlocks.PINE_WOOD.get(), models().cubeAll("pine_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/pine")));
+        simpleBlockItem(REOBlocks.STRIPPED_PINE_LOG.get(), models().orientable("stripped_pine_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/pine"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/pine"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/pine_top")));
+        simpleBlockItem(REOBlocks.STRIPPED_PINE_WOOD.get(), models().cubeAll("stripped_pine_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/pine")));
+        simpleBlockWithItem(REOBlocks.PINE_PLANKS.get(), models().cubeAll("pine_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/pine")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_PINE.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/pine"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_PINE.get()), blockTexture(REOBlocks.PLANKS_PINE.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/pine"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_PINE.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/pine"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_PINE.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/pine"));
+        stairsBlock(((StairBlock) REOBlocks.PINE_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/pine"));
+        slabBlock(((SlabBlock) REOBlocks.PINE_SLAB.get()), blockTexture(REOBlocks.PINE_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/pine"));
+        fenceBlock(((FenceBlock) REOBlocks.PINE_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/pine"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.PINE_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/pine"));
 
-        buttonBlock(((ButtonBlock) REOBlocks.BUTTON_PINE.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/pine"));
-        pressurePlateBlock(((PressurePlateBlock) REOBlocks.PRESSURE_PLATE_PINE.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/pine"));
-
-        saplingBlock(REOBlocks.SAPLING_PINE, "pine");
-        simpleBlockWithItem(REOBlocks.POTTED_SAPLING_PINE.get(), models().singleTexture("potted_sapling_pine", new ResourceLocation("flower_pot_cross"), "plant",
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/pine")).renderType("cutout"));
-
-        simpleBlockWithItem(REOBlocks.LEAVES_PINE.get(),
-                models().cubeAll("leaves_pine", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/pine")));
-
-        signBlock(((StandingSignBlock) REOBlocks.SIGN_PINE.get()), ((WallSignBlock) REOBlocks.SIGN_PINE_WALL.get()),
+        buttonBlock(((ButtonBlock) REOBlocks.PINE_BUTTON.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/pine"));
+        pressurePlateBlock(((PressurePlateBlock) REOBlocks.PINE_PRESSURE_PLATE.get()),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/pine"));
 
-        hangingSignBlock(REOBlocks.SIGN_HANGING_PINE.get(), REOBlocks.SIGN_HANGING_PINE_WALL.get(), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/pine"));
+        saplingBlock(REOBlocks.PINE_SAPLING, "pine");
+        simpleBlockWithItem(REOBlocks.POTTED_PINE_SAPLING.get(), models().singleTexture("potted_sapling_pine",
+                new ResourceLocation("flower_pot_cross"), "plant",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/pine")).renderType("cutout"));
 
-        doorBlockWithRenderType(((DoorBlock) REOBlocks.DOOR_PINE.get()), modLoc("block/door/pine_lower"), modLoc("block/door/pine_upper"), "cutout");
-        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.TRAPDOOR_PINE.get()), modLoc("block/trapdoor/trapdoor_pine"), true, "cutout");
+        simpleBlockWithItem(REOBlocks.PINE_LEAVES.get(),
+                models().cubeAll("pine_leaves", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/pine")));
 
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_PINE_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/pine"),
+        signBlock(((StandingSignBlock) REOBlocks.PINE_SIGN.get()), ((WallSignBlock) REOBlocks.PINE_WALL_SIGN.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/pine"));
+
+        hangingSignBlock(REOBlocks.PINE_HANGING_SIGN.get(), REOBlocks.PINE_WALL_HANGING_SIGN.get(),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/pine"));
+
+        doorBlockWithRenderType(((DoorBlock) REOBlocks.PINE_DOOR.get()), modLoc("block/door/pine_lower"),
+                modLoc("block/door/pine_upper"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.PINE_TRAPDOOR.get()), modLoc("block/trapdoor/pine"),
+                true, "cutout");
+
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_PINE_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/pine"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/pine_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_PINE_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/pine"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_PINE_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/pine"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/pine"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_PINE_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/pine"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_PINE_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/pine"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/pine_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_PINE_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/pine"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_PINE_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/pine"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/pine"));
-        simpleBlockItem(REOBlocks.LOG_PINE_RESISTANT.get(),
-                models().orientable("log_pine", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/pine"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/pine"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/pine_top")));
-        simpleBlockItem(REOBlocks.WOOD_PINE_RESISTANT.get(),
-                models().cubeAll("wood_pine", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/pine")));
-        simpleBlockItem(REOBlocks.LOG_PINE_STRIPPED_RESISTANT.get(),
-                models().orientable("log_pine_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/pine"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/pine"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/pine_top")));
-        simpleBlockItem(REOBlocks.WOOD_PINE_STRIPPED_RESISTANT.get(),
-                models().cubeAll("wood_pine_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/pine")));
-        simpleBlockWithItem(REOBlocks.PLANKS_PINE_RESISTANT.get(),
-                models().cubeAll("planks_pine", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/pine")));
+        simpleBlockItem(REOBlocks.RESISTANT_PINE_LOG.get(), models().orientable("resistant_pine_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/pine"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/pine"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/pine_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_PINE_WOOD.get(), models().cubeAll("resistant_pine_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/pine")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_PINE_LOG.get(), models().orientable("resistant_stripped_pine_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/pine"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/pine"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/pine_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_PINE_WOOD.get(), models().cubeAll("resistant_stripped_pine_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/pine")));
+        simpleBlockWithItem(REOBlocks.RESISTANT_PINE_PLANKS.get(), models().cubeAll("resistant_pine_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/pine")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_PINE_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/pine"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_PINE_RESISTANT.get()), blockTexture(REOBlocks.PLANKS_PINE.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/pine"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_PINE_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/pine"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_PINE_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/pine"));
+        stairsBlock(((StairBlock) REOBlocks.RESISTANT_PINE_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/pine"));
+        slabBlock(((SlabBlock) REOBlocks.RESISTANT_PINE_SLAB.get()), blockTexture(REOBlocks.PINE_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/pine"));
+        fenceBlock(((FenceBlock) REOBlocks.RESISTANT_PINE_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/pine"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RESISTANT_PINE_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/pine"));
 
-        //
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_PLUM.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/plum"),
+        // Plum
+        axisBlock(((RotatedPillarBlock) REOBlocks.PLUM_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/plum"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/plum_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_PLUM.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/plum"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.PLUM_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/plum"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/plum"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_PLUM_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/plum"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_PLUM_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/plum"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/plum_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_PLUM_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/plum"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_PLUM_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/plum"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/plum"));
-        simpleBlockItem(REOBlocks.LOG_PLUM.get(),
-                models().orientable("log_plum", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/plum"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/plum"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/plum_top")));
-        simpleBlockItem(REOBlocks.WOOD_PLUM.get(),
-                models().cubeAll("wood_plum", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/plum")));
-        simpleBlockItem(REOBlocks.LOG_PLUM_STRIPPED.get(),
-                models().orientable("log_plum_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/plum"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/plum"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/plum_top")));
-        simpleBlockItem(REOBlocks.WOOD_PLUM_STRIPPED.get(),
-                models().cubeAll("wood_plum_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/plum")));
-        simpleBlockWithItem(REOBlocks.PLANKS_PLUM.get(),
-                models().cubeAll("planks_plum", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/plum")));
+        simpleBlockItem(REOBlocks.PLUM_LOG.get(), models().orientable("plum_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/plum"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/plum"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/plum_top")));
+        simpleBlockItem(REOBlocks.PLUM_WOOD.get(), models().cubeAll("plum_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/plum")));
+        simpleBlockItem(REOBlocks.STRIPPED_PLUM_LOG.get(), models().orientable("stripped_plum_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/plum"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/plum"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/plum_top")));
+        simpleBlockItem(REOBlocks.STRIPPED_PLUM_WOOD.get(), models().cubeAll("stripped_plum_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/plum")));
+        simpleBlockWithItem(REOBlocks.PLUM_PLANKS.get(), models().cubeAll("plum_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/plum")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_PLUM.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/plum"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_PLUM.get()), blockTexture(REOBlocks.PLANKS_PLUM.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/plum"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_PLUM.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/plum"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_PLUM.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/plum"));
+        stairsBlock(((StairBlock) REOBlocks.PLUM_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/plum"));
+        slabBlock(((SlabBlock) REOBlocks.PLUM_SLAB.get()), blockTexture(REOBlocks.PLUM_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/plum"));
+        fenceBlock(((FenceBlock) REOBlocks.PLUM_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/plum"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.PLUM_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/plum"));
 
-        buttonBlock(((ButtonBlock) REOBlocks.BUTTON_PLUM.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/plum"));
-        pressurePlateBlock(((PressurePlateBlock) REOBlocks.PRESSURE_PLATE_PLUM.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/plum"));
-
-        saplingBlock(REOBlocks.SAPLING_PLUM, "plum");
-        simpleBlockWithItem(REOBlocks.POTTED_SAPLING_PLUM.get(), models().singleTexture("potted_sapling_plum", new ResourceLocation("flower_pot_cross"), "plant",
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/plum")).renderType("cutout"));
-
-        colourLeavesBlock(REOBlocks.LEAVES_PLUM, "plum");
-
-        signBlock(((StandingSignBlock) REOBlocks.SIGN_PLUM.get()), ((WallSignBlock) REOBlocks.SIGN_PLUM_WALL.get()),
+        buttonBlock(((ButtonBlock) REOBlocks.PLUM_BUTTON.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/plum"));
+        pressurePlateBlock(((PressurePlateBlock) REOBlocks.PLUM_PRESSURE_PLATE.get()),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/plum"));
 
-        hangingSignBlock(REOBlocks.SIGN_HANGING_PLUM.get(), REOBlocks.SIGN_HANGING_PLUM_WALL.get(), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/plum"));
+        saplingBlock(REOBlocks.PLUM_SAPLING, "plum");
+        simpleBlockWithItem(REOBlocks.POTTED_PLUM_SAPLING.get(), models().singleTexture("potted_sapling_plum",
+                new ResourceLocation("flower_pot_cross"), "plant",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/plum")).renderType("cutout"));
 
-        doorBlockWithRenderType(((DoorBlock) REOBlocks.DOOR_PLUM.get()), modLoc("block/door/plum_lower"), modLoc("block/door/plum_upper"), "cutout");
-        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.TRAPDOOR_PLUM.get()), modLoc("block/trapdoor/trapdoor_plum"), true, "cutout");
+        simpleBlockWithItem(REOBlocks.PLUM_LEAVES.get(),
+                models().cubeAll("plum_leaves", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/plum")));
 
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_PLUM_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/plum"),
+        signBlock(((StandingSignBlock) REOBlocks.PLUM_SIGN.get()), ((WallSignBlock) REOBlocks.PLUM_WALL_SIGN.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/plum"));
+
+        hangingSignBlock(REOBlocks.PLUM_HANGING_SIGN.get(), REOBlocks.PLUM_WALL_HANGING_SIGN.get(),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/plum"));
+
+        doorBlockWithRenderType(((DoorBlock) REOBlocks.PLUM_DOOR.get()), modLoc("block/door/plum_lower"),
+                modLoc("block/door/plum_upper"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.PLUM_TRAPDOOR.get()), modLoc("block/trapdoor/plum"),
+                true, "cutout");
+
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_PLUM_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/plum"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/plum_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_PLUM_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/plum"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_PLUM_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/plum"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/plum"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_PLUM_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/plum"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_PLUM_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/plum"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/plum_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_PLUM_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/plum"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_PLUM_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/plum"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/plum"));
-        simpleBlockItem(REOBlocks.LOG_PLUM_RESISTANT.get(),
-                models().orientable("log_plum", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/plum"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/plum"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/plum_top")));
-        simpleBlockItem(REOBlocks.WOOD_PLUM_RESISTANT.get(),
-                models().cubeAll("wood_plum", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/plum")));
-        simpleBlockItem(REOBlocks.LOG_PLUM_STRIPPED_RESISTANT.get(),
-                models().orientable("log_plum_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/plum"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/plum"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/plum_top")));
-        simpleBlockItem(REOBlocks.WOOD_PLUM_STRIPPED_RESISTANT.get(),
-                models().cubeAll("wood_plum_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/plum")));
-        simpleBlockWithItem(REOBlocks.PLANKS_PLUM_RESISTANT.get(),
-                models().cubeAll("planks_plum", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/plum")));
+        simpleBlockItem(REOBlocks.RESISTANT_PLUM_LOG.get(), models().orientable("resistant_plum_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/plum"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/plum"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/plum_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_PLUM_WOOD.get(), models().cubeAll("resistant_plum_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/plum")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_PLUM_LOG.get(), models().orientable("resistant_stripped_plum_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/plum"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/plum"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/plum_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_PLUM_WOOD.get(), models().cubeAll("resistant_stripped_plum_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/plum")));
+        simpleBlockWithItem(REOBlocks.RESISTANT_PLUM_PLANKS.get(), models().cubeAll("resistant_plum_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/plum")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_PLUM_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/plum"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_PLUM_RESISTANT.get()), blockTexture(REOBlocks.PLANKS_PLUM.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/plum"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_PLUM_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/plum"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_PLUM_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/plum"));
+        stairsBlock(((StairBlock) REOBlocks.RESISTANT_PLUM_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/plum"));
+        slabBlock(((SlabBlock) REOBlocks.RESISTANT_PLUM_SLAB.get()), blockTexture(REOBlocks.PLUM_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/plum"));
+        fenceBlock(((FenceBlock) REOBlocks.RESISTANT_PLUM_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/plum"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RESISTANT_PLUM_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/plum"));
 
-        //
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_POPLAR.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/poplar"),
+        // Poplar
+        axisBlock(((RotatedPillarBlock) REOBlocks.POPLAR_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/poplar"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/poplar_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_POPLAR.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/poplar"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.POPLAR_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/poplar"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/poplar"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_POPLAR_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/poplar"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_POPLAR_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/poplar"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/poplar_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_POPLAR_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/poplar"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_POPLAR_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/poplar"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/poplar"));
-        simpleBlockItem(REOBlocks.LOG_POPLAR.get(),
-                models().orientable("log_poplar", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/poplar"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/poplar"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/poplar_top")));
-        simpleBlockItem(REOBlocks.WOOD_POPLAR.get(),
-                models().cubeAll("wood_poplar", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/poplar")));
-        simpleBlockItem(REOBlocks.LOG_POPLAR_STRIPPED.get(),
-                models().orientable("log_poplar_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/poplar"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/poplar"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/poplar_top")));
-        simpleBlockItem(REOBlocks.WOOD_POPLAR_STRIPPED.get(),
-                models().cubeAll("wood_poplar_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/poplar")));
-        simpleBlockWithItem(REOBlocks.PLANKS_POPLAR.get(),
-                models().cubeAll("planks_poplar", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/poplar")));
+        simpleBlockItem(REOBlocks.POPLAR_LOG.get(), models().orientable("poplar_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/poplar"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/poplar"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/poplar_top")));
+        simpleBlockItem(REOBlocks.POPLAR_WOOD.get(), models().cubeAll("poplar_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/poplar")));
+        simpleBlockItem(REOBlocks.STRIPPED_POPLAR_LOG.get(), models().orientable("stripped_poplar_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/poplar"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/poplar"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/poplar_top")));
+        simpleBlockItem(REOBlocks.STRIPPED_POPLAR_WOOD.get(), models().cubeAll("stripped_poplar_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/poplar")));
+        simpleBlockWithItem(REOBlocks.POPLAR_PLANKS.get(), models().cubeAll("poplar_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/poplar")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_POPLAR.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/poplar"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_POPLAR.get()), blockTexture(REOBlocks.PLANKS_POPLAR.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/poplar"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_POPLAR.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/poplar"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_POPLAR.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/poplar"));
+        stairsBlock(((StairBlock) REOBlocks.POPLAR_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/poplar"));
+        slabBlock(((SlabBlock) REOBlocks.POPLAR_SLAB.get()), blockTexture(REOBlocks.POPLAR_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/poplar"));
+        fenceBlock(((FenceBlock) REOBlocks.POPLAR_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/poplar"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.POPLAR_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/poplar"));
 
-        buttonBlock(((ButtonBlock) REOBlocks.BUTTON_POPLAR.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/poplar"));
-        pressurePlateBlock(((PressurePlateBlock) REOBlocks.PRESSURE_PLATE_POPLAR.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/poplar"));
-
-        saplingBlock(REOBlocks.SAPLING_POPLAR, "poplar");
-        simpleBlockWithItem(REOBlocks.POTTED_SAPLING_POPLAR.get(), models().singleTexture("potted_sapling_poplar", new ResourceLocation("flower_pot_cross"), "plant",
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/poplar")).renderType("cutout"));
-
-        simpleBlockWithItem(REOBlocks.LEAVES_POPLAR.get(),
-                models().cubeAll("leaves_poplar", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/poplar")));
-
-        signBlock(((StandingSignBlock) REOBlocks.SIGN_POPLAR.get()), ((WallSignBlock) REOBlocks.SIGN_POPLAR_WALL.get()),
+        buttonBlock(((ButtonBlock) REOBlocks.POPLAR_BUTTON.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/poplar"));
+        pressurePlateBlock(((PressurePlateBlock) REOBlocks.POPLAR_PRESSURE_PLATE.get()),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/poplar"));
 
-        hangingSignBlock(REOBlocks.SIGN_HANGING_POPLAR.get(), REOBlocks.SIGN_HANGING_POPLAR_WALL.get(), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/poplar"));
+        saplingBlock(REOBlocks.POPLAR_SAPLING, "poplar");
+        simpleBlockWithItem(REOBlocks.POTTED_POPLAR_SAPLING.get(), models().singleTexture("potted_sapling_poplar",
+                new ResourceLocation("flower_pot_cross"), "plant",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/poplar")).renderType("cutout"));
 
-        doorBlockWithRenderType(((DoorBlock) REOBlocks.DOOR_POPLAR.get()), modLoc("block/door/poplar_lower"), modLoc("block/door/poplar_upper"), "cutout");
-        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.TRAPDOOR_POPLAR.get()), modLoc("block/trapdoor/trapdoor_poplar"), true, "cutout");
+        simpleBlockWithItem(REOBlocks.POPLAR_LEAVES.get(),
+                models().cubeAll("poplar_leaves", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/poplar")));
 
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_POPLAR_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/poplar"),
+        signBlock(((StandingSignBlock) REOBlocks.POPLAR_SIGN.get()), ((WallSignBlock) REOBlocks.POPLAR_WALL_SIGN.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/poplar"));
+
+        hangingSignBlock(REOBlocks.POPLAR_HANGING_SIGN.get(), REOBlocks.POPLAR_WALL_HANGING_SIGN.get(),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/poplar"));
+
+        doorBlockWithRenderType(((DoorBlock) REOBlocks.POPLAR_DOOR.get()), modLoc("block/door/poplar_lower"),
+                modLoc("block/door/poplar_upper"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.POPLAR_TRAPDOOR.get()), modLoc("block/trapdoor/poplar"),
+                true, "cutout");
+
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_POPLAR_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/poplar"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/poplar_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_POPLAR_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/poplar"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_POPLAR_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/poplar"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/poplar"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_POPLAR_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/poplar"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_POPLAR_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/poplar"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/poplar_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_POPLAR_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/poplar"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_POPLAR_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/poplar"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/poplar"));
-        simpleBlockItem(REOBlocks.LOG_POPLAR_RESISTANT.get(),
-                models().orientable("log_poplar", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/poplar"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/poplar"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/poplar_top")));
-        simpleBlockItem(REOBlocks.WOOD_POPLAR_RESISTANT.get(),
-                models().cubeAll("wood_poplar", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/poplar")));
-        simpleBlockItem(REOBlocks.LOG_POPLAR_STRIPPED_RESISTANT.get(),
-                models().orientable("log_poplar_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/poplar"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/poplar"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/poplar_top")));
-        simpleBlockItem(REOBlocks.WOOD_POPLAR_STRIPPED_RESISTANT.get(),
-                models().cubeAll("wood_poplar_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/poplar")));
-        simpleBlockWithItem(REOBlocks.PLANKS_POPLAR_RESISTANT.get(),
-                models().cubeAll("planks_poplar", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/poplar")));
+        simpleBlockItem(REOBlocks.RESISTANT_POPLAR_LOG.get(), models().orientable("resistant_poplar_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/poplar"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/poplar"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/poplar_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_POPLAR_WOOD.get(), models().cubeAll("resistant_poplar_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/poplar")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_POPLAR_LOG.get(), models().orientable("resistant_stripped_poplar_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/poplar"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/poplar"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/poplar_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_POPLAR_WOOD.get(), models().cubeAll("resistant_stripped_poplar_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/poplar")));
+        simpleBlockWithItem(REOBlocks.RESISTANT_POPLAR_PLANKS.get(), models().cubeAll("resistant_poplar_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/poplar")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_POPLAR_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/poplar"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_POPLAR_RESISTANT.get()), blockTexture(REOBlocks.PLANKS_POPLAR.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/poplar"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_POPLAR_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/poplar"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_POPLAR_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/poplar"));
+        stairsBlock(((StairBlock) REOBlocks.RESISTANT_POPLAR_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/poplar"));
+        slabBlock(((SlabBlock) REOBlocks.RESISTANT_POPLAR_SLAB.get()), blockTexture(REOBlocks.POPLAR_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/poplar"));
+        fenceBlock(((FenceBlock) REOBlocks.RESISTANT_POPLAR_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/poplar"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RESISTANT_POPLAR_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/poplar"));
 
-        //
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_REDWOOD.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/redwood"),
+        // Redwood
+        axisBlock(((RotatedPillarBlock) REOBlocks.REDWOOD_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/redwood"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/redwood_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_REDWOOD.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/redwood"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.REDWOOD_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/redwood"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/redwood"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_REDWOOD_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/redwood"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_REDWOOD_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/redwood"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/redwood_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_REDWOOD_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/redwood"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_REDWOOD_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/redwood"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/redwood"));
-        simpleBlockItem(REOBlocks.LOG_REDWOOD.get(),
-                models().orientable("log_redwood", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/redwood"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/redwood"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/redwood_top")));
-        simpleBlockItem(REOBlocks.WOOD_REDWOOD.get(),
-                models().cubeAll("wood_redwood", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/redwood")));
-        simpleBlockItem(REOBlocks.LOG_REDWOOD_STRIPPED.get(),
-                models().orientable("log_redwood_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/redwood"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/redwood"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/redwood_top")));
-        simpleBlockItem(REOBlocks.WOOD_REDWOOD_STRIPPED.get(),
-                models().cubeAll("wood_redwood_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/redwood")));
-        simpleBlockWithItem(REOBlocks.PLANKS_REDWOOD.get(),
-                models().cubeAll("planks_redwood", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/redwood")));
+        simpleBlockItem(REOBlocks.REDWOOD_LOG.get(), models().orientable("redwood_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/redwood"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/redwood"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/redwood_top")));
+        simpleBlockItem(REOBlocks.REDWOOD_WOOD.get(), models().cubeAll("redwood_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/redwood")));
+        simpleBlockItem(REOBlocks.STRIPPED_REDWOOD_LOG.get(), models().orientable("stripped_redwood_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/redwood"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/redwood"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/redwood_top")));
+        simpleBlockItem(REOBlocks.STRIPPED_REDWOOD_WOOD.get(), models().cubeAll("stripped_redwood_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/redwood")));
+        simpleBlockWithItem(REOBlocks.REDWOOD_PLANKS.get(), models().cubeAll("redwood_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/redwood")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_REDWOOD.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/redwood"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_REDWOOD.get()), blockTexture(REOBlocks.PLANKS_REDWOOD.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/redwood"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_REDWOOD.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/redwood"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_REDWOOD.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/redwood"));
+        stairsBlock(((StairBlock) REOBlocks.REDWOOD_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/redwood"));
+        slabBlock(((SlabBlock) REOBlocks.REDWOOD_SLAB.get()), blockTexture(REOBlocks.REDWOOD_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/redwood"));
+        fenceBlock(((FenceBlock) REOBlocks.REDWOOD_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/redwood"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.REDWOOD_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/redwood"));
 
-        buttonBlock(((ButtonBlock) REOBlocks.BUTTON_REDWOOD.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/redwood"));
-        pressurePlateBlock(((PressurePlateBlock) REOBlocks.PRESSURE_PLATE_REDWOOD.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/redwood"));
-
-        saplingBlock(REOBlocks.SAPLING_REDWOOD, "redwood");
-        simpleBlockWithItem(REOBlocks.POTTED_SAPLING_REDWOOD.get(), models().singleTexture("potted_sapling_redwood", new ResourceLocation("flower_pot_cross"), "plant",
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/redwood")).renderType("cutout"));
-
-        simpleBlockWithItem(REOBlocks.LEAVES_REDWOOD.get(),
-                models().cubeAll("leaves_redwood", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/redwood")));
-
-        signBlock(((StandingSignBlock) REOBlocks.SIGN_REDWOOD.get()), ((WallSignBlock) REOBlocks.SIGN_REDWOOD_WALL.get()),
+        buttonBlock(((ButtonBlock) REOBlocks.REDWOOD_BUTTON.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/redwood"));
+        pressurePlateBlock(((PressurePlateBlock) REOBlocks.REDWOOD_PRESSURE_PLATE.get()),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/redwood"));
 
-        hangingSignBlock(REOBlocks.SIGN_HANGING_REDWOOD.get(), REOBlocks.SIGN_HANGING_REDWOOD_WALL.get(), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/redwood"));
+        saplingBlock(REOBlocks.REDWOOD_SAPLING, "redwood");
+        simpleBlockWithItem(REOBlocks.POTTED_REDWOOD_SAPLING.get(), models().singleTexture("potted_sapling_redwood",
+                new ResourceLocation("flower_pot_cross"), "plant",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/redwood")).renderType("cutout"));
 
-        doorBlockWithRenderType(((DoorBlock) REOBlocks.DOOR_REDWOOD.get()), modLoc("block/door/redwood_lower"), modLoc("block/door/redwood_upper"), "cutout");
-        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.TRAPDOOR_REDWOOD.get()), modLoc("block/trapdoor/trapdoor_redwood"), true, "cutout");
+        simpleBlockWithItem(REOBlocks.REDWOOD_LEAVES.get(),
+                models().cubeAll("redwood_leaves", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/redwood")));
 
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_REDWOOD_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/redwood"),
+        signBlock(((StandingSignBlock) REOBlocks.REDWOOD_SIGN.get()), ((WallSignBlock) REOBlocks.REDWOOD_WALL_SIGN.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/redwood"));
+
+        hangingSignBlock(REOBlocks.REDWOOD_HANGING_SIGN.get(), REOBlocks.REDWOOD_WALL_HANGING_SIGN.get(),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/redwood"));
+
+        doorBlockWithRenderType(((DoorBlock) REOBlocks.REDWOOD_DOOR.get()), modLoc("block/door/redwood_lower"),
+                modLoc("block/door/redwood_upper"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.REDWOOD_TRAPDOOR.get()), modLoc("block/trapdoor/redwood"),
+                true, "cutout");
+
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_REDWOOD_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/redwood"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/redwood_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_REDWOOD_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/redwood"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_REDWOOD_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/redwood"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/redwood"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_REDWOOD_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/redwood"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_REDWOOD_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/redwood"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/redwood_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_REDWOOD_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/redwood"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_REDWOOD_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/redwood"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/redwood"));
-        simpleBlockItem(REOBlocks.LOG_REDWOOD_RESISTANT.get(),
-                models().orientable("log_redwood", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/redwood"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/redwood"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/redwood_top")));
-        simpleBlockItem(REOBlocks.WOOD_REDWOOD_RESISTANT.get(),
-                models().cubeAll("wood_redwood", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/redwood")));
-        simpleBlockItem(REOBlocks.LOG_REDWOOD_STRIPPED_RESISTANT.get(),
-                models().orientable("log_redwood_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/redwood"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/redwood"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/redwood_top")));
-        simpleBlockItem(REOBlocks.WOOD_REDWOOD_STRIPPED_RESISTANT.get(),
-                models().cubeAll("wood_redwood_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/redwood")));
-        simpleBlockWithItem(REOBlocks.PLANKS_REDWOOD_RESISTANT.get(),
-                models().cubeAll("planks_redwood", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/redwood")));
+        simpleBlockItem(REOBlocks.RESISTANT_REDWOOD_LOG.get(), models().orientable("resistant_redwood_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/redwood"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/redwood"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/redwood_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_REDWOOD_WOOD.get(), models().cubeAll("resistant_redwood_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/redwood")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_REDWOOD_LOG.get(), models().orientable("resistant_stripped_redwood_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/redwood"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/redwood"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/redwood_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_REDWOOD_WOOD.get(), models().cubeAll("resistant_stripped_redwood_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/redwood")));
+        simpleBlockWithItem(REOBlocks.RESISTANT_REDWOOD_PLANKS.get(), models().cubeAll("resistant_redwood_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/redwood")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_REDWOOD_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/redwood"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_REDWOOD_RESISTANT.get()), blockTexture(REOBlocks.PLANKS_REDWOOD.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/redwood"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_REDWOOD_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/redwood"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_REDWOOD_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/redwood"));
+        stairsBlock(((StairBlock) REOBlocks.RESISTANT_REDWOOD_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/redwood"));
+        slabBlock(((SlabBlock) REOBlocks.RESISTANT_REDWOOD_SLAB.get()), blockTexture(REOBlocks.REDWOOD_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/redwood"));
+        fenceBlock(((FenceBlock) REOBlocks.RESISTANT_REDWOOD_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/redwood"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RESISTANT_REDWOOD_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/redwood"));
 
-        //
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_RUBBER.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber"),
+        // Rubber
+        axisBlock(((RotatedPillarBlock) REOBlocks.RUBBER_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_RUBBER_SAP.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber_sap"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RUBBER_LOG_SAP.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_RUBBER.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RUBBER_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_RUBBER_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/rubber"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RUBBER_WOOD_SAP.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber_sap"));
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_RUBBER_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/rubber"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/rubber_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_RUBBER_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/rubber"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_RUBBER_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/rubber"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/rubber"));
-        simpleBlockItem(REOBlocks.LOG_RUBBER.get(),
-                models().orientable("log_rubber", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber_top")));
-        simpleBlockItem(REOBlocks.WOOD_RUBBER.get(),
-                models().cubeAll("wood_rubber", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber")));
-        simpleBlockItem(REOBlocks.LOG_RUBBER_STRIPPED.get(),
-                models().orientable("log_rubber_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/rubber"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/rubber"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/rubber_top")));
-        simpleBlockItem(REOBlocks.WOOD_RUBBER_STRIPPED.get(),
-                models().cubeAll("wood_rubber_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/rubber")));
-        simpleBlockWithItem(REOBlocks.PLANKS_RUBBER.get(),
-                models().cubeAll("planks_rubber", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/rubber")));
+        simpleBlockItem(REOBlocks.RUBBER_LOG.get(), models().orientable("rubber_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber_top")));
+        simpleBlockItem(REOBlocks.RUBBER_LOG_SAP.get(), models().orientable("rubber_log_sap",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber_sap"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber_top")));
+        simpleBlockItem(REOBlocks.RUBBER_WOOD.get(), models().cubeAll("rubber_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber")));
+        simpleBlockItem(REOBlocks.RUBBER_WOOD_SAP.get(), models().cubeAll("rubber_wood_sap",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber_sap")));
+        simpleBlockItem(REOBlocks.STRIPPED_RUBBER_LOG.get(), models().orientable("stripped_rubber_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/rubber"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/rubber"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/rubber_top")));
+        simpleBlockItem(REOBlocks.STRIPPED_RUBBER_WOOD.get(), models().cubeAll("stripped_rubber_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/rubber")));
+        simpleBlockWithItem(REOBlocks.RUBBER_PLANKS.get(), models().cubeAll("rubber_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/rubber")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_RUBBER.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/rubber"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_RUBBER.get()), blockTexture(REOBlocks.PLANKS_RUBBER.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/rubber"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_RUBBER.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/rubber"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_RUBBER.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/rubber"));
+        stairsBlock(((StairBlock) REOBlocks.RUBBER_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/rubber"));
+        slabBlock(((SlabBlock) REOBlocks.RUBBER_SLAB.get()), blockTexture(REOBlocks.RUBBER_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/rubber"));
+        fenceBlock(((FenceBlock) REOBlocks.RUBBER_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/rubber"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RUBBER_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/rubber"));
 
-        buttonBlock(((ButtonBlock) REOBlocks.BUTTON_RUBBER.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/rubber"));
-        pressurePlateBlock(((PressurePlateBlock) REOBlocks.PRESSURE_PLATE_RUBBER.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/rubber"));
-
-        saplingBlock(REOBlocks.SAPLING_RUBBER, "rubber");
-        simpleBlockWithItem(REOBlocks.POTTED_SAPLING_RUBBER.get(), models().singleTexture("potted_sapling_rubber", new ResourceLocation("flower_pot_cross"), "plant",
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/rubber")).renderType("cutout"));
-
-        simpleBlockWithItem(REOBlocks.LEAVES_RUBBER.get(),
-                models().cubeAll("leaves_rubber", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/rubber")));
-
-        signBlock(((StandingSignBlock) REOBlocks.SIGN_RUBBER.get()), ((WallSignBlock) REOBlocks.SIGN_RUBBER_WALL.get()),
+        buttonBlock(((ButtonBlock) REOBlocks.RUBBER_BUTTON.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/rubber"));
+        pressurePlateBlock(((PressurePlateBlock) REOBlocks.RUBBER_PRESSURE_PLATE.get()),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/rubber"));
 
-        hangingSignBlock(REOBlocks.SIGN_HANGING_RUBBER.get(), REOBlocks.SIGN_HANGING_RUBBER_WALL.get(), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/rubber"));
+        saplingBlock(REOBlocks.RUBBER_SAPLING, "rubber");
+        simpleBlockWithItem(REOBlocks.POTTED_RUBBER_SAPLING.get(), models().singleTexture("potted_sapling_rubber",
+                new ResourceLocation("flower_pot_cross"), "plant",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/rubber")).renderType("cutout"));
 
-        doorBlockWithRenderType(((DoorBlock) REOBlocks.DOOR_RUBBER.get()), modLoc("block/door/rubber_lower"), modLoc("block/door/rubber_upper"), "cutout");
-        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.TRAPDOOR_RUBBER.get()), modLoc("block/trapdoor/trapdoor_rubber"), true, "cutout");
+        simpleBlockWithItem(REOBlocks.RUBBER_LEAVES.get(),
+                models().cubeAll("rubber_leaves", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/rubber")));
 
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_RUBBER_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber"),
+        signBlock(((StandingSignBlock) REOBlocks.RUBBER_SIGN.get()), ((WallSignBlock) REOBlocks.RUBBER_WALL_SIGN.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/rubber"));
+
+        hangingSignBlock(REOBlocks.RUBBER_HANGING_SIGN.get(), REOBlocks.RUBBER_WALL_HANGING_SIGN.get(),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/rubber"));
+
+        doorBlockWithRenderType(((DoorBlock) REOBlocks.RUBBER_DOOR.get()), modLoc("block/door/rubber_lower"),
+                modLoc("block/door/rubber_upper"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.RUBBER_TRAPDOOR.get()), modLoc("block/trapdoor/rubber"),
+                true, "cutout");
+
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_RUBBER_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_RUBBER_SAP_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber_sap"),
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_RUBBER_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_RUBBER_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_RUBBER_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/rubber"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_RUBBER_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/rubber"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/rubber_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_RUBBER_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/rubber"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_RUBBER_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/rubber"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/rubber"));
-        simpleBlockItem(REOBlocks.LOG_RUBBER_RESISTANT.get(),
-                models().orientable("log_rubber", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber_top")));
-        simpleBlockItem(REOBlocks.WOOD_RUBBER_RESISTANT.get(),
-                models().cubeAll("wood_rubber", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber")));
-        simpleBlockItem(REOBlocks.LOG_RUBBER_STRIPPED_RESISTANT.get(),
-                models().orientable("log_rubber_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/rubber"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/rubber"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/rubber_top")));
-        simpleBlockItem(REOBlocks.WOOD_RUBBER_STRIPPED_RESISTANT.get(),
-                models().cubeAll("wood_rubber_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/rubber")));
-        simpleBlockWithItem(REOBlocks.PLANKS_RUBBER_RESISTANT.get(),
-                models().cubeAll("planks_rubber", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/rubber")));
+        simpleBlockItem(REOBlocks.RESISTANT_RUBBER_LOG.get(), models().orientable("resistant_rubber_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_RUBBER_WOOD.get(), models().cubeAll("resistant_rubber_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/rubber")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_RUBBER_LOG.get(), models().orientable("resistant_stripped_rubber_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/rubber"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/rubber"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/rubber_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_RUBBER_WOOD.get(), models().cubeAll("resistant_stripped_rubber_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/rubber")));
+        simpleBlockWithItem(REOBlocks.RESISTANT_RUBBER_PLANKS.get(), models().cubeAll("resistant_rubber_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/rubber")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_RUBBER_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/rubber"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_RUBBER_RESISTANT.get()), blockTexture(REOBlocks.PLANKS_RUBBER.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/rubber"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_RUBBER_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/rubber"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_RUBBER_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/rubber"));
+        stairsBlock(((StairBlock) REOBlocks.RESISTANT_RUBBER_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/rubber"));
+        slabBlock(((SlabBlock) REOBlocks.RESISTANT_RUBBER_SLAB.get()), blockTexture(REOBlocks.RUBBER_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/rubber"));
+        fenceBlock(((FenceBlock) REOBlocks.RESISTANT_RUBBER_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/rubber"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RESISTANT_RUBBER_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/rubber"));
 
-        //
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_TEAK.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/teak"),
+        // Teak
+        axisBlock(((RotatedPillarBlock) REOBlocks.TEAK_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/teak"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/teak_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_TEAK.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/teak"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.TEAK_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/teak"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/teak"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_TEAK_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/teak"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_TEAK_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/teak"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/teak_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_TEAK_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/teak"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_TEAK_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/teak"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/teak"));
-        simpleBlockItem(REOBlocks.LOG_TEAK.get(),
-                models().orientable("log_teak", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/teak"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/teak"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/teak_top")));
-        simpleBlockItem(REOBlocks.WOOD_TEAK.get(),
-                models().cubeAll("wood_teak", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/teak")));
-        simpleBlockItem(REOBlocks.LOG_TEAK_STRIPPED.get(),
-                models().orientable("log_teak_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/teak"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/teak"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/teak_top")));
-        simpleBlockItem(REOBlocks.WOOD_TEAK_STRIPPED.get(),
-                models().cubeAll("wood_teak_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/teak")));
-        simpleBlockWithItem(REOBlocks.PLANKS_TEAK.get(),
-                models().cubeAll("planks_teak", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/teak")));
+        simpleBlockItem(REOBlocks.TEAK_LOG.get(), models().orientable("teak_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/teak"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/teak"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/teak_top")));
+        simpleBlockItem(REOBlocks.TEAK_WOOD.get(), models().cubeAll("teak_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/teak")));
+        simpleBlockItem(REOBlocks.STRIPPED_TEAK_LOG.get(), models().orientable("stripped_teak_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/teak"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/teak"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/teak_top")));
+        simpleBlockItem(REOBlocks.STRIPPED_TEAK_WOOD.get(), models().cubeAll("stripped_teak_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/teak")));
+        simpleBlockWithItem(REOBlocks.TEAK_PLANKS.get(), models().cubeAll("teak_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/teak")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_TEAK.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/teak"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_TEAK.get()), blockTexture(REOBlocks.PLANKS_TEAK.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/teak"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_TEAK.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/teak"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_TEAK.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/teak"));
+        stairsBlock(((StairBlock) REOBlocks.TEAK_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/teak"));
+        slabBlock(((SlabBlock) REOBlocks.TEAK_SLAB.get()), blockTexture(REOBlocks.TEAK_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/teak"));
+        fenceBlock(((FenceBlock) REOBlocks.TEAK_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/teak"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.TEAK_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/teak"));
 
-        buttonBlock(((ButtonBlock) REOBlocks.BUTTON_TEAK.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/teak"));
-        pressurePlateBlock(((PressurePlateBlock) REOBlocks.PRESSURE_PLATE_TEAK.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/teak"));
-
-        saplingBlock(REOBlocks.SAPLING_TEAK, "teak");
-        simpleBlockWithItem(REOBlocks.POTTED_SAPLING_TEAK.get(), models().singleTexture("potted_sapling_teak", new ResourceLocation("flower_pot_cross"), "plant",
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/teak")).renderType("cutout"));
-
-        simpleBlockWithItem(REOBlocks.LEAVES_TEAK.get(),
-                models().cubeAll("leaves_teak", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/teak")));
-
-        signBlock(((StandingSignBlock) REOBlocks.SIGN_TEAK.get()), ((WallSignBlock) REOBlocks.SIGN_TEAK_WALL.get()),
+        buttonBlock(((ButtonBlock) REOBlocks.TEAK_BUTTON.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/teak"));
+        pressurePlateBlock(((PressurePlateBlock) REOBlocks.TEAK_PRESSURE_PLATE.get()),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/teak"));
 
-        hangingSignBlock(REOBlocks.SIGN_HANGING_TEAK.get(), REOBlocks.SIGN_HANGING_TEAK_WALL.get(), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/teak"));
+        saplingBlock(REOBlocks.TEAK_SAPLING, "teak");
+        simpleBlockWithItem(REOBlocks.POTTED_TEAK_SAPLING.get(), models().singleTexture("potted_sapling_teak",
+                new ResourceLocation("flower_pot_cross"), "plant",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/teak")).renderType("cutout"));
 
-        doorBlockWithRenderType(((DoorBlock) REOBlocks.DOOR_TEAK.get()), modLoc("block/door/teak_lower"), modLoc("block/door/teak_upper"), "cutout");
-        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.TRAPDOOR_TEAK.get()), modLoc("block/trapdoor/trapdoor_teak"), true, "cutout");
+        simpleBlockWithItem(REOBlocks.TEAK_LEAVES.get(),
+                models().cubeAll("teak_leaves", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/teak")));
 
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_TEAK_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/teak"),
+        signBlock(((StandingSignBlock) REOBlocks.TEAK_SIGN.get()), ((WallSignBlock) REOBlocks.TEAK_WALL_SIGN.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/teak"));
+
+        hangingSignBlock(REOBlocks.TEAK_HANGING_SIGN.get(), REOBlocks.TEAK_WALL_HANGING_SIGN.get(),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/teak"));
+
+        doorBlockWithRenderType(((DoorBlock) REOBlocks.TEAK_DOOR.get()), modLoc("block/door/teak_lower"),
+                modLoc("block/door/teak_upper"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.TEAK_TRAPDOOR.get()), modLoc("block/trapdoor/teak"),
+                true, "cutout");
+
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_TEAK_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/teak"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/teak_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_TEAK_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/teak"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_TEAK_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/teak"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/teak"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_TEAK_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/teak"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_TEAK_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/teak"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/teak_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_TEAK_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/teak"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_TEAK_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/teak"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/teak"));
-        simpleBlockItem(REOBlocks.LOG_TEAK_RESISTANT.get(),
-                models().orientable("log_teak", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/teak"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/teak"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/teak_top")));
-        simpleBlockItem(REOBlocks.WOOD_TEAK_RESISTANT.get(),
-                models().cubeAll("wood_teak", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/teak")));
-        simpleBlockItem(REOBlocks.LOG_TEAK_STRIPPED_RESISTANT.get(),
-                models().orientable("log_teak_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/teak"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/teak"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/teak_top")));
-        simpleBlockItem(REOBlocks.WOOD_TEAK_STRIPPED_RESISTANT.get(),
-                models().cubeAll("wood_teak_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/teak")));
-        simpleBlockWithItem(REOBlocks.PLANKS_TEAK_RESISTANT.get(),
-                models().cubeAll("planks_teak", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/teak")));
+        simpleBlockItem(REOBlocks.RESISTANT_TEAK_LOG.get(), models().orientable("resistant_teak_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/teak"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/teak"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/teak_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_TEAK_WOOD.get(), models().cubeAll("resistant_teak_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/teak")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_TEAK_LOG.get(), models().orientable("resistant_stripped_teak_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/teak"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/teak"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/teak_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_TEAK_WOOD.get(), models().cubeAll("resistant_stripped_teak_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/teak")));
+        simpleBlockWithItem(REOBlocks.RESISTANT_TEAK_PLANKS.get(), models().cubeAll("resistant_teak_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/teak")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_TEAK_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/teak"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_TEAK_RESISTANT.get()), blockTexture(REOBlocks.PLANKS_TEAK.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/teak"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_TEAK_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/teak"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_TEAK_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/teak"));
+        stairsBlock(((StairBlock) REOBlocks.RESISTANT_TEAK_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/teak"));
+        slabBlock(((SlabBlock) REOBlocks.RESISTANT_TEAK_SLAB.get()), blockTexture(REOBlocks.TEAK_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/teak"));
+        fenceBlock(((FenceBlock) REOBlocks.RESISTANT_TEAK_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/teak"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RESISTANT_TEAK_FENCE_GATE.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/teak"));
 
-        //
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_WALNUT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/walnut"),
+        // Walnut
+        axisBlock(((RotatedPillarBlock) REOBlocks.WALNUT_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/walnut"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/walnut_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_WALNUT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/walnut"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.WALNUT_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/walnut"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/walnut"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_WALNUT_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/walnut"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_WALNUT_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/walnut"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/walnut_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_WALNUT_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/walnut"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_WALNUT_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/walnut"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/walnut"));
-        simpleBlockItem(REOBlocks.LOG_WALNUT.get(),
-                models().orientable("log_walnut", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/walnut"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/walnut"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/walnut_top")));
-        simpleBlockItem(REOBlocks.WOOD_WALNUT.get(),
-                models().cubeAll("wood_walnut", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/walnut")));
-        simpleBlockItem(REOBlocks.LOG_WALNUT_STRIPPED.get(),
-                models().orientable("log_walnut_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/walnut"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/walnut"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/walnut_top")));
-        simpleBlockItem(REOBlocks.WOOD_WALNUT_STRIPPED.get(),
-                models().cubeAll("wood_walnut_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/walnut")));
-        simpleBlockWithItem(REOBlocks.PLANKS_WALNUT.get(),
-                models().cubeAll("planks_walnut", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/walnut")));
+        simpleBlockItem(REOBlocks.WALNUT_LOG.get(), models().orientable("walnut_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/walnut"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/walnut"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/walnut_top")));
+        simpleBlockItem(REOBlocks.WALNUT_WOOD.get(), models().cubeAll("walnut_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/walnut")));
+        simpleBlockItem(REOBlocks.STRIPPED_WALNUT_LOG.get(), models().orientable("stripped_walnut_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/walnut"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/walnut"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/walnut_top")));
+        simpleBlockItem(REOBlocks.STRIPPED_WALNUT_WOOD.get(), models().cubeAll("stripped_walnut_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/walnut")));
+        simpleBlockWithItem(REOBlocks.WALNUT_PLANKS.get(), models().cubeAll("walnut_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/walnut")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_WALNUT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/walnut"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_WALNUT.get()), blockTexture(REOBlocks.PLANKS_WALNUT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/walnut"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_WALNUT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/walnut"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_WALNUT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/walnut"));
+        stairsBlock(((StairBlock) REOBlocks.WALNUT_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/walnut"));
+        slabBlock(((SlabBlock) REOBlocks.WALNUT_SLAB.get()), blockTexture(REOBlocks.WALNUT_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/walnut"));
+        fenceBlock(((FenceBlock) REOBlocks.WALNUT_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/walnut"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.WALNUT_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/walnut"));
 
-        buttonBlock(((ButtonBlock) REOBlocks.BUTTON_WALNUT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/walnut"));
-        pressurePlateBlock(((PressurePlateBlock) REOBlocks.PRESSURE_PLATE_WALNUT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/walnut"));
-
-        saplingBlock(REOBlocks.SAPLING_WALNUT, "walnut");
-        simpleBlockWithItem(REOBlocks.POTTED_SAPLING_WALNUT.get(), models().singleTexture("potted_sapling_walnut", new ResourceLocation("flower_pot_cross"), "plant",
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/walnut")).renderType("cutout"));
-
-        colourLeavesBlock(REOBlocks.LEAVES_WALNUT, "walnut");
-
-        signBlock(((StandingSignBlock) REOBlocks.SIGN_WALNUT.get()), ((WallSignBlock) REOBlocks.SIGN_WALNUT_WALL.get()),
+        buttonBlock(((ButtonBlock) REOBlocks.WALNUT_BUTTON.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/walnut"));
+        pressurePlateBlock(((PressurePlateBlock) REOBlocks.WALNUT_PRESSURE_PLATE.get()),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/walnut"));
 
-        hangingSignBlock(REOBlocks.SIGN_HANGING_WALNUT.get(), REOBlocks.SIGN_HANGING_WALNUT_WALL.get(), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/walnut"));
+        saplingBlock(REOBlocks.WALNUT_SAPLING, "walnut");
+        simpleBlockWithItem(REOBlocks.POTTED_WALNUT_SAPLING.get(), models().singleTexture("potted_sapling_walnut",
+                new ResourceLocation("flower_pot_cross"), "plant",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/walnut")).renderType("cutout"));
 
-        doorBlockWithRenderType(((DoorBlock) REOBlocks.DOOR_WALNUT.get()), modLoc("block/door/walnut_lower"), modLoc("block/door/walnut_upper"), "cutout");
-        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.TRAPDOOR_WALNUT.get()), modLoc("block/trapdoor/trapdoor_walnut"), true, "cutout");
+        simpleBlockWithItem(REOBlocks.WALNUT_LEAVES.get(),
+                models().cubeAll("walnut_leaves", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/walnut")));
 
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_WALNUT_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/walnut"),
+        signBlock(((StandingSignBlock) REOBlocks.WALNUT_SIGN.get()), ((WallSignBlock) REOBlocks.WALNUT_WALL_SIGN.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/walnut"));
+
+        hangingSignBlock(REOBlocks.WALNUT_HANGING_SIGN.get(), REOBlocks.WALNUT_WALL_HANGING_SIGN.get(),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/walnut"));
+
+        doorBlockWithRenderType(((DoorBlock) REOBlocks.WALNUT_DOOR.get()), modLoc("block/door/walnut_lower"),
+                modLoc("block/door/walnut_upper"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.WALNUT_TRAPDOOR.get()), modLoc("block/trapdoor/walnut"),
+                true, "cutout");
+
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_WALNUT_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/walnut"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/walnut_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_WALNUT_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/walnut"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_WALNUT_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/walnut"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/walnut"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_WALNUT_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/walnut"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_WALNUT_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/walnut"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/walnut_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_WALNUT_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/walnut"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_WALNUT_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/walnut"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/walnut"));
-        simpleBlockItem(REOBlocks.LOG_WALNUT_RESISTANT.get(),
-                models().orientable("log_walnut", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/walnut"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/walnut"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/walnut_top")));
-        simpleBlockItem(REOBlocks.WOOD_WALNUT_RESISTANT.get(),
-                models().cubeAll("wood_walnut", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/walnut")));
-        simpleBlockItem(REOBlocks.LOG_WALNUT_STRIPPED_RESISTANT.get(),
-                models().orientable("log_walnut_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/walnut"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/walnut"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/walnut_top")));
-        simpleBlockItem(REOBlocks.WOOD_WALNUT_STRIPPED_RESISTANT.get(),
-                models().cubeAll("wood_walnut_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/walnut")));
-        simpleBlockWithItem(REOBlocks.PLANKS_WALNUT_RESISTANT.get(),
-                models().cubeAll("planks_walnut", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/walnut")));
+        simpleBlockItem(REOBlocks.RESISTANT_WALNUT_LOG.get(), models().orientable("resistant_walnut_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/walnut"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/walnut"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/walnut_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_WALNUT_WOOD.get(), models().cubeAll("resistant_walnut_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/walnut")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_WALNUT_LOG.get(), models().orientable("resistant_stripped_walnut_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/walnut"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/walnut"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/walnut_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_WALNUT_WOOD.get(), models().cubeAll("resistant_stripped_walnut_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/walnut")));
+        simpleBlockWithItem(REOBlocks.RESISTANT_WALNUT_PLANKS.get(), models().cubeAll("resistant_walnut_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/walnut")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_WALNUT_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/walnut"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_WALNUT_RESISTANT.get()), blockTexture(REOBlocks.PLANKS_WALNUT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/walnut"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_WALNUT_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/walnut"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_WALNUT_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/walnut"));
+        stairsBlock(((StairBlock) REOBlocks.RESISTANT_WALNUT_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/walnut"));
+        slabBlock(((SlabBlock) REOBlocks.RESISTANT_WALNUT_SLAB.get()), blockTexture(REOBlocks.WALNUT_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/walnut"));
+        fenceBlock(((FenceBlock) REOBlocks.RESISTANT_WALNUT_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/walnut"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RESISTANT_WALNUT_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/walnut"));
 
-        //
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_WILLOW.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/willow"),
+        // Willow
+        axisBlock(((RotatedPillarBlock) REOBlocks.WILLOW_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/willow"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/willow_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_WILLOW.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/willow"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.WILLOW_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/willow"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/willow"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_WILLOW_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/willow"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_WILLOW_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/willow"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/willow_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_WILLOW_STRIPPED.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/willow"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.STRIPPED_WILLOW_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/willow"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/willow"));
-        simpleBlockItem(REOBlocks.LOG_WILLOW.get(),
-                models().orientable("log_willow", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/willow"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/willow"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/willow_top")));
-        simpleBlockItem(REOBlocks.WOOD_WILLOW.get(),
-                models().cubeAll("wood_willow", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/willow")));
-        simpleBlockItem(REOBlocks.LOG_WILLOW_STRIPPED.get(),
-                models().orientable("log_willow_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/willow"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/willow"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/willow_top")));
-        simpleBlockItem(REOBlocks.WOOD_WILLOW_STRIPPED.get(),
-                models().cubeAll("wood_willow_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/willow")));
-        simpleBlockWithItem(REOBlocks.PLANKS_WILLOW.get(),
-                models().cubeAll("planks_willow", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/willow")));
+        simpleBlockItem(REOBlocks.WILLOW_LOG.get(), models().orientable("willow_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/willow"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/willow"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/willow_top")));
+        simpleBlockItem(REOBlocks.WILLOW_WOOD.get(), models().cubeAll("willow_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/willow")));
+        simpleBlockItem(REOBlocks.STRIPPED_WILLOW_LOG.get(), models().orientable("stripped_willow_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/willow"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/willow"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/willow_top")));
+        simpleBlockItem(REOBlocks.STRIPPED_WILLOW_WOOD.get(), models().cubeAll("stripped_willow_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/willow")));
+        simpleBlockWithItem(REOBlocks.WILLOW_PLANKS.get(), models().cubeAll("willow_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/willow")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_WILLOW.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/willow"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_WILLOW.get()), blockTexture(REOBlocks.PLANKS_WILLOW.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/willow"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_WILLOW.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/willow"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_WILLOW.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/willow"));
+        stairsBlock(((StairBlock) REOBlocks.WILLOW_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/willow"));
+        slabBlock(((SlabBlock) REOBlocks.WILLOW_SLAB.get()), blockTexture(REOBlocks.WILLOW_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/willow"));
+        fenceBlock(((FenceBlock) REOBlocks.WILLOW_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/willow"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.WILLOW_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/willow"));
 
-        buttonBlock(((ButtonBlock) REOBlocks.BUTTON_WILLOW.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/willow"));
-        pressurePlateBlock(((PressurePlateBlock) REOBlocks.PRESSURE_PLATE_WILLOW.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/willow"));
-
-        saplingBlock(REOBlocks.SAPLING_WILLOW, "willow");
-        simpleBlockWithItem(REOBlocks.POTTED_SAPLING_WILLOW.get(), models().singleTexture("potted_sapling_willow", new ResourceLocation("flower_pot_cross"), "plant",
-                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/willow")).renderType("cutout"));
-
-        simpleBlockWithItem(REOBlocks.LEAVES_WILLOW.get(),
-                models().cubeAll("leaves_willow", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/willow")));
-
-        signBlock(((StandingSignBlock) REOBlocks.SIGN_WILLOW.get()), ((WallSignBlock) REOBlocks.SIGN_WILLOW_WALL.get()),
+        buttonBlock(((ButtonBlock) REOBlocks.WILLOW_BUTTON.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/willow"));
+        pressurePlateBlock(((PressurePlateBlock) REOBlocks.WILLOW_PRESSURE_PLATE.get()),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/willow"));
 
-        hangingSignBlock(REOBlocks.SIGN_HANGING_WILLOW.get(), REOBlocks.SIGN_HANGING_WILLOW_WALL.get(), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/willow"));
+        saplingBlock(REOBlocks.WILLOW_SAPLING, "willow");
+        simpleBlockWithItem(REOBlocks.POTTED_WILLOW_SAPLING.get(), models().singleTexture("potted_sapling_willow",
+                new ResourceLocation("flower_pot_cross"), "plant",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/sapling/willow")).renderType("cutout"));
 
-        doorBlockWithRenderType(((DoorBlock) REOBlocks.DOOR_WILLOW.get()), modLoc("block/door/willow_lower"), modLoc("block/door/willow_upper"), "cutout");
-        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.TRAPDOOR_WILLOW.get()), modLoc("block/trapdoor/trapdoor_willow"), true, "cutout");
+        simpleBlockWithItem(REOBlocks.WILLOW_LEAVES.get(),
+                models().cubeAll("willow_leaves", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/leaves/willow")));
 
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_WILLOW_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/willow"),
+        signBlock(((StandingSignBlock) REOBlocks.WILLOW_SIGN.get()), ((WallSignBlock) REOBlocks.WILLOW_WALL_SIGN.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/willow"));
+
+        hangingSignBlock(REOBlocks.WILLOW_HANGING_SIGN.get(), REOBlocks.WILLOW_WALL_HANGING_SIGN.get(),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/willow"));
+
+        doorBlockWithRenderType(((DoorBlock) REOBlocks.WILLOW_DOOR.get()), modLoc("block/door/willow_lower"),
+                modLoc("block/door/willow_upper"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) REOBlocks.WILLOW_TRAPDOOR.get()), modLoc("block/trapdoor/willow"),
+                true, "cutout");
+
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_WILLOW_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/willow"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/willow_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_WILLOW_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/willow"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_WILLOW_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/willow"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/willow"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.LOG_WILLOW_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/willow"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_WILLOW_LOG.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/willow"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/willow_top"));
-        axisBlock(((RotatedPillarBlock) REOBlocks.WOOD_WILLOW_STRIPPED_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/willow"),
+        axisBlock(((RotatedPillarBlock) REOBlocks.RESISTANT_STRIPPED_WILLOW_WOOD.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/willow"),
                 new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/willow"));
-        simpleBlockItem(REOBlocks.LOG_WILLOW_RESISTANT.get(),
-                models().orientable("log_willow", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/willow"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/willow"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/willow_top")));
-        simpleBlockItem(REOBlocks.WOOD_WILLOW_RESISTANT.get(),
-                models().cubeAll("wood_willow", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/willow")));
-        simpleBlockItem(REOBlocks.LOG_WILLOW_STRIPPED_RESISTANT.get(),
-                models().orientable("log_willow_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/willow"),
-                        new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/willow"), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/willow_top")));
-        simpleBlockItem(REOBlocks.WOOD_WILLOW_STRIPPED_RESISTANT.get(),
-                models().cubeAll("wood_willow_stripped", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/willow")));
-        simpleBlockWithItem(REOBlocks.PLANKS_WILLOW_RESISTANT.get(),
-                models().cubeAll("planks_willow", new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/willow")));
+        simpleBlockItem(REOBlocks.RESISTANT_WILLOW_LOG.get(), models().orientable("resistant_willow_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/willow"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/willow"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/willow_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_WILLOW_WOOD.get(), models().cubeAll("resistant_willow_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/log/willow")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_WILLOW_LOG.get(), models().orientable("resistant_stripped_willow_log",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/willow"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/willow"),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/willow_top")));
+        simpleBlockItem(REOBlocks.RESISTANT_STRIPPED_WILLOW_WOOD.get(), models().cubeAll("resistant_stripped_willow_wood",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/stripped/willow")));
+        simpleBlockWithItem(REOBlocks.RESISTANT_WILLOW_PLANKS.get(), models().cubeAll("resistant_willow_planks",
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/willow")));
 
-        stairsBlock(((StairBlock) REOBlocks.STAIRS_WILLOW_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/willow"));
-        slabBlock(((SlabBlock) REOBlocks.SLAB_WILLOW_RESISTANT.get()), blockTexture(REOBlocks.PLANKS_WILLOW.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/willow"));
-        fenceBlock(((FenceBlock) REOBlocks.FENCE_WILLOW_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/willow"));
-        fenceGateBlock(((FenceGateBlock) REOBlocks.FENCE_GATE_WILLOW_RESISTANT.get()), new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/willow"));
-
+        stairsBlock(((StairBlock) REOBlocks.RESISTANT_WILLOW_STAIRS.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/willow"));
+        slabBlock(((SlabBlock) REOBlocks.RESISTANT_WILLOW_SLAB.get()), blockTexture(REOBlocks.WILLOW_PLANKS.get()),
+                new ResourceLocation(RealEarthOres.MOD_ID, "block/tree/planks/willow"));
+        fenceBlock(((FenceBlock) REOBlocks.RESISTANT_WILLOW_FENCE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/willow"));
+        fenceGateBlock(((FenceGateBlock) REOBlocks.RESISTANT_WILLOW_FENCE_GATE.get()), new ResourceLocation(RealEarthOres.MOD_ID,
+                "block/tree/planks/willow"));
 
         // Lamp
-        addLampVariants(REOBlocks.LAMP_BLACK.get());
-        addLampVariants(REOBlocks.LAMP_RED.get());
-        addLampVariants(REOBlocks.LAMP_GREEN.get());
-        addLampVariants(REOBlocks.LAMP_BROWN.get());
-        addLampVariants(REOBlocks.LAMP_PURPLE.get());
-        addLampVariants(REOBlocks.LAMP_CYAN.get());
-        addLampVariants(REOBlocks.LAMP_LIGHTGRAY.get());
-        addLampVariants(REOBlocks.LAMP_GRAY.get());
-        addLampVariants(REOBlocks.LAMP_PINK.get());
-        addLampVariants(REOBlocks.LAMP_LIME.get());
-        addLampVariants(REOBlocks.LAMP_YELLOW.get());
-        addLampVariants(REOBlocks.LAMP_BLUE.get());
-        addLampVariants(REOBlocks.LAMP_LIGHTBLUE.get());
-        addLampVariants(REOBlocks.LAMP_MAGENTA.get());
-        addLampVariants(REOBlocks.LAMP_ORANGE.get());
-        addLampVariants(REOBlocks.LAMP_WHITE.get());
+        addLampVariants(REOBlocks.BLACK_LAMP.get());
+        addLampVariants(REOBlocks.RED_LAMP.get());
+        addLampVariants(REOBlocks.GREEN_LAMP.get());
+        addLampVariants(REOBlocks.BROWN_LAMP.get());
+        addLampVariants(REOBlocks.PURPLE_LAMP.get());
+        addLampVariants(REOBlocks.CYAN_LAMP.get());
+        addLampVariants(REOBlocks.LIGHT_GRAY_LAMP.get());
+        addLampVariants(REOBlocks.GRAY_LAMP.get());
+        addLampVariants(REOBlocks.PINK_LAMP.get());
+        addLampVariants(REOBlocks.LIME_LAMP.get());
+        addLampVariants(REOBlocks.YELLOW_LAMP.get());
+        addLampVariants(REOBlocks.BLUE_LAMP.get());
+        addLampVariants(REOBlocks.LIGHT_BLUE_LAMP.get());
+        addLampVariants(REOBlocks.MAGENTA_LAMP.get());
+        addLampVariants(REOBlocks.ORANGE_LAMP.get());
+        addLampVariants(REOBlocks.WHITE_LAMP.get());
 
         // Overworld Ore
-        simpleBlockWithItem(REOBlocks.ORE_ALUMINIUM.get(),
+        simpleBlockWithItem(REOBlocks.ALUMINUM_ORE.get(),
                 models().cubeAll("ore_aluminium", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/overworld/aluminium")));
-        simpleBlockWithItem(REOBlocks.ORE_LEAD.get(),
+        simpleBlockWithItem(REOBlocks.LEAD_ORE.get(),
                 models().cubeAll("ore_lead", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/overworld/lead")));
-        simpleBlockWithItem(REOBlocks.ORE_NICKEL.get(),
+        simpleBlockWithItem(REOBlocks.NICKEL_ORE.get(),
                 models().cubeAll("ore_nickel", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/overworld/nickel")));
-        simpleBlockWithItem(REOBlocks.ORE_PLATINUM.get(),
+        simpleBlockWithItem(REOBlocks.PLATINUM_ORE.get(),
                 models().cubeAll("ore_platinum", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/overworld/platinum")));
-        simpleBlockWithItem(REOBlocks.ORE_SILVER.get(),
+        simpleBlockWithItem(REOBlocks.SILVER_ORE.get(),
                 models().cubeAll("ore_silver", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/overworld/silver")));
-        simpleBlockWithItem(REOBlocks.ORE_TIN.get(),
+        simpleBlockWithItem(REOBlocks.TIN_ORE.get(),
                 models().cubeAll("ore_tin", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/overworld/tin")));
-        simpleBlockWithItem(REOBlocks.ORE_URANIUM.get(),
+        simpleBlockWithItem(REOBlocks.URANIUM_ORE.get(),
                 models().cubeAll("ore_uranium", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/overworld/uranium")));
-        simpleBlockWithItem(REOBlocks.ORE_ZINC.get(),
+        simpleBlockWithItem(REOBlocks.ZINC_ORE.get(),
                 models().cubeAll("ore_zinc", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/overworld/zinc")));
 
         // Gravel Ore
-        simpleBlockWithItem(REOBlocks.GRAVEL_ORE_ALUMINIUM.get(),
+        simpleBlockWithItem(REOBlocks.ALUMINUM_GRAVEL_ORE.get(),
                 models().cubeAll("gravel_ore_aluminium", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/gravel/aluminium")));
-        simpleBlockWithItem(REOBlocks.GRAVEL_ORE_COAL.get(),
+        simpleBlockWithItem(REOBlocks.COAL_GRAVEL_ORE.get(),
                 models().cubeAll("gravel_ore_coal", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/gravel/coal")));
-        simpleBlockWithItem(REOBlocks.GRAVEL_ORE_COPPER.get(),
+        simpleBlockWithItem(REOBlocks.COPPER_GRAVEL_ORE.get(),
                 models().cubeAll("gravel_ore_copper", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/gravel/copper")));
-        simpleBlockWithItem(REOBlocks.GRAVEL_ORE_DIAMOND.get(),
+        simpleBlockWithItem(REOBlocks.DIAMOND_GRAVEL_ORE.get(),
                 models().cubeAll("gravel_ore_diamond", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/gravel/diamond")));
-        simpleBlockWithItem(REOBlocks.GRAVEL_ORE_EMERALD.get(),
+        simpleBlockWithItem(REOBlocks.EMERALD_GRAVEL_ORE.get(),
                 models().cubeAll("gravel_ore_emerald", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/gravel/emerald")));
-        simpleBlockWithItem(REOBlocks.GRAVEL_ORE_GOLD.get(),
+        simpleBlockWithItem(REOBlocks.GOLD_GRAVEL_ORE.get(),
                 models().cubeAll("gravel_ore_gold", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/gravel/gold")));
-        simpleBlockWithItem(REOBlocks.GRAVEL_ORE_IRON.get(),
+        simpleBlockWithItem(REOBlocks.IRON_GRAVEL_ORE.get(),
                 models().cubeAll("gravel_ore_iron", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/gravel/iron")));
-        simpleBlockWithItem(REOBlocks.GRAVEL_ORE_LAPIS.get(),
+        simpleBlockWithItem(REOBlocks.LAPIS_GRAVEL_ORE.get(),
                 models().cubeAll("gravel_ore_lapis", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/gravel/lapis")));
-        simpleBlockWithItem(REOBlocks.GRAVEL_ORE_LEAD.get(),
+        simpleBlockWithItem(REOBlocks.LEAD_GRAVEL_ORE.get(),
                 models().cubeAll("gravel_ore_lead", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/gravel/lead")));
-        simpleBlockWithItem(REOBlocks.GRAVEL_ORE_NICKEL.get(),
+        simpleBlockWithItem(REOBlocks.NICKEL_GRAVEL_ORE.get(),
                 models().cubeAll("gravel_ore_nickel", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/gravel/nickel")));
-        simpleBlockWithItem(REOBlocks.GRAVEL_ORE_PLATINUM.get(),
+        simpleBlockWithItem(REOBlocks.PLATINUM_GRAVEL_ORE.get(),
                 models().cubeAll("gravel_ore_platinum", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/gravel/platinum")));
-        simpleBlockWithItem(REOBlocks.GRAVEL_ORE_REDSTONE.get(),
+        simpleBlockWithItem(REOBlocks.REDSTONE_GRAVEL_ORE.get(),
                 models().cubeAll("gravel_ore_redstone", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/gravel/redstone")));
-        simpleBlockWithItem(REOBlocks.GRAVEL_ORE_SILVER.get(),
+        simpleBlockWithItem(REOBlocks.SILVER_GRAVEL_ORE.get(),
                 models().cubeAll("gravel_ore_silver", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/gravel/silver")));
-        simpleBlockWithItem(REOBlocks.GRAVEL_ORE_TIN.get(),
+        simpleBlockWithItem(REOBlocks.TIN_GRAVEL_ORE.get(),
                 models().cubeAll("gravel_ore_tin", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/gravel/tin")));
-        simpleBlockWithItem(REOBlocks.GRAVEL_ORE_URANIUM.get(),
+        simpleBlockWithItem(REOBlocks.URANIUM_GRAVEL_ORE.get(),
                 models().cubeAll("gravel_ore_uranium", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/gravel/uranium")));
-        simpleBlockWithItem(REOBlocks.GRAVEL_ORE_ZINC.get(),
+        simpleBlockWithItem(REOBlocks.ZINC_GRAVEL_ORE.get(),
                 models().cubeAll("gravel_ore_zinc", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/gravel/zinc")));
 
         // Depslate Ore
-        simpleBlockWithItem(REOBlocks.DEEPSLATE_ALUMINIUM.get(),
+        simpleBlockWithItem(REOBlocks.DEEPSLATE_ALUMINIUM_ORE.get(),
                 models().cubeAll("deepslate_aluminium", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/deepslate/aluminium")));
-        simpleBlockWithItem(REOBlocks.DEEPSLATE_LEAD.get(),
+        simpleBlockWithItem(REOBlocks.DEEPSLATE_LEAD_ORE.get(),
                 models().cubeAll("deepslate_lead", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/deepslate/lead")));
-        simpleBlockWithItem(REOBlocks.DEEPSLATE_NICKEL.get(),
+        simpleBlockWithItem(REOBlocks.DEEPSLATE_NICKEL_ORE.get(),
                 models().cubeAll("deepslate_nickel", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/deepslate/nickel")));
-        simpleBlockWithItem(REOBlocks.DEEPSLATE_PLATINUM.get(),
+        simpleBlockWithItem(REOBlocks.DEEPSLATE_PLATINUM_ORE.get(),
                 models().cubeAll("deepslate_platinum", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/deepslate/platinum")));
-        simpleBlockWithItem(REOBlocks.DEEPSLATE_SILVER.get(),
+        simpleBlockWithItem(REOBlocks.DEEPSLATE_SILVER_ORE.get(),
                 models().cubeAll("deepslate_silver", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/deepslate/silver")));
-        simpleBlockWithItem(REOBlocks.DEEPSLATE_URANIUM.get(),
+        simpleBlockWithItem(REOBlocks.DEEPSLATE_URANIUM_ORE.get(),
                 models().cubeAll("deepslate_uranium", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/deepslate/uranium")));
-        simpleBlockWithItem(REOBlocks.DEEPSLATE_ZINC.get(),
+        simpleBlockWithItem(REOBlocks.DEEPSLATE_ZINC_ORE.get(),
                 models().cubeAll("deepslate_zinc", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/deepslate/zinc")));
 
         // Nether Ore
-        simpleBlockWithItem(REOBlocks.NETHER_ALUMINIUM.get(),
+        simpleBlockWithItem(REOBlocks.NETHER_ALUMINIUM_ORE.get(),
                 models().cubeAll("nether_aluminium", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/nether/aluminium")));
-        simpleBlockWithItem(REOBlocks.NETHER_COAL.get(),
+        simpleBlockWithItem(REOBlocks.NETHER_COAL_ORE.get(),
                 models().cubeAll("nether_coal", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/nether/coal")));
-        simpleBlockWithItem(REOBlocks.NETHER_COPPER.get(),
+        simpleBlockWithItem(REOBlocks.NETHER_COPPER_ORE.get(),
                 models().cubeAll("nether_copper", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/nether/copper")));
-        simpleBlockWithItem(REOBlocks.NETHER_DIAMOND.get(),
+        simpleBlockWithItem(REOBlocks.NETHER_DIAMOND_ORE.get(),
                 models().cubeAll("nether_diamond", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/nether/diamond")));
-        simpleBlockWithItem(REOBlocks.NETHER_EMERALD.get(),
+        simpleBlockWithItem(REOBlocks.NETHER_EMERALD_ORE.get(),
                 models().cubeAll("nether_emerald", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/nether/emerald")));
-        simpleBlockWithItem(REOBlocks.NETHER_IRON.get(),
+        simpleBlockWithItem(REOBlocks.NETHER_IRON_ORE.get(),
                 models().cubeAll("nether_iron", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/nether/iron")));
-        simpleBlockWithItem(REOBlocks.NETHER_LAPIS.get(),
+        simpleBlockWithItem(REOBlocks.NETHER_LAPIS_ORE.get(),
                 models().cubeAll("nether_lapis", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/nether/lapis")));
-        simpleBlockWithItem(REOBlocks.NETHER_LEAD.get(),
+        simpleBlockWithItem(REOBlocks.NETHER_LEAD_ORE.get(),
                 models().cubeAll("nether_lead", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/nether/lead")));
-        simpleBlockWithItem(REOBlocks.NETHER_NICKEL.get(),
+        simpleBlockWithItem(REOBlocks.NETHER_NICKEL_ORE.get(),
                 models().cubeAll("nether_nickel", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/nether/nickel")));
-        simpleBlockWithItem(REOBlocks.NETHER_PLATINUM.get(),
+        simpleBlockWithItem(REOBlocks.NETHER_PLATINUM_ORE.get(),
                 models().cubeAll("nether_platinum", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/nether/platinum")));
-        simpleBlockWithItem(REOBlocks.NETHER_REDSTONE.get(),
+        simpleBlockWithItem(REOBlocks.NETHER_REDSTONE_ORE.get(),
                 models().cubeAll("nether_redstone", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/nether/redstone")));
-        simpleBlockWithItem(REOBlocks.NETHER_SILVER.get(),
+        simpleBlockWithItem(REOBlocks.NETHER_SILVER_ORE.get(),
                 models().cubeAll("nether_silver", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/nether/silver")));
-        simpleBlockWithItem(REOBlocks.NETHER_TIN.get(),
+        simpleBlockWithItem(REOBlocks.NETHER_TIN_ORE.get(),
                 models().cubeAll("nether_tin", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/nether/tin")));
-        simpleBlockWithItem(REOBlocks.NETHER_URANIUM.get(),
+        simpleBlockWithItem(REOBlocks.NETHER_URANIUM_ORE.get(),
                 models().cubeAll("nether_uranium", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/nether/uranium")));
-        simpleBlockWithItem(REOBlocks.NETHER_ZINC.get(),
+        simpleBlockWithItem(REOBlocks.NETHER_ZINC_ORE.get(),
                 models().cubeAll("nether_zinc", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/nether/zinc")));
 
         // End Ore
-        simpleBlockWithItem(REOBlocks.ORE_ENDERITE.get(),
+        simpleBlockWithItem(REOBlocks.ENDERITE_ORE.get(),
                 models().cubeAll("end_enderite", new ResourceLocation(RealEarthOres.MOD_ID, "block/ores/end/enderite")));
 
         // Storage
-        simpleBlockWithItem(REOBlocks.BLOCK_ALUMINIUM.get(),
+        simpleBlockWithItem(REOBlocks.ALUMINUM_BLOCK.get(),
                 models().cubeAll("block_aluminium", new ResourceLocation(RealEarthOres.MOD_ID, "block/storage/aluminium")));
-        simpleBlockWithItem(REOBlocks.BLOCK_BRASS.get(),
+        simpleBlockWithItem(REOBlocks.BRASS_BLOCK.get(),
                 models().cubeAll("block_brass", new ResourceLocation(RealEarthOres.MOD_ID, "block/storage/brass")));
-        simpleBlockWithItem(REOBlocks.BLOCK_BRONZE.get(),
+        simpleBlockWithItem(REOBlocks.BRONZE_BLOCK.get(),
                 models().cubeAll("block_bronze", new ResourceLocation(RealEarthOres.MOD_ID, "block/storage/bronze")));
-        simpleBlockWithItem(REOBlocks.BLOCK_ELECTRUM.get(),
+        simpleBlockWithItem(REOBlocks.ELECTRUM_BLOCK.get(),
                 models().cubeAll("block_electrum", new ResourceLocation(RealEarthOres.MOD_ID, "block/storage/electrum")));
-        simpleBlockWithItem(REOBlocks.BLOCK_ENDERITE.get(),
+        simpleBlockWithItem(REOBlocks.ENDERITE_BLOCK.get(),
                 models().cubeAll("block_enderite", new ResourceLocation(RealEarthOres.MOD_ID, "block/storage/enderite")));
-        simpleBlockWithItem(REOBlocks.BLOCK_LEAD.get(),
+        simpleBlockWithItem(REOBlocks.LEAD_BLOCK.get(),
                 models().cubeAll("block_lead", new ResourceLocation(RealEarthOres.MOD_ID, "block/storage/lead")));
-        simpleBlockWithItem(REOBlocks.BLOCK_NICKEL.get(),
+        simpleBlockWithItem(REOBlocks.NICKEL_BLOCK.get(),
                 models().cubeAll("block_nickel", new ResourceLocation(RealEarthOres.MOD_ID, "block/storage/nickel")));
-        simpleBlockWithItem(REOBlocks.BLOCK_PERIDOT.get(),
+        simpleBlockWithItem(REOBlocks.PERIDOT_BLOCK.get(),
                 models().cubeAll("block_peridot", new ResourceLocation(RealEarthOres.MOD_ID, "block/storage/peridot")));
-        simpleBlockWithItem(REOBlocks.BLOCK_PLATINUM.get(),
+        simpleBlockWithItem(REOBlocks.PLATINUM_BLOCK.get(),
                 models().cubeAll("block_platinum", new ResourceLocation(RealEarthOres.MOD_ID, "block/storage/platinum")));
-        simpleBlockWithItem(REOBlocks.BLOCK_RUBY.get(),
+        simpleBlockWithItem(REOBlocks.RUBY_BLOCK.get(),
                 models().cubeAll("block_ruby", new ResourceLocation(RealEarthOres.MOD_ID, "block/storage/ruby")));
-        simpleBlockWithItem(REOBlocks.BLOCK_SAPPHIRE.get(),
+        simpleBlockWithItem(REOBlocks.SAPPHIRE_BLOCK.get(),
                 models().cubeAll("block_sapphire", new ResourceLocation(RealEarthOres.MOD_ID, "block/storage/sapphire")));
-        simpleBlockWithItem(REOBlocks.BLOCK_SILVER.get(),
+        simpleBlockWithItem(REOBlocks.SILVER_BLOCK.get(),
                 models().cubeAll("block_silver", new ResourceLocation(RealEarthOres.MOD_ID, "block/storage/silver")));
-        simpleBlockWithItem(REOBlocks.BLOCK_STEEL.get(),
+        simpleBlockWithItem(REOBlocks.STEEL_BLOCK.get(),
                 models().cubeAll("block_steel", new ResourceLocation(RealEarthOres.MOD_ID, "block/storage/steel")));
-        simpleBlockWithItem(REOBlocks.BLOCK_TIN.get(),
+        simpleBlockWithItem(REOBlocks.TIN_BLOCK.get(),
                 models().cubeAll("block_tin", new ResourceLocation(RealEarthOres.MOD_ID, "block/storage/tin")));
-        simpleBlockWithItem(REOBlocks.BLOCK_URANIUM.get(),
+        simpleBlockWithItem(REOBlocks.URANIUM_BLOCK.get(),
                 models().cubeAll("block_uranium", new ResourceLocation(RealEarthOres.MOD_ID, "block/storage/uranium")));
-        simpleBlockWithItem(REOBlocks.BLOCK_ZINC.get(),
+        simpleBlockWithItem(REOBlocks.ZINC_BLOCK.get(),
                 models().cubeAll("block_zinc", new ResourceLocation(RealEarthOres.MOD_ID, "block/storage/zinc")));
 
         // Raw Storage
-        simpleBlockWithItem(REOBlocks.BLOCK_RAW_ALUMINIUM.get(),
+        simpleBlockWithItem(REOBlocks.RAW_ALUMINIUM_BLOCK.get(),
                 models().cubeAll("block_raw_aluminium", new ResourceLocation(RealEarthOres.MOD_ID, "block/storage/raw/aluminium")));
-        simpleBlockWithItem(REOBlocks.BLOCK_RAW_ENDERITE.get(),
+        simpleBlockWithItem(REOBlocks.RAW_ENDERITE_BLOCK.get(),
                 models().cubeAll("block_raw_enderite", new ResourceLocation(RealEarthOres.MOD_ID, "block/storage/raw/enderite")));
-        simpleBlockWithItem(REOBlocks.BLOCK_RAW_LEAD.get(),
+        simpleBlockWithItem(REOBlocks.RAW_LEAD_BLOCK.get(),
                 models().cubeAll("block_raw_lead", new ResourceLocation(RealEarthOres.MOD_ID, "block/storage/raw/lead")));
-        simpleBlockWithItem(REOBlocks.BLOCK_RAW_NICKEL.get(),
+        simpleBlockWithItem(REOBlocks.RAW_NICKEL_BLOCK.get(),
                 models().cubeAll("block_raw_nickel", new ResourceLocation(RealEarthOres.MOD_ID, "block/storage/raw/nickel")));
-        simpleBlockWithItem(REOBlocks.BLOCK_RAW_PLATINUM.get(),
+        simpleBlockWithItem(REOBlocks.RAW_PLATINUM_BLOCK.get(),
                 models().cubeAll("block_raw_platinum", new ResourceLocation(RealEarthOres.MOD_ID, "block/storage/raw/platinum")));
-        simpleBlockWithItem(REOBlocks.BLOCK_RAW_SILVER.get(),
+        simpleBlockWithItem(REOBlocks.RAW_SILVER_BLOCK.get(),
                 models().cubeAll("block_raw_silver", new ResourceLocation(RealEarthOres.MOD_ID, "block/storage/raw/silver")));
-        simpleBlockWithItem(REOBlocks.BLOCK_RAW_TIN.get(),
+        simpleBlockWithItem(REOBlocks.RAW_TIN_BLOCK.get(),
                 models().cubeAll("block_raw_tin", new ResourceLocation(RealEarthOres.MOD_ID, "block/storage/raw/tin")));
-        simpleBlockWithItem(REOBlocks.BLOCK_RAW_URANIUM.get(),
+        simpleBlockWithItem(REOBlocks.RAW_URANIUM_BLOCK.get(),
                 models().cubeAll("block_raw_uranium", new ResourceLocation(RealEarthOres.MOD_ID, "block/storage/raw/uranium")));
-        simpleBlockWithItem(REOBlocks.BLOCK_RAW_ZINC.get(),
+        simpleBlockWithItem(REOBlocks.RAW_ZINC_BLOCK.get(),
                 models().cubeAll("block_raw_zinc", new ResourceLocation(RealEarthOres.MOD_ID, "block/storage/raw/zinc")));
 
 

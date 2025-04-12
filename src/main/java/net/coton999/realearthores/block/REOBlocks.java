@@ -161,37 +161,37 @@ public class REOBlocks {
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK).sound(SoundType.NETHERRACK)));
 
     // Storage
-    public static final RegistryObject<Block> BLOCK_ALUMINIUM = registerBlock("block_aluminium",
+    public static final RegistryObject<Block> ALUMINUM_BLOCK = registerBlock("block_aluminium",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops().strength(4f)));
-    public static final RegistryObject<Block> BLOCK_BRASS = registerBlock("block_brass",
+    public static final RegistryObject<Block> BRASS_BLOCK = registerBlock("block_brass",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops().strength(4f)));
-    public static final RegistryObject<Block> BLOCK_BRONZE = registerBlock("block_bronze",
+    public static final RegistryObject<Block> BRONZE_BLOCK = registerBlock("block_bronze",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops().strength(4f)));
-    public static final RegistryObject<Block> BLOCK_ELECTRUM = registerBlock("block_electrum",
+    public static final RegistryObject<Block> ELECTRUM_BLOCK = registerBlock("block_electrum",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops().strength(4f)));
-    public static final RegistryObject<Block> BLOCK_ENDERITE = registerBlock("block_enderite",
+    public static final RegistryObject<Block> ENDERITE_BLOCK = registerBlock("block_enderite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(4f)));
-    public static final RegistryObject<Block> BLOCK_LEAD = registerBlock("block_lead",
+    public static final RegistryObject<Block> LEAD_BLOCK = registerBlock("block_lead",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(4f)));
-    public static final RegistryObject<Block> BLOCK_NICKEL = registerBlock("block_nickel",
+    public static final RegistryObject<Block> NICKEL_BLOCK = registerBlock("block_nickel",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(4f)));
-    public static final RegistryObject<Block> BLOCK_PERIDOT = registerBlock("block_peridot",
+    public static final RegistryObject<Block> PERIDOT_BLOCK = registerBlock("block_peridot",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).strength(1.5f)));
-    public static final RegistryObject<Block> BLOCK_PLATINUM = registerBlock("block_platinum",
+    public static final RegistryObject<Block> PLATINUM_BLOCK = registerBlock("block_platinum",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(4f)));
-    public static final RegistryObject<Block> BLOCK_RUBY = registerBlock("block_ruby",
+    public static final RegistryObject<Block> RUBY_BLOCK = registerBlock("block_ruby",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).strength(1.5f)));
-    public static final RegistryObject<Block> BLOCK_SAPPHIRE = registerBlock("block_sapphire",
+    public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("block_sapphire",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).strength(1.5f)));
-    public static final RegistryObject<Block> BLOCK_SILVER = registerBlock("block_silver",
+    public static final RegistryObject<Block> SILVER_BLOCK = registerBlock("block_silver",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(4f)));
-    public static final RegistryObject<Block> BLOCK_STEEL = registerBlock("block_steel",
+    public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("block_steel",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(4f)));
-    public static final RegistryObject<Block> BLOCK_TIN = registerBlock("block_tin",
+    public static final RegistryObject<Block> TIN_BLOCK = registerBlock("block_tin",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(4f)));
-    public static final RegistryObject<Block> BLOCK_URANIUM = registerBlock("block_uranium",
+    public static final RegistryObject<Block> URANIUM_BLOCK = registerBlock("block_uranium",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(4f)));
-    public static final RegistryObject<Block> BLOCK_ZINC = registerBlock("block_zinc",
+    public static final RegistryObject<Block> ZINC_BLOCK = registerBlock("block_zinc",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(4f)));
 
     // Budding
@@ -206,53 +206,53 @@ public class REOBlocks {
                     .pushReaction(PushReaction.DESTROY).randomTicks()));
 
     // Raw Storage
-    public static final RegistryObject<Block> BLOCK_RAW_ALUMINIUM = registerBlock("block_raw_aluminium",
+    public static final RegistryObject<Block> RAW_ALUMINIUM_BLOCK = registerBlock("block_raw_aluminium",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(5f)));
-    public static final RegistryObject<Block> BLOCK_RAW_ENDERITE = registerBlock("block_raw_enderite",
+    public static final RegistryObject<Block> RAW_ENDERITE_BLOCK = registerBlock("block_raw_enderite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(5f)));
-    public static final RegistryObject<Block> BLOCK_RAW_LEAD = registerBlock("block_raw_lead",
+    public static final RegistryObject<Block> RAW_LEAD_BLOCK = registerBlock("block_raw_lead",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(5f)));
-    public static final RegistryObject<Block> BLOCK_RAW_NICKEL = registerBlock("block_raw_nickel",
+    public static final RegistryObject<Block> RAW_NICKEL_BLOCK = registerBlock("block_raw_nickel",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(5f)));
-    public static final RegistryObject<Block> BLOCK_RAW_PLATINUM = registerBlock("block_raw_platinum",
+    public static final RegistryObject<Block> RAW_PLATINUM_BLOCK = registerBlock("block_raw_platinum",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(5f)));
-    public static final RegistryObject<Block> BLOCK_RAW_SILVER = registerBlock("block_raw_silver",
+    public static final RegistryObject<Block> RAW_SILVER_BLOCK = registerBlock("block_raw_silver",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(5f)));
-    public static final RegistryObject<Block> BLOCK_RAW_TIN = registerBlock("block_raw_tin",
+    public static final RegistryObject<Block> RAW_TIN_BLOCK = registerBlock("block_raw_tin",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(5f)));
-    public static final RegistryObject<Block> BLOCK_RAW_URANIUM = registerBlock("block_raw_uranium",
+    public static final RegistryObject<Block> RAW_URANIUM_BLOCK = registerBlock("block_raw_uranium",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(5f)));
-    public static final RegistryObject<Block> BLOCK_RAW_ZINC = registerBlock("block_raw_zinc",
+    public static final RegistryObject<Block> RAW_ZINC_BLOCK = registerBlock("block_raw_zinc",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(5f)));
 
     // Overworld Ores
-    public static final RegistryObject<Block> ORE_ALUMINIUM = registerBlock("ore_aluminium",
+    public static final RegistryObject<Block> ALUMINUM_ORE = registerBlock("ore_aluminium",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> ORE_LEAD = registerBlock("ore_lead",
+    public static final RegistryObject<Block> LEAD_ORE = registerBlock("ore_lead",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> ORE_NICKEL = registerBlock("ore_nickel",
+    public static final RegistryObject<Block> NICKEL_ORE = registerBlock("ore_nickel",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> ORE_PLATINUM = registerBlock("ore_platinum",
+    public static final RegistryObject<Block> PLATINUM_ORE = registerBlock("ore_platinum",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> ORE_SILVER = registerBlock("ore_silver",
+    public static final RegistryObject<Block> SILVER_ORE = registerBlock("ore_silver",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> ORE_TIN = registerBlock("ore_tin",
+    public static final RegistryObject<Block> TIN_ORE = registerBlock("ore_tin",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> ORE_URANIUM = registerBlock("ore_uranium",
+    public static final RegistryObject<Block> URANIUM_ORE = registerBlock("ore_uranium",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(5f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> ORE_ZINC = registerBlock("ore_zinc",
+    public static final RegistryObject<Block> ZINC_ORE = registerBlock("ore_zinc",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(3f), UniformInt.of(2, 6)));
 
     // Cluster
-    public static final RegistryObject<Block> CLUSTER_PERIDOT = registerBlock("cluster_peridot",
+    public static final RegistryObject<Block> PERIDOT_CLUSTER = registerBlock("cluster_peridot",
             () -> new ClusterBlock(7, 3,
                     BlockBehaviour.Properties.copy(Blocks.AMETHYST_CLUSTER).randomTicks()
                             .pushReaction(PushReaction.DESTROY).forceSolidOn().noOcclusion().strength(1.5F)));
@@ -267,7 +267,7 @@ public class REOBlocks {
                     BlockBehaviour.Properties.copy(Blocks.AMETHYST_CLUSTER).sound(SoundType.SMALL_AMETHYST_BUD).pushReaction(PushReaction.DESTROY).forceSolidOn().noOcclusion()));
 
 
-    public static final RegistryObject<Block> CLUSTER_RUBY = registerBlock("cluster_ruby",
+    public static final RegistryObject<Block> RUBY_CLUSTER = registerBlock("cluster_ruby",
             () -> new ClusterBlock(7, 3,
                     BlockBehaviour.Properties.copy(Blocks.AMETHYST_CLUSTER).randomTicks()
                             .pushReaction(PushReaction.DESTROY).noOcclusion().strength(1.5F)));
@@ -282,7 +282,7 @@ public class REOBlocks {
                     BlockBehaviour.Properties.copy(Blocks.AMETHYST_CLUSTER).pushReaction(PushReaction.DESTROY).forceSolidOn().noOcclusion().strength(1.5F)));
 
 
-    public static final RegistryObject<Block> CLUSTER_SAPPHIRE = registerBlock("cluster_sapphire",
+    public static final RegistryObject<Block> SAPPHIRE_CLUSTER = registerBlock("cluster_sapphire",
             () -> new ClusterBlock(7, 3,
                     BlockBehaviour.Properties.copy(Blocks.AMETHYST_CLUSTER).randomTicks()
                             .pushReaction(PushReaction.DESTROY).noOcclusion().strength(1.5F)));
@@ -297,127 +297,127 @@ public class REOBlocks {
                     BlockBehaviour.Properties.copy(Blocks.AMETHYST_CLUSTER).pushReaction(PushReaction.DESTROY).forceSolidOn().noOcclusion().strength(1.5F)));
 
     // Gravel Ores
-    public static final RegistryObject<Block> GRAVEL_ORE_ALUMINIUM = registerBlock("gravel_ore_aluminium",
+    public static final RegistryObject<Block> ALUMINUM_GRAVEL_ORE = registerBlock("gravel_ore_aluminium",
             () -> new GravelOreBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL)
                     .sound(SoundType.GRAVEL).strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> GRAVEL_ORE_COAL = registerBlock("gravel_ore_coal",
+    public static final RegistryObject<Block> COAL_GRAVEL_ORE = registerBlock("gravel_ore_coal",
             () -> new GravelOreBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL)
                     .sound(SoundType.GRAVEL).strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> GRAVEL_ORE_COPPER = registerBlock("gravel_ore_copper",
+    public static final RegistryObject<Block> COPPER_GRAVEL_ORE = registerBlock("gravel_ore_copper",
             () -> new GravelOreBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL)
                     .sound(SoundType.GRAVEL).strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> GRAVEL_ORE_DIAMOND = registerBlock("gravel_ore_diamond",
+    public static final RegistryObject<Block> DIAMOND_GRAVEL_ORE = registerBlock("gravel_ore_diamond",
             () -> new GravelOreBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL)
                     .sound(SoundType.GRAVEL).strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> GRAVEL_ORE_EMERALD = registerBlock("gravel_ore_emerald",
+    public static final RegistryObject<Block> EMERALD_GRAVEL_ORE = registerBlock("gravel_ore_emerald",
             () -> new GravelOreBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL)
                     .sound(SoundType.GRAVEL).strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> GRAVEL_ORE_GOLD = registerBlock("gravel_ore_gold",
+    public static final RegistryObject<Block> GOLD_GRAVEL_ORE = registerBlock("gravel_ore_gold",
             () -> new GravelOreBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL)
                     .sound(SoundType.GRAVEL).strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> GRAVEL_ORE_IRON = registerBlock("gravel_ore_iron",
+    public static final RegistryObject<Block> IRON_GRAVEL_ORE = registerBlock("gravel_ore_iron",
             () -> new GravelOreBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL)
                     .sound(SoundType.GRAVEL).strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> GRAVEL_ORE_LAPIS = registerBlock("gravel_ore_lapis",
+    public static final RegistryObject<Block> LAPIS_GRAVEL_ORE = registerBlock("gravel_ore_lapis",
             () -> new GravelOreBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL)
                     .sound(SoundType.GRAVEL).strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> GRAVEL_ORE_LEAD = registerBlock("gravel_ore_lead",
+    public static final RegistryObject<Block> LEAD_GRAVEL_ORE = registerBlock("gravel_ore_lead",
             () -> new GravelOreBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL)
                     .sound(SoundType.GRAVEL).strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> GRAVEL_ORE_NICKEL = registerBlock("gravel_ore_nickel",
+    public static final RegistryObject<Block> NICKEL_GRAVEL_ORE = registerBlock("gravel_ore_nickel",
             () -> new GravelOreBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL)
                     .sound(SoundType.GRAVEL).strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> GRAVEL_ORE_PLATINUM = registerBlock("gravel_ore_platinum",
+    public static final RegistryObject<Block> PLATINUM_GRAVEL_ORE = registerBlock("gravel_ore_platinum",
             () -> new GravelOreBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL)
                     .sound(SoundType.GRAVEL).strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> GRAVEL_ORE_REDSTONE = registerBlock("gravel_ore_redstone",
+    public static final RegistryObject<Block> REDSTONE_GRAVEL_ORE = registerBlock("gravel_ore_redstone",
             () -> new GravelOreBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL)
                     .sound(SoundType.GRAVEL).strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> GRAVEL_ORE_SILVER = registerBlock("gravel_ore_silver",
+    public static final RegistryObject<Block> SILVER_GRAVEL_ORE = registerBlock("gravel_ore_silver",
             () -> new GravelOreBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL)
                     .sound(SoundType.GRAVEL).strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> GRAVEL_ORE_TIN = registerBlock("gravel_ore_tin",
+    public static final RegistryObject<Block> TIN_GRAVEL_ORE = registerBlock("gravel_ore_tin",
             () -> new GravelOreBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL)
                     .sound(SoundType.GRAVEL).strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> GRAVEL_ORE_URANIUM = registerBlock("gravel_ore_uranium",
+    public static final RegistryObject<Block> URANIUM_GRAVEL_ORE = registerBlock("gravel_ore_uranium",
             () -> new GravelOreBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL)
                     .sound(SoundType.GRAVEL).strength(5f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> GRAVEL_ORE_ZINC = registerBlock("gravel_ore_zinc",
+    public static final RegistryObject<Block> ZINC_GRAVEL_ORE = registerBlock("gravel_ore_zinc",
             () -> new GravelOreBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL)
                     .sound(SoundType.GRAVEL).strength(3f), UniformInt.of(2, 6)));
 
     // Deepslate Ores
-    public static final RegistryObject<Block> DEEPSLATE_ALUMINIUM = registerBlock("deepslate_aluminium",
+    public static final RegistryObject<Block> DEEPSLATE_ALUMINIUM_ORE = registerBlock("deepslate_aluminium",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.DEEPSLATE)
                     .strength(4.5f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> DEEPSLATE_LEAD = registerBlock("deepslate_lead",
+    public static final RegistryObject<Block> DEEPSLATE_LEAD_ORE = registerBlock("deepslate_lead",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.DEEPSLATE)
                     .strength(4.5f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> DEEPSLATE_NICKEL = registerBlock("deepslate_nickel",
+    public static final RegistryObject<Block> DEEPSLATE_NICKEL_ORE = registerBlock("deepslate_nickel",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.DEEPSLATE)
                     .strength(4.5f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> DEEPSLATE_PLATINUM = registerBlock("deepslate_platinum",
+    public static final RegistryObject<Block> DEEPSLATE_PLATINUM_ORE = registerBlock("deepslate_platinum",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.DEEPSLATE)
                     .strength(4.5f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> DEEPSLATE_SILVER = registerBlock("deepslate_silver",
+    public static final RegistryObject<Block> DEEPSLATE_SILVER_ORE = registerBlock("deepslate_silver",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.DEEPSLATE)
                     .strength(4.5f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> DEEPSLATE_URANIUM = registerBlock("deepslate_uranium",
+    public static final RegistryObject<Block> DEEPSLATE_URANIUM_ORE = registerBlock("deepslate_uranium",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.DEEPSLATE)
                     .strength(4.5f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> DEEPSLATE_ZINC = registerBlock("deepslate_zinc",
+    public static final RegistryObject<Block> DEEPSLATE_ZINC_ORE = registerBlock("deepslate_zinc",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
                     .sound(SoundType.DEEPSLATE).strength(4.5f), UniformInt.of(2, 6)));
 
     // Nether Ore
-    public static final RegistryObject<Block> NETHER_ALUMINIUM = registerBlock("nether_aluminium",
+    public static final RegistryObject<Block> NETHER_ALUMINIUM_ORE = registerBlock("nether_aluminium",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
                     .sound(SoundType.NETHER_ORE).strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> NETHER_COAL = registerBlock("nether_coal",
+    public static final RegistryObject<Block> NETHER_COAL_ORE = registerBlock("nether_coal",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
                     .sound(SoundType.NETHER_ORE).strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> NETHER_COPPER = registerBlock("nether_copper",
+    public static final RegistryObject<Block> NETHER_COPPER_ORE = registerBlock("nether_copper",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
                     .sound(SoundType.NETHER_ORE).strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> NETHER_DIAMOND = registerBlock("nether_diamond",
+    public static final RegistryObject<Block> NETHER_DIAMOND_ORE = registerBlock("nether_diamond",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
                     .sound(SoundType.NETHER_ORE).strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> NETHER_EMERALD = registerBlock("nether_emerald",
+    public static final RegistryObject<Block> NETHER_EMERALD_ORE = registerBlock("nether_emerald",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
                     .sound(SoundType.NETHER_ORE).strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> NETHER_IRON = registerBlock("nether_iron",
+    public static final RegistryObject<Block> NETHER_IRON_ORE = registerBlock("nether_iron",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
                     .sound(SoundType.NETHER_ORE).strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> NETHER_LAPIS = registerBlock("nether_lapis",
+    public static final RegistryObject<Block> NETHER_LAPIS_ORE = registerBlock("nether_lapis",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
                     .sound(SoundType.NETHER_ORE).strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> NETHER_LEAD = registerBlock("nether_lead",
+    public static final RegistryObject<Block> NETHER_LEAD_ORE = registerBlock("nether_lead",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
                     .sound(SoundType.NETHER_ORE).strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> NETHER_NICKEL = registerBlock("nether_nickel",
+    public static final RegistryObject<Block> NETHER_NICKEL_ORE = registerBlock("nether_nickel",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
                     .sound(SoundType.NETHER_ORE).strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> NETHER_PLATINUM = registerBlock("nether_platinum",
+    public static final RegistryObject<Block> NETHER_PLATINUM_ORE = registerBlock("nether_platinum",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
                     .sound(SoundType.NETHER_ORE).strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> NETHER_REDSTONE = registerBlock("nether_redstone",
+    public static final RegistryObject<Block> NETHER_REDSTONE_ORE = registerBlock("nether_redstone",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
                     .sound(SoundType.NETHER_ORE).strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> NETHER_SILVER = registerBlock("nether_silver",
+    public static final RegistryObject<Block> NETHER_SILVER_ORE = registerBlock("nether_silver",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
                     .sound(SoundType.NETHER_ORE).strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> NETHER_TIN = registerBlock("nether_tin",
+    public static final RegistryObject<Block> NETHER_TIN_ORE = registerBlock("nether_tin",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
                     .sound(SoundType.NETHER_ORE).strength(3f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> NETHER_URANIUM = registerBlock("nether_uranium",
+    public static final RegistryObject<Block> NETHER_URANIUM_ORE = registerBlock("nether_uranium",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
                     .sound(SoundType.NETHER_ORE).strength(5f), UniformInt.of(2, 6)));
-    public static final RegistryObject<Block> NETHER_ZINC = registerBlock("nether_zinc",
+    public static final RegistryObject<Block> NETHER_ZINC_ORE = registerBlock("nether_zinc",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
                     .sound(SoundType.NETHER_ORE).strength(3f), UniformInt.of(2, 6)));
 
     // End Ore
-    public static final RegistryObject<Block> ORE_ENDERITE = registerBlock("ore_enderite",
+    public static final RegistryObject<Block> ENDERITE_ORE = registerBlock("ore_enderite",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE)
                     .strength(5f), UniformInt.of(2, 6)));
 
@@ -499,88 +499,88 @@ public class REOBlocks {
                     .replaceable().noCollission().noLootTable().sound(SoundType.EMPTY)));
 
     // Lamp
-    public static final RegistryObject<Block> LAMP_BLACK = registerBlock("lamp_black",
+    public static final RegistryObject<Block> BLACK_LAMP = registerBlock("lamp_black",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
                     .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> LAMP_RED = registerBlock("lamp_red",
+    public static final RegistryObject<Block> RED_LAMP = registerBlock("lamp_red",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
                     .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> LAMP_GREEN = registerBlock("lamp_green",
+    public static final RegistryObject<Block> GREEN_LAMP = registerBlock("lamp_green",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
                     .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> LAMP_BROWN = registerBlock("lamp_brown",
+    public static final RegistryObject<Block> BROWN_LAMP = registerBlock("lamp_brown",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
                     .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> LAMP_PURPLE = registerBlock("lamp_purple",
+    public static final RegistryObject<Block> PURPLE_LAMP = registerBlock("lamp_purple",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
                     .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> LAMP_CYAN = registerBlock("lamp_cyan",
+    public static final RegistryObject<Block> CYAN_LAMP = registerBlock("lamp_cyan",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
                     .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> LAMP_LIGHTGRAY = registerBlock("lamp_lightgray",
+    public static final RegistryObject<Block> LIGHT_BLUE_LAMP = registerBlock("lamp_lightblue",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
                     .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> LAMP_GRAY = registerBlock("lamp_gray",
+    public static final RegistryObject<Block> LIGHT_GRAY_LAMP = registerBlock("lamp_lightgray",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
                     .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> LAMP_PINK = registerBlock("lamp_pink",
+    public static final RegistryObject<Block> GRAY_LAMP = registerBlock("lamp_gray",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
                     .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> LAMP_LIME = registerBlock("lamp_lime",
+    public static final RegistryObject<Block> PINK_LAMP = registerBlock("lamp_pink",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
                     .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> LAMP_YELLOW = registerBlock("lamp_yellow",
+    public static final RegistryObject<Block> LIME_LAMP = registerBlock("lamp_lime",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
                     .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> LAMP_BLUE = registerBlock("lamp_blue",
+    public static final RegistryObject<Block> YELLOW_LAMP = registerBlock("lamp_yellow",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
                     .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> LAMP_LIGHTBLUE = registerBlock("lamp_lightblue",
+    public static final RegistryObject<Block> BLUE_LAMP = registerBlock("lamp_blue",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
                     .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> LAMP_MAGENTA = registerBlock("lamp_magenta",
+    public static final RegistryObject<Block> MAGENTA_LAMP = registerBlock("lamp_magenta",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
                     .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> LAMP_ORANGE = registerBlock("lamp_orange",
+    public static final RegistryObject<Block> ORANGE_LAMP = registerBlock("lamp_orange",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
                     .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> LAMP_WHITE = registerBlock("lamp_white",
+    public static final RegistryObject<Block> WHITE_LAMP = registerBlock("lamp_white",
             () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)
                     .lightLevel((state) -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
                     .strength(0.3F).sound(SoundType.GLASS)));
 
     // Crops //
     // Ores
-    //public static final RegistryObject<Block> CROP_ALUMINIUM = BLOCKS.register("crop_aluminium",
+    //public static final RegistryObject<Block> ALUMINIUM_CROP = BLOCKS.register("crop_aluminium",
     //        () -> new OreCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
 
     // Food
-    public static final RegistryObject<Block> CROP_BARLEY = BLOCKS.register("crop_barley",
+    public static final RegistryObject<Block> BARLEY_CROP = BLOCKS.register("crop_barley",
             () -> new BarleyBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
-    public static final RegistryObject<Block> CROP_CAULIFLOWER = BLOCKS.register("crop_cauliflower",
+    public static final RegistryObject<Block> CAULIFLOWER_CROP = BLOCKS.register("crop_cauliflower",
             () -> new CauliflowerBlock(BlockBehaviour.Properties.copy(Blocks.CARROTS).noOcclusion().noCollission()));
-    public static final RegistryObject<Block> CROP_COTTON = BLOCKS.register("crop_cotton",
+    public static final RegistryObject<Block> COTTON_CROP = BLOCKS.register("crop_cotton",
             () -> new CottonBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
-    public static final RegistryObject<Block> CROP_ONIONS = BLOCKS.register("crop_onions",
+    public static final RegistryObject<Block> ONIONS_CROP = BLOCKS.register("crop_onions",
             () -> new OnionsBlock(BlockBehaviour.Properties.copy(Blocks.CARROTS).noOcclusion().noCollission()));
-    public static final RegistryObject<Block> CROP_RICE = BLOCKS.register("crop_rice",
+    public static final RegistryObject<Block> RICE_CROP = BLOCKS.register("crop_rice",
             () -> new RiceBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
-    public static final RegistryObject<Block> CROP_TOMATO = BLOCKS.register("crop_tomato",
+    public static final RegistryObject<Block> TOMATO_CROP = BLOCKS.register("crop_tomato",
             () -> new TomatoBlock(BlockBehaviour.Properties.copy(Blocks.CARROTS).noOcclusion().noCollission()));
 
     public static final RegistryObject<Block> WILD_BARLEY = registerBlock("wild_barley",
@@ -593,1679 +593,1688 @@ public class REOBlocks {
             () -> new BushBlock(BlockBehaviour.Properties.copy(Blocks.DEAD_BUSH).noOcclusion().noCollission()));
 
     // Fruit
-    public static final RegistryObject<Block> FRUIT_CITRUS_BLOCK = BLOCKS.register("fruit_citrus_block",
+    public static final RegistryObject<Block> CITRUS_FRUIT = BLOCKS.register("fruit_citrus_block",
             () -> new CitrusBlock(BlockBehaviour.Properties.copy(Blocks.POTATOES).noOcclusion().noCollission()));
-    public static final RegistryObject<Block> FRUIT_LIME_BLOCK = BLOCKS.register("fruit_lime_block",
+    public static final RegistryObject<Block> LIME_FRUIT = BLOCKS.register("fruit_lime_block",
             () -> new LimeBlock(BlockBehaviour.Properties.copy(Blocks.POTATOES).noOcclusion().noCollission()));
-    public static final RegistryObject<Block> FRUIT_PAPAYA_BLOCK = BLOCKS.register("fruit_papaya_block",
+    public static final RegistryObject<Block> PAPAYA_FRUIT = BLOCKS.register("fruit_papaya_block",
             () -> new PapayaBlock(BlockBehaviour.Properties.copy(Blocks.POTATOES).noOcclusion().noCollission()));
-    public static final RegistryObject<Block> FRUIT_PEAR_BLOCK = BLOCKS.register("fruit_pear_block",
+    public static final RegistryObject<Block> PEAR_FRUIT = BLOCKS.register("fruit_pear_block",
             () -> new PearBlock(BlockBehaviour.Properties.copy(Blocks.POTATOES).noOcclusion().noCollission()));
-    public static final RegistryObject<Block> FRUIT_PLUM_BLOCK = BLOCKS.register("fruit_plum_block",
+    public static final RegistryObject<Block> PLUM_FRUIT = BLOCKS.register("fruit_plum_block",
             () -> new PlumBlock(BlockBehaviour.Properties.copy(Blocks.POTATOES).noOcclusion().noCollission()));
-    public static final RegistryObject<Block> FRUIT_WALNUT_BLOCK = BLOCKS.register("fruit_walnut_block",
+    public static final RegistryObject<Block> WALNUT_FRUIT = BLOCKS.register("fruit_walnut_block",
             () -> new WalnutBlock(BlockBehaviour.Properties.copy(Blocks.POTATOES).noOcclusion().noCollission()));
 
     // Berry
-    public static final RegistryObject<Block> BERRY_BLACKBERRY_BLOCK = BLOCKS.register("berry_blackberry_block",
+    public static final RegistryObject<Block> BLACKBERRY_FRUIT = BLOCKS.register("berry_blackberry_block",
             () -> new BlackberryBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH)));
-    public static final RegistryObject<Block> BERRY_BLUEBERRY_BLOCK = BLOCKS.register("berry_blueberry_block",
+    public static final RegistryObject<Block> BLUEBERRY_FRUIT = BLOCKS.register("berry_blueberry_block",
             () -> new BlueberryBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH)));
-    public static final RegistryObject<Block> BERRY_RASPBERRY_BLOCK = BLOCKS.register("berry_raspberry_block",
+    public static final RegistryObject<Block> RASPBERRY_FRUIT = BLOCKS.register("berry_raspberry_block",
             () -> new RaspberryBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH)));
 
-    // Wood
+
+    // Wood //
     // Vanilla
-    public static final RegistryObject<Block> LOG_OAK_RESISTANT = registerBlock("log_oak_resistant",
+    public static final RegistryObject<Block> RESISTANT_OAK_LOG = registerBlock("resistant_oak_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_OAK_RESISTANT = registerBlock("wood_oak_resistant",
+    public static final RegistryObject<Block> RESISTANT_OAK_WOOD = registerBlock("resistant_oak_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> LOG_OAK_STRIPPED_RESISTANT = registerBlock("log_oak_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_OAK_LOG = registerBlock("resistant_stripped_oak_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_OAK_STRIPPED_RESISTANT = registerBlock("wood_oak_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_OAK_WOOD = registerBlock("resistant_stripped_oak_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> PLANKS_OAK_RESISTANT = registerBlock("planks_oak_resistant",
+    public static final RegistryObject<Block> RESISTANT_OAK_PLANKS = registerBlock("resistant_oak_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
-    public static final RegistryObject<Block> STAIRS_OAK_RESISTANT = registerBlock("stairs_oak_resistant",
-            () -> new StairBlock(() -> REOBlocks.PLANKS_OAK_RESISTANT.get()
+    public static final RegistryObject<Block> RESISTANT_OAK_STAIRS = registerBlock("resistant_oak_stairs",
+            () -> new StairBlock(() -> REOBlocks.RESISTANT_OAK_PLANKS.get()
                     .defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> SLAB_OAK_RESISTANT = registerBlock("slab_oak_resistant",
+    public static final RegistryObject<Block> RESISTANT_OAK_SLAB = registerBlock("resistant_oak",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_OAK_RESISTANT = registerBlock("fence_oak_resistant",
+    public static final RegistryObject<Block> RESISTANT_OAK_FENCE = registerBlock("resistant_oak_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_GATE_OAK_RESISTANT = registerBlock("fence_gate_oak_resistant",
+    public static final RegistryObject<Block> RESISTANT_OAK_FENCE_GATE = registerBlock("resistant_oak_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> LOG_SPRUCE_RESISTANT = registerBlock("log_spruce_resistant",
+    public static final RegistryObject<Block> RESISTANT_SPRUCE_LOG = registerBlock("resistant_spruce_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_SPRUCE_RESISTANT = registerBlock("wood_spruce_resistant",
+    public static final RegistryObject<Block> RESISTANT_SPRUCE_WOOD = registerBlock("resistant_spruce_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_WOOD).strength(3f)));
-    public static final RegistryObject<Block> LOG_SPRUCE_STRIPPED_RESISTANT = registerBlock("log_spruce_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_SPRUCE_LOG = registerBlock("resistant_stripped_spruce_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_SPRUCE_STRIPPED_RESISTANT = registerBlock("wood_spruce_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_SPRUCE_WOOD = registerBlock("resistant_stripped_spruce_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_WOOD).strength(3f)));
-    public static final RegistryObject<Block> PLANKS_SPRUCE_RESISTANT = registerBlock("planks_spruce_resistant",
+    public static final RegistryObject<Block> RESISTANT_SPRUCE_PLANKS = registerBlock("resistant_spruce_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS)));
 
-    public static final RegistryObject<Block> STAIRS_SPRUCE_RESISTANT = registerBlock("stairs_spruce_resistant",
-            () -> new StairBlock(() -> REOBlocks.PLANKS_SPRUCE_RESISTANT.get()
+    public static final RegistryObject<Block> RESISTANT_SPRUCE_STAIRS = registerBlock("resistant_spruce_stairs",
+            () -> new StairBlock(() -> REOBlocks.RESISTANT_SPRUCE_PLANKS.get()
                     .defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.SPRUCE_STAIRS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> SLAB_SPRUCE_RESISTANT = registerBlock("slab_spruce_resistant",
+    public static final RegistryObject<Block> RESISTANT_SPRUCE_SLAB = registerBlock("resistant_spruce_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_SLAB).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_SPRUCE_RESISTANT = registerBlock("fence_spruce_resistant",
+    public static final RegistryObject<Block> RESISTANT_SPRUCE_FENCE = registerBlock("resistant_spruce_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_FENCE).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_GATE_SPRUCE_RESISTANT = registerBlock("fence_gate_spruce_resistant",
+    public static final RegistryObject<Block> RESISTANT_SPRUCE_FENCE_GATE = registerBlock("resistant_spruce_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> LOG_BIRCH_RESISTANT = registerBlock("log_birch_resistant",
+    public static final RegistryObject<Block> RESISTANT_BIRCH_LOG = registerBlock("resistant_birch_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_BIRCH_RESISTANT = registerBlock("wood_birch_resistant",
+    public static final RegistryObject<Block> RESISTANT_BIRCH_WOOD = registerBlock("resistant_birch_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_WOOD).strength(3f)));
-    public static final RegistryObject<Block> LOG_BIRCH_STRIPPED_RESISTANT = registerBlock("log_birch_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_BIRCH_LOG = registerBlock("resistant_stripped_birch_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_BIRCH_STRIPPED_RESISTANT = registerBlock("wood_birch_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_BIRCH_WOOD = registerBlock("resistant_stripped_birch_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_WOOD).strength(3f)));
-    public static final RegistryObject<Block> PLANKS_BIRCH_RESISTANT = registerBlock("planks_birch_resistant",
+    public static final RegistryObject<Block> RESISTANT_BIRCH_PLANKS = registerBlock("birch_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS)));
 
-    public static final RegistryObject<Block> STAIRS_BIRCH_RESISTANT = registerBlock("stairs_birch_resistant",
-            () -> new StairBlock(() -> REOBlocks.PLANKS_BIRCH_RESISTANT.get()
+    public static final RegistryObject<Block> RESISTANT_BIRCH_STAIRS = registerBlock("resistant_birch_stairs",
+            () -> new StairBlock(() -> REOBlocks.RESISTANT_BIRCH_PLANKS.get()
                     .defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BIRCH_STAIRS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> SLAB_BIRCH_RESISTANT = registerBlock("slab_birch_resistant",
+    public static final RegistryObject<Block> RESISTANT_BIRCH_SLAB = registerBlock("resistant_birch_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_SLAB).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_BIRCH_RESISTANT = registerBlock("fence_birch_resistant",
+    public static final RegistryObject<Block> RESISTANT_BIRCH_FENCE = registerBlock("resistant_birch_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_FENCE).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_GATE_BIRCH_RESISTANT = registerBlock("fence_gate_birch_resistant",
+    public static final RegistryObject<Block> RESISTANT_BIRCH_FENCE_GATE = registerBlock("resistant_birch_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> LOG_JUNGLE_RESISTANT = registerBlock("log_jungle_resistant",
+    public static final RegistryObject<Block> RESISTANT_JUNGLE_LOG = registerBlock("resistant_jungle_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_JUNGLE_RESISTANT = registerBlock("wood_jungle_resistant",
+    public static final RegistryObject<Block> RESISTANT_JUNGLE_WOOD = registerBlock("resistant_jungle_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_WOOD).strength(3f)));
-    public static final RegistryObject<Block> LOG_JUNGLE_STRIPPED_RESISTANT = registerBlock("log_jungle_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_JUNGLE_LOG = registerBlock("resistant_stripped_jungle_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_JUNGLE_STRIPPED_RESISTANT = registerBlock("wood_jungle_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_JUNGLE_WOOD = registerBlock("resistant_stripped_jungle_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_WOOD).strength(3f)));
-    public static final RegistryObject<Block> PLANKS_JUNGLE_RESISTANT = registerBlock("planks_jungle_resistant",
+    public static final RegistryObject<Block> RESISTANT_JUNGLE_PLANKS = registerBlock("resistant_jungle_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.JUNGLE_PLANKS)));
 
-    public static final RegistryObject<Block> STAIRS_JUNGLE_RESISTANT = registerBlock("stairs_jungle_resistant",
-            () -> new StairBlock(() -> REOBlocks.PLANKS_JUNGLE_RESISTANT.get()
+    public static final RegistryObject<Block> RESISTANT_JUNGLE_STAIRS = registerBlock("resistant_jungle_stairs",
+            () -> new StairBlock(() -> REOBlocks.RESISTANT_JUNGLE_PLANKS.get()
                     .defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.JUNGLE_STAIRS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> SLAB_JUNGLE_RESISTANT = registerBlock("slab_jungle_resistant",
+    public static final RegistryObject<Block> RESISTANT_JUNGLE_SLAB = registerBlock("resistant_jungle_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_SLAB).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_JUNGLE_RESISTANT = registerBlock("fence_jungle_resistant",
+    public static final RegistryObject<Block> RESISTANT_JUNGLE_FENCE = registerBlock("resistant_jungle_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_FENCE).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_GATE_JUNGLE_RESISTANT = registerBlock("fence_gate_jungle_resistant",
+    public static final RegistryObject<Block> RESISTANT_JUNGLE_FENCE_GATE = registerBlock("resistant_jungle_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> LOG_ACACIA_RESISTANT = registerBlock("log_acacia_resistant",
+    public static final RegistryObject<Block> RESISTANT_ACACIA_LOG = registerBlock("resistant_acacia_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_ACACIA_RESISTANT = registerBlock("wood_acacia_resistant",
+    public static final RegistryObject<Block> RESISTANT_ACACIA_WOOD = registerBlock("resistant_acacia_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_WOOD).strength(3f)));
-    public static final RegistryObject<Block> LOG_ACACIA_STRIPPED_RESISTANT = registerBlock("log_acacia_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_ACACIA_LOG = registerBlock("resistant_stripped_acacia_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_ACACIA_STRIPPED_RESISTANT = registerBlock("wood_acacia_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_ACACIA_WOOD = registerBlock("resistant_stripped_acacia_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_WOOD).strength(3f)));
-    public static final RegistryObject<Block> PLANKS_ACACIA_RESISTANT = registerBlock("planks_acacia_resistant",
+    public static final RegistryObject<Block> RESISTANT_ACACIA_PLANKS = registerBlock("resistant_acacia_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
 
-    public static final RegistryObject<Block> STAIRS_ACACIA_RESISTANT = registerBlock("stairs_acacia_resistant",
-            () -> new StairBlock(() -> REOBlocks.PLANKS_ACACIA_RESISTANT.get()
+    public static final RegistryObject<Block> RESISTANT_ACACIA_STAIRS = registerBlock("resistant_acacia_stairs",
+            () -> new StairBlock(() -> REOBlocks.RESISTANT_ACACIA_PLANKS.get()
                     .defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.ACACIA_STAIRS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> SLAB_ACACIA_RESISTANT = registerBlock("slab_acacia_resistant",
+    public static final RegistryObject<Block> RESISTANT_ACACIA_SLAB = registerBlock("resistant_acacia_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_SLAB).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_ACACIA_RESISTANT = registerBlock("fence_acacia_resistant",
+    public static final RegistryObject<Block> RESISTANT_ACACIA_FENCE = registerBlock("resistant_acacia_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_FENCE).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_GATE_ACACIA_RESISTANT = registerBlock("fence_gate_acacia_resistant",
+    public static final RegistryObject<Block> RESISTANT_ACACIA_FENCE_GATE = registerBlock("resistant_acacia_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> LOG_DARK_OAK_RESISTANT = registerBlock("log_dark_oak_resistant",
+    public static final RegistryObject<Block> RESISTANT_DARK_OAK_LOG = registerBlock("resistant_dark_oak_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_DARK_OAK_RESISTANT = registerBlock("wood_dark_oak_resistant",
+    public static final RegistryObject<Block> RESISTANT_DARK_OAK_WOOD = registerBlock("resistant_dark_oak_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> LOG_DARK_OAK_STRIPPED_RESISTANT = registerBlock("log_dark_oak_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_DARK_OAK_LOG = registerBlock("resistant_stripped_dark_oak_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_DARK_OAK_STRIPPED_RESISTANT = registerBlock("wood_dark_oak_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_DARK_OAK_WOOD = registerBlock("resistant_stripped_dark_oak_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> PLANKS_DARK_OAK_RESISTANT = registerBlock("planks_dark_oak_resistant",
+    public static final RegistryObject<Block> RESISTANT_DARK_OAK_PLANKS = registerBlock("resistant_dark_oak_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS)));
 
-    public static final RegistryObject<Block> STAIRS_DARK_OAK_RESISTANT = registerBlock("stairs_dark_oak_resistant",
-            () -> new StairBlock(() -> REOBlocks.PLANKS_DARK_OAK_RESISTANT.get()
+    public static final RegistryObject<Block> RESISTANT_DARK_OAK_STAIRS = registerBlock("resistant_dark_oak_stairs",
+            () -> new StairBlock(() -> REOBlocks.RESISTANT_DARK_OAK_PLANKS.get()
                     .defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.DARK_OAK_STAIRS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> SLAB_DARK_OAK_RESISTANT = registerBlock("slab_dark_oak_resistant",
+    public static final RegistryObject<Block> RESISTANT_DARK_OAK_SLAB = registerBlock("resistant_dark_oak_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_SLAB).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_DARK_OAK_RESISTANT = registerBlock("fence_dark_oak_resistant",
+    public static final RegistryObject<Block> RESISTANT_DARK_OAK_FENCE = registerBlock("resistant_dark_oak_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_FENCE).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_GATE_DARK_OAK_RESISTANT = registerBlock("fence_gate_dark_oak_resistant",
+    public static final RegistryObject<Block> RESISTANT_DARK_OAK_FENCE_GATE = registerBlock("resistant_dark_oak_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> LOG_MANGROVE_RESISTANT = registerBlock("log_mangrove_resistant",
+    public static final RegistryObject<Block> RESISTANT_MANGROVE_LOG = registerBlock("resistant_mangrove_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.MANGROVE_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_MANGROVE_RESISTANT = registerBlock("wood_mangrove_resistant",
+    public static final RegistryObject<Block> RESISTANT_MANGROVE_WOOD = registerBlock("resistant_mangrove_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.MANGROVE_WOOD).strength(3f)));
-    public static final RegistryObject<Block> LOG_MANGROVE_STRIPPED_RESISTANT = registerBlock("log_mangrove_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_MANGROVE_LOG = registerBlock("resistant_stripped_mangrove_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.MANGROVE_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_MANGROVE_STRIPPED_RESISTANT = registerBlock("wood_mangrove_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_MANGROVE_WOOD = registerBlock("resistant_stripped_mangrove_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.MANGROVE_WOOD).strength(3f)));
-    public static final RegistryObject<Block> PLANKS_MANGROVE_RESISTANT = registerBlock("planks_mangrove_resistant",
+    public static final RegistryObject<Block> RESISTANT_MANGROVE_PLANKS = registerBlock("resistant_mangrove_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.MANGROVE_PLANKS)));
 
-    public static final RegistryObject<Block> STAIRS_MANGROVE_RESISTANT = registerBlock("stairs_mangrove_resistant",
-            () -> new StairBlock(() -> REOBlocks.PLANKS_MANGROVE_RESISTANT.get()
+    public static final RegistryObject<Block> RESISTANT_MANGROVE_STAIRS = registerBlock("resistant_mangrove_stairs",
+            () -> new StairBlock(() -> REOBlocks.RESISTANT_MANGROVE_PLANKS.get()
                     .defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.MANGROVE_STAIRS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> SLAB_MANGROVE_RESISTANT = registerBlock("slab_mangrove_resistant",
+    public static final RegistryObject<Block> RESISTANT_MANGROVE_SLAB = registerBlock("resistant_mangrove_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.MANGROVE_SLAB).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_MANGROVE_RESISTANT = registerBlock("fence_mangrove_resistant",
+    public static final RegistryObject<Block> RESISTANT_MANGROVE_FENCE = registerBlock("resistant_mangrove_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.MANGROVE_FENCE).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_GATE_MANGROVE_RESISTANT = registerBlock("fence_gate_mangrove_resistant",
+    public static final RegistryObject<Block> RESISTANT_MANGROVE_FENCE_GATE = registerBlock("resistant_mangrove_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.MANGROVE_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> LOG_CHERRY_RESISTANT = registerBlock("log_cherry_resistant",
+    public static final RegistryObject<Block> RESISTANT_CHERRY_LOG = registerBlock("resistant_cherry_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_CHERRY_RESISTANT = registerBlock("wood_cherry_resistant",
+    public static final RegistryObject<Block> RESISTANT_CHERRY_WOOD = registerBlock("resistant_cherry_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_WOOD).strength(3f)));
-    public static final RegistryObject<Block> LOG_CHERRY_STRIPPED_RESISTANT = registerBlock("log_cherry_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_CHERRY_LOG = registerBlock("resistant_stripped_cherry_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_CHERRY_STRIPPED_RESISTANT = registerBlock("wood_cherry_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_CHERRY_WOOD = registerBlock("resistant_stripped_cherry_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_WOOD).strength(3f)));
-    public static final RegistryObject<Block> PLANKS_CHERRY_RESISTANT = registerBlock("planks_cherry_resistant",
+    public static final RegistryObject<Block> RESISTANT_CHERRY_PLANKS = registerBlock("resistant_cherry_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.CHERRY_PLANKS)));
 
-    public static final RegistryObject<Block> STAIRS_CHERRY_RESISTANT = registerBlock("stairs_cherry_resistant",
-            () -> new StairBlock(() -> REOBlocks.PLANKS_CHERRY_RESISTANT.get()
+    public static final RegistryObject<Block> RESISTANT_CHERRY_STAIRS = registerBlock("resistant_cherry_stairs",
+            () -> new StairBlock(() -> REOBlocks.RESISTANT_CHERRY_PLANKS.get()
                     .defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.CHERRY_STAIRS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> SLAB_CHERRY_RESISTANT = registerBlock("slab_cherry_resistant",
+    public static final RegistryObject<Block> RESISTANT_CHERRY_SLAB = registerBlock("resistant_cherry_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_SLAB).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_CHERRY_RESISTANT = registerBlock("fence_cherry_resistant",
+    public static final RegistryObject<Block> RESISTANT_CHERRY_FENCE = registerBlock("resistant_cherry_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_FENCE).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_GATE_CHERRY_RESISTANT = registerBlock("fence_gate_cherry_resistant",
+    public static final RegistryObject<Block> RESISTANT_CHERRY_FENCE_GATE = registerBlock("resistant_cherry_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> LOG_BALSA = registerBlock("log_balsa",
+    // Modded
+    public static final RegistryObject<Block> BALSA_LOG = registerBlock("balsa_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_BALSA_RESISTANT = registerBlock("log_balsa_resistant",
+    public static final RegistryObject<Block> RESISTANT_BALSA_LOG = registerBlock("resistant_balsa_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_BALSA = registerBlock("wood_balsa",
+    public static final RegistryObject<Block> BALSA_WOOD = registerBlock("balsa_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_BALSA_RESISTANT = registerBlock("wood_balsa_resistant",
+    public static final RegistryObject<Block> RESISTANT_BALSA_WOOD = registerBlock("resistant_balsa_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> LOG_BALSA_STRIPPED = registerBlock("log_balsa_stripped",
+    public static final RegistryObject<Block> STRIPPED_BALSA_LOG = registerBlock("stripped_balsa_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_BALSA_STRIPPED_RESISTANT = registerBlock("log_balsa_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_BALSA_LOG = registerBlock("resistant_stripped_balsa_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_BALSA_STRIPPED = registerBlock("wood_balsa_stripped",
+    public static final RegistryObject<Block> STRIPPED_BALSA_WOOD = registerBlock("stripped_balsa_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_BALSA_STRIPPED_RESISTANT = registerBlock("wood_balsa_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_BALSA_WOOD = registerBlock("resistant_stripped_balsa_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> PLANKS_BALSA = registerBlock("planks_balsa",
+    public static final RegistryObject<Block> BALSA_PLANKS = registerBlock("balsa_planks",
             () -> new REOFlammablePlanksBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS), 20, 5));
-    public static final RegistryObject<Block> PLANKS_BALSA_RESISTANT = registerBlock("planks_balsa_resistant",
+    public static final RegistryObject<Block> RESISTANT_BALSA_PLANKS = registerBlock("resistant_balsa_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
-    public static final RegistryObject<Block> SAPLING_BALSA = registerBlock("sapling_balsa",
+    public static final RegistryObject<Block> BALSA_SAPLING = registerBlock("balsa_sapling",
             () -> new SaplingBlock(new BalsaTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
-    public static final RegistryObject<Block> POTTED_SAPLING_BALSA = BLOCKS.register("potted_sapling_balsa",
-            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.SAPLING_BALSA,
+    public static final RegistryObject<Block> POTTED_BALSA_SAPLING = BLOCKS.register("potted_sapling_balsa",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.BALSA_SAPLING,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
-    public static final RegistryObject<Block> LEAVES_BALSA = registerBlock("leaves_balsa",
+    public static final RegistryObject<Block> BALSA_LEAVES = registerBlock("balsa_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
-    public static final RegistryObject<Block> STAIRS_BALSA = registerBlock("stairs_balsa",
-            () -> new REOFlammableStairsBlock(() -> REOBlocks.PLANKS_BALSA.get().defaultBlockState(),
+    public static final RegistryObject<Block> BALSA_STAIRS = registerBlock("balsa_stairs",
+            () -> new REOFlammableStairsBlock(() -> REOBlocks.BALSA_PLANKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> STAIRS_BALSA_RESISTANT = registerBlock("stairs_balsa_resistant",
-            () -> new StairBlock(() -> REOBlocks.PLANKS_BALSA_RESISTANT.get()
+    public static final RegistryObject<Block> RESISTANT_BALSA_STAIRS = registerBlock("resistant_balsa_stairs",
+            () -> new StairBlock(() -> REOBlocks.RESISTANT_BALSA_PLANKS.get()
                     .defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> SLAB_BALSA = registerBlock("slab_balsa",
+    public static final RegistryObject<Block> BALSA_SLAB = registerBlock("balsa_slab",
             () -> new REOFlammableSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> SLAB_BALSA_RESISTANT = registerBlock("slab_balsa_resistant",
+    public static final RegistryObject<Block> RESISTANT_BALSA_SLAB = registerBlock("resistant_balsa_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_BALSA = registerBlock("fence_balsa",
+    public static final RegistryObject<Block> BALSA_FENCE = registerBlock("balsa_fence",
             () -> new REOFlammableFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> FENCE_BALSA_RESISTANT = registerBlock("fence_balsa_resistant",
+    public static final RegistryObject<Block> RESISTANT_BALSA_FENCE = registerBlock("resistant_balsa_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_GATE_BALSA = registerBlock("fence_gate_balsa",
+    public static final RegistryObject<Block> BALSA_FENCE_GATE = registerBlock("balsa_fence_gate",
             () -> new REOFlammableFenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE, 20, 5));
-    public static final RegistryObject<Block> FENCE_GATE_BALSA_RESISTANT = registerBlock("fence_gate_balsa_resistant",
+    public static final RegistryObject<Block> RESISTANT_BALSA_FENCE_GATE = registerBlock("resistant_balsa_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> BUTTON_BALSA = registerBlock("button_balsa",
+    public static final RegistryObject<Block> BALSA_BUTTON = registerBlock("balsa_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD),
                     BlockSetType.OAK, 30, true));
-    public static final RegistryObject<Block> PRESSURE_PLATE_BALSA = registerBlock("pressure_plate_balsa",
+    public static final RegistryObject<Block> BALSA_PRESSURE_PLATE = registerBlock("balsa_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
                     .sound(SoundType.WOOD), BlockSetType.OAK));
 
-    public static final RegistryObject<Block> SIGN_BALSA = BLOCKS.register("sign_balsa",
+    public static final RegistryObject<Block> BALSA_SIGN = BLOCKS.register("balsa_sign",
             () -> new REOStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), REOWoodTypes.BALSA));
-    public static final RegistryObject<Block> SIGN_BALSA_WALL = BLOCKS.register("sign_balsa_wall",
+    public static final RegistryObject<Block> BALSA_WALL_SIGN = BLOCKS.register("balsa_wall_sign",
             () -> new REOWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), REOWoodTypes.BALSA));
 
-    public static final RegistryObject<Block> SIGN_HANGING_BALSA = BLOCKS.register("sign_hanging_balsa",
+    public static final RegistryObject<Block> BALSA_HANGING_SIGN = BLOCKS.register("balsa_hanging_sign",
             () -> new REOHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), REOWoodTypes.BALSA));
-    public static final RegistryObject<Block> SIGN_HANGING_BALSA_WALL = BLOCKS.register("sign_hanging_balsa_wall",
+    public static final RegistryObject<Block> BALSA_WALL_HANGING_SIGN = BLOCKS.register("balsa_wall_hanging_sign",
             () -> new REOWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), REOWoodTypes.BALSA));
 
-    public static final RegistryObject<Block> DOOR_BALSA = registerBlock("door_balsa",
+    public static final RegistryObject<Block> BALSA_DOOR = registerBlock("balsa_door",
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion(), BlockSetType.OAK));
-    public static final RegistryObject<Block> TRAPDOOR_BALSA = registerBlock("trapdoor_balsa",
+    public static final RegistryObject<Block> BALSA_TRAPDOOR = registerBlock("balsa_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.OAK));
 
     //
-    public static final RegistryObject<Block> LOG_BAOBAB = registerBlock("log_baobab",
+    public static final RegistryObject<Block> BAOBAB_LOG = registerBlock("baobab_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_BAOBAB_RESISTANT = registerBlock("log_baobab_resistant",
+    public static final RegistryObject<Block> RESISTANT_BAOBAB_LOG = registerBlock("resistant_baobab_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_BAOBAB = registerBlock("wood_baobab",
+    public static final RegistryObject<Block> BAOBAB_WOOD = registerBlock("baobab_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_BAOBAB_RESISTANT = registerBlock("wood_baobab_resistant",
+    public static final RegistryObject<Block> RESISTANT_BAOBAB_WOOD = registerBlock("resistant_baobab_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> LOG_BAOBAB_STRIPPED = registerBlock("log_baobab_stripped",
+    public static final RegistryObject<Block> STRIPPED_BAOBAB_LOG = registerBlock("stripped_baobab_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_BAOBAB_STRIPPED_RESISTANT = registerBlock("log_baobab_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_BAOBAB_LOG = registerBlock("resistant_stripped_baobab_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_BAOBAB_STRIPPED = registerBlock("wood_baobab_stripped",
+    public static final RegistryObject<Block> STRIPPED_BAOBAB_WOOD = registerBlock("stripped_baobab_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_BAOBAB_STRIPPED_RESISTANT = registerBlock("wood_baobab_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_BAOBAB_WOOD = registerBlock("resistant_stripped_baobab_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> PLANKS_BAOBAB = registerBlock("planks_baobab",
+    public static final RegistryObject<Block> BAOBAB_PLANKS = registerBlock("baobab_planks",
             () -> new REOFlammablePlanksBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS), 20, 5));
-    public static final RegistryObject<Block> PLANKS_BAOBAB_RESISTANT = registerBlock("planks_baobab_resistant",
+    public static final RegistryObject<Block> RESISTANT_BAOBAB_PLANKS = registerBlock("resistant_baobab_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
-    public static final RegistryObject<Block> SAPLING_BAOBAB = registerBlock("sapling_baobab",
+    public static final RegistryObject<Block> BAOBAB_SAPLING = registerBlock("baobab_sapling",
             () -> new REOSaplingBlock(new BaobabTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING), () -> Blocks.SAND));
-    public static final RegistryObject<Block> POTTED_SAPLING_BAOBAB = BLOCKS.register("potted_sapling_baobab",
-            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.SAPLING_BAOBAB,
+    public static final RegistryObject<Block> POTTED_BAOBAB_SAPLING = BLOCKS.register("potted_sapling_baobab",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.BAOBAB_SAPLING,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
-    public static final RegistryObject<Block> LEAVES_BAOBAB = registerBlock("leaves_baobab",
+    public static final RegistryObject<Block> BAOBAB_LEAVES = registerBlock("baobab_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
-    public static final RegistryObject<Block> STAIRS_BAOBAB = registerBlock("stairs_baobab",
-            () -> new REOFlammableStairsBlock(() -> REOBlocks.PLANKS_BAOBAB.get().defaultBlockState(),
+    public static final RegistryObject<Block> BAOBAB_STAIRS = registerBlock("baobab_stairs",
+            () -> new REOFlammableStairsBlock(() -> REOBlocks.BAOBAB_PLANKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> STAIRS_BAOBAB_RESISTANT = registerBlock("stairs_baobab_resistant",
-            () -> new StairBlock(() -> REOBlocks.PLANKS_BAOBAB_RESISTANT.get()
+    public static final RegistryObject<Block> RESISTANT_BAOBAB_STAIRS = registerBlock("resistant_baobab_stairs",
+            () -> new StairBlock(() -> REOBlocks.RESISTANT_BAOBAB_PLANKS.get()
                     .defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> SLAB_BAOBAB = registerBlock("slab_baobab",
+    public static final RegistryObject<Block> BAOBAB_SLAB = registerBlock("baobab_slab",
             () -> new REOFlammableSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> SLAB_BAOBAB_RESISTANT = registerBlock("slab_baobab_resistant",
+    public static final RegistryObject<Block> RESISTANT_BAOBAB_SLAB = registerBlock("resistant_baobab_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_BAOBAB = registerBlock("fence_baobab",
+    public static final RegistryObject<Block> BAOBAB_FENCE = registerBlock("baobab_fence",
             () -> new REOFlammableFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> FENCE_BAOBAB_RESISTANT = registerBlock("fence_baobab_resistant",
+    public static final RegistryObject<Block> RESISTANT_BAOBAB_FENCE = registerBlock("resistant_baobab_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_GATE_BAOBAB = registerBlock("fence_gate_baobab",
+    public static final RegistryObject<Block> BAOBAB_FENCE_GATE = registerBlock("baobab_fence_gate",
             () -> new REOFlammableFenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE, 20, 5));
-    public static final RegistryObject<Block> FENCE_GATE_BAOBAB_RESISTANT = registerBlock("fence_gate_baobab_resistant",
+    public static final RegistryObject<Block> RESISTANT_BAOBAB_FENCE_GATE = registerBlock("resistant_baobab_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> BUTTON_BAOBAB = registerBlock("button_baobab",
+    public static final RegistryObject<Block> BAOBAB_BUTTON = registerBlock("baobab_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD),
                     BlockSetType.OAK, 30, true));
-    public static final RegistryObject<Block> PRESSURE_PLATE_BAOBAB = registerBlock("pressure_plate_baobab",
+    public static final RegistryObject<Block> BAOBAB_PRESSURE_PLATE = registerBlock("baobab_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
                     .sound(SoundType.WOOD), BlockSetType.OAK));
 
-    public static final RegistryObject<Block> SIGN_BAOBAB = BLOCKS.register("sign_baobab",
+    public static final RegistryObject<Block> BAOBAB_SIGN = BLOCKS.register("baobab_sign",
             () -> new REOStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), REOWoodTypes.BAOBAB));
-    public static final RegistryObject<Block> SIGN_BAOBAB_WALL = BLOCKS.register("sign_baobab_wall",
+    public static final RegistryObject<Block> BAOBAB_WALL_SIGN = BLOCKS.register("baobab_wall_sign",
             () -> new REOWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), REOWoodTypes.BAOBAB));
 
-    public static final RegistryObject<Block> SIGN_HANGING_BAOBAB = BLOCKS.register("sign_hanging_baobab",
+    public static final RegistryObject<Block> BAOBAB_HANGING_SIGN = BLOCKS.register("baobab_hanging_sign",
             () -> new REOHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), REOWoodTypes.BAOBAB));
-    public static final RegistryObject<Block> SIGN_HANGING_BAOBAB_WALL = BLOCKS.register("sign_hanging_baobab_wall",
+    public static final RegistryObject<Block> BAOBAB_WALL_HANGING_SIGN = BLOCKS.register("baobab_wall_hanging_sign",
             () -> new REOWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), REOWoodTypes.BAOBAB));
 
-    public static final RegistryObject<Block> DOOR_BAOBAB = registerBlock("door_baobab",
+    public static final RegistryObject<Block> BAOBAB_DOOR = registerBlock("baobab_door",
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion(), BlockSetType.OAK));
-    public static final RegistryObject<Block> TRAPDOOR_BAOBAB = registerBlock("trapdoor_baobab",
+    public static final RegistryObject<Block> BAOBAB_TRAPDOOR = registerBlock("baobab_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.OAK));
 
     //
-    public static final RegistryObject<Block> LOG_HILL_CHERRY = registerBlock("log_hill_cherry",
+    public static final RegistryObject<Block> HILL_CHERRY_LOG = registerBlock("hill_cherry_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_HILL_CHERRY_RESISTANT = registerBlock("log_hill_cherry_resistant",
+    public static final RegistryObject<Block> RESISTANT_HILL_CHERRY_LOG = registerBlock("resistant_hill_cherry_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_HILL_CHERRY = registerBlock("wood_hill_cherry",
+    public static final RegistryObject<Block> HILL_CHERRY_WOOD = registerBlock("hill_cherry_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_HILL_CHERRY_RESISTANT = registerBlock("wood_hill_cherry_resistant",
+    public static final RegistryObject<Block> RESISTANT_HILL_CHERRY_WOOD = registerBlock("resistant_hill_cherry_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> LOG_HILL_CHERRY_STRIPPED = registerBlock("log_hill_cherry_stripped",
+    public static final RegistryObject<Block> STRIPPED_HILL_CHERRY_LOG = registerBlock("stripped_hill_cherry_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_HILL_CHERRY_STRIPPED_RESISTANT = registerBlock("log_hill_cherry_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_HILL_CHERRY_LOG = registerBlock("resistant_stripped_hill_cherry_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_HILL_CHERRY_STRIPPED = registerBlock("wood_hill_cherry_stripped",
+    public static final RegistryObject<Block> STRIPPED_HILL_CHERRY_WOOD = registerBlock("stripped_hill_cherry_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_HILL_CHERRY_STRIPPED_RESISTANT = registerBlock("wood_hill_cherry_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_HILL_CHERRY_WOOD = registerBlock("resistant_stripped_hill_cherry_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> PLANKS_HILL_CHERRY = registerBlock("planks_hill_cherry",
+    public static final RegistryObject<Block> HILL_CHERRY_PLANKS = registerBlock("hill_cherry_planks",
             () -> new REOFlammablePlanksBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS), 20, 5));
-    public static final RegistryObject<Block> PLANKS_HILL_CHERRY_RESISTANT = registerBlock("planks_hill_cherry_resistant",
+    public static final RegistryObject<Block> RESISTANT_HILL_CHERRY_PLANKS = registerBlock("resistant_hill_cherry_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
-    public static final RegistryObject<Block> SAPLING_HILL_CHERRY = registerBlock("sapling_hill_cherry",
+    public static final RegistryObject<Block> HILL_CHERRY_SAPLING = registerBlock("hill_cherry_sapling",
             () -> new SaplingBlock(new HillCherryTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
-    public static final RegistryObject<Block> POTTED_SAPLING_HILL_CHERRY = BLOCKS.register("potted_hill_sapling_cherry",
-            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.SAPLING_HILL_CHERRY,
+    public static final RegistryObject<Block> POTTED_HILL_CHERRY_SAPLING = BLOCKS.register("potted_hill_sapling_cherry",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.HILL_CHERRY_SAPLING,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
-    public static final RegistryObject<Block> LEAVES_HILL_CHERRY = registerBlock("leaves_hill_cherry",
+    public static final RegistryObject<Block> HILL_CHERRY_LEAVES = registerBlock("hill_cherry_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
-    public static final RegistryObject<Block> STAIRS_HILL_CHERRY = registerBlock("stairs_hill_cherry",
-            () -> new REOFlammableStairsBlock(() -> REOBlocks.PLANKS_HILL_CHERRY.get().defaultBlockState(),
+    public static final RegistryObject<Block> HILL_CHERRY_STAIRS = registerBlock("hill_cherry_stairs",
+            () -> new REOFlammableStairsBlock(() -> REOBlocks.HILL_CHERRY_PLANKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> STAIRS_HILL_CHERRY_RESISTANT = registerBlock("stairs_hill_cherry_resistant",
-            () -> new StairBlock(() -> REOBlocks.PLANKS_HILL_CHERRY_RESISTANT.get()
+    public static final RegistryObject<Block> RESISTANT_HILL_CHERRY_STAIRS = registerBlock("resistant_hill_cherry_stairs",
+            () -> new StairBlock(() -> REOBlocks.RESISTANT_HILL_CHERRY_PLANKS.get()
                     .defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> SLAB_HILL_CHERRY = registerBlock("slab_hill_cherry",
+    public static final RegistryObject<Block> HILL_CHERRY_SLAB = registerBlock("hill_cherry_slab",
             () -> new REOFlammableSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> SLAB_HILL_CHERRY_RESISTANT = registerBlock("slab_hill_cherry_resistant",
+    public static final RegistryObject<Block> RESISTANT_HILL_CHERRY_SLAB = registerBlock("resistant_hill_cherry_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_HILL_CHERRY = registerBlock("fence_hill_cherry",
+    public static final RegistryObject<Block> HILL_CHERRY_FENCE = registerBlock("hill_cherry_fence",
             () -> new REOFlammableFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> FENCE_HILL_CHERRY_RESISTANT = registerBlock("fence_hill_cherry_resistant",
+    public static final RegistryObject<Block> RESISTANT_HILL_CHERRY_FENCE = registerBlock("resistant_hill_cherry_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_GATE_HILL_CHERRY = registerBlock("fence_gate_hill_cherry",
+    public static final RegistryObject<Block> HILL_CHERRY_FENCE_GATE = registerBlock("hill_cherry_fence_gate",
             () -> new REOFlammableFenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE, 20, 5));
-    public static final RegistryObject<Block> FENCE_GATE_HILL_CHERRY_RESISTANT = registerBlock("fence_gate_hill_cherry_resistant",
+    public static final RegistryObject<Block> RESISTANT_HILL_CHERRY_FENCE_GATE = registerBlock("resistant_hill_cherry_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> BUTTON_HILL_CHERRY = registerBlock("button_hill_cherry",
+    public static final RegistryObject<Block> HILL_CHERRY_BUTTON = registerBlock("hill_cherry_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD),
                     BlockSetType.OAK, 30, true));
-    public static final RegistryObject<Block> PRESSURE_PLATE_HILL_CHERRY = registerBlock("pressure_plate_hill_cherry",
+    public static final RegistryObject<Block> HILL_CHERRY_PRESSURE_PLATE = registerBlock("hill_cherry_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
                     .sound(SoundType.WOOD), BlockSetType.OAK));
 
-    public static final RegistryObject<Block> SIGN_HILL_CHERRY = BLOCKS.register("sign_hill_cherry",
+    public static final RegistryObject<Block> HILL_CHERRY_SIGN = BLOCKS.register("hill_cherry_sign",
             () -> new REOStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), REOWoodTypes.HILL_CHERRY));
-    public static final RegistryObject<Block> SIGN_HILL_CHERRY_WALL = BLOCKS.register("sign_hill_cherry_wall",
+    public static final RegistryObject<Block> HILL_CHERRY_WALL_SIGN = BLOCKS.register("hill_cherry_wall_sign",
             () -> new REOWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), REOWoodTypes.HILL_CHERRY));
 
-    public static final RegistryObject<Block> SIGN_HANGING_HILL_CHERRY = BLOCKS.register("sign_hanging_hill_cherry",
+    public static final RegistryObject<Block> HILL_CHERRY_HANGING_SIGN = BLOCKS.register("hill_cherry_hanging_sign",
             () -> new REOHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), REOWoodTypes.HILL_CHERRY));
-    public static final RegistryObject<Block> SIGN_HANGING_HILL_CHERRY_WALL = BLOCKS.register("sign_hanging_hill_cherry_wall",
+    public static final RegistryObject<Block> HILL_CHERRY_WALL_HANGING_SIGN = BLOCKS.register("hill_cherry_wall_hanging_sign",
             () -> new REOWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), REOWoodTypes.HILL_CHERRY));
 
-    public static final RegistryObject<Block> DOOR_HILL_CHERRY = registerBlock("door_hill_cherry",
+    public static final RegistryObject<Block> HILL_CHERRY_DOOR = registerBlock("hill_cherry_door",
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion(), BlockSetType.OAK));
-    public static final RegistryObject<Block> TRAPDOOR_HILL_CHERRY = registerBlock("trapdoor_hill_cherry",
+    public static final RegistryObject<Block> HILL_CHERRY_TRAPDOOR = registerBlock("hill_cherry_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.OAK));
 
     //
-    public static final RegistryObject<Block> LOG_CHESTNUT = registerBlock("log_chestnut",
+    public static final RegistryObject<Block> CHESTNUT_LOG = registerBlock("chestnut_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_CHESTNUT_RESISTANT = registerBlock("log_chestnut_resistant",
+    public static final RegistryObject<Block> RESISTANT_CHESTNUT_LOG = registerBlock("resistant_chestnut_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_CHESTNUT = registerBlock("wood_chestnut",
+    public static final RegistryObject<Block> CHESTNUT_WOOD = registerBlock("chestnut_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_CHESTNUT_RESISTANT = registerBlock("wood_chestnut_resistant",
+    public static final RegistryObject<Block> RESISTANT_CHESTNUT_WOOD = registerBlock("resistant_chestnut_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> LOG_CHESTNUT_STRIPPED = registerBlock("log_chestnut_stripped",
+    public static final RegistryObject<Block> STRIPPED_CHESTNUT_LOG = registerBlock("stripped_chestnut_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_CHESTNUT_STRIPPED_RESISTANT = registerBlock("log_chestnut_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_CHESTNUT_LOG = registerBlock("resistant_stripped_chestnut_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_CHESTNUT_STRIPPED = registerBlock("wood_chestnut_stripped",
+    public static final RegistryObject<Block> STRIPPED_CHESTNUT_WOOD = registerBlock("stripped_chestnut_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_CHESTNUT_STRIPPED_RESISTANT = registerBlock("wood_chestnut_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_CHESTNUT_WOOD = registerBlock("resistant_stripped_chestnut_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> PLANKS_CHESTNUT = registerBlock("planks_chestnut",
+    public static final RegistryObject<Block> CHESTNUT_PLANKS = registerBlock("chestnut_planks",
             () -> new REOFlammablePlanksBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS), 20, 5));
-    public static final RegistryObject<Block> PLANKS_CHESTNUT_RESISTANT = registerBlock("planks_chestnut_resistant",
+    public static final RegistryObject<Block> RESISTANT_CHESTNUT_PLANKS = registerBlock("resistant_chestnut_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
-    public static final RegistryObject<Block> SAPLING_CHESTNUT = registerBlock("sapling_chestnut",
+    public static final RegistryObject<Block> CHESTNUT_SAPLING = registerBlock("chestnut_sapling",
             () -> new SaplingBlock(new ChestnutTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
-    public static final RegistryObject<Block> POTTED_SAPLING_CHESTNUT = BLOCKS.register("potted_sapling_chestnut",
-            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.SAPLING_CHESTNUT,
+    public static final RegistryObject<Block> POTTED_CHESTNUT_SAPLING = BLOCKS.register("potted_sapling_chestnut",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.CHESTNUT_SAPLING,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
-    public static final RegistryObject<Block> LEAVES_CHESTNUT = registerBlock("leaves_chestnut",
+    public static final RegistryObject<Block> CHESTNUT_LEAVES = registerBlock("chestnut_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
-    public static final RegistryObject<Block> LEAVES_CHESTNUT_FRUIT = registerBlock("leaves_chestnut_fruit",
+    public static final RegistryObject<Block> CHESTNUT_FRUIT_LEAVES = registerBlock("chestnut_fruit_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
-    public static final RegistryObject<Block> STAIRS_CHESTNUT = registerBlock("stairs_chestnut",
-            () -> new REOFlammableStairsBlock(() -> REOBlocks.PLANKS_CHESTNUT.get().defaultBlockState(),
+    public static final RegistryObject<Block> CHESTNUT_STAIRS = registerBlock("chestnut_stairs",
+            () -> new REOFlammableStairsBlock(() -> REOBlocks.CHESTNUT_PLANKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> STAIRS_CHESTNUT_RESISTANT = registerBlock("stairs_chestnut_resistant",
-            () -> new StairBlock(() -> REOBlocks.PLANKS_CHESTNUT_RESISTANT.get()
+    public static final RegistryObject<Block> RESISTANT_CHESTNUT_STAIRS = registerBlock("resistant_chestnut_stairs",
+            () -> new StairBlock(() -> REOBlocks.RESISTANT_CHESTNUT_PLANKS.get()
                     .defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> SLAB_CHESTNUT = registerBlock("slab_chestnut",
+    public static final RegistryObject<Block> CHESTNUT_SLAB = registerBlock("chestnut_slab",
             () -> new REOFlammableSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> SLAB_CHESTNUT_RESISTANT = registerBlock("slab_chestnut_resistant",
+    public static final RegistryObject<Block> RESISTANT_CHESTNUT_SLAB = registerBlock("resistant_chestnut_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_CHESTNUT = registerBlock("fence_chestnut",
+    public static final RegistryObject<Block> CHESTNUT_FENCE = registerBlock("chestnut_fence",
             () -> new REOFlammableFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> FENCE_CHESTNUT_RESISTANT = registerBlock("fence_chestnut_resistant",
+    public static final RegistryObject<Block> RESISTANT_CHESTNUT_FENCE = registerBlock("resistant_chestnut_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_GATE_CHESTNUT = registerBlock("fence_gate_chestnut",
+    public static final RegistryObject<Block> CHESTNUT_FENCE_GATE = registerBlock("chestnut_fence_gate",
             () -> new REOFlammableFenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE, 20, 5));
-    public static final RegistryObject<Block> FENCE_GATE_CHESTNUT_RESISTANT = registerBlock("fence_gate_chestnut_resistant",
+    public static final RegistryObject<Block> RESISTANT_CHESTNUT_FENCE_GATE = registerBlock("resistant_chestnut_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> BUTTON_CHESTNUT = registerBlock("button_chestnut",
+    public static final RegistryObject<Block> CHESTNUT_BUTTON = registerBlock("chestnut_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD),
                     BlockSetType.OAK, 30, true));
-    public static final RegistryObject<Block> PRESSURE_PLATE_CHESTNUT = registerBlock("pressure_plate_chestnut",
+    public static final RegistryObject<Block> CHESTNUT_PRESSURE_PLATE = registerBlock("chestnut_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
                     .sound(SoundType.WOOD), BlockSetType.OAK));
 
-    public static final RegistryObject<Block> SIGN_CHESTNUT = BLOCKS.register("sign_chestnut",
+    public static final RegistryObject<Block> CHESTNUT_SIGN = BLOCKS.register("chestnut_sign",
             () -> new REOStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), REOWoodTypes.CHESTNUT));
-    public static final RegistryObject<Block> SIGN_CHESTNUT_WALL = BLOCKS.register("sign_chestnut_wall",
+    public static final RegistryObject<Block> CHESTNUT_WALL_SIGN = BLOCKS.register("chestnut_wall_sign",
             () -> new REOWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), REOWoodTypes.CHESTNUT));
 
-    public static final RegistryObject<Block> SIGN_HANGING_CHESTNUT = BLOCKS.register("sign_hanging_chestnut",
+    public static final RegistryObject<Block> CHESTNUT_HANGING_SIGN = BLOCKS.register("chestnut_hanging_sign",
             () -> new REOHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), REOWoodTypes.CHESTNUT));
-    public static final RegistryObject<Block> SIGN_HANGING_CHESTNUT_WALL = BLOCKS.register("sign_hanging_chestnut_wall",
+    public static final RegistryObject<Block> CHESTNUT_WALL_HANGING_SIGN = BLOCKS.register("chestnut_wall_hanging_sign",
             () -> new REOWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), REOWoodTypes.CHESTNUT));
 
-    public static final RegistryObject<Block> DOOR_CHESTNUT = registerBlock("door_chestnut",
+    public static final RegistryObject<Block> CHESTNUT_DOOR = registerBlock("chestnut_door",
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion(), BlockSetType.OAK));
-    public static final RegistryObject<Block> TRAPDOOR_CHESTNUT = registerBlock("trapdoor_chestnut",
+    public static final RegistryObject<Block> CHESTNUT_TRAPDOOR = registerBlock("chestnut_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.OAK));
 
     //
-    public static final RegistryObject<Block> LOG_CITRUS = registerBlock("log_citrus",
+    public static final RegistryObject<Block> CITRUS_LOG = registerBlock("citrus_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_CITRUS_RESISTANT = registerBlock("log_citrus_resistant",
+    public static final RegistryObject<Block> RESISTANT_CITRUS_LOG = registerBlock("resistant_citrus_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_CITRUS = registerBlock("wood_citrus",
+    public static final RegistryObject<Block> CITRUS_WOOD = registerBlock("citrus_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_CITRUS_RESISTANT = registerBlock("wood_citrus_resistant",
+    public static final RegistryObject<Block> RESISTANT_CITRUS_WOOD = registerBlock("resistant_citrus_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> LOG_CITRUS_STRIPPED = registerBlock("log_citrus_stripped",
+    public static final RegistryObject<Block> STRIPPED_CITRUS_LOG = registerBlock("stripped_citrus_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_CITRUS_STRIPPED_RESISTANT = registerBlock("log_citrus_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_CITRUS_LOG = registerBlock("resistant_stripped_citrus_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_CITRUS_STRIPPED = registerBlock("wood_citrus_stripped",
+    public static final RegistryObject<Block> STRIPPED_CITRUS_WOOD = registerBlock("stripped_citrus_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_CITRUS_STRIPPED_RESISTANT = registerBlock("wood_citrus_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_CITRUS_WOOD = registerBlock("resistant_stripped_citrus_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> PLANKS_CITRUS = registerBlock("planks_citrus",
+    public static final RegistryObject<Block> CITRUS_PLANKS = registerBlock("citrus_planks",
             () -> new REOFlammablePlanksBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS), 20, 5));
-    public static final RegistryObject<Block> PLANKS_CITRUS_RESISTANT = registerBlock("planks_citrus_resistant",
+    public static final RegistryObject<Block> RESISTANT_CITRUS_PLANKS = registerBlock("resistant_citrus_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
-    public static final RegistryObject<Block> SAPLING_CITRUS = registerBlock("sapling_citrus",
+    public static final RegistryObject<Block> CITRUS_SAPLING = registerBlock("citrus_sapling",
             () -> new SaplingBlock(new CitrusTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
-    public static final RegistryObject<Block> POTTED_SAPLING_CITRUS = BLOCKS.register("potted_sapling_citrus",
-            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.SAPLING_CITRUS,
+    public static final RegistryObject<Block> POTTED_CITRUS_SAPLING = BLOCKS.register("potted_sapling_citrus",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.CITRUS_SAPLING,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
-    public static final RegistryObject<Block> LEAVES_CITRUS = registerBlock("leaves_citrus",
+    public static final RegistryObject<Block> CITRUS_LEAVES = registerBlock("citrus_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
-    public static final RegistryObject<Block> LEAVES_CITRUS_FRUIT = registerBlock("leaves_citrus_fruit",
+    public static final RegistryObject<Block> CITRUS_FRUIT_LEAVES = registerBlock("citrus_fruit_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
-    public static final RegistryObject<Block> STAIRS_CITRUS = registerBlock("stairs_citrus",
-            () -> new REOFlammableStairsBlock(() -> REOBlocks.PLANKS_CITRUS.get().defaultBlockState(),
+    public static final RegistryObject<Block> CITRUS_STAIRS = registerBlock("citrus_stairs",
+            () -> new REOFlammableStairsBlock(() -> REOBlocks.CITRUS_PLANKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> STAIRS_CITRUS_RESISTANT = registerBlock("stairs_citrus_resistant",
-            () -> new StairBlock(() -> REOBlocks.PLANKS_CITRUS_RESISTANT.get()
+    public static final RegistryObject<Block> RESISTANT_CITRUS_STAIRS = registerBlock("resistant_citrus_stairs",
+            () -> new StairBlock(() -> REOBlocks.RESISTANT_CITRUS_PLANKS.get()
                     .defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> SLAB_CITRUS = registerBlock("slab_citrus",
+    public static final RegistryObject<Block> CITRUS_SLAB = registerBlock("citrus_slab",
             () -> new REOFlammableSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> SLAB_CITRUS_RESISTANT = registerBlock("slab_citrus_resistant",
+    public static final RegistryObject<Block> RESISTANT_CITRUS_SLAB = registerBlock("resistant_citrus_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_CITRUS = registerBlock("fence_citrus",
+    public static final RegistryObject<Block> CITRUS_FENCE = registerBlock("citrus_fence",
             () -> new REOFlammableFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> FENCE_CITRUS_RESISTANT = registerBlock("fence_citrus_resistant",
+    public static final RegistryObject<Block> RESISTANT_CITRUS_FENCE = registerBlock("resistant_citrus_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_GATE_CITRUS = registerBlock("fence_gate_citrus",
+    public static final RegistryObject<Block> CITRUS_FENCE_GATE = registerBlock("citrus_fence_gate",
             () -> new REOFlammableFenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE, 20, 5));
-    public static final RegistryObject<Block> FENCE_GATE_CITRUS_RESISTANT = registerBlock("fence_gate_citrus_resistant",
+    public static final RegistryObject<Block> RESISTANT_CITRUS_FENCE_GATE = registerBlock("resistant_citrus_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> BUTTON_CITRUS = registerBlock("button_citrus",
+    public static final RegistryObject<Block> CITRUS_BUTTON = registerBlock("citrus_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD),
                     BlockSetType.OAK, 30, true));
-    public static final RegistryObject<Block> PRESSURE_PLATE_CITRUS = registerBlock("pressure_plate_citrus",
+    public static final RegistryObject<Block> CITRUS_PRESSURE_PLATE = registerBlock("citrus_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
                     .sound(SoundType.WOOD), BlockSetType.OAK));
 
-    public static final RegistryObject<Block> SIGN_CITRUS = BLOCKS.register("sign_citrus",
+    public static final RegistryObject<Block> CITRUS_SIGN = BLOCKS.register("citrus_sign",
             () -> new REOStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), REOWoodTypes.CITRUS));
-    public static final RegistryObject<Block> SIGN_CITRUS_WALL = BLOCKS.register("sign_citrus_wall",
+    public static final RegistryObject<Block> CITRUS_WALL_SIGN = BLOCKS.register("citrus_wall_sign",
             () -> new REOWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), REOWoodTypes.CITRUS));
 
-    public static final RegistryObject<Block> SIGN_HANGING_CITRUS = BLOCKS.register("sign_hanging_citrus",
+    public static final RegistryObject<Block> CITRUS_HANGING_SIGN = BLOCKS.register("citrus_hanging_sign",
             () -> new REOHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), REOWoodTypes.CITRUS));
-    public static final RegistryObject<Block> SIGN_HANGING_CITRUS_WALL = BLOCKS.register("sign_hanging_citrus_wall",
+    public static final RegistryObject<Block> CITRUS_WALL_HANGING_SIGN = BLOCKS.register("citrus_wall_hanging_sign",
             () -> new REOWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), REOWoodTypes.CITRUS));
 
-    public static final RegistryObject<Block> DOOR_CITRUS = registerBlock("door_citrus",
+    public static final RegistryObject<Block> CITRUS_DOOR = registerBlock("citrus_door",
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion(), BlockSetType.OAK));
-    public static final RegistryObject<Block> TRAPDOOR_CITRUS = registerBlock("trapdoor_citrus",
+    public static final RegistryObject<Block> CITRUS_TRAPDOOR = registerBlock("citrus_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.OAK));
 
     //
-    public static final RegistryObject<Block> LOG_EBONY = registerBlock("log_ebony",
+    public static final RegistryObject<Block> EBONY_LOG = registerBlock("ebony_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_EBONY_RESISTANT = registerBlock("log_ebony_resistant",
+    public static final RegistryObject<Block> RESISTANT_EBONY_LOG = registerBlock("resistant_ebony_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_EBONY = registerBlock("wood_ebony",
+    public static final RegistryObject<Block> EBONY_WOOD = registerBlock("ebony_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_EBONY_RESISTANT = registerBlock("wood_ebony_resistant",
+    public static final RegistryObject<Block> RESISTANT_EBONY_WOOD = registerBlock("resistant_ebony_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> LOG_EBONY_STRIPPED = registerBlock("log_ebony_stripped",
+    public static final RegistryObject<Block> STRIPPED_EBONY_LOG = registerBlock("stripped_ebony_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_EBONY_STRIPPED_RESISTANT = registerBlock("log_ebony_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_EBONY_LOG = registerBlock("resistant_stripped_ebony_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_EBONY_STRIPPED = registerBlock("wood_ebony_stripped",
+    public static final RegistryObject<Block> STRIPPED_EBONY_WOOD = registerBlock("stripped_ebony_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_EBONY_STRIPPED_RESISTANT = registerBlock("wood_ebony_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_EBONY_WOOD = registerBlock("resistant_stripped_ebony_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> PLANKS_EBONY = registerBlock("planks_ebony",
+    public static final RegistryObject<Block> EBONY_PLANKS = registerBlock("ebony_planks",
             () -> new REOFlammablePlanksBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS), 20, 5));
-    public static final RegistryObject<Block> PLANKS_EBONY_RESISTANT = registerBlock("planks_ebony_resistant",
+    public static final RegistryObject<Block> RESISTANT_EBONY_PLANKS = registerBlock("resistant_ebony_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
-    public static final RegistryObject<Block> SAPLING_EBONY = registerBlock("sapling_ebony",
+    public static final RegistryObject<Block> EBONY_SAPLING = registerBlock("ebony_sapling",
             () -> new SaplingBlock(new EbonyTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
-    public static final RegistryObject<Block> POTTED_SAPLING_EBONY = BLOCKS.register("potted_sapling_ebony",
-            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.SAPLING_EBONY,
+    public static final RegistryObject<Block> POTTED_EBONY_SAPLING = BLOCKS.register("potted_sapling_ebony",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.EBONY_SAPLING,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
-    public static final RegistryObject<Block> LEAVES_EBONY = registerBlock("leaves_ebony",
+    public static final RegistryObject<Block> EBONY_LEAVES = registerBlock("ebony_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
-    public static final RegistryObject<Block> STAIRS_EBONY = registerBlock("stairs_ebony",
-            () -> new REOFlammableStairsBlock(() -> REOBlocks.PLANKS_EBONY.get().defaultBlockState(),
+    public static final RegistryObject<Block> EBONY_STAIRS = registerBlock("ebony_stairs",
+            () -> new REOFlammableStairsBlock(() -> REOBlocks.EBONY_PLANKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> STAIRS_EBONY_RESISTANT = registerBlock("stairs_ebony_resistant",
-            () -> new StairBlock(() -> REOBlocks.PLANKS_EBONY_RESISTANT.get()
+    public static final RegistryObject<Block> RESISTANT_EBONY_STAIRS = registerBlock("resistant_ebony_stairs",
+            () -> new StairBlock(() -> REOBlocks.RESISTANT_EBONY_PLANKS.get()
                     .defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> SLAB_EBONY = registerBlock("slab_ebony",
+    public static final RegistryObject<Block> EBONY_SLAB = registerBlock("ebony_slab",
             () -> new REOFlammableSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> SLAB_EBONY_RESISTANT = registerBlock("slab_ebony_resistant",
+    public static final RegistryObject<Block> RESISTANT_EBONY_SLAB = registerBlock("resistant_ebony_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_EBONY = registerBlock("fence_ebony",
+    public static final RegistryObject<Block> EBONY_FENCE = registerBlock("ebony_fence",
             () -> new REOFlammableFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> FENCE_EBONY_RESISTANT = registerBlock("fence_ebony_resistant",
+    public static final RegistryObject<Block> RESISTANT_EBONY_FENCE = registerBlock("resistant_ebony_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_GATE_EBONY = registerBlock("fence_gate_ebony",
+    public static final RegistryObject<Block> EBONY_FENCE_GATE = registerBlock("ebony_fence_gate",
             () -> new REOFlammableFenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE, 20, 5));
-    public static final RegistryObject<Block> FENCE_GATE_EBONY_RESISTANT = registerBlock("fence_gate_ebony_resistant",
+    public static final RegistryObject<Block> RESISTANT_EBONY_FENCE_GATE = registerBlock("resistant_ebony_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> BUTTON_EBONY = registerBlock("button_ebony",
+    public static final RegistryObject<Block> EBONY_BUTTON = registerBlock("ebony_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD),
                     BlockSetType.OAK, 30, true));
-    public static final RegistryObject<Block> PRESSURE_PLATE_EBONY = registerBlock("pressure_plate_ebony",
+    public static final RegistryObject<Block> EBONY_PRESSURE_PLATE = registerBlock("ebony_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
                     .sound(SoundType.WOOD), BlockSetType.OAK));
 
-    public static final RegistryObject<Block> SIGN_EBONY = BLOCKS.register("sign_ebony",
+    public static final RegistryObject<Block> EBONY_SIGN = BLOCKS.register("ebony_sign",
             () -> new REOStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), REOWoodTypes.EBONY));
-    public static final RegistryObject<Block> SIGN_EBONY_WALL = BLOCKS.register("sign_ebony_wall",
+    public static final RegistryObject<Block> EBONY_WALL_SIGN = BLOCKS.register("ebony_wall_sign",
             () -> new REOWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), REOWoodTypes.EBONY));
 
-    public static final RegistryObject<Block> SIGN_HANGING_EBONY = BLOCKS.register("sign_hanging_ebony",
+    public static final RegistryObject<Block> EBONY_HANGING_SIGN = BLOCKS.register("ebony_hanging_sign",
             () -> new REOHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), REOWoodTypes.EBONY));
-    public static final RegistryObject<Block> SIGN_HANGING_EBONY_WALL = BLOCKS.register("sign_hanging_ebony_wall",
+    public static final RegistryObject<Block> EBONY_WALL_HANGING_SIGN = BLOCKS.register("ebony_wall_hanging_sign",
             () -> new REOWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), REOWoodTypes.EBONY));
 
-    public static final RegistryObject<Block> DOOR_EBONY = registerBlock("door_ebony",
+    public static final RegistryObject<Block> EBONY_DOOR = registerBlock("ebony_door",
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion(), BlockSetType.OAK));
-    public static final RegistryObject<Block> TRAPDOOR_EBONY = registerBlock("trapdoor_ebony",
+    public static final RegistryObject<Block> EBONY_TRAPDOOR = registerBlock("ebony_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.OAK));
 
     //
-    public static final RegistryObject<Block> LOG_LARCH = registerBlock("log_larch",
+    public static final RegistryObject<Block> LARCH_LOG = registerBlock("larch_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_LARCH_RESISTANT = registerBlock("log_larch_resistant",
+    public static final RegistryObject<Block> RESISTANT_LARCH_LOG = registerBlock("resistant_larch_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_LARCH = registerBlock("wood_larch",
+    public static final RegistryObject<Block> LARCH_WOOD = registerBlock("larch_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_LARCH_RESISTANT = registerBlock("wood_larch_resistant",
+    public static final RegistryObject<Block> RESISTANT_LARCH_WOOD = registerBlock("resistant_larch_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> LOG_LARCH_STRIPPED = registerBlock("log_larch_stripped",
+    public static final RegistryObject<Block> STRIPPED_LARCH_LOG = registerBlock("stripped_larch_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_LARCH_STRIPPED_RESISTANT = registerBlock("log_larch_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_LARCH_LOG = registerBlock("resistant_stripped_larch_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_LARCH_STRIPPED = registerBlock("wood_larch_stripped",
+    public static final RegistryObject<Block> STRIPPED_LARCH_WOOD = registerBlock("stripped_larch_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_LARCH_STRIPPED_RESISTANT = registerBlock("wood_larch_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_LARCH_WOOD = registerBlock("resistant_stripped_larch_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> PLANKS_LARCH = registerBlock("planks_larch",
+    public static final RegistryObject<Block> LARCH_PLANKS = registerBlock("larch_planks",
             () -> new REOFlammablePlanksBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS), 20, 5));
-    public static final RegistryObject<Block> PLANKS_LARCH_RESISTANT = registerBlock("planks_larch_resistant",
+    public static final RegistryObject<Block> RESISTANT_LARCH_PLANKS = registerBlock("resistant_larch_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
-    public static final RegistryObject<Block> SAPLING_LARCH = registerBlock("sapling_larch",
+    public static final RegistryObject<Block> LARCH_SAPLING = registerBlock("larch_sapling",
             () -> new SaplingBlock(new LarchTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
-    public static final RegistryObject<Block> POTTED_SAPLING_LARCH = BLOCKS.register("potted_sapling_larch",
-            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.SAPLING_LARCH,
+    public static final RegistryObject<Block> POTTED_LARCH_SAPLING = BLOCKS.register("potted_sapling_larch",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.LARCH_SAPLING,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
-    public static final RegistryObject<Block> LEAVES_LARCH = registerBlock("leaves_larch",
+    public static final RegistryObject<Block> LARCH_LEAVES = registerBlock("larch_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
-    public static final RegistryObject<Block> STAIRS_LARCH = registerBlock("stairs_larch",
-            () -> new REOFlammableStairsBlock(() -> REOBlocks.PLANKS_LARCH.get().defaultBlockState(),
+    public static final RegistryObject<Block> LARCH_STAIRS = registerBlock("larch_stairs",
+            () -> new REOFlammableStairsBlock(() -> REOBlocks.LARCH_PLANKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> STAIRS_LARCH_RESISTANT = registerBlock("stairs_larch_resistant",
-            () -> new StairBlock(() -> REOBlocks.PLANKS_LARCH_RESISTANT.get()
+    public static final RegistryObject<Block> RESISTANT_LARCH_STAIRS = registerBlock("resistant_larch_stairs",
+            () -> new StairBlock(() -> REOBlocks.RESISTANT_LARCH_PLANKS.get()
                     .defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> SLAB_LARCH = registerBlock("slab_larch",
+    public static final RegistryObject<Block> LARCH_SLAB = registerBlock("larch_slab",
             () -> new REOFlammableSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> SLAB_LARCH_RESISTANT = registerBlock("slab_larch_resistant",
+    public static final RegistryObject<Block> RESISTANT_LARCH_SLAB = registerBlock("resistant_larch_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_LARCH = registerBlock("fence_larch",
+    public static final RegistryObject<Block> LARCH_FENCE = registerBlock("larch_fence",
             () -> new REOFlammableFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> FENCE_LARCH_RESISTANT = registerBlock("fence_larch_resistant",
+    public static final RegistryObject<Block> RESISTANT_LARCH_FENCE = registerBlock("resistant_larch_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_GATE_LARCH = registerBlock("fence_gate_larch",
+    public static final RegistryObject<Block> LARCH_FENCE_GATE = registerBlock("larch_fence_gate",
             () -> new REOFlammableFenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE, 20, 5));
-    public static final RegistryObject<Block> FENCE_GATE_LARCH_RESISTANT = registerBlock("fence_gate_larch_resistant",
+    public static final RegistryObject<Block> RESISTANT_LARCH_FENCE_GATE = registerBlock("resistant_larch_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> BUTTON_LARCH = registerBlock("button_larch",
+    public static final RegistryObject<Block> LARCH_BUTTON = registerBlock("larch_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD),
                     BlockSetType.OAK, 30, true));
-    public static final RegistryObject<Block> PRESSURE_PLATE_LARCH = registerBlock("pressure_plate_larch",
+    public static final RegistryObject<Block> LARCH_PRESSURE_PLATE = registerBlock("larch_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
                     .sound(SoundType.WOOD), BlockSetType.OAK));
 
-    public static final RegistryObject<Block> SIGN_LARCH = BLOCKS.register("sign_larch",
+    public static final RegistryObject<Block> LARCH_SIGN = BLOCKS.register("larch_sign",
             () -> new REOStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), REOWoodTypes.LARCH));
-    public static final RegistryObject<Block> SIGN_LARCH_WALL = BLOCKS.register("sign_larch_wall",
+    public static final RegistryObject<Block> LARCH_WALL_SIGN = BLOCKS.register("larch_wall_sign",
             () -> new REOWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), REOWoodTypes.LARCH));
 
-    public static final RegistryObject<Block> SIGN_HANGING_LARCH = BLOCKS.register("sign_hanging_larch",
+    public static final RegistryObject<Block> LARCH_HANGING_SIGN = BLOCKS.register("larch_hanging_sign",
             () -> new REOHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), REOWoodTypes.LARCH));
-    public static final RegistryObject<Block> SIGN_HANGING_LARCH_WALL = BLOCKS.register("sign_hanging_larch_wall",
+    public static final RegistryObject<Block> LARCH_WALL_HANGING_SIGN = BLOCKS.register("larch_wall_hanging_sign",
             () -> new REOWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), REOWoodTypes.LARCH));
 
-    public static final RegistryObject<Block> DOOR_LARCH = registerBlock("door_larch",
+    public static final RegistryObject<Block> LARCH_DOOR = registerBlock("larch_door",
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion(), BlockSetType.OAK));
-    public static final RegistryObject<Block> TRAPDOOR_LARCH = registerBlock("trapdoor_larch",
+    public static final RegistryObject<Block> LARCH_TRAPDOOR = registerBlock("larch_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.OAK));
 
     //
-    public static final RegistryObject<Block> LOG_LIME = registerBlock("log_lime",
+    public static final RegistryObject<Block> LIME_LOG = registerBlock("lime_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_LIME_RESISTANT = registerBlock("log_lime_resistant",
+    public static final RegistryObject<Block> RESISTANT_LIME_LOG = registerBlock("resistant_lime_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_LIME = registerBlock("wood_lime",
+    public static final RegistryObject<Block> LIME_WOOD = registerBlock("lime_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_LIME_RESISTANT = registerBlock("wood_lime_resistant",
+    public static final RegistryObject<Block> RESISTANT_LIME_WOOD = registerBlock("resistant_lime_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> LOG_LIME_STRIPPED = registerBlock("log_lime_stripped",
+    public static final RegistryObject<Block> STRIPPED_LIME_LOG = registerBlock("stripped_lime_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_LIME_STRIPPED_RESISTANT = registerBlock("log_lime_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_LIME_LOG = registerBlock("resistant_stripped_lime_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_LIME_STRIPPED = registerBlock("wood_lime_stripped",
+    public static final RegistryObject<Block> STRIPPED_LIME_WOOD = registerBlock("stripped_lime_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_LIME_STRIPPED_RESISTANT = registerBlock("wood_lime_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_LIME_WOOD = registerBlock("resistant_stripped_lime_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> PLANKS_LIME = registerBlock("planks_lime",
+    public static final RegistryObject<Block> LIME_PLANKS = registerBlock("lime_planks",
             () -> new REOFlammablePlanksBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS), 20, 5));
-    public static final RegistryObject<Block> PLANKS_LIME_RESISTANT = registerBlock("planks_lime_resistant",
+    public static final RegistryObject<Block> RESISTANT_LIME_PLANKS = registerBlock("resistant_lime_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
-    public static final RegistryObject<Block> SAPLING_LIME = registerBlock("sapling_lime",
+    public static final RegistryObject<Block> LIME_SAPLING = registerBlock("lime_sapling",
             () -> new SaplingBlock(new LimeTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
-    public static final RegistryObject<Block> POTTED_SAPLING_LIME = BLOCKS.register("potted_sapling_lime",
-            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.SAPLING_LIME,
+    public static final RegistryObject<Block> POTTED_LIME_SAPLING = BLOCKS.register("potted_sapling_lime",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.LIME_SAPLING,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
-    public static final RegistryObject<Block> LEAVES_LIME = registerBlock("leaves_lime",
+    public static final RegistryObject<Block> LIME_LEAVES = registerBlock("lime_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
-    public static final RegistryObject<Block> LEAVES_LIME_FRUIT = registerBlock("leaves_lime_fruit",
+    public static final RegistryObject<Block> LIME_FRUIT_LEAVES = registerBlock("lime_fruit_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
-    public static final RegistryObject<Block> STAIRS_LIME = registerBlock("stairs_lime",
-            () -> new REOFlammableStairsBlock(() -> REOBlocks.PLANKS_LIME.get().defaultBlockState(),
+    public static final RegistryObject<Block> LIME_STAIRS = registerBlock("lime_stairs",
+            () -> new REOFlammableStairsBlock(() -> REOBlocks.LIME_PLANKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> STAIRS_LIME_RESISTANT = registerBlock("stairs_lime_resistant",
-            () -> new StairBlock(() -> REOBlocks.PLANKS_LIME_RESISTANT.get()
+    public static final RegistryObject<Block> RESISTANT_LIME_STAIRS = registerBlock("resistant_lime_stairs",
+            () -> new StairBlock(() -> REOBlocks.RESISTANT_LIME_PLANKS.get()
                     .defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> SLAB_LIME = registerBlock("slab_lime",
+    public static final RegistryObject<Block> LIME_SLAB = registerBlock("lime_slab",
             () -> new REOFlammableSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> SLAB_LIME_RESISTANT = registerBlock("slab_lime_resistant",
+    public static final RegistryObject<Block> RESISTANT_LIME_SLAB = registerBlock("resistant_lime_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_LIME = registerBlock("fence_lime",
+    public static final RegistryObject<Block> LIME_FENCE = registerBlock("lime_fence",
             () -> new REOFlammableFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> FENCE_LIME_RESISTANT = registerBlock("fence_lime_resistant",
+    public static final RegistryObject<Block> RESISTANT_LIME_FENCE = registerBlock("resistant_lime_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_GATE_LIME = registerBlock("fence_gate_lime",
+    public static final RegistryObject<Block> LIME_FENCE_GATE = registerBlock("lime_fence_gate",
             () -> new REOFlammableFenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE, 20, 5));
-    public static final RegistryObject<Block> FENCE_GATE_LIME_RESISTANT = registerBlock("fence_gate_lime_resistant",
+    public static final RegistryObject<Block> RESISTANT_LIME_FENCE_GATE = registerBlock("resistant_lime_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> BUTTON_LIME = registerBlock("button_lime",
+    public static final RegistryObject<Block> LIME_BUTTON = registerBlock("lime_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD),
                     BlockSetType.OAK, 30, true));
-    public static final RegistryObject<Block> PRESSURE_PLATE_LIME = registerBlock("pressure_plate_lime",
+    public static final RegistryObject<Block> LIME_PRESSURE_PLATE = registerBlock("lime_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
                     .sound(SoundType.WOOD), BlockSetType.OAK));
 
-    public static final RegistryObject<Block> SIGN_LIME = BLOCKS.register("sign_lime",
+    public static final RegistryObject<Block> LIME_SIGN = BLOCKS.register("lime_sign",
             () -> new REOStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), REOWoodTypes.LIME));
-    public static final RegistryObject<Block> SIGN_LIME_WALL = BLOCKS.register("sign_lime_wall",
+    public static final RegistryObject<Block> LIME_WALL_SIGN = BLOCKS.register("lime_wall_sign",
             () -> new REOWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), REOWoodTypes.LIME));
 
-    public static final RegistryObject<Block> SIGN_HANGING_LIME = BLOCKS.register("sign_hanging_lime",
+    public static final RegistryObject<Block> LIME_HANGING_SIGN = BLOCKS.register("lime_hanging_sign",
             () -> new REOHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), REOWoodTypes.LIME));
-    public static final RegistryObject<Block> SIGN_HANGING_LIME_WALL = BLOCKS.register("sign_hanging_lime_wall",
+    public static final RegistryObject<Block> LIME_WALL_HANGING_SIGN = BLOCKS.register("lime_wall_hanging_sign",
             () -> new REOWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), REOWoodTypes.LIME));
 
-    public static final RegistryObject<Block> DOOR_LIME = registerBlock("door_lime",
+    public static final RegistryObject<Block> LIME_DOOR = registerBlock("lime_door",
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion(), BlockSetType.OAK));
-    public static final RegistryObject<Block> TRAPDOOR_LIME = registerBlock("trapdoor_lime",
+    public static final RegistryObject<Block> LIME_TRAPDOOR = registerBlock("lime_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.OAK));
 
     //
-    public static final RegistryObject<Block> LOG_MAHOGANY = registerBlock("log_mahogany",
+    public static final RegistryObject<Block> MAHOGANY_LOG = registerBlock("mahogany_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_MAHOGANY_RESISTANT = registerBlock("log_mahogany_resistant",
+    public static final RegistryObject<Block> RESISTANT_MAHOGANY_LOG = registerBlock("resistant_mahogany_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_MAHOGANY = registerBlock("wood_mahogany",
+    public static final RegistryObject<Block> MAHOGANY_WOOD = registerBlock("mahogany_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_MAHOGANY_RESISTANT = registerBlock("wood_mahogany_resistant",
+    public static final RegistryObject<Block> RESISTANT_MAHOGANY_WOOD = registerBlock("resistant_mahogany_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> LOG_MAHOGANY_STRIPPED = registerBlock("log_mahogany_stripped",
+    public static final RegistryObject<Block> STRIPPED_MAHOGANY_LOG = registerBlock("stripped_mahogany_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_MAHOGANY_STRIPPED_RESISTANT = registerBlock("log_mahogany_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_MAHOGANY_LOG = registerBlock("resistant_stripped_mahogany_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_MAHOGANY_STRIPPED = registerBlock("wood_mahogany_stripped",
+    public static final RegistryObject<Block> STRIPPED_MAHOGANY_WOOD = registerBlock("stripped_mahogany_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_MAHOGANY_STRIPPED_RESISTANT = registerBlock("wood_mahogany_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_MAHOGANY_WOOD = registerBlock("resistant_stripped_mahogany_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> PLANKS_MAHOGANY = registerBlock("planks_mahogany",
+    public static final RegistryObject<Block> MAHOGANY_PLANKS = registerBlock("mahogany_planks",
             () -> new REOFlammablePlanksBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS), 20, 5));
-    public static final RegistryObject<Block> PLANKS_MAHOGANY_RESISTANT = registerBlock("planks_mahogany_resistant",
+    public static final RegistryObject<Block> RESISTANT_MAHOGANY_PLANKS = registerBlock("resistant_mahogany_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
-    public static final RegistryObject<Block> SAPLING_MAHOGANY = registerBlock("sapling_mahogany",
+    public static final RegistryObject<Block> MAHOGANY_SAPLING = registerBlock("mahogany_sapling",
             () -> new SaplingBlock(new MahoganyTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
-    public static final RegistryObject<Block> POTTED_SAPLING_MAHOGANY = BLOCKS.register("potted_sapling_mahogany",
-            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.SAPLING_MAHOGANY,
+    public static final RegistryObject<Block> POTTED_MAHOGANY_SAPLING = BLOCKS.register("potted_sapling_mahogany",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.MAHOGANY_SAPLING,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
-    public static final RegistryObject<Block> LEAVES_MAHOGANY = registerBlock("leaves_mahogany",
+    public static final RegistryObject<Block> MAHOGANY_LEAVES = registerBlock("mahogany_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
-    public static final RegistryObject<Block> STAIRS_MAHOGANY = registerBlock("stairs_mahogany",
-            () -> new REOFlammableStairsBlock(() -> REOBlocks.PLANKS_MAHOGANY.get().defaultBlockState(),
+    public static final RegistryObject<Block> MAHOGANY_STAIRS = registerBlock("mahogany_stairs",
+            () -> new REOFlammableStairsBlock(() -> REOBlocks.MAHOGANY_PLANKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> STAIRS_MAHOGANY_RESISTANT = registerBlock("stairs_mahogany_resistant",
-            () -> new StairBlock(() -> REOBlocks.PLANKS_MAHOGANY_RESISTANT.get()
+    public static final RegistryObject<Block> RESISTANT_MAHOGANY_STAIRS = registerBlock("resistant_mahogany_stairs",
+            () -> new StairBlock(() -> REOBlocks.RESISTANT_MAHOGANY_PLANKS.get()
                     .defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> SLAB_MAHOGANY = registerBlock("slab_mahogany",
+    public static final RegistryObject<Block> MAHOGANY_SLAB = registerBlock("mahogany_slab",
             () -> new REOFlammableSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> SLAB_MAHOGANY_RESISTANT = registerBlock("slab_mahogany_resistant",
+    public static final RegistryObject<Block> RESISTANT_MAHOGANY_SLAB = registerBlock("resistant_mahogany_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_MAHOGANY = registerBlock("fence_mahogany",
+    public static final RegistryObject<Block> MAHOGANY_FENCE = registerBlock("mahogany_fence",
             () -> new REOFlammableFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> FENCE_MAHOGANY_RESISTANT = registerBlock("fence_mahogany_resistant",
+    public static final RegistryObject<Block> RESISTANT_MAHOGANY_FENCE = registerBlock("resistant_mahogany_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_GATE_MAHOGANY = registerBlock("fence_gate_mahogany",
+    public static final RegistryObject<Block> MAHOGANY_FENCE_GATE = registerBlock("mahogany_fence_gate",
             () -> new REOFlammableFenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE, 20, 5));
-    public static final RegistryObject<Block> FENCE_GATE_MAHOGANY_RESISTANT = registerBlock("fence_gate_mahogany_resistant",
+    public static final RegistryObject<Block> RESISTANT_MAHOGANY_FENCE_GATE = registerBlock("resistant_mahogany_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> BUTTON_MAHOGANY = registerBlock("button_mahogany",
+    public static final RegistryObject<Block> MAHOGANY_BUTTON = registerBlock("mahogany_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD),
                     BlockSetType.OAK, 30, true));
-    public static final RegistryObject<Block> PRESSURE_PLATE_MAHOGANY = registerBlock("pressure_plate_mahogany",
+    public static final RegistryObject<Block> MAHOGANY_PRESSURE_PLATE = registerBlock("mahogany_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
                     .sound(SoundType.WOOD), BlockSetType.OAK));
 
-    public static final RegistryObject<Block> SIGN_MAHOGANY = BLOCKS.register("sign_mahogany",
+    public static final RegistryObject<Block> MAHOGANY_SIGN = BLOCKS.register("mahogany_sign",
             () -> new REOStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), REOWoodTypes.MAHOGANY));
-    public static final RegistryObject<Block> SIGN_MAHOGANY_WALL = BLOCKS.register("sign_mahogany_wall",
+    public static final RegistryObject<Block> MAHOGANY_WALL_SIGN = BLOCKS.register("mahogany_wall_sign",
             () -> new REOWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), REOWoodTypes.MAHOGANY));
 
-    public static final RegistryObject<Block> SIGN_HANGING_MAHOGANY = BLOCKS.register("sign_hanging_mahogany",
+    public static final RegistryObject<Block> MAHOGANY_HANGING_SIGN = BLOCKS.register("mahogany_hanging_sign",
             () -> new REOHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), REOWoodTypes.MAHOGANY));
-    public static final RegistryObject<Block> SIGN_HANGING_MAHOGANY_WALL = BLOCKS.register("sign_hanging_mahogany_wall",
+    public static final RegistryObject<Block> MAHOGANY_WALL_HANGING_SIGN = BLOCKS.register("mahogany_wall_hanging_sign",
             () -> new REOWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), REOWoodTypes.MAHOGANY));
 
-    public static final RegistryObject<Block> DOOR_MAHOGANY = registerBlock("door_mahogany",
+    public static final RegistryObject<Block> MAHOGANY_DOOR = registerBlock("mahogany_door",
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion(), BlockSetType.OAK));
-    public static final RegistryObject<Block> TRAPDOOR_MAHOGANY = registerBlock("trapdoor_mahogany",
+    public static final RegistryObject<Block> MAHOGANY_TRAPDOOR = registerBlock("mahogany_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.OAK));
 
     //
-    public static final RegistryObject<Block> LOG_MAPLE = registerBlock("log_maple",
+    public static final RegistryObject<Block> MAPLE_LOG = registerBlock("maple_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_MAPLE_RESISTANT = registerBlock("log_maple_resistant",
+    public static final RegistryObject<Block> RESISTANT_MAPLE_LOG = registerBlock("resistant_maple_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_MAPLE = registerBlock("wood_maple",
+    public static final RegistryObject<Block> MAPLE_WOOD = registerBlock("maple_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_MAPLE_RESISTANT = registerBlock("wood_maple_resistant",
+    public static final RegistryObject<Block> RESISTANT_MAPLE_WOOD = registerBlock("resistant_maple_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> LOG_MAPLE_STRIPPED = registerBlock("log_maple_stripped",
+    public static final RegistryObject<Block> STRIPPED_MAPLE_LOG = registerBlock("stripped_maple_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_MAPLE_STRIPPED_RESISTANT = registerBlock("log_maple_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_MAPLE_LOG = registerBlock("resistant_stripped_maple_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_MAPLE_STRIPPED = registerBlock("wood_maple_stripped",
+    public static final RegistryObject<Block> STRIPPED_MAPLE_WOOD = registerBlock("stripped_maple_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_MAPLE_STRIPPED_RESISTANT = registerBlock("wood_maple_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_MAPLE_WOOD = registerBlock("resistant_stripped_maple_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> PLANKS_MAPLE = registerBlock("planks_maple",
+    public static final RegistryObject<Block> MAPLE_PLANKS = registerBlock("maple_planks",
             () -> new REOFlammablePlanksBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS), 20, 5));
-    public static final RegistryObject<Block> PLANKS_MAPLE_RESISTANT = registerBlock("planks_maple_resistant",
+    public static final RegistryObject<Block> RESISTANT_MAPLE_PLANKS = registerBlock("resistant_maple_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
-    public static final RegistryObject<Block> SAPLING_MAPLE = registerBlock("sapling_maple",
+    public static final RegistryObject<Block> MAPLE_SAPLING = registerBlock("maple_sapling",
             () -> new SaplingBlock(new MapleTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
-    public static final RegistryObject<Block> POTTED_SAPLING_MAPLE = BLOCKS.register("potted_sapling_maple",
-            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.SAPLING_MAPLE,
+    public static final RegistryObject<Block> POTTED_MAPLE_SAPLING = BLOCKS.register("potted_sapling_maple",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.MAPLE_SAPLING,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
-    public static final RegistryObject<Block> LEAVES_MAPLE = registerBlock("leaves_maple",
+    public static final RegistryObject<Block> MAPLE_LEAVES = registerBlock("maple_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
-    public static final RegistryObject<Block> STAIRS_MAPLE = registerBlock("stairs_maple",
-            () -> new REOFlammableStairsBlock(() -> REOBlocks.PLANKS_MAPLE.get().defaultBlockState(),
+    public static final RegistryObject<Block> MAPLE_STAIRS = registerBlock("maple_stairs",
+            () -> new REOFlammableStairsBlock(() -> REOBlocks.MAPLE_PLANKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> STAIRS_MAPLE_RESISTANT = registerBlock("stairs_maple_resistant",
-            () -> new StairBlock(() -> REOBlocks.PLANKS_MAPLE_RESISTANT.get()
+    public static final RegistryObject<Block> RESISTANT_MAPLE_STAIRS = registerBlock("resistant_maple_stairs",
+            () -> new StairBlock(() -> REOBlocks.RESISTANT_MAPLE_PLANKS.get()
                     .defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> SLAB_MAPLE = registerBlock("slab_maple",
+    public static final RegistryObject<Block> MAPLE_SLAB = registerBlock("maple_slab",
             () -> new REOFlammableSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> SLAB_MAPLE_RESISTANT = registerBlock("slab_maple_resistant",
+    public static final RegistryObject<Block> RESISTANT_MAPLE_SLAB = registerBlock("resistant_maple_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_MAPLE = registerBlock("fence_maple",
+    public static final RegistryObject<Block> MAPLE_FENCE = registerBlock("maple_fence",
             () -> new REOFlammableFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> FENCE_MAPLE_RESISTANT = registerBlock("fence_maple_resistant",
+    public static final RegistryObject<Block> RESISTANT_MAPLE_FENCE = registerBlock("resistant_maple_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_GATE_MAPLE = registerBlock("fence_gate_maple",
+    public static final RegistryObject<Block> MAPLE_FENCE_GATE = registerBlock("maple_fence_gate",
             () -> new REOFlammableFenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE, 20, 5));
-    public static final RegistryObject<Block> FENCE_GATE_MAPLE_RESISTANT = registerBlock("fence_gate_maple_resistant",
+    public static final RegistryObject<Block> RESISTANT_MAPLE_FENCE_GATE = registerBlock("resistant_maple_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> BUTTON_MAPLE = registerBlock("button_maple",
+    public static final RegistryObject<Block> MAPLE_BUTTON = registerBlock("maple_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD),
                     BlockSetType.OAK, 30, true));
-    public static final RegistryObject<Block> PRESSURE_PLATE_MAPLE = registerBlock("pressure_plate_maple",
+    public static final RegistryObject<Block> MAPLE_PRESSURE_PLATE = registerBlock("maple_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
                     .sound(SoundType.WOOD), BlockSetType.OAK));
 
-    public static final RegistryObject<Block> SIGN_MAPLE = BLOCKS.register("sign_maple",
+    public static final RegistryObject<Block> MAPLE_SIGN = BLOCKS.register("maple_sign",
             () -> new REOStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), REOWoodTypes.MAPLE));
-    public static final RegistryObject<Block> SIGN_MAPLE_WALL = BLOCKS.register("sign_maple_wall",
+    public static final RegistryObject<Block> MAPLE_WALL_SIGN = BLOCKS.register("maple_wall_sign",
             () -> new REOWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), REOWoodTypes.MAPLE));
 
-    public static final RegistryObject<Block> SIGN_HANGING_MAPLE = BLOCKS.register("sign_hanging_maple",
+    public static final RegistryObject<Block> MAPLE_HANGING_SIGN = BLOCKS.register("maple_hanging_sign",
             () -> new REOHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), REOWoodTypes.MAPLE));
-    public static final RegistryObject<Block> SIGN_HANGING_MAPLE_WALL = BLOCKS.register("sign_hanging_maple_wall",
+    public static final RegistryObject<Block> MAPLE_WALL_HANGING_SIGN = BLOCKS.register("maple_wall_hanging_sign",
             () -> new REOWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), REOWoodTypes.MAPLE));
 
-    public static final RegistryObject<Block> DOOR_MAPLE = registerBlock("door_maple",
+    public static final RegistryObject<Block> MAPLE_DOOR = registerBlock("maple_door",
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion(), BlockSetType.OAK));
-    public static final RegistryObject<Block> TRAPDOOR_MAPLE = registerBlock("trapdoor_maple",
+    public static final RegistryObject<Block> MAPLE_TRAPDOOR = registerBlock("maple_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.OAK));
 
     //
-    public static final RegistryObject<Block> LOG_PALM = registerBlock("log_palm",
+    public static final RegistryObject<Block> PALM_LOG = registerBlock("palm_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_PALM_RESISTANT = registerBlock("log_palm_resistant",
+    public static final RegistryObject<Block> RESISTANT_PALM_LOG = registerBlock("resistant_palm_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_PALM = registerBlock("wood_palm",
+    public static final RegistryObject<Block> PALM_WOOD = registerBlock("palm_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_PALM_RESISTANT = registerBlock("wood_palm_resistant",
+    public static final RegistryObject<Block> RESISTANT_PALM_WOOD = registerBlock("resistant_palm_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> LOG_PALM_STRIPPED = registerBlock("log_palm_stripped",
+    public static final RegistryObject<Block> STRIPPED_PALM_LOG = registerBlock("stripped_palm_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_PALM_STRIPPED_RESISTANT = registerBlock("log_palm_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_PALM_LOG = registerBlock("resistant_stripped_palm_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_PALM_STRIPPED = registerBlock("wood_palm_stripped",
+    public static final RegistryObject<Block> STRIPPED_PALM_WOOD = registerBlock("stripped_palm_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_PALM_STRIPPED_RESISTANT = registerBlock("wood_palm_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_PALM_WOOD = registerBlock("resistant_stripped_palm_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> PLANKS_PALM = registerBlock("planks_palm",
+    public static final RegistryObject<Block> PALM_PLANKS = registerBlock("palm_planks",
             () -> new REOFlammablePlanksBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS), 20, 5));
-    public static final RegistryObject<Block> PLANKS_PALM_RESISTANT = registerBlock("planks_palm_resistant",
+    public static final RegistryObject<Block> RESISTANT_PALM_PLANKS = registerBlock("resistant_palm_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
-    public static final RegistryObject<Block> SAPLING_PALM = registerBlock("sapling_palm",
+    public static final RegistryObject<Block> PALM_SAPLING = registerBlock("palm_sapling",
             () -> new REOSaplingBlock(new PalmTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING), () -> Blocks.SAND));
-    public static final RegistryObject<Block> POTTED_SAPLING_PALM = BLOCKS.register("potted_sapling_palm",
-            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.SAPLING_PALM,
+    public static final RegistryObject<Block> POTTED_PALM_SAPLING = BLOCKS.register("potted_sapling_palm",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.PALM_SAPLING,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
-    public static final RegistryObject<Block> LEAVES_PALM = registerBlock("leaves_palm",
+    public static final RegistryObject<Block> PALM_LEAVES = registerBlock("palm_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
-    public static final RegistryObject<Block> STAIRS_PALM = registerBlock("stairs_palm",
-            () -> new REOFlammableStairsBlock(() -> REOBlocks.PLANKS_PALM.get().defaultBlockState(),
+    public static final RegistryObject<Block> PALM_STAIRS = registerBlock("palm_stairs",
+            () -> new REOFlammableStairsBlock(() -> REOBlocks.PALM_PLANKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> STAIRS_PALM_RESISTANT = registerBlock("stairs_palm_resistant",
-            () -> new StairBlock(() -> REOBlocks.PLANKS_PALM_RESISTANT.get()
+    public static final RegistryObject<Block> RESISTANT_PALM_STAIRS = registerBlock("resistant_palm_stairs",
+            () -> new StairBlock(() -> REOBlocks.RESISTANT_PALM_PLANKS.get()
                     .defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> SLAB_PALM = registerBlock("slab_palm",
+    public static final RegistryObject<Block> PALM_SLAB = registerBlock("palm_slab",
             () -> new REOFlammableSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> SLAB_PALM_RESISTANT = registerBlock("slab_palm_resistant",
+    public static final RegistryObject<Block> RESISTANT_PALM_SLAB = registerBlock("resistant_palm_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_PALM = registerBlock("fence_palm",
+    public static final RegistryObject<Block> PALM_FENCE = registerBlock("palm_fence",
             () -> new REOFlammableFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> FENCE_PALM_RESISTANT = registerBlock("fence_palm_resistant",
+    public static final RegistryObject<Block> RESISTANT_PALM_FENCE = registerBlock("resistant_palm_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_GATE_PALM = registerBlock("fence_gate_palm",
+    public static final RegistryObject<Block> PALM_FENCE_GATE = registerBlock("palm_fence_gate",
             () -> new REOFlammableFenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE, 20, 5));
-    public static final RegistryObject<Block> FENCE_GATE_PALM_RESISTANT = registerBlock("fence_gate_palm_resistant",
+    public static final RegistryObject<Block> RESISTANT_PALM_FENCE_GATE = registerBlock("resistant_palm_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> BUTTON_PALM = registerBlock("button_palm",
+    public static final RegistryObject<Block> PALM_BUTTON = registerBlock("palm_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD),
                     BlockSetType.OAK, 30, true));
-    public static final RegistryObject<Block> PRESSURE_PLATE_PALM = registerBlock("pressure_plate_palm",
+    public static final RegistryObject<Block> PALM_PRESSURE_PLATE = registerBlock("palm_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
                     .sound(SoundType.WOOD), BlockSetType.OAK));
 
-    public static final RegistryObject<Block> SIGN_PALM = BLOCKS.register("sign_palm",
+    public static final RegistryObject<Block> PALM_SIGN = BLOCKS.register("palm_sign",
             () -> new REOStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), REOWoodTypes.PALM));
-    public static final RegistryObject<Block> SIGN_PALM_WALL = BLOCKS.register("sign_palm_wall",
+    public static final RegistryObject<Block> PALM_WALL_SIGN = BLOCKS.register("palm_wall_sign",
             () -> new REOWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), REOWoodTypes.PALM));
 
-    public static final RegistryObject<Block> SIGN_HANGING_PALM = BLOCKS.register("sign_hanging_palm",
+    public static final RegistryObject<Block> PALM_HANGING_SIGN = BLOCKS.register("palm_hanging_sign",
             () -> new REOHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), REOWoodTypes.PALM));
-    public static final RegistryObject<Block> SIGN_HANGING_PALM_WALL = BLOCKS.register("sign_hanging_palm_wall",
+    public static final RegistryObject<Block> PALM_WALL_HANGING_SIGN = BLOCKS.register("palm_wall_hanging_sign",
             () -> new REOWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), REOWoodTypes.PALM));
 
-    public static final RegistryObject<Block> DOOR_PALM = registerBlock("door_palm",
+    public static final RegistryObject<Block> PALM_DOOR = registerBlock("palm_door",
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion(), BlockSetType.OAK));
-    public static final RegistryObject<Block> TRAPDOOR_PALM = registerBlock("trapdoor_palm",
+    public static final RegistryObject<Block> PALM_TRAPDOOR = registerBlock("palm_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.OAK));
 
     //
-    public static final RegistryObject<Block> LOG_PAPAYA = registerBlock("log_papaya",
+    public static final RegistryObject<Block> PAPAYA_LOG = registerBlock("papaya_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_PAPAYA_RESISTANT = registerBlock("log_papaya_resistant",
+    public static final RegistryObject<Block> RESISTANT_PAPAYA_LOG = registerBlock("resistant_papaya_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_PAPAYA = registerBlock("wood_papaya",
+    public static final RegistryObject<Block> PAPAYA_WOOD = registerBlock("papaya_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_PAPAYA_RESISTANT = registerBlock("wood_papaya_resistant",
+    public static final RegistryObject<Block> RESISTANT_PAPAYA_WOOD = registerBlock("resistant_papaya_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> LOG_PAPAYA_STRIPPED = registerBlock("log_papaya_stripped",
+    public static final RegistryObject<Block> STRIPPED_PAPAYA_LOG = registerBlock("stripped_papaya_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_PAPAYA_STRIPPED_RESISTANT = registerBlock("log_papaya_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_PAPAYA_LOG = registerBlock("resistant_stripped_papaya_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_PAPAYA_STRIPPED = registerBlock("wood_papaya_stripped",
+    public static final RegistryObject<Block> STRIPPED_PAPAYA_WOOD = registerBlock("stripped_papaya_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_PAPAYA_STRIPPED_RESISTANT = registerBlock("wood_papaya_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_PAPAYA_WOOD = registerBlock("resistant_stripped_papaya_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> PLANKS_PAPAYA = registerBlock("planks_papaya",
+    public static final RegistryObject<Block> PAPAYA_PLANKS = registerBlock("papaya_planks",
             () -> new REOFlammablePlanksBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS), 20, 5));
-    public static final RegistryObject<Block> PLANKS_PAPAYA_RESISTANT = registerBlock("planks_papaya_resistant",
+    public static final RegistryObject<Block> RESISTANT_PAPAYA_PLANKS = registerBlock("resistant_papaya_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
-    public static final RegistryObject<Block> SAPLING_PAPAYA = registerBlock("sapling_papaya",
+    public static final RegistryObject<Block> PAPAYA_SAPLING = registerBlock("papaya_sapling",
             () -> new SaplingBlock(new PapayaTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
-    public static final RegistryObject<Block> POTTED_SAPLING_PAPAYA = BLOCKS.register("potted_sapling_papaya",
-            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.SAPLING_PAPAYA,
+    public static final RegistryObject<Block> POTTED_PAPAYA_SAPLING = BLOCKS.register("potted_sapling_papaya",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.PAPAYA_SAPLING,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
-    public static final RegistryObject<Block> LEAVES_PAPAYA = registerBlock("leaves_papaya",
+    public static final RegistryObject<Block> PAPAYA_LEAVES = registerBlock("papaya_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
-    public static final RegistryObject<Block> LEAVES_PAPAYA_FRUIT = registerBlock("leaves_papaya_fruit",
+    public static final RegistryObject<Block> PAPAYA_FRUIT_LEAVES = registerBlock("papaya_fruit_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
-    public static final RegistryObject<Block> STAIRS_PAPAYA = registerBlock("stairs_papaya",
-            () -> new REOFlammableStairsBlock(() -> REOBlocks.PLANKS_PAPAYA.get().defaultBlockState(),
+    public static final RegistryObject<Block> PAPAYA_STAIRS = registerBlock("papaya_stairs",
+            () -> new REOFlammableStairsBlock(() -> REOBlocks.PAPAYA_PLANKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> STAIRS_PAPAYA_RESISTANT = registerBlock("stairs_papaya_resistant",
-            () -> new StairBlock(() -> REOBlocks.PLANKS_PAPAYA_RESISTANT.get()
+    public static final RegistryObject<Block> RESISTANT_PAPAYA_STAIRS = registerBlock("resistant_papaya_stairs",
+            () -> new StairBlock(() -> REOBlocks.RESISTANT_PAPAYA_PLANKS.get()
                     .defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> SLAB_PAPAYA = registerBlock("slab_papaya",
+    public static final RegistryObject<Block> PAPAYA_SLAB = registerBlock("papaya_slab",
             () -> new REOFlammableSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> SLAB_PAPAYA_RESISTANT = registerBlock("slab_papaya_resistant",
+    public static final RegistryObject<Block> RESISTANT_PAPAYA_SLAB = registerBlock("resistant_papaya_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_PAPAYA = registerBlock("fence_papaya",
+    public static final RegistryObject<Block> PAPAYA_FENCE = registerBlock("papaya_fence",
             () -> new REOFlammableFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> FENCE_PAPAYA_RESISTANT = registerBlock("fence_papaya_resistant",
+    public static final RegistryObject<Block> RESISTANT_PAPAYA_FENCE = registerBlock("resistant_papaya_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_GATE_PAPAYA = registerBlock("fence_gate_papaya",
+    public static final RegistryObject<Block> PAPAYA_FENCE_GATE = registerBlock("papaya_fence_gate",
             () -> new REOFlammableFenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE, 20, 5));
-    public static final RegistryObject<Block> FENCE_GATE_PAPAYA_RESISTANT = registerBlock("fence_gate_papaya_resistant",
+    public static final RegistryObject<Block> RESISTANT_PAPAYA_FENCE_GATE = registerBlock("resistant_papaya_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> BUTTON_PAPAYA = registerBlock("button_papaya",
+    public static final RegistryObject<Block> PAPAYA_BUTTON = registerBlock("papaya_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD),
                     BlockSetType.OAK, 30, true));
-    public static final RegistryObject<Block> PRESSURE_PLATE_PAPAYA = registerBlock("pressure_plate_papaya",
+    public static final RegistryObject<Block> PAPAYA_PRESSURE_PLATE = registerBlock("papaya_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
                     .sound(SoundType.WOOD), BlockSetType.OAK));
 
-    public static final RegistryObject<Block> SIGN_PAPAYA = BLOCKS.register("sign_papaya",
+    public static final RegistryObject<Block> PAPAYA_SIGN = BLOCKS.register("papaya_sign",
             () -> new REOStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), REOWoodTypes.PAPAYA));
-    public static final RegistryObject<Block> SIGN_PAPAYA_WALL = BLOCKS.register("sign_papaya_wall",
+    public static final RegistryObject<Block> PAPAYA_WALL_SIGN = BLOCKS.register("papaya_wall_sign",
             () -> new REOWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), REOWoodTypes.PAPAYA));
 
-    public static final RegistryObject<Block> SIGN_HANGING_PAPAYA = BLOCKS.register("sign_hanging_papaya",
+    public static final RegistryObject<Block> PAPAYA_HANGING_SIGN = BLOCKS.register("papaya_hanging_sign",
             () -> new REOHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), REOWoodTypes.PAPAYA));
-    public static final RegistryObject<Block> SIGN_HANGING_PAPAYA_WALL = BLOCKS.register("sign_hanging_papaya_wall",
+    public static final RegistryObject<Block> PAPAYA_WALL_HANGING_SIGN = BLOCKS.register("papaya_wall_hanging_sign",
             () -> new REOWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), REOWoodTypes.PAPAYA));
 
-    public static final RegistryObject<Block> DOOR_PAPAYA = registerBlock("door_papaya",
+    public static final RegistryObject<Block> PAPAYA_DOOR = registerBlock("papaya_door",
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion(), BlockSetType.OAK));
-    public static final RegistryObject<Block> TRAPDOOR_PAPAYA = registerBlock("trapdoor_papaya",
+    public static final RegistryObject<Block> PAPAYA_TRAPDOOR = registerBlock("papaya_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.OAK));
 
     //
-    public static final RegistryObject<Block> LOG_PINE = registerBlock("log_pine",
+    public static final RegistryObject<Block> PINE_LOG = registerBlock("pine_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_PINE_RESISTANT = registerBlock("log_pine_resistant",
+    public static final RegistryObject<Block> RESISTANT_PINE_LOG = registerBlock("resistant_pine_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_PINE = registerBlock("wood_pine",
+    public static final RegistryObject<Block> PINE_WOOD = registerBlock("pine_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_PINE_RESISTANT = registerBlock("wood_pine_resistant",
+    public static final RegistryObject<Block> RESISTANT_PINE_WOOD = registerBlock("resistant_pine_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> LOG_PINE_STRIPPED = registerBlock("log_pine_stripped",
+    public static final RegistryObject<Block> STRIPPED_PINE_LOG = registerBlock("stripped_pine_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_PINE_STRIPPED_RESISTANT = registerBlock("log_pine_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_PINE_LOG = registerBlock("resistant_stripped_pine_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_PINE_STRIPPED = registerBlock("wood_pine_stripped",
+    public static final RegistryObject<Block> STRIPPED_PINE_WOOD = registerBlock("stripped_pine_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_PINE_STRIPPED_RESISTANT = registerBlock("wood_pine_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_PINE_WOOD = registerBlock("resistant_stripped_pine_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> PLANKS_PINE = registerBlock("planks_pine",
+    public static final RegistryObject<Block> PINE_PLANKS = registerBlock("pine_planks",
             () -> new REOFlammablePlanksBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS), 20, 5));
-    public static final RegistryObject<Block> PLANKS_PINE_RESISTANT = registerBlock("planks_pine_resistant",
+    public static final RegistryObject<Block> RESISTANT_PINE_PLANKS = registerBlock("resistant_pine_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
-    public static final RegistryObject<Block> SAPLING_PINE = registerBlock("sapling_pine",
+    public static final RegistryObject<Block> PINE_SAPLING = registerBlock("pine_sapling",
             () -> new SaplingBlock(new PineTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
-    public static final RegistryObject<Block> POTTED_SAPLING_PINE = BLOCKS.register("potted_sapling_pine",
-            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.SAPLING_PINE,
+    public static final RegistryObject<Block> POTTED_PINE_SAPLING = BLOCKS.register("potted_sapling_pine",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.PINE_SAPLING,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
-    public static final RegistryObject<Block> LEAVES_PINE = registerBlock("leaves_pine",
+    public static final RegistryObject<Block> PINE_LEAVES = registerBlock("pine_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
-    public static final RegistryObject<Block> STAIRS_PINE = registerBlock("stairs_pine",
-            () -> new REOFlammableStairsBlock(() -> REOBlocks.PLANKS_PINE.get().defaultBlockState(),
+    public static final RegistryObject<Block> PINE_STAIRS = registerBlock("pine_stairs",
+            () -> new REOFlammableStairsBlock(() -> REOBlocks.PINE_PLANKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> STAIRS_PINE_RESISTANT = registerBlock("stairs_pine_resistant",
-            () -> new StairBlock(() -> REOBlocks.PLANKS_PINE_RESISTANT.get()
+    public static final RegistryObject<Block> RESISTANT_PINE_STAIRS = registerBlock("resistant_pine_stairs",
+            () -> new StairBlock(() -> REOBlocks.RESISTANT_PINE_PLANKS.get()
                     .defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> SLAB_PINE = registerBlock("slab_pine",
+    public static final RegistryObject<Block> PINE_SLAB = registerBlock("pine_slab",
             () -> new REOFlammableSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> SLAB_PINE_RESISTANT = registerBlock("slab_pine_resistant",
+    public static final RegistryObject<Block> RESISTANT_PINE_SLAB = registerBlock("resistant_pine_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_PINE = registerBlock("fence_pine",
+    public static final RegistryObject<Block> PINE_FENCE = registerBlock("pine_fence",
             () -> new REOFlammableFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> FENCE_PINE_RESISTANT = registerBlock("fence_pine_resistant",
+    public static final RegistryObject<Block> RESISTANT_PINE_FENCE = registerBlock("resistant_pine_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_GATE_PINE = registerBlock("fence_gate_pine",
+    public static final RegistryObject<Block> PINE_FENCE_GATE = registerBlock("pine_fence_gate",
             () -> new REOFlammableFenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE, 20, 5));
-    public static final RegistryObject<Block> FENCE_GATE_PINE_RESISTANT = registerBlock("fence_gate_pine_resistant",
+    public static final RegistryObject<Block> RESISTANT_PINE_FENCE_GATE = registerBlock("resistant_pine_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> BUTTON_PINE = registerBlock("button_pine",
+    public static final RegistryObject<Block> PINE_BUTTON = registerBlock("pine_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD),
                     BlockSetType.OAK, 30, true));
-    public static final RegistryObject<Block> PRESSURE_PLATE_PINE = registerBlock("pressure_plate_pine",
+    public static final RegistryObject<Block> PINE_PRESSURE_PLATE = registerBlock("pine_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
                     .sound(SoundType.WOOD), BlockSetType.OAK));
 
-    public static final RegistryObject<Block> SIGN_PINE = BLOCKS.register("sign_pine",
+    public static final RegistryObject<Block> PINE_SIGN = BLOCKS.register("pine_sign",
             () -> new REOStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), REOWoodTypes.PINE));
-    public static final RegistryObject<Block> SIGN_PINE_WALL = BLOCKS.register("sign_pine_wall",
+    public static final RegistryObject<Block> PINE_WALL_SIGN = BLOCKS.register("pine_wall_sign",
             () -> new REOWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), REOWoodTypes.PINE));
 
-    public static final RegistryObject<Block> SIGN_HANGING_PINE = BLOCKS.register("sign_hanging_pine",
+    public static final RegistryObject<Block> PINE_HANGING_SIGN = BLOCKS.register("pine_hanging_sign",
             () -> new REOHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), REOWoodTypes.PINE));
-    public static final RegistryObject<Block> SIGN_HANGING_PINE_WALL = BLOCKS.register("sign_hanging_pine_wall",
+    public static final RegistryObject<Block> PINE_WALL_HANGING_SIGN = BLOCKS.register("pine_wall_hanging_sign",
             () -> new REOWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), REOWoodTypes.PINE));
 
-    public static final RegistryObject<Block> DOOR_PINE = registerBlock("door_pine",
+    public static final RegistryObject<Block> PINE_DOOR = registerBlock("pine_door",
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion(), BlockSetType.OAK));
-    public static final RegistryObject<Block> TRAPDOOR_PINE = registerBlock("trapdoor_pine",
+    public static final RegistryObject<Block> PINE_TRAPDOOR = registerBlock("pine_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.OAK));
 
     //
-    public static final RegistryObject<Block> LOG_PLUM = registerBlock("log_plum",
+    public static final RegistryObject<Block> PLUM_LOG = registerBlock("plum_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_PLUM_RESISTANT = registerBlock("log_plum_resistant",
+    public static final RegistryObject<Block> RESISTANT_PLUM_LOG = registerBlock("resistant_plum_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_PLUM = registerBlock("wood_plum",
+    public static final RegistryObject<Block> PLUM_WOOD = registerBlock("plum_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_PLUM_RESISTANT = registerBlock("wood_plum_resistant",
+    public static final RegistryObject<Block> RESISTANT_PLUM_WOOD = registerBlock("resistant_plum_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> LOG_PLUM_STRIPPED = registerBlock("log_plum_stripped",
+    public static final RegistryObject<Block> STRIPPED_PLUM_LOG = registerBlock("stripped_plum_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_PLUM_STRIPPED_RESISTANT = registerBlock("log_plum_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_PLUM_LOG = registerBlock("resistant_stripped_plum_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_PLUM_STRIPPED = registerBlock("wood_plum_stripped",
+    public static final RegistryObject<Block> STRIPPED_PLUM_WOOD = registerBlock("stripped_plum_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_PLUM_STRIPPED_RESISTANT = registerBlock("wood_plum_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_PLUM_WOOD = registerBlock("resistant_stripped_plum_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> PLANKS_PLUM = registerBlock("planks_plum",
+    public static final RegistryObject<Block> PLUM_PLANKS = registerBlock("plum_planks",
             () -> new REOFlammablePlanksBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS), 20, 5));
-    public static final RegistryObject<Block> PLANKS_PLUM_RESISTANT = registerBlock("planks_plum_resistant",
+    public static final RegistryObject<Block> RESISTANT_PLUM_PLANKS = registerBlock("resistant_plum_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
-    public static final RegistryObject<Block> SAPLING_PLUM = registerBlock("sapling_plum",
+    public static final RegistryObject<Block> PLUM_SAPLING = registerBlock("plum_sapling",
             () -> new SaplingBlock(new PlumTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
-    public static final RegistryObject<Block> POTTED_SAPLING_PLUM = BLOCKS.register("potted_sapling_plum",
-            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.SAPLING_PLUM,
+    public static final RegistryObject<Block> POTTED_PLUM_SAPLING = BLOCKS.register("potted_sapling_plum",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.PLUM_SAPLING,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
-    public static final RegistryObject<Block> LEAVES_PLUM = registerBlock("leaves_plum",
+    public static final RegistryObject<Block> PLUM_LEAVES = registerBlock("plum_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
-    public static final RegistryObject<Block> LEAVES_PLUM_FRUIT = registerBlock("leaves_plum_fruit",
+    public static final RegistryObject<Block> PLUM_FRUIT_LEAVES = registerBlock("plum_fruit_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
-    public static final RegistryObject<Block> STAIRS_PLUM = registerBlock("stairs_plum",
-            () -> new REOFlammableStairsBlock(() -> REOBlocks.PLANKS_PLUM.get().defaultBlockState(),
+    public static final RegistryObject<Block> PLUM_STAIRS = registerBlock("plum_stairs",
+            () -> new REOFlammableStairsBlock(() -> REOBlocks.PLUM_PLANKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> STAIRS_PLUM_RESISTANT = registerBlock("stairs_plum_resistant",
-            () -> new StairBlock(() -> REOBlocks.PLANKS_PLUM_RESISTANT.get()
+    public static final RegistryObject<Block> RESISTANT_PLUM_STAIRS = registerBlock("resistant_plum_stairs",
+            () -> new StairBlock(() -> REOBlocks.RESISTANT_PLUM_PLANKS.get()
                     .defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> SLAB_PLUM = registerBlock("slab_plum",
+    public static final RegistryObject<Block> PLUM_SLAB = registerBlock("plum_slab",
             () -> new REOFlammableSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> SLAB_PLUM_RESISTANT = registerBlock("slab_plum_resistant",
+    public static final RegistryObject<Block> RESISTANT_PLUM_SLAB = registerBlock("resistant_plum_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_PLUM = registerBlock("fence_plum",
+    public static final RegistryObject<Block> PLUM_FENCE = registerBlock("plum_fence",
             () -> new REOFlammableFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> FENCE_PLUM_RESISTANT = registerBlock("fence_plum_resistant",
+    public static final RegistryObject<Block> RESISTANT_PLUM_FENCE = registerBlock("resistant_plum_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_GATE_PLUM = registerBlock("fence_gate_plum",
+    public static final RegistryObject<Block> PLUM_FENCE_GATE = registerBlock("plum_fence_gate",
             () -> new REOFlammableFenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE, 20, 5));
-    public static final RegistryObject<Block> FENCE_GATE_PLUM_RESISTANT = registerBlock("fence_gate_plum_resistant",
+    public static final RegistryObject<Block> RESISTANT_PLUM_FENCE_GATE = registerBlock("resistant_plum_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> BUTTON_PLUM = registerBlock("button_plum",
+    public static final RegistryObject<Block> PLUM_BUTTON = registerBlock("plum_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD),
                     BlockSetType.OAK, 30, true));
-    public static final RegistryObject<Block> PRESSURE_PLATE_PLUM = registerBlock("pressure_plate_plum",
+    public static final RegistryObject<Block> PLUM_PRESSURE_PLATE = registerBlock("plum_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
                     .sound(SoundType.WOOD), BlockSetType.OAK));
 
-    public static final RegistryObject<Block> SIGN_PLUM = BLOCKS.register("sign_plum",
+    public static final RegistryObject<Block> PLUM_SIGN = BLOCKS.register("plum_sign",
             () -> new REOStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), REOWoodTypes.PLUM));
-    public static final RegistryObject<Block> SIGN_PLUM_WALL = BLOCKS.register("sign_plum_wall",
+    public static final RegistryObject<Block> PLUM_WALL_SIGN = BLOCKS.register("plum_wall_sign",
             () -> new REOWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), REOWoodTypes.PLUM));
 
-    public static final RegistryObject<Block> SIGN_HANGING_PLUM = BLOCKS.register("sign_hanging_plum",
+    public static final RegistryObject<Block> PLUM_HANGING_SIGN = BLOCKS.register("plum_hanging_sign",
             () -> new REOHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), REOWoodTypes.PLUM));
-    public static final RegistryObject<Block> SIGN_HANGING_PLUM_WALL = BLOCKS.register("sign_hanging_plum_wall",
+    public static final RegistryObject<Block> PLUM_WALL_HANGING_SIGN = BLOCKS.register("plum_wall_hanging_sign",
             () -> new REOWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), REOWoodTypes.PLUM));
 
-    public static final RegistryObject<Block> DOOR_PLUM = registerBlock("door_plum",
+    public static final RegistryObject<Block> PLUM_DOOR = registerBlock("plum_door",
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion(), BlockSetType.OAK));
-    public static final RegistryObject<Block> TRAPDOOR_PLUM = registerBlock("trapdoor_plum",
+    public static final RegistryObject<Block> PLUM_TRAPDOOR = registerBlock("plum_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.OAK));
 
     //
-    public static final RegistryObject<Block> LOG_POPLAR = registerBlock("log_poplar",
+    public static final RegistryObject<Block> POPLAR_LOG = registerBlock("poplar_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_POPLAR_RESISTANT = registerBlock("log_poplar_resistant",
+    public static final RegistryObject<Block> RESISTANT_POPLAR_LOG = registerBlock("resistant_poplar_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_POPLAR = registerBlock("wood_poplar",
+    public static final RegistryObject<Block> POPLAR_WOOD = registerBlock("poplar_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_POPLAR_RESISTANT = registerBlock("wood_poplar_resistant",
+    public static final RegistryObject<Block> RESISTANT_POPLAR_WOOD = registerBlock("resistant_poplar_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> LOG_POPLAR_STRIPPED = registerBlock("log_poplar_stripped",
+    public static final RegistryObject<Block> STRIPPED_POPLAR_LOG = registerBlock("stripped_poplar_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_POPLAR_STRIPPED_RESISTANT = registerBlock("log_poplar_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_POPLAR_LOG = registerBlock("resistant_stripped_poplar_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_POPLAR_STRIPPED = registerBlock("wood_poplar_stripped",
+    public static final RegistryObject<Block> STRIPPED_POPLAR_WOOD = registerBlock("stripped_poplar_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_POPLAR_STRIPPED_RESISTANT = registerBlock("wood_poplar_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_POPLAR_WOOD = registerBlock("resistant_stripped_poplar_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> PLANKS_POPLAR = registerBlock("planks_poplar",
+    public static final RegistryObject<Block> POPLAR_PLANKS = registerBlock("poplar_planks",
             () -> new REOFlammablePlanksBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS), 20, 5));
-    public static final RegistryObject<Block> PLANKS_POPLAR_RESISTANT = registerBlock("planks_poplar_resistant",
+    public static final RegistryObject<Block> RESISTANT_POPLAR_PLANKS = registerBlock("resistant_poplar_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
-    public static final RegistryObject<Block> SAPLING_POPLAR = registerBlock("sapling_poplar",
+    public static final RegistryObject<Block> POPLAR_SAPLING = registerBlock("poplar_sapling",
             () -> new SaplingBlock(new PoplarTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
-    public static final RegistryObject<Block> POTTED_SAPLING_POPLAR = BLOCKS.register("potted_sapling_poplar",
-            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.SAPLING_POPLAR,
+    public static final RegistryObject<Block> POTTED_POPLAR_SAPLING = BLOCKS.register("potted_sapling_poplar",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.POPLAR_SAPLING,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
-    public static final RegistryObject<Block> LEAVES_POPLAR = registerBlock("leaves_poplar",
+    public static final RegistryObject<Block> POPLAR_LEAVES = registerBlock("poplar_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
-    public static final RegistryObject<Block> STAIRS_POPLAR = registerBlock("stairs_poplar",
-            () -> new REOFlammableStairsBlock(() -> REOBlocks.PLANKS_POPLAR.get().defaultBlockState(),
+    public static final RegistryObject<Block> POPLAR_STAIRS = registerBlock("poplar_stairs",
+            () -> new REOFlammableStairsBlock(() -> REOBlocks.POPLAR_PLANKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> STAIRS_POPLAR_RESISTANT = registerBlock("stairs_poplar_resistant",
-            () -> new StairBlock(() -> REOBlocks.PLANKS_POPLAR_RESISTANT.get()
+    public static final RegistryObject<Block> RESISTANT_POPLAR_STAIRS = registerBlock("resistant_poplar_stairs",
+            () -> new StairBlock(() -> REOBlocks.RESISTANT_POPLAR_PLANKS.get()
                     .defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> SLAB_POPLAR = registerBlock("slab_poplar",
+    public static final RegistryObject<Block> POPLAR_SLAB = registerBlock("poplar_slab",
             () -> new REOFlammableSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> SLAB_POPLAR_RESISTANT = registerBlock("slab_poplar_resistant",
+    public static final RegistryObject<Block> RESISTANT_POPLAR_SLAB = registerBlock("resistant_poplar_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_POPLAR = registerBlock("fence_poplar",
+    public static final RegistryObject<Block> POPLAR_FENCE = registerBlock("poplar_fence",
             () -> new REOFlammableFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> FENCE_POPLAR_RESISTANT = registerBlock("fence_poplar_resistant",
+    public static final RegistryObject<Block> RESISTANT_POPLAR_FENCE = registerBlock("resistant_poplar_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_GATE_POPLAR = registerBlock("fence_gate_poplar",
+    public static final RegistryObject<Block> POPLAR_FENCE_GATE = registerBlock("poplar_fence_gate",
             () -> new REOFlammableFenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE, 20, 5));
-    public static final RegistryObject<Block> FENCE_GATE_POPLAR_RESISTANT = registerBlock("fence_gate_poplar_resistant",
+    public static final RegistryObject<Block> RESISTANT_POPLAR_FENCE_GATE = registerBlock("resistant_poplar_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> BUTTON_POPLAR = registerBlock("button_poplar",
+    public static final RegistryObject<Block> POPLAR_BUTTON = registerBlock("poplar_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD),
                     BlockSetType.OAK, 30, true));
-    public static final RegistryObject<Block> PRESSURE_PLATE_POPLAR = registerBlock("pressure_plate_poplar",
+    public static final RegistryObject<Block> POPLAR_PRESSURE_PLATE = registerBlock("poplar_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
                     .sound(SoundType.WOOD), BlockSetType.OAK));
 
-    public static final RegistryObject<Block> SIGN_POPLAR = BLOCKS.register("sign_poplar",
+    public static final RegistryObject<Block> POPLAR_SIGN = BLOCKS.register("poplar_sign",
             () -> new REOStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), REOWoodTypes.POPLAR));
-    public static final RegistryObject<Block> SIGN_POPLAR_WALL = BLOCKS.register("sign_poplar_wall",
+    public static final RegistryObject<Block> POPLAR_WALL_SIGN = BLOCKS.register("poplar_wall_sign",
             () -> new REOWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), REOWoodTypes.POPLAR));
 
-    public static final RegistryObject<Block> SIGN_HANGING_POPLAR = BLOCKS.register("sign_hanging_poplar",
+    public static final RegistryObject<Block> POPLAR_HANGING_SIGN = BLOCKS.register("poplar_hanging_sign",
             () -> new REOHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), REOWoodTypes.POPLAR));
-    public static final RegistryObject<Block> SIGN_HANGING_POPLAR_WALL = BLOCKS.register("sign_hanging_poplar_wall",
+    public static final RegistryObject<Block> POPLAR_WALL_HANGING_SIGN = BLOCKS.register("poplar_wall_hanging_sign",
             () -> new REOWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), REOWoodTypes.POPLAR));
 
-    public static final RegistryObject<Block> DOOR_POPLAR = registerBlock("door_poplar",
+    public static final RegistryObject<Block> POPLAR_DOOR = registerBlock("poplar_door",
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion(), BlockSetType.OAK));
-    public static final RegistryObject<Block> TRAPDOOR_POPLAR = registerBlock("trapdoor_poplar",
+    public static final RegistryObject<Block> POPLAR_TRAPDOOR = registerBlock("poplar_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.OAK));
 
     //
-    public static final RegistryObject<Block> LOG_REDWOOD = registerBlock("log_redwood",
+    public static final RegistryObject<Block> REDWOOD_LOG = registerBlock("redwood_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_REDWOOD_RESISTANT = registerBlock("log_redwood_resistant",
+    public static final RegistryObject<Block> RESISTANT_REDWOOD_LOG = registerBlock("resistant_redwood_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_REDWOOD = registerBlock("wood_redwood",
+    public static final RegistryObject<Block> REDWOOD_WOOD = registerBlock("redwood_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_REDWOOD_RESISTANT = registerBlock("wood_redwood_resistant",
+    public static final RegistryObject<Block> RESISTANT_REDWOOD_WOOD = registerBlock("resistant_redwood_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> LOG_REDWOOD_STRIPPED = registerBlock("log_redwood_stripped",
+    public static final RegistryObject<Block> STRIPPED_REDWOOD_LOG = registerBlock("stripped_redwood_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_REDWOOD_STRIPPED_RESISTANT = registerBlock("log_redwood_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_REDWOOD_LOG = registerBlock("resistant_stripped_redwood_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_REDWOOD_STRIPPED = registerBlock("wood_redwood_stripped",
+    public static final RegistryObject<Block> STRIPPED_REDWOOD_WOOD = registerBlock("stripped_redwood_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_REDWOOD_STRIPPED_RESISTANT = registerBlock("wood_redwood_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_REDWOOD_WOOD = registerBlock("resistant_stripped_redwood_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> PLANKS_REDWOOD = registerBlock("planks_redwood",
+    public static final RegistryObject<Block> REDWOOD_PLANKS = registerBlock("redwood_planks",
             () -> new REOFlammablePlanksBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS), 20, 5));
-    public static final RegistryObject<Block> PLANKS_REDWOOD_RESISTANT = registerBlock("planks_redwood_resistant",
+    public static final RegistryObject<Block> RESISTANT_REDWOOD_PLANKS = registerBlock("resistant_redwood_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
-    public static final RegistryObject<Block> SAPLING_REDWOOD = registerBlock("sapling_redwood",
+    public static final RegistryObject<Block> REDWOOD_SAPLING = registerBlock("redwood_sapling",
             () -> new SaplingBlock(new RedwoodTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
-    public static final RegistryObject<Block> POTTED_SAPLING_REDWOOD = BLOCKS.register("potted_sapling_redwood",
-            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.SAPLING_REDWOOD,
+    public static final RegistryObject<Block> POTTED_REDWOOD_SAPLING = BLOCKS.register("potted_sapling_redwood",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.REDWOOD_SAPLING,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
-    public static final RegistryObject<Block> LEAVES_REDWOOD = registerBlock("leaves_redwood",
+    public static final RegistryObject<Block> REDWOOD_LEAVES = registerBlock("redwood_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
-    public static final RegistryObject<Block> STAIRS_REDWOOD = registerBlock("stairs_redwood",
-            () -> new REOFlammableStairsBlock(() -> REOBlocks.PLANKS_REDWOOD.get().defaultBlockState(),
+    public static final RegistryObject<Block> REDWOOD_STAIRS = registerBlock("redwood_stairs",
+            () -> new REOFlammableStairsBlock(() -> REOBlocks.REDWOOD_PLANKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> STAIRS_REDWOOD_RESISTANT = registerBlock("stairs_redwood_resistant",
-            () -> new StairBlock(() -> REOBlocks.PLANKS_REDWOOD_RESISTANT.get()
+    public static final RegistryObject<Block> RESISTANT_REDWOOD_STAIRS = registerBlock("resistant_redwood_stairs",
+            () -> new StairBlock(() -> REOBlocks.RESISTANT_REDWOOD_PLANKS.get()
                     .defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> SLAB_REDWOOD = registerBlock("slab_redwood",
+    public static final RegistryObject<Block> REDWOOD_SLAB = registerBlock("redwood_slab",
             () -> new REOFlammableSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> SLAB_REDWOOD_RESISTANT = registerBlock("slab_redwood_resistant",
+    public static final RegistryObject<Block> RESISTANT_REDWOOD_SLAB = registerBlock("resistant_redwood_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_REDWOOD = registerBlock("fence_redwood",
+    public static final RegistryObject<Block> REDWOOD_FENCE = registerBlock("redwood_fence",
             () -> new REOFlammableFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> FENCE_REDWOOD_RESISTANT = registerBlock("fence_redwood_resistant",
+    public static final RegistryObject<Block> RESISTANT_REDWOOD_FENCE = registerBlock("resistant_redwood_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_GATE_REDWOOD = registerBlock("fence_gate_redwood",
+    public static final RegistryObject<Block> REDWOOD_FENCE_GATE = registerBlock("redwood_fence_gate",
             () -> new REOFlammableFenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE, 20, 5));
-    public static final RegistryObject<Block> FENCE_GATE_REDWOOD_RESISTANT = registerBlock("fence_gate_redwood_resistant",
+    public static final RegistryObject<Block> RESISTANT_REDWOOD_FENCE_GATE = registerBlock("resistant_redwood_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> BUTTON_REDWOOD = registerBlock("button_redwood",
+    public static final RegistryObject<Block> REDWOOD_BUTTON = registerBlock("redwood_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD),
                     BlockSetType.OAK, 30, true));
-    public static final RegistryObject<Block> PRESSURE_PLATE_REDWOOD = registerBlock("pressure_plate_redwood",
+    public static final RegistryObject<Block> REDWOOD_PRESSURE_PLATE = registerBlock("redwood_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
                     .sound(SoundType.WOOD), BlockSetType.OAK));
 
-    public static final RegistryObject<Block> SIGN_REDWOOD = BLOCKS.register("sign_redwood",
+    public static final RegistryObject<Block> REDWOOD_SIGN = BLOCKS.register("redwood_sign",
             () -> new REOStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), REOWoodTypes.REDWOOD));
-    public static final RegistryObject<Block> SIGN_REDWOOD_WALL = BLOCKS.register("sign_redwood_wall",
+    public static final RegistryObject<Block> REDWOOD_WALL_SIGN = BLOCKS.register("redwood_wall_sign",
             () -> new REOWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), REOWoodTypes.REDWOOD));
 
-    public static final RegistryObject<Block> SIGN_HANGING_REDWOOD = BLOCKS.register("sign_hanging_redwood",
+    public static final RegistryObject<Block> REDWOOD_HANGING_SIGN = BLOCKS.register("redwood_hanging_sign",
             () -> new REOHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), REOWoodTypes.REDWOOD));
-    public static final RegistryObject<Block> SIGN_HANGING_REDWOOD_WALL = BLOCKS.register("sign_hanging_redwood_wall",
+    public static final RegistryObject<Block> REDWOOD_WALL_HANGING_SIGN = BLOCKS.register("redwood_wall_hanging_sign",
             () -> new REOWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), REOWoodTypes.REDWOOD));
 
-    public static final RegistryObject<Block> DOOR_REDWOOD = registerBlock("door_redwood",
+    public static final RegistryObject<Block> REDWOOD_DOOR = registerBlock("redwood_door",
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion(), BlockSetType.OAK));
-    public static final RegistryObject<Block> TRAPDOOR_REDWOOD = registerBlock("trapdoor_redwood",
+    public static final RegistryObject<Block> REDWOOD_TRAPDOOR = registerBlock("redwood_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.OAK));
 
     //
-    public static final RegistryObject<Block> LOG_RUBBER = registerBlock("log_rubber",
+    public static final RegistryObject<Block> RUBBER_LOG = registerBlock("rubber_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_RUBBER_SAP = registerBlock("log_rubber_sap",
+    public static final RegistryObject<Block> RUBBER_LOG_SAP = registerBlock("rubber_log_sap",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_RUBBER_RESISTANT = registerBlock("log_rubber_resistant",
+    public static final RegistryObject<Block> RESISTANT_RUBBER_LOG = registerBlock("resistant_rubber_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_RUBBER_SAP_RESISTANT = registerBlock("log_rubber_sap_resistant",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_RUBBER = registerBlock("wood_rubber",
+    public static final RegistryObject<Block> RUBBER_WOOD = registerBlock("rubber_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_RUBBER_RESISTANT = registerBlock("wood_rubber_resistant",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> LOG_RUBBER_STRIPPED = registerBlock("log_rubber_stripped",
-            () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_RUBBER_STRIPPED_RESISTANT = registerBlock("log_rubber_stripped_resistant",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_RUBBER_STRIPPED = registerBlock("wood_rubber_stripped",
+    public static final RegistryObject<Block> RUBBER_WOOD_SAP = registerBlock("rubber_wood_sap",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_RUBBER_STRIPPED_RESISTANT = registerBlock("wood_rubber_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_RUBBER_WOOD = registerBlock("resistant_rubber",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> PLANKS_RUBBER = registerBlock("planks_rubber",
+    public static final RegistryObject<Block> STRIPPED_RUBBER_LOG = registerBlock("stripped_rubber_log",
+            () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_RUBBER_LOG = registerBlock("resistant_stripped_rubber_log",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
+    public static final RegistryObject<Block> STRIPPED_RUBBER_WOOD = registerBlock("stripped_rubber_wood",
+            () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_RUBBER_WOOD = registerBlock("resistant_stripped_rubber_wood",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
+    public static final RegistryObject<Block> RUBBER_PLANKS = registerBlock("rubber_planks",
             () -> new REOFlammablePlanksBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS), 20, 5));
-    public static final RegistryObject<Block> PLANKS_RUBBER_RESISTANT = registerBlock("planks_rubber_resistant",
+    public static final RegistryObject<Block> RESISTANT_RUBBER_PLANKS = registerBlock("resistant_rubber_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
-    public static final RegistryObject<Block> SAPLING_RUBBER = registerBlock("sapling_rubber",
+    public static final RegistryObject<Block> RUBBER_SAPLING = registerBlock("rubber_sapling",
             () -> new SaplingBlock(new RubberTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
-    public static final RegistryObject<Block> POTTED_SAPLING_RUBBER = BLOCKS.register("potted_sapling_rubber",
-            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.SAPLING_RUBBER,
+    public static final RegistryObject<Block> POTTED_RUBBER_SAPLING = BLOCKS.register("potted_sapling_rubber",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.RUBBER_SAPLING,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
-    public static final RegistryObject<Block> LEAVES_RUBBER = registerBlock("leaves_rubber",
+    public static final RegistryObject<Block> RUBBER_LEAVES = registerBlock("rubber_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
-    public static final RegistryObject<Block> STAIRS_RUBBER = registerBlock("stairs_rubber",
-            () -> new REOFlammableStairsBlock(() -> REOBlocks.PLANKS_RUBBER.get().defaultBlockState(),
+    public static final RegistryObject<Block> RUBBER_STAIRS = registerBlock("rubber_stairs",
+            () -> new REOFlammableStairsBlock(() -> REOBlocks.RUBBER_PLANKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> STAIRS_RUBBER_RESISTANT = registerBlock("stairs_rubber_resistant",
-            () -> new StairBlock(() -> REOBlocks.PLANKS_RUBBER_RESISTANT.get()
+    public static final RegistryObject<Block> RESISTANT_RUBBER_STAIRS = registerBlock("resistant_rubber_stairs",
+            () -> new StairBlock(() -> REOBlocks.RESISTANT_RUBBER_PLANKS.get()
                     .defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> SLAB_RUBBER = registerBlock("slab_rubber",
+    public static final RegistryObject<Block> RUBBER_SLAB = registerBlock("rubber_slab",
             () -> new REOFlammableSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> SLAB_RUBBER_RESISTANT = registerBlock("slab_rubber_resistant",
+    public static final RegistryObject<Block> RESISTANT_RUBBER_SLAB = registerBlock("resistant_rubber_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_RUBBER = registerBlock("fence_rubber",
+    public static final RegistryObject<Block> RUBBER_FENCE = registerBlock("rubber_fence",
             () -> new REOFlammableFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> FENCE_RUBBER_RESISTANT = registerBlock("fence_rubber_resistant",
+    public static final RegistryObject<Block> RESISTANT_RUBBER_FENCE = registerBlock("resistant_rubber_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_GATE_RUBBER = registerBlock("fence_gate_rubber",
+    public static final RegistryObject<Block> RUBBER_FENCE_GATE = registerBlock("rubber_fence_gate",
             () -> new REOFlammableFenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE, 20, 5));
-    public static final RegistryObject<Block> FENCE_GATE_RUBBER_RESISTANT = registerBlock("fence_gate_rubber_resistant",
+    public static final RegistryObject<Block> RESISTANT_RUBBER_FENCE_GATE = registerBlock("resistant_rubber_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> BUTTON_RUBBER = registerBlock("button_rubber",
+    public static final RegistryObject<Block> RUBBER_BUTTON = registerBlock("rubber_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD),
                     BlockSetType.OAK, 30, true));
-    public static final RegistryObject<Block> PRESSURE_PLATE_RUBBER = registerBlock("pressure_plate_rubber",
+    public static final RegistryObject<Block> RUBBER_PRESSURE_PLATE = registerBlock("rubber_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
                     .sound(SoundType.WOOD), BlockSetType.OAK));
 
-    public static final RegistryObject<Block> SIGN_RUBBER = BLOCKS.register("sign_rubber",
+    public static final RegistryObject<Block> RUBBER_SIGN = BLOCKS.register("rubber_sign",
             () -> new REOStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), REOWoodTypes.RUBBER));
-    public static final RegistryObject<Block> SIGN_RUBBER_WALL = BLOCKS.register("sign_rubber_wall",
+    public static final RegistryObject<Block> RUBBER_WALL_SIGN = BLOCKS.register("rubber_wall_sign",
             () -> new REOWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), REOWoodTypes.RUBBER));
 
-    public static final RegistryObject<Block> SIGN_HANGING_RUBBER = BLOCKS.register("sign_hanging_rubber",
+    public static final RegistryObject<Block> RUBBER_HANGING_SIGN = BLOCKS.register("rubber_hanging_sign",
             () -> new REOHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), REOWoodTypes.RUBBER));
-    public static final RegistryObject<Block> SIGN_HANGING_RUBBER_WALL = BLOCKS.register("sign_hanging_rubber_wall",
+    public static final RegistryObject<Block> RUBBER_WALL_HANGING_SIGN = BLOCKS.register("rubber_wall_hanging_sign",
             () -> new REOWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), REOWoodTypes.RUBBER));
 
-    public static final RegistryObject<Block> DOOR_RUBBER = registerBlock("door_rubber",
+    public static final RegistryObject<Block> RUBBER_DOOR = registerBlock("rubber_door",
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion(), BlockSetType.OAK));
-    public static final RegistryObject<Block> TRAPDOOR_RUBBER = registerBlock("trapdoor_rubber",
+    public static final RegistryObject<Block> RUBBER_TRAPDOOR = registerBlock("rubber_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.OAK));
 
     //
-    public static final RegistryObject<Block> LOG_TEAK = registerBlock("log_teak",
+    public static final RegistryObject<Block> TEAK_LOG = registerBlock("teak_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_TEAK_RESISTANT = registerBlock("log_teak_resistant",
+    public static final RegistryObject<Block> RESISTANT_TEAK_LOG = registerBlock("resistant_teak_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_TEAK = registerBlock("wood_teak",
+    public static final RegistryObject<Block> TEAK_WOOD = registerBlock("teak_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_TEAK_RESISTANT = registerBlock("wood_teak_resistant",
+    public static final RegistryObject<Block> RESISTANT_TEAK_WOOD = registerBlock("resistant_teak_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> LOG_TEAK_STRIPPED = registerBlock("log_teak_stripped",
+    public static final RegistryObject<Block> STRIPPED_TEAK_LOG = registerBlock("stripped_teak_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_TEAK_STRIPPED_RESISTANT = registerBlock("log_teak_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_TEAK_LOG = registerBlock("resistant_stripped_teak_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_TEAK_STRIPPED = registerBlock("wood_teak_stripped",
+    public static final RegistryObject<Block> STRIPPED_TEAK_WOOD = registerBlock("stripped_teak_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_TEAK_STRIPPED_RESISTANT = registerBlock("wood_teak_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_TEAK_WOOD = registerBlock("resistant_stripped_teak_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> PLANKS_TEAK = registerBlock("planks_teak",
+    public static final RegistryObject<Block> TEAK_PLANKS = registerBlock("teak_planks",
             () -> new REOFlammablePlanksBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS), 20, 5));
-    public static final RegistryObject<Block> PLANKS_TEAK_RESISTANT = registerBlock("planks_teak_resistant",
+    public static final RegistryObject<Block> RESISTANT_TEAK_PLANKS = registerBlock("resistant_teak_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
-    public static final RegistryObject<Block> SAPLING_TEAK = registerBlock("sapling_teak",
+    public static final RegistryObject<Block> TEAK_SAPLING = registerBlock("teak_sapling",
             () -> new SaplingBlock(new TeakTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
-    public static final RegistryObject<Block> POTTED_SAPLING_TEAK = BLOCKS.register("potted_sapling_teak",
-            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.SAPLING_TEAK,
+    public static final RegistryObject<Block> POTTED_TEAK_SAPLING = BLOCKS.register("potted_sapling_teak",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.TEAK_SAPLING,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
-    public static final RegistryObject<Block> LEAVES_TEAK = registerBlock("leaves_teak",
+    public static final RegistryObject<Block> TEAK_LEAVES = registerBlock("teak_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
-    public static final RegistryObject<Block> STAIRS_TEAK = registerBlock("stairs_teak",
-            () -> new REOFlammableStairsBlock(() -> REOBlocks.PLANKS_TEAK.get().defaultBlockState(),
+    public static final RegistryObject<Block> TEAK_STAIRS = registerBlock("teak_stairs",
+            () -> new REOFlammableStairsBlock(() -> REOBlocks.TEAK_PLANKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> STAIRS_TEAK_RESISTANT = registerBlock("stairs_teak_resistant",
-            () -> new StairBlock(() -> REOBlocks.PLANKS_TEAK_RESISTANT.get()
+    public static final RegistryObject<Block> RESISTANT_TEAK_STAIRS = registerBlock("resistant_teak_stairs",
+            () -> new StairBlock(() -> REOBlocks.RESISTANT_TEAK_PLANKS.get()
                     .defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> SLAB_TEAK = registerBlock("slab_teak",
+    public static final RegistryObject<Block> TEAK_SLAB = registerBlock("teak_slab",
             () -> new REOFlammableSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> SLAB_TEAK_RESISTANT = registerBlock("slab_teak_resistant",
+    public static final RegistryObject<Block> RESISTANT_TEAK_SLAB = registerBlock("resistant_teak_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_TEAK = registerBlock("fence_teak",
+    public static final RegistryObject<Block> TEAK_FENCE = registerBlock("teak_fence",
             () -> new REOFlammableFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> FENCE_TEAK_RESISTANT = registerBlock("fence_teak_resistant",
+    public static final RegistryObject<Block> RESISTANT_TEAK_FENCE = registerBlock("resistant_teak_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_GATE_TEAK = registerBlock("fence_gate_teak",
+    public static final RegistryObject<Block> TEAK_FENCE_GATE = registerBlock("teak_fence_gate",
             () -> new REOFlammableFenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE, 20, 5));
-    public static final RegistryObject<Block> FENCE_GATE_TEAK_RESISTANT = registerBlock("fence_gate_teak_resistant",
+    public static final RegistryObject<Block> RESISTANT_TEAK_FENCE_GATE = registerBlock("resistant_teak_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> BUTTON_TEAK = registerBlock("button_teak",
+    public static final RegistryObject<Block> TEAK_BUTTON = registerBlock("teak_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD),
                     BlockSetType.OAK, 30, true));
-    public static final RegistryObject<Block> PRESSURE_PLATE_TEAK = registerBlock("pressure_plate_teak",
+    public static final RegistryObject<Block> TEAK_PRESSURE_PLATE = registerBlock("teak_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
                     .sound(SoundType.WOOD), BlockSetType.OAK));
 
-    public static final RegistryObject<Block> SIGN_TEAK = BLOCKS.register("sign_teak",
+    public static final RegistryObject<Block> TEAK_SIGN = BLOCKS.register("teak_sign",
             () -> new REOStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), REOWoodTypes.TEAK));
-    public static final RegistryObject<Block> SIGN_TEAK_WALL = BLOCKS.register("sign_teak_wall",
+    public static final RegistryObject<Block> TEAK_WALL_SIGN = BLOCKS.register("teak_wall_sign",
             () -> new REOWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), REOWoodTypes.TEAK));
 
-    public static final RegistryObject<Block> SIGN_HANGING_TEAK = BLOCKS.register("sign_hanging_teak",
+    public static final RegistryObject<Block> TEAK_HANGING_SIGN = BLOCKS.register("teak_hanging_sign",
             () -> new REOHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), REOWoodTypes.TEAK));
-    public static final RegistryObject<Block> SIGN_HANGING_TEAK_WALL = BLOCKS.register("sign_hanging_teak_wall",
+    public static final RegistryObject<Block> TEAK_WALL_HANGING_SIGN = BLOCKS.register("teak_wall_hanging_sign",
             () -> new REOWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), REOWoodTypes.TEAK));
 
-    public static final RegistryObject<Block> DOOR_TEAK = registerBlock("door_teak",
+    public static final RegistryObject<Block> TEAK_DOOR = registerBlock("teak_door",
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion(), BlockSetType.OAK));
-    public static final RegistryObject<Block> TRAPDOOR_TEAK = registerBlock("trapdoor_teak",
+    public static final RegistryObject<Block> TEAK_TRAPDOOR = registerBlock("teak_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.OAK));
 
     //
-    public static final RegistryObject<Block> LOG_WALNUT = registerBlock("log_walnut",
+    public static final RegistryObject<Block> WALNUT_LOG = registerBlock("walnut_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_WALNUT_RESISTANT = registerBlock("log_walnut_resistant",
+    public static final RegistryObject<Block> RESISTANT_WALNUT_LOG = registerBlock("resistant_walnut_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_WALNUT = registerBlock("wood_walnut",
+    public static final RegistryObject<Block> WALNUT_WOOD = registerBlock("walnut_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_WALNUT_RESISTANT = registerBlock("wood_walnut_resistant",
+    public static final RegistryObject<Block> RESISTANT_WALNUT_WOOD = registerBlock("resistant_walnut_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> LOG_WALNUT_STRIPPED = registerBlock("log_walnut_stripped",
+    public static final RegistryObject<Block> STRIPPED_WALNUT_LOG = registerBlock("stripped_walnut_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_WALNUT_STRIPPED_RESISTANT = registerBlock("log_walnut_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_WALNUT_LOG = registerBlock("resistant_stripped_walnut_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_WALNUT_STRIPPED = registerBlock("wood_walnut_stripped",
+    public static final RegistryObject<Block> STRIPPED_WALNUT_WOOD = registerBlock("stripped_walnut_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_WALNUT_STRIPPED_RESISTANT = registerBlock("wood_walnut_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_WALNUT_WOOD = registerBlock("resistant_stripped_walnut_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> PLANKS_WALNUT = registerBlock("planks_walnut",
+    public static final RegistryObject<Block> WALNUT_PLANKS = registerBlock("walnut_planks",
             () -> new REOFlammablePlanksBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS), 20, 5));
-    public static final RegistryObject<Block> PLANKS_WALNUT_RESISTANT = registerBlock("planks_walnut_resistant",
+    public static final RegistryObject<Block> RESISTANT_WALNUT_PLANKS = registerBlock("resistant_walnut_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
-    public static final RegistryObject<Block> SAPLING_WALNUT = registerBlock("sapling_walnut",
+    public static final RegistryObject<Block> WALNUT_SAPLING = registerBlock("walnut_sapling",
             () -> new SaplingBlock(new WalnutTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
-    public static final RegistryObject<Block> POTTED_SAPLING_WALNUT = BLOCKS.register("potted_sapling_walnut",
-            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.SAPLING_WALNUT,
+    public static final RegistryObject<Block> POTTED_WALNUT_SAPLING = BLOCKS.register("potted_sapling_walnut",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.WALNUT_SAPLING,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
-    public static final RegistryObject<Block> LEAVES_WALNUT = registerBlock("leaves_walnut",
+    public static final RegistryObject<Block> WALNUT_LEAVES = registerBlock("walnut_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
-    public static final RegistryObject<Block> LEAVES_WALNUT_FRUIT = registerBlock("leaves_walnut_fruit",
+    public static final RegistryObject<Block> WALNUT_FRUIT_LEAVES = registerBlock("walnut_fruit_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
-    public static final RegistryObject<Block> STAIRS_WALNUT = registerBlock("stairs_walnut",
-            () -> new REOFlammableStairsBlock(() -> REOBlocks.PLANKS_WALNUT.get().defaultBlockState(),
+    public static final RegistryObject<Block> WALNUT_STAIRS = registerBlock("walnut_stairs",
+            () -> new REOFlammableStairsBlock(() -> REOBlocks.WALNUT_PLANKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> STAIRS_WALNUT_RESISTANT = registerBlock("stairs_walnut_resistant",
-            () -> new StairBlock(() -> REOBlocks.PLANKS_WALNUT_RESISTANT.get()
+    public static final RegistryObject<Block> RESISTANT_WALNUT_STAIRS = registerBlock("resistant_walnut_stairs",
+            () -> new StairBlock(() -> REOBlocks.RESISTANT_WALNUT_PLANKS.get()
                     .defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> SLAB_WALNUT = registerBlock("slab_walnut",
+    public static final RegistryObject<Block> WALNUT_SLAB = registerBlock("walnut_slab",
             () -> new REOFlammableSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> SLAB_WALNUT_RESISTANT = registerBlock("slab_walnut_resistant",
+    public static final RegistryObject<Block> RESISTANT_WALNUT_SLAB = registerBlock("resistant_walnut_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_WALNUT = registerBlock("fence_walnut",
+    public static final RegistryObject<Block> WALNUT_FENCE = registerBlock("walnut_fence",
             () -> new REOFlammableFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> FENCE_WALNUT_RESISTANT = registerBlock("fence_walnut_resistant",
+    public static final RegistryObject<Block> RESISTANT_WALNUT_FENCE = registerBlock("resistant_walnut_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_GATE_WALNUT = registerBlock("fence_gate_walnut",
+    public static final RegistryObject<Block> WALNUT_FENCE_GATE = registerBlock("walnut_fence_gate",
             () -> new REOFlammableFenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE, 20, 5));
-    public static final RegistryObject<Block> FENCE_GATE_WALNUT_RESISTANT = registerBlock("fence_gate_walnut_resistant",
+    public static final RegistryObject<Block> RESISTANT_WALNUT_FENCE_GATE = registerBlock("resistant_walnut_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> BUTTON_WALNUT = registerBlock("button_walnut",
+    public static final RegistryObject<Block> WALNUT_BUTTON = registerBlock("walnut_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD),
                     BlockSetType.OAK, 30, true));
-    public static final RegistryObject<Block> PRESSURE_PLATE_WALNUT = registerBlock("pressure_plate_walnut",
+    public static final RegistryObject<Block> WALNUT_PRESSURE_PLATE = registerBlock("walnut_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
                     .sound(SoundType.WOOD), BlockSetType.OAK));
 
-    public static final RegistryObject<Block> SIGN_WALNUT = BLOCKS.register("sign_walnut",
+    public static final RegistryObject<Block> WALNUT_SIGN = BLOCKS.register("walnut_sign",
             () -> new REOStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), REOWoodTypes.WALNUT));
-    public static final RegistryObject<Block> SIGN_WALNUT_WALL = BLOCKS.register("sign_walnut_wall",
+    public static final RegistryObject<Block> WALNUT_WALL_SIGN = BLOCKS.register("walnut_wall_sign",
             () -> new REOWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), REOWoodTypes.WALNUT));
 
-    public static final RegistryObject<Block> SIGN_HANGING_WALNUT = BLOCKS.register("sign_hanging_walnut",
+    public static final RegistryObject<Block> WALNUT_HANGING_SIGN = BLOCKS.register("walnut_hanging_sign",
             () -> new REOHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), REOWoodTypes.WALNUT));
-    public static final RegistryObject<Block> SIGN_HANGING_WALNUT_WALL = BLOCKS.register("sign_hanging_walnut_wall",
+    public static final RegistryObject<Block> WALNUT_WALL_HANGING_SIGN = BLOCKS.register("walnut_wall_hanging_sign",
             () -> new REOWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), REOWoodTypes.WALNUT));
 
-    public static final RegistryObject<Block> DOOR_WALNUT = registerBlock("door_walnut",
+    public static final RegistryObject<Block> WALNUT_DOOR = registerBlock("walnut_door",
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion(), BlockSetType.OAK));
-    public static final RegistryObject<Block> TRAPDOOR_WALNUT = registerBlock("trapdoor_walnut",
+    public static final RegistryObject<Block> WALNUT_TRAPDOOR = registerBlock("walnut_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.OAK));
 
     //
-    public static final RegistryObject<Block> LOG_WILLOW = registerBlock("log_willow",
+    public static final RegistryObject<Block> WILLOW_LOG = registerBlock("willow_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_WILLOW_RESISTANT = registerBlock("log_willow_resistant",
+    public static final RegistryObject<Block> RESISTANT_WILLOW_LOG = registerBlock("resistant_willow_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_WILLOW = registerBlock("wood_willow",
+    public static final RegistryObject<Block> WILLOW_WOOD = registerBlock("willow_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_WILLOW_RESISTANT = registerBlock("wood_willow_resistant",
+    public static final RegistryObject<Block> RESISTANT_WILLOW_WOOD = registerBlock("resistant_willow_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> LOG_WILLOW_STRIPPED = registerBlock("log_willow_stripped",
+    public static final RegistryObject<Block> STRIPPED_WILLOW_LOG = registerBlock("stripped_willow_log",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> LOG_WILLOW_STRIPPED_RESISTANT = registerBlock("log_willow_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_WILLOW_LOG = registerBlock("resistant_stripped_willow_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
-    public static final RegistryObject<Block> WOOD_WILLOW_STRIPPED = registerBlock("wood_willow_stripped",
+    public static final RegistryObject<Block> STRIPPED_WILLOW_WOOD = registerBlock("stripped_willow_wood",
             () -> new REOFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> WOOD_WILLOW_STRIPPED_RESISTANT = registerBlock("wood_willow_stripped_resistant",
+    public static final RegistryObject<Block> RESISTANT_STRIPPED_WILLOW_WOOD = registerBlock("resistant_stripped_willow_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
-    public static final RegistryObject<Block> PLANKS_WILLOW = registerBlock("planks_willow",
+    public static final RegistryObject<Block> WILLOW_PLANKS = registerBlock("willow_planks",
             () -> new REOFlammablePlanksBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS), 20, 5));
-    public static final RegistryObject<Block> PLANKS_WILLOW_RESISTANT = registerBlock("planks_willow_resistant",
+    public static final RegistryObject<Block> RESISTANT_WILLOW_PLANKS = registerBlock("resistant_willow_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
-    public static final RegistryObject<Block> SAPLING_WILLOW = registerBlock("sapling_willow",
+    public static final RegistryObject<Block> WILLOW_SAPLING = registerBlock("willow_sapling",
             () -> new SaplingBlock(new WillowTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
-    public static final RegistryObject<Block> POTTED_SAPLING_WILLOW = BLOCKS.register("potted_sapling_willow",
-            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.SAPLING_WILLOW,
+    public static final RegistryObject<Block> POTTED_WILLOW_SAPLING = BLOCKS.register("potted_sapling_willow",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), REOBlocks.WILLOW_SAPLING,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
-    public static final RegistryObject<Block> LEAVES_WILLOW = registerBlock("leaves_willow",
+    public static final RegistryObject<Block> WILLOW_LEAVES = registerBlock("willow_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
-    public static final RegistryObject<Block> STAIRS_WILLOW = registerBlock("stairs_willow",
-            () -> new REOFlammableStairsBlock(() -> REOBlocks.PLANKS_WILLOW.get().defaultBlockState(),
+    public static final RegistryObject<Block> WILLOW_STAIRS = registerBlock("willow_stairs",
+            () -> new REOFlammableStairsBlock(() -> REOBlocks.WILLOW_PLANKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> STAIRS_WILLOW_RESISTANT = registerBlock("stairs_willow_resistant",
-            () -> new StairBlock(() -> REOBlocks.PLANKS_WILLOW_RESISTANT.get()
+    public static final RegistryObject<Block> RESISTANT_WILLOW_STAIRS = registerBlock("resistant_willow_stairs",
+            () -> new StairBlock(() -> REOBlocks.RESISTANT_WILLOW_PLANKS.get()
                     .defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> SLAB_WILLOW = registerBlock("slab_willow",
+    public static final RegistryObject<Block> WILLOW_SLAB = registerBlock("willow_slab",
             () -> new REOFlammableSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> SLAB_WILLOW_RESISTANT = registerBlock("slab_willow_resistant",
+    public static final RegistryObject<Block> RESISTANT_WILLOW_SLAB = registerBlock("resistant_willow_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_WILLOW = registerBlock("fence_willow",
+    public static final RegistryObject<Block> WILLOW_FENCE = registerBlock("willow_fence",
             () -> new REOFlammableFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD), 20, 5));
-    public static final RegistryObject<Block> FENCE_WILLOW_RESISTANT = registerBlock("fence_willow_resistant",
+    public static final RegistryObject<Block> RESISTANT_WILLOW_FENCE = registerBlock("resistant_willow_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> FENCE_GATE_WILLOW = registerBlock("fence_gate_willow",
+    public static final RegistryObject<Block> WILLOW_FENCE_GATE = registerBlock("willow_fence_gate",
             () -> new REOFlammableFenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE, 20, 5));
-    public static final RegistryObject<Block> FENCE_GATE_WILLOW_RESISTANT = registerBlock("fence_gate_willow_resistant",
+    public static final RegistryObject<Block> RESISTANT_WILLOW_FENCE_GATE = registerBlock("resistant_willow_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)
                     .sound(SoundType.WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-    public static final RegistryObject<Block> BUTTON_WILLOW = registerBlock("button_willow",
+    public static final RegistryObject<Block> WILLOW_BUTTON = registerBlock("willow_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD),
                     BlockSetType.OAK, 30, true));
-    public static final RegistryObject<Block> PRESSURE_PLATE_WILLOW = registerBlock("pressure_plate_willow",
+    public static final RegistryObject<Block> WILLOW_PRESSURE_PLATE = registerBlock("willow_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
                     .sound(SoundType.WOOD), BlockSetType.OAK));
 
-    public static final RegistryObject<Block> SIGN_WILLOW = BLOCKS.register("sign_willow",
+    public static final RegistryObject<Block> WILLOW_SIGN = BLOCKS.register("willow_sign",
             () -> new REOStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), REOWoodTypes.WILLOW));
-    public static final RegistryObject<Block> SIGN_WILLOW_WALL = BLOCKS.register("sign_willow_wall",
+    public static final RegistryObject<Block> WILLOW_WALL_SIGN = BLOCKS.register("willow_wall_sign",
             () -> new REOWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), REOWoodTypes.WILLOW));
 
-    public static final RegistryObject<Block> SIGN_HANGING_WILLOW = BLOCKS.register("sign_hanging_willow",
+    public static final RegistryObject<Block> WILLOW_HANGING_SIGN = BLOCKS.register("willow_hanging_sign",
             () -> new REOHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), REOWoodTypes.WILLOW));
-    public static final RegistryObject<Block> SIGN_HANGING_WILLOW_WALL = BLOCKS.register("sign_hanging_willow_wall",
+    public static final RegistryObject<Block> WILLOW_WALL_HANGING_SIGN = BLOCKS.register("willow_wall_hanging_sign",
             () -> new REOWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), REOWoodTypes.WILLOW));
 
-    public static final RegistryObject<Block> DOOR_WILLOW = registerBlock("door_willow",
+    public static final RegistryObject<Block> WILLOW_DOOR = registerBlock("willow_door",
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion(), BlockSetType.OAK));
-    public static final RegistryObject<Block> TRAPDOOR_WILLOW = registerBlock("trapdoor_willow",
+    public static final RegistryObject<Block> WILLOW_TRAPDOOR = registerBlock("willow_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.OAK));
+
+
+
+    // Misc //
+    public static final RegistryObject<Block> WAX_BLOCK = registerBlock("wax_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
+
 
     // Tech//
     // Machines
