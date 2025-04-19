@@ -23,7 +23,6 @@ import javax.annotation.Nullable;
 import java.util.function.Consumer;
 
 public class BasicCrusherRecipeBuilder implements RecipeBuilder {
-    private final RecipeCategory category;
     private final Item result;
     private final Ingredient ingredient;
     private final float experience;
@@ -31,8 +30,7 @@ public class BasicCrusherRecipeBuilder implements RecipeBuilder {
     private final String name;
     private final Advancement.Builder advancement = Advancement.Builder.recipeAdvancement();
 
-    public BasicCrusherRecipeBuilder(RecipeCategory pCategory, ItemLike pResult, Ingredient pIngredient, float pExperience, int pCookingTime, String pName) {
-        this.category = pCategory;
+    public BasicCrusherRecipeBuilder(ItemLike pResult, Ingredient pIngredient, float pExperience, int pCookingTime, String pName) {
         this.result = pResult.asItem();
         this.ingredient = pIngredient;
         this.experience = pExperience;
@@ -40,11 +38,11 @@ public class BasicCrusherRecipeBuilder implements RecipeBuilder {
         this.name = pName;
     }
 
-    public static BasicCrusherRecipeBuilder generic(RecipeCategory pCategory, ItemLike pResult, Ingredient pIngredient, float pExperience, int pCookingTime) {
-        return new BasicCrusherRecipeBuilder(pCategory, pResult, pIngredient, pExperience, pCookingTime, "");
+    public static BasicCrusherRecipeBuilder generic(ItemLike pResult, Ingredient pIngredient, float pExperience, int pCookingTime) {
+        return new BasicCrusherRecipeBuilder(pResult, pIngredient, pExperience, pCookingTime, "");
     }
-    public static BasicCrusherRecipeBuilder named(RecipeCategory pCategory, ItemLike pResult, Ingredient pIngredient, float pExperience, int pCookingTime, String pName) {
-        return new BasicCrusherRecipeBuilder(pCategory, pResult, pIngredient, pExperience, pCookingTime, pName);
+    public static BasicCrusherRecipeBuilder named( ItemLike pResult, Ingredient pIngredient, float pExperience, int pCookingTime, String pName) {
+        return new BasicCrusherRecipeBuilder(pResult, pIngredient, pExperience, pCookingTime, pName);
     }
 
     @Override

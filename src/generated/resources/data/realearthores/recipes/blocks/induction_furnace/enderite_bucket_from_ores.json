@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:inducting",
+  "ingredients": [
+    {
+      "tag": "forge:ores/enderite"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:enderite_bucket"
+  }
+}

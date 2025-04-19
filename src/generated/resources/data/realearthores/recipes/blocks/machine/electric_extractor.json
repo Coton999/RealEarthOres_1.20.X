@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "realearthores:tree_tap"
+    },
+    "B": {
+      "tag": "forge:ingots/steel"
+    },
+    "C": {
+      "item": "realearthores:extractor"
+    },
+    "D": {
+      "tag": "realearthores:gears/tier_1"
+    },
+    "E": {
+      "tag": "forge:dusts/redstone"
+    }
+  },
+  "pattern": [
+    " A ",
+    "BCB",
+    "DED"
+  ],
+  "result": {
+    "item": "realearthores:electric_extractor"
+  },
+  "show_notification": true
+}

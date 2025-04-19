@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:inducting",
+  "ingredients": [
+    {
+      "tag": "forge:ores/silver"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:silver_bucket"
+  }
+}

@@ -1,4 +1,4 @@
-// 1.20.1	2025-04-12T08:07:03.2397854	Tags for minecraft:item mod id realearthores
+// 1.20.1	2025-04-17T15:23:53.6934646	Tags for minecraft:item mod id realearthores
 ed4f2149326187fca54fed14d5bba574175003d8 data/forge/tags/items/armors/boots.json
 e08914e93425a7f95a3d59b344415410e1f7087d data/forge/tags/items/armors/boots/aluminum.json
 b8e122aa2d34d7b317b69340879114af6495405a data/forge/tags/items/armors/boots/amethyst.json
@@ -127,6 +127,7 @@ b9b96349440153cb517b06c02a150203a9900e8d data/forge/tags/items/nuggets/steel.jso
 0a3ee3b42e9679b21c31194254b0e4e87755aed0 data/forge/tags/items/nuggets/tin.json
 4251c66b281fabe7ed89dc2a4acbda0485780454 data/forge/tags/items/nuggets/zinc.json
 565b15871511b332c9245961ed6268d721ad1cdd data/forge/tags/items/ores/aluminum.json
+33daffa6639871191e4a59ba8c1c05de2a18aa99 data/forge/tags/items/ores/enderite.json
 7856fe794aff188b6ce13563d2e89c02d0182351 data/forge/tags/items/ores/lead.json
 d9841068fff2ee7e012736a77f628e9c464e0076 data/forge/tags/items/ores/nickel.json
 fd148b06a3acd2080ec9fffa8af7a0b3aaf32feb data/forge/tags/items/ores/ores_in_ground/deepslate.json
@@ -365,8 +366,16 @@ af2fda31cc24402d8da0d137bb1a936f5180ba01 data/realearthores/tags/items/dirty_dus
 7b481e13b6260f3425463a40b43af2c76299cfd8 data/realearthores/tags/items/dirty_dusts/tin.json
 c3e4923ab18f4c01805ba57fddd22b92eb14dd59 data/realearthores/tags/items/dirty_dusts/uranium.json
 35942bdc98f91348011ec181193d14ed12e04b8d data/realearthores/tags/items/dirty_dusts/zinc.json
-aa15c70c00f320e36b6ad5e559b0c4366f3d3641 data/realearthores/tags/items/gears/tier_gem.json
+9b321ed3a6d724c7660d6d421510e40c5916d9f1 data/realearthores/tags/items/gears/tier_1.json
+aa3c6d8c7fae3988c419f39e73ea02cb6ed71f5c data/realearthores/tags/items/gears/tier_2.json
+2b62c65f759c3a994cfe64fd9cc940e353208b0d data/realearthores/tags/items/gears/tier_3.json
+5c636fbfe30306ee48b17a7e5b92cdb4de62f0bc data/realearthores/tags/items/gears/tier_4.json
+a4f79b2f30f77d276cc00b1487962c48855d7dc4 data/realearthores/tags/items/gears/tier_5.json
 353a4d1c19236f70af173119164b340d78dd0ce3 data/realearthores/tags/items/gems/amethyst.json
+d4330c0670a8ff0476a64cff8c8e30d9e6d5d760 data/realearthores/tags/items/ores/amethyst.json
+5ceeb86b7e90a601a34b265ccaef1f5493dc4c52 data/realearthores/tags/items/ores/peridot.json
+1a3538be56c875b2eaf52841fef8aee558ebcd86 data/realearthores/tags/items/ores/ruby.json
+229a84af6d71a50172de8c78e433733c3bf8eaca data/realearthores/tags/items/ores/sapphire.json
 04568432db13913e764ddb9212109893d70ef3fb data/realearthores/tags/items/tools_and_armor/aluminum.json
 be4d1d4ad0ae507541e2e4cf71ad132fd942ec69 data/realearthores/tags/items/tools_and_armor/amethyst.json
 04ed4e966947bcd2caa46a06d59cc588c24ffdbf data/realearthores/tags/items/tools_and_armor/bronze.json

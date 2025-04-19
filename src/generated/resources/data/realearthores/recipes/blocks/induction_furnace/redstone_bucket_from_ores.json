@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:inducting",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/redstone"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:redstone_bucket"
+  }
+}

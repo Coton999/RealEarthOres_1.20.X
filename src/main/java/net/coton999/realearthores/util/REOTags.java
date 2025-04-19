@@ -52,6 +52,7 @@ public class REOTags {
         public static final TagKey<Block> REO_END_ORES = forgeTag("ores_in_ground/endstone");
 
         public static final TagKey<Block> ORES_ALUMINUM = forgeTag("ores/aluminum");
+        public static final TagKey<Block> ORES_ENDERITE = forgeTag("ores/enderite");
         public static final TagKey<Block> ORES_LEAD = forgeTag("ores/lead");
         public static final TagKey<Block> ORES_NICKEL = forgeTag("ores/nickel");
         public static final TagKey<Block> ORES_PLATINUM = forgeTag("ores/platinum");
@@ -113,7 +114,11 @@ public class REOTags {
     public static class Items {
 
         // Gears
-        public static final TagKey<Item> GEARS_TIER_GEM = reoTag("gears/tier_gem");
+        public static final TagKey<Item> GEARS_TIER_1 = reoTag("gears/tier_1");
+        public static final TagKey<Item> GEARS_TIER_2 = reoTag("gears/tier_2");
+        public static final TagKey<Item> GEARS_TIER_3 = reoTag("gears/tier_3");
+        public static final TagKey<Item> GEARS_TIER_4 = reoTag("gears/tier_4");
+        public static final TagKey<Item> GEARS_TIER_5 = reoTag("gears/tier_5");
 
         public static final TagKey<Item> GEARS_ALUMINUM = forgeTag("gears/aluminum");
         public static final TagKey<Item> GEARS_AMETHYST = forgeTag("gears/amethyst");
@@ -431,10 +436,14 @@ public class REOTags {
         public static final TagKey<Item> REO_END_ORES = forgeTag("ores/ores_in_ground/endstone");
 
         public static final TagKey<Item> ORES_ALUMINUM = forgeTag("ores/aluminum");
+        public static final TagKey<Item> ORES_AMETHYST = reoTag("ores/amethyst");
         public static final TagKey<Item> ORES_ENDERITE = forgeTag("ores/enderite");
         public static final TagKey<Item> ORES_LEAD = forgeTag("ores/lead");
         public static final TagKey<Item> ORES_NICKEL = forgeTag("ores/nickel");
+        public static final TagKey<Item> ORES_PERIDOT = reoTag("ores/peridot");
         public static final TagKey<Item> ORES_PLATINUM = forgeTag("ores/platinum");
+        public static final TagKey<Item> ORES_RUBY = reoTag("ores/ruby");
+        public static final TagKey<Item> ORES_SAPPHIRE = reoTag("ores/sapphire");
         public static final TagKey<Item> ORES_SILVER = forgeTag("ores/silver");
         public static final TagKey<Item> ORES_TIN = forgeTag("ores/tin");
         public static final TagKey<Item> ORES_URANIUM = forgeTag("ores/uranium");

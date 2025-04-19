@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:inducting",
+  "ingredients": [
+    {
+      "tag": "forge:gems/diamond"
+    }
+  ],
+  "result": {
+    "item": "realearthores:diamond_bucket"
+  }
+}

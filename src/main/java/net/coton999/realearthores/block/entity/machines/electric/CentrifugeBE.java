@@ -87,13 +87,13 @@ public class CentrifugeBE extends BlockEntity implements MenuProvider {
 
     private int getMaxProgress(){
         if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.ULTIMATE_CAPACITOR.get()){
-            return 50;
-        } if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.ADVANCED_CAPACITOR.get()) {
             return 100;
-        } if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.BASIC_CAPACITOR.get()) {
-            return 150;
-        } else {
+        } if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.ADVANCED_CAPACITOR.get()) {
             return 200;
+        } if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.BASIC_CAPACITOR.get()) {
+            return 300;
+        } else {
+            return 400;
         }
     }
     public final REOEnergyStorage ENERGY_STORAGE = createEnergyStorage();

@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:inducting",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/aluminum"
+    }
+  ],
+  "result": {
+    "item": "realearthores:aluminium_bucket"
+  }
+}

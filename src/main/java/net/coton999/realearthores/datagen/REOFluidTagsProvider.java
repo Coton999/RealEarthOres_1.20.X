@@ -19,7 +19,7 @@ public class REOFluidTagsProvider extends FluidTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
         tag(FluidTags.LAVA)
-                .add(REOFluids.MOLTEN_ALUMINIUM_SOURCE.get()) .add(REOFluids.MOLTEN_ALUMINIUM_FLOWING.get())
+                .add(REOFluids.MOLTEN_ALUMINUM_SOURCE.get()) .add(REOFluids.MOLTEN_ALUMINUM_FLOWING.get())
                 .add(REOFluids.MOLTEN_AMETHYST_SOURCE.get()) .add(REOFluids.MOLTEN_AMETHYST_FLOWING.get())
                 .add(REOFluids.MOLTEN_BRASS_SOURCE.get()) .add(REOFluids.MOLTEN_BRASS_FLOWING.get())
                 .add(REOFluids.MOLTEN_BRONZE_SOURCE.get()) .add(REOFluids.MOLTEN_BRONZE_FLOWING.get())

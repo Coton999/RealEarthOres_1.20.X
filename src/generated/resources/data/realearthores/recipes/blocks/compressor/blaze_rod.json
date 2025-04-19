@@ -1,0 +1,13 @@
+{
+  "type": "realearthores:compressing",
+  "ingredients": [
+    {
+      "type": "forge:nbt",
+      "count": 3,
+      "item": "minecraft:blaze_powder"
+    }
+  ],
+  "result": {
+    "item": "minecraft:blaze_rod"
+  }
+}

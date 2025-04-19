@@ -11,6 +11,7 @@ import net.coton999.realearthores.compat.recipe.coal.BasicExtractorRecipeCategor
 import net.coton999.realearthores.compat.recipe.coal.BasicPurifierRecipeCategory;
 import net.coton999.realearthores.compat.recipe.coal.KilnRecipeCategory;
 import net.coton999.realearthores.compat.recipe.electric.*;
+import net.coton999.realearthores.datagen.custom.electric.InductionFurnaceRecipeBuilder;
 import net.coton999.realearthores.recipe.machines.coal.BasicCrusherRecipe;
 import net.coton999.realearthores.recipe.machines.coal.BasicExtractorRecipe;
 import net.coton999.realearthores.recipe.machines.coal.BasicPurifierRecipe;
@@ -62,6 +63,10 @@ public class JEIRealEarthOresPlugin implements IModPlugin {
                 registration.getJeiHelpers().getGuiHelper(), 200));
         registration.addRecipeCategories(new AlloyFurnaceRecipeCategory(
                 registration.getJeiHelpers().getGuiHelper(), 200));
+        registration.addRecipeCategories(new InductionFurnaceRecipeCategory(
+                registration.getJeiHelpers().getGuiHelper(), 400));
+        registration.addRecipeCategories(new CentrifugeRecipeCategory(
+                registration.getJeiHelpers().getGuiHelper(), 400));
     }
 
     @Override
@@ -94,6 +99,10 @@ public class JEIRealEarthOresPlugin implements IModPlugin {
         registration.addRecipes(PurifierRecipeCategory.PURIFIER_TYPE, purifierRecipes);
         List<AlloyFurnaceRecipe> alloyfurnaceRecipes = recipeManager.getAllRecipesFor(AlloyFurnaceRecipe.Type.INSTANCE);
         registration.addRecipes(AlloyFurnaceRecipeCategory.ALLOY_FURNACE_TYPE, alloyfurnaceRecipes);
+        List<InductionFurnaceRecipe> inductionfurnaceRecipes = recipeManager.getAllRecipesFor(InductionFurnaceRecipe.Type.INSTANCE);
+        registration.addRecipes(InductionFurnaceRecipeCategory.INDUCTION_FURNACE_TYPE, inductionfurnaceRecipes);
+        List<CentrifugeRecipe> centrifugeRecipes = recipeManager.getAllRecipesFor(CentrifugeRecipe.Type.INSTANCE);
+        registration.addRecipes(CentrifugeRecipeCategory.CENTRIFUGE_TYPE, centrifugeRecipes);
     }
 
     @Override
@@ -124,5 +133,9 @@ public class JEIRealEarthOresPlugin implements IModPlugin {
                 PurifierRecipeCategory.PURIFIER_TYPE);
         registration.addRecipeClickArea(AlloyFurnaceScreen.class, 78, 33, 26, 19,
                 AlloyFurnaceRecipeCategory.ALLOY_FURNACE_TYPE);
+        registration.addRecipeClickArea(InductionFurnaceScreen.class, 78, 33, 26, 19,
+                InductionFurnaceRecipeCategory.INDUCTION_FURNACE_TYPE);
+        registration.addRecipeClickArea(CentrifugeScreen.class, 78, 33, 26, 19,
+                CentrifugeRecipeCategory.CENTRIFUGE_TYPE);
     }
 }

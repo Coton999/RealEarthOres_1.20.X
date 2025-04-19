@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:inducting",
+  "ingredients": [
+    {
+      "tag": "forge:ores/nickel"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:nickel_bucket"
+  }
+}

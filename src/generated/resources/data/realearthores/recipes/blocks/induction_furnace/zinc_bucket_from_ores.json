@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:inducting",
+  "ingredients": [
+    {
+      "tag": "forge:ores/zinc"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:zinc_bucket"
+  }
+}

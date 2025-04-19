@@ -6,7 +6,7 @@
       "item": "realearthores:brass_ingot"
     },
     "G": {
-      "item": "realearthores:stone_gear"
+      "tag": "realearthores:gears/tier_1"
     }
   },
   "pattern": [

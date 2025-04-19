@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:inducting",
+  "ingredients": [
+    {
+      "tag": "realearthores:gems/amethyst"
+    }
+  ],
+  "result": {
+    "item": "realearthores:amethyst_bucket"
+  }
+}

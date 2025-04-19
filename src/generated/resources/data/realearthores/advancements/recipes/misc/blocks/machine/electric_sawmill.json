@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_honeycomb": {
+    "has_iron_axe": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:wax_block"
+              "minecraft:iron_axe"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "realearthores:blocks/storage_block/wax_block"
+        "recipe": "realearthores:blocks/machine/electric_sawmill"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_honeycomb",
+      "has_iron_axe",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "realearthores:blocks/storage_block/wax_block"
+      "realearthores:blocks/machine/electric_sawmill"
     ]
   },
   "sends_telemetry_event": false

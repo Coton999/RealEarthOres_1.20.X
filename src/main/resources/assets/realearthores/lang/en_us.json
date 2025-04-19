@@ -460,6 +460,7 @@
   "item.realearthores.barley_seed": "Barley Seeds",
   "item.realearthores.cauliflower_seed": "Cauliflower Seeds",
   "item.realearthores.cotton_seed": "Cotton Seeds",
+  "item.realearthores.ender_lilly_seed": "Ender Lilly Seed",
   "item.realearthores.rice_seed": "Rice Seeds",
   "item.realearthores.strawberry_seed": "Strawberry Seeds",
   "item.realearthores.tomato_seed": "Tomato Seeds",
@@ -1404,5 +1405,7 @@
   "entity.realearthores.mod_chest_boat": "Boat with Chest",
   "entity.realearthores.mod_boat": "Boat",
 
-  "tooltip.realearthores.fuel_item.tooltip": "Can be used as a fuel source"
+  "tooltip.realearthores.fuel_item.tooltip": "Can be used as a fuel source",
+  "tooltip.realearthores.liquid.amount.with.capacity": "%s / %s mB",
+  "tooltip.realearthores.liquid.amount": "%s mB"
 }

@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:inducting",
+  "ingredients": [
+    {
+      "tag": "forge:ores/iron"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:iron_bucket"
+  }
+}

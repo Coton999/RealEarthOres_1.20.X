@@ -4,14 +4,11 @@
   "key": {
     "A": {
       "item": "minecraft:bricks"
-    },
-    "B": {
-      "item": "minecraft:furnace"
     }
   },
   "pattern": [
     "AAA",
-    "ABA",
+    "A A",
     "AAA"
   ],
   "result": {

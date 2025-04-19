@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:inducting",
+  "ingredients": [
+    {
+      "tag": "forge:ores/aluminum"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:aluminium_bucket"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "forge:ingots/steel"
+    },
+    "B": {
+      "tag": "forge:dusts/redstone"
+    },
+    "C": {
+      "item": "realearthores:electric_furnace"
+    },
+    "D": {
+      "tag": "realearthores:gears/tier_1"
+    },
+    "E": {
+      "item": "minecraft:campfire"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "BCB",
+    "DED"
+  ],
+  "result": {
+    "item": "realearthores:electric_induction_furnace"
+  },
+  "show_notification": true
+}

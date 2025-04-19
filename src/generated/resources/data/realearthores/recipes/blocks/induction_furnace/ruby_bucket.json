@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:inducting",
+  "ingredients": [
+    {
+      "tag": "forge:gems/ruby"
+    }
+  ],
+  "result": {
+    "item": "realearthores:ruby_bucket"
+  }
+}

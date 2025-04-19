@@ -6,7 +6,7 @@
       "item": "realearthores:sapphire"
     },
     "G": {
-      "item": "realearthores:iron_gear"
+      "tag": "realearthores:gears/tier_2"
     }
   },
   "pattern": [

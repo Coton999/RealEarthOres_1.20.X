@@ -3,22 +3,22 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:blaze_powder"
     },
     "B": {
-      "item": "minecraft:campfire"
+      "item": "minecraft:cobblestone"
     },
     "C": {
       "item": "minecraft:furnace"
     },
     "D": {
-      "item": "minecraft:cobblestone"
+      "item": "minecraft:campfire"
     }
   },
   "pattern": [
     "AAA",
-    "DCD",
-    "DBD"
+    "BCB",
+    "BDB"
   ],
   "result": {
     "item": "realearthores:purifier"

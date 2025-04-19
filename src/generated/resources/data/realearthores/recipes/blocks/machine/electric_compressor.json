@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "forge:ingots/steel"
+    },
+    "B": {
+      "item": "minecraft:sticky_piston"
+    },
+    "C": {
+      "tag": "realearthores:gears/tier_1"
+    },
+    "D": {
+      "tag": "forge:dusts/redstone"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "B B",
+    "CDC"
+  ],
+  "result": {
+    "item": "realearthores:electric_compressor"
+  },
+  "show_notification": true
+}

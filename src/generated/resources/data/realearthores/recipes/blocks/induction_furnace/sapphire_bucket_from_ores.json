@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:inducting",
+  "ingredients": [
+    {
+      "tag": "realearthores:ores/sapphire"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:sapphire_bucket"
+  }
+}

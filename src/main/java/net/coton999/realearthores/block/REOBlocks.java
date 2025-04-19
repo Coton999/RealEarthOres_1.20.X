@@ -423,7 +423,7 @@ public class REOBlocks {
 
     // Motlen Metals
     public static final RegistryObject<LiquidBlock> MOLTEN_ALUMINIUM_BLOCK = registerBlock("molten_aluminium_block",
-            () -> new LiquidBlock(REOFluids.MOLTEN_ALUMINIUM_SOURCE,BlockBehaviour.Properties.copy(Blocks.LAVA)
+            () -> new LiquidBlock(REOFluids.MOLTEN_ALUMINUM_SOURCE,BlockBehaviour.Properties.copy(Blocks.LAVA)
                     .replaceable().noCollission().noLootTable().sound(SoundType.EMPTY)));
     public static final RegistryObject<LiquidBlock> MOLTEN_AMETHYST_BLOCK = registerBlock("molten_amethyst_block",
             () -> new LiquidBlock(REOFluids.MOLTEN_AMETHYST_SOURCE,BlockBehaviour.Properties.copy(Blocks.LAVA)
@@ -2269,27 +2269,20 @@ public class REOBlocks {
     public static final RegistryObject<Block> WILLOW_TRAPDOOR = registerBlock("willow_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.OAK));
 
-
-
-    // Misc //
-    public static final RegistryObject<Block> WAX_BLOCK = registerBlock("wax_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
-
-
     // Tech//
     // Machines
     // Coal
     public static final RegistryObject<Block> KILN = registerBlock("kiln",
-            () -> new KilnBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+            () -> new KilnBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS)
                     .lightLevel((state) -> state.getValue(KilnBlock.LIT) ? 13 : 0).noOcclusion()));
     public static final RegistryObject<Block> CRUSHER = registerBlock("crusher",
-            () -> new BasicCrusherBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+            () -> new BasicCrusherBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)
                     .lightLevel((state) -> state.getValue(BasicCrusherBlock.LIT) ? 13 : 0).noOcclusion()));
     public static final RegistryObject<Block> EXTRACTOR = registerBlock("extractor",
-            () -> new BasicExtractorBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+            () -> new BasicExtractorBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)
                     .lightLevel((state) -> state.getValue(BasicExtractorBlock.LIT) ? 13 : 0).noOcclusion()));
     public static final RegistryObject<Block> PURIFIER = registerBlock("purifier",
-            () -> new BasicPurifierBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+            () -> new BasicPurifierBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)
                     .lightLevel((state) -> state.getValue(BasicPurifierBlock.LIT) ? 13 : 0).noOcclusion()));
 
     // Electric

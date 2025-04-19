@@ -6,7 +6,7 @@
       "item": "minecraft:emerald"
     },
     "G": {
-      "item": "realearthores:iron_gear"
+      "tag": "realearthores:gears/tier_3"
     }
   },
   "pattern": [

@@ -26,7 +26,7 @@ public class InductionFurnaceRecipe implements Recipe<SimpleContainer> {
     }
 
     public int getCookingTime() {
-        return 200;
+        return 400;
     }
 
     @Override

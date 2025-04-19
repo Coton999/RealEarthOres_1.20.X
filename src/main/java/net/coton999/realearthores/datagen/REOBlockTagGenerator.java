@@ -559,6 +559,8 @@ public class REOBlockTagGenerator extends BlockTagsProvider {
         this.tag(REOTags.Blocks.ORES_ALUMINUM)
                 .add(REOBlocks.ALUMINUM_ORE.get()).add(REOBlocks.DEEPSLATE_ALUMINIUM_ORE.get())
                 .add(REOBlocks.ALUMINUM_GRAVEL_ORE.get()).add(REOBlocks.NETHER_ALUMINIUM_ORE.get());
+        this.tag(REOTags.Blocks.ORES_ENDERITE)
+                .add(REOBlocks.ENDERITE_ORE.get());
         this.tag(REOTags.Blocks.ORES_LEAD)
                 .add(REOBlocks.LEAD_ORE.get()).add(REOBlocks.DEEPSLATE_LEAD_ORE.get())
                 .add(REOBlocks.LEAD_GRAVEL_ORE.get()).add(REOBlocks.NETHER_LEAD_ORE.get());

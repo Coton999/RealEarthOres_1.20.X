@@ -1,4 +1,4 @@
-// 1.20.1	2025-04-12T08:07:03.2407898	Loot Tables
+// 1.20.1	2025-04-13T11:19:26.6732692	Loot Tables
 a3510172fd73b8b0a7c04791b3c1cabc19592653 data/realearthores/loot_tables/blocks/balsa_button.json
 6f410cc4053ef2216282629f76cbae9670e8234e data/realearthores/loot_tables/blocks/balsa_door.json
 6a32d1a39351d05d917c93e879e65590dba9f057 data/realearthores/loot_tables/blocks/balsa_fence.json
@@ -819,7 +819,6 @@ befc1e134aef9d3d58c814a0fd95e56b192c0168 data/realearthores/loot_tables/blocks/w
 8a009a2b92f4f604e506195b694fc8fb9b5c4d62 data/realearthores/loot_tables/blocks/walnut_wall_hanging_sign.json
 c0d3f9b811829b695484cceacffc3fb7b57dea07 data/realearthores/loot_tables/blocks/walnut_wall_sign.json
 6756d6240dc7f3942ea8a5a3a802bfd9e3dfd59a data/realearthores/loot_tables/blocks/walnut_wood.json
-76f264475d387717c8727dbdd50bf2e168473f87 data/realearthores/loot_tables/blocks/wax_block.json
 76e9a79c4e67717fc029c11b820752c804c6c552 data/realearthores/loot_tables/blocks/wild_barley.json
 51a00292e5312e6d3f57059dc18f14d0bdf33f26 data/realearthores/loot_tables/blocks/wild_cotton.json
 3ab124b0bd9ea155ccefe7d72222dd8945c86a34 data/realearthores/loot_tables/blocks/wild_rice.json

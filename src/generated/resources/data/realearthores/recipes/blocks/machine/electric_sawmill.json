@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:iron_axe"
+    },
+    "B": {
+      "tag": "forge:ingots/steel"
+    },
+    "C": {
+      "tag": "forge:dusts/redstone"
+    },
+    "D": {
+      "tag": "realearthores:gears/tier_1"
+    }
+  },
+  "pattern": [
+    "A A",
+    "BCB",
+    "DBD"
+  ],
+  "result": {
+    "item": "realearthores:electric_sawmill"
+  },
+  "show_notification": true
+}

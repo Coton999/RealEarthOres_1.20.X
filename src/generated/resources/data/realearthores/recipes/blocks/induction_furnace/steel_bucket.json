@@ -1,0 +1,11 @@
+{
+  "type": "realearthores:inducting",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/steel"
+    }
+  ],
+  "result": {
+    "item": "realearthores:steel_bucket"
+  }
+}

@@ -1,4 +1,4 @@
-// 1.20.1	2025-04-12T08:07:03.2532307	Block States: realearthores
+// 1.20.1	2025-04-13T11:19:26.6848309	Block States: realearthores
 c360dded1c2902a8a210d0d28a2aa2ad666efb9f assets/realearthores/blockstates/balsa_button.json
 4dfdafb5416ce3a915ef61b7e8b302d4dc81da14 assets/realearthores/blockstates/balsa_door.json
 79fa5c54f406f0985f60c713f49d7e9cbc83d6e5 assets/realearthores/blockstates/balsa_fence.json
@@ -786,7 +786,6 @@ bca00eb718b9186de5355395c4227c31359f66db assets/realearthores/blockstates/walnut
 d42f753ef8242c2591fabdfa336e97d3d8c879dd assets/realearthores/blockstates/walnut_wall_hanging_sign.json
 f274abfbccefa63f30e74af6b775bca58c86dd29 assets/realearthores/blockstates/walnut_wall_sign.json
 85496a15409fc05bddce1538d9486ff7b35f54ee assets/realearthores/blockstates/walnut_wood.json
-03638d27c5733a1c9c5369e3f1f5c1dcf6da4d43 assets/realearthores/blockstates/wax_block.json
 353ef2e7a44c8ecc6ed001572f6e31c32dd848fd assets/realearthores/blockstates/wild_barley.json
 3b3b68357c00244e31e855994fd5efbec90513fd assets/realearthores/blockstates/wild_cotton.json
 62c2d238e1914cc3f3b7286334f508699f1bfd91 assets/realearthores/blockstates/wild_rice.json
@@ -2413,7 +2412,6 @@ c6be0d71d532bb74038463743f67b5ce48d5c824 assets/realearthores/models/block/walnu
 ee4fa1c32832c22961e306995625b3073c979bce assets/realearthores/models/block/walnut_trapdoor_top.json
 aa3991d8ed6f24994c7eeba15a64d18307b07656 assets/realearthores/models/block/walnut_wood.json
 7b19c070c3803a246ed2b355bedfea1904aa02ea assets/realearthores/models/block/walnut_wood_horizontal.json
-a707df5f5e5d0428daaab70339bbd2b402ef38e1 assets/realearthores/models/block/wax_block.json
 b736965fbafda12fbcb69226fe124129d07e5925 assets/realearthores/models/block/wild_barley.json
 888f4b37f22d26bf4162eb7436b9b88ae681bd3a assets/realearthores/models/block/wild_cotton.json
 45cb68aee078519df0f1f5d8aadd3e42db04bf89 assets/realearthores/models/block/wild_rice.json
@@ -2855,7 +2853,6 @@ f413d43a42b54fd70e73b8c48eae4ef1253e7fd1 assets/realearthores/models/item/walnut
 04a4be19fef1ba7c796bf4fcf7fec2f1745e3f69 assets/realearthores/models/item/walnut_planks.json
 9ee6270e087f5c388beebafdbeb5257740a21977 assets/realearthores/models/item/walnut_sapling.json
 c481533db7bba5160b1f37c5d20dcd096015f131 assets/realearthores/models/item/walnut_wood.json
-f85d0d8a54953cf7d0b76073ae68064df0d52d2d assets/realearthores/models/item/wax_block.json
 f92610b1d299ecf9459b1ef944245e18afd92c17 assets/realearthores/models/item/willow_leaves.json
 166681cf118e1fa42999ceec9e9b268bcc2742ec assets/realearthores/models/item/willow_log.json
 03ca153a27cd59aba631812b3db192306b2b5f9c assets/realearthores/models/item/willow_planks.json

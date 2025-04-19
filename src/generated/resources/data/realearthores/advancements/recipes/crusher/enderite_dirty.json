@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_enderite_ingot": {
+    "has_ore_enderite": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:enderite_ingot"
+              "realearthores:ore_enderite"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_enderite_ingot",
+      "has_ore_enderite",
       "has_the_recipe"
     ]
   ],

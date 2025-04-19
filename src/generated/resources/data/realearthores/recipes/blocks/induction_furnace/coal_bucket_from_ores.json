@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:inducting",
+  "ingredients": [
+    {
+      "tag": "forge:ores/coal"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:coal_bucket"
+  }
+}

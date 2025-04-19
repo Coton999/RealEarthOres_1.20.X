@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:inducting",
+  "ingredients": [
+    {
+      "tag": "forge:ores/uranium"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:uranium_bucket"
+  }
+}

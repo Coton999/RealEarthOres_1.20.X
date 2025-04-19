@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_furnace": {
+    "has_bricks": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:furnace"
+              "minecraft:bricks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_furnace",
+      "has_bricks",
       "has_the_recipe"
     ]
   ],

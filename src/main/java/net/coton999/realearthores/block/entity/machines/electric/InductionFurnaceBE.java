@@ -2,9 +2,10 @@ package net.coton999.realearthores.block.entity.machines.electric;
 
 import net.coton999.realearthores.block.custom.machines.electric.InductionFurnaceBlock;
 import net.coton999.realearthores.block.entity.REOBlockEntities;
+import net.coton999.realearthores.fluid.REOFluids;
 import net.coton999.realearthores.item.REOItems;
 import net.coton999.realearthores.menu.machines.electric.InductionFurnaceMenu;
-import net.coton999.realearthores.recipe.machines.electric.ElectricFurnaceRecipe;
+import net.coton999.realearthores.recipe.machines.electric.InductionFurnaceRecipe;
 import net.coton999.realearthores.util.energy.REOEnergyStorage;
 import net.coton999.realearthores.util.inventory.InventoryDirectionEntry;
 import net.coton999.realearthores.util.inventory.InventoryDirectionWrapper;
@@ -35,6 +36,9 @@ import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.energy.IEnergyStorage;
+import net.minecraftforge.fluids.FluidStack;
+import net.minecraftforge.fluids.capability.IFluidHandler;
+import net.minecraftforge.fluids.capability.templates.FluidTank;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
@@ -79,23 +83,44 @@ public class InductionFurnaceBE extends BlockEntity implements MenuProvider {
                     new InventoryDirectionEntry(Direction.WEST, INPUT_SLOT, true),
                     new InventoryDirectionEntry(Direction.UP, INPUT_SLOT, true)).directionsMap;
 
+    private LazyOptional<IEnergyStorage> lazyEnergyHandler = LazyOptional.empty();
+    private LazyOptional<IFluidHandler> lazyFluidHandler = LazyOptional.empty();
+
     protected final ContainerData data;
     private int progress = 0;
     private int maxProgress = getMaxProgress();
 
     private int getMaxProgress(){
         if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.ULTIMATE_CAPACITOR.get()){
-            return 50;
-        } if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.ADVANCED_CAPACITOR.get()) {
             return 100;
-        } if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.BASIC_CAPACITOR.get()) {
-            return 150;
-        } else {
+        } if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.ADVANCED_CAPACITOR.get()) {
             return 200;
+        } if (this.itemHandler.getStackInSlot(CAPACITOR_SLOT).getItem() == REOItems.BASIC_CAPACITOR.get()) {
+            return 300;
+        } else {
+            return 400;
         }
     }
 
     public final REOEnergyStorage ENERGY_STORAGE = createEnergyStorage();
+    private final FluidTank FLUID_TANK = createFluidTank();
+
+    private FluidTank createFluidTank() {
+        return new FluidTank(16000) {
+            @Override
+            protected void onContentsChanged() {
+                setChanged();
+                if(!level.isClientSide()) {
+                    level.sendBlockUpdated(getBlockPos(), getBlockState(), getBlockState(), 3);
+                }
+            }
+
+            @Override
+            public boolean isFluidValid(FluidStack stack) {
+                return true;
+            }
+        };
+    }
 
     private REOEnergyStorage createEnergyStorage() {
         return new REOEnergyStorage(8000, 200) {
@@ -137,7 +162,11 @@ public class InductionFurnaceBE extends BlockEntity implements MenuProvider {
     public IEnergyStorage getEnergyStorage() {
         return this.ENERGY_STORAGE;
     }
-    
+
+    public FluidStack getFluid() {
+        return FLUID_TANK.getFluid();
+    }
+
     public void drops() {
         SimpleContainer inventory = new SimpleContainer(itemHandler.getSlots());
         for (int i = 0; i < itemHandler.getSlots(); i++) {
@@ -159,6 +188,14 @@ public class InductionFurnaceBE extends BlockEntity implements MenuProvider {
 
     @Override
     public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @Nullable Direction side) {
+        if(cap == ForgeCapabilities.ENERGY) {
+            return lazyEnergyHandler.cast();
+        }
+
+        if(cap == ForgeCapabilities.FLUID_HANDLER) {
+            return lazyFluidHandler.cast();
+        }
+
         if(cap == ForgeCapabilities.ITEM_HANDLER) {
             if(side == null) {
                 return lazyItemHandler.cast();
@@ -187,20 +224,25 @@ public class InductionFurnaceBE extends BlockEntity implements MenuProvider {
     public void onLoad() {
         super.onLoad();
         lazyItemHandler = LazyOptional.of(() -> itemHandler);
+        lazyEnergyHandler = LazyOptional.of(() -> ENERGY_STORAGE);
+        lazyFluidHandler = LazyOptional.of(() -> FLUID_TANK);
     }
 
     @Override
     public void invalidateCaps() {
         super.invalidateCaps();
         lazyItemHandler.invalidate();
+        lazyEnergyHandler.invalidate();
+        lazyFluidHandler.invalidate();
     }
 
     @Override
     protected void saveAdditional(CompoundTag pTag) {
         pTag.put("inventory", itemHandler.serializeNBT());
-        pTag.putInt("induction_furnace.progress", progress);
+        pTag.putInt("electric_induction_furnace.progress", progress);
         pTag.putInt("energy", ENERGY_STORAGE.getEnergyStored());
         pTag.putInt("burning", burnTime);
+        pTag = FLUID_TANK.writeToNBT(pTag);
 
         super.saveAdditional(pTag);
     }
@@ -209,9 +251,10 @@ public class InductionFurnaceBE extends BlockEntity implements MenuProvider {
     public void load(CompoundTag pTag) {
         super.load(pTag);
         itemHandler.deserializeNBT(pTag.getCompound("inventory"));
-        progress = pTag.getInt("induction_furnace.progress");
+        progress = pTag.getInt("electric_induction_furnace.progress");
         ENERGY_STORAGE.setEnergy(pTag.getInt("energy"));
         burnTime = pTag.getInt("burning");
+        FLUID_TANK.readFromNBT(pTag);
 
     }
 
@@ -220,6 +263,8 @@ public class InductionFurnaceBE extends BlockEntity implements MenuProvider {
         if (ENERGY_STORAGE.getEnergyStored() == 8000) {
             distributeEnergy();
         }
+
+        fillUpOnFluid();
 
         if (isOutputSlotEmptyOrReceivable() && hasRecipe()) {
             level.setBlock(pPos, pState.setValue(InductionFurnaceBlock.LIT, Boolean.TRUE), 3);
@@ -236,6 +281,36 @@ public class InductionFurnaceBE extends BlockEntity implements MenuProvider {
             level.setBlock(pPos, pState.setValue(InductionFurnaceBlock.LIT, Boolean.FALSE), 3);
             resetProgress();
         }
+    }
+
+    private void fillUpOnFluid() {
+        if(hasFluidSourceInSlot()) {
+            transferItemFluidToTank();
+        }
+    }
+
+    private void transferItemFluidToTank() {
+        this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCapability(ForgeCapabilities.FLUID_HANDLER_ITEM).ifPresent(iFluidHandlerItem -> {
+            int drainAmount = Math.min(this.FLUID_TANK.getSpace(), 1000);
+            if (!this.FLUID_TANK.getFluid().isFluidEqual((iFluidHandlerItem.getFluidInTank(0)))){
+                return;
+            }
+
+            FluidStack stack = iFluidHandlerItem.drain(drainAmount, IFluidHandler.FluidAction.EXECUTE);
+                fillTankWithFluid(stack, iFluidHandlerItem.getContainer());
+        });
+    }
+
+    private void fillTankWithFluid(FluidStack stack, ItemStack container) {
+        this.FLUID_TANK.fill(new FluidStack(stack.getFluid(), stack.getAmount()), IFluidHandler.FluidAction.EXECUTE);
+
+        this.itemHandler.extractItem(OUTPUT_SLOT, 1, false);
+        this.itemHandler.insertItem(OUTPUT_SLOT, container, false);
+    }
+
+    private boolean hasFluidSourceInSlot() {
+        return this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() > 0 &&
+                this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCapability(ForgeCapabilities.FLUID_HANDLER_ITEM).isPresent();
     }
 
     private void extractEnergy() {
@@ -308,7 +383,7 @@ public class InductionFurnaceBE extends BlockEntity implements MenuProvider {
     }
 
     private void craftItem() {
-        Optional<ElectricFurnaceRecipe> recipe = getCurrentRecipe();
+        Optional<InductionFurnaceRecipe> recipe = getCurrentRecipe();
         ItemStack resultItem = recipe.get().getResultItem(getLevel().registryAccess());
 
         this.itemHandler.extractItem(INPUT_SLOT, 1, false);
@@ -330,7 +405,7 @@ public class InductionFurnaceBE extends BlockEntity implements MenuProvider {
     }
 
     private boolean hasRecipe() {
-        Optional<ElectricFurnaceRecipe> recipe = getCurrentRecipe();
+        Optional<InductionFurnaceRecipe> recipe = getCurrentRecipe();
 
         if (recipe.isEmpty()) {
             return false;
@@ -348,13 +423,13 @@ public class InductionFurnaceBE extends BlockEntity implements MenuProvider {
         return this.ENERGY_STORAGE.getEnergyStored() >= maxProgress;
     }
 
-    private Optional<ElectricFurnaceRecipe> getCurrentRecipe() {
+    private Optional<InductionFurnaceRecipe> getCurrentRecipe() {
         SimpleContainer inventory = new SimpleContainer(this.itemHandler.getSlots());
         for(int i = 0; i < this.itemHandler.getSlots(); i++) {
             inventory.setItem(i, this.itemHandler.getStackInSlot(i));
         }
 
-        return this.level.getRecipeManager().getRecipeFor(ElectricFurnaceRecipe.Type.INSTANCE, inventory, level);
+        return this.level.getRecipeManager().getRecipeFor(InductionFurnaceRecipe.Type.INSTANCE, inventory, level);
     }
 
     private boolean canInsertItemIntoOutputSlot(Item item) {
@@ -370,6 +445,7 @@ public class InductionFurnaceBE extends BlockEntity implements MenuProvider {
         return this.itemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty() ||
                 this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() < this.itemHandler.getStackInSlot(OUTPUT_SLOT).getMaxStackSize();
     }
+
     @Nullable
     @Override
     public Packet<ClientGamePacketListener> getUpdatePacket() {
@@ -386,4 +462,3 @@ public class InductionFurnaceBE extends BlockEntity implements MenuProvider {
         super.onDataPacket(net, pkt);
     }
 }
-

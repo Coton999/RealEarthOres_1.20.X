@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:inducting",
+  "ingredients": [
+    {
+      "tag": "forge:ores/copper"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:copper_bucket"
+  }
+}

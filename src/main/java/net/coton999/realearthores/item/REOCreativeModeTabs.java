@@ -1265,11 +1265,6 @@ public static RegistryObject<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TABS.reg
                         pOutput.accept(REOBlocks.WILD_RICE.get());
                         pOutput.accept(REOBlocks.WILD_TOMATO.get());
 
-                        // Misc //
-                        pOutput.accept(REOBlocks.WAX_BLOCK.get());
-
-
-
                     })
                     .build());
 

@@ -6,7 +6,7 @@
       "item": "minecraft:gold_ingot"
     },
     "G": {
-      "item": "realearthores:iron_gear"
+      "tag": "realearthores:gears/tier_1"
     }
   },
   "pattern": [

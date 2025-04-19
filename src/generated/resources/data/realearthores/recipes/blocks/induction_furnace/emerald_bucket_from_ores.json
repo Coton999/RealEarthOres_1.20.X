@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:inducting",
+  "ingredients": [
+    {
+      "tag": "forge:ores/emerald"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:emerald_bucket"
+  }
+}

@@ -43,7 +43,7 @@ import org.slf4j.Logger;
 @Mod(RealEarthOres.MOD_ID)
 public class RealEarthOres {
     public static final String MOD_ID = "realearthores";
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public RealEarthOres() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();

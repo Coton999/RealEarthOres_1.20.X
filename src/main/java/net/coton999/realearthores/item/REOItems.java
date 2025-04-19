@@ -241,7 +241,7 @@ public class REOItems {
 
     // Buckets
     public static final RegistryObject<Item> ALUMINUM_BUCKET = ITEMS.register("aluminium_bucket",
-            () -> new BucketItem(REOFluids.MOLTEN_ALUMINIUM_SOURCE,
+            () -> new BucketItem(REOFluids.MOLTEN_ALUMINUM_SOURCE,
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
     public static final RegistryObject<Item> AMETHYST_BUCKET = ITEMS.register("amethyst_bucket",
             () -> new BucketItem(REOFluids.MOLTEN_AMETHYST_SOURCE,

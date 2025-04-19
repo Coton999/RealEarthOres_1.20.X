@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_platinum_ingot": {
+    "has_ore_platinum": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "realearthores:platinum_ingot"
-            ]
+            "tag": "forge:ores/platinum"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_platinum_ingot",
+      "has_ore_platinum",
       "has_the_recipe"
     ]
   ],

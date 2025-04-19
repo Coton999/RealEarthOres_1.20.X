@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:inducting",
+  "ingredients": [
+    {
+      "tag": "forge:ores/lapis"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:lapis_bucket"
+  }
+}

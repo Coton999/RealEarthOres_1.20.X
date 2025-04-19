@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:inducting",
+  "ingredients": [
+    {
+      "tag": "forge:ores/gold"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:gold_bucket"
+  }
+}

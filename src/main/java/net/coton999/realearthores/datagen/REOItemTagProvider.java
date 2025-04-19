@@ -8,9 +8,9 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
 import javax.annotation.Nullable;
@@ -471,15 +471,25 @@ public class REOItemTagProvider extends ItemTagsProvider {
         this.tag(REOTags.Items.ORES_ALUMINUM)
                 .add(REOBlocks.ALUMINUM_ORE.get().asItem()).add(REOBlocks.DEEPSLATE_ALUMINIUM_ORE.get().asItem())
                 .add(REOBlocks.ALUMINUM_GRAVEL_ORE.get().asItem()).add(REOBlocks.NETHER_ALUMINIUM_ORE.get().asItem());
+        this.tag(REOTags.Items.ORES_AMETHYST)
+                .add(Blocks.AMETHYST_CLUSTER.asItem());
+        this.tag(REOTags.Items.ORES_ENDERITE)
+                .add(REOBlocks.ENDERITE_ORE.get().asItem());
         this.tag(REOTags.Items.ORES_LEAD)
                 .add(REOBlocks.LEAD_ORE.get().asItem()).add(REOBlocks.DEEPSLATE_LEAD_ORE.get().asItem())
                 .add(REOBlocks.LEAD_GRAVEL_ORE.get().asItem()).add(REOBlocks.NETHER_LEAD_ORE.get().asItem());
         this.tag(REOTags.Items.ORES_NICKEL)
                 .add(REOBlocks.NICKEL_ORE.get().asItem()).add(REOBlocks.DEEPSLATE_NICKEL_ORE.get().asItem())
                 .add(REOBlocks.NICKEL_GRAVEL_ORE.get().asItem()).add(REOBlocks.NETHER_NICKEL_ORE.get().asItem());
+        this.tag(REOTags.Items.ORES_PERIDOT)
+                .add(REOBlocks.PERIDOT_CLUSTER.get().asItem());
         this.tag(REOTags.Items.ORES_PLATINUM)
                 .add(REOBlocks.PLATINUM_ORE.get().asItem()).add(REOBlocks.DEEPSLATE_PLATINUM_ORE.get().asItem())
                 .add(REOBlocks.PLATINUM_GRAVEL_ORE.get().asItem()).add(REOBlocks.NETHER_PLATINUM_ORE.get().asItem());
+        this.tag(REOTags.Items.ORES_RUBY)
+                .add(REOBlocks.RUBY_CLUSTER.get().asItem());
+        this.tag(REOTags.Items.ORES_SAPPHIRE)
+                .add(REOBlocks.SAPPHIRE_CLUSTER.get().asItem());
         this.tag(REOTags.Items.ORES_SILVER)
                 .add(REOBlocks.SILVER_ORE.get().asItem()).add(REOBlocks.DEEPSLATE_SILVER_ORE.get().asItem())
                 .add(REOBlocks.SILVER_GRAVEL_ORE.get().asItem()).add(REOBlocks.NETHER_SILVER_ORE.get().asItem());
@@ -514,9 +524,20 @@ public class REOItemTagProvider extends ItemTagsProvider {
 
         // Tech //
         // Gears
-        this.tag(REOTags.Items.GEARS_TIER_GEM)
-                .add(REOItems.DIAMOND_GEAR.get(), REOItems.EMERALD_GEAR.get(), REOItems.AMETHYST_GEAR.get(),
-                        REOItems.PERIDOT_GEAR.get(), REOItems.RUBY_GEAR.get(), REOItems.SAPPHIRE_GEAR.get());
+        this.tag(REOTags.Items.GEARS_TIER_1)
+                .add(REOItems.IRON_GEAR.get(), REOItems.ALUMINUM_GEAR.get(), REOItems.COPPER_GEAR.get(),
+                        REOItems.LEAD_GEAR.get(), REOItems.NICKEL_GEAR.get(), REOItems.SILVER_GEAR.get(),
+                        REOItems.TIN_GEAR.get(), REOItems.ZINC_GEAR.get());
+        this.tag(REOTags.Items.GEARS_TIER_2)
+                .add(REOItems.BRASS_GEAR.get(), REOItems.BRONZE_GEAR.get(), REOItems.ELECTRUM_GEAR.get(),
+                        REOItems.GOLD_GERAR.get(), REOItems.STEEL_GEAR.get());
+        this.tag(REOTags.Items.GEARS_TIER_3)
+                .add(REOItems.AMETHYST_GEAR.get(), REOItems.PERIDOT_GEAR.get(), REOItems.RUBY_GEAR.get(),
+                        REOItems.SAPPHIRE_GEAR.get());
+        this.tag(REOTags.Items.GEARS_TIER_4)
+                .add(REOItems.DIAMOND_GEAR.get(), REOItems.EMERALD_GEAR.get());
+        this.tag(REOTags.Items.GEARS_TIER_5)
+                .add(REOItems.ENDERITE_GEAR.get(), REOItems.PLATINUM_GEAR.get());
 
         this.tag(REOTags.Items.GEARS_ALUMINUM).add(REOItems.ALUMINUM_GEAR.get());
         this.tag(REOTags.Items.GEARS_AMETHYST).add(REOItems.AMETHYST_GEAR.get());

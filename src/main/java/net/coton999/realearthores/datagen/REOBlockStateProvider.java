@@ -33,10 +33,6 @@ public class REOBlockStateProvider extends BlockStateProvider {
 
         // Building Blocks
         // Marble
-        simpleBlockWithItem(REOBlocks.WAX_BLOCK.get(),
-                models().cubeAll("wax_block", new ResourceLocation(RealEarthOres.MOD_ID, "block/misc/wax")));
-
-        // Marble
         simpleBlockWithItem(REOBlocks.MARBLE.get(),
                 models().cubeAll("marble", new ResourceLocation(RealEarthOres.MOD_ID, "block/building_blocks/marble/marble")));
         simpleBlockWithItem(REOBlocks.MARBLE_COBBLE.get(),

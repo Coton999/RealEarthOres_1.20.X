@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_peridot": {
+    "has_cluster_peridot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:peridot"
+              "realearthores:cluster_peridot"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_peridot",
+      "has_cluster_peridot",
       "has_the_recipe"
     ]
   ],

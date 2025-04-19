@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_sapphire": {
+    "has_cluster_sapphire": {
       "conditions": {
         "items": [
           {
             "items": [
-              "realearthores:sapphire"
+              "realearthores:cluster_sapphire"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_sapphire",
+      "has_cluster_sapphire",
       "has_the_recipe"
     ]
   ],

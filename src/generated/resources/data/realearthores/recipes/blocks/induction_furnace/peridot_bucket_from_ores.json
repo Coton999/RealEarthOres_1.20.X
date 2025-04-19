@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:inducting",
+  "ingredients": [
+    {
+      "tag": "realearthores:ores/peridot"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:peridot_bucket"
+  }
+}

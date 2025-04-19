@@ -17,10 +17,10 @@ public class REOFluids {
 
 
     // Source & Flowing Registry
-    public static final RegistryObject<FlowingFluid> MOLTEN_ALUMINIUM_SOURCE = FLUIDS.register("molten_aluminium_source",
-            () -> new ForgeFlowingFluid.Source(REOFluids.MOLTEN_ALUMINIUM_FLUID_PROPERTIES));
-    public static final RegistryObject<FlowingFluid> MOLTEN_ALUMINIUM_FLOWING = FLUIDS.register("molten_aluminium_flowing",
-            () -> new ForgeFlowingFluid.Flowing(REOFluids.MOLTEN_ALUMINIUM_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> MOLTEN_ALUMINUM_SOURCE = FLUIDS.register("molten_aluminium_source",
+            () -> new ForgeFlowingFluid.Source(REOFluids.MOLTEN_ALUMINUM_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> MOLTEN_ALUMINUM_FLOWING = FLUIDS.register("molten_aluminium_flowing",
+            () -> new ForgeFlowingFluid.Flowing(REOFluids.MOLTEN_ALUMINUM_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> MOLTEN_AMETHYST_SOURCE = FLUIDS.register("molten_amethyst_source",
             () -> new ForgeFlowingFluid.Source(REOFluids.MOLTEN_AMETHYST_FLUID_PROPERTIES));
@@ -144,8 +144,8 @@ public class REOFluids {
 
 
     // Fluid Properties
-    public static final ForgeFlowingFluid.Properties MOLTEN_ALUMINIUM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
-            REOFluidTypes.MOLTEN_ALUMINIUM_FLUID_TYPE, MOLTEN_ALUMINIUM_SOURCE, MOLTEN_ALUMINIUM_FLOWING)
+    public static final ForgeFlowingFluid.Properties MOLTEN_ALUMINUM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            REOFluidTypes.MOLTEN_ALUMINIUM_FLUID_TYPE, MOLTEN_ALUMINUM_SOURCE, MOLTEN_ALUMINUM_FLOWING)
             .slopeFindDistance(4).levelDecreasePerBlock(2).tickRate(40).block(REOBlocks.MOLTEN_ALUMINIUM_BLOCK)
             .bucket(REOItems.ALUMINUM_BUCKET);
 

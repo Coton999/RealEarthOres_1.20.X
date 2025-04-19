@@ -1,0 +1,12 @@
+{
+  "type": "realearthores:inducting",
+  "ingredients": [
+    {
+      "tag": "realearthores:ores/amethyst"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "realearthores:amethyst_bucket"
+  }
+}

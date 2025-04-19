@@ -23,15 +23,13 @@ import javax.annotation.Nullable;
 import java.util.function.Consumer;
 
 public class KilnRecipeBuilder implements RecipeBuilder {
-    private final RecipeCategory category;
     private final Item result;
     private final Ingredient ingredient;
     private final float experience;
     private final int cookingTime;
     private final Advancement.Builder advancement = Advancement.Builder.recipeAdvancement();
 
-    public KilnRecipeBuilder(RecipeCategory pCategory, ItemLike pResult, Ingredient pIngredient, float pExperience, int pCookingTime) {
-        this.category = pCategory;
+    public KilnRecipeBuilder(ItemLike pResult, Ingredient pIngredient, float pExperience, int pCookingTime) {
         this.result = pResult.asItem();
         this.ingredient = pIngredient;
         this.experience = pExperience;

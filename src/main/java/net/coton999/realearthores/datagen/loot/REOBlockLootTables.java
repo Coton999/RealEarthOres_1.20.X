@@ -1408,9 +1408,6 @@ public class REOBlockLootTables extends BlockLootSubProvider {
                 (block) -> createOreDrop(REOBlocks.ENDERITE_ORE.get(), REOItems.RAW_ENDERITE.get()));
 
 
-        // Misc //
-        this.dropSelf(REOBlocks.WAX_BLOCK.get());
-
         // Tech //
         // Machines
         // Coal
